@@ -159,12 +159,14 @@ overall_progress: "1/9 complete"
 
 ## Git Conventions
 
+- **NEVER commit directly to `main`**. Always work on a feature branch and merge via PR.
+- Branch naming: `type/scope-short-description` (e.g., `feat/p1-pydantic-schemas`, `fix/p1-validator-edge-case`)
 - Commit messages: `type(scope): description`
   - Types: `feat`, `fix`, `docs`, `test`, `refactor`, `chore`
   - Scope: project folder name (e.g., `p1`, `p2`, `shared`)
   - Example: `feat(p1): add Pydantic schemas for DIY repair data`
 - Commit after each logical unit of work (not at end of night)
-- Push at end of every session
+- Workflow: create branch → commit → push → create PR → merge to main
 
 ## Session Workflow
 
