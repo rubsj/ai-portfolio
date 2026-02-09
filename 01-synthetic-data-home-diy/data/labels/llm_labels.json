@@ -1,0 +1,1082 @@
+[
+  {
+    "trace_id": "99dc456f-fabf-41e2-8524-17ffb2d3d822",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 1,
+        "reason": "The guide lacks information on where to buy replacement parts if needed and what to do if the fix doesn't work beyond using a plumber's snake or calling a professional. It also doesn't provide troubleshooting advice if the steps fail."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes safety advice such as wearing gloves and ensuring the area is clear when using a plunger. No major safety violations are present for this type of repair."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "All tools listed are common household items that a typical homeowner would have or can easily acquire."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is appropriately detailed for a beginner task and does not exceed 8 steps. It also suggests when to call a professional."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide is specifically tailored to address a clogged kitchen sink drain, providing steps and tools relevant to the problem."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 1,
+        "reason": "The tip provided is somewhat generic and could be more specific. It suggests using a plumber's snake but doesn't explain how to use it or provide additional specific advice."
+      }
+    ],
+    "overall_quality_score": 3
+  },
+  {
+    "trace_id": "cc4794c8-1552-40e6-bffd-818294baa9c0",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 1,
+        "reason": "The guide lacks information on where to buy replacement parts, such as door seals, and does not provide troubleshooting advice if the initial steps do not resolve the issue."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes a clear instruction to unplug the refrigerator before starting and warns about handling sharp tools, which covers the relevant safety precautions for this task."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "The tools listed are common household items that a typical homeowner would likely have, such as a screwdriver and vacuum cleaner."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is appropriate for a beginner task, with only 8 steps and no specialty tools required."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide specifically addresses the problem of a refrigerator not cooling, with steps directly related to this issue."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 1,
+        "reason": "The tip provided is generic and does not offer additional, specific advice beyond what is covered in the steps."
+      }
+    ],
+    "overall_quality_score": 3
+  },
+  {
+    "trace_id": "2e07833f-3fc5-441a-8a5c-fec9e2aecb99",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 1,
+        "reason": "The guide does not provide information on where to buy the replacement heating element or what to do if the oven still doesn't work after replacing the element. Troubleshooting advice is also lacking."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes a power-off warning and PPE requirements, addressing electrical shock risk. It does not mention calling a professional, but this is not strictly necessary for this repair."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 1,
+        "reason": "A multimeter is listed, which is not a common household tool and may need to be purchased specifically for this repair."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is within the intermediate range with 10 steps and does not require specialty tools beyond a multimeter."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide is specifically tied to replacing the heating element in an electric oven, addressing the problem of the oven not heating properly."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 0,
+        "reason": "The tip about checking the user manual or manufacturer's website for the correct part number is useful and specific to this repair."
+      }
+    ],
+    "overall_quality_score": 3
+  },
+  {
+    "trace_id": "01e9a6b3-3178-44c3-b53f-595d0c7d2160",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 1,
+        "reason": "The guide does not provide information on where to purchase a replacement heating element or what to do if the new element does not work. It also lacks troubleshooting advice if the problem persists after replacement."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide correctly advises to unplug the oven before starting the repair, which addresses the primary safety concern of electric shock. No other specific safety violations are present."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "All tools listed are common household tools, and the optional multimeter is not required for the repair, making the tool list realistic for a typical homeowner."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is within the intermediate difficulty level, with 9 steps and no specialty tools required. It does not exceed the complexity expected for this type of repair."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide specifically addresses the problem of replacing a heating element in an electric oven, providing contextually relevant steps and information."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 0,
+        "reason": "The tips provided are practical and specific, such as taking a picture of the wiring connections and consulting the oven manual, which are genuinely useful for this repair."
+      }
+    ],
+    "overall_quality_score": 3
+  },
+  {
+    "trace_id": "53f025e8-8a06-4250-b1ae-4467657c82b0",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 0,
+        "reason": "The guide provides a detailed step-by-step process, includes troubleshooting advice, and mentions where to buy replacements."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes essential safety warnings such as unplugging the oven, turning off the circuit breaker, and wearing safety gloves."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 1,
+        "reason": "The inclusion of a multimeter may be unrealistic for a typical homeowner who might not own one."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is within the scope of an advanced task and does not exceed 12 steps. It also advises when to consult a professional."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide is specifically tailored to the problem of replacing a faulty heating element in an electric oven."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 0,
+        "reason": "The tips are specific and useful, advising on compatibility and when to consult a professional."
+      }
+    ],
+    "overall_quality_score": 4
+  },
+  {
+    "trace_id": "6fd64434-b004-4c45-8e49-00bd79464654",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 1,
+        "reason": "The guide does not mention where to buy the replacement seal or what to do if the fix doesn't work beyond consulting a professional. It also lacks detailed troubleshooting advice if the seal continues to leak."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes a power-off warning and PPE requirements, and it advises consulting a professional if unsure. No specific hazards are omitted."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "All tools listed are common and likely to be found in a typical homeowner's toolbox. No specialized tools are required."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is within the 8-step limit for advanced tasks and does not require specialty tools. It also advises consulting a professional if needed."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide specifically addresses replacing the door seal on a front-loading washing machine, which matches the equipment problem described."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 1,
+        "reason": "The tips provided are somewhat generic and do not offer specific advice beyond what is already mentioned in the steps or safety information."
+      }
+    ],
+    "overall_quality_score": 3
+  },
+  {
+    "trace_id": "04a22533-1ef0-4d74-99a9-3e6390bede44",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 1,
+        "reason": "The guide lacks troubleshooting advice on what to do if the fix doesn't work, such as checking for other potential causes of leaks."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes a water-off warning and PPE requirements, which are appropriate for this task."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "All tools listed are common household tools that a typical homeowner would have."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is straightforward with 13 steps, which is acceptable for a beginner task, and no specialty tools are required."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide specifically addresses a kitchen faucet leaking from the spout, which matches the equipment problem described."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 1,
+        "reason": "The tips provided are somewhat generic and miss the opportunity to offer more specific advice, such as how to ensure the cartridge is properly seated."
+      }
+    ],
+    "overall_quality_score": 3
+  },
+  {
+    "trace_id": "ee6a4668-68eb-4c79-8b6c-04ac9496d3d3",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 0,
+        "reason": "The guide provides a comprehensive step-by-step process, includes troubleshooting advice, and suggests contacting a professional if the problem persists."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 1,
+        "reason": "The guide lacks a warning to turn off the water supply before starting work, which is a common safety precaution in plumbing repairs."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "The tools listed are common household items that a typical homeowner would have, such as a plunger, bucket, and towel."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is straightforward with fewer than 8 steps, appropriate for a beginner task, and includes a suggestion to call a professional if needed."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide is specifically tailored to the problem of a clogged bathroom sink drain, addressing the equipment and issue directly."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 0,
+        "reason": "The tips provided are specific and useful, such as ensuring enough water for the plunger and considering a plumbing snake if the clog persists."
+      }
+    ],
+    "overall_quality_score": 4
+  },
+  {
+    "trace_id": "61fad2ad-c6a7-49d8-8dbc-3e4c2e67cdba",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 1,
+        "reason": "The answer lacks details on identifying the correct replacement faucet, where to purchase it, and what to do if the new faucet leaks after installation."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes a water-off warning and general safety advice for working under the sink."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "All tools listed are common and likely to be found in a homeowner's toolkit for plumbing repairs."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is within the intermediate range with 10 steps and no specialty tools required."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide is specific to replacing a leaky kitchen faucet, matching the equipment_problem field."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 1,
+        "reason": "The tips provided are somewhat generic and miss opportunities for more specific advice, such as checking for compatibility of the new faucet with existing plumbing."
+      }
+    ],
+    "overall_quality_score": 3
+  },
+  {
+    "trace_id": "4bd1847b-7b09-448e-a579-d28a5ea3d150",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 1,
+        "reason": "The guide does not provide troubleshooting advice if the repair doesn't stop the leak or if the homeowner encounters issues during the repair."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes necessary safety precautions such as turning off the water supply and wearing safety goggles."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "All tools listed are common household tools and materials that a typical homeowner would likely have."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is appropriately detailed for an intermediate task and does not exceed 12 steps."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide specifically addresses the issue of a leaking shower valve, providing context-specific instructions."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 1,
+        "reason": "The tips provided are somewhat generic and could be more specific, such as advising on how to handle stubborn screws or providing more detailed advice on selecting replacement parts."
+      }
+    ],
+    "overall_quality_score": 3
+  },
+  {
+    "trace_id": "fbbba44a-dbd2-41b9-9520-33485de929c9",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 0,
+        "reason": "The guide provides detailed steps for replacing a toilet flange, including how to identify the part, where to buy replacements, and troubleshooting advice if the fix doesn't work."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes necessary safety precautions, such as turning off the water supply and wearing safety goggles. It also advises when to call a professional."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "All tools listed are common and likely to be found in a typical homeowner's toolkit. No specialized tools are required."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is broken down into a reasonable number of steps for an advanced task and includes advice on when to call a professional."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide specifically addresses the issue of a broken toilet flange causing instability and leaks, providing context-specific advice."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 0,
+        "reason": "The tips are specific and useful, advising on flange selection and seeking help if needed, without repeating information from the steps."
+      }
+    ],
+    "overall_quality_score": 5
+  },
+  {
+    "trace_id": "6f7747db-64e9-4662-8b88-0c1b7d24b489",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 1,
+        "reason": "The guide does not provide information on how to identify the specific cartridge model needed for replacement or where to purchase it. It also lacks troubleshooting advice if the leak persists after replacement."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes necessary safety warnings, such as turning off the water supply and wearing safety glasses. It also advises contacting a licensed plumber if needed."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "All tools listed are common household tools, and the cartridge puller is mentioned as optional, which is acceptable for an advanced repair."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is within the expected complexity for an advanced task, with 10 steps and no specialty tools required. It advises contacting a plumber if the repair is uncomfortable."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide is specifically tailored to the problem of a leaking shower valve cartridge, addressing the equipment and issue directly."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 1,
+        "reason": "The tips provided are basic and do not offer additional value beyond the steps. They miss opportunities for more specific advice, such as ensuring proper alignment of the cartridge."
+      }
+    ],
+    "overall_quality_score": 3
+  },
+  {
+    "trace_id": "dee9099e-5e05-4d82-8b60-fb8201d6b004",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 0,
+        "reason": "The guide provides a complete set of instructions, including how to identify the blown fuse, the tools needed, and what to do if the fix doesn't work. Troubleshooting advice is also included."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes a warning to turn off the main power before starting work, mentions the risk of electric shock, and advises consulting a licensed electrician if unsure. It also warns against using a higher amperage fuse."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "The tools listed are common household items that a typical homeowner would likely have, such as a screwdriver and flashlight."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is straightforward with only 9 steps, which is appropriate for a beginner task. No specialty tools are required."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide specifically addresses the problem of a blown fuse in a home's fuse box, providing relevant and specific instructions."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 0,
+        "reason": "The tips are practical and provide useful advice for future maintenance, such as keeping extra fuses on hand and regularly checking the fuse box."
+      }
+    ],
+    "overall_quality_score": 5
+  },
+  {
+    "trace_id": "22d55de3-eb10-41f3-8fa6-707e9a707030",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 0,
+        "reason": "The guide provides detailed steps for replacing a light switch, including safety precautions, tools needed, and troubleshooting advice if the power is not off. It also advises consulting a professional if unsure."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes a power-off warning at the circuit breaker as the first step, mentions the use of a voltage tester, and advises consulting a licensed electrician if unsure. It also warns against working with wet hands."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "The tools listed are common household tools that a typical homeowner would have or can easily acquire, such as a screwdriver, voltage tester, wire strippers, and electrical tape."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is straightforward with only 9 steps, which is appropriate for a beginner task. No specialty tools are required, and it doesn't suggest tasks beyond a beginner's capability."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide specifically addresses replacing a faulty light switch, which directly relates to the problem of the light switch not functioning properly."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 0,
+        "reason": "The tips provided are practical and specific, such as keeping the area dry and taking a picture of the wiring for reference, which are useful for this particular repair."
+      }
+    ],
+    "overall_quality_score": 5
+  },
+  {
+    "trace_id": "baac489f-6d01-4346-881f-55791f53033d",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 0,
+        "reason": "The guide provides a clear step-by-step process, includes safety precautions, and offers troubleshooting advice if the user is unsure. It covers the necessary tools and steps comprehensively."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes essential safety warnings such as turning off the power at the circuit breaker and using a voltage tester to ensure no current is present. It also advises consulting a licensed electrician if unsure."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "All tools listed are common household tools that a typical homeowner would likely have or can easily obtain for this repair."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is well within the intermediate level with 10 steps, which is appropriate for the task complexity. It also advises when to consult a professional."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide specifically addresses replacing a faulty light switch, directly relating to the equipment problem described."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 0,
+        "reason": "The tips provided are practical and specific to the task, such as labeling wires and understanding multi-switch setups."
+      }
+    ],
+    "overall_quality_score": 5
+  },
+  {
+    "trace_id": "f60d2c1a-fee0-4784-8e54-b9bf03b641b2",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 0,
+        "reason": "The guide provides a complete set of instructions, including identification of the problem, necessary tools, and troubleshooting advice."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes all necessary safety precautions, such as turning off the power at the circuit breaker and using a voltage tester. It also advises consulting a professional if unsure."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "All tools listed are common household tools that a typical homeowner would have or can easily acquire."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is well within the intermediate level, with only 9 steps and no specialty tools required."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide specifically addresses the problem of a faulty wall switch, providing context-specific advice and steps."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 0,
+        "reason": "The tips are practical and provide additional guidance on labeling wires and consulting diagrams for three-way circuits."
+      }
+    ],
+    "overall_quality_score": 5
+  },
+  {
+    "trace_id": "4c2460f3-5471-45b9-8d98-71aa61569257",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 0,
+        "reason": "The guide provides a complete set of instructions, including how to identify the part, where to buy replacements, and troubleshooting advice."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes all necessary safety warnings, including turning off power at the circuit breaker, using a voltage tester, and wearing PPE. It also advises calling a professional if uncomfortable."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "All tools listed are common and likely to be found in a typical homeowner's toolkit. No specialized tools are required."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is within the scope of an advanced DIY task with 10 steps, and it advises when to call a professional."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide specifically addresses the problem of replacing a broken electrical outlet, providing context-specific advice."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 0,
+        "reason": "The tips are practical and specific, suggesting labeling the circuit breaker and inspecting wiring, which are useful for this task."
+      }
+    ],
+    "overall_quality_score": 5
+  },
+  {
+    "trace_id": "c27bb8eb-f066-46a0-8f40-c11c7483047e",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 0,
+        "reason": "The guide provides a complete set of instructions, including identification of the faulty breaker, necessary tools, and troubleshooting advice if the repair doesn't work. It also advises when to call a professional."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes essential safety warnings, such as turning off the main power supply, using insulated tools, and wearing rubber-soled shoes. It also advises calling a professional if unsure."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "The tools listed are common for electrical work and likely to be found in a homeowner's toolkit. No specialized tools are required."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is appropriate for an advanced task, with 9 steps that are necessary for safely replacing a circuit breaker. It also advises when to stop and call a professional."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide is specifically tailored to the problem of a faulty circuit breaker that keeps tripping or is visibly damaged, providing context-specific advice."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 0,
+        "reason": "The tips provided are practical and specific, such as labeling wires during disconnection and using a voltage tester to ensure safety."
+      }
+    ],
+    "overall_quality_score": 5
+  },
+  {
+    "trace_id": "2a280ff3-a8bb-4bb9-bf62-031eefc7c97b",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 0,
+        "reason": "The guide provides detailed steps for cleaning the HVAC air filter, including how to identify and access it, and what to do if the filter is reusable. It also includes troubleshooting advice by recommending checking the user manual for filter location."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes a clear safety warning to turn off the HVAC system before starting, mentions using gloves, and warns about sharp edges, covering all relevant safety concerns for this task."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "All tools listed are common household items that a typical homeowner would have, such as a screwdriver, vacuum cleaner, and mild detergent."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is straightforward with only 8 steps, which is appropriate for a beginner task, and does not require any specialty tools."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide is specifically focused on cleaning a dirty HVAC air filter, directly addressing the equipment problem provided."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 0,
+        "reason": "The tips are practical and specific, advising on checking the filter monthly and cleaning or replacing it every 1-3 months based on usage, which is useful advice for maintaining HVAC efficiency."
+      }
+    ],
+    "overall_quality_score": 5
+  },
+  {
+    "trace_id": "b11d3d12-847f-433a-ab2c-567db02bba62",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 0,
+        "reason": "The guide provides a complete set of instructions, including how to identify the part, where to find the size for replacements, and what to do if the fix doesn't work (check regularly). It also includes troubleshooting advice."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 1,
+        "reason": "The guide mentions turning off the HVAC system but does not specify checking the circuit breaker or power disconnect as the first step, which is crucial for electrical safety."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "The tools listed are common and should be available to most homeowners. No specialized tools are required for this task."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is straightforward with only 8 steps, suitable for a beginner task, and does not require any specialty tools."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide specifically addresses the problem of a dirty or clogged air filter in an HVAC system, providing relevant and specific advice."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 0,
+        "reason": "The tips provided are specific and useful, advising on regular checks and replacements during peak seasons for optimal efficiency."
+      }
+    ],
+    "overall_quality_score": 4
+  },
+  {
+    "trace_id": "4b5266b1-2272-4f1b-817a-4f91cf66d607",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 1,
+        "reason": "The guide lacks troubleshooting advice for what to do if cleaning the coils does not improve cooling efficiency. It also does not mention where to purchase coil cleaner or how to identify the evaporator coils."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes a power-off warning at the beginning and mentions PPE requirements such as safety goggles and gloves."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "All tools listed are common and should be available to a typical homeowner."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is within the intermediate complexity range with 10 steps and does not require specialty tools."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide specifically addresses cleaning evaporator coils in an HVAC system, which matches the equipment problem described."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 1,
+        "reason": "The tips provided are somewhat generic and do not offer specific advice beyond what is already covered in the steps and safety information."
+      }
+    ],
+    "overall_quality_score": 3
+  },
+  {
+    "trace_id": "cc54bf6d-e5ae-4f47-a587-8c8ac7b4597f",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 0,
+        "reason": "The guide provides detailed steps on identifying and replacing the capacitor, including troubleshooting advice if the unit doesn't work after replacement."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes essential safety warnings such as turning off power at the circuit breaker, using insulated gloves and goggles, and handling capacitors carefully due to stored charge."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 1,
+        "reason": "The guide requires a multimeter, which is a specialized tool that a typical homeowner may not have and would need to purchase or rent."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is within the intermediate difficulty level, with 9 steps, which is reasonable for this type of repair."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide specifically addresses the problem of a non-starting outdoor unit and ties the advice directly to replacing the capacitor."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 0,
+        "reason": "The tips are specific and useful, advising on matching capacitor specifications and consulting a manual or professional if needed."
+      }
+    ],
+    "overall_quality_score": 4
+  },
+  {
+    "trace_id": "648d29f4-bc5d-4eea-96fc-44ade5bb0255",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 0,
+        "reason": "The guide provides detailed steps, safety information, and troubleshooting advice, such as testing the old capacitor with a multimeter before replacement."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes essential safety warnings, such as turning off power before starting and using insulated gloves, and advises consulting a professional if unsure."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 1,
+        "reason": "The guide requires a multimeter, which is a specialized tool that a typical homeowner may not have and would need to purchase specifically for this repair."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is appropriate for an advanced task, with 9 steps and a clear warning to call a professional if unsure."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide specifically addresses the issue of a faulty capacitor in a central air conditioning unit, providing context-specific advice."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 0,
+        "reason": "The tips are specific and useful, such as checking the capacitor specifications and keeping children and pets away from the work area."
+      }
+    ],
+    "overall_quality_score": 4
+  },
+  {
+    "trace_id": "131df6fb-b262-4767-8beb-957bed6b8fc6",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 0,
+        "reason": "The guide provides detailed steps, safety information, and troubleshooting advice. It mentions checking the contactor with a multimeter and advises contacting a professional if unsure or if issues persist."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes necessary safety precautions such as turning off power at the circuit breaker, using insulated gloves, and wearing safety goggles. It also advises calling a professional if unsure."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 1,
+        "reason": "The guide requires a multimeter, which is a specialized tool that a typical homeowner might not have and would need to purchase or rent specifically for this repair."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is within the scope of an advanced task with 10 steps and includes a clear warning to call a professional if necessary."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide is specific to replacing a faulty contactor in a central AC unit, addressing the equipment problem directly."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 0,
+        "reason": "The tips provided are practical and specific, such as labeling wires during disconnection and ensuring compatibility of the new contactor."
+      }
+    ],
+    "overall_quality_score": 4
+  },
+  {
+    "trace_id": "b50e11c0-5977-4609-90c2-9e9c87e8f7d7",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 1,
+        "reason": "The guide does not provide information on how to identify the type of faucet, where to buy replacement parts, or what to do if the fix doesn't work beyond checking tightness."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes a warning to turn off the water supply and suggests wearing safety glasses, which covers the necessary safety precautions for this task."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "All tools listed are common household items that a typical homeowner would have or easily acquire."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is straightforward with 10 steps, which is appropriate for a beginner task, and does not require specialty tools."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide specifically addresses fixing a leaky kitchen faucet, which matches the equipment_problem field."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 1,
+        "reason": "The tips provided are somewhat generic and do not offer additional value beyond what is already included in the steps."
+      }
+    ],
+    "overall_quality_score": 3
+  },
+  {
+    "trace_id": "53bdc836-b211-46c7-9b82-60b525011f6f",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 0,
+        "reason": "The guide provides clear instructions on identifying the faucet type, obtaining replacement parts, and troubleshooting if the fix doesn't work. It includes all necessary information for a homeowner to complete the repair."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes a warning to turn off the water supply before starting and advises caution when handling tools. It also suggests wearing safety glasses, covering relevant safety aspects."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "All tools listed are common and likely to be found in a typical homeowner's toolbox. No specialized tools are required for this repair."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is straightforward with only 10 steps, which is reasonable for a beginner task. No specialty tools are required, and the guide is clear and concise."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide specifically addresses the issue of a leaky kitchen faucet and provides steps directly related to this problem, ensuring context is maintained throughout."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 0,
+        "reason": "The tips provided are practical and specific to the repair, such as keeping a towel handy and referring to the manufacturer's manual, enhancing the guide's usefulness."
+      }
+    ],
+    "overall_quality_score": 5
+  },
+  {
+    "trace_id": "63ee04e0-a111-4224-93ca-b9fccaf93012",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 1,
+        "reason": "The guide does not provide information on where to buy replacement parts, how to identify the specific type of cartridge, or what to do if the repair does not stop the leak."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes a water-off warning and mentions the use of safety goggles, covering basic safety requirements."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "All tools listed are common and likely to be found in a typical homeowner's toolkit."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is within the intermediate difficulty level and consists of 9 steps, which is reasonable for this type of repair."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide specifically addresses the issue of a leaking kitchen faucet due to a worn-out cartridge, aligning with the equipment problem."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 1,
+        "reason": "The tips are somewhat generic and miss the opportunity to provide more specific advice, such as checking for leaks at each stage or ensuring the correct orientation of the cartridge."
+      }
+    ],
+    "overall_quality_score": 3
+  },
+  {
+    "trace_id": "e6a189dd-36ae-4eb3-b02a-20c111f2a68a",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 1,
+        "reason": "The guide does not mention where to buy replacement tiles or what to do if the fix doesn't work. It also lacks troubleshooting advice for common issues like uneven tiles or grout not setting properly."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes safety warnings about wearing goggles and a dust mask, and advises caution with sharp edges, which is appropriate for this task."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "All tools listed are common for tile replacement and should be accessible to a typical homeowner."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is within the intermediate range with 9 steps, which is acceptable for this level of difficulty."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide specifically addresses the problem of a broken tile in the bathroom floor, providing context-specific advice."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 1,
+        "reason": "The tips provided are somewhat generic and do not offer specific, actionable advice beyond what's already covered in the steps."
+      }
+    ],
+    "overall_quality_score": 3
+  },
+  {
+    "trace_id": "28073bb7-2368-4249-ba91-b235d6d8e749",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 1,
+        "reason": "The guide does not provide information on where to purchase replacement glass or what to do if the new pane doesn't fit properly. It also lacks troubleshooting advice for common issues that might arise during the repair."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes appropriate safety warnings, such as wearing goggles and gloves, and advises consulting a professional if the frame is damaged or if the user is uncomfortable with the repair."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "All the tools listed are common and likely to be found in a typical homeowner's toolkit or easily obtainable at a hardware store."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is within the advanced difficulty level and does not exceed 12 steps. It also advises when to consider hiring a professional."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide specifically addresses the problem of replacing a broken window pane in a double-hung window, providing context-specific instructions."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 1,
+        "reason": "The tips are somewhat generic and do not provide additional value beyond the steps. They could be more specific to the challenges of this particular repair."
+      }
+    ],
+    "overall_quality_score": 3
+  },
+  {
+    "trace_id": "200bb980-79d4-433b-bdfb-da04890ec306",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 1,
+        "reason": "The guide lacks troubleshooting advice for what to do if the new unit doesn't fit or if there are issues with the sealant curing. It also doesn't mention where to buy replacement units or how to identify the correct size."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 1,
+        "reason": "The guide does not include a warning to turn off power if the window is near electrical outlets or appliances. It also lacks a specific callout to check for electrical hazards."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "All tools listed are common and likely to be found in a typical homeowner's toolkit. No specialized tools are required."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The task is appropriately complex for an advanced difficulty level and does not exceed 12 steps. It also advises when to consult a professional."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide specifically addresses the problem of a broken window pane in a double-glazed window unit, providing context-specific instructions."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 1,
+        "reason": "The tips provided are somewhat generic and miss the opportunity to offer specific advice on handling heavy glass safely or ensuring a proper seal."
+      }
+    ],
+    "overall_quality_score": 3
+  }
+]
