@@ -31,6 +31,9 @@ HOW TO USE:
 # Pydantic DOES enforce them at runtime — that's why we use it.
 # ============================================================================
 
+from collections import defaultdict
+
+
 def greet(name: str, age: int) -> str:
     """
     Type hints look like TS annotations but go AFTER the parameter name.
@@ -74,7 +77,6 @@ def find_user(user_id: int, nickname: str | None = None) -> dict[str, str | int]
         result["nickname"] = nickname
     return result
 
-
 print("=" * 60)
 print("SECTION 1: TYPE HINTS")
 print("=" * 60)
@@ -93,6 +95,14 @@ print()
 # --- YOUR CODE HERE ---
 # def categorize_tools(tools: list[str]) -> dict[str, list[str]]:
 #     pass
+def categorize_tools(tools: list[str]) -> dict[str, list[str]]:
+    res: dict[str, list[str]] = defaultdict(list)
+    for tool in tools:
+        key = tool[0]
+        res[key].append(tool)
+    return dict(res)
+
+print(categorize_tools(["wrench", "hammer", "wire cutters"]))
 
 
 # ============================================================================
@@ -163,8 +173,16 @@ print()
 # This is EXACTLY what you'll do in generator.py tomorrow.
 
 # --- YOUR CODE HERE ---
-# def build_prompt(category: str, difficulty: str, example_tools: list[str]) -> str:
-#     pass
+def build_prompt(category: str, difficulty: str, example_tools: list[str]) -> str:
+    prompt = f"""this is a simple prompt  that returns json {{
+        "category": "{category}"
+        "difficulty": "{difficulty}"
+        "example_tools": [{', '.join(f'"{t}"' for t in example_tools)}]
+    }}
+    """
+    return prompt
+
+print(build_prompt("plumbing_repair" , "beginner" , ["wrench", "tape"]))
 
 
 # ============================================================================
@@ -239,8 +257,15 @@ sample_records = [
 
 # --- YOUR CODE HERE ---
 # a) all_unique_tools = ...
+all_unique_tools = {tool for r in sample_records for tool in r["tools"] }
+print(all_unique_tools)
 # b) category_counts = ...
+categories = [ r["category"] for r in sample_records]
+category_counts = {cat : categories.count(cat) for cat in set(categories)}
+print(category_counts)
 # c) beginner_titles = ...
+biginner_titles = [ r["title"] for r in sample_records if r["difficulty"] == 'beginner']
+print(biginner_titles)
 
 
 # ============================================================================
@@ -481,7 +506,34 @@ print()
 #    this is what you'll embed in your LLM prompts tomorrow.
 
 # --- YOUR CODE HERE ---
-
+class SafetyPrecaution(BaseModel):
+    description: str = Field(min_length=10, description="Description of the safety precaution")
+    severity : Literal["low", "medium", "high", "critical"]
+    equipment: list[str] = Field(default_factory=list)
+    
+    @model_validator(mode="after")
+    def validate_equipment(self):
+        if self.severity == "critical" and len(self.equipment) == 0 :
+            raise ValueError("For critical severity items , atleast one equipment must be present")
+        return self
+        
+print("="*60)
+# valid safety precaution model with non critical severity
+safety_preac1 = SafetyPrecaution(description="this is a valid one" , severity = "low")
+print(f"valid SafetyPrecaution obj {safety_preac1.model_dump_json()}")
+# valid safety precaution model with  critical severity
+safety_preac2 = SafetyPrecaution(description="this is a valid two" , severity = "critical" , equipment=["wrench"])
+print(f"valid SafetyPrecaution obj {safety_preac2.model_dump_json()}")
+# invalid safety precaution model
+try :
+    safety_preac3 = SafetyPrecaution(description="this is a valid two" , severity = "critical")
+except ValidationError as e :
+    print(f"validation error {e}")
+    
+schema = SafetyPrecaution.model_json_schema()
+print(json.dumps(schema, indent=2))
+print("="*60)
+    
 
 # ============================================================================
 # SECTION 5: PYTHON GOTCHAS FOR JAVA/TS DEVELOPERS
