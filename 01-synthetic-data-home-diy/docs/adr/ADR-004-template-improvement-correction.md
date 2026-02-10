@@ -90,14 +90,44 @@ Strategy B (template v2) outperformed Strategy A (individual correction):
    only achieved 13 → 6 because the model still defaults to generalities when
    "fixing" tips.
 
-### Why 80% Target Was Not Quite Met
+### Why 80% Target Was Not Quite Met (Single Strategy)
 
-The PRD target was >80% reduction. V2 achieved 77.8% (close but not met).
-The remaining 8 failures are mostly `incomplete_answer` (5) — this mode
-appears to be intrinsically harder to prevent because "completeness" is
-subjective and the judge applies a strict standard (must include
-troubleshooting, part sourcing, what-if scenarios). A second correction pass
-or more specific per-category completeness instructions could close the gap.
+The PRD target was >80% reduction. V2 alone achieved 77.8% (close but not
+met). The remaining 8 failures were mostly `incomplete_answer` (5) — this
+mode is intrinsically harder to prevent because "completeness" is subjective
+and the judge applies a strict standard (must include troubleshooting, part
+sourcing, what-if scenarios).
+
+### Combined Strategy: V2 Templates + Individual Correction
+
+To close the gap, we applied individual correction (Strategy A) to the 6
+remaining V2 records that had failures. This combined approach uses templates
+to prevent systemic failures and correction to handle edge cases.
+
+| Metric | V1 Original | V2 Generated | V2 + Correction |
+|--------|------------|--------------|-----------------|
+| Total failures | 36 | 8 | **0** |
+| Failure rate | 20.0% | 4.4% | **0.0%** |
+| Reduction vs V1 | — | 77.8% | **100.0%** |
+| incomplete_answer | 15 | 5 | **0** |
+| poor_quality_tips | 13 | 2 | **0** |
+| safety_violations | 3 | 0 | 0 |
+| unrealistic_tools | 5 | 0 | 0 |
+| overcomplicated_solution | 0 | 1 | **0** |
+| missing_context | 0 | 0 | 0 |
+
+The combined pipeline achieved **100% failure reduction** (36 → 0),
+far exceeding the >80% target. The correction pass was highly effective
+on V2 records because:
+
+1. **Fewer records to fix**: Only 6 of 30 V2 records had failures
+   (vs 21 of 30 V1 records). This means correction was targeted and precise.
+2. **Better starting point**: V2 records already had strong quality
+   requirements baked in. The correction only needed to address residual
+   gaps, not systemic defaults.
+3. **Judge feedback is actionable**: The specific failure reasons from the
+   judge (e.g., "lacks troubleshooting advice") give GPT-4o-mini clear
+   instructions for what to add.
 
 ## Alternatives Considered
 
@@ -105,7 +135,7 @@ or more specific per-category completeness instructions could close the gap.
 |--------|------|------|
 | **Individual correction only** (Strategy A) | Simpler, no template changes | 66.7% reduction — misses the systemic issue |
 | **Template improvement only** (Strategy B, chosen as primary) | 77.8% reduction, prevents failures upstream | Requires analyzing failure patterns first |
-| **Both strategies combined** (correct v2 records) | Could push past 80% | Diminishing returns, more API cost |
+| **Both strategies combined** (correct v2 records, chosen) | 100% reduction, zero failures | Extra API cost for 6 records |
 | **Few-shot examples in templates** | Could be very effective | Significantly longer prompts, harder to maintain |
 
 ## Consequences
@@ -113,29 +143,36 @@ or more specific per-category completeness instructions could close the gap.
 **Easier:**
 - Template v2 improvement is reusable — the same pattern (analyze failures →
   add prevention instructions) applies to any LLM generation pipeline.
-- The failure analysis → template improvement cycle is a compelling portfolio
-  artifact: "I analyzed quality metrics and improved the prompt templates,
-  reducing failures by 78%."
-- Both correction strategies are cached, so re-running is free.
+- The failure analysis → template improvement → correction cycle is a
+  compelling portfolio artifact: "I analyzed quality metrics, improved prompt
+  templates, and applied targeted correction to achieve 100% failure reduction."
+- All strategies are cached, so re-running the full pipeline is free.
+- The combined approach provides a blueprint for production LLM pipelines:
+  templates prevent systemic failures, correction handles edge cases.
 
 **Harder:**
 - V2 templates are longer and more prescriptive, which may reduce output
   diversity. Future projects should monitor whether quality instructions
   lead to overly formulaic outputs.
-- The 77.8% result is close to but doesn't meet the 80% target. A follow-up
-  correction pass could close the gap but adds complexity.
+- The combined pipeline requires two LLM calls for failing records
+  (correction via GPT-4o-mini + re-evaluation via GPT-4o), increasing cost
+  for those records. In practice this was only 6 of 30 records.
 
-## Key Insight: Upstream Prevention > Downstream Correction
+## Key Insight: Use BOTH Strategies — Templates Prevent, Correction Polishes
 
-The most impactful improvement came from adding explicit quality requirements
-to the generation prompt (v2 templates), not from asking the model to fix
-its own output. This maps to a general software principle: **catching bugs
-at the source (requirements/design) is cheaper than catching them in QA
-(testing/correction)**.
+The most impactful single improvement came from adding explicit quality
+requirements to the generation prompt (v2 templates). But the **combination**
+of upstream prevention + downstream correction achieved total elimination
+of failures. This maps to a general software principle: **defense in depth**.
+
+Production pipelines should use BOTH strategies:
+- **Templates** prevent systemic failure classes (the 77.8% reduction)
+- **Individual correction** handles edge cases the templates miss (the
+  remaining 22.2%)
 
 In LLM terms: the generation prompt is the "design spec" — making it more
-precise yields better first-pass output than relying on a correction loop
-to clean up vague outputs.
+precise yields better first-pass output. The correction loop is the "code
+review" — it catches the specific issues that slipped through.
 
 ## Java/TS Parallel
 

@@ -1,0 +1,26 @@
+{
+  "cache_key": "correct_d8bce16871bdd2e23c99c9d1cbd0f36d",
+  "trace_id": "41284d9f-b5d1-4985-b845-74b22fcdc2ff",
+  "model": "gpt-4o-mini",
+  "type": "correction",
+  "timestamp": "2026-02-10T04:33:48.828166+00:00",
+  "response": {
+    "question": "How do I replace a faulty thermostat in my electric oven?",
+    "answer": "To replace a faulty thermostat in your electric oven, first, disconnect the power supply to the oven by unplugging it from the wall or turning off the circuit breaker. Remove the oven's back panel by unscrewing it with a screwdriver to expose the thermostat. The thermostat is typically located near the top of the oven cavity and will have two wires connected to it. Carefully disconnect these wires by gently pulling them off the terminals. Next, remove the screws or clips securing the thermostat in place and take it out. Install the new thermostat by reversing the process: secure it with screws or clips, reconnect the wires, and replace the back panel. Finally, restore power to the oven and check the temperature settings to ensure the new thermostat is functioning properly. If the new thermostat does not resolve the issue, inspect the wiring for any visible damage or loose connections. If everything looks intact, you may want to use a multimeter to test for continuity in the wiring or consult a licensed technician if you're unsure.",
+    "equipment_problem": "Faulty thermostat in electric oven",
+    "tools_required": [
+      "Screwdriver",
+      "Pliers"
+    ],
+    "steps": [
+      "Disconnect the power supply by unplugging the oven or turning off the circuit breaker.",
+      "Remove the back panel of the oven using a screwdriver to access the thermostat.",
+      "Carefully disconnect the wires connected to the thermostat.",
+      "Remove the screws or clips securing the thermostat and take it out.",
+      "Install the new thermostat by securing it with screws or clips and reconnecting the wires.",
+      "Replace the back panel and restore power to the oven."
+    ],
+    "safety_info": "Always ensure the oven is completely disconnected from power before beginning any repairs. Use gloves to protect your hands from sharp edges, and goggles to protect your eyes from any debris. Be cautious of any residual heat in the oven chamber. Also, be aware that electrical components can hold charge even after disconnection, so proceed with caution.",
+    "tips": "When purchasing a replacement thermostat, check the model number of your oven to ensure compatibility. You can usually find replacement thermostats at appliance parts stores, online retailers, or directly through the manufacturer. Avoid pulling on the wires too hard when disconnecting to prevent damage. If the new thermostat does not resolve the issue, inspect the wiring for damage and consider using a multimeter to check for continuity, or consult a licensed technician for further diagnosis."
+  }
+}

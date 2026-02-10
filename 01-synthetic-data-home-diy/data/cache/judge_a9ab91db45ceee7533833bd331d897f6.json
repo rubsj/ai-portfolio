@@ -1,0 +1,41 @@
+{
+  "cache_key": "judge_a9ab91db45ceee7533833bd331d897f6",
+  "trace_id": "51e9e4db-39f8-4068-a00f-5b3698f407e7",
+  "model": "gpt-4o",
+  "response": {
+    "trace_id": "51e9e4db-39f8-4068-a00f-5b3698f407e7",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 0,
+        "reason": "The guide provides a detailed step-by-step process, includes troubleshooting advice, and mentions where to purchase replacement parts."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes all necessary safety precautions, such as disconnecting power and water supply, and wearing gloves and goggles."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "All tools listed are common household tools that a typical homeowner would likely already own."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is appropriately detailed for an advanced task and does not exceed 12 steps. It does not require specialty tools."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide is specifically tailored to replacing the door seal on a front-loading washing machine, addressing the equipment problem directly."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 0,
+        "reason": "The tips provided are practical and enhance the repair process, such as using dish soap to ease the installation of the new seal."
+      }
+    ],
+    "overall_quality_score": 5
+  }
+}

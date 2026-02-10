@@ -1,0 +1,29 @@
+{
+  "cache_key": "correct_0657637d0245ba8fd3276d2cc4614391",
+  "trace_id": "51e9e4db-39f8-4068-a00f-5b3698f407e7",
+  "model": "gpt-4o-mini",
+  "type": "correction",
+  "timestamp": "2026-02-10T04:33:59.272200+00:00",
+  "response": {
+    "question": "How can I replace the door seal on my front-loading washing machine?",
+    "answer": "To replace the door seal on your front-loading washing machine, first, disconnect the power and water supply to the machine to prevent any electrical hazards or leaks. Next, remove the front panel by unscrewing the screws located at the bottom and gently pulling it off. Inspect the existing door seal for damage, which typically presents as tears, mold, or a loss of elasticity. Carefully pry the old seal out of its groove using a flathead screwdriver, taking care not to damage the drum. Once removed, clean the groove thoroughly to remove any debris or residue. Take the new seal, which you can purchase from appliance repair stores, online retailers like Amazon, or directly from the manufacturer\u2019s website, and align it with the groove, ensuring the lip of the seal is facing inward. To ensure proper alignment, start at the top of the door and work your way around, pressing the seal evenly into place to avoid any gaps. Once the seal is secured, reattach the front panel and secure it with screws. Finally, reconnect the power and water supply, and run a short cycle to check for leaks. If there are still leaks after replacing the seal, check the door latch alignment and consider replacing it if it\u2019s damaged, or inspect for any additional blockages or issues with the drum itself.",
+    "equipment_problem": "Damaged door seal on front-loading washing machine",
+    "tools_required": [
+      "Flathead screwdriver",
+      "Phillips screwdriver",
+      "Utility knife"
+    ],
+    "steps": [
+      "Disconnect the power and water supply to the washing machine.",
+      "Remove the front panel by unscrewing the screws at the bottom and gently pulling it off.",
+      "Inspect the existing door seal for damage and carefully pry it out with a flathead screwdriver.",
+      "Clean the groove thoroughly to remove any debris or residue.",
+      "Purchase a new seal from appliance repair stores, online retailers, or the manufacturer's website.",
+      "Align the new seal with the groove, starting at the top and working your way around, ensuring the lip faces inward and is pressed in evenly.",
+      "Reattach the front panel and secure it with screws.",
+      "Reconnect the power and water supply, and run a short cycle to check for leaks."
+    ],
+    "safety_info": "Ensure you are wearing gloves and safety goggles to protect against sharp edges and potential water spills. Disconnecting the power and water supply is crucial to avoid electrical shock or flooding.",
+    "tips": "When installing the new seal, ensure that the lip of the seal is fully seated in the groove by pressing it in firmly all around the door. Use a small amount of dish soap on the seal to help it slide into place easily without overstretching. Regularly check the seal for wear and tear to prevent leaks in the future."
+  }
+}
