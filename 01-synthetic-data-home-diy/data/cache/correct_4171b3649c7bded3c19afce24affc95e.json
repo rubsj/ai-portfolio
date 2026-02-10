@@ -1,0 +1,28 @@
+{
+  "cache_key": "correct_4171b3649c7bded3c19afce24affc95e",
+  "trace_id": "fdad91e5-90b7-4d63-a445-09610146c116",
+  "model": "gpt-4o-mini",
+  "type": "correction",
+  "timestamp": "2026-02-10T04:34:17.135662+00:00",
+  "response": {
+    "question": "How do I clean and maintain my HVAC air ducts?",
+    "answer": "Cleaning and maintaining your HVAC air ducts is essential for optimal airflow and indoor air quality. First, disconnect the power to your HVAC system to ensure safety. You can usually do this by switching off the circuit breaker. Next, gather your tools: a vacuum cleaner with a hose attachment, a stiff-bristle brush, and a damp cloth. Begin by removing the vent covers; use a screwdriver if needed, and clean them using the damp cloth. Next, use the stiff-bristle brush to scrub the inside of the ducts gently, dislodging dust and debris. Attach the vacuum hose to the ducts and vacuum out any loosened dirt thoroughly. After that, inspect the ducts for any signs of mold or excessive build-up and address these issues accordingly. If mold is present, it\u2019s best to call a licensed professional for thorough removal. If you notice that cleaning the ducts doesn't improve airflow, check for any blockages in the ductwork or ensure that the HVAC system is functioning properly. You can find replacement parts, such as vent covers and filters, at local hardware stores or online retailers like Amazon or Home Depot. Replace the vent covers securely and restore power to the HVAC system.",
+    "equipment_problem": "Dirty or clogged air ducts in HVAC system",
+    "tools_required": [
+      "vacuum cleaner with hose attachment",
+      "stiff-bristle brush",
+      "damp cloth",
+      "screwdriver"
+    ],
+    "steps": [
+      "1. Disconnect the power to your HVAC system by switching off the circuit breaker to prevent any electrical hazards.",
+      "2. Remove the vent covers using a screwdriver, if necessary, and clean them with a damp cloth to remove dust and grime.",
+      "3. Use the stiff-bristle brush to gently scrub the inside of the ducts, dislodging accumulated dust and debris.",
+      "4. Vacuum the ducts thoroughly using the vacuum cleaner hose to remove any loosened dirt and debris from the ductwork.",
+      "5. Inspect the ducts for any signs of mold or excessive build-up; if you find mold, call a licensed professional for proper removal.",
+      "6. If airflow is still poor after cleaning, check for blockages in the ductwork or inspect the HVAC system for issues."
+    ],
+    "safety_info": "Always disconnect the power to your HVAC system before starting any maintenance work. Wear gloves to protect your hands from dust and potential allergens, and safety goggles to shield your eyes from debris. Be cautious of sharp edges when removing vent covers, and ensure adequate ventilation in the area you are working in to avoid inhaling dust.",
+    "tips": "Regular maintenance of your air ducts can prevent major issues down the line. Schedule a professional inspection of your air ducts every few years to ensure they are clean and in good condition. Use a high-efficiency particulate air (HEPA) filter in your HVAC system to help reduce dust and allergens. Avoid using products with harsh chemicals when cleaning, as they can introduce more pollutants into the air. For replacement parts, check local hardware stores or online retailers like Amazon or Home Depot."
+  }
+}

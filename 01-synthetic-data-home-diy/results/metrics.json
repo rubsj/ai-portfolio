@@ -89,5 +89,22 @@
       "poor_quality_tips": "60.0%"
     },
     "overall_agreement": "81.7%"
+  },
+  "combined_pipeline": {
+    "v1_original": {
+      "total_failures": 36,
+      "failure_rate": "20.0%"
+    },
+    "v2_generated": {
+      "total_failures": 8,
+      "failure_rate": "4.4%",
+      "reduction_vs_v1": "77.8%"
+    },
+    "v2_corrected": {
+      "total_failures": 0,
+      "failure_rate": "0.0%",
+      "reduction_vs_v1": "100.0%"
+    },
+    "target_80pct_met": true
   }
 }

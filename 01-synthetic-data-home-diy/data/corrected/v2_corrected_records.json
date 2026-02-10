@@ -1,0 +1,903 @@
+[
+  {
+    "trace_id": "3825f511-8806-4147-8ff6-08b38634252f",
+    "category": "appliance_repair",
+    "difficulty": "beginner",
+    "template_version": "v2_corrected",
+    "generation_timestamp": "2026-02-10T03:46:28.605308+00:00",
+    "model_used": "gpt-4o-mini",
+    "prompt_hash": "1e6681989020473d9856f6c834f49d36",
+    "record": {
+      "question": "How do I fix a leaking kitchen faucet?",
+      "answer": "To fix a leaking kitchen faucet, start by identifying the type of faucet you have (compression, cartridge, ball, or disc) since the repair method may differ. First, turn off the water supply to the faucet under the sink. Then, disconnect the water supply lines using an adjustable wrench or a pair of pliers. Carefully remove the faucet handle by unscrewing the screw at the back or bottom of the handle; you may need a flathead screwdriver to pry off a decorative cap. Once the handle is off, you can access the cartridge or compression washer, which is often the source of the leak. If it\u2019s a cartridge faucet, simply pull out the cartridge and replace it with a new one. For compression faucets, replace the rubber washer at the base of the valve. After the replacement, reassemble the faucet in reverse order, reconnect the supply lines, and turn the water supply back on to check for leaks. If the faucet continues to leak after replacing the cartridge or washer, inspect the O-rings and seals for wear or damage, as these can also cause leaks. If replacement parts are needed, local hardware stores, home improvement retailers, or online marketplaces like Amazon typically carry a wide selection of faucet parts. Bring the old part with you to ensure you get the correct size and type.",
+      "equipment_problem": "Leaking kitchen faucet",
+      "tools_required": [
+        "Adjustable wrench",
+        "Pliers",
+        "Flathead screwdriver",
+        "Phillips screwdriver"
+      ],
+      "steps": [
+        "Turn off the water supply to the faucet under the sink.",
+        "Disconnect the water supply lines using an adjustable wrench or pliers.",
+        "Remove the faucet handle by unscrewing the screw, using a flathead screwdriver if needed to pry off a cap.",
+        "Access the cartridge or compression washer by removing the handle and any retaining nuts.",
+        "Replace the cartridge or rubber washer as necessary, ensuring a snug fit.",
+        "Reassemble the faucet by reversing the disassembly steps, reconnect the water supply lines.",
+        "Turn the water supply back on and check for leaks. If leaks persist, inspect O-rings and seals."
+      ],
+      "safety_info": "Before starting the repair, ensure to turn off the water supply to avoid flooding. Wear gloves to protect your hands from sharp edges and dirt. Always have a towel handy to catch any water that may spill during the repair process.",
+      "tips": "To identify the correct replacement part, take the old cartridge or washer with you to the store. If the faucet continues to leak after the repair, check for mineral buildup around the faucet seals or consider replacing the entire faucet. For persistent leaks, inspect O-rings and seals for damage, and replace them if necessary. Regularly clean faucet aerators to prevent clogs and leaks."
+    }
+  },
+  {
+    "trace_id": "4cf2824e-aa79-4f2c-8edf-eba06ce11712",
+    "category": "appliance_repair",
+    "difficulty": "beginner",
+    "template_version": "v2",
+    "generation_timestamp": "2026-02-10T03:46:36.592538+00:00",
+    "model_used": "gpt-4o-mini",
+    "prompt_hash": "b8fae6e696f54e1033dd7c65788f9878",
+    "record": {
+      "question": "How can I fix a leaking kitchen faucet?",
+      "answer": "To fix a leaking kitchen faucet, start by identifying the source of the leak. Check if the leak is coming from the faucet handle or the spout. If it's from the handle, it may be due to a worn-out O-ring or cartridge. For a spout leak, the issue might be with the washer. First, turn off the water supply to the faucet, which is usually located under the sink. Next, disconnect the water lines using an adjustable wrench. You will need a flathead screwdriver and a Phillips screwdriver for this process. Remove the handle by loosening the screw underneath or at the back of the handle, then take off the decorative cap if necessary. After removing the handle, pull out the cartridge or stem to inspect it for damage. If it appears worn, replace it with a new one that matches the old part. Reassemble the faucet in reverse order, ensuring all parts are securely tightened. Finally, turn the water supply back on and test the faucet for leaks.",
+      "equipment_problem": "Leaking kitchen faucet",
+      "tools_required": [
+        "Adjustable wrench",
+        "Flathead screwdriver",
+        "Phillips screwdriver"
+      ],
+      "steps": [
+        "1. Turn off the water supply to the faucet by locating the shut-off valves under the sink and turning them clockwise until they are fully closed.",
+        "2. Use the adjustable wrench to disconnect the water supply lines from the faucet base. Place a towel or bucket underneath to catch any water that may spill.",
+        "3. Remove the handle of the faucet by loosening the screw located underneath or at the back of the handle. If there is a decorative cap, gently pry it off with a flathead screwdriver first.",
+        "4. Once the handle is off, pull out the cartridge or stem from the faucet assembly. Inspect it for any signs of wear or damage, such as cracks or mineral buildup.",
+        "5. If the cartridge or O-ring is damaged, take it to a hardware store to ensure you get an exact replacement. Install the new part in the same orientation as the old one.",
+        "6. Reassemble the faucet by replacing the handle and tightening the screw securely. Reconnect the water supply lines and ensure they are tight to prevent further leaks.",
+        "7. Turn the water supply back on and test the faucet to ensure there are no leaks and it operates properly."
+      ],
+      "safety_info": "Before starting any repair work, disconnect the power to the faucet if it has an electrical connection, and turn off the water supply valves located under the sink. Wear gloves to protect your hands from sharp edges and goggles to shield your eyes from any debris. Ensure the area is dry to avoid slipping and falling while working under the sink. If the faucet is still leaking after your repair, or if you encounter complications such as rusted parts that won\u2019t budge, it\u2019s best to call a licensed plumber.",
+      "tips": "When purchasing replacement parts, bring the old cartridge or O-ring with you to match the size and type. Avoid over-tightening screws when reassembling, as this can cause new leaks. Regularly check the faucet for signs of wear and replace components before they cause leaks, as preventative maintenance can save time and money."
+    }
+  },
+  {
+    "trace_id": "82cf0d26-8e5d-40cf-ad85-286460b0b708",
+    "category": "appliance_repair",
+    "difficulty": "intermediate",
+    "template_version": "v2",
+    "generation_timestamp": "2026-02-10T03:46:42.459019+00:00",
+    "model_used": "gpt-4o-mini",
+    "prompt_hash": "4167d7dcfd73660754e4b37451681735",
+    "record": {
+      "question": "How do I replace the water inlet valve on my washing machine?",
+      "answer": "To replace the water inlet valve on your washing machine, you first need to identify the specific problem. If your washer is not filling with water or is leaking from the valve area, these are signs that the valve may be defective. Begin by disconnecting the power to the washer and turning off the water supply to prevent leaks and electrical hazards. Next, remove the back panel of the washer, typically held by screws, to access the water inlet valve. Disconnect the hoses from the valve and detach the electrical connector. Install the new valve by reversing these steps: attach the electrical connector first, followed by the hoses, ensuring a tight fit to prevent leaks. Finally, reattach the back panel, turn the water supply back on, and plug the washer back in to test it. If the washer still does not fill or leaks, double-check the hose connections and ensure the new valve is functioning correctly.",
+      "equipment_problem": "Water inlet valve not functioning or leaking",
+      "tools_required": [
+        "Screwdriver",
+        "Pliers",
+        "Adjustable wrench"
+      ],
+      "steps": [
+        "Disconnect power to the washing machine by unplugging it from the wall.",
+        "Turn off the water supply to the washer at the source to prevent flooding.",
+        "Remove the back panel of the washing machine by unscrewing the screws holding it in place.",
+        "Locate the water inlet valve and detach the hoses and electrical connector from it.",
+        "Install the new water inlet valve by connecting the electrical connector and hoses securely.",
+        "Reattach the back panel, restore the water supply, and plug the washer back in to test."
+      ],
+      "safety_info": "Before starting, make sure to disconnect the power supply and turn off the water supply to avoid electrical shock and leaks. Wear gloves to protect your hands from sharp edges and goggles to shield your eyes from debris. Be cautious of any residual water in the hoses when disconnecting them, as it may spill.",
+      "tips": "When purchasing a replacement water inlet valve, ensure it is compatible with your washer model. A good source for parts is online retailers like RepairClinic or Amazon, or local appliance repair shops. Avoid over-tightening the hoses; hand-tightening is usually sufficient to prevent leaks. Keep track of all screws and small parts during disassembly to simplify reassembly."
+    }
+  },
+  {
+    "trace_id": "41284d9f-b5d1-4985-b845-74b22fcdc2ff",
+    "category": "appliance_repair",
+    "difficulty": "intermediate",
+    "template_version": "v2_corrected",
+    "generation_timestamp": "2026-02-10T03:46:47.449575+00:00",
+    "model_used": "gpt-4o-mini",
+    "prompt_hash": "dc031827cd76cc163f0060edbde491a8",
+    "record": {
+      "question": "How do I replace a faulty thermostat in my electric oven?",
+      "answer": "To replace a faulty thermostat in your electric oven, first, disconnect the power supply to the oven by unplugging it from the wall or turning off the circuit breaker. Remove the oven's back panel by unscrewing it with a screwdriver to expose the thermostat. The thermostat is typically located near the top of the oven cavity and will have two wires connected to it. Carefully disconnect these wires by gently pulling them off the terminals. Next, remove the screws or clips securing the thermostat in place and take it out. Install the new thermostat by reversing the process: secure it with screws or clips, reconnect the wires, and replace the back panel. Finally, restore power to the oven and check the temperature settings to ensure the new thermostat is functioning properly. If the new thermostat does not resolve the issue, inspect the wiring for any visible damage or loose connections. If everything looks intact, you may want to use a multimeter to test for continuity in the wiring or consult a licensed technician if you're unsure.",
+      "equipment_problem": "Faulty thermostat in electric oven",
+      "tools_required": [
+        "Screwdriver",
+        "Pliers"
+      ],
+      "steps": [
+        "Disconnect the power supply by unplugging the oven or turning off the circuit breaker.",
+        "Remove the back panel of the oven using a screwdriver to access the thermostat.",
+        "Carefully disconnect the wires connected to the thermostat.",
+        "Remove the screws or clips securing the thermostat and take it out.",
+        "Install the new thermostat by securing it with screws or clips and reconnecting the wires.",
+        "Replace the back panel and restore power to the oven."
+      ],
+      "safety_info": "Always ensure the oven is completely disconnected from power before beginning any repairs. Use gloves to protect your hands from sharp edges, and goggles to protect your eyes from any debris. Be cautious of any residual heat in the oven chamber. Also, be aware that electrical components can hold charge even after disconnection, so proceed with caution.",
+      "tips": "When purchasing a replacement thermostat, check the model number of your oven to ensure compatibility. You can usually find replacement thermostats at appliance parts stores, online retailers, or directly through the manufacturer. Avoid pulling on the wires too hard when disconnecting to prevent damage. If the new thermostat does not resolve the issue, inspect the wiring for damage and consider using a multimeter to check for continuity, or consult a licensed technician for further diagnosis."
+    }
+  },
+  {
+    "trace_id": "5898f0d2-2375-484f-a580-ca31d24a84a4",
+    "category": "appliance_repair",
+    "difficulty": "advanced",
+    "template_version": "v2",
+    "generation_timestamp": "2026-02-10T03:46:54.203667+00:00",
+    "model_used": "gpt-4o-mini",
+    "prompt_hash": "e8fa0ccc60bec672849a19f4cf49d4c3",
+    "record": {
+      "question": "How do I replace the door seal on my front-loading washing machine?",
+      "answer": "To replace the door seal on your front-loading washing machine, first, disconnect the power and water supply to the machine. This is crucial to ensure safety while working. Next, remove the front panel by unscrewing the screws typically located at the bottom. You might need a flathead screwdriver or a Phillips screwdriver for this. Once the panel is off, locate the door seal, which is usually attached with a clamp or screws. Carefully detach the old seal, making note of how it is installed. Install the new seal in the reverse order, ensuring it sits properly in the groove and is secured tightly. Reattach the front panel, turn the water and power back on, and run a short cycle to check for leaks.",
+      "equipment_problem": "Worn or damaged door seal on a front-loading washing machine.",
+      "tools_required": [
+        "Flathead screwdriver",
+        "Phillips screwdriver",
+        "Pliers"
+      ],
+      "steps": [
+        "Disconnect the power and water supply before starting any repairs to ensure safety.",
+        "Remove the screws from the front panel of the washing machine using a Phillips screwdriver and take the panel off to access the door seal.",
+        "Locate the door seal and remove the clamp or screws that hold it in place with a flathead screwdriver or pliers. Take care not to damage the surrounding components.",
+        "Install the new door seal by placing it into the groove, ensuring it is evenly seated all around, then reattach the clamp or screws to secure it.",
+        "Reattach the front panel of the washing machine and secure it with screws. Turn on the water supply and restore power, then run a short wash cycle to check for proper installation and leaks."
+      ],
+      "safety_info": "Always disconnect the washing machine from the power outlet and turn off the water supply before starting repairs. Use gloves to protect your hands from sharp edges and wear safety goggles to shield your eyes from any debris. Be cautious of the weight of the front panel when removing it, as it can be heavy and awkward to handle.",
+      "tips": "When purchasing a replacement seal, ensure it is compatible with your washing machine model by checking the manufacturer's specifications. To avoid future issues, regularly inspect the door seal for debris or wear and clean it with a mild detergent to prevent mold buildup. If you encounter any electrical components that seem faulty or if the machine does not operate correctly after the repair, it\u2019s best to consult a licensed professional rather than risk further damage."
+    }
+  },
+  {
+    "trace_id": "51e9e4db-39f8-4068-a00f-5b3698f407e7",
+    "category": "appliance_repair",
+    "difficulty": "advanced",
+    "template_version": "v2_corrected",
+    "generation_timestamp": "2026-02-10T03:47:03.982742+00:00",
+    "model_used": "gpt-4o-mini",
+    "prompt_hash": "78c23bd5ef5b488fa85d9f2e97ed6de2",
+    "record": {
+      "question": "How can I replace the door seal on my front-loading washing machine?",
+      "answer": "To replace the door seal on your front-loading washing machine, first, disconnect the power and water supply to the machine to prevent any electrical hazards or leaks. Next, remove the front panel by unscrewing the screws located at the bottom and gently pulling it off. Inspect the existing door seal for damage, which typically presents as tears, mold, or a loss of elasticity. Carefully pry the old seal out of its groove using a flathead screwdriver, taking care not to damage the drum. Once removed, clean the groove thoroughly to remove any debris or residue. Take the new seal, which you can purchase from appliance repair stores, online retailers like Amazon, or directly from the manufacturer\u2019s website, and align it with the groove, ensuring the lip of the seal is facing inward. To ensure proper alignment, start at the top of the door and work your way around, pressing the seal evenly into place to avoid any gaps. Once the seal is secured, reattach the front panel and secure it with screws. Finally, reconnect the power and water supply, and run a short cycle to check for leaks. If there are still leaks after replacing the seal, check the door latch alignment and consider replacing it if it\u2019s damaged, or inspect for any additional blockages or issues with the drum itself.",
+      "equipment_problem": "Damaged door seal on front-loading washing machine",
+      "tools_required": [
+        "Flathead screwdriver",
+        "Phillips screwdriver",
+        "Utility knife"
+      ],
+      "steps": [
+        "Disconnect the power and water supply to the washing machine.",
+        "Remove the front panel by unscrewing the screws at the bottom and gently pulling it off.",
+        "Inspect the existing door seal for damage and carefully pry it out with a flathead screwdriver.",
+        "Clean the groove thoroughly to remove any debris or residue.",
+        "Purchase a new seal from appliance repair stores, online retailers, or the manufacturer's website.",
+        "Align the new seal with the groove, starting at the top and working your way around, ensuring the lip faces inward and is pressed in evenly.",
+        "Reattach the front panel and secure it with screws.",
+        "Reconnect the power and water supply, and run a short cycle to check for leaks."
+      ],
+      "safety_info": "Ensure you are wearing gloves and safety goggles to protect against sharp edges and potential water spills. Disconnecting the power and water supply is crucial to avoid electrical shock or flooding.",
+      "tips": "When installing the new seal, ensure that the lip of the seal is fully seated in the groove by pressing it in firmly all around the door. Use a small amount of dish soap on the seal to help it slide into place easily without overstretching. Regularly check the seal for wear and tear to prevent leaks in the future."
+    }
+  },
+  {
+    "trace_id": "395e816e-1cdc-4e93-8de1-eceacab202e0",
+    "category": "plumbing_repair",
+    "difficulty": "beginner",
+    "template_version": "v2",
+    "generation_timestamp": "2026-02-10T03:47:12.577014+00:00",
+    "model_used": "gpt-4o-mini",
+    "prompt_hash": "cd09fceabffe7ea76374b227d0c7aee1",
+    "record": {
+      "question": "How do I fix a leaky faucet?",
+      "answer": "To fix a leaky faucet, first, ensure that you turn off the water supply to the faucet. This is usually done by turning the valve under the sink clockwise until it stops. Next, you will need to gather your tools: a basin wrench or adjustable wrench, a screwdriver (flathead and Phillips), and a towel for cleaning up spills.\n\n1. **Remove the Faucet Handle:** Use the screwdriver to take out the screw holding the handle in place, which may be located on the top or back of the handle. Lift the handle off gently to expose the inner components.\n\n2. **Examine the Cartridge or Washer:** Depending on your faucet type, you may find a cartridge or a rubber washer. If it\u2019s a cartridge faucet, pull the cartridge straight out. If it\u2019s a compression faucet, unscrew the packing nut to access the rubber washer. Check for wear or damage.\n\n3. **Replace the Damaged Parts:** Head to your local hardware store and purchase a replacement cartridge or rubber washer. These can usually be found in the plumbing section. Make sure to take the old part with you to ensure you get the right size.\n\n4. **Reassemble the Faucet:** Once you have the new part, install it by reversing the disassembly steps. Carefully place the new cartridge or washer into the faucet and secure it with the packing nut if it\u2019s a compression faucet. Replace the handle and screw it back in place.\n\n5. **Turn the Water Back On:** After reassembling, turn the water supply back on and check for leaks by running the faucet. If it still leaks, make sure everything is tightened correctly.\n\n6. **Clean Up:** Wipe any water spills with a towel to prevent slipping and keep the area tidy.",
+      "equipment_problem": "Leaky faucet",
+      "tools_required": [
+        "Basin wrench or adjustable wrench",
+        "Screwdriver (flathead and Phillips)",
+        "Towel"
+      ],
+      "steps": [
+        "Turn off the water supply to the faucet by turning the valve under the sink clockwise until it stops.",
+        "Remove the faucet handle by unscrewing the screw with a screwdriver and lifting it off gently to access the inner components.",
+        "Examine the cartridge or rubber washer inside the faucet for wear or damage.",
+        "Replace any damaged parts by purchasing a new cartridge or rubber washer from a local hardware store, bringing the old part for size reference.",
+        "Reassemble the faucet by reversing the disassembly steps, ensuring to tighten everything securely.",
+        "Turn the water supply back on and check for leaks by running the faucet."
+      ],
+      "safety_info": "Before starting any plumbing repair, always disconnect the water supply to avoid flooding and ensure safety. Wear gloves to protect your hands and goggles to protect your eyes from any splashes. Be cautious of sharp edges when handling tools and ensure that the work area is dry to prevent slipping. If you are unsure about the repair or if the leak persists after your attempt, call a licensed plumber for assistance.",
+      "tips": "Ensure you have the correct replacement part by taking the old one to the store. When reassembling, be sure not to overtighten screws, which can damage the faucet. Regularly check your faucets for leaks as a part of your home maintenance to catch issues early."
+    }
+  },
+  {
+    "trace_id": "a66efd7a-5a5f-45e3-a6b0-9d022c0fa8ef",
+    "category": "plumbing_repair",
+    "difficulty": "beginner",
+    "template_version": "v2",
+    "generation_timestamp": "2026-02-10T03:47:18.224075+00:00",
+    "model_used": "gpt-4o-mini",
+    "prompt_hash": "f44ca46deff647e2067d1a80507ccf66",
+    "record": {
+      "question": "How do I fix a leaky kitchen faucet?",
+      "answer": "To fix a leaky kitchen faucet, start by identifying the source of the leak, which is usually from the faucet handle or spout. The first step is to disconnect the water supply by turning off the valves under the sink. If you don\u2019t see any valves, turn off the main water supply. Next, put on gloves and goggles for protection. Use a screwdriver to remove the handle, which may involve loosening a screw or lifting off a decorative cap. Once the handle is off, inspect the O-ring or washer inside for wear and tear, which is often the cause of leaks. Replace these parts if they appear damaged; they can be found at a local hardware store or online. Reassemble the faucet by reversing the steps, turning the water supply back on, and checking for leaks. If the faucet still leaks after replacement, you may need to call a licensed plumber for further inspection.",
+      "equipment_problem": "Leaky kitchen faucet",
+      "tools_required": [
+        "Screwdriver",
+        "Pliers",
+        "Gloves",
+        "Goggles"
+      ],
+      "steps": [
+        "Turn off the water supply to the faucet by locating the valves under the sink and turning them clockwise. If no valves are present, turn off the main water supply.",
+        "Put on gloves and goggles for safety before starting the repair.",
+        "Using a screwdriver, remove the handle of the faucet. Depending on your faucet model, you might need to remove a screw or lift a decorative cap to access the screw.",
+        "Once the handle is off, check the O-ring or washer inside the faucet for any signs of wear or damage. These parts are usually the cause of leaks.",
+        "If the O-ring or washer is damaged, take it to a hardware store to find an exact replacement. If they look fine, reassemble the faucet and check the connection for any other issues."
+      ],
+      "safety_info": "Always turn off the water supply before starting any plumbing repair. Wear gloves and goggles to protect yourself from water splashes and sharp edges.",
+      "tips": "When replacing the O-ring or washer, take the old part with you to the hardware store to ensure you purchase the correct size. Consider applying plumber's grease to the new O-ring or washer to ensure a better seal and ease of installation. If you encounter corrosion or stubborn parts, use pliers gently to avoid damaging the faucet."
+    }
+  },
+  {
+    "trace_id": "738f3c79-dd3b-4d24-a7ed-1d8471b57a8c",
+    "category": "plumbing_repair",
+    "difficulty": "intermediate",
+    "template_version": "v2",
+    "generation_timestamp": "2026-02-10T03:47:23.669120+00:00",
+    "model_used": "gpt-4o-mini",
+    "prompt_hash": "09ebf1434b2adef40e9ea4a1c5265fbd",
+    "record": {
+      "question": "How do I fix a leaking kitchen faucet?",
+      "answer": "To fix a leaking kitchen faucet, first identify the type of faucet you have (compression, cartridge, or ball faucet) as this will guide your repair approach. Begin by disconnecting the water supply under the sink to prevent any flooding. Use a wrench to remove the handle, which may require you to remove a decorative cap to access the screw. Once the handle is off, you can inspect the washer or cartridge for damage. Replace any worn washers with a new one that matches in size, or if it's a cartridge faucet, replace the cartridge entirely. Reassemble the faucet in the reverse order of disassembly and turn the water supply back on. Test the faucet for leaks before finishing up your work.",
+      "equipment_problem": "Leaking kitchen faucet",
+      "tools_required": [
+        "Adjustable wrench",
+        "Screwdriver",
+        "Plumber's tape",
+        "Bucket"
+      ],
+      "steps": [
+        "Disconnect the water supply valves under the sink to prevent flooding.",
+        "Use a bucket to catch any water that may spill when you remove the faucet handle.",
+        "Remove the handle by loosening the screw and pulling it off, which may require removing a decorative cap.",
+        "Inspect the washer or cartridge for wear and replace it if damaged, ensuring you have the correct size.",
+        "Reassemble the faucet and turn the water supply back on, checking for leaks."
+      ],
+      "safety_info": "Always disconnect the water supply before starting any plumbing repair work to avoid flooding. Wear gloves to protect your hands from sharp edges and goggles to shield your eyes from debris. Be cautious of any residual water in the pipes when removing parts, as it may spill out unexpectedly. If you're unsure about the type of faucet or the repair process, consult a licensed plumber before proceeding.",
+      "tips": "When purchasing replacement parts, take the old washer or cartridge with you to ensure you get the right size. Apply plumber's tape to threads when reassembling to prevent future leaks. Keep a towel handy to wipe up any spills during the repair. If the faucet continues to leak after replacing parts, the issue may be with the valve seat or the faucet itself, and a professional may need to be called."
+    }
+  },
+  {
+    "trace_id": "c5d9daf7-4059-486e-833c-4e9466c0f363",
+    "category": "plumbing_repair",
+    "difficulty": "intermediate",
+    "template_version": "v2",
+    "generation_timestamp": "2026-02-10T03:47:30.796591+00:00",
+    "model_used": "gpt-4o-mini",
+    "prompt_hash": "7d9ed81399b905fc44afff47523be126",
+    "record": {
+      "question": "How do I replace a leaky kitchen faucet cartridge?",
+      "answer": "To replace a leaky kitchen faucet cartridge, start by identifying the type of faucet you have (compression, cartridge, ball, or ceramic disk) as this determines the cartridge type. After identifying it, first disconnect the water supply by turning off the shut-off valves under the sink. If you can't find these, turn off the main water supply for your home. Next, put on safety goggles and gloves to protect yourself from any debris and water. Remove the handle by loosening the screw underneath or at the back (you may need a screwdriver or an adjustable wrench). Once the handle is off, use a wrench to unscrew the retaining nut that holds the cartridge in place. Pull out the old cartridge and take it with you to the hardware store to ensure you get an exact match. Install the new cartridge by reversing the steps: insert it into the faucet, secure it with the retaining nut, replace the handle, and reconnect the water supply. Turn the water back on and check for leaks. If the faucet still leaks after replacing the cartridge, the issue may lie with the O-rings or seals, which also need to be replaced.",
+      "equipment_problem": "Leaky kitchen faucet",
+      "tools_required": [
+        "screwdriver",
+        "adjustable wrench",
+        "bucket",
+        "towel"
+      ],
+      "steps": [
+        "Identify the type of faucet to determine the correct cartridge needed.",
+        "Turn off the water supply to the faucet at the shut-off valves under the sink or the main water supply.",
+        "Put on safety goggles and gloves to protect from water and debris.",
+        "Remove the faucet handle by loosening the screw and pulling it off.",
+        "Unscrew the retaining nut holding the cartridge in place using an adjustable wrench.",
+        "Carefully pull out the old cartridge and take it to the hardware store for a match.",
+        "Insert the new cartridge in the same orientation as the old one, secure it with the retaining nut, and replace the handle.",
+        "Reconnect the water supply and turn it back on, then check for leaks."
+      ],
+      "safety_info": "Always turn off the water supply before starting any plumbing repair. Wear gloves and goggles to protect against water and debris. Be cautious of sharp edges on faucet components and ensure the area is dry to avoid slips.",
+      "tips": "When purchasing a replacement cartridge, take the old one with you to ensure a perfect fit. Use a bucket to catch any residual water when removing the faucet components. If the faucet still leaks after replacing the cartridge, inspect the O-rings and seals closely, as they may also need replacing."
+    }
+  },
+  {
+    "trace_id": "45902e09-a781-4934-92fa-378a6f76047f",
+    "category": "plumbing_repair",
+    "difficulty": "advanced",
+    "template_version": "v2_corrected",
+    "generation_timestamp": "2026-02-10T03:47:37.748244+00:00",
+    "model_used": "gpt-4o-mini",
+    "prompt_hash": "80b991bdce007033fa80d7da4ae7d3b8",
+    "record": {
+      "question": "How do I repair a leaking pipe joint in my basement plumbing?",
+      "answer": "To repair a leaking pipe joint, start by identifying the leak. Look for signs of water accumulation or dampness around the joint. Once you locate the leak, disconnect the water supply to prevent any flooding during the repair. Gather your tools: a pipe wrench and plumber's tape. Carefully remove the fittings at the joint using the pipe wrench. Make sure not to damage the pipes. After removing the fittings, clean the area thoroughly to remove any debris or old sealant. If the joint is threaded, wrap plumber's tape around the threads of the pipe and reassemble the joint. For a soldered joint, if you are not comfortable with soldering, consider using a push-fit connector, which is easier to install and requires no special skills. Once reassembled, turn the water supply back on and check for leaks. If the leak persists, it may indicate a deeper issue that requires a professional.",
+      "equipment_problem": "Leaking pipe joint in basement plumbing",
+      "tools_required": [
+        "Pipe wrench",
+        "Plumber's tape"
+      ],
+      "steps": [
+        "Identify the leaking pipe joint by checking for moisture or dripping water.",
+        "Disconnect the water supply to the plumbing system before starting repairs.",
+        "Use a pipe wrench to carefully remove the fittings at the joint without damaging the pipes.",
+        "Clean the joint area thoroughly to remove any debris or old sealant.",
+        "If the joint is threaded, apply plumber's tape to the threads before reassembling the joint. For soldered joints, use a push-fit connector for an easier repair.",
+        "Reassemble the joint and fittings, ensuring a tight fit without overtightening.",
+        "Turn the water supply back on and check for leaks; if it continues to leak, consider calling a licensed plumber."
+      ],
+      "safety_info": "Before starting any plumbing repair, always disconnect the water supply to prevent flooding. Wear gloves and safety goggles to protect against sharp edges and debris. Be cautious of any standing water in the area, as it can present electrical hazards if there are any exposed electrical components nearby. If you are uncomfortable or unsure at any point, it is safer to call a licensed plumbing professional rather than risk further damage or personal injury.",
+      "tips": "Keep extra plumber's tape on hand to ensure a tight seal on threaded joints. When tightening the fittings, avoid overtightening, as this can strip threads or crack fittings. Regularly check your plumbing for signs of wear to prevent leaks before they become a problem. If using a push-fit connector, ensure it matches the pipe size and material for a proper seal."
+    }
+  },
+  {
+    "trace_id": "01385eb6-60c0-47bc-be8c-a911b4f3f4fd",
+    "category": "plumbing_repair",
+    "difficulty": "advanced",
+    "template_version": "v2",
+    "generation_timestamp": "2026-02-10T03:47:44.792627+00:00",
+    "model_used": "gpt-4o-mini",
+    "prompt_hash": "6ad079a6548d238ff56f45d2d92cc654",
+    "record": {
+      "question": "How do I repair a leaking toilet tank that is causing constant running water?",
+      "answer": "To repair a leaking toilet tank, start by identifying the source of the leak, which is often from the tank-to-bowl gasket, flush valve, or the fill valve. First, disconnect the water supply line by turning off the water at the shut-off valve and flushing the toilet to empty the tank. Use a sponge to soak up any remaining water in the tank, and then check for cracks or damage to the tank itself. If the leak is from the tank-to-bowl gasket, you\u2019ll need to replace it; if from the flush valve or fill valve, those parts will need to be replaced as well. After identifying the part, purchase a replacement from your local hardware store or home improvement center. Follow the installation instructions included with the part, ensuring all connections are tight. If the leak persists after replacement, you may need to recheck the installation or consult a professional plumber for further assistance.",
+      "equipment_problem": "Leaking toilet tank causing constant running water",
+      "tools_required": [
+        "Adjustable wrench",
+        "Screwdriver",
+        "Bucket",
+        "Sponge"
+      ],
+      "steps": [
+        "Disconnect the water supply line by turning off the shut-off valve and flushing the toilet to empty the tank.",
+        "Use a sponge to soak up any remaining water in the tank, and check for cracks or damage.",
+        "If the leak is from the tank-to-bowl gasket, remove the tank, replace the gasket, and reattach it securely.",
+        "If the leak is from the flush valve or fill valve, remove the old parts using your wrench and screwdriver, and install the new parts as per the instructions. Tighten all connections appropriately."
+      ],
+      "safety_info": "Always turn off the water supply and disconnect the water line before starting any work on the toilet. Wear gloves to protect your hands from sharp edges and potential contaminants. Goggles are recommended to protect your eyes from debris. Be cautious of the possibility of water spilling during the repair process, which can create a slip hazard. If you encounter cracked porcelain in the tank or complex plumbing configurations, call a licensed plumber instead of proceeding with the repair yourself.",
+      "tips": "When reattaching the tank, ensure that the bolts are tightened evenly to avoid stress on the porcelain. Using plumber\u2019s tape on threaded connections can help prevent future leaks. Regular maintenance can prevent issues; consider replacing the tank-to-bowl gasket every few years as part of your home upkeep."
+    }
+  },
+  {
+    "trace_id": "2423a9f5-e119-4d8f-94d6-7282b9ecdd0c",
+    "category": "electrical_repair",
+    "difficulty": "beginner",
+    "template_version": "v2",
+    "generation_timestamp": "2026-02-10T03:47:53.603208+00:00",
+    "model_used": "gpt-4o-mini",
+    "prompt_hash": "f3c174caaefdcf4f2c1e9d68cea0bff3",
+    "record": {
+      "question": "How do I replace a faulty light switch in my home?",
+      "answer": "To replace a faulty light switch, first ensure your safety by turning off the power to the switch at the circuit breaker. Then, use a screwdriver to remove the cover plate by unscrewing it. Next, with the power off, use the screwdriver to detach the switch from the electrical box by removing the screws holding it in place. Carefully pull the switch out to expose the wires. Take note of how the wires are connected to the switch (you can take a photo if necessary). Disconnect the wires from the old switch and connect them to the new switch in the same configuration. Secure the new switch back into the electrical box, replace the cover plate, and turn the power back on at the circuit breaker. Finally, test the switch to ensure it is working properly.",
+      "equipment_problem": "Faulty light switch causing flickering or not functioning at all.",
+      "tools_required": [
+        "Screwdriver",
+        "Pliers"
+      ],
+      "steps": [
+        "Turn off the circuit breaker for the light switch to ensure safety. Verify that the power is off by trying to turn the light on.",
+        "Use a screwdriver to remove the cover plate by unscrewing it carefully.",
+        "Remove the screws that hold the light switch in the electrical box using the screwdriver.",
+        "Gently pull the switch out of the box to expose the wiring connected to it.",
+        "Note the wiring configuration of the old switch. Disconnect the wires using pliers if necessary.",
+        "Connect the wires to the new switch in the same configuration as the old one. Make sure the connections are tight and secure.",
+        "Carefully push the switch back into the electrical box and secure it with screws.",
+        "Replace the cover plate and screw it back in place.",
+        "Turn the circuit breaker back on and test the switch to ensure it functions properly."
+      ],
+      "safety_info": "1. Always turn off the power at the circuit breaker before starting any electrical work. 2. Wear safety gloves to protect your hands and goggles to protect your eyes from dust or debris. 3. Be cautious of exposed wires and ensure they are not touching each other or any metal surfaces. 4. If you are unsure about any steps, or if the wiring looks frayed or damaged, call a licensed electrician for help.",
+      "tips": "Make sure to take a picture of the wiring before disconnecting it to ensure you connect the new switch correctly. Double-check that the circuit breaker is turned off by testing the light switch before beginning work. When purchasing a replacement switch, choose a switch that matches the amperage and voltage of the old one. If you notice any burning smells or visible damage to the wires, do not attempt the repair yourself and contact a professional."
+    }
+  },
+  {
+    "trace_id": "7951d4d2-4017-475b-86e6-e94c641e5e22",
+    "category": "electrical_repair",
+    "difficulty": "beginner",
+    "template_version": "v2",
+    "generation_timestamp": "2026-02-10T03:48:02.505947+00:00",
+    "model_used": "gpt-4o-mini",
+    "prompt_hash": "26c097d8d7a4ba969119f5cc6e3490c0",
+    "record": {
+      "question": "How do I replace a broken light switch?",
+      "answer": "To replace a broken light switch, start by ensuring your safety. Firstly, turn off the power to the switch at the circuit breaker. Use a flathead screwdriver to remove the cover plate by unscrewing the screws. Once the cover is off, use a Phillips screwdriver to remove the screws securing the switch to the electrical box. Carefully pull the switch out from the wall to expose the wires attached to it. Take note of how the wires are connected to the switch, as you'll need to replicate this on the new switch. Disconnect the wires from the old switch by unscrewing them. Connect the wires to the new switch in the same configuration, ensuring that the screws are tight and secure. After the wires are attached, push the switch back into the box, secure it with screws, and replace the cover plate. Finally, turn the power back on at the circuit breaker and test the switch to ensure it works properly.",
+      "equipment_problem": "Broken light switch that doesn't function properly.",
+      "tools_required": [
+        "Flathead screwdriver",
+        "Phillips screwdriver"
+      ],
+      "steps": [
+        "Turn off the power to the switch at the circuit breaker.",
+        "Use a flathead screwdriver to remove the cover plate by unscrewing the screws.",
+        "Unscrew the screws securing the switch to the electrical box with a Phillips screwdriver.",
+        "Carefully pull the switch out from the wall to expose the connected wires.",
+        "Take note of how the wires are connected to the switch before disconnecting them by unscrewing the wires.",
+        "Connect the wires to the new switch in the same configuration as noted earlier.",
+        "Push the switch back into the box and secure it with screws.",
+        "Replace the cover plate and screw it in place.",
+        "Turn the power back on at the circuit breaker and test the switch."
+      ],
+      "safety_info": "Before starting any electrical work, always turn off the power at the circuit breaker to prevent electrical shock. Use gloves to protect your hands and wear safety goggles to protect your eyes from dust or debris. Be cautious of exposed wires and ensure they are not touching each other or any metal surfaces during the process. If you feel uncomfortable or unsure at any point, call a licensed electrician for assistance.",
+      "tips": "To ensure a proper connection, use a wire stripper to remove any damaged insulation from the wire ends before reconnecting them to the new switch. Avoid touching any metal parts of the switch while the power is on, and double-check that the power is completely off before starting your work. Regularly check your light switches for any signs of wear or damage to prevent future issues."
+    }
+  },
+  {
+    "trace_id": "5ddf7601-889f-4d85-8be4-1156c76d6a58",
+    "category": "electrical_repair",
+    "difficulty": "intermediate",
+    "template_version": "v2",
+    "generation_timestamp": "2026-02-10T03:48:11.419260+00:00",
+    "model_used": "gpt-4o-mini",
+    "prompt_hash": "7d06248326a975494d3ba55a2ba3651e",
+    "record": {
+      "question": "How do I replace a faulty light switch in my home?",
+      "answer": "To replace a faulty light switch, start by identifying the switch that is not functioning correctly. It may feel warm to the touch, have a flickering light, or simply not turn on. Next, ensure that you turn off the power to the circuit at the circuit breaker to prevent any electrical shock. After confirming that the power is off, put on personal protective equipment: insulated gloves and safety goggles. Then, remove the cover plate by unscrewing it, and unscrew the switch from the electrical box. Carefully pull the switch out, taking note of how the wires are connected. Typically, there will be two wires connected to the switch; if there is a ground wire, it will be attached to a green screw. Replace the old switch with the new one by connecting the wires to the same terminals as they were on the old switch. Secure the switch back into the box, replace the cover plate, and turn the power back on at the breaker. Test the switch to make sure it operates properly. If it does not work, double-check your connections and ensure the new switch is functioning. If you're still having issues, it may be best to call a licensed electrician as there could be deeper wiring problems.",
+      "equipment_problem": "Faulty light switch",
+      "tools_required": [
+        "screwdriver",
+        "insulated gloves",
+        "safety goggles"
+      ],
+      "steps": [
+        "1. Identify the faulty light switch that is warm, flickering, or non-responsive.",
+        "2. Turn off the power to the circuit at the circuit breaker, ensuring it is completely off.",
+        "3. Put on insulated gloves and safety goggles for protection.",
+        "4. Remove the cover plate by unscrewing it with a screwdriver.",
+        "5. Unscrew the light switch from the electrical box and gently pull it out to expose the wires.",
+        "6. Take note of the wiring configuration, especially which wires connect to which terminals.",
+        "7. Disconnect the old switch and connect the new switch to the same terminals, ensuring a secure fit.",
+        "8. Push the switch back into the box and secure it with screws, then replace the cover plate.",
+        "9. Turn the power back on at the breaker and test the switch."
+      ],
+      "safety_info": "Always turn off the power to the circuit at the breaker before starting work. Wear insulated gloves and safety goggles to protect against electrical shock or debris. Be aware that the wires may still hold a charge if not properly disconnected, so handle them carefully. If you encounter any unexpected wiring or feel uncertain at any point, call a licensed electrician.",
+      "tips": "Ensure you purchase a switch that matches the amperage and voltage of your existing switch. Label wires if you are unsure of where they connect. Avoid touching any exposed wires until you are certain the power is off. If you have older wiring, consider having a professional inspect it for safety."
+    }
+  },
+  {
+    "trace_id": "1bbf42c3-dc16-4f45-aaa6-3ffa9e0e5cf5",
+    "category": "electrical_repair",
+    "difficulty": "intermediate",
+    "template_version": "v2",
+    "generation_timestamp": "2026-02-10T03:48:18.630853+00:00",
+    "model_used": "gpt-4o-mini",
+    "prompt_hash": "6cff63b05eb6b1c9c14afda5e4999b13",
+    "record": {
+      "question": "How do I replace a faulty light switch in my home?",
+      "answer": "To replace a faulty light switch, first, disconnect the power at the circuit breaker to ensure safety. Use a flathead screwdriver to remove the faceplate by unscrewing the screws. Next, take a Phillips screwdriver to remove the screws holding the switch in place. Carefully pull the switch out of the electrical box, and note how the wires are connected (you may want to take a picture for reference). Disconnect the wires from the old switch by unscrewing the terminal screws. If the wires are attached with push-in connections, gently pull them out. Replace the old switch with the new one by connecting the wires in the same configuration as before. Secure the switch back into the electrical box with screws, reattach the faceplate, and finally turn the power back on at the breaker to test the new switch.",
+      "equipment_problem": "Faulty light switch causing flickering or not working at all.",
+      "tools_required": [
+        "Flathead screwdriver",
+        "Phillips screwdriver"
+      ],
+      "steps": [
+        "Disconnect the power at the circuit breaker to ensure safety.",
+        "Remove the faceplate of the switch using a flathead screwdriver.",
+        "Unscrew and remove the faulty switch using a Phillips screwdriver.",
+        "Note the wiring configuration of the old switch for reference.",
+        "Disconnect the wires from the old switch and connect them to the new switch as per the original configuration.",
+        "Secure the new switch in the electrical box and reattach the faceplate.",
+        "Restore power at the circuit breaker and test the new switch."
+      ],
+      "safety_info": "Always disconnect power at the circuit breaker before starting any electrical work. Wear safety goggles and insulated gloves to protect against electrical shock. Be aware of any exposed wiring and ensure the area is dry to avoid electrical hazards. If you encounter any burnt wires or if the switch continues to fail, call a licensed electrician immediately.",
+      "tips": "When purchasing a new switch, ensure it matches the type of switch you are replacing (e.g., single pole, three-way). Use a camera to document the wiring setup for easier reinstallation. Avoid over-tightening screws as this can damage the switch. Regularly check your switches for signs of wear or overheating to prevent future issues."
+    }
+  },
+  {
+    "trace_id": "379f158c-67ae-401b-9b64-4714ed9d490a",
+    "category": "electrical_repair",
+    "difficulty": "advanced",
+    "template_version": "v2",
+    "generation_timestamp": "2026-02-10T03:48:26.674798+00:00",
+    "model_used": "gpt-4o-mini",
+    "prompt_hash": "357a277261cb68d806ed65b11c0396bf",
+    "record": {
+      "question": "How do I replace a faulty electrical outlet?",
+      "answer": "To replace a faulty electrical outlet, start by identifying the issue, which could be frequent tripping of the circuit breaker, burning smell, or physical damage to the outlet itself. Before beginning any work, **disconnect power at the breaker box** to ensure complete safety. Wear **insulated gloves and safety goggles** to protect against electrical shocks and debris. Using a flathead screwdriver, remove the outlet cover plate, and then use a Phillips screwdriver to detach the outlet from the electrical box. Carefully pull the outlet out to expose the wiring. Take note of how the wires are connected (you can take a photo for reference). Disconnect the wires from the old outlet and connect them to the new outlet in the same configuration: black (or red) wires to the brass screws, white wires to the silver screws, and the ground wire (green or bare) to the green screw. Once the new outlet is wired, carefully tuck it back into the box and reattach it with the screws. Replace the cover plate and restore power at the breaker box. Test the outlet with a lamp or a voltage tester. If it doesn\u2019t work, double-check your connections and ensure the breaker is reset. If the outlet still fails to function, or if you're unsure about any steps, **call a licensed electrician** to avoid hazards. Frequent issues include loose connections or incorrect wiring, so always ensure your connections are tight and follow the color codes properly. Avoid overloading outlets with too many devices, which can lead to overheating and damage.",
+      "equipment_problem": "Faulty electrical outlet that may cause tripping or not function at all.",
+      "tools_required": [
+        "Flathead screwdriver",
+        "Phillips screwdriver",
+        "Insulated gloves",
+        "Safety goggles"
+      ],
+      "steps": [
+        "Disconnect power at the breaker box before starting any work.",
+        "Wear insulated gloves and safety goggles for protection.",
+        "Remove the outlet cover plate using a flathead screwdriver.",
+        "Unscrew the outlet from the electrical box with a Phillips screwdriver and gently pull it out to access the wiring.",
+        "Take a photo of the wiring for reference before disconnecting the old outlet.",
+        "Disconnect the wires from the old outlet and connect them to the new outlet in the same configuration: black/red to brass, white to silver, ground to green.",
+        "Carefully tuck the new outlet back into the box and secure it with screws.",
+        "Replace the cover plate and restore power at the breaker box, then test the outlet with a lamp or voltage tester."
+      ],
+      "safety_info": "Always disconnect power at the breaker box before starting any electrical work. Wear insulated gloves and safety goggles while working to prevent electrical shocks and debris injuries. If you feel unsure about any part of the repair, or if the outlet does not work after replacement, call a licensed electrician immediately.",
+      "tips": "Ensure the power is completely off by using a voltage tester before touching any wires. Use a photo reference for wiring connections to avoid mistakes. Tighten all connections securely to prevent future issues."
+    }
+  },
+  {
+    "trace_id": "1630c42e-dd3f-4db2-9842-1d1a7219e788",
+    "category": "electrical_repair",
+    "difficulty": "advanced",
+    "template_version": "v2",
+    "generation_timestamp": "2026-02-10T03:48:43.467596+00:00",
+    "model_used": "gpt-4o-mini",
+    "prompt_hash": "acb45d04be054d0df7c819f012b0358e",
+    "record": {
+      "question": "How can I replace a faulty ceiling light fixture in my home?",
+      "answer": "To replace a faulty ceiling light fixture, start by identifying the issue. If the light does not turn on, check the bulb first; if it\u2019s not the bulb, the fixture itself may be faulty. Before starting, ensure you disconnect power at the circuit breaker to prevent any electrical shocks. Wear rubber gloves and safety goggles to protect yourself. Use a screwdriver to remove the screws holding the existing fixture in place, then gently pull it down to expose the wiring. Disconnect the wires by unscrewing the wire nuts and noting which wires connect to each other (typically black to black, white to white, and green or bare to ground). Purchase a compatible replacement fixture from a local hardware store or online retailer. When connecting the new fixture, match the wires as before and secure them with wire nuts. Once everything is reconnected, carefully tuck the wires back into the ceiling box and mount the new fixture in place. If the light still does not work after the replacement, check the circuit breaker again and ensure the fixture is correctly wired. If you\u2019re uncomfortable with any step, or if the breaker trips again, call a licensed electrician for assistance.",
+      "equipment_problem": "Faulty ceiling light fixture that does not turn on.",
+      "tools_required": [
+        "Screwdriver",
+        "Wire nuts",
+        "Rubber gloves",
+        "Safety goggles"
+      ],
+      "steps": [
+        "Disconnect power at the circuit breaker before starting any work.",
+        "Remove the existing fixture by unscrewing the screws holding it in place.",
+        "Carefully pull down the fixture to expose the wiring and disconnect the wires from the old fixture using wire nuts.",
+        "Purchase a compatible replacement light fixture from a hardware store or online.",
+        "Connect the new fixture by matching the wires (black to black, white to white, and ground to ground) and secure with wire nuts."
+      ],
+      "safety_info": "Always disconnect power at the circuit breaker before starting work. Wear rubber gloves and safety goggles to protect against electrical shocks and falling debris. Be aware of the risk of short circuits; if you smell burning or see sparks, disconnect the power immediately and call a professional.",
+      "tips": "When purchasing a new light fixture, ensure it is rated for the wattage of the bulbs you plan to use. Avoid over-tightening wire nuts, as this can damage the wire connections. Label the wires with tape if needed to ensure correct reconnection. If unsure about wiring colors, consult the fixture\u2019s manual or a professional."
+    }
+  },
+  {
+    "trace_id": "37b3b238-36b8-4fe1-ac72-18996ccf8ec3",
+    "category": "hvac_maintenance",
+    "difficulty": "beginner",
+    "template_version": "v2",
+    "generation_timestamp": "2026-02-10T03:48:50.225312+00:00",
+    "model_used": "gpt-4o-mini",
+    "prompt_hash": "7584da9c5ffc49b7b1bd347bc1b9d8b4",
+    "record": {
+      "question": "How do I replace the air filter in my HVAC system?",
+      "answer": "Replacing the air filter in your HVAC system is a straightforward task that can improve your system's efficiency and indoor air quality. First, ensure you have the correct replacement filter by checking the size needed, which is usually printed on the side of the existing filter. Begin by turning off the HVAC system at the thermostat and then disconnecting power to the unit to avoid any electrical hazards. Next, put on safety gloves and goggles to protect yourself from dust and debris. Locate the filter slot, which is often found near the air return duct. Carefully slide out the old filter; it may have dust buildup, so do this gently to avoid creating a mess. Dispose of the old filter properly. Insert the new filter, ensuring the airflow arrows on the filter are pointing in the correct direction, usually towards the blower. Once in place, reconnect power to the HVAC unit and turn the system back on. Finally, check the air flow to ensure it is operating correctly. If your HVAC system still seems inefficient or you notice unusual noises after replacing the filter, it may require further inspection or professional assistance.",
+      "equipment_problem": "Dirty or clogged air filter in HVAC system",
+      "tools_required": [
+        "screwdriver",
+        "gloves",
+        "goggles"
+      ],
+      "steps": [
+        "Turn off the HVAC system at the thermostat and then disconnect power to the unit for safety.",
+        "Put on safety gloves and goggles to protect yourself from dust.",
+        "Check the size of the existing air filter, which is usually printed on the side of the filter.",
+        "Locate the filter slot, typically near the air return duct, and gently slide out the old filter.",
+        "Dispose of the old filter properly and avoid creating a mess by doing this carefully.",
+        "Insert the new air filter, ensuring the airflow arrows are pointing in the right direction (towards the blower).",
+        "Reconnect power to the HVAC unit and turn the system back on.",
+        "Check the airflow to ensure it is operating correctly."
+      ],
+      "safety_info": "Always disconnect power to the HVAC unit before starting any work. Wear gloves and goggles to protect yourself from dust and debris.",
+      "tips": "Make sure to check the size of the filter before buying a replacement to avoid issues. Regularly replacing your filter every 1-3 months can help maintain efficiency and air quality."
+    }
+  },
+  {
+    "trace_id": "5185a7a6-8332-473e-a66b-9877f52a926c",
+    "category": "hvac_maintenance",
+    "difficulty": "beginner",
+    "template_version": "v2",
+    "generation_timestamp": "2026-02-10T03:48:59.009813+00:00",
+    "model_used": "gpt-4o-mini",
+    "prompt_hash": "21d9bee75067657a6c6c288318436b70",
+    "record": {
+      "question": "How do I clean the air filter in my HVAC system?",
+      "answer": "Cleaning the air filter in your HVAC system is essential for maintaining efficiency and air quality. First, turn off the power to your HVAC system at the circuit breaker to ensure safety. Next, locate the air filter; it is usually found in the return air duct or near the blower compartment. Remove the filter by gently sliding it out of its slot. Inspect the filter for dust and debris; if it's dirty, you can either wash it with mild soap and water or replace it with a new filter. Make sure to let it dry completely before reinstalling. Once cleaned or replaced, slide the filter back into its slot, ensuring it's fitted snugly. Finally, restore power to your HVAC system and check for proper airflow. This task should be done every 1-3 months depending on usage and the presence of pets or dust in your home.",
+      "equipment_problem": "Dirty air filter causing reduced airflow and efficiency.",
+      "tools_required": [
+        "screwdriver",
+        "vacuum cleaner",
+        "soap and water",
+        "clean cloth"
+      ],
+      "steps": [
+        "1. Disconnect power to your HVAC system by turning off the circuit breaker to prevent any accidents while working.",
+        "2. Locate the air filter; it is typically found in the return air duct or close to the furnace or air handler.",
+        "3. Remove the air filter by gently sliding it out of its compartment; take care not to damage any components.",
+        "4. Inspect the filter for dirt and dust build-up. If it is reusable, vacuum the surface to remove debris, or wash it with soap and water and let it dry completely.",
+        "5. If replacing, buy a compatible filter from a local hardware store or online, then install it by sliding it back into the compartment, ensuring it fits snugly.",
+        "6. Restore power to the HVAC system and turn it on to check for proper airflow."
+      ],
+      "safety_info": "Always turn off power to the HVAC system at the circuit breaker before performing any maintenance. Use gloves to protect your hands from dust and debris, and goggles if you are using a vacuum to avoid eye irritation. If you encounter any electrical issues or if the filter does not fit properly, contact a licensed HVAC professional for assistance.",
+      "tips": "Check the filter every month, especially during peak usage seasons (summer and winter). Use a filter with a higher MERV rating for better air quality if allergies are a concern. Avoid using too much soap when washing the filter to prevent residue build-up."
+    }
+  },
+  {
+    "trace_id": "fdad91e5-90b7-4d63-a445-09610146c116",
+    "category": "hvac_maintenance",
+    "difficulty": "intermediate",
+    "template_version": "v2_corrected",
+    "generation_timestamp": "2026-02-10T03:49:07.533738+00:00",
+    "model_used": "gpt-4o-mini",
+    "prompt_hash": "619dda2aaac3d58371db96245a0aa955",
+    "record": {
+      "question": "How do I clean and maintain my HVAC air ducts?",
+      "answer": "Cleaning and maintaining your HVAC air ducts is essential for optimal airflow and indoor air quality. First, disconnect the power to your HVAC system to ensure safety. You can usually do this by switching off the circuit breaker. Next, gather your tools: a vacuum cleaner with a hose attachment, a stiff-bristle brush, and a damp cloth. Begin by removing the vent covers; use a screwdriver if needed, and clean them using the damp cloth. Next, use the stiff-bristle brush to scrub the inside of the ducts gently, dislodging dust and debris. Attach the vacuum hose to the ducts and vacuum out any loosened dirt thoroughly. After that, inspect the ducts for any signs of mold or excessive build-up and address these issues accordingly. If mold is present, it\u2019s best to call a licensed professional for thorough removal. If you notice that cleaning the ducts doesn't improve airflow, check for any blockages in the ductwork or ensure that the HVAC system is functioning properly. You can find replacement parts, such as vent covers and filters, at local hardware stores or online retailers like Amazon or Home Depot. Replace the vent covers securely and restore power to the HVAC system.",
+      "equipment_problem": "Dirty or clogged air ducts in HVAC system",
+      "tools_required": [
+        "vacuum cleaner with hose attachment",
+        "stiff-bristle brush",
+        "damp cloth",
+        "screwdriver"
+      ],
+      "steps": [
+        "1. Disconnect the power to your HVAC system by switching off the circuit breaker to prevent any electrical hazards.",
+        "2. Remove the vent covers using a screwdriver, if necessary, and clean them with a damp cloth to remove dust and grime.",
+        "3. Use the stiff-bristle brush to gently scrub the inside of the ducts, dislodging accumulated dust and debris.",
+        "4. Vacuum the ducts thoroughly using the vacuum cleaner hose to remove any loosened dirt and debris from the ductwork.",
+        "5. Inspect the ducts for any signs of mold or excessive build-up; if you find mold, call a licensed professional for proper removal.",
+        "6. If airflow is still poor after cleaning, check for blockages in the ductwork or inspect the HVAC system for issues."
+      ],
+      "safety_info": "Always disconnect the power to your HVAC system before starting any maintenance work. Wear gloves to protect your hands from dust and potential allergens, and safety goggles to shield your eyes from debris. Be cautious of sharp edges when removing vent covers, and ensure adequate ventilation in the area you are working in to avoid inhaling dust.",
+      "tips": "Regular maintenance of your air ducts can prevent major issues down the line. Schedule a professional inspection of your air ducts every few years to ensure they are clean and in good condition. Use a high-efficiency particulate air (HEPA) filter in your HVAC system to help reduce dust and allergens. Avoid using products with harsh chemicals when cleaning, as they can introduce more pollutants into the air. For replacement parts, check local hardware stores or online retailers like Amazon or Home Depot."
+    }
+  },
+  {
+    "trace_id": "d7172ff1-6cd1-421e-886e-bea029c928d6",
+    "category": "hvac_maintenance",
+    "difficulty": "intermediate",
+    "template_version": "v2",
+    "generation_timestamp": "2026-02-10T03:49:14.806830+00:00",
+    "model_used": "gpt-4o-mini",
+    "prompt_hash": "f05814ef67466783d63797f9fa139b11",
+    "record": {
+      "question": "How do I replace a malfunctioning thermostat in my HVAC system?",
+      "answer": "To replace a malfunctioning thermostat, first, identify the specific problem by checking if the thermostat is unresponsive or if the temperature settings do not match your home\u2019s temperature. Next, locate the screws holding the thermostat cover in place, and gently remove the cover. Disconnect the old thermostat from the wall by unscrewing the mounting plate and noting where each wire connects (often labeled as R, W, Y, G, etc.). Purchase a compatible replacement thermostat at a local hardware store or online, ensuring it matches your HVAC system type. After receiving your new thermostat, connect the wires to the corresponding terminals, secure the mounting plate, and attach the new cover. Restore power to the HVAC system and test the thermostat by adjusting settings and observing if the system responds accordingly. If the fix doesn\u2019t work, double-check the wiring connections and consult the user manual for troubleshooting. If the thermostat still malfunctions, it\u2019s advisable to contact a licensed HVAC technician for further diagnosis and repair.",
+      "equipment_problem": "Malfunctioning thermostat",
+      "tools_required": [
+        "screwdriver",
+        "wire stripper",
+        "level"
+      ],
+      "steps": [
+        "Disconnect power to the HVAC system at the breaker box to ensure safety before starting work.",
+        "Use a screwdriver to remove the screws from the thermostat cover, then gently pull it off to expose the wiring.",
+        "Take a photo or make a note of how the existing wires are connected to the old thermostat, then disconnect the wires from the terminal screws by loosening them.",
+        "Mount the new thermostat\u2019s base on the wall, ensuring it\u2019s level. Connect the wires to the corresponding terminals, ensuring a snug fit.",
+        "Attach the new thermostat cover, restore power at the breaker box, and test the new thermostat by adjusting the temperature settings."
+      ],
+      "safety_info": "Before starting any work, always disconnect power to the HVAC system at the breaker box to prevent electrical shock. Wear gloves and safety goggles to protect against sharp edges and dust. Be cautious when handling electrical components, and if you are unsure about any wiring, do not hesitate to call a licensed professional.",
+      "tips": "Ensure the new thermostat is compatible with your HVAC system type (such as heat pump or conventional). Avoid common mistakes like reversing the wire connections, which can damage the thermostat. Clean the wall surface before mounting the new thermostat to ensure a secure fit and check for any old or frayed wires that may need replacing."
+    }
+  },
+  {
+    "trace_id": "5d6ed3d2-f395-4965-90bb-7818228b5ca7",
+    "category": "hvac_maintenance",
+    "difficulty": "advanced",
+    "template_version": "v2",
+    "generation_timestamp": "2026-02-10T03:49:23.389712+00:00",
+    "model_used": "gpt-4o-mini",
+    "prompt_hash": "7b7e2d2211abb4e21dcf66db3150c8ad",
+    "record": {
+      "question": "How do I replace a faulty capacitor in my central air conditioning unit?",
+      "answer": "To replace a faulty capacitor in your central air conditioning unit, first ensure you disconnect power to the unit by turning off the circuit breaker and unplugging the unit if applicable. Next, wear personal protective equipment such as insulated gloves and safety goggles to protect yourself from any electrical shock and capacitor discharge. Begin by removing the access panel on your air conditioning unit, typically secured with screws. Locate the capacitor, which is usually cylindrical and may have two or three wires connected to it. Take a photo or make a note of the wiring setup for reassembly. Carefully disconnect the wires, ensuring you do not touch any metal components with your bare hands. Remove the old capacitor and replace it with a new one of the same voltage and microfarad rating, which you can purchase at any hardware store or online. Reconnect the wires according to your earlier notes, replace the access panel, and restore power to the unit. If the air conditioning unit does not operate correctly after replacing the capacitor, check for signs of burnt wires or a tripped breaker; if problems persist, it may indicate a larger issue in the system. For safety, if you feel uncertain at any point in the process or if the unit still doesn\u2019t work after the repair, it\u2019s best to call a licensed HVAC professional to avoid the risk of injury or further damage.",
+      "equipment_problem": "Faulty capacitor in central air conditioning unit",
+      "tools_required": [
+        "screwdriver",
+        "insulated gloves",
+        "safety goggles",
+        "wire cutters/strippers"
+      ],
+      "steps": [
+        "Disconnect power to the air conditioning unit by turning off the circuit breaker and unplugging it if necessary.",
+        "Put on insulated gloves and safety goggles to protect yourself from electrical shock.",
+        "Remove the access panel on the air conditioning unit using a screwdriver, and locate the capacitor.",
+        "Take a photo of the wiring connections to the capacitor for reference, then carefully disconnect the wires from the old capacitor.",
+        "Remove the old capacitor and install the new one, making sure it has the same voltage and microfarad rating.",
+        "Reconnect the wires according to your reference photo, replace the access panel, and restore power to the unit."
+      ],
+      "safety_info": "Always ensure the power is completely turned off before starting any work on the HVAC system. Use insulated gloves and safety goggles to protect against electrical shock and capacitor discharge. Capacitors can hold a charge even after power is disconnected, so handle with care and discharge properly if needed.",
+      "tips": "When purchasing a new capacitor, check that it matches the specifications of the old one (voltage and microfarads). Keep in mind that some capacitors can be sensitive to orientation, so install them in the same position as the old unit. Ensure all connections are secure to prevent future electrical issues, and regularly inspect your HVAC system for any signs of wear or damage."
+    }
+  },
+  {
+    "trace_id": "9c229a10-f034-477f-ba41-f12c0488932f",
+    "category": "hvac_maintenance",
+    "difficulty": "advanced",
+    "template_version": "v2",
+    "generation_timestamp": "2026-02-10T03:49:32.410043+00:00",
+    "model_used": "gpt-4o-mini",
+    "prompt_hash": "4ae6c6ae878956592b4cb29ae9b79f50",
+    "record": {
+      "question": "How do I replace a faulty contactor in my central air conditioning unit?",
+      "answer": "To replace a faulty contactor in your central air conditioning unit, first, ensure that you disconnect all power to the system at the breaker box to avoid any electrical hazards. After securing power, put on safety gloves and goggles to protect against electrical shocks and debris. Next, locate the contactor, which is typically found in the outdoor unit of the AC system. Remove the cover panel to access the contactor, and take note of the wire connections or take a picture for reference. Unscrew the old contactor from the mounting bracket and disconnect the wires carefully. Replace it with the new contactor, ensuring each wire is connected to the same terminal as the old one, and secure it in place. Reattach the cover panel and restore power to the system. If the AC still does not function, check the capacitor and the thermostat for issues. If you\u2019re unsure about any step or if it doesn\u2019t work, do not hesitate to call a licensed HVAC professional for assistance to avoid further complications or damage.",
+      "equipment_problem": "Faulty contactor in central air conditioning unit.",
+      "tools_required": [
+        "Screwdriver",
+        "Wire strippers",
+        "Pliers",
+        "Safety gloves",
+        "Safety goggles"
+      ],
+      "steps": [
+        "Disconnect power to the AC unit at the breaker box.",
+        "Put on safety gloves and goggles.",
+        "Locate the contactor in the outdoor unit and remove the cover panel.",
+        "Take a picture of the wire connections for reference before disconnecting them.",
+        "Unscrew the old contactor from the mounting bracket and detach the wires.",
+        "Connect the new contactor, ensuring wires are attached to the same terminals as before.",
+        "Secure the contactor in place and reattach the cover panel.",
+        "Turn the power back on at the breaker box and test the AC unit."
+      ],
+      "safety_info": "Always disconnect power to the AC unit before starting any repair work. Wear safety gloves and goggles to protect against electrical shocks and debris. Be aware of sharp edges and components that may be hot or under pressure. If you feel uncertain about any procedure or if the system does not operate after your repair, contact a licensed HVAC professional for assistance.",
+      "tips": "Ensure you purchase a contactor that matches the specifications of the original one to avoid compatibility issues. It\u2019s helpful to take the old contactor to the hardware store for an exact match. Common mistakes include miswiring the new contactor, so double-check your connections against the reference photo. Regular maintenance, like cleaning the contactor and inspecting it for wear, can prevent future failures."
+    }
+  },
+  {
+    "trace_id": "26f5b683-638e-4cab-820d-393510dadb78",
+    "category": "general_home_repair",
+    "difficulty": "beginner",
+    "template_version": "v2",
+    "generation_timestamp": "2026-02-10T03:49:39.686890+00:00",
+    "model_used": "gpt-4o-mini",
+    "prompt_hash": "6097e8cc03bc25721604597bd2850090",
+    "record": {
+      "question": "How do I fix a leaky kitchen faucet?",
+      "answer": "To fix a leaky kitchen faucet, first, identify the leak source by observing where the water drips\u2014common areas are around the faucet handle or base. Once you determine the leak point, turn off the water supply by locating the shut-off valves under your sink (turn them clockwise) and ensure to disconnect the power if it's an electric faucet. Put on safety goggles and gloves to protect yourself from any debris and water exposure. Using a pair of pliers, gently remove the decorative cap on the faucet handle, then unscrew the handle screw and lift off the handle. Next, use a wrench to loosen and remove the packing nut, followed by taking out the cartridge or washer, which may be worn or damaged. Replace it with a new cartridge or washer, which you can find at local hardware stores or online; be sure to bring the old part for comparison. Reassemble the faucet by reversing the disassembly steps, and finally, turn on the water supply to test for leaks. If the leak persists after replacing the washer or cartridge, you may need to call a plumber as there may be a more serious issue at play.",
+      "equipment_problem": "Leaky kitchen faucet",
+      "tools_required": [
+        "pliers",
+        "wrench",
+        "screwdriver",
+        "gloves",
+        "goggles"
+      ],
+      "steps": [
+        "Turn off the water supply by turning the shut-off valves under the sink clockwise.",
+        "Put on safety goggles and gloves to protect against water and debris.",
+        "Use pliers to remove the decorative cap on the faucet handle to expose the screw underneath.",
+        "Unscrew the handle screw with a screwdriver and lift off the handle.",
+        "Use a wrench to loosen and remove the packing nut.",
+        "Take out the cartridge or washer carefully, noting how it was installed.",
+        "Replace the old cartridge or washer with a new one from your local hardware store.",
+        "Reassemble the faucet in the reverse order: put the packing nut back, then the handle and screw, followed by the decorative cap.",
+        "Turn the water supply back on and test the faucet for leaks."
+      ],
+      "safety_info": "Always turn off the water supply before starting any plumbing work. Wear safety goggles and gloves to protect yourself from debris and water exposure. Be cautious of sharp edges on the faucet or tools that could cause injury. If you feel uncomfortable or the problem persists, call a licensed plumber for assistance.",
+      "tips": "Make sure to take the old washer or cartridge with you to the store to find an exact match. When reassembling, do not overtighten screws and nuts, as this can cause damage. If the faucet continues to leak after replacing parts, there may be an issue with the faucet itself that requires professional service."
+    }
+  },
+  {
+    "trace_id": "a6df2605-94e6-42ec-9ea5-0a17013ea765",
+    "category": "general_home_repair",
+    "difficulty": "beginner",
+    "template_version": "v2",
+    "generation_timestamp": "2026-02-10T03:49:48.904217+00:00",
+    "model_used": "gpt-4o-mini",
+    "prompt_hash": "6f27773c17a8f7a32badaaa728225e31",
+    "record": {
+      "question": "How do I fix a leaking faucet in my kitchen?",
+      "answer": "To fix a leaking kitchen faucet, start by identifying the type of faucet you have, as this will determine the repair process. Most leaks come from worn washers or O-rings. First, disconnect the water supply under the sink by turning off the valves. Next, use a wrench to remove the handle by loosening the screw that holds it in place. Once the handle is off, check for any visible wear on the washer or O-ring. If they look damaged or worn, replace them. You can find replacement parts at local hardware stores or online. After replacing the parts, reassemble the faucet in the reverse order and turn the water supply back on to check for leaks. If the faucet still leaks, you may need to consider replacing the entire faucet or calling a professional if you are unsure about the process.",
+      "equipment_problem": "Leaking kitchen faucet",
+      "tools_required": [
+        "adjustable wrench",
+        "screwdriver",
+        "bowl (to catch water)"
+      ],
+      "steps": [
+        "1. Disconnect the water supply by turning off the valves under the sink. Make sure the valves are turned fully clockwise to ensure no water flows while you work.",
+        "2. Place a bowl or towel under the faucet to catch any water that may spill out during the repair process.",
+        "3. Use a screwdriver to remove the handle of the faucet. Look for a small screw, often located at the back or underneath the handle, and carefully loosen it.",
+        "4. Once the handle is removed, you will see the cartridge. Use an adjustable wrench to unscrew the cartridge from the faucet body, making sure to note its orientation for reinstallation.",
+        "5. Examine the O-ring and washer for wear or damage. If they are worn out, take them to the hardware store to find exact replacements. If they look fine, they may not be the source of the leak.",
+        "6. Replace the O-ring and washer with new ones, ensuring a snug fit. If using a new cartridge, insert it into the faucet in the same orientation as the old one.",
+        "7. Reassemble the faucet by reversing the steps, carefully screwing the handle back on and ensuring all parts are tightly secured.",
+        "8. Turn the water supply back on and test the faucet for leaks. If it still leaks, double-check your installation, or consider consulting a licensed plumber."
+      ],
+      "safety_info": "Before starting, always ensure to disconnect the water supply to prevent flooding. Wear gloves to protect your hands from rough edges and goggles to shield your eyes from splashes. Be cautious of any sharp tools and ensure your workspace is clean and dry to prevent slipping.",
+      "tips": "When purchasing replacement parts, bring the old washer or O-ring with you to ensure you get the correct size. If the leak persists even after replacing the parts, the faucet may need to be replaced entirely, or you may need to consult a licensed plumber for further assistance."
+    }
+  },
+  {
+    "trace_id": "c9313211-8a1c-4198-bd0b-6b607518cdea",
+    "category": "general_home_repair",
+    "difficulty": "intermediate",
+    "template_version": "v2",
+    "generation_timestamp": "2026-02-10T03:49:55.455422+00:00",
+    "model_used": "gpt-4o-mini",
+    "prompt_hash": "6e5a84e9af2c7f9551c35ef140d4d410",
+    "record": {
+      "question": "How can I fix a leaky kitchen faucet with a cartridge?",
+      "answer": "To fix a leaky kitchen faucet with a cartridge, first, disconnect the water supply to the faucet by turning off the valves under the sink. Next, turn on the faucet to release any remaining water and relieve pressure. Use a Phillips screwdriver to remove the handle by unscrewing the screw located under a decorative cap or directly on the handle. Once the handle is off, you\u2019ll see the cartridge; you may need to remove a retaining clip or nut with pliers to extract it. Take the old cartridge to a hardware store to find an exact match for replacement. Install the new cartridge by reversing the removal steps, ensuring it is seated properly. Once everything is reassembled, turn the water supply back on and check for leaks. If the leak persists, consider replacing the O-rings or seals that may be worn out. If the faucet still leaks, it might be time to call a licensed plumber, as the issue could be more complex than a simple cartridge replacement.",
+      "equipment_problem": "Leaky kitchen faucet with a cartridge",
+      "tools_required": [
+        "Phillips screwdriver",
+        "Pliers",
+        "Adjustable wrench"
+      ],
+      "steps": [
+        "1. Disconnect the water supply by turning off the valves under the sink.",
+        "2. Turn on the faucet to release any remaining water and relieve pressure.",
+        "3. Remove the handle by unscrewing the screw with a Phillips screwdriver.",
+        "4. Extract the cartridge by removing any retaining clip or nut using pliers.",
+        "5. Take the old cartridge to a hardware store to find an exact replacement.",
+        "6. Install the new cartridge by reversing the removal process, ensuring it is properly seated.",
+        "7. Reassemble the faucet and turn the water supply back on to check for leaks."
+      ],
+      "safety_info": "Always disconnect the water supply before starting any plumbing repair. Wear safety gloves and goggles to protect against sharp edges or debris. Be cautious of water damage and slippery surfaces under the sink.",
+      "tips": "Use a cloth or towel to cover the sink drain before starting to prevent losing small parts. Apply plumber's grease on the new cartridge to ensure a good seal and easy movement. If the faucet has been in use for many years, consider replacing the entire faucet if multiple components are failing."
+    }
+  },
+  {
+    "trace_id": "1ebe802a-0dd6-4a47-856a-809a4e958ee3",
+    "category": "general_home_repair",
+    "difficulty": "intermediate",
+    "template_version": "v2",
+    "generation_timestamp": "2026-02-10T03:50:02.420916+00:00",
+    "model_used": "gpt-4o-mini",
+    "prompt_hash": "d80f9695903ada08717fdca5c042cd07",
+    "record": {
+      "question": "How do I fix a leaking kitchen faucet?",
+      "answer": "To fix a leaking kitchen faucet, start by identifying the source of the leak, which is commonly from the base or the spout. Next, disconnect the water supply by turning off the valves under the sink and opening the faucet to release pressure. You will need to remove the faucet handle by loosening the screw usually located underneath or at the back of the handle, typically using a Phillips screwdriver. After removing the handle, check for worn-out washers or O-rings that may be causing the leak. Replace any damaged parts with new ones, available at your local hardware store. Reassemble the faucet in reverse order, turn the water supply back on, and check for leaks. If the leak persists, you may need to replace the entire faucet or consult a professional if you\u2019re uncomfortable with further repairs.",
+      "equipment_problem": "Leaking kitchen faucet",
+      "tools_required": [
+        "Phillips screwdriver",
+        "adjustable wrench",
+        "bucket",
+        "old towel"
+      ],
+      "steps": [
+        "1. Disconnect the power/water supply by turning off the valves under the sink, then open the faucet to release any pressure.",
+        "2. Place a bucket and an old towel under the sink to catch any residual water during the repair process.",
+        "3. Use a Phillips screwdriver to remove the screw securing the faucet handle and gently lift the handle off.",
+        "4. Inspect the O-rings and washers inside the faucet for wear and tear, replacing them with new ones if necessary, which can be found at hardware stores.",
+        "5. Reassemble the faucet by reversing the disassembly steps, ensuring all parts are tightened securely before turning the water supply back on."
+      ],
+      "safety_info": "Always disconnect the water supply before starting any repair work to avoid leaks and water damage. Wear gloves to protect your hands from sharp edges and debris. If you encounter corroded parts or if the faucet is integrated with your sink in a complex manner, it\u2019s best to call a licensed plumber.",
+      "tips": "Check the manufacturer's specifications for replacement parts to ensure compatibility. Often, taking a worn part to the store helps match it correctly. Avoid overtightening screws and fittings, as this can cause damage. Regular maintenance, like cleaning aerators, can help prevent future leaks."
+    }
+  },
+  {
+    "trace_id": "e2f5448e-ec21-412d-8a0f-d73e38c125b2",
+    "category": "general_home_repair",
+    "difficulty": "advanced",
+    "template_version": "v2",
+    "generation_timestamp": "2026-02-10T03:50:08.975201+00:00",
+    "model_used": "gpt-4o-mini",
+    "prompt_hash": "6051889244408988a28e5ebe9c5d40bd",
+    "record": {
+      "question": "How do I fix a leaking kitchen sink drain?",
+      "answer": "To fix a leaking kitchen sink drain, first, identify the source of the leak. This could be due to a loose connection, a worn-out gasket, or a cracked drain pipe. Start by disconnecting the water supply and draining the sink. Use a wrench to carefully tighten any loose connections. If tightening doesn\u2019t resolve the issue, inspect the rubber gaskets and washers for wear; these can be replaced easily at any hardware store. If the drain pipe is cracked, you may need to replace it entirely. To do this, measure the diameter of the existing pipe and purchase a replacement from a local hardware store. Ensure you have plumber's tape to seal any joints.  If the leak persists after these repairs, it may indicate a more significant plumbing issue, and you should contact a licensed plumber for assistance.",
+      "equipment_problem": "Leaking kitchen sink drain",
+      "tools_required": [
+        "adjustable wrench",
+        "bucket",
+        "screwdriver",
+        "plumber's tape"
+      ],
+      "steps": [
+        "Disconnect the water supply to the sink before starting any work to prevent further leaks or flooding.",
+        "Place a bucket under the sink to catch any residual water when you disconnect the drain.",
+        "Use an adjustable wrench to tighten any loose connections on the drain assembly. If this doesn't work, continue to the next step.",
+        "Inspect the rubber gaskets and washers for signs of wear or damage. Replace with new ones if necessary, which can be found at any hardware store.",
+        "If the drain pipe is cracked or damaged, measure its diameter and purchase a new pipe. Disconnect the old pipe by unscrewing it, and install the new one using plumber's tape to ensure a watertight seal."
+      ],
+      "safety_info": "Always disconnect the water supply before starting any plumbing work to prevent flooding. Wear gloves to protect your hands from dirt and sharp edges, and goggles to protect your eyes from debris. Be cautious of any sharp edges on metal pipes and fittings, and ensure that your work area remains dry to prevent slips.",
+      "tips": "When purchasing replacement parts, bring the old gasket or pipe with you to ensure a proper match. Use plumber's tape generously on threads to prevent future leaks. Regularly inspect your plumbing for signs of wear, and consider replacing rubber components every few years as preventive maintenance. If you encounter rusted pipes or extensive damage, it is best to consult a licensed plumber."
+    }
+  },
+  {
+    "trace_id": "62093243-afca-4dac-a92d-32178049efe6",
+    "category": "general_home_repair",
+    "difficulty": "advanced",
+    "template_version": "v2_corrected",
+    "generation_timestamp": "2026-02-10T03:50:15.127671+00:00",
+    "model_used": "gpt-4o-mini",
+    "prompt_hash": "c67f9fc2fa4d9692adf147fce2132f20",
+    "record": {
+      "question": "How do I repair a leaking kitchen sink faucet?",
+      "answer": "To repair a leaking kitchen sink faucet, first, you need to identify the type of faucet you have, which can be a compression, cartridge, ball, or ceramic disk faucet. Look for water dripping from the spout or pooling around the base. Start by turning off the water supply under the sink and disconnecting the power if you have a powered faucet. Gather your tools: adjustable wrench, flathead screwdriver, Phillips screwdriver, and pliers. If you need replacement parts like washers or O-rings, you can find them at any hardware store or online. Disassemble the faucet by removing the handle and unscrewing the retaining nut, then take out the cartridge or valve to inspect for wear and tear. For compression faucets, look for rubber washers that may need replacing; for cartridge faucets, the cartridge itself might be damaged; for ball faucets, check the springs and seals; and for ceramic disk faucets, inspect the seals. Replace any damaged parts and reassemble the faucet. If the leak persists after reassembly, it may be due to a worn-out faucet body, and you should consider replacing the entire unit or consulting a licensed plumber for assistance. Always check the manufacturer's instructions specific to your faucet type for detailed guidance on parts identification and troubleshooting.",
+      "equipment_problem": "Leaking kitchen sink faucet",
+      "tools_required": [
+        "adjustable wrench",
+        "flathead screwdriver",
+        "Phillips screwdriver",
+        "pliers"
+      ],
+      "steps": [
+        "Turn off the water supply to the faucet by locating the shut-off valves under the sink.",
+        "Put on gloves and goggles to protect yourself from any potential water spills and debris.",
+        "Remove the faucet handle by loosening the screw located underneath or at the back of the handle.",
+        "Once the handle is off, use the adjustable wrench to loosen and remove the retaining nut securing the cartridge or valve.",
+        "Take out the cartridge or valve and check for worn washers or O-rings, replacing them if necessary. For compression faucets, look for rubber washers that may need replacing; for cartridge faucets, the cartridge itself might be damaged; for ball faucets, check the springs and seals; and for ceramic disk faucets, inspect the seals."
+      ],
+      "safety_info": "Always disconnect the water supply before starting any repair work to avoid flooding. Wear gloves to protect your hands from sharp edges and goggles to protect your eyes from debris or water. Be aware of potential slip hazards due to water spills on the floor.",
+      "tips": "Make sure to take the old parts to the store to match them correctly when purchasing replacements. For identifying parts, take a photo of each component before removal. If you encounter rusted or stuck components, use penetrating oil to help loosen them. After reassembly, check for leaks by slowly turning the water supply back on and observing the faucet. If the faucet continues to leak, consider that the faucet body may be damaged, necessitating a full replacement or further professional assessment."
+    }
+  }
+]

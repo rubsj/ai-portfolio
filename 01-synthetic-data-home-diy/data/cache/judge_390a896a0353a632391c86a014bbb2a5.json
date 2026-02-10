@@ -1,0 +1,41 @@
+{
+  "cache_key": "judge_390a896a0353a632391c86a014bbb2a5",
+  "trace_id": "fdad91e5-90b7-4d63-a445-09610146c116",
+  "model": "gpt-4o",
+  "response": {
+    "trace_id": "fdad91e5-90b7-4d63-a445-09610146c116",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 0,
+        "reason": "The guide provides detailed steps for cleaning HVAC air ducts, including safety precautions, tools required, and troubleshooting advice if the fix doesn't work."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes necessary safety precautions such as disconnecting power, wearing gloves and goggles, and calling a professional for mold removal."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "All tools listed are common household items that a typical homeowner would have or can easily obtain."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is concise with only 6 steps, appropriate for an intermediate task, and advises when to call a professional."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide specifically addresses cleaning and maintaining HVAC air ducts, directly related to the equipment problem of dirty or clogged air ducts."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 0,
+        "reason": "The tips provided are specific and useful, such as using HEPA filters and avoiding harsh chemicals, enhancing the overall quality of the guide."
+      }
+    ],
+    "overall_quality_score": 5
+  }
+}

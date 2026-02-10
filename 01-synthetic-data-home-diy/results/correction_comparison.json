@@ -37,8 +37,22 @@
     },
     "improvement_vs_v1": "77.8%"
   },
+  "v2_corrected": {
+    "total_failures": 0,
+    "failure_rate": "0.0%",
+    "per_mode": {
+      "incomplete_answer": 0,
+      "safety_violations": 0,
+      "unrealistic_tools": 0,
+      "overcomplicated_solution": 0,
+      "missing_context": 0,
+      "poor_quality_tips": 0
+    },
+    "improvement_vs_v1": "100.0%"
+  },
   "target_met": {
     "corrected_meets_80pct": false,
-    "v2_meets_80pct": false
+    "v2_meets_80pct": false,
+    "v2_corrected_meets_80pct": true
   }
 }
