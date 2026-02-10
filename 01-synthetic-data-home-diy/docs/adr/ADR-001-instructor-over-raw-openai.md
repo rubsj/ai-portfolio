@@ -80,10 +80,10 @@ The same pattern is used in `evaluator.py` for the judge (`response_model=JudgeR
 
 ## Java/TS Parallel
 
-Instructor is analogous to using a **typed HTTP client with automatic
-serialization/deserialization and retry middleware** — like Retrofit (Java) or
-tRPC (TypeScript). Instead of making raw HTTP calls and parsing JSON manually,
-you define the response type and the framework handles marshaling. The
-`max_retries` parameter is like Spring Retry's `@Retryable` annotation, but the
-retry payload includes the validation error so the "server" (LLM) can fix its
-response.
+Instructor is analogous to using **Jackson + Bean Validation annotations** in
+Java, but with automatic retry — like a request validator middleware that
+re-prompts the client on 400 errors. In Spring terms: imagine `@Valid` on a
+`@RequestBody` that, instead of returning a 400 to the caller, automatically
+re-sends the request with the validation errors appended so the client can
+self-correct. The `response_model` parameter is the `Class<T>` you'd pass to
+`objectMapper.readValue()`, and `max_retries` is `@Retryable(maxAttempts=3)`.
