@@ -136,7 +136,7 @@ Quality scores: 1=very poor, 2=poor, 3=adequate, 4=good, 5=excellent. Most guide
   new project will need its own calibrated criteria, not a copy-paste of this
   prompt.
 
-## Key Insight
+## Key Insight: Three Calibration Levers
 
 **LLM-as-Judge calibration is prompt engineering, not model selection.** Moving
 from GPT-4o-mini to GPT-4o for the judge improved reasoning quality, but the
@@ -147,6 +147,40 @@ mattered most:
 2. **Specificity**: Replace vague criteria with concrete, checkable conditions.
 3. **Anchoring**: Set the expected distribution ("most guides are 3-4", "most
    have 1-2 issues") so the model doesn't default to its positivity bias.
+
+### Before/After Prompts (Condensed)
+
+**v1 (Lenient — 0% failure rate):**
+
+```text
+You are a quality evaluator for DIY home repair guides.
+Evaluate the following repair guide for these 6 failure modes.
+For each mode, respond with 0 (pass) or 1 (fail) and a brief reason.
+
+1. incomplete_answer: Answer lacks sufficient detail
+2. safety_violations: Missing or inadequate safety info
+3. unrealistic_tools: Tools a homeowner wouldn't have
+...
+```
+
+**v2 (Calibrated — 20% failure rate)** — from `evaluator.py:_JUDGE_SYSTEM_PROMPT`:
+
+```text
+You are a STRICT quality evaluator for DIY home repair guides.
+Your job is to find deficiencies. Most guides have at least 1-2 issues.
+...
+Failure mode definitions (apply these STRICTLY):
+1. incomplete_answer: Fail if the answer has fewer than 3 substantive
+   sentences, omits key information a homeowner needs...
+2. safety_violations: Fail if ANY of these are missing when relevant:
+   power-off/water-off warning BEFORE starting work, PPE requirements...
+...
+Be thorough and critical. A guide that is merely "okay" should still
+get failures flagged. Only give 0 (pass) when genuinely strong.
+Quality scores: 1=very poor ... 5=excellent. Most guides are 3-4.
+```
+
+> Full prompts are shown in the [Decision](#decision) section above.
 
 ## Java/TS Parallel
 

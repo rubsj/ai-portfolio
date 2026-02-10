@@ -84,10 +84,11 @@ flat schema.
 
 ## Java/TS Parallel
 
-This is the classic **DTO vs. rich domain model** trade-off. In a Spring app,
-you might model tools as a `List<ToolDTO>` with typed fields. But when the
-"API" is an LLM that returns free-form JSON, simpler DTOs reduce parse failures
-— like using `Map<String, Object>` for a flaky external API instead of a rigid
-`@JsonDeserialize` class. In TypeScript terms: `tools: string[]` instead of
-`tools: { name: string; category: ToolCategory; isCommon: boolean }[]`. You can
-always parse the strings later; you can't un-fail a generation call.
+Flat schema is like using a **single-level DTO with `@NotBlank` and `@Size`
+annotations** rather than nested `@Valid` entity graphs. Simpler serialization,
+simpler validation, easier to map to DataFrames (like mapping to flat SQL rows
+vs ORM joins). In Spring terms: a `RepairRecordDTO` with `List<String> tools`
+annotated `@Size(min=1)` instead of `List<ToolEntity> tools` with `@Valid`
+cascading into `ToolEntity.name`, `ToolEntity.category`, etc. The flat DTO
+serializes cleanly to a CSV row or Pandas DataFrame; the nested entity graph
+requires flattening logic before it's usable for analysis.
