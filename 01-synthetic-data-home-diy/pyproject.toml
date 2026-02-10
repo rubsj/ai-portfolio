@@ -1,7 +1,7 @@
 [project]
 name = "synthetic-data-home-diy"
 version = "0.1.0"
-description = "Add your description here"
+description = "Synthetic data generation and evaluation pipeline for Home DIY repair Q&A"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
