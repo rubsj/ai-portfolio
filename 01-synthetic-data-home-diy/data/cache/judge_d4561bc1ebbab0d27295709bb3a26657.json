@@ -1,0 +1,41 @@
+{
+  "cache_key": "judge_d4561bc1ebbab0d27295709bb3a26657",
+  "trace_id": "648d29f4-bc5d-4eea-96fc-44ade5bb0255",
+  "model": "gpt-4o",
+  "response": {
+    "trace_id": "648d29f4-bc5d-4eea-96fc-44ade5bb0255",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 1,
+        "reason": "The guide lacks information on where to purchase a replacement capacitor and what to do if the replacement doesn't solve the problem."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes necessary safety warnings, such as turning off power and using insulated gloves."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "All tools listed are common and likely available to a typical homeowner."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 1,
+        "reason": "The guide does not explicitly state when to stop and call a professional, which is crucial for advanced tasks involving electrical components."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide specifically addresses the issue of a faulty capacitor in a central air conditioning unit."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 1,
+        "reason": "The tips are somewhat generic and miss the opportunity to provide more specific advice, such as how to safely discharge a capacitor before removal."
+      }
+    ],
+    "overall_quality_score": 3
+  }
+}

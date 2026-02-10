@@ -1,0 +1,41 @@
+{
+  "cache_key": "judge_fd574eb854764790fa0a77231c956430",
+  "trace_id": "4b5266b1-2272-4f1b-817a-4f91cf66d607",
+  "model": "gpt-4o",
+  "response": {
+    "trace_id": "4b5266b1-2272-4f1b-817a-4f91cf66d607",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 1,
+        "reason": "The guide lacks troubleshooting advice for what to do if cleaning the coils does not improve cooling efficiency. It also does not mention where to purchase coil cleaner or how to identify the evaporator coils."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes a power-off warning at the beginning and mentions PPE requirements such as safety goggles and gloves."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "All tools listed are common and should be available to a typical homeowner."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is within the intermediate complexity range with 10 steps and does not require specialty tools."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide specifically addresses cleaning evaporator coils in an HVAC system, which matches the equipment problem described."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 1,
+        "reason": "The tips provided are somewhat generic and do not offer specific advice beyond what is already covered in the steps and safety information."
+      }
+    ],
+    "overall_quality_score": 3
+  }
+}

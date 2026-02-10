@@ -1,0 +1,28 @@
+{
+  "cache_key": "6051889244408988a28e5ebe9c5d40bd",
+  "prompt_hash": "6051889244408988a28e5ebe9c5d40bd",
+  "category": "general_home_repair",
+  "difficulty": "advanced",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-10T03:50:08.974057+00:00",
+  "response": {
+    "question": "How do I fix a leaking kitchen sink drain?",
+    "answer": "To fix a leaking kitchen sink drain, first, identify the source of the leak. This could be due to a loose connection, a worn-out gasket, or a cracked drain pipe. Start by disconnecting the water supply and draining the sink. Use a wrench to carefully tighten any loose connections. If tightening doesn\u2019t resolve the issue, inspect the rubber gaskets and washers for wear; these can be replaced easily at any hardware store. If the drain pipe is cracked, you may need to replace it entirely. To do this, measure the diameter of the existing pipe and purchase a replacement from a local hardware store. Ensure you have plumber's tape to seal any joints.  If the leak persists after these repairs, it may indicate a more significant plumbing issue, and you should contact a licensed plumber for assistance.",
+    "equipment_problem": "Leaking kitchen sink drain",
+    "tools_required": [
+      "adjustable wrench",
+      "bucket",
+      "screwdriver",
+      "plumber's tape"
+    ],
+    "steps": [
+      "Disconnect the water supply to the sink before starting any work to prevent further leaks or flooding.",
+      "Place a bucket under the sink to catch any residual water when you disconnect the drain.",
+      "Use an adjustable wrench to tighten any loose connections on the drain assembly. If this doesn't work, continue to the next step.",
+      "Inspect the rubber gaskets and washers for signs of wear or damage. Replace with new ones if necessary, which can be found at any hardware store.",
+      "If the drain pipe is cracked or damaged, measure its diameter and purchase a new pipe. Disconnect the old pipe by unscrewing it, and install the new one using plumber's tape to ensure a watertight seal."
+    ],
+    "safety_info": "Always disconnect the water supply before starting any plumbing work to prevent flooding. Wear gloves to protect your hands from dirt and sharp edges, and goggles to protect your eyes from debris. Be cautious of any sharp edges on metal pipes and fittings, and ensure that your work area remains dry to prevent slips.",
+    "tips": "When purchasing replacement parts, bring the old gasket or pipe with you to ensure a proper match. Use plumber's tape generously on threads to prevent future leaks. Regularly inspect your plumbing for signs of wear, and consider replacing rubber components every few years as preventive maintenance. If you encounter rusted pipes or extensive damage, it is best to consult a licensed plumber."
+  }
+}

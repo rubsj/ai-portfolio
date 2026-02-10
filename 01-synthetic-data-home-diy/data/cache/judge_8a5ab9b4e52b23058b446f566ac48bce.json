@@ -1,0 +1,41 @@
+{
+  "cache_key": "judge_8a5ab9b4e52b23058b446f566ac48bce",
+  "trace_id": "4c2460f3-5471-45b9-8d98-71aa61569257",
+  "model": "gpt-4o",
+  "response": {
+    "trace_id": "4c2460f3-5471-45b9-8d98-71aa61569257",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 0,
+        "reason": "The guide provides a complete set of instructions, including how to identify the part, where to buy replacements, and troubleshooting advice."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes all necessary safety warnings, including turning off power at the circuit breaker, using a voltage tester, and wearing PPE. It also advises calling a professional if uncomfortable."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "All tools listed are common and likely to be found in a typical homeowner's toolkit. No specialized tools are required."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is within the scope of an advanced DIY task with 10 steps, and it advises when to call a professional."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide specifically addresses the problem of replacing a broken electrical outlet, providing context-specific advice."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 0,
+        "reason": "The tips are practical and specific, suggesting labeling the circuit breaker and inspecting wiring, which are useful for this task."
+      }
+    ],
+    "overall_quality_score": 5
+  }
+}

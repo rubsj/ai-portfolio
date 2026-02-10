@@ -1,0 +1,28 @@
+{
+  "cache_key": "d80f9695903ada08717fdca5c042cd07",
+  "prompt_hash": "d80f9695903ada08717fdca5c042cd07",
+  "category": "general_home_repair",
+  "difficulty": "intermediate",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-10T03:50:02.419671+00:00",
+  "response": {
+    "question": "How do I fix a leaking kitchen faucet?",
+    "answer": "To fix a leaking kitchen faucet, start by identifying the source of the leak, which is commonly from the base or the spout. Next, disconnect the water supply by turning off the valves under the sink and opening the faucet to release pressure. You will need to remove the faucet handle by loosening the screw usually located underneath or at the back of the handle, typically using a Phillips screwdriver. After removing the handle, check for worn-out washers or O-rings that may be causing the leak. Replace any damaged parts with new ones, available at your local hardware store. Reassemble the faucet in reverse order, turn the water supply back on, and check for leaks. If the leak persists, you may need to replace the entire faucet or consult a professional if you\u2019re uncomfortable with further repairs.",
+    "equipment_problem": "Leaking kitchen faucet",
+    "tools_required": [
+      "Phillips screwdriver",
+      "adjustable wrench",
+      "bucket",
+      "old towel"
+    ],
+    "steps": [
+      "1. Disconnect the power/water supply by turning off the valves under the sink, then open the faucet to release any pressure.",
+      "2. Place a bucket and an old towel under the sink to catch any residual water during the repair process.",
+      "3. Use a Phillips screwdriver to remove the screw securing the faucet handle and gently lift the handle off.",
+      "4. Inspect the O-rings and washers inside the faucet for wear and tear, replacing them with new ones if necessary, which can be found at hardware stores.",
+      "5. Reassemble the faucet by reversing the disassembly steps, ensuring all parts are tightened securely before turning the water supply back on."
+    ],
+    "safety_info": "Always disconnect the water supply before starting any repair work to avoid leaks and water damage. Wear gloves to protect your hands from sharp edges and debris. If you encounter corroded parts or if the faucet is integrated with your sink in a complex manner, it\u2019s best to call a licensed plumber.",
+    "tips": "Check the manufacturer's specifications for replacement parts to ensure compatibility. Often, taking a worn part to the store helps match it correctly. Avoid overtightening screws and fittings, as this can cause damage. Regular maintenance, like cleaning aerators, can help prevent future leaks."
+  }
+}

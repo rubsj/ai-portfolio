@@ -1,0 +1,41 @@
+{
+  "cache_key": "judge_9df0f74d376dd8ae601f3e5cc9e15fef",
+  "trace_id": "61fad2ad-c6a7-49d8-8dbc-3e4c2e67cdba",
+  "model": "gpt-4o",
+  "response": {
+    "trace_id": "61fad2ad-c6a7-49d8-8dbc-3e4c2e67cdba",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 1,
+        "reason": "The answer lacks details on identifying the correct replacement faucet, where to purchase it, and what to do if the new faucet leaks after installation."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes a water-off warning and general safety advice for working under the sink."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "All tools listed are common and likely to be found in a homeowner's toolkit for plumbing repairs."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is within the intermediate range with 10 steps and no specialty tools required."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide is specific to replacing a leaky kitchen faucet, matching the equipment_problem field."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 1,
+        "reason": "The tips provided are somewhat generic and miss opportunities for more specific advice, such as checking for compatibility of the new faucet with existing plumbing."
+      }
+    ],
+    "overall_quality_score": 3
+  }
+}

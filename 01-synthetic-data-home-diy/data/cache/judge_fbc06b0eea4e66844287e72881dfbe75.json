@@ -1,0 +1,41 @@
+{
+  "cache_key": "judge_fbc06b0eea4e66844287e72881dfbe75",
+  "trace_id": "4b5266b1-2272-4f1b-817a-4f91cf66d607",
+  "model": "gpt-4o",
+  "response": {
+    "trace_id": "4b5266b1-2272-4f1b-817a-4f91cf66d607",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 0,
+        "reason": "The guide provides detailed steps for cleaning the evaporator coils, includes troubleshooting advice, and mentions where to buy coil cleaner. It also advises on what to do if the fix doesn't work."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes a power-off warning as the first step, mentions PPE requirements (goggles and gloves), and warns about electric shock risk. It advises consulting a professional if problems persist."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "All tools listed are common household items or easily available at hardware stores. No specialized tools are required."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is within the intermediate difficulty level with 10 steps, which is reasonable. It also advises when to consult a professional."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide specifically addresses the problem of dirty evaporator coils leading to reduced cooling efficiency, providing context-specific advice."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 0,
+        "reason": "The tips are specific and useful, offering additional maintenance advice and when to consult a professional. They don't repeat information from the steps or safety info."
+      }
+    ],
+    "overall_quality_score": 5
+  }
+}

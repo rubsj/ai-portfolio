@@ -1,0 +1,33 @@
+{
+  "cache_key": "b09808b6388a92d82a9084c5779f18d4",
+  "prompt_hash": "b09808b6388a92d82a9084c5779f18d4",
+  "category": "general_home_repair",
+  "difficulty": "beginner",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-09T05:05:52.795060+00:00",
+  "response": {
+    "question": "How can I fix a leaky kitchen faucet?",
+    "answer": "To fix a leaky kitchen faucet, you will need to identify the type of faucet you have, gather the necessary tools, and follow a step-by-step process to replace the washer or O-ring that is likely causing the leak. This guide will help you through the entire process safely and effectively.",
+    "equipment_problem": "The kitchen faucet is leaking water from the spout when turned on.",
+    "tools_required": [
+      "Adjustable wrench",
+      "Screwdriver",
+      "Plumber's tape",
+      "Replacement washer or O-ring"
+    ],
+    "steps": [
+      "Turn off the water supply to the faucet by locating the shut-off valves under the sink and turning them clockwise.",
+      "Open the faucet to drain any remaining water and relieve pressure in the lines.",
+      "Use a screwdriver to remove the handle of the faucet. Depending on your faucet type, there may be a set screw on the back or underneath the handle. If you can\u2019t find it, check the user manual for your faucet.",
+      "Once the handle is removed, use the adjustable wrench to unscrew the packing nut (the large nut that holds the cartridge or stem in place).",
+      "Carefully pull out the cartridge or stem from the faucet body. Inspect the rubber washer or O-ring at the bottom of the cartridge; this is usually the cause of leaks and should be replaced if worn or damaged.",
+      "Take the old washer or O-ring to the hardware store to find an exact match for the replacement. If you're unsure, ask a store associate for help.",
+      "Once you have the new washer or O-ring, install it onto the cartridge or stem by pressing it into place securely.",
+      "Reinsert the cartridge or stem back into the faucet body and screw the packing nut back on tightly, but be careful not to overtighten and damage the components.",
+      "Reattach the faucet handle and secure it with the screw you removed earlier.",
+      "Turn the water supply back on by turning the shut-off valves counterclockwise and check for leaks by running the faucet."
+    ],
+    "safety_info": "Always make sure to turn off the water supply before starting any plumbing repair to avoid water damage. Use caution when handling tools, and ensure you are wearing safety glasses if you're concerned about debris or water splashes.",
+    "tips": "Keep a towel handy to wipe up any spilled water during the repair. If you're unsure about any step, refer to the manufacturer's manual for your specific faucet model."
+  }
+}

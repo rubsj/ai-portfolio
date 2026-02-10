@@ -1,0 +1,29 @@
+{
+  "cache_key": "21d9bee75067657a6c6c288318436b70",
+  "prompt_hash": "21d9bee75067657a6c6c288318436b70",
+  "category": "hvac_maintenance",
+  "difficulty": "beginner",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-10T03:48:59.008740+00:00",
+  "response": {
+    "question": "How do I clean the air filter in my HVAC system?",
+    "answer": "Cleaning the air filter in your HVAC system is essential for maintaining efficiency and air quality. First, turn off the power to your HVAC system at the circuit breaker to ensure safety. Next, locate the air filter; it is usually found in the return air duct or near the blower compartment. Remove the filter by gently sliding it out of its slot. Inspect the filter for dust and debris; if it's dirty, you can either wash it with mild soap and water or replace it with a new filter. Make sure to let it dry completely before reinstalling. Once cleaned or replaced, slide the filter back into its slot, ensuring it's fitted snugly. Finally, restore power to your HVAC system and check for proper airflow. This task should be done every 1-3 months depending on usage and the presence of pets or dust in your home.",
+    "equipment_problem": "Dirty air filter causing reduced airflow and efficiency.",
+    "tools_required": [
+      "screwdriver",
+      "vacuum cleaner",
+      "soap and water",
+      "clean cloth"
+    ],
+    "steps": [
+      "1. Disconnect power to your HVAC system by turning off the circuit breaker to prevent any accidents while working.",
+      "2. Locate the air filter; it is typically found in the return air duct or close to the furnace or air handler.",
+      "3. Remove the air filter by gently sliding it out of its compartment; take care not to damage any components.",
+      "4. Inspect the filter for dirt and dust build-up. If it is reusable, vacuum the surface to remove debris, or wash it with soap and water and let it dry completely.",
+      "5. If replacing, buy a compatible filter from a local hardware store or online, then install it by sliding it back into the compartment, ensuring it fits snugly.",
+      "6. Restore power to the HVAC system and turn it on to check for proper airflow."
+    ],
+    "safety_info": "Always turn off power to the HVAC system at the circuit breaker before performing any maintenance. Use gloves to protect your hands from dust and debris, and goggles if you are using a vacuum to avoid eye irritation. If you encounter any electrical issues or if the filter does not fit properly, contact a licensed HVAC professional for assistance.",
+    "tips": "Check the filter every month, especially during peak usage seasons (summer and winter). Use a filter with a higher MERV rating for better air quality if allergies are a concern. Avoid using too much soap when washing the filter to prevent residue build-up."
+  }
+}

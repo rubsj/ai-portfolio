@@ -1,0 +1,33 @@
+{
+  "cache_key": "correct_dd2397529e21fd61ab0535185c4ac32f",
+  "trace_id": "6fd64434-b004-4c45-8e49-00bd79464654",
+  "model": "gpt-4o-mini",
+  "type": "correction",
+  "timestamp": "2026-02-10T03:44:09.948295+00:00",
+  "response": {
+    "question": "How do I replace the door seal on my front-loading washing machine?",
+    "answer": "Replacing the door seal on a front-loading washing machine can help prevent leaks and ensure efficient operation. This task requires careful handling to avoid damaging the washer or the new seal. Here\u2019s how to do it safely and effectively:",
+    "equipment_problem": "The door seal on the front-loading washing machine is torn or damaged, causing leaks during operation.",
+    "tools_required": [
+      "Flathead screwdriver",
+      "Phillips screwdriver",
+      "Pliers",
+      "Replacement door seal",
+      "Rubber mallet",
+      "Safety gloves",
+      "Towel"
+    ],
+    "steps": [
+      "Unplug the washing machine from the power source to ensure safety during the repair process.",
+      "Remove the retaining band or clamp securing the old door seal using the flathead screwdriver.",
+      "Carefully pull the old door seal away from the door and the washing machine drum. You may need to use pliers to help remove it if it's stuck.",
+      "Clean the area around the door opening and the drum where the seal sits to remove any debris or residue.",
+      "Take the new door seal and stretch it gently to fit over the drum's edge, ensuring it is seated properly all around.",
+      "Secure the new seal with the retaining band or clamp, making sure it is tight but not overly compressed. Use the rubber mallet if necessary to help seat it evenly.",
+      "Reconnect the washing machine to the power source and run a short cycle on the spin setting with a towel inside to check for leaks.",
+      "If leaks persist, unplug the machine, check the installation of the seal for any gaps, and consider re-seating it. If the issue continues, check for other potential causes such as a malfunctioning door latch or drum alignment."
+    ],
+    "safety_info": "Always unplug the washing machine before starting any repair work. Wear safety gloves to protect your hands from sharp edges and ensure the area is dry to avoid slipping. Be cautious when using tools near the electrical components of the machine.",
+    "tips": "Purchase the replacement door seal from a reputable appliance parts store or online retailer, ensuring it is compatible with your washing machine model. For persistent leaks after installation, check the door latch for proper functioning, and inspect the drum for any obstructions or damage that may prevent the seal from fitting correctly."
+  }
+}

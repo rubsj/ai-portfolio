@@ -1,0 +1,41 @@
+{
+  "cache_key": "judge_927848eaa7ca4a1d0dbfcda7b5a01a15",
+  "trace_id": "200bb980-79d4-433b-bdfb-da04890ec306",
+  "model": "gpt-4o",
+  "response": {
+    "trace_id": "200bb980-79d4-433b-bdfb-da04890ec306",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 0,
+        "reason": "The guide provides a comprehensive overview of the steps needed to replace a broken window pane in a double-glazed unit, including where to purchase replacements and what to do if the fit is incorrect."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes safety warnings such as wearing PPE, turning off power near electrical outlets, and calling a professional for high windows."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "The tools listed are common and should be available to most homeowners, such as a screwdriver, caulking gun, and measuring tape."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is adequately complex for an advanced task and includes 8 steps, which is reasonable for the task described."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide specifically addresses the issue of replacing a broken window pane in a double-glazed window unit, providing relevant and specific instructions."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 0,
+        "reason": "The tips provided are practical and specific, such as measuring accurately and allowing sealant to cure, rather than generic advice."
+      }
+    ],
+    "overall_quality_score": 5
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "cache_key": "51710bb1043e18ca0cc985bf3a727ed0",
+  "prompt_hash": "51710bb1043e18ca0cc985bf3a727ed0",
+  "category": "electrical_repair",
+  "difficulty": "intermediate",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-09T05:05:01.694445+00:00",
+  "response": {
+    "question": "How can I replace a light switch in my home?",
+    "answer": "Replacing a light switch is a manageable DIY task, but it requires attention to safety and proper technique. Follow these steps carefully to ensure a successful replacement.",
+    "equipment_problem": "The light switch is faulty and needs replacement.",
+    "tools_required": [
+      "Screwdriver",
+      "Wire stripper",
+      "Voltage tester",
+      "Electrical tape",
+      "Replacement switch"
+    ],
+    "steps": [
+      "Turn off the power at the circuit breaker for the switch you are replacing.",
+      "Use a voltage tester to confirm that the power is off by checking the wires connected to the existing switch.",
+      "Remove the switch cover plate by unscrewing it with a screwdriver.",
+      "Unscrew the existing switch from the electrical box and gently pull it out to expose the wiring.",
+      "Take note of how the wires are connected to the switch; you may want to take a photo for reference.",
+      "Disconnect the wires from the old switch by unscrewing the terminal screws or pulling off the wire connectors.",
+      "Prepare the new switch by stripping about 1/2 inch of insulation from the ends of the wires if necessary.",
+      "Connect the wires to the corresponding terminals on the new switch (usually black to black for hot, white to white for neutral, and green or bare for ground).",
+      "Secure the new switch into the electrical box and replace the cover plate.",
+      "Turn the power back on at the circuit breaker and test the switch."
+    ],
+    "safety_info": "Always ensure the power is completely turned off before working on electrical components. Use a voltage tester to double-check that there is no electrical current in the wires. If you are unsure or uncomfortable at any step, consult a licensed electrician.",
+    "tips": "Label the wires if you're unsure about their connections. If the switch is part of a multi-switch setup, make sure to understand how they interact before disconnecting anything."
+  }
+}

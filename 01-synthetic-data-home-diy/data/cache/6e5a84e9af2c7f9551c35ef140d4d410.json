@@ -1,0 +1,29 @@
+{
+  "cache_key": "6e5a84e9af2c7f9551c35ef140d4d410",
+  "prompt_hash": "6e5a84e9af2c7f9551c35ef140d4d410",
+  "category": "general_home_repair",
+  "difficulty": "intermediate",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-10T03:49:55.454290+00:00",
+  "response": {
+    "question": "How can I fix a leaky kitchen faucet with a cartridge?",
+    "answer": "To fix a leaky kitchen faucet with a cartridge, first, disconnect the water supply to the faucet by turning off the valves under the sink. Next, turn on the faucet to release any remaining water and relieve pressure. Use a Phillips screwdriver to remove the handle by unscrewing the screw located under a decorative cap or directly on the handle. Once the handle is off, you\u2019ll see the cartridge; you may need to remove a retaining clip or nut with pliers to extract it. Take the old cartridge to a hardware store to find an exact match for replacement. Install the new cartridge by reversing the removal steps, ensuring it is seated properly. Once everything is reassembled, turn the water supply back on and check for leaks. If the leak persists, consider replacing the O-rings or seals that may be worn out. If the faucet still leaks, it might be time to call a licensed plumber, as the issue could be more complex than a simple cartridge replacement.",
+    "equipment_problem": "Leaky kitchen faucet with a cartridge",
+    "tools_required": [
+      "Phillips screwdriver",
+      "Pliers",
+      "Adjustable wrench"
+    ],
+    "steps": [
+      "1. Disconnect the water supply by turning off the valves under the sink.",
+      "2. Turn on the faucet to release any remaining water and relieve pressure.",
+      "3. Remove the handle by unscrewing the screw with a Phillips screwdriver.",
+      "4. Extract the cartridge by removing any retaining clip or nut using pliers.",
+      "5. Take the old cartridge to a hardware store to find an exact replacement.",
+      "6. Install the new cartridge by reversing the removal process, ensuring it is properly seated.",
+      "7. Reassemble the faucet and turn the water supply back on to check for leaks."
+    ],
+    "safety_info": "Always disconnect the water supply before starting any plumbing repair. Wear safety gloves and goggles to protect against sharp edges or debris. Be cautious of water damage and slippery surfaces under the sink.",
+    "tips": "Use a cloth or towel to cover the sink drain before starting to prevent losing small parts. Apply plumber's grease on the new cartridge to ensure a good seal and easy movement. If the faucet has been in use for many years, consider replacing the entire faucet if multiple components are failing."
+  }
+}

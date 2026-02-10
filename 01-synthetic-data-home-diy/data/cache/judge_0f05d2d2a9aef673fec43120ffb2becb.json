@@ -1,0 +1,41 @@
+{
+  "cache_key": "judge_0f05d2d2a9aef673fec43120ffb2becb",
+  "trace_id": "5ddf7601-889f-4d85-8be4-1156c76d6a58",
+  "model": "gpt-4o",
+  "response": {
+    "trace_id": "5ddf7601-889f-4d85-8be4-1156c76d6a58",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 0,
+        "reason": "The guide provides a complete process for identifying and replacing a faulty light switch, including troubleshooting advice if the new switch does not work."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes necessary safety precautions such as turning off the power at the circuit breaker, wearing insulated gloves and goggles, and advises calling a professional if needed."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "The tools listed are common household items that do not require special purchase or rental, suitable for a typical homeowner."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is broken down into 9 clear steps, which is appropriate for an intermediate task like replacing a light switch."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide specifically addresses the problem of a faulty light switch, providing contextually relevant steps and advice."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 0,
+        "reason": "The tips are practical and specific to the task, such as matching the switch's amperage and voltage and labeling wires for clarity."
+      }
+    ],
+    "overall_quality_score": 5
+  }
+}

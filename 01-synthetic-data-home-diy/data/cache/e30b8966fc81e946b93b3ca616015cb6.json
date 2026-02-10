@@ -1,0 +1,34 @@
+{
+  "cache_key": "e30b8966fc81e946b93b3ca616015cb6",
+  "prompt_hash": "e30b8966fc81e946b93b3ca616015cb6",
+  "category": "plumbing_repair",
+  "difficulty": "intermediate",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-09T05:04:34.764744+00:00",
+  "response": {
+    "question": "How do I replace a leaky faucet in my kitchen?",
+    "answer": "Replacing a leaky kitchen faucet involves several steps, including turning off the water supply, removing the old faucet, and installing the new one. First, make sure to have all necessary tools and materials before starting. Follow these steps carefully to ensure a successful repair.",
+    "equipment_problem": "Leaky kitchen faucet",
+    "tools_required": [
+      "Adjustable wrench",
+      "Screwdriver (flat and Phillips)",
+      "Plumber's tape",
+      "Basin wrench",
+      "Bucket"
+    ],
+    "steps": [
+      "1. Turn off the water supply to the faucet by locating the shutoff valves under the sink and turning them clockwise until tight.",
+      "2. Open the faucet to release any remaining water and relieve pressure in the lines.",
+      "3. Place a bucket under the sink to catch any water that may spill during the removal process.",
+      "4. Disconnect the water supply lines from the faucet using an adjustable wrench, turning them counterclockwise.",
+      "5. Use a basin wrench to remove the nuts securing the faucet to the sink, turning them counterclockwise.",
+      "6. Lift the old faucet off the sink and clean the area where it was mounted to remove any old sealant or debris.",
+      "7. Apply plumber's tape to the threads of the new faucet's supply lines to prevent leaks.",
+      "8. Position the new faucet in place, then secure it under the sink with the nuts using the basin wrench.",
+      "9. Reconnect the water supply lines to the new faucet and tighten with the adjustable wrench.",
+      "10. Turn the water supply back on by turning the shutoff valves counterclockwise and check for leaks by turning on the faucet."
+    ],
+    "safety_info": "Always turn off the water supply before starting any plumbing repair to prevent flooding. Use caution when working under the sink to avoid hitting your head or getting pinched.",
+    "tips": "Keep a towel handy to wipe up any spills. If you're having trouble removing the old faucet, soaking the nuts in vinegar can help loosen rust or mineral buildup."
+  }
+}

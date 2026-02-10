@@ -1,0 +1,30 @@
+{
+  "cache_key": "1e6681989020473d9856f6c834f49d36",
+  "prompt_hash": "1e6681989020473d9856f6c834f49d36",
+  "category": "appliance_repair",
+  "difficulty": "beginner",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-10T03:46:28.604527+00:00",
+  "response": {
+    "question": "How do I fix a leaking kitchen faucet?",
+    "answer": "To fix a leaking kitchen faucet, start by identifying the type of faucet you have (compression, cartridge, ball, or disc) since the repair method may differ. First, turn off the water supply to the faucet under the sink. Then, disconnect the water supply lines using an adjustable wrench or a pair of pliers. Carefully remove the faucet handle by unscrewing the screw at the back or bottom of the handle; you may need a flathead screwdriver to pry off a decorative cap. Once the handle is off, you can access the cartridge or compression washer, which is often the source of the leak. If it\u2019s a cartridge faucet, simply pull out the cartridge and replace it with a new one. For compression faucets, replace the rubber washer at the base of the valve. After the replacement, reassemble the faucet in reverse order, reconnect the supply lines, and turn the water supply back on to check for leaks.",
+    "equipment_problem": "Leaking kitchen faucet",
+    "tools_required": [
+      "Adjustable wrench",
+      "Pliers",
+      "Flathead screwdriver",
+      "Phillips screwdriver"
+    ],
+    "steps": [
+      "Turn off the water supply to the faucet under the sink.",
+      "Disconnect the water supply lines using an adjustable wrench or pliers.",
+      "Remove the faucet handle by unscrewing the screw, using a flathead screwdriver if needed to pry off a cap.",
+      "Access the cartridge or compression washer by removing the handle and any retaining nuts.",
+      "Replace the cartridge or rubber washer as necessary, ensuring a snug fit.",
+      "Reassemble the faucet by reversing the disassembly steps, reconnect the water supply lines.",
+      "Turn the water supply back on and check for leaks."
+    ],
+    "safety_info": "Before starting the repair, ensure to turn off the water supply to avoid flooding. Wear gloves to protect your hands from sharp edges and dirt. Always have a towel handy to catch any water that may spill during the repair process.",
+    "tips": "To identify the correct replacement part, take the old cartridge or washer with you to the store. If the faucet continues to leak after the repair, check for mineral buildup around the faucet seals or consider replacing the entire faucet. Regularly clean faucet aerators to prevent clogs and leaks."
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "cache_key": "judge_9f216c53afb7f4b702266259d53cf9d3",
+  "trace_id": "fbbba44a-dbd2-41b9-9520-33485de929c9",
+  "model": "gpt-4o",
+  "response": {
+    "trace_id": "fbbba44a-dbd2-41b9-9520-33485de929c9",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 0,
+        "reason": "The guide provides detailed steps for replacing a toilet flange, including how to identify the part, where to buy replacements, and troubleshooting advice if the fix doesn't work."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes necessary safety precautions, such as turning off the water supply and wearing safety goggles. It also advises when to call a professional."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "All tools listed are common and likely to be found in a typical homeowner's toolkit. No specialized tools are required."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is broken down into a reasonable number of steps for an advanced task and includes advice on when to call a professional."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide specifically addresses the issue of a broken toilet flange causing instability and leaks, providing context-specific advice."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 0,
+        "reason": "The tips are specific and useful, advising on flange selection and seeking help if needed, without repeating information from the steps."
+      }
+    ],
+    "overall_quality_score": 5
+  }
+}

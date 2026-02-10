@@ -1,0 +1,34 @@
+{
+  "cache_key": "06529900e0d00058a0343d9fd28661e3",
+  "prompt_hash": "06529900e0d00058a0343d9fd28661e3",
+  "category": "plumbing_repair",
+  "difficulty": "advanced",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-09T05:04:49.815157+00:00",
+  "response": {
+    "question": "How can I repair a leaking shower valve cartridge?",
+    "answer": "To repair a leaking shower valve cartridge, you will need to follow these steps: 1. **Shut Off Water Supply**: Locate the main water shut-off valve and turn it off to prevent any water flow during the repair. 2. **Remove the Handle**: Use a flathead screwdriver to pry off the decorative cap on the shower handle (if present). Then, use an Allen wrench or screwdriver to remove the screw securing the handle. Pull the handle off gently. 3. **Remove the Escutcheon Plate**: Unscrew and remove the escutcheon plate to expose the valve assembly. 4. **Take Out the Cartridge**: Use pliers to pull out the valve cartridge. If it's stuck, you might need a cartridge puller. 5. **Inspect the Cartridge**: Check for any visible damage, such as cracks or worn-out seals. 6. **Replace O-rings and Seals**: Before reinstalling, replace the O-rings and seals on the new cartridge or the existing one if it's in good condition. 7. **Reinstall the Cartridge**: Place the cartridge back into the valve body, ensuring it aligns correctly. 8. **Reassemble the Shower**: Replace the escutcheon plate and handle, securing them as they were before. 9. **Turn On Water Supply**: Restore the water supply and check for leaks. 10. **Test the Shower**: Run the shower to ensure that the leak is fixed and the water flows properly without any drips.",
+    "equipment_problem": "Leaking shower valve cartridge causing water to drip from the shower head.",
+    "tools_required": [
+      "Flathead screwdriver",
+      "Allen wrench",
+      "Pliers",
+      "Cartridge puller (optional)",
+      "Replacement cartridge",
+      "Teflon tape"
+    ],
+    "steps": [
+      "Shut off the water supply to prevent any leaks while you work.",
+      "Remove the shower handle to access the valve by unscrewing it.",
+      "Take off the escutcheon plate to expose the valve assembly underneath.",
+      "Pull out the cartridge using pliers or a cartridge puller if necessary.",
+      "Inspect the cartridge for damage and replace any worn seals or O-rings.",
+      "Reinstall the cartridge back into the valve body and ensure proper alignment.",
+      "Reassemble the shower's handle and escutcheon plate securely.",
+      "Turn the water supply back on and check for leaks at the valve.",
+      "Test the shower to ensure proper function without leaks."
+    ],
+    "safety_info": "Always ensure the water supply is turned off before starting any plumbing repair. Wear safety glasses to protect your eyes from debris and water spray while working. If you feel uncomfortable at any point or if the leak persists after your repair, contact a licensed plumber.",
+    "tips": "Keep a towel or bucket handy to catch any residual water that may leak out during the repair. Make sure to use the correct replacement cartridge specific to your shower model for the best results."
+  }
+}

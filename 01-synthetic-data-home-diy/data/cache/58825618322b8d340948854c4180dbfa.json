@@ -1,0 +1,31 @@
+{
+  "cache_key": "58825618322b8d340948854c4180dbfa",
+  "prompt_hash": "58825618322b8d340948854c4180dbfa",
+  "category": "appliance_repair",
+  "difficulty": "beginner",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-09T05:04:01.382594+00:00",
+  "response": {
+    "question": "How can I fix a refrigerator that is not cooling?",
+    "answer": "To fix a refrigerator that is not cooling, check the temperature settings, clean the condenser coils, and ensure proper airflow inside the fridge. If these steps do not resolve the issue, consider checking the door seals for leaks. If you still face issues, it might be a sign of a more serious problem that may require professional help.",
+    "equipment_problem": "Refrigerator not cooling properly",
+    "tools_required": [
+      "Screwdriver",
+      "Vacuum cleaner with brush attachment",
+      "Soft cloth",
+      "Bucket"
+    ],
+    "steps": [
+      "1. Check the temperature settings on the refrigerator's control panel. Make sure the temperature is set to the recommended level (usually between 37\u00b0F and 40\u00b0F for the fridge and 0\u00b0F for the freezer).",
+      "2. Unplug the refrigerator from the wall outlet to ensure safety while working on it.",
+      "3. Locate the condenser coils, which are typically at the back or underneath the refrigerator. Use a screwdriver to remove any panel covering the coils if necessary.",
+      "4. Use a vacuum cleaner with a brush attachment to gently clean the condenser coils and remove any dust, dirt, or debris that could be blocking airflow.",
+      "5. After cleaning, inspect the coils for any damage. If they are bent, you can gently straighten them with your hands.",
+      "6. Check the door seals by closing the door on a piece of paper. If you can easily pull the paper out, the seals may be worn and should be replaced. Clean the seals with a soft cloth.",
+      "7. Ensure that there is enough space around the refrigerator for proper airflow. The back of the refrigerator should have at least a few inches of space from the wall.",
+      "8. Plug the refrigerator back in and monitor it for a few hours to see if it starts cooling again. If it does not, there may be a more significant issue that requires a technician."
+    ],
+    "safety_info": "Always unplug the refrigerator before starting any maintenance work to avoid electric shock. Be cautious when handling sharp tools like screwdrivers, and ensure the area is dry to prevent slips or falls.",
+    "tips": "Regular maintenance, such as cleaning the coils every 6 months, can help prevent cooling issues in the future."
+  }
+}

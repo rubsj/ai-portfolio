@@ -1,0 +1,28 @@
+{
+  "cache_key": "cd09fceabffe7ea76374b227d0c7aee1",
+  "prompt_hash": "cd09fceabffe7ea76374b227d0c7aee1",
+  "category": "plumbing_repair",
+  "difficulty": "beginner",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-10T03:47:12.576532+00:00",
+  "response": {
+    "question": "How do I fix a leaky faucet?",
+    "answer": "To fix a leaky faucet, first, ensure that you turn off the water supply to the faucet. This is usually done by turning the valve under the sink clockwise until it stops. Next, you will need to gather your tools: a basin wrench or adjustable wrench, a screwdriver (flathead and Phillips), and a towel for cleaning up spills.\n\n1. **Remove the Faucet Handle:** Use the screwdriver to take out the screw holding the handle in place, which may be located on the top or back of the handle. Lift the handle off gently to expose the inner components.\n\n2. **Examine the Cartridge or Washer:** Depending on your faucet type, you may find a cartridge or a rubber washer. If it\u2019s a cartridge faucet, pull the cartridge straight out. If it\u2019s a compression faucet, unscrew the packing nut to access the rubber washer. Check for wear or damage.\n\n3. **Replace the Damaged Parts:** Head to your local hardware store and purchase a replacement cartridge or rubber washer. These can usually be found in the plumbing section. Make sure to take the old part with you to ensure you get the right size.\n\n4. **Reassemble the Faucet:** Once you have the new part, install it by reversing the disassembly steps. Carefully place the new cartridge or washer into the faucet and secure it with the packing nut if it\u2019s a compression faucet. Replace the handle and screw it back in place.\n\n5. **Turn the Water Back On:** After reassembling, turn the water supply back on and check for leaks by running the faucet. If it still leaks, make sure everything is tightened correctly.\n\n6. **Clean Up:** Wipe any water spills with a towel to prevent slipping and keep the area tidy.",
+    "equipment_problem": "Leaky faucet",
+    "tools_required": [
+      "Basin wrench or adjustable wrench",
+      "Screwdriver (flathead and Phillips)",
+      "Towel"
+    ],
+    "steps": [
+      "Turn off the water supply to the faucet by turning the valve under the sink clockwise until it stops.",
+      "Remove the faucet handle by unscrewing the screw with a screwdriver and lifting it off gently to access the inner components.",
+      "Examine the cartridge or rubber washer inside the faucet for wear or damage.",
+      "Replace any damaged parts by purchasing a new cartridge or rubber washer from a local hardware store, bringing the old part for size reference.",
+      "Reassemble the faucet by reversing the disassembly steps, ensuring to tighten everything securely.",
+      "Turn the water supply back on and check for leaks by running the faucet."
+    ],
+    "safety_info": "Before starting any plumbing repair, always disconnect the water supply to avoid flooding and ensure safety. Wear gloves to protect your hands and goggles to protect your eyes from any splashes. Be cautious of sharp edges when handling tools and ensure that the work area is dry to prevent slipping. If you are unsure about the repair or if the leak persists after your attempt, call a licensed plumber for assistance.",
+    "tips": "Ensure you have the correct replacement part by taking the old one to the store. When reassembling, be sure not to overtighten screws, which can damage the faucet. Regularly check your faucets for leaks as a part of your home maintenance to catch issues early."
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "cache_key": "6cff63b05eb6b1c9c14afda5e4999b13",
+  "prompt_hash": "6cff63b05eb6b1c9c14afda5e4999b13",
+  "category": "electrical_repair",
+  "difficulty": "intermediate",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-10T03:48:18.629624+00:00",
+  "response": {
+    "question": "How do I replace a faulty light switch in my home?",
+    "answer": "To replace a faulty light switch, first, disconnect the power at the circuit breaker to ensure safety. Use a flathead screwdriver to remove the faceplate by unscrewing the screws. Next, take a Phillips screwdriver to remove the screws holding the switch in place. Carefully pull the switch out of the electrical box, and note how the wires are connected (you may want to take a picture for reference). Disconnect the wires from the old switch by unscrewing the terminal screws. If the wires are attached with push-in connections, gently pull them out. Replace the old switch with the new one by connecting the wires in the same configuration as before. Secure the switch back into the electrical box with screws, reattach the faceplate, and finally turn the power back on at the breaker to test the new switch.",
+    "equipment_problem": "Faulty light switch causing flickering or not working at all.",
+    "tools_required": [
+      "Flathead screwdriver",
+      "Phillips screwdriver"
+    ],
+    "steps": [
+      "Disconnect the power at the circuit breaker to ensure safety.",
+      "Remove the faceplate of the switch using a flathead screwdriver.",
+      "Unscrew and remove the faulty switch using a Phillips screwdriver.",
+      "Note the wiring configuration of the old switch for reference.",
+      "Disconnect the wires from the old switch and connect them to the new switch as per the original configuration.",
+      "Secure the new switch in the electrical box and reattach the faceplate.",
+      "Restore power at the circuit breaker and test the new switch."
+    ],
+    "safety_info": "Always disconnect power at the circuit breaker before starting any electrical work. Wear safety goggles and insulated gloves to protect against electrical shock. Be aware of any exposed wiring and ensure the area is dry to avoid electrical hazards. If you encounter any burnt wires or if the switch continues to fail, call a licensed electrician immediately.",
+    "tips": "When purchasing a new switch, ensure it matches the type of switch you are replacing (e.g., single pole, three-way). Use a camera to document the wiring setup for easier reinstallation. Avoid over-tightening screws as this can damage the switch. Regularly check your switches for signs of wear or overheating to prevent future issues."
+  }
+}

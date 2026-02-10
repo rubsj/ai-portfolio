@@ -1,0 +1,35 @@
+{
+  "cache_key": "correct_7e6772fb4b4717643f5c5e250592b684",
+  "trace_id": "28073bb7-2368-4249-ba91-b235d6d8e749",
+  "model": "gpt-4o-mini",
+  "type": "correction",
+  "timestamp": "2026-02-10T03:46:09.763889+00:00",
+  "response": {
+    "question": "How do I replace a broken window pane in a double-hung window?",
+    "answer": "Replacing a broken window pane in a double-hung window involves careful removal of the old glass and installation of the new pane. This process requires precision and safety measures to avoid injury. If you are not comfortable with handling glass, or if the window frame is significantly damaged, consider hiring a professional to avoid further issues. Additionally, you can purchase replacement glass at a local hardware store or a glass specialty shop. If the new pane doesn\u2019t fit properly, you may need to recheck your measurements and trim the glass edges slightly with the glass cutter.",
+    "equipment_problem": "Broken window pane in a double-hung window.",
+    "tools_required": [
+      "Safety goggles",
+      "Gloves",
+      "Putty knife",
+      "Glass cutter",
+      "Measuring tape",
+      "Caulking gun",
+      "Silicone sealant",
+      "Paintbrush",
+      "Wood glue",
+      "Replacement glass pane"
+    ],
+    "steps": [
+      "1. Put on safety goggles and gloves to protect yourself from glass shards.",
+      "2. Remove any loose or broken glass pieces from the window frame using a putty knife to scrape away old putty or caulk.",
+      "3. Carefully measure the dimensions of the window frame to cut the new glass pane to size. Use a glass cutter for precise cuts, and make sure to score the glass evenly before snapping it.",
+      "4. Prepare the frame by applying a thin layer of wood glue along the edges where the new glass will sit.",
+      "5. Place the new glass pane into the frame and ensure it fits snugly. If it feels loose, check the measurements again and trim the glass if necessary. Use a caulking gun to apply silicone sealant around the edges for a watertight seal.",
+      "6. Allow the sealant to cure according to the manufacturer's instructions, usually 24 hours, before painting or applying any additional finish.",
+      "7. Once cured, reapply any trim or molding that was removed during the process."
+    ],
+    "safety_info": "Always wear safety goggles and gloves when working with glass to prevent injury. Ensure that the workspace is clear of debris, and use caution when handling sharp tools. If the window frame is significantly damaged or if you feel uncomfortable with the repair, consult a professional.",
+    "tips": "Double-check your measurements before cutting the new glass to avoid errors. When cutting, use a straight edge to guide the glass cutter for a clean line. If you're new to cutting glass, practice on a scrap piece to gain confidence. After installing, inspect the edges for any gaps and apply additional sealant if needed. Keep a vacuum cleaner handy to clean up any glass shards immediately."
+  }
+}

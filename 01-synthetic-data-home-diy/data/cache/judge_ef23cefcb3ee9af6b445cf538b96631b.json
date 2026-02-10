@@ -1,0 +1,41 @@
+{
+  "cache_key": "judge_ef23cefcb3ee9af6b445cf538b96631b",
+  "trace_id": "200bb980-79d4-433b-bdfb-da04890ec306",
+  "model": "gpt-4o",
+  "response": {
+    "trace_id": "200bb980-79d4-433b-bdfb-da04890ec306",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 1,
+        "reason": "The guide lacks troubleshooting advice for what to do if the new unit doesn't fit or if there are issues with the sealant curing. It also doesn't mention where to buy replacement units or how to identify the correct size."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 1,
+        "reason": "The guide does not include a warning to turn off power if the window is near electrical outlets or appliances. It also lacks a specific callout to check for electrical hazards."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "All tools listed are common and likely to be found in a typical homeowner's toolkit. No specialized tools are required."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The task is appropriately complex for an advanced difficulty level and does not exceed 12 steps. It also advises when to consult a professional."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide specifically addresses the problem of a broken window pane in a double-glazed window unit, providing context-specific instructions."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 1,
+        "reason": "The tips provided are somewhat generic and miss the opportunity to offer specific advice on handling heavy glass safely or ensuring a proper seal."
+      }
+    ],
+    "overall_quality_score": 3
+  }
+}

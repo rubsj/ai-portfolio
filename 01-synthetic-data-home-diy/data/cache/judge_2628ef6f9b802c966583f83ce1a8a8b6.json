@@ -1,0 +1,41 @@
+{
+  "cache_key": "judge_2628ef6f9b802c966583f83ce1a8a8b6",
+  "trace_id": "131df6fb-b262-4767-8beb-957bed6b8fc6",
+  "model": "gpt-4o",
+  "response": {
+    "trace_id": "131df6fb-b262-4767-8beb-957bed6b8fc6",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 1,
+        "reason": "The guide does not provide information on how to identify the correct replacement contactor or where to purchase it. It also lacks troubleshooting advice if the replacement does not resolve the issue."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes a power-off warning as the first step and advises the use of insulated gloves and safety goggles. It also suggests contacting a professional if unsure."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "All tools listed are common and likely to be owned by a typical homeowner or easily obtainable."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is within the 12-step limit for an advanced task and advises contacting a professional if unsure."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide specifically addresses the issue of a faulty contactor in a central AC unit, providing context-specific instructions."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 1,
+        "reason": "The tips are somewhat generic and could be improved by providing more specific advice, such as how to ensure compatibility of the new contactor."
+      }
+    ],
+    "overall_quality_score": 3
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "cache_key": "correct_b370177028e19c30628a9f59b79328ef",
+  "trace_id": "2e07833f-3fc5-441a-8a5c-fec9e2aecb99",
+  "model": "gpt-4o-mini",
+  "type": "correction",
+  "timestamp": "2026-02-10T03:43:44.452488+00:00",
+  "response": {
+    "question": "How can I replace the heating element in my electric oven?",
+    "answer": "To replace the heating element in your electric oven, you'll need to follow these steps carefully to ensure safety and proper installation. This process typically takes about an hour and requires moderate DIY skills. Make sure to have the right replacement part ready before starting the repair. You can purchase the replacement heating element at appliance repair stores, home improvement stores, or online retailers such as Amazon or the manufacturer's website. If the oven still doesn't heat properly after replacing the heating element, check for issues with the oven's thermostat or wiring, as these could also prevent proper heating.",
+    "equipment_problem": "The oven is not heating properly, likely due to a faulty heating element.",
+    "tools_required": [
+      "Screwdriver (Phillips and flathead)",
+      "Replacement heating element",
+      "Work gloves",
+      "Safety goggles"
+    ],
+    "steps": [
+      "1. Unplug the oven from the wall outlet to ensure safety.",
+      "2. Remove the oven racks and any other items from inside the oven to provide clear access.",
+      "3. Locate the heating element, which is usually at the bottom of the oven or on the back wall.",
+      "4. Use a screwdriver to remove the screws securing the heating element to the oven.",
+      "5. Carefully pull the heating element away from the oven wall, ensuring not to damage any wiring.",
+      "6. Disconnect the old heating element by carefully pulling off the wire connectors. Note the arrangement for reconnection.",
+      "7. Connect the new heating element by attaching the wire connectors in the same arrangement as the old one.",
+      "8. Secure the new heating element in place with screws.",
+      "9. Replace the oven racks and plug the oven back into the outlet. Test the oven to ensure it heats properly."
+    ],
+    "safety_info": "Always unplug the oven before starting any repair to prevent electrical shock. Wear safety goggles and gloves to protect your eyes and hands from sharp edges and electrical components. Additionally, ensure the oven is completely cool before starting the repair process.",
+    "tips": "If you're unsure about which replacement heating element to purchase, refer to your oven's user manual or check the manufacturer's website for the correct part number. If the oven still doesn't heat after replacing the element, consider checking the thermostat or consulting a professional for further diagnosis."
+  }
+}

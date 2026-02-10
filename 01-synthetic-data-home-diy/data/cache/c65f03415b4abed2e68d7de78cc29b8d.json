@@ -1,0 +1,33 @@
+{
+  "cache_key": "c65f03415b4abed2e68d7de78cc29b8d",
+  "prompt_hash": "c65f03415b4abed2e68d7de78cc29b8d",
+  "category": "electrical_repair",
+  "difficulty": "advanced",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-09T05:05:10.585262+00:00",
+  "response": {
+    "question": "How do I replace a broken electrical outlet in my home?",
+    "answer": "To replace a broken electrical outlet, you must first ensure safety by turning off the power to the outlet at the circuit breaker. Use a voltage tester to confirm that the outlet is de-energized. Then, remove the outlet cover plate by unscrewing it. Unscrew the old outlet from the electrical box, taking note of how the wires are connected (you can take a photo for reference). Carefully disconnect the wires from the old outlet. Connect the wires to the new outlet, matching the connections (black wire to brass screw, white wire to silver screw, and green/bare wire to ground screw). Secure the outlet back in the box, reattach the cover plate, and turn the power back on at the breaker. Finally, test the new outlet with a voltage tester to ensure it is working properly.",
+    "equipment_problem": "Broken electrical outlet",
+    "tools_required": [
+      "Screwdriver",
+      "Voltage tester",
+      "Wire stripper and cutter",
+      "Replacement electrical outlet"
+    ],
+    "steps": [
+      "Turn off the power to the outlet at the circuit breaker panel.",
+      "Use a voltage tester to confirm that the outlet is not receiving power.",
+      "Unscrew and remove the outlet cover plate.",
+      "Remove the screws securing the old outlet to the electrical box and pull it out gently.",
+      "Take note of how the wires are connected to the old outlet (consider taking a photo).",
+      "Disconnect the wires from the old outlet.",
+      "Connect the wires to the new outlet: black to brass, white to silver, and green/bare to ground.",
+      "Carefully push the new outlet back into the box and secure it with screws.",
+      "Reattach the outlet cover plate and ensure it is secure.",
+      "Turn the power back on at the circuit breaker and test the new outlet with a voltage tester."
+    ],
+    "safety_info": "Always turn off the power at the circuit breaker before starting any electrical work. Use a voltage tester to verify that the outlet is de-energized. Wear insulated gloves and safety glasses to protect yourself from potential electrical shock. If you are uncomfortable or unfamiliar with electrical systems, please call a licensed electrician instead of attempting this repair.",
+    "tips": "Label the circuit breaker for future reference, and consider replacing multiple outlets at once if they are older. Inspect the wiring for any signs of damage or deterioration before connecting to the new outlet."
+  }
+}

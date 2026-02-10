@@ -1,0 +1,31 @@
+{
+  "cache_key": "9869de26b17b5fa3118d7f5146d37bc2",
+  "prompt_hash": "9869de26b17b5fa3118d7f5146d37bc2",
+  "category": "electrical_repair",
+  "difficulty": "beginner",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-09T05:04:53.540700+00:00",
+  "response": {
+    "question": "How do I replace a blown fuse in my home's fuse box?",
+    "answer": "To replace a blown fuse in your home's fuse box, first ensure you have the right tools and safety measures in place. Start by identifying the blown fuse by checking which circuit is not working. After ensuring all power is off, carefully remove the blown fuse and replace it with a new one of the same amperage. Lastly, restore power and test the circuit to ensure it works.",
+    "equipment_problem": "A blown fuse in the fuse box.",
+    "tools_required": [
+      "Screwdriver",
+      "Replacement fuse of the same amperage",
+      "Flashlight"
+    ],
+    "steps": [
+      "1. Locate your fuse box, usually found in a basement, garage, or utility room. Make sure the area is well-lit, using a flashlight if necessary.",
+      "2. Identify the circuit that is not working. Look for any appliances or lights that are not functioning, as this indicates which fuse may be blown.",
+      "3. Turn off the main power switch to the fuse box to ensure your safety while making the replacement. This is crucial to prevent any electric shock.",
+      "4. Open the fuse box cover using a screwdriver. Be careful and ensure no power is running through any circuits.",
+      "5. Look for the blown fuse, which may appear darkened or have a broken wire inside. This is the fuse that needs to be replaced.",
+      "6. Carefully unscrew or pull out the blown fuse. Make sure to remember its position and the amperage rating printed on it.",
+      "7. Take your replacement fuse, ensuring it matches the amperage of the blown fuse exactly. Insert the new fuse into the same slot.",
+      "8. Close the fuse box cover securely and turn the main power switch back on.",
+      "9. Test the circuit by checking if the previously non-functioning appliances or lights are now working."
+    ],
+    "safety_info": "Always turn off the main power before working on the fuse box to avoid electric shock. If you are unsure about any part of the process, consult a licensed electrician. Never replace a fuse with one of a higher amperage, as this can cause overheating and fire hazards.",
+    "tips": "Keep a few extra fuses of different amperages on hand for future replacements. Regularly check your fuse box for any signs of wear or damage."
+  }
+}

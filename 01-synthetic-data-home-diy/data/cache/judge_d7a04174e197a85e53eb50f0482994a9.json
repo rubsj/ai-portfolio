@@ -1,0 +1,41 @@
+{
+  "cache_key": "judge_d7a04174e197a85e53eb50f0482994a9",
+  "trace_id": "5d6ed3d2-f395-4965-90bb-7818228b5ca7",
+  "model": "gpt-4o",
+  "response": {
+    "trace_id": "5d6ed3d2-f395-4965-90bb-7818228b5ca7",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 0,
+        "reason": "The guide provides detailed steps for replacing a capacitor, including how to identify the part, where to buy replacements, and troubleshooting advice if the fix doesn't work."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes necessary safety precautions such as turning off power, wearing PPE, and warnings about capacitor discharge. It also advises calling a professional if unsure."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "The tools listed are common and likely to be found in a typical homeowner's toolkit, such as a screwdriver and wire cutters."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is concise with only 6 steps, appropriate for an advanced task, and includes advice on when to call a professional."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide specifically addresses replacing a faulty capacitor in a central air conditioning unit, directly tied to the equipment_problem field."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 0,
+        "reason": "The tips are practical and specific, such as matching capacitor specifications and ensuring secure connections, enhancing the repair process."
+      }
+    ],
+    "overall_quality_score": 5
+  }
+}

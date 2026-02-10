@@ -1,0 +1,33 @@
+{
+  "cache_key": "e4b262d45eaaeaf1625f58334915ec8d",
+  "prompt_hash": "e4b262d45eaaeaf1625f58334915ec8d",
+  "category": "appliance_repair",
+  "difficulty": "advanced",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-09T05:04:19.506769+00:00",
+  "response": {
+    "question": "How do I replace the door seal on my front-loading washing machine?",
+    "answer": "Replacing the door seal on a front-loading washing machine can help prevent leaks and ensure efficient operation. This task requires careful handling to avoid damaging the washer or the new seal. Here\u2019s how to do it safely and effectively:",
+    "equipment_problem": "The door seal on the front-loading washing machine is torn or damaged, causing leaks during operation.",
+    "tools_required": [
+      "Flathead screwdriver",
+      "Phillips screwdriver",
+      "Pliers",
+      "Replacement door seal",
+      "Rubber mallet",
+      "Safety gloves",
+      "Towel"
+    ],
+    "steps": [
+      "Unplug the washing machine from the power source to ensure safety during the repair process.",
+      "Remove the retaining band or clamp securing the old door seal using the flathead screwdriver.",
+      "Carefully pull the old door seal away from the door and the washing machine drum. You may need to use pliers to help remove it if it's stuck.",
+      "Clean the area around the door opening and the drum where the seal sits to remove any debris or residue.",
+      "Take the new door seal and stretch it gently to fit over the drum's edge, ensuring it is seated properly all around.",
+      "Secure the new seal with the retaining band or clamp, making sure it is tight but not overly compressed. Use the rubber mallet if necessary to help seat it evenly.",
+      "Reconnect the washing machine to the power source and run a short cycle on the spin setting with a towel inside to check for leaks."
+    ],
+    "safety_info": "Always unplug the washing machine before starting any repair work. Wear safety gloves to protect your hands from sharp edges and ensure the area is dry to avoid slipping.",
+    "tips": "If you notice any rust or damage around the door opening, consider addressing that before installing the new seal. If you're unsure about the installation process or if the machine continues to leak after replacing the seal, consult a professional for assistance."
+  }
+}

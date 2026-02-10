@@ -1,0 +1,28 @@
+{
+  "cache_key": "f44ca46deff647e2067d1a80507ccf66",
+  "prompt_hash": "f44ca46deff647e2067d1a80507ccf66",
+  "category": "plumbing_repair",
+  "difficulty": "beginner",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-10T03:47:18.223127+00:00",
+  "response": {
+    "question": "How do I fix a leaky kitchen faucet?",
+    "answer": "To fix a leaky kitchen faucet, start by identifying the source of the leak, which is usually from the faucet handle or spout. The first step is to disconnect the water supply by turning off the valves under the sink. If you don\u2019t see any valves, turn off the main water supply. Next, put on gloves and goggles for protection. Use a screwdriver to remove the handle, which may involve loosening a screw or lifting off a decorative cap. Once the handle is off, inspect the O-ring or washer inside for wear and tear, which is often the cause of leaks. Replace these parts if they appear damaged; they can be found at a local hardware store or online. Reassemble the faucet by reversing the steps, turning the water supply back on, and checking for leaks. If the faucet still leaks after replacement, you may need to call a licensed plumber for further inspection.",
+    "equipment_problem": "Leaky kitchen faucet",
+    "tools_required": [
+      "Screwdriver",
+      "Pliers",
+      "Gloves",
+      "Goggles"
+    ],
+    "steps": [
+      "Turn off the water supply to the faucet by locating the valves under the sink and turning them clockwise. If no valves are present, turn off the main water supply.",
+      "Put on gloves and goggles for safety before starting the repair.",
+      "Using a screwdriver, remove the handle of the faucet. Depending on your faucet model, you might need to remove a screw or lift a decorative cap to access the screw.",
+      "Once the handle is off, check the O-ring or washer inside the faucet for any signs of wear or damage. These parts are usually the cause of leaks.",
+      "If the O-ring or washer is damaged, take it to a hardware store to find an exact replacement. If they look fine, reassemble the faucet and check the connection for any other issues."
+    ],
+    "safety_info": "Always turn off the water supply before starting any plumbing repair. Wear gloves and goggles to protect yourself from water splashes and sharp edges.",
+    "tips": "When replacing the O-ring or washer, take the old part with you to the hardware store to ensure you purchase the correct size. Consider applying plumber's grease to the new O-ring or washer to ensure a better seal and ease of installation. If you encounter corrosion or stubborn parts, use pliers gently to avoid damaging the faucet."
+  }
+}

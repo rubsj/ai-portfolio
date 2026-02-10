@@ -1,0 +1,24 @@
+{
+  "cache_key": "78c23bd5ef5b488fa85d9f2e97ed6de2",
+  "prompt_hash": "78c23bd5ef5b488fa85d9f2e97ed6de2",
+  "category": "appliance_repair",
+  "difficulty": "advanced",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-10T03:47:03.982084+00:00",
+  "response": {
+    "question": "How can I replace the door seal on my front-loading washing machine?",
+    "answer": "To replace the door seal on your front-loading washing machine, first, disconnect the power and water supply to the machine to prevent any electrical hazards or leaks. Next, remove the front panel by unscrewing the screws located at the bottom and gently pulling it off. Inspect the existing door seal for damage, which typically presents as tears, mold, or a loss of elasticity. Carefully pry the old seal out of its groove using a flathead screwdriver, taking care not to damage the drum. Once removed, clean the groove thoroughly to remove any debris or residue. Take the new seal and align it with the groove, making sure the lip of the seal is facing inward. Press it firmly into place, ensuring it is evenly seated all the way around. Reattach the front panel and secure it with screws. Finally, reconnect the power and water supply, and run a short cycle to check for leaks. If there are still leaks after replacing the seal, the door latch may also need adjustment or replacement.",
+    "equipment_problem": "Damaged door seal on front-loading washing machine",
+    "tools_required": [
+      "Flathead screwdriver",
+      "Phillips screwdriver",
+      "Utility knife"
+    ],
+    "steps": [
+      "Disconnect the power and water supply to the washing machine.",
+      "Remove the front panel by unscrewing the screws at the bottom and gently pulling it off."
+    ],
+    "safety_info": "Ensure you are wearing gloves and safety goggles to protect against sharp edges and potential water spills. Disconnecting the power and water supply is crucial to avoid electrical shock or flooding.",
+    "tips": "When installing the new seal, make sure to stretch it slightly for a snug fit, but avoid overstretching to prevent damage. Regularly check the seal for wear and tear to prevent leaks in the future."
+  }
+}

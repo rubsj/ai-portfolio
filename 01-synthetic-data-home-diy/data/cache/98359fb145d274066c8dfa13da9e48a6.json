@@ -1,0 +1,32 @@
+{
+  "cache_key": "98359fb145d274066c8dfa13da9e48a6",
+  "prompt_hash": "98359fb145d274066c8dfa13da9e48a6",
+  "category": "electrical_repair",
+  "difficulty": "beginner",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-09T05:04:58.419409+00:00",
+  "response": {
+    "question": "How do I replace a faulty light switch in my home?",
+    "answer": "Replacing a faulty light switch is a straightforward task that can be done safely by following these detailed steps. Always ensure safety first by turning off the power to the switch at the circuit breaker before starting the repair. You will also need to take precautions against electrical shock during the process. By carefully following the steps outlined below, you can successfully replace the switch and restore function to your light fixture.",
+    "equipment_problem": "The light switch does not turn the light on or off properly, indicating it may be faulty.",
+    "tools_required": [
+      "Screwdriver",
+      "Voltage tester",
+      "Wire strippers",
+      "Electrical tape"
+    ],
+    "steps": [
+      "1. **Turn Off Power**: Locate your circuit breaker panel and turn off the breaker that controls the light switch you are replacing. This will ensure that no electricity is flowing to the switch while you work on it.",
+      "2. **Remove the Switch Plate**: Use a screwdriver to remove the screws holding the switch plate cover in place. Carefully pull the plate off to expose the switch underneath.",
+      "3. **Test for Voltage**: Before touching any wires, use a voltage tester to check that the power is off. Place the tester on the terminals of the switch; if it lights up, turn off the breaker again and retest until there's no voltage.",
+      "4. **Unscrew the Switch**: Remove the screws that hold the switch to the electrical box. Carefully pull the switch out from the wall to access the wires connected to it.",
+      "5. **Disconnect the Wires**: Take note of how the wires are connected to the switch, as you will need to replicate this with the new switch. Typically, there are two wires connected (one to each terminal). Use wire strippers to disconnect the wires if necessary. Be sure to handle the wires carefully.",
+      "6. **Connect the New Switch**: Take your new light switch and connect the wires to the same terminals as the old switch. Make sure to tighten the screws securely to hold the wires in place.",
+      "7. **Reattach the Switch**: Once the wires are connected, carefully push the switch back into the electrical box and secure it with screws.",
+      "8. **Replace the Switch Plate**: Put the switch plate cover back on and screw it into place.",
+      "9. **Turn the Power Back On**: Go back to the circuit breaker panel and turn the breaker back on. Test the switch to ensure it is functioning properly."
+    ],
+    "safety_info": "Always ensure that the power is turned off at the circuit breaker before starting any electrical work. Use a voltage tester to confirm that no electricity is flowing to the switch. Avoid working with wet hands or in damp environments, and if you feel unsure about handling electrical components, consult a licensed electrician.",
+    "tips": "Keep the work area dry and organized to minimize accidents. If you have trouble remembering how the wires were connected, take a picture before disconnecting them as a reference."
+  }
+}
