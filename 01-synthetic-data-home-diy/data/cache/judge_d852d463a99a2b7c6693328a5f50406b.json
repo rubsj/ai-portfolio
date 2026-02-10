@@ -1,0 +1,41 @@
+{
+  "cache_key": "judge_d852d463a99a2b7c6693328a5f50406b",
+  "trace_id": "dee9099e-5e05-4d82-8b60-fb8201d6b004",
+  "model": "gpt-4o",
+  "response": {
+    "trace_id": "dee9099e-5e05-4d82-8b60-fb8201d6b004",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 0,
+        "reason": "The guide provides a complete set of instructions, including how to identify the blown fuse, the tools needed, and what to do if the fix doesn't work. Troubleshooting advice is also included."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes a warning to turn off the main power before starting work, mentions the risk of electric shock, and advises consulting a licensed electrician if unsure. It also warns against using a higher amperage fuse."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "The tools listed are common household items that a typical homeowner would likely have, such as a screwdriver and flashlight."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is straightforward with only 9 steps, which is appropriate for a beginner task. No specialty tools are required."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide specifically addresses the problem of a blown fuse in a home's fuse box, providing relevant and specific instructions."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 0,
+        "reason": "The tips are practical and provide useful advice for future maintenance, such as keeping extra fuses on hand and regularly checking the fuse box."
+      }
+    ],
+    "overall_quality_score": 5
+  }
+}

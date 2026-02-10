@@ -1,0 +1,30 @@
+{
+  "cache_key": "7584da9c5ffc49b7b1bd347bc1b9d8b4",
+  "prompt_hash": "7584da9c5ffc49b7b1bd347bc1b9d8b4",
+  "category": "hvac_maintenance",
+  "difficulty": "beginner",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-10T03:48:50.224439+00:00",
+  "response": {
+    "question": "How do I replace the air filter in my HVAC system?",
+    "answer": "Replacing the air filter in your HVAC system is a straightforward task that can improve your system's efficiency and indoor air quality. First, ensure you have the correct replacement filter by checking the size needed, which is usually printed on the side of the existing filter. Begin by turning off the HVAC system at the thermostat and then disconnecting power to the unit to avoid any electrical hazards. Next, put on safety gloves and goggles to protect yourself from dust and debris. Locate the filter slot, which is often found near the air return duct. Carefully slide out the old filter; it may have dust buildup, so do this gently to avoid creating a mess. Dispose of the old filter properly. Insert the new filter, ensuring the airflow arrows on the filter are pointing in the correct direction, usually towards the blower. Once in place, reconnect power to the HVAC unit and turn the system back on. Finally, check the air flow to ensure it is operating correctly. If your HVAC system still seems inefficient or you notice unusual noises after replacing the filter, it may require further inspection or professional assistance.",
+    "equipment_problem": "Dirty or clogged air filter in HVAC system",
+    "tools_required": [
+      "screwdriver",
+      "gloves",
+      "goggles"
+    ],
+    "steps": [
+      "Turn off the HVAC system at the thermostat and then disconnect power to the unit for safety.",
+      "Put on safety gloves and goggles to protect yourself from dust.",
+      "Check the size of the existing air filter, which is usually printed on the side of the filter.",
+      "Locate the filter slot, typically near the air return duct, and gently slide out the old filter.",
+      "Dispose of the old filter properly and avoid creating a mess by doing this carefully.",
+      "Insert the new air filter, ensuring the airflow arrows are pointing in the right direction (towards the blower).",
+      "Reconnect power to the HVAC unit and turn the system back on.",
+      "Check the airflow to ensure it is operating correctly."
+    ],
+    "safety_info": "Always disconnect power to the HVAC unit before starting any work. Wear gloves and goggles to protect yourself from dust and debris.",
+    "tips": "Make sure to check the size of the filter before buying a replacement to avoid issues. Regularly replacing your filter every 1-3 months can help maintain efficiency and air quality."
+  }
+}

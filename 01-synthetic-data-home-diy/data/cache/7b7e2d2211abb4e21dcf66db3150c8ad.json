@@ -1,0 +1,29 @@
+{
+  "cache_key": "7b7e2d2211abb4e21dcf66db3150c8ad",
+  "prompt_hash": "7b7e2d2211abb4e21dcf66db3150c8ad",
+  "category": "hvac_maintenance",
+  "difficulty": "advanced",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-10T03:49:23.388589+00:00",
+  "response": {
+    "question": "How do I replace a faulty capacitor in my central air conditioning unit?",
+    "answer": "To replace a faulty capacitor in your central air conditioning unit, first ensure you disconnect power to the unit by turning off the circuit breaker and unplugging the unit if applicable. Next, wear personal protective equipment such as insulated gloves and safety goggles to protect yourself from any electrical shock and capacitor discharge. Begin by removing the access panel on your air conditioning unit, typically secured with screws. Locate the capacitor, which is usually cylindrical and may have two or three wires connected to it. Take a photo or make a note of the wiring setup for reassembly. Carefully disconnect the wires, ensuring you do not touch any metal components with your bare hands. Remove the old capacitor and replace it with a new one of the same voltage and microfarad rating, which you can purchase at any hardware store or online. Reconnect the wires according to your earlier notes, replace the access panel, and restore power to the unit. If the air conditioning unit does not operate correctly after replacing the capacitor, check for signs of burnt wires or a tripped breaker; if problems persist, it may indicate a larger issue in the system. For safety, if you feel uncertain at any point in the process or if the unit still doesn\u2019t work after the repair, it\u2019s best to call a licensed HVAC professional to avoid the risk of injury or further damage.",
+    "equipment_problem": "Faulty capacitor in central air conditioning unit",
+    "tools_required": [
+      "screwdriver",
+      "insulated gloves",
+      "safety goggles",
+      "wire cutters/strippers"
+    ],
+    "steps": [
+      "Disconnect power to the air conditioning unit by turning off the circuit breaker and unplugging it if necessary.",
+      "Put on insulated gloves and safety goggles to protect yourself from electrical shock.",
+      "Remove the access panel on the air conditioning unit using a screwdriver, and locate the capacitor.",
+      "Take a photo of the wiring connections to the capacitor for reference, then carefully disconnect the wires from the old capacitor.",
+      "Remove the old capacitor and install the new one, making sure it has the same voltage and microfarad rating.",
+      "Reconnect the wires according to your reference photo, replace the access panel, and restore power to the unit."
+    ],
+    "safety_info": "Always ensure the power is completely turned off before starting any work on the HVAC system. Use insulated gloves and safety goggles to protect against electrical shock and capacitor discharge. Capacitors can hold a charge even after power is disconnected, so handle with care and discharge properly if needed.",
+    "tips": "When purchasing a new capacitor, check that it matches the specifications of the old one (voltage and microfarads). Keep in mind that some capacitors can be sensitive to orientation, so install them in the same position as the old unit. Ensure all connections are secure to prevent future electrical issues, and regularly inspect your HVAC system for any signs of wear or damage."
+  }
+}

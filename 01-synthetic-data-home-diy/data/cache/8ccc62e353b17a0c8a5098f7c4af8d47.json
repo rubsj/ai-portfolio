@@ -1,0 +1,37 @@
+{
+  "cache_key": "8ccc62e353b17a0c8a5098f7c4af8d47",
+  "prompt_hash": "8ccc62e353b17a0c8a5098f7c4af8d47",
+  "category": "appliance_repair",
+  "difficulty": "beginner",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-09T05:03:56.888583+00:00",
+  "response": {
+    "question": "How can I unclog my kitchen sink drain?",
+    "answer": "To unclog your kitchen sink drain, you can follow these detailed steps: First, gather your tools and materials. Start by using a plunger to try and dislodge the clog. If that doesn't work, you can use a mixture of baking soda and vinegar to break down the blockage. If the clog persists, you may need to remove the trap under the sink to clear any debris manually. Lastly, run hot water to ensure the drain is clear. Remember to work patiently and carefully throughout the process.",
+    "equipment_problem": "Clogged kitchen sink drain",
+    "tools_required": [
+      "plunger",
+      "bucket",
+      "baking soda",
+      "vinegar",
+      "hot water",
+      "sponge"
+    ],
+    "steps": [
+      "Gather all necessary tools: a plunger, a bucket, baking soda, vinegar, and hot water.",
+      "Place the bucket under the sink to catch any water that may spill while you work.",
+      "If there is standing water in the sink, use a sponge to soak it up and place it in the bucket.",
+      "Take the plunger and make sure it covers the drain opening completely. Push down and pull up vigorously for about 15 seconds to create suction and try to dislodge the clog.",
+      "After plunging, check if the water drains down. If it still doesn\u2019t drain, proceed to the next step.",
+      "Mix 1/2 cup of baking soda with 1/2 cup of vinegar in a measuring cup. This will create a fizzing reaction that helps break down clogs.",
+      "Pour the baking soda and vinegar mixture down the drain and let it sit for about 30 minutes.",
+      "After 30 minutes, boil a kettle of water and carefully pour it down the drain to flush out the mixture and any loosened debris.",
+      "If the drain is still clogged, you may need to remove the trap under the sink. Place the bucket beneath the trap to catch any water.",
+      "Loosen the nuts on either side of the trap with your hands or with a pair of pliers if they are tight. Carefully remove the trap and check for any blockages inside.",
+      "Clean out any debris you find in the trap and reassemble it by tightening the nuts back in place.",
+      "Run hot water down the drain to ensure everything is flowing smoothly."
+    ],
+    "safety_info": "Always use caution when working with plumbing. Wear gloves if necessary to protect your hands from any debris or chemicals. If using a plunger, ensure the area is clear of bystanders to avoid splashing during use.",
+    "tips": "If the vinegar and baking soda method doesn't work, consider using a plumber's snake or contacting a professional plumber for assistance."
+  }
+}

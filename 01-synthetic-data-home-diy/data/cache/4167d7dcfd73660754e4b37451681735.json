@@ -1,0 +1,28 @@
+{
+  "cache_key": "4167d7dcfd73660754e4b37451681735",
+  "prompt_hash": "4167d7dcfd73660754e4b37451681735",
+  "category": "appliance_repair",
+  "difficulty": "intermediate",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-10T03:46:42.458574+00:00",
+  "response": {
+    "question": "How do I replace the water inlet valve on my washing machine?",
+    "answer": "To replace the water inlet valve on your washing machine, you first need to identify the specific problem. If your washer is not filling with water or is leaking from the valve area, these are signs that the valve may be defective. Begin by disconnecting the power to the washer and turning off the water supply to prevent leaks and electrical hazards. Next, remove the back panel of the washer, typically held by screws, to access the water inlet valve. Disconnect the hoses from the valve and detach the electrical connector. Install the new valve by reversing these steps: attach the electrical connector first, followed by the hoses, ensuring a tight fit to prevent leaks. Finally, reattach the back panel, turn the water supply back on, and plug the washer back in to test it. If the washer still does not fill or leaks, double-check the hose connections and ensure the new valve is functioning correctly.",
+    "equipment_problem": "Water inlet valve not functioning or leaking",
+    "tools_required": [
+      "Screwdriver",
+      "Pliers",
+      "Adjustable wrench"
+    ],
+    "steps": [
+      "Disconnect power to the washing machine by unplugging it from the wall.",
+      "Turn off the water supply to the washer at the source to prevent flooding.",
+      "Remove the back panel of the washing machine by unscrewing the screws holding it in place.",
+      "Locate the water inlet valve and detach the hoses and electrical connector from it.",
+      "Install the new water inlet valve by connecting the electrical connector and hoses securely.",
+      "Reattach the back panel, restore the water supply, and plug the washer back in to test."
+    ],
+    "safety_info": "Before starting, make sure to disconnect the power supply and turn off the water supply to avoid electrical shock and leaks. Wear gloves to protect your hands from sharp edges and goggles to shield your eyes from debris. Be cautious of any residual water in the hoses when disconnecting them, as it may spill.",
+    "tips": "When purchasing a replacement water inlet valve, ensure it is compatible with your washer model. A good source for parts is online retailers like RepairClinic or Amazon, or local appliance repair shops. Avoid over-tightening the hoses; hand-tightening is usually sufficient to prevent leaks. Keep track of all screws and small parts during disassembly to simplify reassembly."
+  }
+}

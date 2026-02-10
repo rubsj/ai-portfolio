@@ -1,0 +1,23 @@
+{
+  "cache_key": "dc031827cd76cc163f0060edbde491a8",
+  "prompt_hash": "dc031827cd76cc163f0060edbde491a8",
+  "category": "appliance_repair",
+  "difficulty": "intermediate",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-10T03:46:47.448417+00:00",
+  "response": {
+    "question": "How do I replace a faulty thermostat in my electric oven?",
+    "answer": "To replace a faulty thermostat in your electric oven, first, disconnect the power supply to the oven by unplugging it from the wall or turning off the circuit breaker. Remove the oven's back panel by unscrewing it with a screwdriver to expose the thermostat. The thermostat is typically located near the top of the oven cavity and will have two wires connected to it. Carefully disconnect these wires by gently pulling them off the terminals. Next, remove the screws or clips securing the thermostat in place and take it out. Install the new thermostat by reversing the process: secure it with screws or clips, reconnect the wires, and replace the back panel. Finally, restore power to the oven and check the temperature settings to ensure the new thermostat is functioning properly.",
+    "equipment_problem": "Faulty thermostat in electric oven",
+    "tools_required": [
+      "Screwdriver",
+      "Pliers"
+    ],
+    "steps": [
+      "Disconnect the power supply by unplugging the oven or turning off the circuit breaker.",
+      "Remove the back panel of the oven using a screwdriver to access the thermostat."
+    ],
+    "safety_info": "Always ensure the oven is completely disconnected from power before beginning any repairs. Use gloves to protect your hands from sharp edges, and goggles to protect your eyes from any debris. Be cautious of any residual heat in the oven chamber.",
+    "tips": "When purchasing a replacement thermostat, check the model number of your oven to ensure compatibility. Avoid pulling on the wires too hard when disconnecting to prevent damage. If the new thermostat does not resolve the issue, consider checking the wiring or calling a licensed technician to diagnose potential electrical problems."
+  }
+}

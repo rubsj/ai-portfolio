@@ -1,0 +1,41 @@
+{
+  "cache_key": "judge_134b96c4428526a73fc052c3da4c6821",
+  "trace_id": "f60d2c1a-fee0-4784-8e54-b9bf03b641b2",
+  "model": "gpt-4o",
+  "response": {
+    "trace_id": "f60d2c1a-fee0-4784-8e54-b9bf03b641b2",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 0,
+        "reason": "The guide provides a complete set of instructions, including identification of the problem, necessary tools, and troubleshooting advice."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes all necessary safety precautions, such as turning off the power at the circuit breaker and using a voltage tester. It also advises consulting a professional if unsure."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "All tools listed are common household tools that a typical homeowner would have or can easily acquire."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is well within the intermediate level, with only 9 steps and no specialty tools required."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide specifically addresses the problem of a faulty wall switch, providing context-specific advice and steps."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 0,
+        "reason": "The tips are practical and provide additional guidance on labeling wires and consulting diagrams for three-way circuits."
+      }
+    ],
+    "overall_quality_score": 5
+  }
+}

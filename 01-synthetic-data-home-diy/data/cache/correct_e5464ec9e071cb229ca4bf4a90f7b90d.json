@@ -1,0 +1,31 @@
+{
+  "cache_key": "correct_e5464ec9e071cb229ca4bf4a90f7b90d",
+  "trace_id": "cc4794c8-1552-40e6-bffd-818294baa9c0",
+  "model": "gpt-4o-mini",
+  "type": "correction",
+  "timestamp": "2026-02-10T03:43:37.853859+00:00",
+  "response": {
+    "question": "How can I fix a refrigerator that is not cooling?",
+    "answer": "To fix a refrigerator that is not cooling, check the temperature settings, clean the condenser coils, and ensure proper airflow inside the fridge. If these steps do not resolve the issue, consider checking the door seals for leaks. If you still face issues, it might be a sign of a more serious problem that may require professional help. Additionally, you can purchase replacement parts like door seals at appliance repair stores, online retailers such as Amazon or eBay, or your local hardware store. If the refrigerator still does not cool after these checks, inspect the compressor and the refrigerant levels, as these could also be contributing factors to the problem.",
+    "equipment_problem": "Refrigerator not cooling properly",
+    "tools_required": [
+      "Screwdriver",
+      "Vacuum cleaner with brush attachment",
+      "Soft cloth",
+      "Bucket"
+    ],
+    "steps": [
+      "1. Check the temperature settings on the refrigerator's control panel. Make sure the temperature is set to the recommended level (usually between 37\u00b0F and 40\u00b0F for the fridge and 0\u00b0F for the freezer).",
+      "2. Unplug the refrigerator from the wall outlet to ensure safety while working on it.",
+      "3. Locate the condenser coils, which are typically at the back or underneath the refrigerator. Use a screwdriver to remove any panel covering the coils if necessary.",
+      "4. Use a vacuum cleaner with a brush attachment to gently clean the condenser coils and remove any dust, dirt, or debris that could be blocking airflow.",
+      "5. After cleaning, inspect the coils for any damage. If they are bent, you can gently straighten them with your hands.",
+      "6. Check the door seals by closing the door on a piece of paper. If you can easily pull the paper out, the seals may be worn and should be replaced. Clean the seals with a soft cloth.",
+      "7. If the door seals need replacement, they can be purchased from appliance repair stores, online retailers like Amazon, or your local hardware store.",
+      "8. Ensure that there is enough space around the refrigerator for proper airflow. The back of the refrigerator should have at least a few inches of space from the wall.",
+      "9. Plug the refrigerator back in and monitor it for a few hours to see if it starts cooling again. If it does not, check the compressor for any unusual noises and verify if the refrigerant levels are adequate. If these components appear faulty, you may need to consult a technician."
+    ],
+    "safety_info": "Always unplug the refrigerator before starting any maintenance work to avoid electric shock. Be cautious when handling sharp tools like screwdrivers, and ensure the area is dry to prevent slips or falls.",
+    "tips": "In addition to regular maintenance, consider checking the airflow by ensuring vents inside the refrigerator are not blocked, and keep the refrigerator stocked but not overcrowded to maintain optimal airflow."
+  }
+}

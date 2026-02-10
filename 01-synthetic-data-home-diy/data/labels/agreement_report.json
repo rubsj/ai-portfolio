@@ -1,0 +1,12 @@
+{
+  "matched_records": 10,
+  "per_mode_agreement": {
+    "incomplete_answer": "80.0%",
+    "safety_violations": "80.0%",
+    "unrealistic_tools": "70.0%",
+    "overcomplicated_solution": "100.0%",
+    "missing_context": "100.0%",
+    "poor_quality_tips": "60.0%"
+  },
+  "overall_agreement": "81.7%"
+}

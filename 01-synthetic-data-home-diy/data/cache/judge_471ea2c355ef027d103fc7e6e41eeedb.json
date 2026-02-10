@@ -1,0 +1,41 @@
+{
+  "cache_key": "judge_471ea2c355ef027d103fc7e6e41eeedb",
+  "trace_id": "28073bb7-2368-4249-ba91-b235d6d8e749",
+  "model": "gpt-4o",
+  "response": {
+    "trace_id": "28073bb7-2368-4249-ba91-b235d6d8e749",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 1,
+        "reason": "The guide does not mention what to do if the glass pane doesn't fit after trimming or if the frame is damaged. It also lacks troubleshooting advice for common issues like uneven cuts or sealant application problems."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes safety warnings about wearing goggles and gloves, and advises consulting a professional if uncomfortable with the repair."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "All tools listed are common and can be found in a typical homeowner's toolkit or easily purchased at a hardware store."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is within the acceptable range for an advanced task and advises consulting a professional if the user is uncomfortable."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide specifically addresses replacing a broken window pane in a double-hung window, providing context-specific instructions."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 1,
+        "reason": "The tips section repeats information from the steps and safety info, such as double-checking measurements and using a straight edge, without adding new, useful advice."
+      }
+    ],
+    "overall_quality_score": 3
+  }
+}

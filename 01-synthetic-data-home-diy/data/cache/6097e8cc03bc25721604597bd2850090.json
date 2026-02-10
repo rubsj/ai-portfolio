@@ -1,0 +1,33 @@
+{
+  "cache_key": "6097e8cc03bc25721604597bd2850090",
+  "prompt_hash": "6097e8cc03bc25721604597bd2850090",
+  "category": "general_home_repair",
+  "difficulty": "beginner",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-10T03:49:39.685689+00:00",
+  "response": {
+    "question": "How do I fix a leaky kitchen faucet?",
+    "answer": "To fix a leaky kitchen faucet, first, identify the leak source by observing where the water drips\u2014common areas are around the faucet handle or base. Once you determine the leak point, turn off the water supply by locating the shut-off valves under your sink (turn them clockwise) and ensure to disconnect the power if it's an electric faucet. Put on safety goggles and gloves to protect yourself from any debris and water exposure. Using a pair of pliers, gently remove the decorative cap on the faucet handle, then unscrew the handle screw and lift off the handle. Next, use a wrench to loosen and remove the packing nut, followed by taking out the cartridge or washer, which may be worn or damaged. Replace it with a new cartridge or washer, which you can find at local hardware stores or online; be sure to bring the old part for comparison. Reassemble the faucet by reversing the disassembly steps, and finally, turn on the water supply to test for leaks. If the leak persists after replacing the washer or cartridge, you may need to call a plumber as there may be a more serious issue at play.",
+    "equipment_problem": "Leaky kitchen faucet",
+    "tools_required": [
+      "pliers",
+      "wrench",
+      "screwdriver",
+      "gloves",
+      "goggles"
+    ],
+    "steps": [
+      "Turn off the water supply by turning the shut-off valves under the sink clockwise.",
+      "Put on safety goggles and gloves to protect against water and debris.",
+      "Use pliers to remove the decorative cap on the faucet handle to expose the screw underneath.",
+      "Unscrew the handle screw with a screwdriver and lift off the handle.",
+      "Use a wrench to loosen and remove the packing nut.",
+      "Take out the cartridge or washer carefully, noting how it was installed.",
+      "Replace the old cartridge or washer with a new one from your local hardware store.",
+      "Reassemble the faucet in the reverse order: put the packing nut back, then the handle and screw, followed by the decorative cap.",
+      "Turn the water supply back on and test the faucet for leaks."
+    ],
+    "safety_info": "Always turn off the water supply before starting any plumbing work. Wear safety goggles and gloves to protect yourself from debris and water exposure. Be cautious of sharp edges on the faucet or tools that could cause injury. If you feel uncomfortable or the problem persists, call a licensed plumber for assistance.",
+    "tips": "Make sure to take the old washer or cartridge with you to the store to find an exact match. When reassembling, do not overtighten screws and nuts, as this can cause damage. If the faucet continues to leak after replacing parts, there may be an issue with the faucet itself that requires professional service."
+  }
+}

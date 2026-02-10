@@ -1,0 +1,31 @@
+{
+  "cache_key": "7d9ed81399b905fc44afff47523be126",
+  "prompt_hash": "7d9ed81399b905fc44afff47523be126",
+  "category": "plumbing_repair",
+  "difficulty": "intermediate",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-10T03:47:30.795503+00:00",
+  "response": {
+    "question": "How do I replace a leaky kitchen faucet cartridge?",
+    "answer": "To replace a leaky kitchen faucet cartridge, start by identifying the type of faucet you have (compression, cartridge, ball, or ceramic disk) as this determines the cartridge type. After identifying it, first disconnect the water supply by turning off the shut-off valves under the sink. If you can't find these, turn off the main water supply for your home. Next, put on safety goggles and gloves to protect yourself from any debris and water. Remove the handle by loosening the screw underneath or at the back (you may need a screwdriver or an adjustable wrench). Once the handle is off, use a wrench to unscrew the retaining nut that holds the cartridge in place. Pull out the old cartridge and take it with you to the hardware store to ensure you get an exact match. Install the new cartridge by reversing the steps: insert it into the faucet, secure it with the retaining nut, replace the handle, and reconnect the water supply. Turn the water back on and check for leaks. If the faucet still leaks after replacing the cartridge, the issue may lie with the O-rings or seals, which also need to be replaced.",
+    "equipment_problem": "Leaky kitchen faucet",
+    "tools_required": [
+      "screwdriver",
+      "adjustable wrench",
+      "bucket",
+      "towel"
+    ],
+    "steps": [
+      "Identify the type of faucet to determine the correct cartridge needed.",
+      "Turn off the water supply to the faucet at the shut-off valves under the sink or the main water supply.",
+      "Put on safety goggles and gloves to protect from water and debris.",
+      "Remove the faucet handle by loosening the screw and pulling it off.",
+      "Unscrew the retaining nut holding the cartridge in place using an adjustable wrench.",
+      "Carefully pull out the old cartridge and take it to the hardware store for a match.",
+      "Insert the new cartridge in the same orientation as the old one, secure it with the retaining nut, and replace the handle.",
+      "Reconnect the water supply and turn it back on, then check for leaks."
+    ],
+    "safety_info": "Always turn off the water supply before starting any plumbing repair. Wear gloves and goggles to protect against water and debris. Be cautious of sharp edges on faucet components and ensure the area is dry to avoid slips.",
+    "tips": "When purchasing a replacement cartridge, take the old one with you to ensure a perfect fit. Use a bucket to catch any residual water when removing the faucet components. If the faucet still leaks after replacing the cartridge, inspect the O-rings and seals closely, as they may also need replacing."
+  }
+}

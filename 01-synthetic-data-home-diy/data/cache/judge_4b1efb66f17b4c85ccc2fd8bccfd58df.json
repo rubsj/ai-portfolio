@@ -1,0 +1,41 @@
+{
+  "cache_key": "judge_4b1efb66f17b4c85ccc2fd8bccfd58df",
+  "trace_id": "28073bb7-2368-4249-ba91-b235d6d8e749",
+  "model": "gpt-4o",
+  "response": {
+    "trace_id": "28073bb7-2368-4249-ba91-b235d6d8e749",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 1,
+        "reason": "The guide does not provide information on where to purchase replacement glass or what to do if the new pane doesn't fit properly. It also lacks troubleshooting advice for common issues that might arise during the repair."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes appropriate safety warnings, such as wearing goggles and gloves, and advises consulting a professional if the frame is damaged or if the user is uncomfortable with the repair."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "All the tools listed are common and likely to be found in a typical homeowner's toolkit or easily obtainable at a hardware store."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is within the advanced difficulty level and does not exceed 12 steps. It also advises when to consider hiring a professional."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide specifically addresses the problem of replacing a broken window pane in a double-hung window, providing context-specific instructions."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 1,
+        "reason": "The tips are somewhat generic and do not provide additional value beyond the steps. They could be more specific to the challenges of this particular repair."
+      }
+    ],
+    "overall_quality_score": 3
+  }
+}

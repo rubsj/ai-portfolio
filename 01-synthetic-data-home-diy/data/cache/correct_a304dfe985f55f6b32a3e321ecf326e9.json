@@ -1,0 +1,35 @@
+{
+  "cache_key": "correct_a304dfe985f55f6b32a3e321ecf326e9",
+  "trace_id": "4b5266b1-2272-4f1b-817a-4f91cf66d607",
+  "model": "gpt-4o-mini",
+  "type": "correction",
+  "timestamp": "2026-02-10T03:45:11.904993+00:00",
+  "response": {
+    "question": "How do I clean and maintain my HVAC system's evaporator coils?",
+    "answer": "Cleaning the evaporator coils in your HVAC system is an important maintenance task that helps ensure your system runs efficiently. This process involves removing debris, dust, and dirt that accumulate on the coils, which can hinder airflow and cooling efficiency. Follow the steps below for a thorough cleaning. Make sure to perform this task at least once a year, ideally before the cooling season starts. If cleaning the coils does not improve cooling efficiency, check for other issues such as refrigerant levels, airflow obstructions, or a malfunctioning thermostat.",
+    "equipment_problem": "Dirty evaporator coils leading to reduced cooling efficiency.",
+    "tools_required": [
+      "Screwdriver",
+      "Soft brush",
+      "Coil cleaner",
+      "Garden hose",
+      "Bucket",
+      "Safety goggles",
+      "Gloves"
+    ],
+    "steps": [
+      "1. Turn off the power to your HVAC system at the circuit breaker to ensure safety while working.",
+      "2. Locate the evaporator coils, which are typically found in the indoor air handler unit. They are usually rectangular and made of metal fins.",
+      "3. Remove any protective panels from the air handler using a screwdriver to access the coils.",
+      "4. Gently brush off any loose dirt and debris on the coils using a soft brush. Be careful not to bend the fins.",
+      "5. Apply coil cleaner (available at local hardware stores or HVAC supply stores) according to the manufacturer's instructions. Ensure to spray it evenly across the coils.",
+      "6. Allow the cleaner to sit for about 10 minutes to loosen the dirt and grime.",
+      "7. Rinse the coils with a garden hose, directing the water from the top down to avoid pushing dirt further into the coils. Ensure that the water drains into a bucket to avoid flooding the area.",
+      "8. Inspect the fins for damage or bending; if necessary, use a fin comb to straighten them.",
+      "9. Reassemble the air handler unit by replacing any panels you removed.",
+      "10. Turn the power back on at the circuit breaker."
+    ],
+    "safety_info": "Always turn off the power to the HVAC system before starting maintenance to avoid electric shock. Wear safety goggles and gloves when handling cleaning chemicals and while working around the coils to protect your eyes and skin.",
+    "tips": "For optimal performance, consider using a vacuum with a brush attachment to remove dust from around the air handler and check the air filter for cleanliness. If you notice persistent cooling issues after cleaning, it may indicate low refrigerant levels or airflow problems; consult a professional if necessary. Regular maintenance will not only extend the life of your HVAC system but also improve its efficiency, saving you money on energy bills."
+  }
+}

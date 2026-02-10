@@ -1,0 +1,32 @@
+{
+  "cache_key": "e10e2832218f3934bc7d39319dc86197",
+  "prompt_hash": "e10e2832218f3934bc7d39319dc86197",
+  "category": "general_home_repair",
+  "difficulty": "advanced",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-09T05:06:10.653549+00:00",
+  "response": {
+    "question": "How can I replace a broken window pane in my double-glazed window unit?",
+    "answer": "Replacing a broken window pane in a double-glazed window unit is a complex task that requires precision and safety precautions. Double-glazed windows consist of two panes of glass separated by a spacer, filled with gas for insulation. If one pane is cracked or broken, you will need to replace the entire unit rather than just the glass. Here's how to do it safely and correctly:\n\n1. **Gather Materials**: Purchase a replacement double-glazed unit from a local glass supplier. Make sure to measure the existing window frame accurately to ensure a perfect fit.\n2. **Remove the Sash**: Carefully remove the window sash from the frame by unscrewing any screws or releasing any clips holding it in place. Use a flathead screwdriver to gently pry the sash out if necessary.\n3. **Clean the Frame**: Clean the window frame thoroughly to remove any old caulk or debris. This is crucial for a proper seal with the new unit.\n4. **Install the New Unit**: Carefully place the new double-glazed unit into the frame. Ensure it sits evenly and is level.\n5. **Seal the Edges**: Apply a generous bead of silicone window sealant around the edges of the new unit to prevent air and water leaks. Smooth out the sealant with a caulking tool or your finger for a clean finish.\n6. **Reinstall the Sash**: Carefully put the sash back into the frame, ensuring it opens and closes smoothly. Secure it with screws or clips.\n7. **Final Inspection**: Check the installation for any gaps or misalignment. Ensure the sealant has cured according to the manufacturer's instructions before exposing it to water or extreme temperatures.",
+    "equipment_problem": "Broken window pane in a double-glazed window unit.",
+    "tools_required": [
+      "Screwdriver",
+      "Caulking gun",
+      "Utility knife",
+      "Measuring tape",
+      "Safety goggles",
+      "Work gloves"
+    ],
+    "steps": [
+      "Gather all necessary materials and tools before starting the repair.",
+      "Carefully remove the window sash from the frame, unscrewing any screws or releasing clips.",
+      "Clean the window frame thoroughly, removing old caulk and debris.",
+      "Measure the frame to ensure the replacement unit fits perfectly and order a new double-glazed unit if needed.",
+      "Place the new double-glazed unit into the frame and ensure it is level and secure.",
+      "Apply a bead of silicone sealant around the edges of the new unit to create a waterproof barrier.",
+      "Reinstall the sash back into the frame, ensuring it operates smoothly and is secured properly."
+    ],
+    "safety_info": "Wear safety goggles and work gloves throughout the repair process to protect yourself from sharp edges and glass shards. Double-glazed window units can be heavy, so ensure you have someone to assist you if necessary. If the window is on a second story or higher, it is recommended to call a professional to avoid the risk of falls or injury.",
+    "tips": "Measure your window frame accurately before ordering a replacement unit to avoid delays. Allow the sealant to cure fully before exposing the window to rain or extreme temperatures. If you're unsure about your ability to complete this task safely, consult a professional."
+  }
+}

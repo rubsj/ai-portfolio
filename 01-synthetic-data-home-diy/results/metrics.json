@@ -1,0 +1,93 @@
+{
+  "dataset_summary": {
+    "total_records": 30,
+    "total_possible_failures": 180,
+    "total_failures": 36,
+    "overall_failure_rate": "20.0%",
+    "records_with_at_least_one_failure": 21,
+    "records_clean": 9,
+    "avg_quality_score": 3.8
+  },
+  "per_mode_failures": {
+    "incomplete_answer": {
+      "count": 15,
+      "rate": "50.0%"
+    },
+    "safety_violations": {
+      "count": 3,
+      "rate": "10.0%"
+    },
+    "unrealistic_tools": {
+      "count": 5,
+      "rate": "16.7%"
+    },
+    "overcomplicated_solution": {
+      "count": 0,
+      "rate": "0.0%"
+    },
+    "missing_context": {
+      "count": 0,
+      "rate": "0.0%"
+    },
+    "poor_quality_tips": {
+      "count": 13,
+      "rate": "43.3%"
+    }
+  },
+  "per_category": {
+    "appliance_repair": {
+      "records": 6,
+      "total_failures": 10,
+      "failure_rate": "27.8%"
+    },
+    "electrical_repair": {
+      "records": 6,
+      "total_failures": 0,
+      "failure_rate": "0.0%"
+    },
+    "general_home_repair": {
+      "records": 6,
+      "total_failures": 11,
+      "failure_rate": "30.6%"
+    },
+    "hvac_maintenance": {
+      "records": 6,
+      "total_failures": 6,
+      "failure_rate": "16.7%"
+    },
+    "plumbing_repair": {
+      "records": 6,
+      "total_failures": 9,
+      "failure_rate": "25.0%"
+    }
+  },
+  "per_difficulty": {
+    "advanced": {
+      "records": 10,
+      "total_failures": 12,
+      "failure_rate": "20.0%"
+    },
+    "beginner": {
+      "records": 10,
+      "total_failures": 10,
+      "failure_rate": "16.7%"
+    },
+    "intermediate": {
+      "records": 10,
+      "total_failures": 14,
+      "failure_rate": "23.3%"
+    }
+  },
+  "inter_rater_agreement": {
+    "matched_records": 10,
+    "per_mode_agreement": {
+      "incomplete_answer": "80.0%",
+      "safety_violations": "80.0%",
+      "unrealistic_tools": "70.0%",
+      "overcomplicated_solution": "100.0%",
+      "missing_context": "100.0%",
+      "poor_quality_tips": "60.0%"
+    },
+    "overall_agreement": "81.7%"
+  }
+}

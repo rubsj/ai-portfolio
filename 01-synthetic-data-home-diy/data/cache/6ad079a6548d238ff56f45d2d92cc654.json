@@ -1,0 +1,27 @@
+{
+  "cache_key": "6ad079a6548d238ff56f45d2d92cc654",
+  "prompt_hash": "6ad079a6548d238ff56f45d2d92cc654",
+  "category": "plumbing_repair",
+  "difficulty": "advanced",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-10T03:47:44.791848+00:00",
+  "response": {
+    "question": "How do I repair a leaking toilet tank that is causing constant running water?",
+    "answer": "To repair a leaking toilet tank, start by identifying the source of the leak, which is often from the tank-to-bowl gasket, flush valve, or the fill valve. First, disconnect the water supply line by turning off the water at the shut-off valve and flushing the toilet to empty the tank. Use a sponge to soak up any remaining water in the tank, and then check for cracks or damage to the tank itself. If the leak is from the tank-to-bowl gasket, you\u2019ll need to replace it; if from the flush valve or fill valve, those parts will need to be replaced as well. After identifying the part, purchase a replacement from your local hardware store or home improvement center. Follow the installation instructions included with the part, ensuring all connections are tight. If the leak persists after replacement, you may need to recheck the installation or consult a professional plumber for further assistance.",
+    "equipment_problem": "Leaking toilet tank causing constant running water",
+    "tools_required": [
+      "Adjustable wrench",
+      "Screwdriver",
+      "Bucket",
+      "Sponge"
+    ],
+    "steps": [
+      "Disconnect the water supply line by turning off the shut-off valve and flushing the toilet to empty the tank.",
+      "Use a sponge to soak up any remaining water in the tank, and check for cracks or damage.",
+      "If the leak is from the tank-to-bowl gasket, remove the tank, replace the gasket, and reattach it securely.",
+      "If the leak is from the flush valve or fill valve, remove the old parts using your wrench and screwdriver, and install the new parts as per the instructions. Tighten all connections appropriately."
+    ],
+    "safety_info": "Always turn off the water supply and disconnect the water line before starting any work on the toilet. Wear gloves to protect your hands from sharp edges and potential contaminants. Goggles are recommended to protect your eyes from debris. Be cautious of the possibility of water spilling during the repair process, which can create a slip hazard. If you encounter cracked porcelain in the tank or complex plumbing configurations, call a licensed plumber instead of proceeding with the repair yourself.",
+    "tips": "When reattaching the tank, ensure that the bolts are tightened evenly to avoid stress on the porcelain. Using plumber\u2019s tape on threaded connections can help prevent future leaks. Regular maintenance can prevent issues; consider replacing the tank-to-bowl gasket every few years as part of your home upkeep."
+  }
+}

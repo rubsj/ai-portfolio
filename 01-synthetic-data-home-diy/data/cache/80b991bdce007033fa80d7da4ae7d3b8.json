@@ -1,0 +1,30 @@
+{
+  "cache_key": "80b991bdce007033fa80d7da4ae7d3b8",
+  "prompt_hash": "80b991bdce007033fa80d7da4ae7d3b8",
+  "category": "plumbing_repair",
+  "difficulty": "advanced",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-10T03:47:37.747295+00:00",
+  "response": {
+    "question": "How do I repair a leaking pipe joint in my basement plumbing?",
+    "answer": "To repair a leaking pipe joint, first, identify the leak by inspecting the joint and looking for water accumulation or dampness. Once located, disconnect the water supply to the plumbing system before starting any repair work. Next, gather your tools: a pipe wrench, adjustable pliers, and a utility knife. Carefully remove the fittings at the joint using the pipe wrench or pliers, ensuring not to damage the pipes themselves. Clean the joint area thoroughly and inspect for any signs of wear or damage. If the joint is threaded, apply plumber's tape to the threads of the pipe before reassembling. If the joint is soldered, you might consider using a pipe coupling instead of soldering, which requires more skill. After reassembling, turn the water supply back on and check for any leaks. If the leak persists, it may indicate a deeper issue that requires a professional. Always be mindful of your plumbing system's configuration and call a licensed plumber if you're unsure about your ability to complete the repair safely.",
+    "equipment_problem": "Leaking pipe joint in basement plumbing",
+    "tools_required": [
+      "Pipe wrench",
+      "Adjustable pliers",
+      "Utility knife",
+      "Plumber's tape"
+    ],
+    "steps": [
+      "Identify the leaking pipe joint by checking for moisture or dripping water.",
+      "Disconnect the water supply to the plumbing system before starting repairs.",
+      "Use a pipe wrench or adjustable pliers to carefully remove the fittings at the joint without damaging the pipes.",
+      "Clean the joint area thoroughly and inspect it for wear or damage, replacing any damaged parts if necessary.",
+      "If the joint is threaded, apply plumber's tape to the threads before reassembling the joint; if soldered, consider using a coupling instead.",
+      "Reassemble the joint and fittings, ensuring a tight fit.",
+      "Turn the water supply back on and check for leaks; if it continues to leak, consider calling a licensed plumber."
+    ],
+    "safety_info": "Before starting any plumbing repair, always disconnect the water supply to prevent flooding. Wear gloves and safety goggles to protect against sharp edges and debris. Be cautious of any standing water in the area, as it can present electrical hazards if there are any exposed electrical components nearby. If you are uncomfortable or unsure at any point, it is safer to call a licensed plumbing professional rather than risk further damage or personal injury.",
+    "tips": "Make sure to have extra plumber's tape on hand, as this can help ensure a tight seal on threaded joints. When tightening the fittings, avoid overtightening, as this can strip threads or crack fittings. Regularly check your plumbing for signs of wear to prevent leaks before they become a problem. If using a coupling, ensure it matches the pipe size and material for a proper seal."
+  }
+}

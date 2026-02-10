@@ -1,0 +1,41 @@
+{
+  "cache_key": "judge_1079c9847149e90700ea40bdafe985dc",
+  "trace_id": "51e9e4db-39f8-4068-a00f-5b3698f407e7",
+  "model": "gpt-4o",
+  "response": {
+    "trace_id": "51e9e4db-39f8-4068-a00f-5b3698f407e7",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 1,
+        "reason": "The guide lacks information on where to purchase a replacement seal and does not provide troubleshooting advice if the fix doesn't work beyond mentioning a potential door latch issue."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes necessary safety precautions, such as disconnecting power and water supply, and wearing gloves and goggles."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "The tools listed are common household tools that a typical homeowner would likely have."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is appropriate for an advanced task and does not exceed the complexity expected for such a repair."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide specifically addresses the problem of a damaged door seal on a front-loading washing machine."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 1,
+        "reason": "The tips provided are somewhat generic and miss the opportunity to offer more specific advice, such as how to ensure the seal is properly aligned."
+      }
+    ],
+    "overall_quality_score": 3
+  }
+}

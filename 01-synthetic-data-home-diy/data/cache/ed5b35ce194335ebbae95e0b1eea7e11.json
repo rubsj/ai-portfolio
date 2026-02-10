@@ -1,0 +1,34 @@
+{
+  "cache_key": "ed5b35ce194335ebbae95e0b1eea7e11",
+  "prompt_hash": "ed5b35ce194335ebbae95e0b1eea7e11",
+  "category": "plumbing_repair",
+  "difficulty": "advanced",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-09T05:04:45.004959+00:00",
+  "response": {
+    "question": "How can I replace a broken toilet flange in my bathroom?",
+    "answer": "To replace a toilet flange, you'll need to follow these detailed steps carefully. This task involves working with plumbing and can be complex, so ensure you're comfortable with it before proceeding. If you're unsure at any point, it's best to contact a professional plumber.\n\n1. **Turn Off Water Supply**: Locate the shut-off valve behind the toilet and turn it clockwise to stop the water flow.\n2. **Remove the Toilet**: Disconnect the water supply line from the toilet tank using an adjustable wrench. Then, remove the nuts securing the toilet to the floor using a socket wrench. Carefully lift the toilet off the flange and set it aside on a soft surface to avoid damage.\n3. **Inspect the Flange**: Check the toilet flange for damage. If it's cracked, broken, or rusted, it needs to be replaced. If it's just loose, you might be able to re-secure it instead.\n4. **Remove the Old Flange**: Unscrew the old flange from the floor, taking care not to damage the surrounding flooring. You may need a pry bar for stubborn flanges. If the flange is glued, use a utility knife to cut around it.\n5. **Clean the Area**: Thoroughly clean the area around the drain pipe to remove any debris, wax, or old sealant. This ensures a good seal for the new flange.\n6. **Install the New Flange**: Place the new flange over the drain pipe, ensuring it is centered and level. Use screws to secure it to the floor, making sure it's tight and stable.\n7. **Reinstall the Toilet**: Apply a new wax ring to the flange. Carefully lift the toilet back into place, aligning the bolts with the holes in the toilet base. Press down gently to compress the wax ring.\n8. **Reconnect Everything**: Secure the toilet with nuts over the bolts, reconnect the water supply line, and turn the water supply back on. Check for leaks.\n9. **Test the Toilet**: Flush the toilet a few times to ensure it\u2019s functioning properly and there are no leaks around the base or the water supply line.",
+    "equipment_problem": "Broken toilet flange causing instability and leaks.",
+    "tools_required": [
+      "Adjustable wrench",
+      "Socket wrench set",
+      "Screwdriver",
+      "Utility knife",
+      "Pry bar",
+      "Level",
+      "New toilet flange",
+      "Wax ring"
+    ],
+    "steps": [
+      "Turn off the water supply to the toilet.",
+      "Remove the toilet by disconnecting the water supply and unscrewing the nuts from the floor.",
+      "Inspect the old flange for damage and remove it if necessary.",
+      "Clean the area around the drain pipe thoroughly.",
+      "Install the new flange over the drain pipe and secure it with screws.",
+      "Apply a new wax ring to the flange and carefully reinstall the toilet.",
+      "Reconnect the water supply and check for leaks."
+    ],
+    "safety_info": "Always wear safety goggles when working with tools and plumbing components to protect your eyes from debris. Ensure the water supply is completely turned off before beginning work to prevent flooding. If you encounter any unexpected plumbing issues, such as broken pipes or leaks, stop and consult a professional plumber instead of attempting further repairs.",
+    "tips": "Make sure to choose a flange that matches the size and height of your existing drain pipe. It might be helpful to take the old flange to the hardware store to ensure a proper match. If you are unsure about the installation, seek assistance from a knowledgeable friend or a professional."
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "cache_key": "e8fa0ccc60bec672849a19f4cf49d4c3",
+  "prompt_hash": "e8fa0ccc60bec672849a19f4cf49d4c3",
+  "category": "appliance_repair",
+  "difficulty": "advanced",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-10T03:46:54.202970+00:00",
+  "response": {
+    "question": "How do I replace the door seal on my front-loading washing machine?",
+    "answer": "To replace the door seal on your front-loading washing machine, first, disconnect the power and water supply to the machine. This is crucial to ensure safety while working. Next, remove the front panel by unscrewing the screws typically located at the bottom. You might need a flathead screwdriver or a Phillips screwdriver for this. Once the panel is off, locate the door seal, which is usually attached with a clamp or screws. Carefully detach the old seal, making note of how it is installed. Install the new seal in the reverse order, ensuring it sits properly in the groove and is secured tightly. Reattach the front panel, turn the water and power back on, and run a short cycle to check for leaks.",
+    "equipment_problem": "Worn or damaged door seal on a front-loading washing machine.",
+    "tools_required": [
+      "Flathead screwdriver",
+      "Phillips screwdriver",
+      "Pliers"
+    ],
+    "steps": [
+      "Disconnect the power and water supply before starting any repairs to ensure safety.",
+      "Remove the screws from the front panel of the washing machine using a Phillips screwdriver and take the panel off to access the door seal.",
+      "Locate the door seal and remove the clamp or screws that hold it in place with a flathead screwdriver or pliers. Take care not to damage the surrounding components.",
+      "Install the new door seal by placing it into the groove, ensuring it is evenly seated all around, then reattach the clamp or screws to secure it.",
+      "Reattach the front panel of the washing machine and secure it with screws. Turn on the water supply and restore power, then run a short wash cycle to check for proper installation and leaks."
+    ],
+    "safety_info": "Always disconnect the washing machine from the power outlet and turn off the water supply before starting repairs. Use gloves to protect your hands from sharp edges and wear safety goggles to shield your eyes from any debris. Be cautious of the weight of the front panel when removing it, as it can be heavy and awkward to handle.",
+    "tips": "When purchasing a replacement seal, ensure it is compatible with your washing machine model by checking the manufacturer's specifications. To avoid future issues, regularly inspect the door seal for debris or wear and clean it with a mild detergent to prevent mold buildup. If you encounter any electrical components that seem faulty or if the machine does not operate correctly after the repair, it\u2019s best to consult a licensed professional rather than risk further damage."
+  }
+}

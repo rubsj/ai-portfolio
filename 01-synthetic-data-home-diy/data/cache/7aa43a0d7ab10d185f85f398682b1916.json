@@ -1,0 +1,32 @@
+{
+  "cache_key": "7aa43a0d7ab10d185f85f398682b1916",
+  "prompt_hash": "7aa43a0d7ab10d185f85f398682b1916",
+  "category": "plumbing_repair",
+  "difficulty": "intermediate",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-09T05:04:38.578212+00:00",
+  "response": {
+    "question": "How do I repair a leaking shower valve?",
+    "answer": "To repair a leaking shower valve, you will need to first turn off the water supply to the shower. Next, remove the handle and the escutcheon plate to access the valve. Inspect the valve and replace any worn or damaged washers or O-rings. Reassemble the valve by putting the handle and escutcheon plate back in place. Finally, turn the water supply back on and test for leaks.",
+    "equipment_problem": "The shower valve is leaking, causing water to drip when the shower is off.",
+    "tools_required": [
+      "screwdriver",
+      "adjustable wrench",
+      "plumber's tape",
+      "replacement O-rings or washers",
+      "silicone grease"
+    ],
+    "steps": [
+      "1. Turn off the water supply to the shower by shutting off the valve at the water main or the dedicated valve for the shower.",
+      "2. Use a screwdriver to remove the handle of the shower. Depending on the model, you may need to remove a decorative cap to access the screw.",
+      "3. Once the handle is removed, take off the escutcheon plate (the decorative plate around the valve).",
+      "4. Inspect the valve for any visible damage or wear. Look for worn washers or O-rings that could be causing the leak.",
+      "5. Use an adjustable wrench to remove the valve cartridge or assembly if necessary, then replace any damaged washers or O-rings with new ones of the same size.",
+      "6. Apply plumber's tape to the threads of the valve if needed to ensure a tight seal.",
+      "7. Reassemble the valve by putting the cartridge back in place, then reattach the escutcheon plate and the handle.",
+      "8. Turn the water supply back on and check for leaks at the valve and around the handle."
+    ],
+    "safety_info": "Always wear safety goggles to protect your eyes from debris. Ensure that the water supply is completely turned off before starting the repair to avoid flooding. Use care when handling tools to prevent injury, and be cautious of sharp edges on the valve components.",
+    "tips": "Keep a container handy to catch any water that may still be in the pipes when you remove the valve. Make sure to take the old O-rings or washers to the hardware store to find exact replacements."
+  }
+}

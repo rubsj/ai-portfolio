@@ -1,0 +1,44 @@
+{
+  "v1_original": {
+    "total_failures": 36,
+    "failure_rate": "20.0%",
+    "per_mode": {
+      "incomplete_answer": 15,
+      "safety_violations": 3,
+      "unrealistic_tools": 5,
+      "overcomplicated_solution": 0,
+      "missing_context": 0,
+      "poor_quality_tips": 13
+    }
+  },
+  "corrected": {
+    "total_failures": 12,
+    "failure_rate": "6.7%",
+    "per_mode": {
+      "incomplete_answer": 5,
+      "safety_violations": 0,
+      "unrealistic_tools": 0,
+      "overcomplicated_solution": 1,
+      "missing_context": 0,
+      "poor_quality_tips": 6
+    },
+    "improvement_vs_v1": "66.7%"
+  },
+  "v2_generated": {
+    "total_failures": 8,
+    "failure_rate": "4.4%",
+    "per_mode": {
+      "incomplete_answer": 5,
+      "safety_violations": 0,
+      "unrealistic_tools": 0,
+      "overcomplicated_solution": 1,
+      "missing_context": 0,
+      "poor_quality_tips": 2
+    },
+    "improvement_vs_v1": "77.8%"
+  },
+  "target_met": {
+    "corrected_meets_80pct": false,
+    "v2_meets_80pct": false
+  }
+}

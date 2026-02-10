@@ -1,0 +1,31 @@
+{
+  "cache_key": "357a277261cb68d806ed65b11c0396bf",
+  "prompt_hash": "357a277261cb68d806ed65b11c0396bf",
+  "category": "electrical_repair",
+  "difficulty": "advanced",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-10T03:48:26.673812+00:00",
+  "response": {
+    "question": "How do I replace a faulty electrical outlet?",
+    "answer": "To replace a faulty electrical outlet, start by identifying the issue, which could be frequent tripping of the circuit breaker, burning smell, or physical damage to the outlet itself. Before beginning any work, **disconnect power at the breaker box** to ensure complete safety. Wear **insulated gloves and safety goggles** to protect against electrical shocks and debris. Using a flathead screwdriver, remove the outlet cover plate, and then use a Phillips screwdriver to detach the outlet from the electrical box. Carefully pull the outlet out to expose the wiring. Take note of how the wires are connected (you can take a photo for reference). Disconnect the wires from the old outlet and connect them to the new outlet in the same configuration: black (or red) wires to the brass screws, white wires to the silver screws, and the ground wire (green or bare) to the green screw. Once the new outlet is wired, carefully tuck it back into the box and reattach it with the screws. Replace the cover plate and restore power at the breaker box. Test the outlet with a lamp or a voltage tester. If it doesn\u2019t work, double-check your connections and ensure the breaker is reset. If the outlet still fails to function, or if you're unsure about any steps, **call a licensed electrician** to avoid hazards. Frequent issues include loose connections or incorrect wiring, so always ensure your connections are tight and follow the color codes properly. Avoid overloading outlets with too many devices, which can lead to overheating and damage.",
+    "equipment_problem": "Faulty electrical outlet that may cause tripping or not function at all.",
+    "tools_required": [
+      "Flathead screwdriver",
+      "Phillips screwdriver",
+      "Insulated gloves",
+      "Safety goggles"
+    ],
+    "steps": [
+      "Disconnect power at the breaker box before starting any work.",
+      "Wear insulated gloves and safety goggles for protection.",
+      "Remove the outlet cover plate using a flathead screwdriver.",
+      "Unscrew the outlet from the electrical box with a Phillips screwdriver and gently pull it out to access the wiring.",
+      "Take a photo of the wiring for reference before disconnecting the old outlet.",
+      "Disconnect the wires from the old outlet and connect them to the new outlet in the same configuration: black/red to brass, white to silver, ground to green.",
+      "Carefully tuck the new outlet back into the box and secure it with screws.",
+      "Replace the cover plate and restore power at the breaker box, then test the outlet with a lamp or voltage tester."
+    ],
+    "safety_info": "Always disconnect power at the breaker box before starting any electrical work. Wear insulated gloves and safety goggles while working to prevent electrical shocks and debris injuries. If you feel unsure about any part of the repair, or if the outlet does not work after replacement, call a licensed electrician immediately.",
+    "tips": "Ensure the power is completely off by using a voltage tester before touching any wires. Use a photo reference for wiring connections to avoid mistakes. Tighten all connections securely to prevent future issues."
+  }
+}

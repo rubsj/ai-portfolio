@@ -1,0 +1,30 @@
+{
+  "cache_key": "6f27773c17a8f7a32badaaa728225e31",
+  "prompt_hash": "6f27773c17a8f7a32badaaa728225e31",
+  "category": "general_home_repair",
+  "difficulty": "beginner",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-10T03:49:48.903016+00:00",
+  "response": {
+    "question": "How do I fix a leaking faucet in my kitchen?",
+    "answer": "To fix a leaking kitchen faucet, start by identifying the type of faucet you have, as this will determine the repair process. Most leaks come from worn washers or O-rings. First, disconnect the water supply under the sink by turning off the valves. Next, use a wrench to remove the handle by loosening the screw that holds it in place. Once the handle is off, check for any visible wear on the washer or O-ring. If they look damaged or worn, replace them. You can find replacement parts at local hardware stores or online. After replacing the parts, reassemble the faucet in the reverse order and turn the water supply back on to check for leaks. If the faucet still leaks, you may need to consider replacing the entire faucet or calling a professional if you are unsure about the process.",
+    "equipment_problem": "Leaking kitchen faucet",
+    "tools_required": [
+      "adjustable wrench",
+      "screwdriver",
+      "bowl (to catch water)"
+    ],
+    "steps": [
+      "1. Disconnect the water supply by turning off the valves under the sink. Make sure the valves are turned fully clockwise to ensure no water flows while you work.",
+      "2. Place a bowl or towel under the faucet to catch any water that may spill out during the repair process.",
+      "3. Use a screwdriver to remove the handle of the faucet. Look for a small screw, often located at the back or underneath the handle, and carefully loosen it.",
+      "4. Once the handle is removed, you will see the cartridge. Use an adjustable wrench to unscrew the cartridge from the faucet body, making sure to note its orientation for reinstallation.",
+      "5. Examine the O-ring and washer for wear or damage. If they are worn out, take them to the hardware store to find exact replacements. If they look fine, they may not be the source of the leak.",
+      "6. Replace the O-ring and washer with new ones, ensuring a snug fit. If using a new cartridge, insert it into the faucet in the same orientation as the old one.",
+      "7. Reassemble the faucet by reversing the steps, carefully screwing the handle back on and ensuring all parts are tightly secured.",
+      "8. Turn the water supply back on and test the faucet for leaks. If it still leaks, double-check your installation, or consider consulting a licensed plumber."
+    ],
+    "safety_info": "Before starting, always ensure to disconnect the water supply to prevent flooding. Wear gloves to protect your hands from rough edges and goggles to shield your eyes from splashes. Be cautious of any sharp tools and ensure your workspace is clean and dry to prevent slipping.",
+    "tips": "When purchasing replacement parts, bring the old washer or O-ring with you to ensure you get the correct size. If the leak persists even after replacing the parts, the faucet may need to be replaced entirely, or you may need to consult a licensed plumber for further assistance."
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "cache_key": "1e3800759db3c6f6c43fa72836e609c2",
+  "prompt_hash": "1e3800759db3c6f6c43fa72836e609c2",
+  "category": "hvac_maintenance",
+  "difficulty": "advanced",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-09T05:05:40.506680+00:00",
+  "response": {
+    "question": "How do I replace a faulty capacitor in my central air conditioning unit?",
+    "answer": "Replacing a faulty capacitor in your central air conditioning unit can restore its functionality. However, this task involves working with electrical components, which can be dangerous if not done properly. Always ensure the power is turned off before starting any work. If you are unsure or uncomfortable at any point, it is best to call a professional HVAC technician. Here\u2019s how to do it:",
+    "equipment_problem": "Faulty capacitor in central air conditioning unit causing the unit to not start or run inefficiently.",
+    "tools_required": [
+      "Multimeter",
+      "Screwdriver set",
+      "Wrench set",
+      "Insulated gloves",
+      "Safety goggles",
+      "Capacitor replacement (same specifications)"
+    ],
+    "steps": [
+      "1. Turn off the power to the air conditioning unit at the main electrical panel and ensure that the power is completely off using a multimeter.",
+      "2. Remove the access panel of the outdoor unit using a screwdriver to expose the internal components.",
+      "3. Locate the capacitor, which is typically a cylindrical or oval metal canister with wires connected to it.",
+      "4. Take a picture or make a note of how the wires are connected to the capacitor for reference.",
+      "5. Carefully disconnect the wires from the old capacitor using a screwdriver or by hand, ensuring you are wearing insulated gloves to prevent shock.",
+      "6. Remove the old capacitor from its mounting bracket, which may require a wrench depending on the design of your unit.",
+      "7. Insert the new capacitor into the same mounting bracket and reconnect the wires according to your reference picture, ensuring a secure connection.",
+      "8. Replace the access panel and secure it with screws.",
+      "9. Turn the power back on at the main electrical panel and test the air conditioning unit to ensure it is functioning properly."
+    ],
+    "safety_info": "Always turn off the power to the unit before beginning any repairs. Use insulated gloves when handling electrical components to prevent electrical shock. If you feel unsure about any step, stop and consult a professional technician to avoid injury or damage to your system.",
+    "tips": "Double-check the specifications of the replacement capacitor to ensure it matches the old one. It\u2019s a good practice to test the old capacitor with a multimeter before replacing it to confirm it is indeed faulty. Keep children and pets away from the work area while performing repairs."
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "cache_key": "judge_31605835130c6ac2d4e3299defe00115",
+  "trace_id": "1bbf42c3-dc16-4f45-aaa6-3ffa9e0e5cf5",
+  "model": "gpt-4o",
+  "response": {
+    "trace_id": "1bbf42c3-dc16-4f45-aaa6-3ffa9e0e5cf5",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 0,
+        "reason": "The guide provides a clear step-by-step process, includes safety information, and offers troubleshooting advice if the switch continues to fail."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes all necessary safety precautions, such as turning off the power at the circuit breaker, wearing PPE, and advising when to call a professional."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "The tools listed (flathead and Phillips screwdrivers) are common household tools that do not require special purchase or rental."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is concise with 7 steps, suitable for an intermediate task, and does not require specialty tools."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide specifically addresses replacing a faulty light switch, matching the equipment problem described."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 0,
+        "reason": "The tips are practical and specific to the task, such as ensuring the correct type of switch and documenting the wiring setup."
+      }
+    ],
+    "overall_quality_score": 5
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "cache_key": "f3c174caaefdcf4f2c1e9d68cea0bff3",
+  "prompt_hash": "f3c174caaefdcf4f2c1e9d68cea0bff3",
+  "category": "electrical_repair",
+  "difficulty": "beginner",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-10T03:47:53.601911+00:00",
+  "response": {
+    "question": "How do I replace a faulty light switch in my home?",
+    "answer": "To replace a faulty light switch, first ensure your safety by turning off the power to the switch at the circuit breaker. Then, use a screwdriver to remove the cover plate by unscrewing it. Next, with the power off, use the screwdriver to detach the switch from the electrical box by removing the screws holding it in place. Carefully pull the switch out to expose the wires. Take note of how the wires are connected to the switch (you can take a photo if necessary). Disconnect the wires from the old switch and connect them to the new switch in the same configuration. Secure the new switch back into the electrical box, replace the cover plate, and turn the power back on at the circuit breaker. Finally, test the switch to ensure it is working properly.",
+    "equipment_problem": "Faulty light switch causing flickering or not functioning at all.",
+    "tools_required": [
+      "Screwdriver",
+      "Pliers"
+    ],
+    "steps": [
+      "Turn off the circuit breaker for the light switch to ensure safety. Verify that the power is off by trying to turn the light on.",
+      "Use a screwdriver to remove the cover plate by unscrewing it carefully.",
+      "Remove the screws that hold the light switch in the electrical box using the screwdriver.",
+      "Gently pull the switch out of the box to expose the wiring connected to it.",
+      "Note the wiring configuration of the old switch. Disconnect the wires using pliers if necessary.",
+      "Connect the wires to the new switch in the same configuration as the old one. Make sure the connections are tight and secure.",
+      "Carefully push the switch back into the electrical box and secure it with screws.",
+      "Replace the cover plate and screw it back in place.",
+      "Turn the circuit breaker back on and test the switch to ensure it functions properly."
+    ],
+    "safety_info": "1. Always turn off the power at the circuit breaker before starting any electrical work. 2. Wear safety gloves to protect your hands and goggles to protect your eyes from dust or debris. 3. Be cautious of exposed wires and ensure they are not touching each other or any metal surfaces. 4. If you are unsure about any steps, or if the wiring looks frayed or damaged, call a licensed electrician for help.",
+    "tips": "Make sure to take a picture of the wiring before disconnecting it to ensure you connect the new switch correctly. Double-check that the circuit breaker is turned off by testing the light switch before beginning work. When purchasing a replacement switch, choose a switch that matches the amperage and voltage of the old one. If you notice any burning smells or visible damage to the wires, do not attempt the repair yourself and contact a professional."
+  }
+}

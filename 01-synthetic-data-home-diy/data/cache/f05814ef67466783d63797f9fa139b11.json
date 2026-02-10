@@ -1,0 +1,27 @@
+{
+  "cache_key": "f05814ef67466783d63797f9fa139b11",
+  "prompt_hash": "f05814ef67466783d63797f9fa139b11",
+  "category": "hvac_maintenance",
+  "difficulty": "intermediate",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-10T03:49:14.805812+00:00",
+  "response": {
+    "question": "How do I replace a malfunctioning thermostat in my HVAC system?",
+    "answer": "To replace a malfunctioning thermostat, first, identify the specific problem by checking if the thermostat is unresponsive or if the temperature settings do not match your home\u2019s temperature. Next, locate the screws holding the thermostat cover in place, and gently remove the cover. Disconnect the old thermostat from the wall by unscrewing the mounting plate and noting where each wire connects (often labeled as R, W, Y, G, etc.). Purchase a compatible replacement thermostat at a local hardware store or online, ensuring it matches your HVAC system type. After receiving your new thermostat, connect the wires to the corresponding terminals, secure the mounting plate, and attach the new cover. Restore power to the HVAC system and test the thermostat by adjusting settings and observing if the system responds accordingly. If the fix doesn\u2019t work, double-check the wiring connections and consult the user manual for troubleshooting. If the thermostat still malfunctions, it\u2019s advisable to contact a licensed HVAC technician for further diagnosis and repair.",
+    "equipment_problem": "Malfunctioning thermostat",
+    "tools_required": [
+      "screwdriver",
+      "wire stripper",
+      "level"
+    ],
+    "steps": [
+      "Disconnect power to the HVAC system at the breaker box to ensure safety before starting work.",
+      "Use a screwdriver to remove the screws from the thermostat cover, then gently pull it off to expose the wiring.",
+      "Take a photo or make a note of how the existing wires are connected to the old thermostat, then disconnect the wires from the terminal screws by loosening them.",
+      "Mount the new thermostat\u2019s base on the wall, ensuring it\u2019s level. Connect the wires to the corresponding terminals, ensuring a snug fit.",
+      "Attach the new thermostat cover, restore power at the breaker box, and test the new thermostat by adjusting the temperature settings."
+    ],
+    "safety_info": "Before starting any work, always disconnect power to the HVAC system at the breaker box to prevent electrical shock. Wear gloves and safety goggles to protect against sharp edges and dust. Be cautious when handling electrical components, and if you are unsure about any wiring, do not hesitate to call a licensed professional.",
+    "tips": "Ensure the new thermostat is compatible with your HVAC system type (such as heat pump or conventional). Avoid common mistakes like reversing the wire connections, which can damage the thermostat. Clean the wall surface before mounting the new thermostat to ensure a secure fit and check for any old or frayed wires that may need replacing."
+  }
+}

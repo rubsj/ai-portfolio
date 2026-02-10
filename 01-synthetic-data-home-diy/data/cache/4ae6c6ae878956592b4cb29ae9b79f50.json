@@ -1,0 +1,32 @@
+{
+  "cache_key": "4ae6c6ae878956592b4cb29ae9b79f50",
+  "prompt_hash": "4ae6c6ae878956592b4cb29ae9b79f50",
+  "category": "hvac_maintenance",
+  "difficulty": "advanced",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-10T03:49:32.408955+00:00",
+  "response": {
+    "question": "How do I replace a faulty contactor in my central air conditioning unit?",
+    "answer": "To replace a faulty contactor in your central air conditioning unit, first, ensure that you disconnect all power to the system at the breaker box to avoid any electrical hazards. After securing power, put on safety gloves and goggles to protect against electrical shocks and debris. Next, locate the contactor, which is typically found in the outdoor unit of the AC system. Remove the cover panel to access the contactor, and take note of the wire connections or take a picture for reference. Unscrew the old contactor from the mounting bracket and disconnect the wires carefully. Replace it with the new contactor, ensuring each wire is connected to the same terminal as the old one, and secure it in place. Reattach the cover panel and restore power to the system. If the AC still does not function, check the capacitor and the thermostat for issues. If you\u2019re unsure about any step or if it doesn\u2019t work, do not hesitate to call a licensed HVAC professional for assistance to avoid further complications or damage.",
+    "equipment_problem": "Faulty contactor in central air conditioning unit.",
+    "tools_required": [
+      "Screwdriver",
+      "Wire strippers",
+      "Pliers",
+      "Safety gloves",
+      "Safety goggles"
+    ],
+    "steps": [
+      "Disconnect power to the AC unit at the breaker box.",
+      "Put on safety gloves and goggles.",
+      "Locate the contactor in the outdoor unit and remove the cover panel.",
+      "Take a picture of the wire connections for reference before disconnecting them.",
+      "Unscrew the old contactor from the mounting bracket and detach the wires.",
+      "Connect the new contactor, ensuring wires are attached to the same terminals as before.",
+      "Secure the contactor in place and reattach the cover panel.",
+      "Turn the power back on at the breaker box and test the AC unit."
+    ],
+    "safety_info": "Always disconnect power to the AC unit before starting any repair work. Wear safety gloves and goggles to protect against electrical shocks and debris. Be aware of sharp edges and components that may be hot or under pressure. If you feel uncertain about any procedure or if the system does not operate after your repair, contact a licensed HVAC professional for assistance.",
+    "tips": "Ensure you purchase a contactor that matches the specifications of the original one to avoid compatibility issues. It\u2019s helpful to take the old contactor to the hardware store for an exact match. Common mistakes include miswiring the new contactor, so double-check your connections against the reference photo. Regular maintenance, like cleaning the contactor and inspecting it for wear, can prevent future failures."
+  }
+}

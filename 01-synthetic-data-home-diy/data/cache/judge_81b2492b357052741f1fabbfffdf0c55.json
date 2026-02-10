@@ -1,0 +1,41 @@
+{
+  "cache_key": "judge_81b2492b357052741f1fabbfffdf0c55",
+  "trace_id": "01385eb6-60c0-47bc-be8c-a911b4f3f4fd",
+  "model": "gpt-4o",
+  "response": {
+    "trace_id": "01385eb6-60c0-47bc-be8c-a911b4f3f4fd",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 0,
+        "reason": "The answer provides a clear process for identifying and addressing the leak, including purchasing replacement parts and troubleshooting advice if the fix doesn't work."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes necessary safety warnings such as turning off the water supply, wearing gloves and goggles, and when to call a professional."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "The tools listed are common household tools that a typical homeowner would have, such as an adjustable wrench and screwdriver."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is appropriately detailed for an advanced task, with a clear indication of when to stop and call a professional."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide specifically addresses the problem of a leaking toilet tank causing constant running water, providing contextually relevant advice."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 0,
+        "reason": "The tips are practical and specific, such as using plumber\u2019s tape and ensuring even tightening of bolts, adding value to the repair process."
+      }
+    ],
+    "overall_quality_score": 5
+  }
+}

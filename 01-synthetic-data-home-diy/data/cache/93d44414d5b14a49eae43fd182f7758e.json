@@ -1,0 +1,32 @@
+{
+  "cache_key": "93d44414d5b14a49eae43fd182f7758e",
+  "prompt_hash": "93d44414d5b14a49eae43fd182f7758e",
+  "category": "electrical_repair",
+  "difficulty": "advanced",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-09T05:05:18.251387+00:00",
+  "response": {
+    "question": "How can I replace a faulty circuit breaker in my electrical panel?",
+    "answer": "Replacing a circuit breaker can be a straightforward task for those experienced with electrical work. However, it carries significant risks, including electrical shock and fire hazards. Ensure you are confident in your abilities before proceeding. If at any point you feel unsure, contact a licensed electrician.\n\n1. **Turn off the main power supply**: Locate the main power switch in your electrical panel and turn it off. This will cut power to the entire house, ensuring your safety.\n\n2. **Remove the panel cover**: Use a screwdriver to remove the screws securing the cover of the electrical panel. Carefully lift the cover off and set it aside.\n\n3. **Identify the faulty breaker**: Locate the circuit breaker that is tripping or not functioning properly. It may be discolored or have a visible crack.\n\n4. **Disconnect the faulty breaker**: Use a screwdriver to loosen the screw that connects the wire to the breaker. Carefully pull the wire away from the breaker. Note where the wire was connected for reinstallation.\n\n5. **Remove the faulty breaker**: Gently pull the breaker out from the panel. It may be secured by a clip at the bottom, so check for any additional screws or tabs.\n\n6. **Install the new breaker**: Take your new circuit breaker and slide it into the slot where the old one was removed. Ensure that it is firmly in place, securing it to the panel.\n\n7. **Reconnect the wire**: Take the wire you disconnected earlier and attach it to the new breaker, tightening the screw to secure it in place.\n\n8. **Replace the panel cover**: Once everything is securely connected, replace the cover of the electrical panel and secure it with screws.\n\n9. **Turn on the power**: Go back to the main power supply and turn it on. Check to see if the new breaker functions correctly by switching it on and off.",
+    "equipment_problem": "A faulty circuit breaker that keeps tripping or is visibly damaged.",
+    "tools_required": [
+      "Screwdriver",
+      "Voltage tester",
+      "Replacement circuit breaker",
+      "Wire strippers"
+    ],
+    "steps": [
+      "Turn off the main power supply at the main switch in the electrical panel to ensure safety.",
+      "Remove the screws securing the panel cover and carefully lift it off to access the circuit breakers.",
+      "Locate the faulty breaker that is tripping or damaged. Identify its connections and any visible issues.",
+      "Loosen the screw connecting the wire to the faulty breaker and carefully pull the wire away.",
+      "Gently pull the faulty breaker out from the panel, checking for any additional clips or screws that may secure it.",
+      "Install the new circuit breaker by sliding it into the slot and ensuring it is firmly in place.",
+      "Reconnect the wire to the new breaker, tightening the screw to secure it properly.",
+      "Replace the electrical panel cover and secure it with screws once everything is connected.",
+      "Turn on the main power supply and check the new breaker for proper function."
+    ],
+    "safety_info": "Always turn off the main power supply before attempting any work on the electrical panel. Use insulated tools and wear rubber-soled shoes to minimize the risk of electrical shock. If you're unsure about any step or feel uncomfortable working with electricity, call a licensed electrician.",
+    "tips": "Label the wires during disconnection to ensure correct reconnection. Keep a voltage tester handy to check that the power is indeed off before touching any wires. If you experience any issues, consider consulting a professional electrician."
+  }
+}

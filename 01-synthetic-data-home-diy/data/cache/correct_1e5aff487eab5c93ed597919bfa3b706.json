@@ -1,0 +1,32 @@
+{
+  "cache_key": "correct_1e5aff487eab5c93ed597919bfa3b706",
+  "trace_id": "ee6a4668-68eb-4c79-8b6c-04ac9496d3d3",
+  "model": "gpt-4o-mini",
+  "type": "correction",
+  "timestamp": "2026-02-10T03:44:29.118826+00:00",
+  "response": {
+    "question": "How do I unclog a bathroom sink drain?",
+    "answer": "To unclog a bathroom sink drain, follow these detailed steps: 1. **Gather your tools**: You will need a plunger, a bucket, and an old towel or rag. 2. **Clear the area**: Remove any items from around the sink and place a bucket under the sink to catch any water that may spill. 3. **Check for standing water**: If there is water in the sink, remove it with a cup or a small container. 4. **Turn off the water supply**: Locate the water shut-off valves under the sink and turn them off to prevent any accidental spillage during the repair. 5. **Use the plunger**: Place the plunger over the drain, ensuring it covers the entire opening. Press down firmly and then pull up quickly to create suction. Repeat this motion about 10-15 times. 6. **Test the drain**: After plunging, run hot water in the sink to see if the clog has cleared. If water drains slowly, repeat plunging. 7. **Use a towel**: If the clog persists, use a towel to cover the overflow hole (if applicable) and plunge again. This will create better suction. 8. **Check the trap**: If the sink is still clogged, you may need to check the P-trap (the U-shaped pipe under the sink). Place a bucket under the trap, unscrew the slip nuts with your hands (or a wrench if needed), and remove the trap. Clean out any debris inside the trap. 9. **Reassemble**: After cleaning, reattach the trap, ensuring all connections are tight. 10. **Run water**: Finally, run water to ensure the drain is flowing freely. If it is still clogged, you may need to consult a professional.",
+    "equipment_problem": "Clogged bathroom sink drain",
+    "tools_required": [
+      "Plunger",
+      "Bucket",
+      "Towel or rag"
+    ],
+    "steps": [
+      "Gather your tools: a plunger, bucket, and old towel or rag.",
+      "Clear the area around the sink and place a bucket under the sink to catch any water.",
+      "Check for standing water in the sink and remove it with a cup or small container.",
+      "Turn off the water supply by locating the shut-off valves under the sink and turning them off.",
+      "Place the plunger over the drain, ensuring it covers the entire opening, and press down firmly.",
+      "Pull up quickly to create suction, repeating this motion about 10-15 times.",
+      "Run hot water in the sink to see if the clog has cleared; if not, repeat plunging.",
+      "If the clog persists, cover the overflow hole with a towel and plunge again for better suction.",
+      "Place a bucket under the P-trap and unscrew the slip nuts with your hands to remove the trap.",
+      "Clean out any debris inside the trap and reattach it, ensuring all connections are tight.",
+      "Run water to ensure the drain is flowing freely."
+    ],
+    "safety_info": "Always wear gloves when handling plumbing fixtures or debris. Turn off the water supply before starting any repair to prevent accidental spillage. Be cautious when using a plunger to avoid splashing. If you feel resistance when unscrewing pipes, stop and check for any signs of corrosion or damage before proceeding.",
+    "tips": "If using a plunger, ensure there is enough water in the sink to cover the rubber part of the plunger for maximum effectiveness. If the clog remains after multiple attempts, consider using a plumbing snake or contacting a professional."
+  }
+}

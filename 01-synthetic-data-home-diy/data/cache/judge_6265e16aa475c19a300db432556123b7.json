@@ -1,0 +1,41 @@
+{
+  "cache_key": "judge_6265e16aa475c19a300db432556123b7",
+  "trace_id": "04a22533-1ef0-4d74-99a9-3e6390bede44",
+  "model": "gpt-4o",
+  "response": {
+    "trace_id": "04a22533-1ef0-4d74-99a9-3e6390bede44",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 1,
+        "reason": "The guide lacks troubleshooting advice on what to do if the fix doesn't work, such as checking for other potential causes of leaks."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes a water-off warning and PPE requirements, which are appropriate for this task."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "All tools listed are common household tools that a typical homeowner would have."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is straightforward with 13 steps, which is acceptable for a beginner task, and no specialty tools are required."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide specifically addresses a kitchen faucet leaking from the spout, which matches the equipment problem described."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 1,
+        "reason": "The tips provided are somewhat generic and miss the opportunity to offer more specific advice, such as how to ensure the cartridge is properly seated."
+      }
+    ],
+    "overall_quality_score": 3
+  }
+}

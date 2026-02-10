@@ -1,0 +1,32 @@
+{
+  "cache_key": "d32a17bdfefce865903fd58c26b67c98",
+  "prompt_hash": "d32a17bdfefce865903fd58c26b67c98",
+  "category": "appliance_repair",
+  "difficulty": "intermediate",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-09T05:04:10.394018+00:00",
+  "response": {
+    "question": "How can I replace the heating element in my electric oven?",
+    "answer": "Replacing the heating element in an electric oven is a straightforward process that can be accomplished with a few tools and safety precautions. Follow these detailed steps to ensure a successful repair: 1. **Unplug the Oven**: Always start by disconnecting the oven from the power supply to avoid any risk of electric shock. 2. **Remove the Oven's Bottom Panel**: Use a Phillips screwdriver to remove any screws securing the oven's bottom panel. This will give you access to the heating element. 3. **Locate the Heating Element**: The heating element is typically located at the bottom of the oven. Look for the long, metal strip that runs across the bottom. 4. **Disconnect the Heating Element**: Carefully pull the heating element out from the back of the oven. You will see two wires connected to it. Use a flathead screwdriver to gently pry off the connectors. 5. **Remove the Old Heating Element**: Once the wires are disconnected, remove the heating element completely from the oven. 6. **Install the New Heating Element**: Take your new heating element and connect the wires back to the terminals. Ensure they are secured tightly. 7. **Reattach the Bottom Panel**: Replace the bottom panel by securing it with the screws you previously removed. 8. **Plug the Oven Back In**: Once everything is reassembled, reconnect the oven to the power supply. 9. **Test the Oven**: Turn on the oven to ensure that the new heating element is functioning correctly. Monitor it for a few minutes to check for any issues.",
+    "equipment_problem": "The heating element in my electric oven is not working and needs replacement.",
+    "tools_required": [
+      "Phillips screwdriver",
+      "Flathead screwdriver",
+      "Replacement heating element",
+      "Multimeter (optional for testing)"
+    ],
+    "steps": [
+      "Unplug the oven from the power supply for safety.",
+      "Remove the screws securing the oven's bottom panel using a Phillips screwdriver.",
+      "Locate the heating element at the bottom of the oven.",
+      "Carefully pull the heating element out and disconnect the wires using a flathead screwdriver.",
+      "Remove the old heating element completely from the oven.",
+      "Connect the new heating element to the corresponding wires and secure them tightly.",
+      "Reattach the bottom panel of the oven with the screws you removed earlier.",
+      "Plug the oven back into the power supply.",
+      "Test the oven by turning it on and monitoring the new heating element."
+    ],
+    "safety_info": "Always unplug the oven before starting any repair work to prevent electric shock. Use caution when handling the heating element, as it may still be warm if the oven was recently used.",
+    "tips": "Take a picture of the wiring connections before disconnecting them to ensure correct reconnection. If you're unsure about the heating element type, consult your oven's manual or check the manufacturer's website for specifications."
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "cache_key": "455bf38754907774cc46311c87b894a5",
+  "prompt_hash": "455bf38754907774cc46311c87b894a5",
+  "category": "hvac_maintenance",
+  "difficulty": "intermediate",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-09T05:05:35.793170+00:00",
+  "response": {
+    "question": "How can I replace the capacitor in my central air conditioning unit?",
+    "answer": "Replacing a capacitor in your central air conditioning unit involves several steps. First, ensure you have the correct replacement capacitor that matches your unit's specifications. Then, turn off power to the unit at the circuit breaker to prevent any electrical shock. Next, remove the access panel on the outdoor unit, and locate the capacitor. Take a picture of the wiring for reference, then carefully disconnect the old capacitor, noting where each wire connects. Install the new capacitor by connecting the wires to the corresponding terminals, as per your reference picture. After ensuring all connections are secure, replace the access panel and restore power at the circuit breaker. Finally, test the unit to ensure it operates correctly. If it doesn't, double-check your connections and consult a professional if necessary.",
+    "equipment_problem": "The outdoor unit of my central air conditioning system is not starting, and I suspect the capacitor needs replacement.",
+    "tools_required": [
+      "Screwdriver",
+      "Multimeter",
+      "Wrench set",
+      "Insulated gloves",
+      "Safety goggles"
+    ],
+    "steps": [
+      "Turn off the power to the air conditioning unit at the circuit breaker to ensure safety during repairs.",
+      "Use a screwdriver to remove the access panel on the outdoor unit to access the capacitor.",
+      "Locate the capacitor and take a picture of the wiring setup to ensure you connect the new capacitor correctly later.",
+      "Use a multimeter to check the voltage and ensure the capacitor is faulty before proceeding with replacement.",
+      "Carefully disconnect the old capacitor, noting where each wire connects based on your reference picture.",
+      "Install the new capacitor by connecting the wires to the appropriate terminals, following your reference picture closely.",
+      "Make sure all connections are secure and there are no loose wires.",
+      "Replace the access panel on the outdoor unit securely and restore power at the circuit breaker.",
+      "Turn on the air conditioning unit to test if it operates correctly."
+    ],
+    "safety_info": "Always turn off the power to the air conditioning unit at the circuit breaker before beginning any repairs. Use insulated gloves and safety goggles to protect yourself from electric shock and falling debris. Be cautious when handling the capacitor, as it can store electrical charge even after power is disconnected.",
+    "tips": "Double-check the specifications of the new capacitor to ensure it matches the old one. If unsure about any step, consult the unit's manual or seek professional assistance."
+  }
+}

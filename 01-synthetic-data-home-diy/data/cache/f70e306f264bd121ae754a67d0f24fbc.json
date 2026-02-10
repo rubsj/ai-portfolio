@@ -1,0 +1,33 @@
+{
+  "cache_key": "f70e306f264bd121ae754a67d0f24fbc",
+  "prompt_hash": "f70e306f264bd121ae754a67d0f24fbc",
+  "category": "electrical_repair",
+  "difficulty": "intermediate",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-09T05:05:06.402490+00:00",
+  "response": {
+    "question": "How can I replace a faulty wall switch in my home?",
+    "answer": "Replacing a faulty wall switch involves several steps to ensure safety and proper functionality. First, ensure that you have all the necessary tools and materials. Once you have everything ready, follow the steps outlined below to safely replace the switch.",
+    "equipment_problem": "A wall switch that is not functioning correctly, causing lights to flicker or not turn on at all.",
+    "tools_required": [
+      "Screwdriver (flathead and Phillips)",
+      "Wire stripper",
+      "Voltage tester",
+      "Electrical tape",
+      "New wall switch"
+    ],
+    "steps": [
+      "1. Turn off the power to the switch at the circuit breaker to ensure safety.",
+      "2. Use a voltage tester to confirm that the power is off by testing the wires connected to the switch.",
+      "3. Remove the cover plate from the switch by unscrewing it with a screwdriver.",
+      "4. Unscrew the switch from the electrical box and gently pull it out to access the wiring.",
+      "5. Take a photo or make a note of how the wires are connected to the switch for reference.",
+      "6. Disconnect the wires from the old switch by unscrewing the terminal screws.",
+      "7. Prepare the new switch by connecting the wires in the same configuration as the old switch (black wires to brass screws and white wires to silver screws).",
+      "8. Secure the new switch to the electrical box and reattach the cover plate.",
+      "9. Turn the power back on at the circuit breaker and test the new switch to ensure it is functioning properly."
+    ],
+    "safety_info": "Always turn off the power at the circuit breaker before working on electrical components. Use a voltage tester to confirm that the power is off. If you are unsure about any steps, consult a professional electrician. Never work on live wires as this poses a serious risk of electric shock.",
+    "tips": "Label the wires if necessary to avoid confusion when reconnecting them to the new switch. If the switch is part of a three-way circuit, consult a wiring diagram for proper installation."
+  }
+}

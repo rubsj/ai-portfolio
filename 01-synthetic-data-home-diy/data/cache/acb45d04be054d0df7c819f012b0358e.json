@@ -1,0 +1,28 @@
+{
+  "cache_key": "acb45d04be054d0df7c819f012b0358e",
+  "prompt_hash": "acb45d04be054d0df7c819f012b0358e",
+  "category": "electrical_repair",
+  "difficulty": "advanced",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-10T03:48:43.466439+00:00",
+  "response": {
+    "question": "How can I replace a faulty ceiling light fixture in my home?",
+    "answer": "To replace a faulty ceiling light fixture, start by identifying the issue. If the light does not turn on, check the bulb first; if it\u2019s not the bulb, the fixture itself may be faulty. Before starting, ensure you disconnect power at the circuit breaker to prevent any electrical shocks. Wear rubber gloves and safety goggles to protect yourself. Use a screwdriver to remove the screws holding the existing fixture in place, then gently pull it down to expose the wiring. Disconnect the wires by unscrewing the wire nuts and noting which wires connect to each other (typically black to black, white to white, and green or bare to ground). Purchase a compatible replacement fixture from a local hardware store or online retailer. When connecting the new fixture, match the wires as before and secure them with wire nuts. Once everything is reconnected, carefully tuck the wires back into the ceiling box and mount the new fixture in place. If the light still does not work after the replacement, check the circuit breaker again and ensure the fixture is correctly wired. If you\u2019re uncomfortable with any step, or if the breaker trips again, call a licensed electrician for assistance.",
+    "equipment_problem": "Faulty ceiling light fixture that does not turn on.",
+    "tools_required": [
+      "Screwdriver",
+      "Wire nuts",
+      "Rubber gloves",
+      "Safety goggles"
+    ],
+    "steps": [
+      "Disconnect power at the circuit breaker before starting any work.",
+      "Remove the existing fixture by unscrewing the screws holding it in place.",
+      "Carefully pull down the fixture to expose the wiring and disconnect the wires from the old fixture using wire nuts.",
+      "Purchase a compatible replacement light fixture from a hardware store or online.",
+      "Connect the new fixture by matching the wires (black to black, white to white, and ground to ground) and secure with wire nuts."
+    ],
+    "safety_info": "Always disconnect power at the circuit breaker before starting work. Wear rubber gloves and safety goggles to protect against electrical shocks and falling debris. Be aware of the risk of short circuits; if you smell burning or see sparks, disconnect the power immediately and call a professional.",
+    "tips": "When purchasing a new light fixture, ensure it is rated for the wattage of the bulbs you plan to use. Avoid over-tightening wire nuts, as this can damage the wire connections. Label the wires with tape if needed to ensure correct reconnection. If unsure about wiring colors, consult the fixture\u2019s manual or a professional."
+  }
+}

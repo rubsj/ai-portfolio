@@ -1,0 +1,41 @@
+{
+  "cache_key": "judge_00f69764e636c38520a1ad75c9f2b0b5",
+  "trace_id": "cc54bf6d-e5ae-4f47-a587-8c8ac7b4597f",
+  "model": "gpt-4o",
+  "response": {
+    "trace_id": "cc54bf6d-e5ae-4f47-a587-8c8ac7b4597f",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 0,
+        "reason": "The guide provides detailed steps on how to replace the capacitor, including identifying the part, safety precautions, and troubleshooting advice if the fix doesn't work."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes all necessary safety precautions, such as turning off the power at the circuit breaker, using insulated gloves and goggles, and warnings about the capacitor storing charge."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "All tools listed are common and likely to be owned by a typical homeowner, including a voltmeter or basic electrical tester, which is justified for checking the capacitor."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is well within the intermediate level with only 9 steps and no specialty tools required, making it appropriately complex for the task."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide specifically addresses the problem of the outdoor unit not starting due to a suspected capacitor issue, providing context-specific instructions."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 0,
+        "reason": "The tips are practical and specific, advising on checking capacitor specifications and consulting a manual or professional if needed."
+      }
+    ],
+    "overall_quality_score": 5
+  }
+}

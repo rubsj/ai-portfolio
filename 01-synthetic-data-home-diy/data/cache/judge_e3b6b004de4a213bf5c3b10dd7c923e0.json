@@ -1,0 +1,41 @@
+{
+  "cache_key": "judge_e3b6b004de4a213bf5c3b10dd7c923e0",
+  "trace_id": "4bd1847b-7b09-448e-a579-d28a5ea3d150",
+  "model": "gpt-4o",
+  "response": {
+    "trace_id": "4bd1847b-7b09-448e-a579-d28a5ea3d150",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 1,
+        "reason": "The guide does not provide troubleshooting advice if the repair doesn't stop the leak or if the homeowner encounters issues during the repair."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes necessary safety precautions such as turning off the water supply and wearing safety goggles."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "All tools listed are common household tools and materials that a typical homeowner would likely have."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is appropriately detailed for an intermediate task and does not exceed 12 steps."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide specifically addresses the issue of a leaking shower valve, providing context-specific instructions."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 1,
+        "reason": "The tips provided are somewhat generic and could be more specific, such as advising on how to handle stubborn screws or providing more detailed advice on selecting replacement parts."
+      }
+    ],
+    "overall_quality_score": 3
+  }
+}

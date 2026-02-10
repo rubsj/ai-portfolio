@@ -1,0 +1,33 @@
+{
+  "cache_key": "d65487220ddcb4bc6dc64a294c1c055e",
+  "prompt_hash": "d65487220ddcb4bc6dc64a294c1c055e",
+  "category": "hvac_maintenance",
+  "difficulty": "beginner",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-09T05:05:22.279514+00:00",
+  "response": {
+    "question": "How do I clean my HVAC air filter?",
+    "answer": "Cleaning your HVAC air filter is a simple task that can significantly improve the efficiency of your heating and cooling system. A clean filter ensures better airflow and air quality. Here\u2019s how to do it safely and effectively:",
+    "equipment_problem": "Dirty HVAC air filter",
+    "tools_required": [
+      "Screwdriver (if needed)",
+      "Vacuum cleaner with brush attachment",
+      "Mild detergent",
+      "Water",
+      "Bucket or basin",
+      "Clean cloth"
+    ],
+    "steps": [
+      "Turn off the HVAC system at the thermostat to ensure safety during the cleaning process.",
+      "Locate the air filter. It is usually found in the return air duct or blower compartment. Check your user manual if you are unsure of its location.",
+      "If necessary, use a screwdriver to remove any screws holding the filter cover in place.",
+      "Carefully slide the air filter out of its slot. Take note of the filter's orientation for reinstallation.",
+      "If the filter is reusable, gently vacuum it using the brush attachment to remove dust and debris. If it\u2019s very dirty, wash it with a mixture of mild detergent and water in a bucket or basin.",
+      "Rinse the filter thoroughly with clean water and allow it to dry completely before reinstalling. Ensure it is completely dry to prevent mold growth.",
+      "Once dry, carefully slide the filter back into its original position, ensuring it is oriented correctly as you noted earlier.",
+      "Replace the cover and secure it with screws if necessary. Turn the HVAC system back on at the thermostat."
+    ],
+    "safety_info": "Always ensure the HVAC system is turned off before starting any maintenance work to avoid electrical shock or injury. Use gloves if your filter is particularly dirty, and avoid touching any sharp edges inside the unit.",
+    "tips": "Check your air filter every month, especially during high-use seasons (summer and winter). Depending on usage, you may need to clean or replace it every 1-3 months."
+  }
+}

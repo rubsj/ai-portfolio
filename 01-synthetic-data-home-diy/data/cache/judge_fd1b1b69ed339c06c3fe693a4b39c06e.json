@@ -1,0 +1,41 @@
+{
+  "cache_key": "judge_fd1b1b69ed339c06c3fe693a4b39c06e",
+  "trace_id": "1630c42e-dd3f-4db2-9842-1d1a7219e788",
+  "model": "gpt-4o",
+  "response": {
+    "trace_id": "1630c42e-dd3f-4db2-9842-1d1a7219e788",
+    "labels": [
+      {
+        "mode": "incomplete_answer",
+        "label": 0,
+        "reason": "The guide provides a clear step-by-step process for replacing a ceiling light fixture, includes troubleshooting advice, and mentions where to purchase a replacement."
+      },
+      {
+        "mode": "safety_violations",
+        "label": 0,
+        "reason": "The guide includes necessary safety precautions such as turning off power at the circuit breaker first, wearing PPE, and advises calling a professional if needed."
+      },
+      {
+        "mode": "unrealistic_tools",
+        "label": 0,
+        "reason": "All tools listed are common household items that a typical homeowner would likely already own."
+      },
+      {
+        "mode": "overcomplicated_solution",
+        "label": 0,
+        "reason": "The solution is concise with fewer than 8 steps, appropriate for an advanced task, and includes a recommendation to call a professional if needed."
+      },
+      {
+        "mode": "missing_context",
+        "label": 0,
+        "reason": "The guide specifically addresses the problem of a faulty ceiling light fixture that does not turn on, providing relevant and specific advice."
+      },
+      {
+        "mode": "poor_quality_tips",
+        "label": 0,
+        "reason": "The tips are practical and provide additional useful information specific to the task, such as ensuring correct wattage and labeling wires."
+      }
+    ],
+    "overall_quality_score": 5
+  }
+}
