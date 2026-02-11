@@ -139,12 +139,11 @@ dev-dependencies = [
 - [x] 15. V2 + correction: 0 failures (0.0%, −100% reduction)
 - [x] 16. ADRs written: ADR-001 (Instructor), ADR-002 (flat schema), ADR-003 (dual labeling), ADR-004 (template improvement)
 
-### In Progress (Wednesday Feb 11)
-
-- [ ] 17. `streamlit_app.py` — Interactive demo app
-- [ ] 18. `README.md` — Portfolio-ready documentation
-- [ ] 19. Loom recording (2 min walkthrough)
-- [ ] 20. Final git push + update Notion to "Done"
+### Wednesday Feb 11 — Items 17–20:
+- [x] 17. `streamlit_app.py` — Interactive demo app (PR #9)
+- [x] 18. `README.md` — Portfolio-ready documentation (PR #9)
+- [ ] 19. Loom recording — deferred until all 9 projects complete
+- [ ] 20. Streamlit Cloud deployment — deferred until all 9 projects complete
 
 ## Key Decisions Made
 
