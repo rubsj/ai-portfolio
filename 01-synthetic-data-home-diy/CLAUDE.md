@@ -115,16 +115,36 @@ dev-dependencies = [
 
 ## Current State
 
-- [x] Project scaffolded with uv
-- [x] All src/ and tests/ files created (empty)
-- [x] .env ready for OPENAI_API_KEY
-- [ ] Pydantic schemas (schemas.py) — Sunday Feb 8
-- [ ] Generation pipeline (generator.py) — Sunday Feb 8
-- [ ] Tests (test_schemas.py) — Sunday Feb 8
-- [ ] First batch generated (30-60 records) — Sunday Feb 8
-- [ ] Validation loop (validator.py) — Monday Feb 9
-- [ ] Analysis + evaluation (evaluator.py, analysis.py) — Tuesday Feb 10
-- [ ] Documentation + Streamlit — Wednesday Feb 11
+### Completed (PRs #2, #3, #6, #7 merged)
+
+**Sunday Feb 8 — Items 1–4:**
+- [x] 1. Add `instructor` dependency
+- [x] 2. `src/schemas.py` — DIYRepairRecord, GeneratedRecord, JudgeResult, FailureLabel models
+- [x] 3. `src/templates.py` — 5 prompt templates (v1) with category/persona/emphasis
+- [x] 4. `tests/test_schemas.py` — Valid/invalid data tests
+
+**Monday Feb 9 — Items 5–10:**
+- [x] 5. `src/generator.py` — Instructor-based generation + JSON cache + batch (30 records)
+- [x] 6. First batch generated: 30/30 records (100% success rate)
+- [x] 7. `src/validator.py` — Validation tracking, success rate, rejection logging
+- [x] 8. `src/evaluator.py` — LLM-as-Judge with GPT-4o, JudgeResult parsing
+- [x] 9. Manual labeling: first 10 records labeled (CSV)
+- [x] 10. LLM judge run on all 30 records — V1: 36 failures (20.0% rate)
+
+**Tuesday Feb 10 — Items 11–16:**
+- [x] 11. `src/analysis.py` — DataFrame, heatmap, correlation matrix, all charts
+- [x] 12. Agreement analysis: 81.7% inter-rater agreement (manual vs LLM)
+- [x] 13. `src/corrector.py` — Individual record correction + template improvement
+- [x] 14. Template v2: 8 failures (4.4%, −77.8% reduction)
+- [x] 15. V2 + correction: 0 failures (0.0%, −100% reduction)
+- [x] 16. ADRs written: ADR-001 (Instructor), ADR-002 (flat schema), ADR-003 (dual labeling), ADR-004 (template improvement)
+
+### In Progress (Wednesday Feb 11)
+
+- [ ] 17. `streamlit_app.py` — Interactive demo app
+- [ ] 18. `README.md` — Portfolio-ready documentation
+- [ ] 19. Loom recording (2 min walkthrough)
+- [ ] 20. Final git push + update Notion to "Done"
 
 ## Key Decisions Made
 
