@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>P2 Conceptual Primer — RAG Evaluation Deep Dive</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#0a0a0f;--surface:#12121a;--surface2:#1a1a28;--surface3:#22223a;
+  --border:#2a2a42;--text:#e8e8f0;--text2:#9090b0;--text3:#606080;
+  --accent:#6366f1;--accent2:#818cf8;--green:#22c55e;--yellow:#eab308;
+  --orange:#f97316;--red:#ef4444;--cyan:#06b6d4;--pink:#ec4899;
+}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+.container{max-width:960px;margin:0 auto;padding:30px 24px 80px}
+h1{font-size:1.8rem;font-weight:700;background:linear-gradient(135deg,var(--accent2),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:6px}
+.subtitle{color:var(--text2);font-size:0.92rem;margin-bottom:32px}
+h2{font-size:1.3rem;font-weight:700;margin:36px 0 16px;padding-bottom:8px;border-bottom:1px solid var(--border);color:var(--cyan)}
+h3{font-size:1.05rem;font-weight:700;margin:24px 0 10px;color:var(--text)}
+h4{font-size:0.92rem;font-weight:700;margin:16px 0 8px;color:var(--accent2)}
+p{color:var(--text2);margin-bottom:12px;font-size:0.92rem}
+strong{color:var(--text)}
+code{font-family:'Courier New',monospace;font-size:0.85rem;background:var(--surface2);padding:2px 6px;border-radius:4px;color:var(--accent2)}
+
+.concept-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:24px;margin-bottom:20px}
+.concept-card.highlight{border-left:3px solid var(--cyan)}
+.concept-card.warn{border-left:3px solid var(--orange)}
+.concept-card.green{border-left:3px solid var(--green)}
+
+.analogy{background:var(--surface2);border-radius:8px;padding:16px 20px;margin:12px 0;font-style:italic;color:var(--text2);border-left:3px solid var(--pink)}
+.analogy::before{content:'🔗 Analogy: ';font-style:normal;font-weight:700;color:var(--pink)}
+
+.java-compare{background:var(--surface2);border-radius:8px;padding:16px 20px;margin:12px 0;color:var(--text2);border-left:3px solid var(--yellow)}
+.java-compare::before{content:'☕→🐍 Java/TS Parallel: ';font-weight:700;color:var(--yellow)}
+
+.diagram{background:var(--surface2);border-radius:8px;padding:20px;margin:16px 0;font-family:'Courier New',monospace;font-size:0.82rem;color:var(--text2);line-height:1.8;overflow-x:auto;white-space:pre}
+
+.metric-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0}
+@media(max-width:700px){.metric-grid{grid-template-columns:1fr}}
+.metric-box{background:var(--surface2);border-radius:8px;padding:16px;border:1px solid var(--border)}
+.metric-box h4{margin-top:0;font-size:0.88rem}
+.metric-box p{font-size:0.84rem;margin-bottom:6px}
+.metric-box .formula{font-family:'Courier New',monospace;font-size:0.82rem;color:var(--green);background:var(--surface);padding:6px 10px;border-radius:4px;margin:8px 0;display:inline-block}
+
+.toc{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px 24px;margin-bottom:28px}
+.toc h3{margin-top:0;color:var(--accent2)}
+.toc ol{padding-left:20px;color:var(--text2);font-size:0.88rem}
+.toc li{margin-bottom:6px}
+.toc a{color:var(--cyan);text-decoration:none}
+.toc a:hover{text-decoration:underline}
+
+.key-insight{background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.2);border-radius:8px;padding:14px 18px;margin:12px 0}
+.key-insight::before{content:'💡 Key Insight: ';font-weight:700;color:var(--green)}
+.key-insight p{margin:0;color:var(--text2);font-size:0.88rem}
+
+.warning{background:rgba(249,115,22,.08);border:1px solid rgba(249,115,22,.2);border-radius:8px;padding:14px 18px;margin:12px 0}
+.warning::before{content:'⚠️ Watch Out: ';font-weight:700;color:var(--orange)}
+.warning p{margin:0;color:var(--text2);font-size:0.88rem}
+
+table{width:100%;border-collapse:collapse;font-size:0.85rem;margin:12px 0}
+th{text-align:left;padding:10px 12px;border-bottom:2px solid var(--border);color:var(--text2);font-weight:600;font-size:0.75rem;text-transform:uppercase;letter-spacing:.05em}
+td{padding:10px 12px;border-bottom:1px solid var(--border);color:var(--text2)}
+tr:hover{background:var(--surface2)}
+
+.num{color:var(--green);font-family:'Courier New',monospace;font-weight:700}
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>P2 Conceptual Primer — RAG Evaluation</h1>
+<p class="subtitle">Everything you need to understand before writing a single line of code. Read time: ~25 minutes.</p>
+
+<div class="toc">
+<h3>Table of Contents</h3>
+<ol>
+<li><a href="#rag">What is RAG? (The Big Picture)</a></li>
+<li><a href="#embeddings">Embeddings — How Machines Understand Meaning</a></li>
+<li><a href="#vector-stores">Vector Stores & Similarity Search (FAISS)</a></li>
+<li><a href="#chunking">Chunking — The Most Underrated Decision in RAG</a></li>
+<li><a href="#bm25">BM25 — The "Dumb" Baseline You Must Beat</a></li>
+<li><a href="#reranking">Reranking — The Precision Booster</a></li>
+<li><a href="#synthetic-qa">Synthetic QA Generation — Creating Ground Truth</a></li>
+<li><a href="#retrieval-metrics">Retrieval Metrics — Recall, Precision, MRR</a></li>
+<li><a href="#generation-metrics">Generation Metrics — Faithfulness, Relevance, RAGAS</a></li>
+<li><a href="#braintrust">Braintrust & Logfire — Experiment Tracking & Observability</a></li>
+<li><a href="#grid-search">The Grid Search — Putting It All Together</a></li>
+<li><a href="#python-patterns">Python Patterns You'll Use</a></li>
+</ol>
+</div>
+
+<!-- ================================ -->
+<h2 id="rag">1. What is RAG? (The Big Picture)</h2>
+
+<div class="concept-card highlight">
+<h3>Definition</h3>
+<p><strong>Retrieval-Augmented Generation (RAG)</strong> is a pattern where you give an LLM <em>relevant context from your own data</em> before asking it to generate an answer. Instead of relying on the LLM's training data (which may be outdated or missing your domain knowledge), you <strong>retrieve</strong> the most relevant passages from your documents and <strong>inject them into the prompt</strong>.</p>
+</div>
+
+<p>The fundamental problem RAG solves: LLMs are trained on general internet data. They don't know about your company's internal docs, your PDF lecture notes, or your proprietary data. You could fine-tune the model (P3), but that's expensive and inflexible. RAG is the cheaper, more flexible alternative — you keep the model general, but feed it specific context at query time.</p>
+
+<div class="diagram">
+Traditional LLM:
+  User Question → [LLM] → Answer (from training data only)
+
+RAG Pipeline:
+  User Question → [Embed Question] → [Search Vector Store] → [Top-K Chunks]
+       ↓
+  [Build Prompt: "Given this context: {chunks}, answer: {question}"]
+       ↓
+  [LLM] → Answer (grounded in YOUR documents)
+</div>
+
+<h3>The Three Stages of RAG</h3>
+<table>
+<tr><th>Stage</th><th>What Happens</th><th>Key Decision</th></tr>
+<tr><td><strong>1. Indexing</strong> (offline, once)</td><td>Parse PDF → chunk text → embed chunks → store in vector DB</td><td>Chunk size, overlap, embedding model</td></tr>
+<tr><td><strong>2. Retrieval</strong> (per query)</td><td>Embed the user's question → search vector DB → return top-K similar chunks</td><td>K value, similarity metric, reranking</td></tr>
+<tr><td><strong>3. Generation</strong> (per query)</td><td>Stuff retrieved chunks into LLM prompt → generate answer</td><td>Prompt template, LLM model, max tokens</td></tr>
+</table>
+
+<div class="analogy">RAG is like an open-book exam. The student (LLM) doesn't need to memorize everything — they just need to find the right page in the textbook (retrieval) and write a good answer from it (generation). Your job in P2 is to measure how well different "textbook indexing strategies" help the student find the right page.</div>
+
+<div class="key-insight"><p>In P2, you're not building a chatbot. You're building a <strong>benchmarking system</strong> that measures which indexing strategy produces the best open-book exam performance. The "exam" is your synthetic QA dataset. The "indexing strategies" are your chunking + embedding configs.</p></div>
+
+<!-- ================================ -->
+<h2 id="embeddings">2. Embeddings — How Machines Understand Meaning</h2>
+
+<div class="concept-card highlight">
+<h3>What is an Embedding?</h3>
+<p>An embedding is a <strong>vector (array of numbers)</strong> that represents the <em>meaning</em> of a piece of text. Similar meanings → similar vectors. The magic: "How do I fix a leaky faucet?" and "plumbing repair dripping tap" have very different words but nearly identical embeddings.</p>
+</div>
+
+<p>When you embed a sentence, you pass it through a neural network (the "embedding model") that outputs a fixed-length array of floats. For example, <code>all-MiniLM-L6-v2</code> outputs a 384-dimensional vector. <code>text-embedding-3-small</code> from OpenAI outputs 1536 dimensions.</p>
+
+<div class="diagram">
+Input:  "How do I fix a leaky faucet?"
+
+Embedding Model (MiniLM-L6-v2):
+  → [0.0312, -0.0891, 0.1245, ..., 0.0567]  (384 numbers)
+
+Input:  "plumbing repair dripping tap"
+
+Embedding Model (MiniLM-L6-v2):
+  → [0.0298, -0.0903, 0.1201, ..., 0.0589]  (384 numbers)
+
+Cosine Similarity between these two vectors: 0.89 (very similar!)
+</div>
+
+<h3>Embedding Models You'll Compare</h3>
+<table>
+<tr><th>Model</th><th>Dimensions</th><th>Where It Runs</th><th>Cost</th><th>Quality</th></tr>
+<tr><td><code>all-MiniLM-L6-v2</code></td><td>384</td><td>Local (your M2)</td><td>Free</td><td>Good — fast, small footprint</td></tr>
+<tr><td><code>all-mpnet-base-v2</code></td><td>768</td><td>Local (your M2)</td><td>Free</td><td>Better — more nuanced semantic understanding</td></tr>
+<tr><td><code>text-embedding-3-small</code></td><td>1536</td><td>OpenAI API</td><td>~$0.02/1M tokens</td><td>Best — but API-dependent</td></tr>
+</table>
+
+<div class="java-compare">Think of embedding dimensions like hash map bucket count. More dimensions = more "buckets" to spread meaning across = finer distinctions between similar concepts. But more dimensions = more memory and slower search. It's a classic space-time tradeoff.</div>
+
+<h3>Cosine Similarity — The Core Math</h3>
+<p>When you search a vector store, you're computing <strong>cosine similarity</strong> between the query embedding and every stored chunk embedding. Cosine similarity measures the angle between two vectors, ignoring magnitude:</p>
+<p style="font-family:monospace;color:var(--green);font-size:0.9rem;margin:8px 0;">cosine_sim(A, B) = (A · B) / (||A|| × ||B||)</p>
+<p>Range: -1 (opposite meaning) to +1 (identical meaning). In practice, most similarities fall between 0.3 and 0.9. Above 0.7 is generally "semantically similar."</p>
+
+<div class="warning"><p>Embeddings capture <em>semantic</em> similarity, not <em>lexical</em> (word-level) similarity. "Bank" (financial) and "bank" (river) have the same word but different embeddings depending on context. This is both the power and the failure mode of vector search — it sometimes retrieves chunks that are semantically related but not actually answering the question. That's why you need evaluation.</p></div>
+
+<!-- ================================ -->
+<h2 id="vector-stores">3. Vector Stores & FAISS</h2>
+
+<div class="concept-card highlight">
+<h3>What is a Vector Store?</h3>
+<p>A vector store (or vector database) is a specialized database optimized for storing and searching high-dimensional vectors. Instead of SQL queries like <code>WHERE name = 'John'</code>, you query with a vector and ask: "Find me the K nearest vectors to this one."</p>
+</div>
+
+<h3>FAISS — Facebook AI Similarity Search</h3>
+<p>FAISS is a C++ library with Python bindings, built by Meta AI Research. It's the de facto standard for similarity search in production systems. Two key index types you'll use:</p>
+
+<table>
+<tr><th>Index Type</th><th>How It Works</th><th>When to Use</th></tr>
+<tr><td><code>IndexFlatL2</code></td><td><strong>Brute force</strong> — compares query against every stored vector. Exact results. O(n) per query.</td><td>Small datasets (&lt;100K vectors). Guaranteed best results. Your P2 use case.</td></tr>
+<tr><td><code>IndexIVFFlat</code></td><td><strong>Inverted File Index</strong> — clusters vectors, only searches relevant clusters. Approximate results. O(√n) per query.</td><td>Large datasets (>100K). Faster but may miss some results.</td></tr>
+<tr><td><code>IndexHNSWFlat</code></td><td><strong>Hierarchical Navigable Small World</strong> — graph-based search. Very fast, high recall.</td><td>Production systems needing speed + quality.</td></tr>
+</table>
+
+<div class="diagram">
+FAISS Workflow:
+
+1. CREATE INDEX
+   index = faiss.IndexFlatL2(384)     # 384 = embedding dimensions
+   
+2. ADD VECTORS
+   embeddings = np.array([...])       # shape: (num_chunks, 384)
+   index.add(embeddings)              # stores all chunk embeddings
+   
+3. SEARCH
+   query_vec = embed("user question") # shape: (1, 384)
+   distances, indices = index.search(query_vec, k=5)
+   # distances = similarity scores for top-5
+   # indices = positions of top-5 chunks in your chunk list
+</div>
+
+<div class="java-compare">FAISS is like a HashMap where the "key" is a vector and "get()" returns the K nearest keys instead of an exact match. <code>IndexFlatL2</code> is like iterating every entry (brute force). <code>IndexIVFFlat</code> is like having buckets/partitions — you only search the relevant bucket. For your dataset size (~1000 chunks), brute force (<code>IndexFlatL2</code>) is fast enough and guarantees perfect results.</div>
+
+<div class="key-insight"><p>In P2, you'll create <strong>12 separate FAISS indices</strong> — one for each (chunk_config × embedding_model) combination. Each index is like a different "version" of the same textbook, organized differently. You're measuring which organization helps retrieval the most.</p></div>
+
+<!-- ================================ -->
+<h2 id="chunking">4. Chunking — The Most Underrated Decision</h2>
+
+<div class="concept-card warn">
+<h3>Why Chunking Matters More Than Model Choice</h3>
+<p>Here's a counterintuitive truth: <strong>changing chunk size often affects RAG quality more than changing the embedding model or the LLM</strong>. A poorly chunked document with GPT-4 will underperform a well-chunked document with GPT-3.5. This is because chunking determines the <em>unit of retrieval</em> — what the system can actually find and return.</p>
+</div>
+
+<h3>The Two Parameters</h3>
+<p><strong>chunk_size</strong> — How many tokens per chunk. Typical range: 128–1024 tokens.</p>
+<p><strong>chunk_overlap</strong> — How many tokens overlap between adjacent chunks. Typically 10-50% of chunk size.</p>
+
+<div class="diagram">
+Document: "AAAA BBBB CCCC DDDD EEEE FFFF GGGG HHHH"
+
+chunk_size=4, overlap=0:
+  Chunk 1: [AAAA BBBB CCCC DDDD]
+  Chunk 2: [EEEE FFFF GGGG HHHH]
+  → Clean separation, but context at boundaries is LOST
+
+chunk_size=4, overlap=2:
+  Chunk 1: [AAAA BBBB CCCC DDDD]
+  Chunk 2: [CCCC DDDD EEEE FFFF]
+  Chunk 3: [EEEE FFFF GGGG HHHH]
+  → More chunks (more storage), but boundary context PRESERVED
+
+chunk_size=8, overlap=0:
+  Chunk 1: [AAAA BBBB CCCC DDDD EEEE FFFF GGGG HHHH]
+  → One big chunk. Contains everything but less specific.
+</div>
+
+<h3>The Tradeoff Matrix</h3>
+<table>
+<tr><th>Chunk Size</th><th>Pros</th><th>Cons</th></tr>
+<tr><td><strong>Small (128-256)</strong></td><td>Precise retrieval. Each chunk is focused on one idea. High recall — more chunks mean more chances to match.</td><td>Loses context. A question needing two adjacent paragraphs fails. More chunks = slower search. More noise in results.</td></tr>
+<tr><td><strong>Medium (256-512)</strong></td><td>Sweet spot for most use cases. Enough context for embeddings to work well. Balanced recall/precision.</td><td>May still split some multi-paragraph concepts.</td></tr>
+<tr><td><strong>Large (512-1024)</strong></td><td>Preserves long reasoning chains. Good for "explain how X works" questions.</td><td>Diluted embeddings — chunk covers too many topics, similarity score is averaged across all of them. Fewer chunks retrieved per query.</td></tr>
+</table>
+
+<h3>Overlap — Why It Matters</h3>
+<p>Without overlap, information at chunk boundaries is effectively <strong>invisible to retrieval</strong>. If a key sentence spans the boundary between chunk 47 and chunk 48, neither chunk's embedding fully captures it. Overlap ensures that boundary information exists in at least one chunk.</p>
+
+<div class="analogy">Chunking is like cutting a pizza. Small slices (128 tokens) mean everyone gets exactly what they want, but some toppings get split across slices. Large slices (1024 tokens) keep toppings together, but you might get pepperoni when you only wanted mushroom. Overlap is like making the cuts slightly wider so each slice includes a bit of the adjacent slice's toppings — redundant, but nothing gets lost in the cut.</div>
+
+<h3>Your Grid Search Parameters</h3>
+<p>You'll test these combinations:</p>
+<table>
+<tr><th>Config</th><th>chunk_size</th><th>overlap</th><th>Rationale</th></tr>
+<tr><td>A</td><td class="num">128</td><td class="num">32</td><td>Small chunks, 25% overlap — max retrieval granularity</td></tr>
+<tr><td>B</td><td class="num">256</td><td class="num">64</td><td>Medium, 25% overlap — balanced baseline</td></tr>
+<tr><td>C</td><td class="num">512</td><td class="num">128</td><td>Large, 25% overlap — more context per chunk</td></tr>
+<tr><td>D</td><td class="num">256</td><td class="num">128</td><td>Medium, 50% overlap — high redundancy, tests overlap impact</td></tr>
+</table>
+<p>4 chunk configs × 3 embedding models = <strong>12 vector stores to evaluate</strong>.</p>
+
+<!-- ================================ -->
+<h2 id="bm25">5. BM25 — The Baseline You Must Beat</h2>
+
+<div class="concept-card">
+<h3>What is BM25?</h3>
+<p><strong>BM25 (Best Matching 25)</strong> is a classical information retrieval algorithm from the 1990s. It's the algorithm behind Elasticsearch, Apache Solr, and most traditional search engines. It ranks documents by <strong>term frequency</strong> (how often query words appear in the document) adjusted by <strong>inverse document frequency</strong> (how rare those words are across all documents) and <strong>document length normalization</strong>.</p>
+</div>
+
+<p>BM25 is purely <strong>lexical</strong> — it only matches on exact words. It doesn't understand that "automobile" and "car" mean the same thing. This is both its weakness and its usefulness as a baseline:</p>
+
+<p>If your vector search (semantic) can't beat BM25 (lexical), something is wrong with your embeddings or chunking. BM25 should be your "floor" — vector search should always score higher on recall and MRR. If it doesn't, you've learned something valuable about your configuration.</p>
+
+<div class="key-insight"><p>In interviews, saying "I compared my vector retrieval against a BM25 baseline and showed a 23% improvement in Recall@5" is orders of magnitude more impressive than "I built a vector search." The baseline comparison is what makes it scientific.</p></div>
+
+<div class="java-compare">BM25 is conceptually like a weighted <code>String.contains()</code> across all documents, with TF-IDF scoring. The <code>rank_bm25</code> Python library gives you this in ~5 lines of code. Think of it as the "grep" of information retrieval — simple, fast, no ML required.</div>
+
+<!-- ================================ -->
+<h2 id="reranking">6. Reranking — The Precision Booster</h2>
+
+<div class="concept-card highlight">
+<h3>The Problem Reranking Solves</h3>
+<p>Vector search is fast because it uses <strong>bi-encoder</strong> embeddings — the query and documents are embedded <em>independently</em>, then compared via cosine similarity. This is efficient (embed once, search millions) but lossy — subtle relationships between query and document get missed.</p>
+
+<p><strong>Reranking</strong> uses a <strong>cross-encoder</strong> that takes (query, document) as a <em>pair</em> and scores their relevance together. This is much more accurate but much slower — it can't pre-compute embeddings, so you only run it on the top-K results from the initial search.</p>
+</div>
+
+<div class="diagram">
+Without Reranking:
+  Query → [Embed] → [FAISS: Top-20] → Return Top-5
+  
+  Problem: FAISS top-5 might miss relevant chunks ranked 6-15
+
+With Reranking:
+  Query → [Embed] → [FAISS: Top-20] → [Cohere Reranker: Re-score all 20] → Return Top-5
+  
+  Result: The true top-5 emerge after cross-encoder re-scoring
+</div>
+
+<h3>How Cohere Reranker Works</h3>
+<p>Cohere's reranker API takes a query and a list of documents, and returns relevance scores. You retrieve a larger set (top-20) from FAISS, then rerank to get the true top-5. This typically improves Precision@5 by <strong>10-25%</strong>.</p>
+
+<div class="analogy">Initial vector search is like casting a wide net — you catch lots of fish, including some you don't want. Reranking is like a skilled fisherman sorting through the catch, keeping only the best ones. You cast the net once (fast, cheap), then sort once (slow, expensive, but only on a small set).</div>
+
+<div class="warning"><p>Cohere reranker is an API call (~$1 per 1000 searches for their free tier, which is generous for P2). You can also use open-source cross-encoders from SentenceTransformers (<code>cross-encoder/ms-marco-MiniLM-L-6-v2</code>), which run locally on your M2.</p></div>
+
+<!-- ================================ -->
+<h2 id="synthetic-qa">7. Synthetic QA Generation — Creating Ground Truth</h2>
+
+<div class="concept-card warn">
+<h3>The Fundamental Problem</h3>
+<p>You need to evaluate retrieval quality. To do that, you need questions where you <strong>know which chunk contains the answer</strong> (the "gold chunk"). But manually writing hundreds of questions is impractical. The solution: <strong>use an LLM to generate questions FROM each chunk</strong>, then test whether the retriever can find that chunk when given the question.</p>
+</div>
+
+<div class="diagram">
+Synthetic QA Generation Flow:
+
+For each chunk in your document:
+  1. Send chunk text to LLM: "Generate 2-3 questions answerable 
+     from this text. Vary types: factual, analytical, comparative."
+  2. LLM returns questions
+  3. Store: { question, gold_chunk_id, question_type }
+
+Result: A dataset of (question, expected_chunk) pairs
+
+Evaluation:
+  For each (question, gold_chunk_id):
+    1. Embed question
+    2. Search vector store → get retrieved_chunk_ids (top-K)
+    3. Check: is gold_chunk_id in retrieved_chunk_ids?
+    4. If yes → correct retrieval. If no → missed.
+</div>
+
+<h3>Question Type Diversity</h3>
+<p>The spec emphasizes generating <em>different types</em> of questions because different chunk configs excel at different question types:</p>
+
+<table>
+<tr><th>Question Type</th><th>Example</th><th>Retrieval Challenge</th></tr>
+<tr><td><strong>Factual</strong></td><td>"What is the learning rate used in the experiment?"</td><td>Easy — specific terms match well</td></tr>
+<tr><td><strong>Comparative</strong></td><td>"How does method A differ from method B?"</td><td>Hard — answer may span multiple chunks</td></tr>
+<tr><td><strong>Analytical</strong></td><td>"Why does the model underperform on long sequences?"</td><td>Medium — requires reasoning context</td></tr>
+<tr><td><strong>Summarization</strong></td><td>"Summarize the key findings of section 3"</td><td>Hard — needs broad context</td></tr>
+<tr><td><strong>Multi-hop</strong></td><td>"Given the architecture in section 2 and the results in section 5, what explains the performance gap?"</td><td>Very hard — needs chunks from different parts of the document</td></tr>
+</table>
+
+<div class="key-insight"><p>The <strong>overlap region questions</strong> mentioned in the spec are the most interesting. These are questions about content that sits at the boundary between two chunks. If your overlap is too small, these questions will have no gold chunk that fully contains the answer. This is exactly the kind of failure mode that justifies tuning overlap as a hyperparameter.</p></div>
+
+<!-- ================================ -->
+<h2 id="retrieval-metrics">8. Retrieval Metrics — Recall, Precision, MRR</h2>
+
+<div class="concept-card highlight">
+<h3>Why Three Metrics?</h3>
+<p>Each metric captures a different aspect of retrieval quality. You need all three to make informed decisions about your chunk/embedding configs.</p>
+</div>
+
+<div class="metric-grid">
+<div class="metric-box">
+<h4>Recall@K</h4>
+<p><strong>"Did you find it at all?"</strong></p>
+<p>Of all relevant chunks, what fraction appeared in the top-K results?</p>
+<div class="formula">Recall@K = |relevant ∩ retrieved_top_K| / |relevant|</div>
+<p><strong>Example:</strong> Gold chunk is chunk_42. You retrieve top-5: [12, 42, 7, 89, 3]. Chunk_42 is in there → Recall@5 = 1.0. If chunk_42 was at position 8 → Recall@5 = 0.0.</p>
+<p>For single-gold-chunk QA (our case), Recall@K is binary: 1 if found, 0 if not. Averaged across all questions, it gives you a percentage.</p>
+</div>
+
+<div class="metric-box">
+<h4>Precision@K</h4>
+<p><strong>"How many results were actually useful?"</strong></p>
+<p>Of the K retrieved chunks, what fraction were relevant?</p>
+<div class="formula">Precision@K = |relevant ∩ retrieved_top_K| / K</div>
+<p><strong>Example:</strong> Top-5 retrieved, only 1 is the gold chunk → Precision@5 = 1/5 = 0.2. If 3 of the top-5 contain relevant info → Precision@5 = 3/5 = 0.6.</p>
+<p>High precision = less noise in the LLM's context window = better generation quality.</p>
+</div>
+
+<div class="metric-box">
+<h4>MRR@K (Mean Reciprocal Rank)</h4>
+<p><strong>"How high did you rank the right answer?"</strong></p>
+<p>The reciprocal of the rank of the first relevant result.</p>
+<div class="formula">RR = 1 / rank_of_first_relevant_result</div>
+<p><strong>Example:</strong> Gold chunk is at position 1 → RR = 1/1 = 1.0. At position 3 → RR = 1/3 = 0.33. Not in top-K → RR = 0.</p>
+<p>MRR is the <em>average</em> of RR across all questions. High MRR means your retriever consistently puts the right chunk near the top — critical because LLMs pay more attention to earlier context.</p>
+</div>
+
+<div class="metric-box">
+<h4>How They Work Together</h4>
+<p><strong>High Recall, Low Precision:</strong> "I found the needle, but also brought back a lot of hay." The LLM gets the right info but has to wade through noise.</p>
+<p><strong>Low Recall, High Precision:</strong> "Everything I returned was relevant, but I missed some important chunks." Dangerous for complex questions.</p>
+<p><strong>High MRR:</strong> "The right answer is usually at the top of the list." Best for user experience and LLM performance.</p>
+<p><strong>Sweet spot:</strong> High Recall@5 + High MRR@5 = the retriever finds the right chunk and puts it near the top.</p>
+</div>
+</div>
+
+<div class="analogy">Imagine you're a librarian. Someone asks for a book on quantum physics. Recall is "did you pull the right book from the shelf at all?" Precision is "of the 5 books you brought, how many are actually about quantum physics?" MRR is "was the right book on top of the stack or buried at the bottom?" A good librarian has high scores on all three.</div>
+
+<!-- ================================ -->
+<h2 id="generation-metrics">9. Generation Metrics — RAGAS Framework</h2>
+
+<div class="concept-card highlight">
+<h3>From Retrieval to Generation</h3>
+<p>Retrieval metrics tell you if you <em>found</em> the right context. Generation metrics tell you if the LLM <em>used that context correctly</em> to produce a good answer. A system can have perfect retrieval but terrible generation (e.g., the LLM ignores the context and hallucinates).</p>
+</div>
+
+<h3>RAGAS (Retrieval Augmented Generation Assessment)</h3>
+<p>RAGAS is an open-source framework that evaluates RAG pipelines using four key metrics, each scored 0 to 1:</p>
+
+<table>
+<tr><th>Metric</th><th>What It Measures</th><th>How It Works</th></tr>
+<tr><td><strong>Faithfulness</strong></td><td>Is the answer grounded in the retrieved context?</td><td>Extracts claims from the answer, checks if each claim is supported by the context. Higher = fewer hallucinations.</td></tr>
+<tr><td><strong>Answer Relevancy</strong></td><td>Does the answer actually address the question?</td><td>Generates hypothetical questions from the answer, measures similarity to the original question. Higher = more on-topic.</td></tr>
+<tr><td><strong>Context Recall</strong></td><td>Did the retrieved context contain the info needed to answer correctly?</td><td>Compares retrieved context against the ground truth answer. Higher = retriever found the right stuff.</td></tr>
+<tr><td><strong>Context Precision</strong></td><td>Was the retrieved context focused (not polluted with irrelevant chunks)?</td><td>Measures what fraction of retrieved chunks contributed to the answer. Higher = less noise.</td></tr>
+</table>
+
+<div class="key-insight"><p><strong>Faithfulness</strong> is the most critical metric. A faithfulness score of 0.6 means 40% of the LLM's claims aren't supported by the retrieved context — that's hallucination. For enterprise RAG, faithfulness above 0.9 is the target. This single number tells you whether your RAG pipeline is trustworthy.</p></div>
+
+<h3>LLM-as-Judge</h3>
+<p>Both RAGAS and the "judgy" library mentioned in the spec use a technique called <strong>LLM-as-Judge</strong>: you use a stronger LLM (GPT-4o) to evaluate the output of your RAG pipeline. The judge LLM is given the question, the retrieved context, and the generated answer, and asked to score faithfulness, relevance, etc.</p>
+
+<div class="warning"><p>LLM-as-Judge is not perfect — the judge can be wrong. But it correlates well with human judgment (~80-90% agreement) and is orders of magnitude cheaper than hiring human annotators. Always note this limitation in your documentation.</p></div>
+
+<!-- ================================ -->
+<h2 id="braintrust">10. Braintrust & Logfire — Experiment Tracking & Observability</h2>
+
+<div class="concept-card">
+<h3>Braintrust — Your MLflow for LLMs</h3>
+<p><strong>Braintrust</strong> is an evaluation platform for LLM applications. Think of it as a structured experiment tracker: for each configuration you test, Braintrust logs the inputs, outputs, scores, and metadata. It provides a web UI where you can compare runs side-by-side, see which config scored highest, and drill down into individual examples that failed.</p>
+<p><strong>Why it matters for P2:</strong> With 12 vector store configurations, you'll have hundreds of evaluation results. Braintrust gives you a dashboard to compare them all, rather than parsing JSON files manually. It also supports feedback classification (thumbs up/down), which the spec mentions as a deliverable.</p>
+</div>
+
+<div class="concept-card">
+<h3>Logfire — Pydantic's Observability Tool</h3>
+<p><strong>Logfire</strong> is built by the Pydantic team (Samuel Colvin). It's an OpenTelemetry-based observability platform specifically designed for Python applications. It traces function calls, logs structured data, and provides a web UI for debugging.</p>
+<p><strong>Why it matters for P2:</strong> When a query produces a bad answer, you need to trace <em>why</em>. Logfire shows you: which chunks were retrieved, what similarity scores they had, how long embedding took, what prompt was sent to the LLM. It's your "X-ray vision" into the pipeline.</p>
+</div>
+
+<div class="java-compare">If you've used Datadog, Jaeger, or Zipkin in your Java stack — Logfire is the Python equivalent but specifically tuned for LLM applications. Braintrust is like a specialized Grafana dashboard for ML experiments. If you've used MLflow or Weights & Biases, Braintrust is in that family but LLM-focused.</div>
+
+<!-- ================================ -->
+<h2 id="grid-search">11. The Grid Search — Putting It All Together</h2>
+
+<div class="concept-card green">
+<h3>The Full Experimental Matrix</h3>
+<p>This is the heart of P2. You're running a systematic grid search over RAG configuration space:</p>
+</div>
+
+<div class="diagram">
+EXPERIMENTAL MATRIX
+
+Chunk Configs (4):         Embedding Models (3):
+├── 128 tokens, 32 overlap  ├── MiniLM-L6-v2 (384d, local)
+├── 256 tokens, 64 overlap  ├── mpnet-base-v2 (768d, local)
+├── 512 tokens, 128 overlap └── text-embedding-3-small (1536d, OpenAI)
+└── 256 tokens, 128 overlap
+
+Total Vector Stores: 4 × 3 = 12
+
+For each vector store:
+  1. Generate synthetic QA (e.g., 50 questions)
+  2. Run retrieval evaluation → Recall@1,3,5 / Precision@1,3,5 / MRR@1,3,5
+  3. Compare against BM25 baseline
+  4. (Optional) Apply reranking → re-evaluate
+  5. Attach LLM → run RAGAS evaluation
+
+Total experiments: 12 configs × ~50 questions = 600 retrieval evaluations
+With reranking: 1200 evaluations
+With RAGAS: add generation eval on top
+
+OUTPUT: Comparison table / heatmap showing best config per metric
+</div>
+
+<div class="key-insight"><p>The output of this project isn't code — it's <strong>data</strong>. Charts, heatmaps, comparison tables. "Config B (256/64 chunks + mpnet embeddings + Cohere reranking) achieved 0.92 Recall@5 and 0.87 faithfulness, outperforming all other configurations." That sentence, backed by data, is what goes on your resume and in interviews.</p></div>
+
+<!-- ================================ -->
+<h2 id="python-patterns">12. Python Patterns You'll Use in P2</h2>
+
+<div class="concept-card">
+<h3>ThreadPoolExecutor — Parallel Embedding</h3>
+<p>Embedding 500 chunks sequentially takes minutes. <code>ThreadPoolExecutor</code> runs embeddings in parallel batches.</p>
+
+<div class="diagram" style="font-size:0.8rem">
+# Java equivalent: ExecutorService + Callable<List<Float>>
+from concurrent.futures import ThreadPoolExecutor, as_completed
+
+def embed_chunk(chunk: str) -> list[float]:
+    return model.encode(chunk).tolist()
+
+# Process 500 chunks in parallel with 8 threads
+with ThreadPoolExecutor(max_workers=8) as executor:
+    futures = {executor.submit(embed_chunk, c): i 
+               for i, c in enumerate(chunks)}
+    for future in as_completed(futures):
+        idx = futures[future]
+        embeddings[idx] = future.result()
+</div>
+
+<p><strong>Why ThreadPoolExecutor and not asyncio?</strong> SentenceTransformers' <code>.encode()</code> releases the GIL during computation (it's a C extension under the hood), making threads effective here. Asyncio would be better for I/O-bound work like API calls. This is a Python-specific nuance — in Java, you'd just use <code>ExecutorService</code> for both.</p>
+</div>
+
+<div class="concept-card">
+<h3>Generators — Processing Large PDFs</h3>
+<p>When a PDF produces thousands of chunks, loading them all into memory at once wastes RAM. Python generators yield one chunk at a time:</p>
+
+<div class="diagram" style="font-size:0.8rem">
+# Java equivalent: Iterator<Chunk> with hasNext()/next()
+def chunk_document(text: str, size: int, overlap: int):
+    """Yields chunks one at a time — never holds all in memory."""
+    start = 0
+    while start < len(text):
+        end = start + size
+        yield text[start:end]     # 'yield' = lazy return
+        start = end - overlap     # slide window by (size - overlap)
+
+# Usage — consumes one chunk at a time
+for chunk in chunk_document(full_text, 256, 64):
+    embedding = embed(chunk)
+    index.add(embedding)
+</div>
+
+<p><strong>The <code>yield</code> keyword</strong> makes this function a generator. It pauses execution after each yield, resuming when the next value is requested. This is Python's equivalent of Java's <code>Iterator</code> pattern, but with much cleaner syntax. You'll see this pattern in every data processing pipeline in Python.</p>
+</div>
+
+<div class="concept-card">
+<h3>dataclass vs Pydantic BaseModel</h3>
+<p>Python has two ways to define structured data. The spec requires Pydantic, and here's why:</p>
+
+<div class="diagram" style="font-size:0.8rem">
+# Python dataclass (like Java record / TS interface — no validation)
+@dataclass
+class Chunk:
+    id: str
+    text: str
+    size: int          # Could be -1, no validation
+
+# Pydantic BaseModel (like Java Bean Validation + Jackson)
+class Chunk(BaseModel):
+    id: str
+    text: str
+    size: int = Field(gt=0, description="Token count")
+    embedding: list[float] | None = None
+    
+    @field_validator('text')
+    @classmethod
+    def text_not_empty(cls, v):
+        if not v.strip():
+            raise ValueError('Chunk text cannot be empty')
+        return v
+</div>
+
+<p><strong>Why Pydantic matters for P2:</strong> LLMs return JSON. JSON can be malformed, have wrong types, or missing fields. Pydantic catches all of this at parse time with clear error messages. When your synthetic QA generator returns a question without a gold_chunk_id, Pydantic raises a <code>ValidationError</code> instead of silently producing garbage metrics downstream. It's your guardrail against LLM output noise.</p>
+</div>
+
+<div class="concept-card">
+<h3>Context Managers for Resource Cleanup</h3>
+<div class="diagram" style="font-size:0.8rem">
+# Java: try-with-resources for AutoCloseable
+# Python: 'with' statement for context managers
+
+# You'll use this for FAISS index persistence:
+import faiss
+
+def save_index(index, path: str):
+    faiss.write_index(index, path)
+
+def load_index(path: str) -> faiss.Index:
+    return faiss.read_index(path)
+
+# And for PDF processing:
+import fitz  # PyMuPDF
+
+with fitz.open("lecture.pdf") as doc:
+    for page in doc:
+        text = page.get_text()
+        # process text...
+# File handle automatically closed when 'with' block exits
+</div>
+</div>
+
+<!-- ================================ -->
+<h2 style="margin-top:48px;border:none;color:var(--pink)">The Grand Analogy</h2>
+
+<div class="concept-card" style="border-left:3px solid var(--pink);background:linear-gradient(135deg,var(--surface),var(--surface2))">
+<h3 style="color:var(--pink)">P2 = Building a Camera Lens Testing Laboratory</h3>
+
+<p>Imagine you're evaluating camera lenses. You're not taking photos for a magazine — you're measuring which lens produces the sharpest image under different conditions. That's P2.</p>
+
+<p><strong>The PDF</strong> = the scene you're photographing (fixed — same for all tests).</p>
+<p><strong>Chunking configurations</strong> = different focal lengths (zoom levels). Small chunks = telephoto (zoomed in, precise, narrow field of view). Large chunks = wide angle (sees more, less detail).</p>
+<p><strong>Embedding models</strong> = different lens glass quality. MiniLM = budget glass (good enough for most shots). mpnet = mid-range. OpenAI = premium glass (sharpest, but you have to rent it).</p>
+<p><strong>FAISS</strong> = the camera body that holds the lens and captures the image.</p>
+<p><strong>BM25 baseline</strong> = a pinhole camera. No lens at all. If your fancy lens can't beat a pinhole, something is very wrong.</p>
+<p><strong>Reranking</strong> = post-processing in Lightroom. The raw image (initial retrieval) gets refined into a sharper final product.</p>
+<p><strong>Synthetic QA</strong> = the test chart (those resolution grids photographers use). You know exactly what the chart looks like, so you can objectively measure how well each lens resolves it.</p>
+<p><strong>Retrieval metrics (Recall, Precision, MRR)</strong> = your measurement instruments — sharpness tester, distortion meter, chromatic aberration detector.</p>
+<p><strong>RAGAS</strong> = the final image quality score that considers everything together.</p>
+<p><strong>Your deliverable</strong> = a comparison report: "Lens B at 50mm focal length with Lightroom post-processing produces the sharpest images. Here's the data."</p>
+
+<p style="color:var(--text);font-weight:700;margin-top:16px">You're not a photographer. You're a lens testing engineer. The lab is the product.</p>
+</div>
+
+</div>
+</body>
+</html>
