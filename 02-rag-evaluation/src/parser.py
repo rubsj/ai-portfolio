@@ -288,10 +288,11 @@ def _parse_pdf(file_path: Path) -> ParseResult:
                                 page_number=page_num,
                             ))
 
+    # WHY save page count before close: len(doc) raises ValueError after close()
+    num_pages = len(doc) if page_map else 0
     doc.close()
 
     full_text = "".join(full_text_parts)
-    num_pages = len(doc) if page_map else 0
 
     return ParseResult(
         full_text=full_text,

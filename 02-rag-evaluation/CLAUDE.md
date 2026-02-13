@@ -268,13 +268,13 @@ echo "BRAINTRUST_API_KEY=..." >> .env
 - [ ] P2 card created in Notion Project Tracker
 
 ### Day 1 — Foundation: Parse, Chunk, Embed (Thu Feb 12)
-- [ ] Task 1: Dependencies installed
-- [ ] Task 2: All Pydantic models in `models.py`
-- [ ] Task 3: Config constants in `config.py`
-- [ ] Task 4: Document parser (PDF + Markdown) in `parser.py`
-- [ ] Task 5: Chunker (fixed-size A-D + semantic E) in `chunker.py`
-- [ ] Task 6: Tests for models + chunker
-- [ ] Checkpoint: Parse Kaggle MD file, print chunk counts per config
+- [x] Task 1: Dependencies installed (PR #11)
+- [x] Task 2: All Pydantic models in `models.py` (PR #11)
+- [x] Task 3: Config constants in `config.py` (PR #12)
+- [x] Task 4: Document parser (PDF + Markdown) in `parser.py` (PR #12)
+- [x] Task 5: Chunker (fixed-size A-D + semantic E) in `chunker.py` (PR #12)
+- [x] Task 6: Tests for models + chunker — 69 tests passing (PR #12)
+- [x] Checkpoint: All 3 input files parsed + chunked, counts verified
 
 ### Day 2 — Embeddings, FAISS, BM25 (Fri Feb 13)
 - [ ] Task 7: Embedder factory in `embedder.py`
