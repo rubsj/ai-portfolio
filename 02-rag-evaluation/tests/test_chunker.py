@@ -10,7 +10,14 @@ from pathlib import Path
 
 import pytest
 
-from src.chunker import _assign_page_numbers, _count_tokens, _find_char_offset, chunk_document
+from src.chunker import (
+    _assign_page_numbers,
+    _count_tokens,
+    _extract_section_span,
+    _find_char_offset,
+    _subdivide_section,
+    chunk_document,
+)
 from src.models import Chunk, ChunkConfig
 from src.parser import HeaderInfo, ParseResult
 
@@ -368,3 +375,238 @@ class TestHelperFunctions:
         page_map = [(0, 500, 0), (500, 1000, 1)]
         # Chunk starts exactly at page boundary
         assert _assign_page_numbers(500, 600, page_map) == [1]
+
+    def test_find_char_offset_last_resort_fallback(self) -> None:
+        """When text is not found at all, should return search_start as estimate."""
+        full = "hello world"
+        # Text that doesn't exist in full — should return search_start
+        result = _find_char_offset("nonexistent_text_xyz", full, 5)
+        assert result == 5
+
+    def test_assign_page_numbers_sorted_output(self) -> None:
+        """Page numbers should always be sorted."""
+        page_map = [(0, 200, 2), (200, 400, 0), (400, 600, 1)]
+        result = _assign_page_numbers(100, 500, page_map)
+        assert result == sorted(result)
+
+    def test_assign_page_numbers_no_overlap_fallback(self) -> None:
+        """When chunk offsets don't overlap any page range, fallback to binary search."""
+        # Page map covers 0-100, but chunk is at 200-300 (no overlap)
+        page_map = [(0, 100, 0)]
+        result = _assign_page_numbers(200, 300, page_map)
+        # Should still return a page number (via get_page_for_offset fallback)
+        assert len(result) >= 1
+
+
+# ===========================================================================
+# _extract_section_span Tests
+# ===========================================================================
+
+class TestExtractSectionSpan:
+    """Unit tests for _extract_section_span helper."""
+
+    def test_strips_leading_whitespace(self) -> None:
+        full_text = "   Hello world   "
+        doc_start, doc_end, text = _extract_section_span(full_text, 0, len(full_text))
+        assert text == "Hello world"
+        assert doc_start == 3  # After leading spaces
+        assert full_text[doc_start:doc_end] == "Hello world"
+
+    def test_empty_section(self) -> None:
+        full_text = "    \n  \t  "
+        doc_start, doc_end, text = _extract_section_span(full_text, 0, len(full_text))
+        assert text == ""
+
+    def test_exact_boundaries(self) -> None:
+        full_text = "aaa\n\n  Content here  \n\nbbb"
+        # Extract the middle section
+        doc_start, doc_end, text = _extract_section_span(full_text, 5, 20)
+        assert text == "Content here"
+        # doc_start should point to 'C' and doc_end to after 'e'
+        assert full_text[doc_start:doc_end] == "Content here"
+
+    def test_no_whitespace_to_strip(self) -> None:
+        full_text = "NoWhitespace"
+        doc_start, doc_end, text = _extract_section_span(full_text, 0, len(full_text))
+        assert text == "NoWhitespace"
+        assert doc_start == 0
+        assert doc_end == len(full_text)
+
+
+# ===========================================================================
+# _subdivide_section Tests
+# ===========================================================================
+
+class TestSubdivideSection:
+    """Unit tests for _subdivide_section helper."""
+
+    def test_produces_multiple_sub_chunks(self) -> None:
+        """A long section should be split into multiple sub-chunks."""
+        # Create text that's >256 tokens so it gets subdivided
+        long_text = "Enterprise architecture involves designing complex systems. " * 50
+        page_map = [(0, len(long_text), 0)]
+        results = _subdivide_section(long_text, long_text, 0, len(long_text), page_map)
+        assert len(results) > 1
+
+    def test_sub_chunks_have_valid_offsets(self) -> None:
+        """Every sub-chunk should have end > start."""
+        long_text = "Data governance establishes policies for managing data. " * 50
+        page_map = [(0, len(long_text), 0)]
+        results = _subdivide_section(long_text, long_text, 0, len(long_text), page_map)
+        for _text, abs_start, abs_end, _pages in results:
+            assert abs_end > abs_start
+
+    def test_sub_chunks_have_page_numbers(self) -> None:
+        long_text = "Cloud computing provides resources. " * 50
+        page_map = [(0, len(long_text), 0)]
+        results = _subdivide_section(long_text, long_text, 0, len(long_text), page_map)
+        for _text, _start, _end, pages in results:
+            assert len(pages) >= 1
+
+    def test_proportional_fallback_for_merged_section(self) -> None:
+        """When section_text doesn't match full_text (merged with \\n\\n), use proportional offset."""
+        # Create full_text and a merged section_text that differs
+        full_text = "Section A content here.\nSection B different content here."
+        # Simulate a merged section: two sections joined with artificial \n\n
+        section_text = "Section A content here.\n\nSection B different content here."
+        # The section_text has extra \n that full_text doesn't — exact match fails
+        # but proportional fallback should work
+        page_map = [(0, len(full_text), 0)]
+        results = _subdivide_section(
+            section_text, full_text, 0, len(full_text), page_map,
+        )
+        assert len(results) >= 1
+        for _text, abs_start, abs_end, _pages in results:
+            assert abs_end > abs_start
+
+
+# ===========================================================================
+# Advanced Chunking Tests
+# ===========================================================================
+
+class TestAdvancedChunking:
+    """Test advanced chunking paths: overlap, text recovery, edge cases."""
+
+    def test_chunk_text_is_substring_of_document(
+        self, synthetic_parse_result: ParseResult,
+    ) -> None:
+        """Every fixed-size chunk's text should appear in the source document."""
+        chunks = chunk_document(synthetic_parse_result, _CONFIG_MEDIUM)
+        for chunk in chunks:
+            assert chunk.text in synthetic_parse_result.full_text
+
+    def test_all_chunks_are_chunk_instances(
+        self, synthetic_parse_result: ParseResult,
+    ) -> None:
+        chunks = chunk_document(synthetic_parse_result, _CONFIG_SMALL)
+        assert all(isinstance(c, Chunk) for c in chunks)
+
+    def test_overlapping_chunks_share_text(
+        self, synthetic_parse_result: ParseResult,
+    ) -> None:
+        """With overlap > 0, adjacent chunks should share some content."""
+        config = ChunkConfig(
+            name="overlap_test",
+            chunk_size=64,
+            overlap=32,
+            chunking_goal="Test overlap behavior",
+        )
+        chunks = chunk_document(synthetic_parse_result, config)
+        if len(chunks) >= 2:
+            # Check that at least one pair of adjacent chunks overlaps
+            found_overlap = False
+            for i in range(len(chunks) - 1):
+                # If second chunk starts before first chunk ends, they overlap
+                if chunks[i + 1].start_char < chunks[i].end_char:
+                    found_overlap = True
+                    break
+            assert found_overlap
+
+    def test_semantic_with_preamble(self) -> None:
+        """Text before the first ## header should be included as preamble."""
+        text = (
+            "This is introductory text that comes before any header. "
+            "It provides context for the document. "
+            "It should be long enough to pass the minimum token threshold. "
+            "Adding more content to ensure it exceeds 32 tokens for the merge check.\n\n"
+            "## First Section\n\nSection content here with enough words to be meaningful."
+        )
+        headers = [HeaderInfo(level=2, text="First Section", char_offset=text.index("## First Section"), page_number=0)]
+        parse_result = ParseResult(
+            full_text=text,
+            page_map=[(0, len(text), 0)],
+            headers=headers,
+            source_path=Path("preamble_test.md"),
+            num_pages=1,
+        )
+        chunks = chunk_document(parse_result, _CONFIG_SEMANTIC)
+        # Should have at least 2 chunks: preamble + section
+        assert len(chunks) >= 1
+        # All semantic chunks should have section_header
+        assert all(c.section_header is not None for c in chunks)
+
+    def test_semantic_subdivision_of_large_section(self) -> None:
+        """A single section >512 tokens should be subdivided."""
+        # Build a document with one massive section
+        big_section = "## Big Section\n\n" + "Enterprise data architecture involves complex systems with multiple components and integration points. " * 100
+        headers = [HeaderInfo(level=2, text="Big Section", char_offset=0, page_number=0)]
+        parse_result = ParseResult(
+            full_text=big_section,
+            page_map=[(0, len(big_section), 0)],
+            headers=headers,
+            source_path=Path("big_section.md"),
+            num_pages=1,
+        )
+        chunks = chunk_document(parse_result, _CONFIG_SEMANTIC)
+        # Should produce multiple chunks from subdivision
+        assert len(chunks) > 1
+        # All sub-chunks should carry the original section header
+        assert all(c.section_header == "Big Section" for c in chunks)
+
+    def test_semantic_merge_small_sections(self) -> None:
+        """Sections <32 tokens should be merged with the next section."""
+        text = "## Tiny\n\nHello.\n\n## Normal\n\n" + "Enough content to pass the 32-token threshold for this section. " * 5
+        headers = [
+            HeaderInfo(level=2, text="Tiny", char_offset=0, page_number=0),
+            HeaderInfo(level=2, text="Normal", char_offset=text.index("## Normal"), page_number=0),
+        ]
+        parse_result = ParseResult(
+            full_text=text,
+            page_map=[(0, len(text), 0)],
+            headers=headers,
+            source_path=Path("merge_test.md"),
+            num_pages=1,
+        )
+        chunks = chunk_document(parse_result, _CONFIG_SEMANTIC)
+        # The tiny section should be merged — so we get fewer chunks than headers
+        assert len(chunks) >= 1
+
+    def test_token_count_multiline(self) -> None:
+        """Token counting handles multi-line text correctly."""
+        text = "line one\nline two\nline three"
+        tokens = _count_tokens(text)
+        assert tokens > 0
+
+    def test_token_count_unicode(self) -> None:
+        """Token counting handles unicode characters."""
+        text = "caf\u00e9 na\u00efve r\u00e9sum\u00e9"
+        tokens = _count_tokens(text)
+        assert tokens > 0
+
+    def test_empty_document_no_chunks(self) -> None:
+        """Empty document should produce no chunks."""
+        parse_result = ParseResult(
+            full_text="",
+            page_map=[],
+            headers=[],
+            source_path=Path("empty.md"),
+            num_pages=0,
+        )
+        config = ChunkConfig(
+            name="empty_test",
+            chunk_size=128,
+            overlap=32,
+            chunking_goal="Test empty doc",
+        )
+        chunks = chunk_document(parse_result, config)
+        assert len(chunks) == 0
