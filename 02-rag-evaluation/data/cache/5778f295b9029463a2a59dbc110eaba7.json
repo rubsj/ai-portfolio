@@ -1,0 +1,19 @@
+{
+  "cache_key": "5778f295b9029463a2a59dbc110eaba7",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-14T01:27:52.402789+00:00",
+  "response": {
+    "factual": {
+      "question": "What is the maximum amount of the IQ Bathroom Tissue Loan available to KPSI?",
+      "answer": "The maximum amount of the IQ Bathroom Tissue Loan available to KPSI is $47 million."
+    },
+    "analytical": {
+      "question": "Why was the IQ Bathroom Tissue Loan established for KPSI, and what project does it support?",
+      "answer": "The IQ Bathroom Tissue Loan was established for KPSI to finance the implementation of the bathroom tissue converting line (the BT Line) in the existing Sherbrooke TAD facility as part of the Sherbrooke Expansion Project."
+    },
+    "connective": {
+      "question": "How does the IQ Bathroom Tissue Credit Agreement relate to the overall financing strategies in the paper manufacturing industry?",
+      "answer": "The IQ Bathroom Tissue Credit Agreement exemplifies a common practice in the paper manufacturing industry where companies secure loans to fund equipment upgrades and expansions to enhance production capabilities and meet market demands."
+    }
+  }
+}

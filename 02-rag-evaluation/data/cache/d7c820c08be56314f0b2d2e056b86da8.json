@@ -1,0 +1,9 @@
+{
+  "cache_key": "d7c820c08be56314f0b2d2e056b86da8",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-14T01:28:57.898382+00:00",
+  "response": {
+    "question": "What was the amount of deferred tax liabilities to be realized greater than 12 months reported on December 31, 2022?",
+    "answer": "The amount of deferred tax liabilities to be realized greater than 12 months reported on December 31, 2022 was 5,718."
+  }
+}

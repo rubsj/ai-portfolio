@@ -1,0 +1,9 @@
+{
+  "cache_key": "f9f25db927cc991b19ef02bbcc58857e",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-14T01:28:54.620947+00:00",
+  "response": {
+    "question": "What is the total number of other movements recorded in the document content?",
+    "answer": "The total number of other movements is 67."
+  }
+}

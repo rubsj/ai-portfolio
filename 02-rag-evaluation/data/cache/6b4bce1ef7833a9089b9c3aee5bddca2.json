@@ -1,0 +1,9 @@
+{
+  "cache_key": "6b4bce1ef7833a9089b9c3aee5bddca2",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-14T01:29:09.984023+00:00",
+  "response": {
+    "question": "How is impairment determined for individual assets according to the company's policy?",
+    "answer": "The carrying amounts of the company's assets are reviewed at each statement of financial position date to determine whether there are indicators of impairment. The company assesses whether there is any indication that individual assets are impaired and, where impairment indicators exist, recoverable amount is determined. Impairment losses are recognised in profit or loss where the asset's carrying value exceeds its recoverable amount."
+  }
+}

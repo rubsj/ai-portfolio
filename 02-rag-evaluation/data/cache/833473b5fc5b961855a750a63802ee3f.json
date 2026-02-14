@@ -1,0 +1,9 @@
+{
+  "cache_key": "833473b5fc5b961855a750a63802ee3f",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-14T01:28:26.360656+00:00",
+  "response": {
+    "question": "What are the key differences in the loan agreements KPLP has entered into with IQ and the Government of Ontario, specifically regarding loan amounts, purposes, interest rates, maturity dates, and repayment terms?",
+    "answer": "KPLP has two significant loan agreements: the Quebec PM Loan Agreement with IQ and the Ontario Loan Agreement with the Government of Ontario. The Quebec PM Loan is a secured non-revolving loan of up to $39.5 million, intended to finance the acquisition and relocation of a paper machine at the Crabtree facility, and it matures ten years after the first loan disbursement on September 6, 2016. In contrast, the Ontario Loan is a secured non-revolving loan of up to $10 million for expanding the Trenton facility, maturing ten years from its first loan disbursement on February 24, 2016. The interest rate for the Quebec PM Loan is initially 2.5% for the first seven years, then increases to 3.5%, 4.5%, and finally 5.5% in subsequent years, with a 24-month moratorium on principal repayments. On the other hand, the Ontario Loan has a fixed interest rate of 2.4% per annum for five years, starting March 1, 2021, with annual interest payments beginning on February 28, 2022. Repayments for the Quebec PM Loan consist of 96 monthly installments after the moratorium, while the repayment details for the Ontario Loan are not specified in the provided information."
+  }
+}

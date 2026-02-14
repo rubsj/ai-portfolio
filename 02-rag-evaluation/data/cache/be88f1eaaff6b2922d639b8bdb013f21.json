@@ -1,0 +1,19 @@
+{
+  "cache_key": "be88f1eaaff6b2922d639b8bdb013f21",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-14T01:28:04.656330+00:00",
+  "response": {
+    "factual": {
+      "question": "What is the address of ASX:PKO?",
+      "answer": "Level 1, 10 Yarra Street, South Yarra, Victoria 3141"
+    },
+    "analytical": {
+      "question": "Why might the contact email provided be important for potential investors or clients?",
+      "answer": "The contact email is important as it allows potential investors or clients to reach out for inquiries, support, and information regarding ASX:PKO services and offerings."
+    },
+    "connective": {
+      "question": "How does the existence of an official contact point like ASX:PKO reinforce the importance of transparency in financial markets?",
+      "answer": "An official contact point like ASX:PKO enhances transparency in financial markets by providing accessible communication channels for stakeholders, ensuring they can obtain accurate information and engage with the company."
+    }
+  }
+}

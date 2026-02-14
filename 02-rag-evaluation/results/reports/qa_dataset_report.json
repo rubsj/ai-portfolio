@@ -1,0 +1,25 @@
+{
+  "total_questions": 56,
+  "questions_per_strategy": {
+    "per_chunk_chain": 24,
+    "multi_chunk": 10,
+    "overlap_region": 8,
+    "hierarchical": 8,
+    "academic_pattern": 6
+  },
+  "questions_per_type": {
+    "factual": 21,
+    "analytical": 12,
+    "multi_hop": 19,
+    "summarization": 3,
+    "comparative": 1
+  },
+  "questions_per_hierarchy": {
+    "paragraph": 32,
+    "section": 22,
+    "page": 2
+  },
+  "chunk_coverage_percent": 12.4,
+  "overlap_question_count": 8,
+  "avg_questions_per_chunk": 0.095
+}

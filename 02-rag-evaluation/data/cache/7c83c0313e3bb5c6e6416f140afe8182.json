@@ -1,0 +1,19 @@
+{
+  "cache_key": "7c83c0313e3bb5c6e6416f140afe8182",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-14T01:27:59.738214+00:00",
+  "response": {
+    "factual": {
+      "question": "Who is the Non-Executive Chairman of Peako?",
+      "answer": "Geoffrey Albers"
+    },
+    "analytical": {
+      "question": "Why might the appointment of Paul Kitto as Non-Executive Technical Director be significant for Peako?",
+      "answer": "Paul Kitto's appointment may be significant because it brings specialized technical expertise to the management team, which can enhance the company's strategic direction and decision-making regarding technical operations."
+    },
+    "connective": {
+      "question": "How does the structure of Peako's corporate directory reflect common practices in corporate governance?",
+      "answer": "The structure of Peako's corporate directory, including the roles of Non-Executive and Executive Directors, as well as a Company Secretary, reflects common practices in corporate governance where clear roles and responsibilities are established to ensure accountability and balanced decision-making."
+    }
+  }
+}

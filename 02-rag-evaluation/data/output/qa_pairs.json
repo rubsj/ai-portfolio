@@ -1,0 +1,784 @@
+[
+  {
+    "id": "s1_ffe8a031",
+    "question": "Who is the Chairman of Armadale Capital Plc?",
+    "question_type": "factual",
+    "hierarchy": "paragraph",
+    "gold_chunk_ids": [
+      "B_0_0"
+    ],
+    "expected_answer": "Nicholas Johansen",
+    "source_chunk_text": "**Armadale Capital Plc**\n\n**Annual Report and Accounts**\n\n**31 December 2022**\n\n\n| Officers and Professional Advisers 3             |  |\n|--------------------------------------------------|--|\n| Strategic Report 4                               |  |\n| Directors' Report10                              |  |\n| Independent Auditor's Report16                   |  |\n| Consolidated Statement of Comprehensive Income22 |  |\n| Consolidated Statement of Financial Position23   |  |\n| Company Statement of Financial Position24        |  |\n| Consolidated Statement of Changes in Equity25    |  |\n| Company Statement of Changes in Equity26     |  |\n| Consolidated Statement of Cash Flows27       |  |\n| Company Statement of Cash Flows28                |  |\n| Notes to the financial statements29          |  |\n| Notice of Annual General Meeting49           |  |\n|                                                  |  |\n\n\n## **Officers and Professional Advisers**\n\n#### **Directors**\n\nNicholas Johansen \u2013 Chairman Matt Bull\n\n# **Secretary**\n\nTimothy Jones\n\n# **Registered office**\n\nI Arbrook Lane Esher Surrey, KT10 9EG",
+    "is_overlap_region": false,
+    "generation_strategy": "per_chunk_chain"
+  },
+  {
+    "id": "s1_68e3d6e6",
+    "question": "Why is the role of the Chairman significant in the context of a company's annual report?",
+    "question_type": "analytical",
+    "hierarchy": "paragraph",
+    "gold_chunk_ids": [
+      "B_0_0"
+    ],
+    "expected_answer": "The Chairman plays a crucial role in guiding the company's strategic direction and ensuring accountability, which is critical for stakeholders reviewing the annual report.",
+    "source_chunk_text": "**Armadale Capital Plc**\n\n**Annual Report and Accounts**\n\n**31 December 2022**\n\n\n| Officers and Professional Advisers 3             |  |\n|--------------------------------------------------|--|\n| Strategic Report 4                               |  |\n| Directors' Report10                              |  |\n| Independent Auditor's Report16                   |  |\n| Consolidated Statement of Comprehensive Income22 |  |\n| Consolidated Statement of Financial Position23   |  |\n| Company Statement of Financial Position24        |  |\n| Consolidated Statement of Changes in Equity25    |  |\n| Company Statement of Changes in Equity26     |  |\n| Consolidated Statement of Cash Flows27       |  |\n| Company Statement of Cash Flows28                |  |\n| Notes to the financial statements29          |  |\n| Notice of Annual General Meeting49           |  |\n|                                                  |  |\n\n\n## **Officers and Professional Advisers**\n\n#### **Directors**\n\nNicholas Johansen \u2013 Chairman Matt Bull\n\n# **Secretary**\n\nTimothy Jones\n\n# **Registered office**\n\nI Arbrook Lane Esher Surrey, KT10 9EG",
+    "is_overlap_region": false,
+    "generation_strategy": "per_chunk_chain"
+  },
+  {
+    "id": "s1_04a551e7",
+    "question": "How does the structure of Armadale Capital Plc's annual report reflect best practices in corporate governance?",
+    "question_type": "multi_hop",
+    "hierarchy": "section",
+    "gold_chunk_ids": [
+      "B_0_0"
+    ],
+    "expected_answer": "The structured format, including sections like the Directors' Report and Independent Auditor's Report, demonstrates transparency and compliance with corporate governance standards, which are essential for building investor trust.",
+    "source_chunk_text": "**Armadale Capital Plc**\n\n**Annual Report and Accounts**\n\n**31 December 2022**\n\n\n| Officers and Professional Advisers 3             |  |\n|--------------------------------------------------|--|\n| Strategic Report 4                               |  |\n| Directors' Report10                              |  |\n| Independent Auditor's Report16                   |  |\n| Consolidated Statement of Comprehensive Income22 |  |\n| Consolidated Statement of Financial Position23   |  |\n| Company Statement of Financial Position24        |  |\n| Consolidated Statement of Changes in Equity25    |  |\n| Company Statement of Changes in Equity26     |  |\n| Consolidated Statement of Cash Flows27       |  |\n| Company Statement of Cash Flows28                |  |\n| Notes to the financial statements29          |  |\n| Notice of Annual General Meeting49           |  |\n|                                                  |  |\n\n\n## **Officers and Professional Advisers**\n\n#### **Directors**\n\nNicholas Johansen \u2013 Chairman Matt Bull\n\n# **Secretary**\n\nTimothy Jones\n\n# **Registered office**\n\nI Arbrook Lane Esher Surrey, KT10 9EG",
+    "is_overlap_region": false,
+    "generation_strategy": "per_chunk_chain"
+  },
+  {
+    "id": "s1_dda53433",
+    "question": "What was the value of ShareCapital at 1 January 2021?",
+    "question_type": "factual",
+    "hierarchy": "paragraph",
+    "gold_chunk_ids": [
+      "B_0_62"
+    ],
+    "expected_answer": "\u00a33,208,000",
+    "source_chunk_text": "|                                                | ShareCapital | SharePremium | Shares tobe issued | ShareOption andWarrantReserve | RetainedEarnings | Total |\n|------------------------------------------------|------------------|------------------|------------------------|-------------------------------------------|----------------------|-------|\n|                                                | \u00a3'000            | \u00a3'000            | \u00a3'000                  | \u00a3'000                                     | \u00a3'000                | \u00a3'000 |\n| At 1 January 2021                              | 3,208            | 22,348           | 286                    | 762                                       | (22,273)             | 4,331 |\n|                                                |                  |                  |                        |                                           |                      |       |\n| Loss for the period                            | -                | -                | -                      | -                                         | (383)                | (383) |\n| Total comprehensive loss for the               |                  |                  |                        |                                           | (383)                | (383) |\n| year                                           | -                | -                | -                      | -                                         |                      |       |\n|                                                |                  |                  |                        |                                           |                      |       |",
+    "is_overlap_region": false,
+    "generation_strategy": "per_chunk_chain"
+  },
+  {
+    "id": "s1_de7bdf8b",
+    "question": "Why did the Retained Earnings show a negative value at 1 January 2021?",
+    "question_type": "analytical",
+    "hierarchy": "paragraph",
+    "gold_chunk_ids": [
+      "B_0_62"
+    ],
+    "expected_answer": "The Retained Earnings showed a negative value of (22,273) due to accumulated losses exceeding the profits retained.",
+    "source_chunk_text": "|                                                | ShareCapital | SharePremium | Shares tobe issued | ShareOption andWarrantReserve | RetainedEarnings | Total |\n|------------------------------------------------|------------------|------------------|------------------------|-------------------------------------------|----------------------|-------|\n|                                                | \u00a3'000            | \u00a3'000            | \u00a3'000                  | \u00a3'000                                     | \u00a3'000                | \u00a3'000 |\n| At 1 January 2021                              | 3,208            | 22,348           | 286                    | 762                                       | (22,273)             | 4,331 |\n|                                                |                  |                  |                        |                                           |                      |       |\n| Loss for the period                            | -                | -                | -                      | -                                         | (383)                | (383) |\n| Total comprehensive loss for the               |                  |                  |                        |                                           | (383)                | (383) |\n| year                                           | -                | -                | -                      | -                                         |                      |       |\n|                                                |                  |                  |                        |                                           |                      |       |",
+    "is_overlap_region": false,
+    "generation_strategy": "per_chunk_chain"
+  },
+  {
+    "id": "s1_fbafb446",
+    "question": "How does the total comprehensive loss for the year relate to the overall financial health of the company?",
+    "question_type": "multi_hop",
+    "hierarchy": "section",
+    "gold_chunk_ids": [
+      "B_0_62"
+    ],
+    "expected_answer": "The total comprehensive loss of (383) highlights the company's decreased financial health, indicating that losses during the year further deteriorated the Retained Earnings.",
+    "source_chunk_text": "|                                                | ShareCapital | SharePremium | Shares tobe issued | ShareOption andWarrantReserve | RetainedEarnings | Total |\n|------------------------------------------------|------------------|------------------|------------------------|-------------------------------------------|----------------------|-------|\n|                                                | \u00a3'000            | \u00a3'000            | \u00a3'000                  | \u00a3'000                                     | \u00a3'000                | \u00a3'000 |\n| At 1 January 2021                              | 3,208            | 22,348           | 286                    | 762                                       | (22,273)             | 4,331 |\n|                                                |                  |                  |                        |                                           |                      |       |\n| Loss for the period                            | -                | -                | -                      | -                                         | (383)                | (383) |\n| Total comprehensive loss for the               |                  |                  |                        |                                           | (383)                | (383) |\n| year                                           | -                | -                | -                      | -                                         |                      |       |\n|                                                |                  |                  |                        |                                           |                      |       |",
+    "is_overlap_region": false,
+    "generation_strategy": "per_chunk_chain"
+  },
+  {
+    "id": "s1_43f815e1",
+    "question": "What happened at the Company since the year end?",
+    "question_type": "factual",
+    "hierarchy": "paragraph",
+    "gold_chunk_ids": [
+      "B_0_124"
+    ],
+    "expected_answer": "The Company has subscribed for 1.6 million shares in Celsius Resources Limited for a consideration of \u00a3125,000 in cash.",
+    "source_chunk_text": "#### **19. Ultimate controlling party**\n\nThere was no ultimate controlling party during the year.\n\n#### **20. Subsequent events**\n\nSince the year end, the Company has subscribed for 1.6 million shares in Celsius Resources Limited, a company listed on the Alternative Investment Market of the London Stock Exchange, for a consideration of \u00a3125,000 in cash.",
+    "is_overlap_region": false,
+    "generation_strategy": "per_chunk_chain"
+  },
+  {
+    "id": "s1_93dd26ed",
+    "question": "Why might the Company have decided to subscribe for shares in Celsius Resources Limited?",
+    "question_type": "analytical",
+    "hierarchy": "paragraph",
+    "gold_chunk_ids": [
+      "B_0_124"
+    ],
+    "expected_answer": "The Company may have decided to subscribe for shares in Celsius Resources Limited to invest in a potentially profitable opportunity, diversify its investments, or align with strategic business goals.",
+    "source_chunk_text": "#### **19. Ultimate controlling party**\n\nThere was no ultimate controlling party during the year.\n\n#### **20. Subsequent events**\n\nSince the year end, the Company has subscribed for 1.6 million shares in Celsius Resources Limited, a company listed on the Alternative Investment Market of the London Stock Exchange, for a consideration of \u00a3125,000 in cash.",
+    "is_overlap_region": false,
+    "generation_strategy": "per_chunk_chain"
+  },
+  {
+    "id": "s1_0a0e43b8",
+    "question": "How does the Company's action of subscribing for shares in Celsius Resources Limited relate to investment strategies in publicly listed companies?",
+    "question_type": "multi_hop",
+    "hierarchy": "section",
+    "gold_chunk_ids": [
+      "B_0_124"
+    ],
+    "expected_answer": "The action of subscribing for shares in a publicly listed company like Celsius Resources Limited reflects a common investment strategy where firms seek growth or returns through equity investments in other companies.",
+    "source_chunk_text": "#### **19. Ultimate controlling party**\n\nThere was no ultimate controlling party during the year.\n\n#### **20. Subsequent events**\n\nSince the year end, the Company has subscribed for 1.6 million shares in Celsius Resources Limited, a company listed on the Alternative Investment Market of the London Stock Exchange, for a consideration of \u00a3125,000 in cash.",
+    "is_overlap_region": false,
+    "generation_strategy": "per_chunk_chain"
+  },
+  {
+    "id": "s1_91d233f1",
+    "question": "What is Kruger Products known for producing?",
+    "question_type": "factual",
+    "hierarchy": "paragraph",
+    "gold_chunk_ids": [
+      "B_1_0"
+    ],
+    "expected_answer": "Kruger Products is known for manufacturing quality tissue products for household, industrial and commercial use.",
+    "source_chunk_text": "# **INVESTING IN OUR BUSINESS TO DRIVE LONG-TERM VALUE** 2022 ANNUAL REPORT\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nKruger Products is Canada's leading manufacturer of quality tissue products for household, industrial and commercial use. Kruger Products serves the Canadian consumer market with such well-known brands as **Cashmere\u00ae**, **Bonterra\u2122**, **Purex\u00ae**, **SpongeTowels**\u00ae, **Scotties\u00ae** and **White Swan**\u00ae. In the U.S., Kruger Products manufactures the **White Cloud\u00ae** brand, as well as many private label products. The Away-From-Home division manufactures and distributes high-quality, cost-effective product solutions to a wide range of commercial and public entities. Kruger Products has approximately 2,700 employees and operates nine FSC\u00ae COC-certified (FSC\u00ae C-104904) production facilities in North America.\n\nKPT (the Corporation) holds an equity interest in Kruger Products. KPT is a reporting issuer in all provinces and territories of Canada, and is required under Canadian Securities laws to report certain financial and business information of Kruger Products.",
+    "is_overlap_region": false,
+    "generation_strategy": "per_chunk_chain"
+  },
+  {
+    "id": "s1_63723e61",
+    "question": "Why is it significant that Kruger Products operates nine FSC\u00ae COC-certified production facilities?",
+    "question_type": "analytical",
+    "hierarchy": "paragraph",
+    "gold_chunk_ids": [
+      "B_1_0"
+    ],
+    "expected_answer": "It is significant because FSC\u00ae COC certification indicates that the products are sourced from responsibly managed forests, which is important for environmental sustainability and can enhance the company's reputation.",
+    "source_chunk_text": "# **INVESTING IN OUR BUSINESS TO DRIVE LONG-TERM VALUE** 2022 ANNUAL REPORT\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nKruger Products is Canada's leading manufacturer of quality tissue products for household, industrial and commercial use. Kruger Products serves the Canadian consumer market with such well-known brands as **Cashmere\u00ae**, **Bonterra\u2122**, **Purex\u00ae**, **SpongeTowels**\u00ae, **Scotties\u00ae** and **White Swan**\u00ae. In the U.S., Kruger Products manufactures the **White Cloud\u00ae** brand, as well as many private label products. The Away-From-Home division manufactures and distributes high-quality, cost-effective product solutions to a wide range of commercial and public entities. Kruger Products has approximately 2,700 employees and operates nine FSC\u00ae COC-certified (FSC\u00ae C-104904) production facilities in North America.\n\nKPT (the Corporation) holds an equity interest in Kruger Products. KPT is a reporting issuer in all provinces and territories of Canada, and is required under Canadian Securities laws to report certain financial and business information of Kruger Products.",
+    "is_overlap_region": false,
+    "generation_strategy": "per_chunk_chain"
+  },
+  {
+    "id": "s1_28a3ad50",
+    "question": "How does Kruger Products' role in the Canadian market compare to its operations in the U.S.?",
+    "question_type": "multi_hop",
+    "hierarchy": "section",
+    "gold_chunk_ids": [
+      "B_1_0"
+    ],
+    "expected_answer": "Kruger Products is a leading manufacturer in Canada, serving the consumer market with well-known brands, while in the U.S., it produces the White Cloud\u00ae brand and private label products, indicating a different market strategy.",
+    "source_chunk_text": "# **INVESTING IN OUR BUSINESS TO DRIVE LONG-TERM VALUE** 2022 ANNUAL REPORT\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nKruger Products is Canada's leading manufacturer of quality tissue products for household, industrial and commercial use. Kruger Products serves the Canadian consumer market with such well-known brands as **Cashmere\u00ae**, **Bonterra\u2122**, **Purex\u00ae**, **SpongeTowels**\u00ae, **Scotties\u00ae** and **White Swan**\u00ae. In the U.S., Kruger Products manufactures the **White Cloud\u00ae** brand, as well as many private label products. The Away-From-Home division manufactures and distributes high-quality, cost-effective product solutions to a wide range of commercial and public entities. Kruger Products has approximately 2,700 employees and operates nine FSC\u00ae COC-certified (FSC\u00ae C-104904) production facilities in North America.\n\nKPT (the Corporation) holds an equity interest in Kruger Products. KPT is a reporting issuer in all provinces and territories of Canada, and is required under Canadian Securities laws to report certain financial and business information of Kruger Products.",
+    "is_overlap_region": false,
+    "generation_strategy": "per_chunk_chain"
+  },
+  {
+    "id": "s1_c5791a90",
+    "question": "What is the maximum amount of the IQ Bathroom Tissue Loan available to KPSI?",
+    "question_type": "factual",
+    "hierarchy": "paragraph",
+    "gold_chunk_ids": [
+      "B_1_138"
+    ],
+    "expected_answer": "The maximum amount of the IQ Bathroom Tissue Loan available to KPSI is $47 million.",
+    "source_chunk_text": "#### *IQ Bathroom Tissue Credit Agreement*\n\nKPSI is party to a loan agreement dated as of May 21, 2021 entered into by KPSI, as borrower, and IQ as lender, as first amended on December 16, 2021 and further amended effective as of January 1, 2023 to reflect the Reorganization (the IQ Bathroom Tissue Credit Agreement) pursuant to which a secured non-revolving subordinated loan in a maximum amount of \\$47 million (the IQ Bathroom Tissue Loan) is made available to KPSI. The purpose of the IQ Bathroom Tissue Loan is to finance the implementation of the bathroom tissue converting line (the BT Line) in the existing Sherbrooke TAD facility, as part of the Sherbrooke Expansion Project. The IQ Bathroom Tissue Loan matures ten years from the earlier of (i) the date on which commercial operation of the BT Line begins (the BT Line Commissioning Date) or (ii) November 1, 2022.",
+    "is_overlap_region": false,
+    "generation_strategy": "per_chunk_chain"
+  },
+  {
+    "id": "s1_6f979635",
+    "question": "Why was the IQ Bathroom Tissue Loan established for KPSI, and what project does it support?",
+    "question_type": "analytical",
+    "hierarchy": "paragraph",
+    "gold_chunk_ids": [
+      "B_1_138"
+    ],
+    "expected_answer": "The IQ Bathroom Tissue Loan was established for KPSI to finance the implementation of the bathroom tissue converting line (the BT Line) in the existing Sherbrooke TAD facility as part of the Sherbrooke Expansion Project.",
+    "source_chunk_text": "#### *IQ Bathroom Tissue Credit Agreement*\n\nKPSI is party to a loan agreement dated as of May 21, 2021 entered into by KPSI, as borrower, and IQ as lender, as first amended on December 16, 2021 and further amended effective as of January 1, 2023 to reflect the Reorganization (the IQ Bathroom Tissue Credit Agreement) pursuant to which a secured non-revolving subordinated loan in a maximum amount of \\$47 million (the IQ Bathroom Tissue Loan) is made available to KPSI. The purpose of the IQ Bathroom Tissue Loan is to finance the implementation of the bathroom tissue converting line (the BT Line) in the existing Sherbrooke TAD facility, as part of the Sherbrooke Expansion Project. The IQ Bathroom Tissue Loan matures ten years from the earlier of (i) the date on which commercial operation of the BT Line begins (the BT Line Commissioning Date) or (ii) November 1, 2022.",
+    "is_overlap_region": false,
+    "generation_strategy": "per_chunk_chain"
+  },
+  {
+    "id": "s1_8b1bb886",
+    "question": "How does the IQ Bathroom Tissue Credit Agreement relate to the overall financing strategies in the paper manufacturing industry?",
+    "question_type": "multi_hop",
+    "hierarchy": "section",
+    "gold_chunk_ids": [
+      "B_1_138"
+    ],
+    "expected_answer": "The IQ Bathroom Tissue Credit Agreement exemplifies a common practice in the paper manufacturing industry where companies secure loans to fund equipment upgrades and expansions to enhance production capabilities and meet market demands.",
+    "source_chunk_text": "#### *IQ Bathroom Tissue Credit Agreement*\n\nKPSI is party to a loan agreement dated as of May 21, 2021 entered into by KPSI, as borrower, and IQ as lender, as first amended on December 16, 2021 and further amended effective as of January 1, 2023 to reflect the Reorganization (the IQ Bathroom Tissue Credit Agreement) pursuant to which a secured non-revolving subordinated loan in a maximum amount of \\$47 million (the IQ Bathroom Tissue Loan) is made available to KPSI. The purpose of the IQ Bathroom Tissue Loan is to finance the implementation of the bathroom tissue converting line (the BT Line) in the existing Sherbrooke TAD facility, as part of the Sherbrooke Expansion Project. The IQ Bathroom Tissue Loan matures ten years from the earlier of (i) the date on which commercial operation of the BT Line begins (the BT Line Commissioning Date) or (ii) November 1, 2022.",
+    "is_overlap_region": false,
+    "generation_strategy": "per_chunk_chain"
+  },
+  {
+    "id": "s1_99d11944",
+    "question": "Who is a member of the Corporation Audit Committee?",
+    "question_type": "factual",
+    "hierarchy": "paragraph",
+    "gold_chunk_ids": [
+      "B_1_277"
+    ],
+    "expected_answer": "The individual mentioned is a member of the Corporation Audit Committee.",
+    "source_chunk_text": "- (1) Member of the Corporation Audit Committee and the KPGP Audit Committee\n- (2) Member of the Corporation Nominating and Governance Committee\n- (3) Member of the KPGP Governance Committee\n- (4) Member of the KPGP HR & Compensation Committee\n\nFor complete information about Board Members and Corporate Governance, please visit www.kptissueinc.com\n\n#### **ANNUAL MEETING OF SHAREHOLDERS**\n\nThe Annual Meeting of Shareholders will be held at TMX Market Centre (Pearce Bunting Room), 120 Adelaide Street West, Ground Floor, Toronto, Ontario M5H 1S3 on June 20, 2023 at 2:00 p.m. (ET).\n\n#### **DESIGNED AND WRITTEN BY**\n\nMBC Capital Markets Advisors\n\n\n\n\n# **OUR MISSION**\n\nMAKING EVERYDAY LIFE MORE COMFORTABLE.\n\n\n\n\u00aeRegistered trademarks and TM trademarks of Kruger Products Inc. \u00a92023 Kruger Products Inc. \u00aeSCOTTIES is a trademark of Kimberly-Clark Worldwide Inc., used under licence.",
+    "is_overlap_region": false,
+    "generation_strategy": "per_chunk_chain"
+  },
+  {
+    "id": "s1_73fea27e",
+    "question": "How does the role of the member in the KPGP Audit Committee contribute to corporate governance?",
+    "question_type": "analytical",
+    "hierarchy": "paragraph",
+    "gold_chunk_ids": [
+      "B_1_277"
+    ],
+    "expected_answer": "The member's role in the KPGP Audit Committee contributes to corporate governance by overseeing financial reporting and ensuring accountability and transparency within the organization.",
+    "source_chunk_text": "- (1) Member of the Corporation Audit Committee and the KPGP Audit Committee\n- (2) Member of the Corporation Nominating and Governance Committee\n- (3) Member of the KPGP Governance Committee\n- (4) Member of the KPGP HR & Compensation Committee\n\nFor complete information about Board Members and Corporate Governance, please visit www.kptissueinc.com\n\n#### **ANNUAL MEETING OF SHAREHOLDERS**\n\nThe Annual Meeting of Shareholders will be held at TMX Market Centre (Pearce Bunting Room), 120 Adelaide Street West, Ground Floor, Toronto, Ontario M5H 1S3 on June 20, 2023 at 2:00 p.m. (ET).\n\n#### **DESIGNED AND WRITTEN BY**\n\nMBC Capital Markets Advisors\n\n\n\n\n# **OUR MISSION**\n\nMAKING EVERYDAY LIFE MORE COMFORTABLE.\n\n\n\n\u00aeRegistered trademarks and TM trademarks of Kruger Products Inc. \u00a92023 Kruger Products Inc. \u00aeSCOTTIES is a trademark of Kimberly-Clark Worldwide Inc., used under licence.",
+    "is_overlap_region": false,
+    "generation_strategy": "per_chunk_chain"
+  },
+  {
+    "id": "s1_7fa9f189",
+    "question": "How do the responsibilities of the Audit Committees relate to the overall mission of Kruger Products Inc.?",
+    "question_type": "multi_hop",
+    "hierarchy": "section",
+    "gold_chunk_ids": [
+      "B_1_277"
+    ],
+    "expected_answer": "The responsibilities of the Audit Committees relate to the overall mission of Kruger Products Inc. by ensuring financial integrity and governance, which are essential for making everyday life more comfortable for their customers.",
+    "source_chunk_text": "- (1) Member of the Corporation Audit Committee and the KPGP Audit Committee\n- (2) Member of the Corporation Nominating and Governance Committee\n- (3) Member of the KPGP Governance Committee\n- (4) Member of the KPGP HR & Compensation Committee\n\nFor complete information about Board Members and Corporate Governance, please visit www.kptissueinc.com\n\n#### **ANNUAL MEETING OF SHAREHOLDERS**\n\nThe Annual Meeting of Shareholders will be held at TMX Market Centre (Pearce Bunting Room), 120 Adelaide Street West, Ground Floor, Toronto, Ontario M5H 1S3 on June 20, 2023 at 2:00 p.m. (ET).\n\n#### **DESIGNED AND WRITTEN BY**\n\nMBC Capital Markets Advisors\n\n\n\n\n# **OUR MISSION**\n\nMAKING EVERYDAY LIFE MORE COMFORTABLE.\n\n\n\n\u00aeRegistered trademarks and TM trademarks of Kruger Products Inc. \u00a92023 Kruger Products Inc. \u00aeSCOTTIES is a trademark of Kimberly-Clark Worldwide Inc., used under licence.",
+    "is_overlap_region": false,
+    "generation_strategy": "per_chunk_chain"
+  },
+  {
+    "id": "s1_19fd7387",
+    "question": "Who is the Non-Executive Chairman of Peako?",
+    "question_type": "factual",
+    "hierarchy": "paragraph",
+    "gold_chunk_ids": [
+      "B_2_0"
+    ],
+    "expected_answer": "Geoffrey Albers",
+    "source_chunk_text": "# 2022 Annual Report\n\nFor the Year Ended 30 June 2022\n\nABN 79 131 843 868\n\nASX:**PKO** peako.com.au\n\nLevel 1, 10 Yarra Street, South Yarra, Victoria 3141\n\n**ASX:PKO**\n\n**peako.com.au**\n\n**T:** +61 (3) 8610 4723\n\n**E:** info@peako.com.au\n\n\n# **Corporate Directory**\n\n#### **DIRECTORS**\n\n**Geoffrey Albers** (Non-Executive Chairman)\n\n**Raewyn Clark** (Executive Director)\n\n**Paul Kitto** (Non-Executive Technical Director) Appointed 20 September 2021\n\n#### **COMPANY SECRETARY**\n\n**Robert Wright**\n\n#### **REGISTERED OFFICE**\n\nLevel 1, 10 Yarra Street, South Yarra Victoria, 3141 Australia\n\n- **W:** www.peako.com.au\n- **E:** info@peako.com.au\n- **T:** (03) 8610 4723\n- **F:** (03) 8610 4799\n\n#### **AUDITOR**",
+    "is_overlap_region": false,
+    "generation_strategy": "per_chunk_chain"
+  },
+  {
+    "id": "s1_98bd54c4",
+    "question": "Why might the appointment of Paul Kitto as Non-Executive Technical Director be significant for Peako?",
+    "question_type": "analytical",
+    "hierarchy": "paragraph",
+    "gold_chunk_ids": [
+      "B_2_0"
+    ],
+    "expected_answer": "Paul Kitto's appointment may be significant because it brings specialized technical expertise to the management team, which can enhance the company's strategic direction and decision-making regarding technical operations.",
+    "source_chunk_text": "# 2022 Annual Report\n\nFor the Year Ended 30 June 2022\n\nABN 79 131 843 868\n\nASX:**PKO** peako.com.au\n\nLevel 1, 10 Yarra Street, South Yarra, Victoria 3141\n\n**ASX:PKO**\n\n**peako.com.au**\n\n**T:** +61 (3) 8610 4723\n\n**E:** info@peako.com.au\n\n\n# **Corporate Directory**\n\n#### **DIRECTORS**\n\n**Geoffrey Albers** (Non-Executive Chairman)\n\n**Raewyn Clark** (Executive Director)\n\n**Paul Kitto** (Non-Executive Technical Director) Appointed 20 September 2021\n\n#### **COMPANY SECRETARY**\n\n**Robert Wright**\n\n#### **REGISTERED OFFICE**\n\nLevel 1, 10 Yarra Street, South Yarra Victoria, 3141 Australia\n\n- **W:** www.peako.com.au\n- **E:** info@peako.com.au\n- **T:** (03) 8610 4723\n- **F:** (03) 8610 4799\n\n#### **AUDITOR**",
+    "is_overlap_region": false,
+    "generation_strategy": "per_chunk_chain"
+  },
+  {
+    "id": "s1_29684650",
+    "question": "How does the structure of Peako's corporate directory reflect common practices in corporate governance?",
+    "question_type": "multi_hop",
+    "hierarchy": "section",
+    "gold_chunk_ids": [
+      "B_2_0"
+    ],
+    "expected_answer": "The structure of Peako's corporate directory, including the roles of Non-Executive and Executive Directors, as well as a Company Secretary, reflects common practices in corporate governance where clear roles and responsibilities are established to ensure accountability and balanced decision-making.",
+    "source_chunk_text": "# 2022 Annual Report\n\nFor the Year Ended 30 June 2022\n\nABN 79 131 843 868\n\nASX:**PKO** peako.com.au\n\nLevel 1, 10 Yarra Street, South Yarra, Victoria 3141\n\n**ASX:PKO**\n\n**peako.com.au**\n\n**T:** +61 (3) 8610 4723\n\n**E:** info@peako.com.au\n\n\n# **Corporate Directory**\n\n#### **DIRECTORS**\n\n**Geoffrey Albers** (Non-Executive Chairman)\n\n**Raewyn Clark** (Executive Director)\n\n**Paul Kitto** (Non-Executive Technical Director) Appointed 20 September 2021\n\n#### **COMPANY SECRETARY**\n\n**Robert Wright**\n\n#### **REGISTERED OFFICE**\n\nLevel 1, 10 Yarra Street, South Yarra Victoria, 3141 Australia\n\n- **W:** www.peako.com.au\n- **E:** info@peako.com.au\n- **T:** (03) 8610 4723\n- **F:** (03) 8610 4799\n\n#### **AUDITOR**",
+    "is_overlap_region": false,
+    "generation_strategy": "per_chunk_chain"
+  },
+  {
+    "id": "s1_c9226f7c",
+    "question": "What is the address of ASX:PKO?",
+    "question_type": "factual",
+    "hierarchy": "paragraph",
+    "gold_chunk_ids": [
+      "B_2_185"
+    ],
+    "expected_answer": "Level 1, 10 Yarra Street, South Yarra, Victoria 3141",
+    "source_chunk_text": "**ASX:PKO peako.com.au**\n\nLevel 1, 10 Yarra Street, South Yarra, Victoria 3141\n\n- **T:** +61 (3) 8610 4723\n- **E:** info@peako.com.au",
+    "is_overlap_region": false,
+    "generation_strategy": "per_chunk_chain"
+  },
+  {
+    "id": "s1_a441f6c9",
+    "question": "Why might the contact email provided be important for potential investors or clients?",
+    "question_type": "analytical",
+    "hierarchy": "paragraph",
+    "gold_chunk_ids": [
+      "B_2_185"
+    ],
+    "expected_answer": "The contact email is important as it allows potential investors or clients to reach out for inquiries, support, and information regarding ASX:PKO services and offerings.",
+    "source_chunk_text": "**ASX:PKO peako.com.au**\n\nLevel 1, 10 Yarra Street, South Yarra, Victoria 3141\n\n- **T:** +61 (3) 8610 4723\n- **E:** info@peako.com.au",
+    "is_overlap_region": false,
+    "generation_strategy": "per_chunk_chain"
+  },
+  {
+    "id": "s1_c358572d",
+    "question": "How does the existence of an official contact point like ASX:PKO reinforce the importance of transparency in financial markets?",
+    "question_type": "multi_hop",
+    "hierarchy": "section",
+    "gold_chunk_ids": [
+      "B_2_185"
+    ],
+    "expected_answer": "An official contact point like ASX:PKO enhances transparency in financial markets by providing accessible communication channels for stakeholders, ensuring they can obtain accurate information and engage with the company.",
+    "source_chunk_text": "**ASX:PKO peako.com.au**\n\nLevel 1, 10 Yarra Street, South Yarra, Victoria 3141\n\n- **T:** +61 (3) 8610 4723\n- **E:** info@peako.com.au",
+    "is_overlap_region": false,
+    "generation_strategy": "per_chunk_chain"
+  },
+  {
+    "id": "s2_cf041a64",
+    "question": "What financial statements and key information are included in the Armadale Capital Plc Annual Report for the year ended 31 December 2022, and who are the professional advisers and directors associated with the company?",
+    "question_type": "multi_hop",
+    "hierarchy": "section",
+    "gold_chunk_ids": [
+      "B_0_0",
+      "B_1_22",
+      "B_2_158",
+      "B_2_148"
+    ],
+    "expected_answer": "The Armadale Capital Plc Annual Report for the year ended 31 December 2022 includes several key financial statements such as the Consolidated Statement of Comprehensive Income, Consolidated Statement of Financial Position, Company Statement of Financial Position, Consolidated Statement of Changes in Equity, Company Statement of Changes in Equity, Consolidated Statement of Cash Flows, and Company Statement of Cash Flows. The report also outlines critical information like liquidity and capital resources, risk factors, and accounting changes. The professional advisers include Grant Thornton Audit Pty Ltd as the independent auditor, while the directors listed are Nicholas Johansen (Chairman) and Matt Bull. Timothy Jones serves as the secretary.",
+    "source_chunk_text": "**Armadale Capital Plc**\n\n**Annual Report and Accounts**\n\n**31 December 2022**\n\n\n| Officers and Professional Advisers 3             |  |\n|--------------------------------------------------|--|\n| Strategic Report 4                               |  |\n| Directors' Report10                              |  |\n| Independent Auditor's Report16                   |  |\n| Consolidated Statement of Comprehensive Income22 |  |\n| Consolidated Statement of Financial Position23   |  |\n| Company Statement of Financial Position24        |  |\n| Consolidated Statement of Changes in Equity25    |  |\n| Company Statement of Changes in Equity26     |  |\n| Consolidated Statement of Cash Flows27       |  |\n| Company Statement of Cash Flows28                |  |\n| Notes to the financial statements29          |  |\n| Notice of Annual General Meeting49           |  |\n|                                                  |  |\n\n\n## **Officers and Professional Advisers**\n\n#### **Directors**\n\nNicholas Johansen \u2013 Chairman Matt Bull\n\n# **Secretary**\n\nTimothy Jones\n\n# **Registered office**\n\nI Arbrook Lane Esher Surrey, KT10 9EG\n---\n| CAUTIONARY FORWARD LOOKING STATEMENT1                        |  |\n|--------------------------------------------------------------|--|\n| OVERVIEW2                                                    |  |\n| BUSINESS HIGHLIGHTS5                                         |  |\n| RESULTS OF OPERATIONS7                                       |  |\n| SEGMENT INFORMATION10                                    |  |\n| LIQUIDITY AND CAPITAL RESOURCES11                        |  |\n| FINANCIAL INSTRUMENTS AND OTHER INSTRUMENTS23                |  |\n| TRANSACTIONS WITH RELATED PARTIES25                      |  |\n| OFF BALANCE SHEET ARRANGEMENTS AND CONTRACTUAL OBLIGATIONS25 |  |\n| CRITICAL ACCOUNTING ESTIMATES25                          |  |\n| ACCOUNTING CHANGES AND FUTURE ACCOUNTING STANDARDS28         |  |\n| SELECTED ANNUAL FINANCIAL INFORMATION29                      |  |\n| SELECTED QUARTERLY FINANCIAL INFORMATION29                   |  |\n| SHARE INFORMATION32                                          |  |\n| RISK FACTORS32                                               |  |\n| CONTROLS AND PROCEDURES32                                |  |\n| ADDITIONAL INFORMATION33                                 |  |\n---\nThis declaration is made in accordance with a resolution of the Board of Directors and is signed for and on behalf of the directors by:\n\nR.L Clark Director 29 September 2022\n\n\n#### **INDEPENDENT AUDITOR'S REPORT** FOR THE YEAR ENDED 30 JUNE 2022\n\n\n\n**Grant Thornton Audit Pty Ltd** Level 22 Tower 5 Collins Square 727 Collins Street Melbourne VIC 3008 GPO Box 4736 Melbourne VIC 3001 T +61 3 8320 2222\n\n# Independent Auditor's Report\n\n#### To the Members of Peako Limited\n\n#### **Report on the audit of the financial report**\n\n#### **Opinion**\n\nWe have audited the financial report of Peako Limited (the Company) and its subsidiaries (the Group), which comprises the consolidated statement of financial position as at 30 June 2022, the consolidated statement of profit or loss and other comprehensive income, consolidated statement of changes in equity and consolidated statement of cash flows for the year then ended, and notes to the consolidated financial statements, including a summary of significant accounting policies, and the Directors' declaration.\n---\n#### **Note 19: Auditor's remuneration**\n\nThe auditors of the Group are Grant Thornton Audit Pty Ltd.\n\n|        | 52,876      |\n|--------|-------------|\n|        |             |\n|        | -           |\n| 50,303 | 52,876      |\n|        | 50,303- |\n\n# **Note 20: Segment information**\n\nUnder AASB 8 Operating Segments, segment information is presented using a 'management approach', i.e. segment information is provided on the same basis as information used for internal reporting purposes by the board of directors\n\nAt regular intervals the board is provided management information at a group level for the group's cash position, the carrying values of exploration permits and a group cash forecast for the next twelve months of operation. On this basis, no segment information is included in these financial statements.\n\nAll interest received has been derived in Australia. All exploration and evaluation assets are held in Australia.\n\n\n# **Note 21 Key Management Personnel**\n\nRL Clark EG Albers\n\n**Executive Director Non-Executive Directors** P Kitto\n\n#### **Individual compensation disclosures**",
+    "is_overlap_region": false,
+    "generation_strategy": "multi_chunk"
+  },
+  {
+    "id": "s2_8ee58cf8",
+    "question": "How did the total number of shares and the financial movements related to warrants impact the overall equity and comprehensive loss for the period ending 31 December 2022 compared to 31 December 2021?",
+    "question_type": "multi_hop",
+    "hierarchy": "section",
+    "gold_chunk_ids": [
+      "B_0_65",
+      "B_0_60",
+      "B_0_116",
+      "B_0_64"
+    ],
+    "expected_answer": "As of 31 December 2022, the total number of shares issued increased to 3,324 from 3,275 at the end of 2021, reflecting a consistent issue of shares amounting to 1,296 each year, while the transfer on exercise and expiry of warrants resulted in a decrease of 563 shares. This contributed to a total of 22,279 for the equity share category by the end of 2022. Additionally, the total comprehensive loss for the year was (238), which was identical to the loss of (238) from the previous year, indicating that while the number of shares grew, the company maintained the same level of financial loss over the two years.",
+    "source_chunk_text": "| Issue of shares                                | 49               | 1,247            | -                      | -                                         | -                    | 1,296 |\n| Transfer on exercise and expiryof warrants | -                | -                | -                      | (563)                                     | 563                  |       |\n| Total other movements                          | 49               | 1,247            | -                      | (563)                                     | 563                  | 1,296 |\n|                                                |                  |                  |                        |                                           |                      |       |\n| At 31 December 2022                            | 3,324            | 25,153           | 286                    | 362                                       | (22,228)             | 6,897 |\n---\n| the year                                       |                  |                  |                        |                                           |                                |                      |       |\n|                                                |                  |                  |                        |                                           |                                |                      |       |\n| Issue of shares                                | 49               | 1,247            | -                      | -                                         | -                              | -                    | 1,296 |\n| Transfer on exercise and expiryof warrants | -                | -                | -                      | (563)                                     | -                              | 563                  |       |\n| Total other movements                          | 49               | 1,247            | -                      | (563)                                     | -                              | 563                  | 1,296 |\n|                                                |                  |                  |                        |                                           |                                |                      |       |\n| At 31 December 2022                            | 3,324            | 25,153           | 286                    | 362                                       | 318                            | 22,279               | 7,164 |\n---\n| Issue of shares:      |                                        |       |                                  |       |                                 |       |       |\n| On exercise of        | 48,868,969                             | 49    | -                                | -     | -                               | -     | 49    |\n| warrants              |                                        |       |                                  |       |                                 |       |       |\n| At 31 December 2022   | 587,529,895                            | 588   | 1,531,374,350                    | 2,144 | 42,260,533                      | 592   | 3,324 |\n---\n|                                                |                  |                  |                        |                                           |                      |       |\n| At 31 December 2021                            | 3,275            | 23,906           | 286                    | 925                                       | (22,553)             | 5,839 |\n|                                                |                  |                  |                        |                                           |                      |       |\n| Loss for the period                            | -                | -                | -                      | -                                         | (238)                | (238) |\n| Total comprehensive loss for the               | -                | -                | -                      | -                                         | (238)                | (238) |\n| year                                           |                  |                  |                        |                                           |                      |       |\n|                                                |                  |                  |                        |                                           |                      |       |\n| Issue of shares                                | 49               | 1,247            | -                      | -                                         | -                    | 1,296 |\n| Transfer on exercise and expiryof warrants | -                | -                | -                      | (563)                                     | 563                  |       |",
+    "is_overlap_region": false,
+    "generation_strategy": "multi_chunk"
+  },
+  {
+    "id": "s2_72b66e61",
+    "question": "How did Kruger Products' financial performance in 2022, including their net losses and adjustments in accounting standards, reflect on their future outlook and operational changes?",
+    "question_type": "multi_hop",
+    "hierarchy": "section",
+    "gold_chunk_ids": [
+      "B_1_5",
+      "B_1_3",
+      "B_1_14",
+      "B_1_238"
+    ],
+    "expected_answer": "In 2022, Kruger Products reported a significant net loss of $56.9 million, a stark contrast to a net income of $42.0 million in 2021, primarily driven by a decrease in Adjusted EBITDA, reduced income tax recovery, higher foreign exchange losses, and increased depreciation expense. Additionally, an equity loss of $13.3 million was reported. The company's adoption of IFRS 16 Leases on January 1, 2019, and the subsequent restatement of fiscal 2018, indicated a shift in accounting treatment that could impact financial reporting going forward. Despite these challenges, the management expressed a commitment to achieve topline growth and improved profitability in 2023, while emphasizing the importance of monitoring input costs and currency fluctuations. The recent corporate reorganization into Kruger Products Inc. aimed to enhance operational efficiency without adversely affecting the corporation, indicating a strategic move towards better financial health.",
+    "source_chunk_text": "(1) All financial data presented herein are related to Kruger Products unless otherwise noted and have been prepared in accordance with IFRS. For the year ended December 31, 2022, KPT reported an equity loss of \\$13.3 million, net loss of \\$10.2 million and net loss per share of \\$1.03. For more information, refer to the KPT Audited Financial Statements for the period ended December 31, 2022.\n\n(2) Effective January 1, 2019, Kruger Products adopted IFRS 16 Leases, the new accounting standard covering lease accounting, using the full retrospective approach. Fiscal 2018 has been restated to reflect the adoption of IFRS 16.\n\n(3) Adjusted EBITDA and Adjusted EBITDA margin are non-GAAP financial measures. These measures do not have a standardized meaning prescribed by IFRS and therefore may not be comparable to similarly titled measures presented by other companies. Refer to the MD&A for the definition and reconciliation of Adjusted EBITDA.\n\n* Including Mexico business divested in September 2019.\n\n\n\n**OPERATING INCOME** (in millions of Canadian dollars)\n---\n## **ADJUSTED EBITDA(1) OF \\$116.0 MILLION DOWN 24.4% FROM 2021**\n\nAdjusted EBITDA decreased year-over-year as price adjustments did not fully catch up to inflation until later into the year, while cost management initiatives helped mitigate the impact.\n\n# **NET LOSS OF \\$56.9 MILLION COMPARED TO NET INCOME OF \\$42.0 MILLION IN 2021**\n\nNet loss incurred primarily due to lower Adjusted EBITDA, reduced income tax recovery, higher foreign exchange loss and greater depreciation expense.\n\n\n\n\n\n(1) Adjusted EBITDA is a non-GAAP financial measure. This measure does not have a standardized meaning prescribed by IFRS and, therefore, may not be comparable to similarly titled measures presented by other companies. Refer to the MD&A for the definition and reconciliation of Adjusted EBITDA.\n\n\n# FINANCIAL PERFORMANCE(1)\n\n#### (In millions of Canadian dollars)\n---\nLooking ahead to 2023, we intend to deliver continued topline growth and improved profitability, while closely monitoring input costs and a fluctuating Canadian dollar.\n\n#### **WRAP-UP**\n\nIn closing, I would like to thank all our employees for their dedication and resilience during what can best be described as a recovery year in 2022. I would also like to express my appreciation to consumers and customers for their deep loyalty to our brands. In addition, I want to acknowledge our Board of Directors for their wise counsel during the past year. Finally, many thanks to our shareholders for supporting our long-term growth strategy.\n\n**Dino Bianco** Chief Executive Officer KP Tissue Inc. and Kruger Products Inc.\n\n<sup>(1)</sup> Adjusted EBITDA is a non-GAAP financial measure. This measure does not have a standardized meaning prescribed by IFRS and, therefore, may not be comparable to similarly titled measures presented by other companies. Refer to the MD&A for the definition and reconciliation of Adjusted EBITDA.\n\n\n# INVESTING IN OUR NETWORK\n\n\n\n### **PAPERMAKING & CONVERTING NEW WESTMINSTER, BC**\n\nProduce more than **67,000 MT**\n---\nSubsequent to December 31, 2022, on January 1, 2023, KPLP undertook a corporate reorganization (the Kruger Products Reorganization) pursuant to which KPLP, a limited partnership, was essentially replaced by a corporate entity, Kruger Products Inc. (Kruger Products), without adversely affecting the Corporation. As a result of the Kruger Products Reorganization, Kruger Products, as the successor corporate entity to KPLP, now operates the business previously operated by KPLP. The Corporation currently holds a 13.7% interest in Kruger Products.\n\n#### **2 Basis of presentation**\n\nThe financial statements have been prepared in accordance with International Financial Reporting Standards (IFRS) as issued by the International Accounting Standards Board (IASB), and with interpretations of the International Financial Reporting Committee which the Canadian Accounting Standards Board has approved for incorporation into Part 1 of the CPA Canada Handbook - Accounting. The financial statements have been prepared using the historical cost convention.\n\nThe financial statements were approved by the board of directors on March 8, 2023.\n\n#### **3 Summary of significant accounting policies**\n\nThe significant accounting policies used in the preparation of these financial statements are as follows:",
+    "is_overlap_region": false,
+    "generation_strategy": "multi_chunk"
+  },
+  {
+    "id": "s2_3aff7874",
+    "question": "What was the total amount of Tax Distribution declared to KPT in 2022, what was the outcome of the Tax Distribution for KPLP in 2023, and how does the Reorganization affect future Tax Distribution obligations?",
+    "question_type": "multi_hop",
+    "hierarchy": "section",
+    "gold_chunk_ids": [
+      "B_1_71",
+      "B_1_264",
+      "B_1_66",
+      "B_1_248"
+    ],
+    "expected_answer": "In 2022, KPT received a Tax Distribution of $2.1 million from KPLP, which was part of a larger Tax Distribution of $14.1 million declared on February 28, 2022. In 2023, there was no Tax Distribution declared, and due to the Reorganization, future Tax Distributions are not required since Kruger Products, the successor to KPLP, is a corporate entity taxable directly.",
+    "source_chunk_text": "On February 28, 2022, pursuant to the Tax Distribution as defined in the Partnership Agreement, KPLP declared a Tax Distribution of \\$14.1 million, of which the advances of \\$13.8 million were offset and the remaining \\$0.3 million was paid on February 28, 2022. There was no Tax Distribution declared on February 28, 2023 and the Tax Distribution is not required in future periods as a result of the Reorganization. Refer to Business Highlights, Corporate Reorganization for additional details.\n\n\n#### **SEGMENT INFORMATION**\n\n#### **Segment Operating Income**\n---\nOn December 13, 2012, in connection with the issuance of Partnership units to KPT, the Limited Partnership Agreement was amended to require KPLP, subject to compliance with contractual obligations and applicable law, to make distributions to its partners in such amounts as would enable KPT to discharge its obligation to pay federal and provincial income taxes (the Tax Distribution). Each partner is entitled to its share of the Tax Distribution made in respect of any given year.\n\nPursuant to the Tax Distribution as defined in the Partnership Agreement, on February 28, 2022, KPT received a Tax Distribution of \\$2.1 million from KPLP for purposes of settling its obligation for federal and provincial taxes, for the year ended December 31, 2021. The Tax Distribution was used to settle the outstanding advance to KPT in the amount of \\$2.0 million as of December 31, 2021. There was no Tax Distribution declared on February 28, 2023. The Tax Distribution is not required in future periods as Kruger Products, the successor to KPLP, is a corporate entity and is therefore subject to tax directly.\n\n\n(tabular amounts are in thousands of Canadian dollars, except share amounts)\n---\nof \\$0.8 million), partially offset by a gain from the change in amortized cost of Partnership units liability of \\$25.6 million resulting from the annual revaluation (Fiscal 2021 \u2013 loss of \\$5.3 million).\n\n#### *Income Taxes*\n\nAn income tax recovery of \\$16.1 million was recorded in Fiscal 2022 compared to \\$51.0 million in Fiscal 2021. KPLP is not directly taxable on its Canadian business. The income tax recovery resulted from taxable losses in KPLP's incorporated operating entities in the U.S. and Canada. Income tax in partner's hands was a recovery of \\$1.2 million in Fiscal 2022 compared to \\$11.1 million in Fiscal 2021.\n\n#### *Net Income (Loss)*\n---\n#### *Partnership units*\n\nOn December 13, 2012, in connection with the issuance of Partnership units to KPT, the Limited Partnership Agreement was amended to require KPLP, subject to compliance with contractual obligations and applicable law, to make distributions to its partners in such amounts as would enable KPT to discharge its obligation to pay federal and provincial income taxes (the Tax Distribution). Each partner is entitled to its share of the Tax Distribution made in respect of any given year.\n\n#### *Income taxes*\n\nThe Corporation has not recognized at the date of acquisition the deferred tax assets and liabilities related to the differences between the accounting and tax basis of KPLP's assets and liabilities. Accordingly, the Corporation is tracking temporary differences that are subject to the initial recognition exemption and recognizes newly created\n\n\n(tabular amounts are in thousands of Canadian dollars, except share amounts)\n\ntemporary differences as they arise. The determination of the temporary differences that are subject to the initial recognition exemption requires significant judgment.\n\n#### **5 Investment in associate**\n\nChanges in the carrying amount of the investment were as follows:",
+    "is_overlap_region": false,
+    "generation_strategy": "multi_chunk"
+  },
+  {
+    "id": "s2_b14be91d",
+    "question": "What are the key differences in the loan agreements KPLP has entered into with IQ and the Government of Ontario, specifically regarding loan amounts, purposes, interest rates, maturity dates, and repayment terms?",
+    "question_type": "multi_hop",
+    "hierarchy": "section",
+    "gold_chunk_ids": [
+      "B_1_136",
+      "B_1_144",
+      "B_1_137",
+      "B_1_101"
+    ],
+    "expected_answer": "KPLP has two significant loan agreements: the Quebec PM Loan Agreement with IQ and the Ontario Loan Agreement with the Government of Ontario. The Quebec PM Loan is a secured non-revolving loan of up to $39.5 million, intended to finance the acquisition and relocation of a paper machine at the Crabtree facility, and it matures ten years after the first loan disbursement on September 6, 2016. In contrast, the Ontario Loan is a secured non-revolving loan of up to $10 million for expanding the Trenton facility, maturing ten years from its first loan disbursement on February 24, 2016. The interest rate for the Quebec PM Loan is initially 2.5% for the first seven years, then increases to 3.5%, 4.5%, and finally 5.5% in subsequent years, with a 24-month moratorium on principal repayments. On the other hand, the Ontario Loan has a fixed interest rate of 2.4% per annum for five years, starting March 1, 2021, with annual interest payments beginning on February 28, 2022. Repayments for the Quebec PM Loan consist of 96 monthly installments after the moratorium, while the repayment details for the Ontario Loan are not specified in the provided information.",
+    "source_chunk_text": "#### *Quebec PM Loan Agreement*\n\nKPLP is a party to a loan agreement dated as of August 9, 2016 entered into by KPLP, as borrower, and IQ as lender, as amended effective as of January 1, 2023 to reflect the Reorganization (the Quebec PM Loan Agreement) pursuant to which a secured non-revolving loan in a maximum amount of \\$39.5 million (the Quebec PM Loan) is made available to KPLP. The purpose of the Quebec PM Loan is to partially finance the acquisition and relocation of a paper machine to be installed at the Crabtree facility (the PM Project). The Quebec PM Loan Agreement matures ten years after the first loan disbursement, which occurred on September 6, 2016.\n---\nThe IQ Facial Tissue Loan is secured by the FT Line. The security is second ranking immediately after the security granted in favour of KPSB's senior lenders\n\n#### *Ontario Loan Agreement*\n\nKPLP is a party to a conditional loan agreement dated as of July 1, 2015 entered into by KPLP, as borrower, and the Government of Ontario as lender (the Ontario Loan Agreement) pursuant to which a secured non-revolving loan in a maximum amount of \\$10 million (the Ontario Loan) is made available to KPLP. The purpose of the Ontario Loan is to partially finance the expansion project at the Trenton facility. The Ontario Loan Agreement matures ten years after the first loan disbursement, which occurred on February 24, 2016.\n\nBorrowings under the Ontario Loan bear interest at a fixed interest rate of 2.4% per annum for a period of five years from March 1, 2021. Annual interest payments commenced February 28, 2022.\n---\nBorrowings under the Quebec PM Loan bear interest at a fixed interest rate of 2.5% per annum for a period of seven years from the date of the first loan disbursement. The interest rate thereafter increases to a fixed rate of 3.5% per annum until the eighth anniversary of the first loan disbursement, a fixed rate of 4.5% per annum until the ninth anniversary of the first loan disbursement, and a fixed rate of 5.5% per annum thereafter. Monthly interest payments commence the month following the first loan disbursement.\n\nThe Quebec PM Loan had a moratorium on repayment of the principal for the initial 24 months following the date of the first loan disbursement, after which the principal is to be repaid in 96 monthly consecutive payments. The monthly repayments are reduced, in the reverse order of maturity, by repayments to IQ corresponding to KPLP's receipt of Government of Quebec electricity tariff rebates.\n\n\nThe Quebec PM Loan is secured by the acquired paper machine and the portion of the property on which the paper machine is installed. The security is second ranking immediately after the security granted in favour of KPLP's senior lenders.\n\n#### *IQ Bathroom Tissue Credit Agreement*\n---\n#### **Indebtedness**\n\n#### *KPLP Senior Credit Agreement*\n\nOn December 21, 2022, KPLP entered into the eighth amended and restated credit agreement (the KPLP Senior Credit Agreement) related to the revolving credit facility (the KPLP Senior Credit Facility), to amend certain provisions of the KPLP Senior Credit Agreement to allow for implementation of the Reorganization. Refer to Business Highlights, Corporate Reorganization for additional details. The KPLP Senior Credit Agreement is for a five year period, maturing on May 21, 2026 with the option to extend the maturity date to or beyond January 1, 2028 subject to certain conditions. The KPLP Senior Credit Facility is used by KPLP to finance general corporate purposes and the ongoing working capital requirements of the Restricted Credit Parties (as defined below), and to finance the cash portion of any permitted acquisition or any permitted investment by the Restricted Credit Parties (as defined below).",
+    "is_overlap_region": false,
+    "generation_strategy": "multi_chunk"
+  },
+  {
+    "id": "s2_2a686360",
+    "question": "How did corporate and other costs, selling, general and administrative expenses, and adjusted EBITDA contribute to the overall net income changes in Q4 2022 compared to Q4 2021?",
+    "question_type": "multi_hop",
+    "hierarchy": "section",
+    "gold_chunk_ids": [
+      "B_1_201",
+      "B_1_78",
+      "B_1_196",
+      "B_1_193"
+    ],
+    "expected_answer": "In Q4 2022, corporate and other costs increased to a loss of $4.0 million from a loss of $3.7 million in Q4 2021, which negatively impacted net income. Selling, general and administrative expenses decreased to $30.6 million from $31.7 million, providing some relief to net income. However, overall net income declined significantly from $42.3 million in Q4 2021 to $16.0 million in Q4 2022, mainly due to a much lower income tax recovery and increased depreciation and restructuring costs, despite an increase in adjusted EBITDA to $44.4 million due to higher selling prices and lower SG&A expenses.",
+    "source_chunk_text": "#### *Corporate and Other Costs*\n\n#### *Q4 2022 compared to Q4 2021*\n\nCorporate and other costs include certain management overhead costs not directly attributable to the business segments.\n\nCorporate and other costs were a loss of \\$4.0 million in Q4 2022 compared to a loss of \\$3.7 million in Q4 2021, an increase of \\$0.3 million.\n\n#### **SHARE INFORMATION**\n---\n#### *Corporate and Other Costs*\n\n#### *Fiscal 2022 compared to Fiscal 2021*\n\nCorporate and other costs include certain management overhead costs not directly attributable to the business segments.\n\nCorporate and other costs were of \\$8.8 million in Fiscal 2022 compared \\$9.0 million in Fiscal 2021, a decrease in costs of \\$0.2 million, primarily due to consulting costs related to corporate reorganizations and operational transformation initiatives.\n\n#### **LIQUIDITY AND CAPITAL RESOURCES**\n\n#### **Overview**\n---\n#### *Net Income*\n\nNet income was \\$16.0 million in Q4 2022 compared to \\$42.3 million in Q4 2021, a decrease of \\$26.3 million. The decrease was primarily due to a significantly lower income tax recovery of \\$45.0 million as described above, higher depreciation expense of \\$11.2 and restructuring costs of \\$3.2 million, partially offset by higher Adjusted EBITDA of \\$6.1 million as discussed above, higher change in the amortized costs of the Partnership units liability of \\$20.6 million, higher foreign exchange gain of \\$4.0 million, lower interest expense of \\$2.1 million and lower other expense of \\$0.3 million.\n\n#### *Segment Information Q4 2022 compared to Q4 2021*\n---\n#### *Selling, General and Administrative Expenses*\n\nSelling, general and administrative (SG&A) expenses were \\$30.6 million in Q4 2022 compared to \\$31.7 million in Q4 2021, a decrease of \\$1.1 million or 3.4%. The decrease was primarily due to lower advertising and promotion expenses resulting from cost containment activities partially offset by consulting and legal costs related to the Reorganization and higher personnel costs. As a percentage of revenue, SG&A expenses were 6.7% in Q4 2022 compared to 7.5% in Q4 2021.\n\n#### *Adjusted EBITDA*\n\nAdjusted EBITDA2 was \\$44.4 million in Q4 2022 compared to \\$38.3 million in Q4 2021, an increase of \\$6.1 million or 15.8%. The increase was primarily due to higher selling prices and lower SG&A expenses, partially offset by significant inflation on pulp, manufacturing costs and freight as described above, lower sales volume and the unfavourable impact of foreign exchange fluctuations.\n\n#### *Interest Expense and Other Finance Costs*",
+    "is_overlap_region": false,
+    "generation_strategy": "multi_chunk"
+  },
+  {
+    "id": "s2_a98b97a9",
+    "question": "What were the total dividends paid, the number of common shares issued, and the gross proceeds from the issuance in relation to the prices per share on the dividend payments and how does this relate to the dividend reinvestment plan and the Shareholders' Agreement following the Kruger Products Reorganization?",
+    "question_type": "multi_hop",
+    "hierarchy": "section",
+    "gold_chunk_ids": [
+      "B_1_267",
+      "B_1_268",
+      "B_1_52",
+      "B_1_51"
+    ],
+    "expected_answer": "The total dividends paid amounted to 7,058 (in thousands of dollars), with 143,648 common shares issued, resulting in gross proceeds of 1,498 (in thousands of dollars). The price per share varied across different dates, ranging from 10.26 to 10.70. The dividend reinvestment plan (DRIP) allowed shareholders to reinvest dividends into additional common shares at close to this pricing, as established in the Shareholders' Agreement post-reorganization, which simplified the corporate structure and enhanced shareholder rights regarding dividends.",
+    "source_chunk_text": "| Dividends paid | Share price | Issuance ofCommon shares | Gross proceeds |\n|----------------|-------------|------------------------------|----------------|\n| \\$             | \\$          | #                            | \\$             |\n| 1,755          | 10.70       | 32,921                       | 352            |\n| 1,761          | 10.47       | 39,046                       | 409            |\n| 1,768          | 10.32       | 35,366                       | 365            |\n| 1,774          | 10.26       | 36,315                       | 372            |\n| 7,058          |             | 143,648                      | 1,498          |\n|                |             |                              |                |\n\nAs a result of the Kruger Products Reorganization, the Corporation received a dividend of \\$1.8 million from Kruger Products on January 16, 2023, such that the Corporation received the same amount in the form of a dividend as the Corporation would have received had the January 16, 2023 distribution been paid by KPLP.\n---\nOn January 16, 2023, the Corporation paid a dividend of \\$1.8 million to shareholders at \\$0.18 per common share. Pursuant to the Corporation DRIP, a portion of the dividend was reinvested by the shareholders, resulting in the Corporation issuing 4,682 common shares at a price of \\$10.18.\n\nSubsequent to December 31, 2022, the Corporation declared a dividend of \\$0.18 per common share to shareholders, payable on April 17, 2023.\n\nAs a result of the DRIP and Kruger's reinvestment of its distribution from KPLP in units of KPLP, a dilution gain of \\$0.8 million was recorded during the year ended December 31, 2022 (2021 - \\$0.3 million).\n\n\n(tabular amounts are in thousands of Canadian dollars, except share amounts)\n\n#### **8 Income tax (recovery) expense on other comprehensive income (loss)**\n\nIncome tax (recovery) expense on other comprehensive income (loss) were as follows:\n---\nPursuant to the Shareholders' Agreement, Kruger Products adopted a dividend reinvestment plan (the Kruger Products DRIP), which permits shareholders that elect to participate in the Kruger Products DRIP to automatically reinvest all cash dividends in additional common shares at a price per common share equal to 100% of the five-day weighted average trading price of the common shares prior to the date of payment of the dividend.\n\n\n#### **RESULTS OF OPERATIONS**\n---\nThe interest that KPT previously held in KPLP is now held in Kruger Products, and, through a shareholders' agreement dated January 1, 2023 entered into with Kruger Inc. (the Shareholders' Agreement), KPT has substantially equivalent rights in respect of the operation of, and its investment in, Kruger Products, as it had in respect of KPLP. The Reorganization was undertaken to realize certain tax efficiencies for Kruger Products and to simplify Kruger Products' corporate structure and financial reporting. The Reorganization was approved by the independent directors of KPT.\n\nThe Shareholders' Agreement, and certain other agreements with Kruger Inc. that were amended and restated to reflect the Reorganization, are described in the Annual Information Form, and copies of those agreements are available on SEDAR at [www.sedar.com.](http://www.sedar.com/)\n\nPursuant to the Shareholders' Agreement, the board of directors of Kruger Products shall determine the amount and date of any distribution by way of dividend. The holders of the issued and outstanding Kruger Products Common Shares are entitled to receive dividends if, as and when declared by the board of directors of Kruger Products.",
+    "is_overlap_region": false,
+    "generation_strategy": "multi_chunk"
+  },
+  {
+    "id": "s2_0645ddd6",
+    "question": "What were the significant personnel changes, option exercisability details, and financial contributions of Darryl Clark, Paul Kitto, and Raewyn Clark as mentioned in the document?",
+    "question_type": "multi_hop",
+    "hierarchy": "section",
+    "gold_chunk_ids": [
+      "B_2_54",
+      "B_2_57",
+      "B_2_58",
+      "B_2_46"
+    ],
+    "expected_answer": "Darryl Clark resigned on 20 September 2021 and was replaced by Paul Kitto. The document outlines several stock options for both individuals: Darryl had options exercisable at $0.04 by 28 November 2022 for 1,000,000 shares and additional options at $0.06 by 21 June 2023 for 1,000,000 shares, among others. Paul Kitto had various exercisable options, with the first being at $0.06 by 29 March 2024 and additional options of $0.10 by 25 November 2024, both for 1,000,000 shares. Raewyn Clark is associated with 2,000,000 options at varying prices, including options at $0.06 and the $0.044 exercisable by 5 November 2023. The financial contributions include various amounts listed for each individual, with Darryl Clark contributing significantly through multiple option exercises, while Raewyn's contributions are noted in terms of received options.",
+    "source_chunk_text": "|                                                                        | 3,225,000                                | -                                 | (3,225,000)                                      | -                                      |\n| 1 Darryl Clark resigned 20 September 2021 and Paul Kitto was appointed |                                          |                                   |                                                  |                                        |\n| Options exercisable at \\$0.04 on or before 28 November 2022            |                                          |                                   |                                                  |                                        |\n| Geoffrey Albers                                                        | -                                        | -                                 | -                                                | -                                      |\n| Raewyn Clark                                                           | 2,000,000                                | -                                 | -                                                | 2,000,000                              |\n| Darryl Clark1                                                          | 1,000,000                                | -                                 | (1,000,000)                                      | -                                      |\n|                                                                        | 3,000,000                                | -                                 | (1,000,000)                                      | 2,000,000                              |\n---\n| Options exercisable at \\$0.044 on or before 5 November 2023Raewyn ClarkDarryl Clark1 | 3,000,0002,000,000                                  | --                            | -(2,000,000)                                 | 3,000,000-                                         |\n|                                                                                              | 5,000,000                                               | -                                 | (2,000,000)                                      | 3,000,000                                              |\n| 1 Darryl Clark resigned 20 September 2021 and Paul Kitto was appointed                       |                                                         |                                   |                                                  |                                                        |\n| Options exercisable at \\$0.06 on or before 21 June 2023Raewyn ClarkDarryl Clark1     | 1,000,0001,000,000                                  | --                            | -(1,000,000)                                 | 1,000,000-                                         |\n| 1 Darryl Clark resigned 20 September 2021 and Paul Kitto was appointed                       | 2,000,000                                               | -                                 | (1,000,000)                                      | 1,000,000                                              |\n---\n| 1 Darryl Clark resigned 20 September 2021 and Paul Kitto was appointed                       | 2,000,000                                               | -                                 | (1,000,000)                                      | 1,000,000                                              |\n| Options exercisable at \\$0.06 on or before 29 March 2024Paul Kitto                       | --                                                  | 1,000,0001,000,000            | --                                           | 1,000,0001,000,000                                 |\n| Options exercisable at \\$0.10 on or before 25 November 2024                                  |                                                         |                                   |                                                  |                                                        |\n| Paul Kitto                                                                                   | -                                                       | 1,000,000                         | -                                                | 1,000,000                                              |\n|                                                                                              | -                                                       | 1,000,000                         | -                                                | 1,000,000                                              |\n| Options exercisable at \\$0.20 on or before 25 November 2025Paul Kitto                    | --                                                  | 1,000,0001,000,000            | --                                           | 1,000,0001,000,000                                 |\n---\n| Paul Kitto              | -      | 30,000                          | -                  | 17,191                        | 47,191 |\n|                         | 8,750  | 30,000                          | 875                | 17,191                        | 56,816 |\n| Year ended 30 June 2021 |        |                                 |                    |                               |        |\n| Geoffrey Albers         | -      | -                               | -                  | -                             | -      |\n| Raewyn Clark            | -      | -                               | -                  | 49,587                        | 49,587 |\n| Darryl Clark (2)        | 10,000 | -                               | 950                | 37,269                        | 48,219 |\n|                         | 10,000 | -                               | 950                | 86,856                        | 97,806 |",
+    "is_overlap_region": false,
+    "generation_strategy": "multi_chunk"
+  },
+  {
+    "id": "s2_39d8cb51",
+    "question": "What exploration tenements has the Company applied for in the years ending 30 June 2021 and 30 June 2022, what financial implications arose from the relinquishing of exploration tenure in the Paterson region, and how do the prepayments for tenement rents relate to these applications and their associated costs?",
+    "question_type": "multi_hop",
+    "hierarchy": "section",
+    "gold_chunk_ids": [
+      "B_2_119",
+      "B_2_146",
+      "B_2_118",
+      "B_2_138"
+    ],
+    "expected_answer": "The Company applied for exploration tenements E80/5658, E80/5703, E80/5704, E80/5706, E80/5758, and E80/5779 in the year ending 30 June 2022, while prior applications in the year ending 30 June 2021 included E80/5472, E80/5520, E80/5623, and E80/5624, along with E80/5346 in March 2019. The relinquishment of exploration tenure in the Paterson region on 19 September 2022 led to the write-off of the carrying value of exploration licence E45/3278, amounting to $94,039, as costs for its three licence applications were not capitalised. Additionally, prepayments for tenement rent amounted to $68,912 for the year, contributing to a total prepayment balance of $176,569 at the end of the year, which indicates the Company's investment in exploration activities despite the challenges faced with tenement approvals.",
+    "source_chunk_text": "The Company applied for exploration tenements E80/5658, E805703, E80/5704, E80/5706, E80/5758 and E80/5779 during the year ended 30 June 2022. Prior year applications for exploration tenements are E80/5472, E805520, E80/5623 and E80/5624 during the year ended 30 June 2021 and E80/5346 in March 2019. If a tenement is granted rent paid on application will cover rent required on the first year of exploration in the tenement. As at 30 June 2022 and to the date of signing the report the tenement applications have not been granted. If a tenement is not granted the rent paid on application is fully refundable.\n\n# **Note 6: Motor Vehicles**\n\n**Notes to the Financial Statements**\n---\n# **Note 17 Matters Subsequent to Balance Date**\n\nOn 2 September 2022 the company announced that a Non Renounceable Rights Issue (Rights Issue) had closed oversubscribed, raising a total of \\$1,223,353 before costs. To accommodate excess demand, the Company also agreed to undertake a placement to raise an additional \\$180,000 on the same terms and conditions as the Rights Issue offer. Total funds realised prior to costs were \\$1,403,353.\n\nOn 19 September 2022 the company relinquished its exploration tenure in the Paterson region of Western Australia which comprised one granted exploration licence as well as three exploration licence applications. The carrying value of the exploration licence E45/3278, \\$94,039 was written off at 30 June 2022. Costs associated with the three licence applications had not been capitalised.\n\n\n**Notes to the Financial Statements**  *For the Year Ended 30 June 2022*\n\n#### **Note 18: Reconciliation of loss after income tax to net cash outflow from operating activities**\n---\nThe carrying amount of all receivables is equal to their fair value as they are short term. At 30 June 2022 no receivables are impaired or past due. All receivables are non-interest bearing.\n\n# **Note 5: Prepayments**\n\n| Balance at the beginning of the year | 107,657 | 27,200  |\n|--------------------------------------|---------|---------|\n| Prepaid tenement rent for the year   | 68,912  | 80,457  |\n| Balance at the end of the year       | 176,569 | 107,657 |\n---\n#### *Expenditure commitments (minerals)*\n\nThe Group had a commitment in minerals tenement E45/3278 of \\$50,000. The permit year ended 29 September each year until 2026.The permit was surrendered 19 September 2022 (Note 17).\n\nOn 4 October 2017 the Group was granted minerals tenement E80/4990. On 28 September 2018 the Group was granted minerals tenement E80/5182. Combined expenditure has been granted by the Western Australia Department of Mines, Industry Regulation and Safety allowing for expenditure obligations for E80/4990 and E80/5182 to be combined. The yearly combined expenditure commitment is \\$297,000.\n\n# **Note 15: Related party disclosure**\n\nThe ultimate parent entity in the wholly-owned group and the ultimate Australian parent entity is Peako Limited. The consolidated financial statements include the financial statements of Peako Limited and the controlled entities listed in the following table:",
+    "is_overlap_region": false,
+    "generation_strategy": "multi_chunk"
+  },
+  {
+    "id": "s2_85e18d26",
+    "question": "What are the key contacts and corporate details of ASX:PKO Peako, including their directors, auditor, and share registry information?",
+    "question_type": "multi_hop",
+    "hierarchy": "section",
+    "gold_chunk_ids": [
+      "B_2_185",
+      "B_2_0",
+      "B_2_2",
+      "B_2_1"
+    ],
+    "expected_answer": "ASX:PKO Peako is located at Level 1, 10 Yarra Street, South Yarra, Victoria 3141, Australia. Key contacts include: Geoffrey Albers (Non-Executive Chairman), Raewyn Clark (Executive Director), and Paul Kitto (Non-Executive Technical Director). The company secretary is Robert Wright. Their auditor is Grant Thornton Audit Pty Ltd based in Surry Hills, NSW. The share registry is managed by Automic Pty Ltd located at Level 3, 50 Holt Street, Surry Hills, NSW. For inquiries, the company can be reached at info@peako.com.au or by phone at +61 (3) 8610 4723.",
+    "source_chunk_text": "**ASX:PKO peako.com.au**\n\nLevel 1, 10 Yarra Street, South Yarra, Victoria 3141\n\n- **T:** +61 (3) 8610 4723\n- **E:** info@peako.com.au\n---\n# 2022 Annual Report\n\nFor the Year Ended 30 June 2022\n\nABN 79 131 843 868\n\nASX:**PKO** peako.com.au\n\nLevel 1, 10 Yarra Street, South Yarra, Victoria 3141\n\n**ASX:PKO**\n\n**peako.com.au**\n\n**T:** +61 (3) 8610 4723\n\n**E:** info@peako.com.au\n\n\n# **Corporate Directory**\n\n#### **DIRECTORS**\n\n**Geoffrey Albers** (Non-Executive Chairman)\n\n**Raewyn Clark** (Executive Director)\n\n**Paul Kitto** (Non-Executive Technical Director) Appointed 20 September 2021\n\n#### **COMPANY SECRETARY**\n\n**Robert Wright**\n\n#### **REGISTERED OFFICE**\n\nLevel 1, 10 Yarra Street, South Yarra Victoria, 3141 Australia\n\n- **W:** www.peako.com.au\n- **E:** info@peako.com.au\n- **T:** (03) 8610 4723\n- **F:** (03) 8610 4799\n\n#### **AUDITOR**\n---\n#### **ASX Limited**\n\nLevel 4, North Tower, Rialto, 525 Collins Street Melbourne Victoria 3000\n\n**W:** www.asx.com.au\n\n\n# **Contents**\n\n**Corporate**\n\n**AUDITOR**\n\n**Grant Thornton Audit Pty Ltd**\n\nSurry Hills, NSW 2010, Australia **T:** 1300 288 664 (within Australia) **T:** +61 (2) 9698 5414 (outside Australia)\n\n**W:** www.automic.com.au\n\nLevel 4, North Tower, Rialto,\n\n**W:** www.asx.com.au\n\n**SHARE REGISTRY**\n\nLevel 3. 50 Holt Street\n\n**Automic Pty Ltd**\n\n**ASX Limited**\n\nCollins Square, Tower 5, 727 Collins Street Melbourne, Victoria 3008, Australia\n\n**SECURITIES EXCHANGE LISTING**\n\n525 Collins Street Melbourne Victoria 3000\n\nVictoria, 3141 Australia **W:** www.peako.com.au **E:** info@peako.com.au **T:** (03) 8610 4723 **F:** (03) 8610 4799\n---\n- **W:** www.peako.com.au\n- **E:** info@peako.com.au\n- **T:** (03) 8610 4723\n- **F:** (03) 8610 4799\n\n#### **AUDITOR**\n\n#### **Grant Thornton Audit Pty Ltd**\n\nCollins Square, Tower 5, 727 Collins Street Melbourne, Victoria 3008, Australia\n\n#### **SHARE REGISTRY**\n\n#### **Automic Pty Ltd**\n\nLevel 3. 50 Holt Street Surry Hills, NSW 2010, Australia\n\n- **T:** 1300 288 664 (within Australia)\n- **T:** +61 (2) 9698 5414 (outside Australia)\n- **W:** www.automic.com.au\n\n#### **SECURITIES EXCHANGE LISTING**\n\n#### **ASX Limited**\n\nLevel 4, North Tower, Rialto, 525 Collins Street Melbourne Victoria 3000\n\n**W:** www.asx.com.au\n\n\n# **Contents**\n\n**Corporate**\n\n**AUDITOR**\n\n**Grant Thornton Audit Pty Ltd**",
+    "is_overlap_region": false,
+    "generation_strategy": "multi_chunk"
+  },
+  {
+    "id": "s3_ea5e99e5",
+    "question": "What is the total comprehensive loss for the year as shown in the provided content?",
+    "question_type": "factual",
+    "hierarchy": "paragraph",
+    "gold_chunk_ids": [
+      "B_0_62",
+      "B_0_63"
+    ],
+    "expected_answer": "The total comprehensive loss for the year is (383).",
+    "source_chunk_text": "| Total comprehensive loss for the               |                  |                  |                        |                                           | (383)                | (383) |\n| year                                           | -                | -                | -                      | -                                         |                      |       |\n|                                                |                  |                  |                        |                                           |                      |       |",
+    "is_overlap_region": true,
+    "generation_strategy": "overlap_region"
+  },
+  {
+    "id": "s3_8c5c3e8b",
+    "question": "Who resigned on 20 September 2021?",
+    "question_type": "factual",
+    "hierarchy": "paragraph",
+    "gold_chunk_ids": [
+      "B_2_53",
+      "B_2_54"
+    ],
+    "expected_answer": "Darryl Clark",
+    "source_chunk_text": "|                                                                        | 3,225,000                                | -                                 | (3,225,000)                                      | -                                      |\n| 1 Darryl Clark resigned 20 September 2021 and Paul Kitto was appointed |                                          |                                   |                                                  |                                        |",
+    "is_overlap_region": true,
+    "generation_strategy": "overlap_region"
+  },
+  {
+    "id": "s3_b88d0746",
+    "question": "What is the total loss for the period as indicated in the content provided?",
+    "question_type": "factual",
+    "hierarchy": "paragraph",
+    "gold_chunk_ids": [
+      "B_0_57",
+      "B_0_58"
+    ],
+    "expected_answer": "The total loss for the period is (333).",
+    "source_chunk_text": "| Loss for the period                            | -                | -                | -                      | -                                         | -                              | (333)                | (333) |\n| Other comprehensive loss                       | -                | -                | -                      | -                                         | (61)                           | -                    | (61)  |",
+    "is_overlap_region": true,
+    "generation_strategy": "overlap_region"
+  },
+  {
+    "id": "s3_96017286",
+    "question": "What is the total number of other movements recorded in the document content?",
+    "question_type": "factual",
+    "hierarchy": "paragraph",
+    "gold_chunk_ids": [
+      "B_0_58",
+      "B_0_59"
+    ],
+    "expected_answer": "The total number of other movements is 67.",
+    "source_chunk_text": "| Total other movements                          | 67               | 1,558            | -                      | 163                                       | -                              | 103                  | 1,891 |\n|                                                |                  |                  |                        |                                           |                                |                      |       |",
+    "is_overlap_region": true,
+    "generation_strategy": "overlap_region"
+  },
+  {
+    "id": "s3_f2ac644d",
+    "question": "What does the text indicate is represented by the column headers?",
+    "question_type": "factual",
+    "hierarchy": "paragraph",
+    "gold_chunk_ids": [
+      "B_0_59",
+      "B_0_60"
+    ],
+    "expected_answer": "The column headers represent different aspects or categories related to the year.",
+    "source_chunk_text": "| the year                                       |                  |                  |                        |                                           |                                |                      |       |\n|                                                |                  |                  |                        |                                           |                                |                      |       |",
+    "is_overlap_region": true,
+    "generation_strategy": "overlap_region"
+  },
+  {
+    "id": "s3_ac8c484c",
+    "question": "What was the amount of deferred tax liabilities to be realized greater than 12 months reported on December 31, 2022?",
+    "question_type": "factual",
+    "hierarchy": "paragraph",
+    "gold_chunk_ids": [
+      "B_1_260",
+      "B_1_261"
+    ],
+    "expected_answer": "The amount of deferred tax liabilities to be realized greater than 12 months reported on December 31, 2022 was 5,718.",
+    "source_chunk_text": "|                                                                | December 31, 2022 | December 31, 2021 |\n|----------------------------------------------------------------|-------------------|-------------------|\n|                                                                | \\$                | \\$                |\n| Deferred tax liabilities to be realized greater than 12 months | 5,718             | 806               |",
+    "is_overlap_region": true,
+    "generation_strategy": "overlap_region"
+  },
+  {
+    "id": "s3_ac7b802b",
+    "question": "What is the amount recorded for Director Fees as indicated in the provided content?",
+    "question_type": "factual",
+    "hierarchy": "paragraph",
+    "gold_chunk_ids": [
+      "B_2_64",
+      "B_2_65"
+    ],
+    "expected_answer": "The amount recorded for Director Fees is (30,000).",
+    "source_chunk_text": "| Director Fees                                                                                                                                                |      | (30,000)    | -          |\n| Heritage Protection \u2013 Community and Management fees                                                                                                          |      | (82,202)    | (49,600)   |",
+    "is_overlap_region": true,
+    "generation_strategy": "overlap_region"
+  },
+  {
+    "id": "s3_ad4cca4e",
+    "question": "What is the value of stock exchange and share registry costs listed in the report?",
+    "question_type": "factual",
+    "hierarchy": "paragraph",
+    "gold_chunk_ids": [
+      "B_2_65",
+      "B_2_66"
+    ],
+    "expected_answer": "The stock exchange and share registry costs amount to (47,185).",
+    "source_chunk_text": "| Share based payment                                                                                                                                          |      | (43,543)    | (144,505)  |\n| Stock exchange and share registry costs                                                                                                                      |      | (47,185)    | (29,524)   |",
+    "is_overlap_region": true,
+    "generation_strategy": "overlap_region"
+  },
+  {
+    "id": "s4_para_1d3373d3",
+    "question": "What was the total amount of Retained Earnings at the beginning of the year on 1 January 2021, and what was the loss for the period that contributed to the Total comprehensive loss for the year?",
+    "question_type": "factual",
+    "hierarchy": "paragraph",
+    "gold_chunk_ids": [
+      "B_0_62"
+    ],
+    "expected_answer": "At 1 January 2021, the Retained Earnings were (22,273) \u00a3'000, and the loss for the period was (383) \u00a3'000, contributing to the Total comprehensive loss for the year.",
+    "source_chunk_text": "|                                                | ShareCapital | SharePremium | Shares tobe issued | ShareOption andWarrantReserve | RetainedEarnings | Total |\n|------------------------------------------------|------------------|------------------|------------------------|-------------------------------------------|----------------------|-------|\n|                                                | \u00a3'000            | \u00a3'000            | \u00a3'000                  | \u00a3'000                                     | \u00a3'000                | \u00a3'000 |\n| At 1 January 2021                              | 3,208            | 22,348           | 286                    | 762                                       | (22,273)             | 4,331 |\n|                                                |                  |                  |                        |                                           |                      |       |\n| Loss for the period                            | -                | -                | -                      | -                                         | (383)                | (383) |\n| Total comprehensive loss for the               |                  |                  |                        |                                           | (383)                | (383) |\n| year                                           | -                | -                | -                      | -                                         |                      |       |\n|                                                |                  |                  |                        |                                           |                      |       |",
+    "is_overlap_region": false,
+    "generation_strategy": "hierarchical"
+  },
+  {
+    "id": "s4_para_789257d0",
+    "question": "What happens to the interest rate on the IQ Bathroom Tissue Loan if KPLP is in default, and how long can the increased rate last before it becomes permanent?",
+    "question_type": "factual",
+    "hierarchy": "paragraph",
+    "gold_chunk_ids": [
+      "B_1_139"
+    ],
+    "expected_answer": "If KPLP is in default under the KPLP Contribution Undertaking Agreement, the interest rate on the IQ Bathroom Tissue Loan increases from 2.0% per annum to 6.0% per annum until the default is remedied to IQ's satisfaction within twelve months of the KPLP Default Date. If the default is not remedied within that period, the increased rate of 6.0% per annum continues to apply permanently.",
+    "source_chunk_text": "Borrowings under the IQ Bathroom Tissue Loan bear interest at a fixed interest rate of 2.0% per annum (the Fixed Rate), calculated monthly, starting on the disbursement date of each payment in respect of the amount disbursed. In the event KPLP is in default (the KPLP Default) under the KPLP Contribution Undertaking Agreement (refer to Transactions with Related Parties for additional details), the Fixed Rate would increase from the date of the KPLP Default (the KPLP Default Date) to 6.0% per annum (the Fixed Default Rate), until the KPLP Default is remedied to IQ's satisfaction within twelve months of the KPLP Default Date, failing which the Fixed Default Rate would continue to apply permanently. Interest is capitalized to the loan principal from the date of the first loan disbursement, which occurred on February 4, 2022, until the BT Line Commissioning Date. As of the BT Line Commissioning Date, interest will cease to be capitalized and is due and payable monthly.",
+    "is_overlap_region": false,
+    "generation_strategy": "hierarchical"
+  },
+  {
+    "id": "s4_para_b4cd1c9d",
+    "question": "How is impairment determined for individual assets according to the company's policy?",
+    "question_type": "factual",
+    "hierarchy": "paragraph",
+    "gold_chunk_ids": [
+      "B_2_93"
+    ],
+    "expected_answer": "The carrying amounts of the company's assets are reviewed at each statement of financial position date to determine whether there are indicators of impairment. The company assesses whether there is any indication that individual assets are impaired and, where impairment indicators exist, recoverable amount is determined. Impairment losses are recognised in profit or loss where the asset's carrying value exceeds its recoverable amount.",
+    "source_chunk_text": "Depreciation is calculated as follows:\n\n| Motor Vehicles, plant | 10% - 33% on a      |\n|-----------------------|---------------------|\n| and equipment         | straight line basis |\n\nThe assets' residual values, useful lives and amortisation methods are reviewed, and adjusted if appropriate, at each financial period end.\n\n#### **(j) Impairment of assets**\n\nThe carrying amounts of the company's assets are reviewed at each statement of financial position date to determine whether there are indicators of impairment. At each reporting date the company assesses whether there is any indication that individual assets are impaired. Where impairment indicators exist, recoverable amount is determined and impairment losses are recognised in profit or loss where the asset's carrying value exceeds its recoverable amount. Recoverable amount is the higher of an asset's fair value less costs to sell and value in use. For the purpose of assessing value in use, the estimated future cash flows are discounted to their present value using a pre-tax discount rate that reflects current market assessments of the time value of money and the risks specific to the asset.\n\n#### **(k) Trade and other payables**",
+    "is_overlap_region": false,
+    "generation_strategy": "hierarchical"
+  },
+  {
+    "id": "s4_sect_4b4f50cc",
+    "question": "How do the responsibilities of the Directors and the limitations of the Auditor's responsibilities interact to influence the overall reliability of the financial statements, particularly in regard to the potential for material misstatements due to fraud or error?",
+    "question_type": "analytical",
+    "hierarchy": "section",
+    "gold_chunk_ids": [
+      "B_0_41",
+      "B_0_42",
+      "B_0_43"
+    ],
+    "expected_answer": "The Directors are responsible for ensuring that the financial statements provide a true and fair view and maintain adequate internal controls to prevent misstatements. Meanwhile, the Auditor's responsibilities include obtaining reasonable assurance regarding the absence of material misstatements. However, due to inherent limitations of an audit, which include the potential for fraud and the recognition that not all irregularities may be detected, the reliability of the financial statements can be compromised. The interaction between these responsibilities highlights a reliance on the Directors' integrity and controls while acknowledging the Auditor's limitations in identifying material misstatements.",
+    "source_chunk_text": "We have nothing to report in respect of the following matters in relation to which the Companies Act 2006 requires us to report to you if, in our opinion:\n\n- adequate accounting records have not been kept by the Parent Company, or returns adequate for our audit have not been received from branches not visited by us; or\n- the Parent Company financial statements are not in agreement with the accounting records and returns; or\n- certain disclosures of Directors' remuneration specified by law are not made; or\n- we have not received all the information and explanations we require for our audit.\n\n## **Responsibilities of Directors**\n\nAs explained more fully in the Statement of directors' responsibilities the Directors are responsible for the preparation of the financial statements and for being satisfied that they give a true and fair view, and for such internal control as the Directors determine is necessary to enable the preparation of financial statements that are free from material misstatement, whether due to fraud or error.\n---\nIn preparing the financial statements, the Directors are responsible for assessing the Group's and the Parent Company's ability to continue as a going concern, disclosing, as applicable, matters related to going concern and using the going concern basis of accounting unless the Directors either intend to liquidate the Group or the Parent Company or to cease operations, or have no realistic alternative but to do so.\n\n#### **Auditor's responsibilities for the audit of the financial statements**\n\nOur objectives are to obtain reasonable assurance about whether the financial statements as a whole are free from material misstatement, whether due to fraud or error, and to issue an Auditor's report that includes our opinion. Reasonable assurance is a high level of assurance, but is not a guarantee that an audit conducted in accordance with ISAs (UK) will always detect a material misstatement when it exists. Misstatements can arise from fraud or error and are considered material if, individually or in the aggregate, they could reasonably be expected to influence the economic decisions of users taken on the basis of these financial statements.\n---\nBecause of the inherent limitations of an audit, there is a risk that we will not detect all irregularities, including those leading to a material misstatement in the financial statements or non-compliance with regulation. This risk increases the more that compliance with a law or regulation is removed from the events and transactions reflected in the financial statements, as we will be less likely to become aware of instances of non-compliance.\n\nThe risk is also greater regarding irregularities occurring due to fraud rather than error, as fraud involves intentional concealment, forgery, collusion, omission or misrepresentation.\n\n\nThe specific procedures for this engagement that we designed and performed to detect material misstatements in respect of irregularities, including fraud, were as follows:",
+    "is_overlap_region": false,
+    "generation_strategy": "hierarchical"
+  },
+  {
+    "id": "s4_sect_fe6ffef9",
+    "question": "What trends can be observed in the principal repayments and interest payments across the listed loans and obligations, and how do they collectively contribute to the total contractual obligations over the presented periods?",
+    "question_type": "analytical",
+    "hierarchy": "section",
+    "gold_chunk_ids": [
+      "B_1_92",
+      "B_1_93",
+      "B_1_94"
+    ],
+    "expected_answer": "The principal repayments show variability across different loans, with KPSI IQ Debenture consistently contributing significant amounts each period while other loans like Quebec PM Loan fluctuate more. Interest payments are generally high and consistently decline over the periods, contributing a substantial total to the overall obligations. The combined total contractual obligations reflect these trends, peaking in certain periods and indicating the overall financial commitment.",
+    "source_chunk_text": "| AgCredit Revolver, principal repayments                         | -              | -              | -              | 17.1           | -              | -          | 17.1    |\n| KPSI IQ Debenture, principal repayments                         | 16.7           | 16.7           | 16.7           | 16.7           | 16.7           | 14.7       | 98.2    |\n| Nordea2 Credit Facility, principal repayments                   | 7.8            | 7.8            | 7.8            | 7.8            | 7.8            | 15.3       | 54.3    |\n| KPSB IQ Debenture, principal repayments                         | -              | -              | -              | 2.5            | 9.9            | 14.6       | 27.0    |\n| Quebec PM Loan, principal repayments                            | 4.9            | 4.9            | 1.6            | -              | -              | -          | 11.4    |\n---\n| Quebec PM Loan, principal repayments                            | 4.9            | 4.9            | 1.6            | -              | -              | -          | 11.4    |\n| IQ Bathroom Tissue Loan, principal repayments                   | -              | -              | 1.1            | 6.9            | 6.9            | 6.5        | 21.4    |\n| IQ Facial Tissue Loan, principal repayments                     | -              | -              | 2.7            | 4.8            | -              | -          | 7.5     |\n| Ontario Loan, principal repayments                              | 0.5            | 0.5            | 0.5            | 0.4            | -              | -          | 1.9     |\n| Interest payments                                               | 58.3           | 57.2           | 52.9           | 49.1           | 36.7           | 129.1      | 383.3   |\n---\n| Interest payments                                               | 58.3           | 57.2           | 52.9           | 49.1           | 36.7           | 129.1      | 383.3   |\n| Right-of-use lease payments                                     | 28.3           | 19.8           | 10.5           | 8.3            | 7.7            | 55.0       | 129.6   |\n| KPLP Contribution Undertaking Agreement, Contributions          | 5.7            | 5.8            | 5.8            | 5.8            | 5.8            | 29.0       | 57.9    |\n| Service contract payments                                       | 15.2           | 5.9            | 0.4            | 0.2            | -              | -          | 21.7    |\n| Total contractual obligations                                   | 141.9          | 123.1          | 229.5          | 240.6          | 131.1          | 874.5      | 1,740.7 |",
+    "is_overlap_region": false,
+    "generation_strategy": "hierarchical"
+  },
+  {
+    "id": "s4_sect_e8f9072f",
+    "question": "How do the financial figures from the Consolidated Statement of Profit or Loss and Other Comprehensive Income for the year ended 30 June 2022 reflect the operational performance of Grant Thornton Audit Pty Ltd in relation to government support during the Covid pandemic, and what implications can be drawn from the year-over-year changes in income and expenses?",
+    "question_type": "analytical",
+    "hierarchy": "section",
+    "gold_chunk_ids": [
+      "B_2_62",
+      "B_2_63",
+      "B_2_64"
+    ],
+    "expected_answer": "The financial figures show that there was a significant reduction in income from government grants due to Covid, dropping from $20,000 in 2021 to $0 in 2022. While sundry income increased to $1,863 from $350, the overall income remained low. On the expense side, there were increases in accounting fees, conferences and travel, depreciation, director fees, and particularly in heritage protection/community management fees, which rose significantly from $49,600 to $82,202. This suggests that while the company did not receive government support in 2022, it still faced rising costs, impacting its overall operational performance negatively compared to the previous year.",
+    "source_chunk_text": "#8024565v2w Grant Thornton Audit Pty Ltd ACN 130 913 594 a subsidiary or related entity of Grant Thornton Australia Limited ABN 41 127 556 389 ACN 127 556 389. 'Grant Thornton' refers to the brand under which the Grant Thornton member firms provide assurance, tax and advisory services to their clients and/or refers to one or more member firms, as the context requires. Grant Thornton Australia Limited is a member firm of Grant Thornton International Ltd (GTIL). GTIL and the member firms are not a worldwide partnership. GTIL and each member firm is a separate legal entity. Services are delivered by the member firms. GTIL does not provide services to clients. GTIL and its member firms are not agents of, and do not obligate one another and are not liable for one another's acts or omissions. In the Australian context only, the use of the term 'Grant Thornton' may refer to Grant Thornton Australia Limited ABN 41 127 556 389 ACN 127 556 389 and its Australian subsidiaries and related entities. Liability limited by a scheme approved under Professional Standards Legislation.\n\n\n# **Financial Reports**\n---\n# **Financial Reports**\n\n\n#### **CONSOLIDATED STATEMENT OF PROFIT OR LOSS AND OTHER COMPREHENSIVE INCOME** FOR THE YEAR ENDED 30 JUNE 2022 **Consolidated Statement of Profit or Loss and Other Comprehensive Income**\n\n*For the year ended 30 June 2022*\n---\n|                                                                                                                                                              | Note | 2022\\$  | 2021\\$ |\n|--------------------------------------------------------------------------------------------------------------------------------------------------------------|------|-------------|------------|\n| Government grants - Covid                                                                                                                                    |      | -           | 20,000     |\n| Sundry income                                                                                                                                                |      | 1,863       | 350        |\n|                                                                                                                                                              |      | 1,863       | 20,350     |\n| ExpensesAccounting fees                                                                                                                                  |      | (169,529)   | (147,045)  |\n| Audit fees                                                                                                                                                   | 19   | (50,303)    | (52,876)   |\n| Conferences and travel                                                                                                                                       |      | (29,982)    | (1,370)    |\n| Depreciation                                                                                                                                                 |      | (33,347)    | (12,680)   |\n| Director Fees                                                                                                                                                |      | (30,000)    | -          |\n| Heritage Protection \u2013 Community and Management fees                                                                                                          |      | (82,202)    | (49,600)   |",
+    "is_overlap_region": false,
+    "generation_strategy": "hierarchical"
+  },
+  {
+    "id": "s4_page_93e1a49e",
+    "question": "What are the key operational and corporate developments reported by Armadale Capital Plc in the Strategic Report for the year ended 31 December 2022, and how do these developments align with the company's overall focus on the Mahenge Liandu Graphite Project in Tanzania?",
+    "question_type": "summarization",
+    "hierarchy": "page",
+    "gold_chunk_ids": [
+      "B_0_0",
+      "B_0_1",
+      "B_0_2",
+      "B_0_3",
+      "B_0_4",
+      "B_0_5"
+    ],
+    "expected_answer": "In the Strategic Report for the year ended 31 December 2022, Armadale Capital Plc highlighted several key operational and corporate developments related to the Mahenge Liandu Graphite Project in Tanzania. Notable achievements include: 1) the application for three incremental exploration licenses to enhance exploration potential; 2) the successful installation of a weather station and seven stream gauges to gather critical data for mining operations; 3) clearing pads for geotechnical drilling as part of the FEED study; 4) the completion of a test pit program with extensive excavation and sampling; and 5) the granting of a prospecting license for graphite exploration. The company's primary focus throughout the year was on securing project development funding while engaging the local community and progressing the necessary permits. This synchronized effort underscores Armadale Capital's commitment to advancing the Mahenge Liandu project as a key strategic initiative.",
+    "source_chunk_text": "**Armadale Capital Plc**\n\n**Annual Report and Accounts**\n\n**31 December 2022**\n\n\n| Officers and Professional Advisers 3             |  |\n|--------------------------------------------------|--|\n| Strategic Report 4                               |  |\n| Directors' Report10                              |  |\n| Independent Auditor's Report16                   |  |\n| Consolidated Statement of Comprehensive Income22 |  |\n| Consolidated Statement of Financial Position23   |  |\n| Company Statement of Financial Position24        |  |\n| Consolidated Statement of Changes in Equity25    |  |\n| Company Statement of Changes in Equity26     |  |\n| Consolidated Statement of Cash Flows27       |  |\n| Company Statement of Cash Flows28                |  |\n| Notes to the financial statements29          |  |\n| Notice of Annual General Meeting49           |  |\n|                                                  |  |\n\n\n## **Officers and Professional Advisers**\n\n#### **Directors**\n\nNicholas Johansen \u2013 Chairman Matt Bull\n\n# **Secretary**\n\nTimothy Jones\n\n# **Registered office**\n\nI Arbrook Lane Esher Surrey, KT10 9EG\n---\n## **Officers and Professional Advisers**\n\n#### **Directors**\n\nNicholas Johansen \u2013 Chairman Matt Bull\n\n# **Secretary**\n\nTimothy Jones\n\n# **Registered office**\n\nI Arbrook Lane Esher Surrey, KT10 9EG\n\n# **Nominated Adviser and Broker** finnCap Ltd 1 Bartholomew Close London EC1A 7BL\n\n## **Auditors**\n\nJames Cowper Kreston Audit Reading Bridge House George Street Reading RG1 8LS\n\n#### **Solicitors**\n\nDruces LLP Salisbury House London Wall London EC2M 5PS\n\n## **Registrars**\n\nShare Registrars Limited 3 Millennium Centre Crosby Way Farnham Surrey GU9 7XX\n\n\n## **Strategic Report For the year ended 31 December 2022**\n\nArmadale Capital plc (LON: ACP), the AIM quoted investment group focused on natural resource projects in Africa and the development of the long\u2010life low\u2010cost Mahenge Liandu Graphite Project in Tanzania is pleased to announce its Final Results for the Year Ended 31 December 2022.\n\n# **Operational and Corporate Highlights for Period Ending 31 December 2022**\n---\n# **Operational and Corporate Highlights for Period Ending 31 December 2022**\n\n# **Significant progress made in delivering key accretive milestones in advancing the Mahenge Liandu Graphite Project in Tanzania**\n---\n- 1. In February 2022 the Company applied for three incremental exploration licences which are prospective for graphite mineralisation and materially enhance the Mahenge Liandu Project's exploration potential.\n- 2. In March, the Company, pursuant to environmental compliance requirements of the mining license, successfully completed the installation of a weather station and has commenced the monthly collection of data. The station records data at 5 second intervals and covers all weather parameters including temperature, pressure, wind, moon phase, humidity, solar radiation and rainfall. All data is automatically uploaded to the cloud. This data is critical to establishing the base line information required to assist with the planning of the mining operations on the Project.\n- 3. In addition, the Company has also installed a total of 7 stream gauges and one barotroll in the water streams located at the mine site in March 2022 which will be used for the hydrological studies which will assist in the location and design of infrastructure for the operations. The devices record 3 parameters which are temperature, pressure and depth at 5 second intervals. The data from all devices are being manually downloaded at a frequency rate of once per month.\n---\n- 4. As Part of the ongoing FEED study, the Company cleared pads for geotech drilling at the proposed plant Site and tailing dam location. 10 pads were cleared at the tailing storage facility area and 6 pads were cleared at the plant site area as a part of geotechnical studies and the Company is now preparing for Diamond Drilling in the proposed areas\n- 5. A test pit program has been completed at the proposed plant site, tailing storage facility and the access road areas. A total of 41 test pits with 3 meters depth have been excavated, DCP tested, strata logged, sampled and backfilled. 11 pits have been excavated at plant site, 25 pits excavated at tailing storage facility and 5 pits excavated at the access road to the mine site.\n- 6. The Company was granted the prospecting license PL 119961/ 2022 by the ministry of minerals on 28 June 2022, for the exploration of graphite minerals. The license area comprises of 19.99 square kilometres, located at Isongo and Liandu villages of Ulanga District, in Morogoro Region.\n---\n- 7. Through the year, the Company's primary focus was on securing project development funding for the Mahenge Liandu Graphite project while advancing the permitting and local community engagement.\n- 8. The Company has received an encouraging level of interest in funding the Mahenge Liandu Graphite project and has advanced its discussions with a number of potential finance partners with respect to securing project development funding.",
+    "is_overlap_region": false,
+    "generation_strategy": "hierarchical"
+  },
+  {
+    "id": "s4_page_f18ef945",
+    "question": "What are the key themes and financial highlights presented in Kruger Products' 2022 Annual Report, and how do these elements reflect the company's overall performance and corporate strategy for driving long-term value?",
+    "question_type": "summarization",
+    "hierarchy": "page",
+    "gold_chunk_ids": [
+      "B_1_0",
+      "B_1_1",
+      "B_1_2",
+      "B_1_3",
+      "B_1_4",
+      "B_1_5"
+    ],
+    "expected_answer": "The key themes in Kruger Products' 2022 Annual Report include the company's leading position in the tissue products market in Canada and the U.S., a significant corporate reorganization, and the challenges faced in financial performance due to inflation and increased costs. Financial highlights indicate a revenue increase of 14.8% to $1.7 billion, driven by price adjustments and higher sales volume, yet a net loss of $56.9 million compared to a net income of $42.0 million in 2021 due to lower adjusted EBITDA, tax recovery issues, and higher expenses. This reflects a mix of growth opportunities and operational challenges, ultimately pointing towards a need for strategic cost management and investment to enhance long-term value.",
+    "source_chunk_text": "# **INVESTING IN OUR BUSINESS TO DRIVE LONG-TERM VALUE** 2022 ANNUAL REPORT\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nKruger Products is Canada's leading manufacturer of quality tissue products for household, industrial and commercial use. Kruger Products serves the Canadian consumer market with such well-known brands as **Cashmere\u00ae**, **Bonterra\u2122**, **Purex\u00ae**, **SpongeTowels**\u00ae, **Scotties\u00ae** and **White Swan**\u00ae. In the U.S., Kruger Products manufactures the **White Cloud\u00ae** brand, as well as many private label products. The Away-From-Home division manufactures and distributes high-quality, cost-effective product solutions to a wide range of commercial and public entities. Kruger Products has approximately 2,700 employees and operates nine FSC\u00ae COC-certified (FSC\u00ae C-104904) production facilities in North America.\n\nKPT (the Corporation) holds an equity interest in Kruger Products. KPT is a reporting issuer in all provinces and territories of Canada, and is required under Canadian Securities laws to report certain financial and business information of Kruger Products.\n---\nKPT (the Corporation) holds an equity interest in Kruger Products. KPT is a reporting issuer in all provinces and territories of Canada, and is required under Canadian Securities laws to report certain financial and business information of Kruger Products.\n\nOn January 1, 2023, Kruger Products L.P. (KPLP) undertook a corporate reorganization pursuant to which the limited partnership was essentially replaced by a corporate entity, Kruger Products Inc. (Kruger Products), without adversely affecting KP Tissue (KPT). KPT held a minority interest in KPLP of 13.9% as at December 31, 2022 and in Kruger Products of 13.5% as at May 11, 2023.\n\n\n\n\u00a92023 KP Tissue \u00aeRegistered and \u2122trademarks of Kruger Products Inc. \u00aeRegistered trademark of Kimberly-Clark Worldwide, Inc. used under license. \u00aeForest Stewardship Council and FSC logo\u2014Forest Stewardship Council, A.C.\n---\n\u00a92023 KP Tissue \u00aeRegistered and \u2122trademarks of Kruger Products Inc. \u00aeRegistered trademark of Kimberly-Clark Worldwide, Inc. used under license. \u00aeForest Stewardship Council and FSC logo\u2014Forest Stewardship Council, A.C.\n\nForward looking information: For any information on statements in this Annual Report that are of a forward-looking nature, please consult the section on \"Cautionary Forward Looking statement\" on page 1 in the Management's discussion and analysis of results of operations and financial position.\n\n\n# FISCAL 2022 CORPORATE HIGHLIGHTS\n\n## **REVENUE OF \\$1.7 BILLION UP 14.8% FROM 2021**\n\nRevenue increased year-over-year mainly due to selling price increases across all segments and regions, significantly higher Away-from-home sales volume, and a favourable foreign exchange impact.\n\n## **ADJUSTED EBITDA(1) OF \\$116.0 MILLION DOWN 24.4% FROM 2021**\n\nAdjusted EBITDA decreased year-over-year as price adjustments did not fully catch up to inflation until later into the year, while cost management initiatives helped mitigate the impact.\n---\n## **ADJUSTED EBITDA(1) OF \\$116.0 MILLION DOWN 24.4% FROM 2021**\n\nAdjusted EBITDA decreased year-over-year as price adjustments did not fully catch up to inflation until later into the year, while cost management initiatives helped mitigate the impact.\n\n# **NET LOSS OF \\$56.9 MILLION COMPARED TO NET INCOME OF \\$42.0 MILLION IN 2021**\n\nNet loss incurred primarily due to lower Adjusted EBITDA, reduced income tax recovery, higher foreign exchange loss and greater depreciation expense.\n\n\n\n\n\n(1) Adjusted EBITDA is a non-GAAP financial measure. This measure does not have a standardized meaning prescribed by IFRS and, therefore, may not be comparable to similarly titled measures presented by other companies. Refer to the MD&A for the definition and reconciliation of Adjusted EBITDA.\n\n\n# FINANCIAL PERFORMANCE(1)\n\n#### (In millions of Canadian dollars)\n---\n# FINANCIAL PERFORMANCE(1)\n\n#### (In millions of Canadian dollars)\n\n| For the years ended December 31  | 2022   | 2021  | 2020  | 2019  | 2018(2) |\n|----------------------------------|--------|-------|-------|-------|---------|\n| Net income                       | (56.9) | 42.0  | 27.3  | 2.1   | 45.4    |\n| Working capital                  | 116.4  | 146.4 | 53.7  | 97.3  | 219.3   |\n| Long-term debt                   | 1077.3 | 920.3 | 744.0 | 586.1 | 564.0   |\n| Net debt/LTM adjusted EBITDA (3) | 8.9x   | 5.3x  | 3.2x  | 3.4x  | 4.0x    |\n---\n(1) All financial data presented herein are related to Kruger Products unless otherwise noted and have been prepared in accordance with IFRS. For the year ended December 31, 2022, KPT reported an equity loss of \\$13.3 million, net loss of \\$10.2 million and net loss per share of \\$1.03. For more information, refer to the KPT Audited Financial Statements for the period ended December 31, 2022.\n\n(2) Effective January 1, 2019, Kruger Products adopted IFRS 16 Leases, the new accounting standard covering lease accounting, using the full retrospective approach. Fiscal 2018 has been restated to reflect the adoption of IFRS 16.\n\n(3) Adjusted EBITDA and Adjusted EBITDA margin are non-GAAP financial measures. These measures do not have a standardized meaning prescribed by IFRS and therefore may not be comparable to similarly titled measures presented by other companies. Refer to the MD&A for the definition and reconciliation of Adjusted EBITDA.\n\n* Including Mexico business divested in September 2019.\n\n\n\n**OPERATING INCOME** (in millions of Canadian dollars)",
+    "is_overlap_region": false,
+    "generation_strategy": "hierarchical"
+  },
+  {
+    "id": "s5_d431f95b",
+    "question": "What is the Officers and Professional Advisers section as described in the document?",
+    "question_type": "factual",
+    "hierarchy": "paragraph",
+    "gold_chunk_ids": [
+      "B_0_0"
+    ],
+    "expected_answer": "The Officers and Professional Advisers section lists the company's directors, including Nicholas Johansen as Chairman, and Timothy Jones as Secretary, along with the registered office located at I Arbrook Lane, Esher, Surrey, KT10 9EG.",
+    "source_chunk_text": "**Armadale Capital Plc**\n\n**Annual Report and Accounts**\n\n**31 December 2022**\n\n\n| Officers and Professional Advisers 3             |  |\n|--------------------------------------------------|--|\n| Strategic Report 4                               |  |\n| Directors' Report10                              |  |\n| Independent Auditor's Report16                   |  |\n| Consolidated Statement of Comprehensive Income22 |  |\n| Consolidated Statement of Financial Position23   |  |\n| Company Statement of Financial Position24        |  |\n| Consolidated Statement of Changes in Equity25    |  |\n| Company Statement of Changes in Equity26     |  |\n| Consolidated Statement of Cash Flows27       |  |\n| Company Statement of Cash Flows28                |  |\n| Notes to the financial statements29          |  |\n| Notice of Annual General Meeting49           |  |\n|                                                  |  |\n\n\n## **Officers and Professional Advisers**\n\n#### **Directors**\n\nNicholas Johansen \u2013 Chairman Matt Bull\n\n# **Secretary**\n\nTimothy Jones\n\n# **Registered office**\n\nI Arbrook Lane Esher Surrey, KT10 9EG",
+    "is_overlap_region": false,
+    "generation_strategy": "academic_pattern"
+  },
+  {
+    "id": "s5_6707179a",
+    "question": "What are the key figures or statistics mentioned about subsequent events?",
+    "question_type": "factual",
+    "hierarchy": "paragraph",
+    "gold_chunk_ids": [
+      "B_0_124"
+    ],
+    "expected_answer": "Since the year end, the Company has subscribed for 1.6 million shares in Celsius Resources Limited for a consideration of \u00a3125,000 in cash.",
+    "source_chunk_text": "#### **19. Ultimate controlling party**\n\nThere was no ultimate controlling party during the year.\n\n#### **20. Subsequent events**\n\nSince the year end, the Company has subscribed for 1.6 million shares in Celsius Resources Limited, a company listed on the Alternative Investment Market of the London Stock Exchange, for a consideration of \u00a3125,000 in cash.",
+    "is_overlap_region": false,
+    "generation_strategy": "academic_pattern"
+  },
+  {
+    "id": "s5_86779abc",
+    "question": "How does Kruger Products' market presence compare to KPT's equity interest based on the content?",
+    "question_type": "comparative",
+    "hierarchy": "paragraph",
+    "gold_chunk_ids": [
+      "B_1_0"
+    ],
+    "expected_answer": "Kruger Products is Canada's leading manufacturer of quality tissue products with a strong market presence, whereas KPT holds an equity interest in Kruger Products and is a reporting issuer in Canada.",
+    "source_chunk_text": "# **INVESTING IN OUR BUSINESS TO DRIVE LONG-TERM VALUE** 2022 ANNUAL REPORT\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nKruger Products is Canada's leading manufacturer of quality tissue products for household, industrial and commercial use. Kruger Products serves the Canadian consumer market with such well-known brands as **Cashmere\u00ae**, **Bonterra\u2122**, **Purex\u00ae**, **SpongeTowels**\u00ae, **Scotties\u00ae** and **White Swan**\u00ae. In the U.S., Kruger Products manufactures the **White Cloud\u00ae** brand, as well as many private label products. The Away-From-Home division manufactures and distributes high-quality, cost-effective product solutions to a wide range of commercial and public entities. Kruger Products has approximately 2,700 employees and operates nine FSC\u00ae COC-certified (FSC\u00ae C-104904) production facilities in North America.\n\nKPT (the Corporation) holds an equity interest in Kruger Products. KPT is a reporting issuer in all provinces and territories of Canada, and is required under Canadian Securities laws to report certain financial and business information of Kruger Products.",
+    "is_overlap_region": false,
+    "generation_strategy": "academic_pattern"
+  },
+  {
+    "id": "s5_9e3c3181",
+    "question": "Why does the Annual Meeting of Shareholders occur according to the document?",
+    "question_type": "analytical",
+    "hierarchy": "paragraph",
+    "gold_chunk_ids": [
+      "B_1_277"
+    ],
+    "expected_answer": "The Annual Meeting of Shareholders occurs to provide shareholders with information about the corporation's governance and to discuss important matters related to the company's administration.",
+    "source_chunk_text": "- (1) Member of the Corporation Audit Committee and the KPGP Audit Committee\n- (2) Member of the Corporation Nominating and Governance Committee\n- (3) Member of the KPGP Governance Committee\n- (4) Member of the KPGP HR & Compensation Committee\n\nFor complete information about Board Members and Corporate Governance, please visit www.kptissueinc.com\n\n#### **ANNUAL MEETING OF SHAREHOLDERS**\n\nThe Annual Meeting of Shareholders will be held at TMX Market Centre (Pearce Bunting Room), 120 Adelaide Street West, Ground Floor, Toronto, Ontario M5H 1S3 on June 20, 2023 at 2:00 p.m. (ET).\n\n#### **DESIGNED AND WRITTEN BY**\n\nMBC Capital Markets Advisors\n\n\n\n\n# **OUR MISSION**\n\nMAKING EVERYDAY LIFE MORE COMFORTABLE.\n\n\n\n\u00aeRegistered trademarks and TM trademarks of Kruger Products Inc. \u00a92023 Kruger Products Inc. \u00aeSCOTTIES is a trademark of Kimberly-Clark Worldwide Inc., used under licence.",
+    "is_overlap_region": false,
+    "generation_strategy": "academic_pattern"
+  },
+  {
+    "id": "s5_cd9fc0a5",
+    "question": "What are the main components of the corporate directory as described?",
+    "question_type": "summarization",
+    "hierarchy": "paragraph",
+    "gold_chunk_ids": [
+      "B_2_0"
+    ],
+    "expected_answer": "The main components of the corporate directory include the Directors, Company Secretary, Registered Office, and Auditor.",
+    "source_chunk_text": "# 2022 Annual Report\n\nFor the Year Ended 30 June 2022\n\nABN 79 131 843 868\n\nASX:**PKO** peako.com.au\n\nLevel 1, 10 Yarra Street, South Yarra, Victoria 3141\n\n**ASX:PKO**\n\n**peako.com.au**\n\n**T:** +61 (3) 8610 4723\n\n**E:** info@peako.com.au\n\n\n# **Corporate Directory**\n\n#### **DIRECTORS**\n\n**Geoffrey Albers** (Non-Executive Chairman)\n\n**Raewyn Clark** (Executive Director)\n\n**Paul Kitto** (Non-Executive Technical Director) Appointed 20 September 2021\n\n#### **COMPANY SECRETARY**\n\n**Robert Wright**\n\n#### **REGISTERED OFFICE**\n\nLevel 1, 10 Yarra Street, South Yarra Victoria, 3141 Australia\n\n- **W:** www.peako.com.au\n- **E:** info@peako.com.au\n- **T:** (03) 8610 4723\n- **F:** (03) 8610 4799\n\n#### **AUDITOR**",
+    "is_overlap_region": false,
+    "generation_strategy": "academic_pattern"
+  },
+  {
+    "id": "s5_ed0a4250",
+    "question": "How does the contact process described in one section relate to the service outcome in another?",
+    "question_type": "multi_hop",
+    "hierarchy": "section",
+    "gold_chunk_ids": [
+      "B_2_185"
+    ],
+    "expected_answer": "The contact process provides customers with direct communication options, such as a phone number and email, ensuring that inquiries are handled promptly which contributes to a positive service outcome.",
+    "source_chunk_text": "**ASX:PKO peako.com.au**\n\nLevel 1, 10 Yarra Street, South Yarra, Victoria 3141\n\n- **T:** +61 (3) 8610 4723\n- **E:** info@peako.com.au",
+    "is_overlap_region": false,
+    "generation_strategy": "academic_pattern"
+  }
+]

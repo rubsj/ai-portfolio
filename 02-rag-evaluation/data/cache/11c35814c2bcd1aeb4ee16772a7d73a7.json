@@ -1,0 +1,9 @@
+{
+  "cache_key": "11c35814c2bcd1aeb4ee16772a7d73a7",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-14T01:28:16.941184+00:00",
+  "response": {
+    "question": "How did Kruger Products' financial performance in 2022, including their net losses and adjustments in accounting standards, reflect on their future outlook and operational changes?",
+    "answer": "In 2022, Kruger Products reported a significant net loss of $56.9 million, a stark contrast to a net income of $42.0 million in 2021, primarily driven by a decrease in Adjusted EBITDA, reduced income tax recovery, higher foreign exchange losses, and increased depreciation expense. Additionally, an equity loss of $13.3 million was reported. The company's adoption of IFRS 16 Leases on January 1, 2019, and the subsequent restatement of fiscal 2018, indicated a shift in accounting treatment that could impact financial reporting going forward. Despite these challenges, the management expressed a commitment to achieve topline growth and improved profitability in 2023, while emphasizing the importance of monitoring input costs and currency fluctuations. The recent corporate reorganization into Kruger Products Inc. aimed to enhance operational efficiency without adversely affecting the corporation, indicating a strategic move towards better financial health."
+  }
+}
