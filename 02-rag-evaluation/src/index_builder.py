@@ -152,7 +152,7 @@ def _build_faiss_indices_local(
     INDICES_DIR.mkdir(parents=True, exist_ok=True)
 
     for model in LOCAL_EMBEDDING_MODELS:
-        model_key = model_key(model)
+        mk = model_key(model)
         logger.info("=" * 60)
         logger.info("Loading local model: %s", model.value)
         start = time.perf_counter()
@@ -160,7 +160,7 @@ def _build_faiss_indices_local(
         logger.info("Model loaded in %.1fs", time.perf_counter() - start)
 
         for config_name, chunks in chunks_by_config.items():
-            _embed_and_save(embedder, model_key, config_name, chunks)
+            _embed_and_save(embedder, mk, config_name, chunks)
 
         # WHY explicit cleanup: Python's gc doesn't immediately free the
         # model's ~400MB of tensors. `del` drops the reference, gc.collect()
@@ -182,13 +182,13 @@ def _build_faiss_indices_api(
     INDICES_DIR.mkdir(parents=True, exist_ok=True)
 
     for model in API_EMBEDDING_MODELS:
-        model_key = model_key(model)
+        mk = model_key(model)
         logger.info("=" * 60)
         logger.info("Using API model: %s", model.value)
         embedder = create_embedder(model)
 
         for config_name, chunks in chunks_by_config.items():
-            _embed_and_save(embedder, model_key, config_name, chunks)
+            _embed_and_save(embedder, mk, config_name, chunks)
 
 
 def _embed_and_save(
