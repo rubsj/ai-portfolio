@@ -1,0 +1,19 @@
+{
+  "cache_key": "d5180056b7f13fb8ce23ea47f4f6c6d8",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-14T01:27:39.767905+00:00",
+  "response": {
+    "factual": {
+      "question": "What was the value of ShareCapital at 1 January 2021?",
+      "answer": "\u00a33,208,000"
+    },
+    "analytical": {
+      "question": "Why did the Retained Earnings show a negative value at 1 January 2021?",
+      "answer": "The Retained Earnings showed a negative value of (22,273) due to accumulated losses exceeding the profits retained."
+    },
+    "connective": {
+      "question": "How does the total comprehensive loss for the year relate to the overall financial health of the company?",
+      "answer": "The total comprehensive loss of (383) highlights the company's decreased financial health, indicating that losses during the year further deteriorated the Retained Earnings."
+    }
+  }
+}

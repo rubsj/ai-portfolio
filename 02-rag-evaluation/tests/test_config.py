@@ -181,7 +181,7 @@ class TestConstants:
         assert RETRIEVAL_K_VALUES == [1, 3, 5]
 
     def test_retrieval_top_n(self) -> None:
-        assert RETRIEVAL_TOP_N == 20
+        assert RETRIEVAL_TOP_N == 10
 
     def test_rerank_top_n(self) -> None:
         assert RERANK_TOP_N == 5

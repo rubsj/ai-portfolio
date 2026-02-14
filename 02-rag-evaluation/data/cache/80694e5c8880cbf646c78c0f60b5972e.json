@@ -1,0 +1,19 @@
+{
+  "cache_key": "80694e5c8880cbf646c78c0f60b5972e",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-14T01:27:43.765306+00:00",
+  "response": {
+    "factual": {
+      "question": "What happened at the Company since the year end?",
+      "answer": "The Company has subscribed for 1.6 million shares in Celsius Resources Limited for a consideration of \u00a3125,000 in cash."
+    },
+    "analytical": {
+      "question": "Why might the Company have decided to subscribe for shares in Celsius Resources Limited?",
+      "answer": "The Company may have decided to subscribe for shares in Celsius Resources Limited to invest in a potentially profitable opportunity, diversify its investments, or align with strategic business goals."
+    },
+    "connective": {
+      "question": "How does the Company's action of subscribing for shares in Celsius Resources Limited relate to investment strategies in publicly listed companies?",
+      "answer": "The action of subscribing for shares in a publicly listed company like Celsius Resources Limited reflects a common investment strategy where firms seek growth or returns through equity investments in other companies."
+    }
+  }
+}

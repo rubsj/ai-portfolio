@@ -1,0 +1,9 @@
+{
+  "cache_key": "dd4466a222c4e5801943a671e3c6d5e4",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-14T01:29:07.931386+00:00",
+  "response": {
+    "question": "What happens to the interest rate on the IQ Bathroom Tissue Loan if KPLP is in default, and how long can the increased rate last before it becomes permanent?",
+    "answer": "If KPLP is in default under the KPLP Contribution Undertaking Agreement, the interest rate on the IQ Bathroom Tissue Loan increases from 2.0% per annum to 6.0% per annum until the default is remedied to IQ's satisfaction within twelve months of the KPLP Default Date. If the default is not remedied within that period, the increased rate of 6.0% per annum continues to apply permanently."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "cache_key": "6b8018a0de508921398185f4457c05f0",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-14T01:27:36.361090+00:00",
+  "response": {
+    "factual": {
+      "question": "Who is the Chairman of Armadale Capital Plc?",
+      "answer": "Nicholas Johansen"
+    },
+    "analytical": {
+      "question": "Why is the role of the Chairman significant in the context of a company's annual report?",
+      "answer": "The Chairman plays a crucial role in guiding the company's strategic direction and ensuring accountability, which is critical for stakeholders reviewing the annual report."
+    },
+    "connective": {
+      "question": "How does the structure of Armadale Capital Plc's annual report reflect best practices in corporate governance?",
+      "answer": "The structured format, including sections like the Directors' Report and Independent Auditor's Report, demonstrates transparency and compliance with corporate governance standards, which are essential for building investor trust."
+    }
+  }
+}

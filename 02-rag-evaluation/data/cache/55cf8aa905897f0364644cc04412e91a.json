@@ -1,0 +1,9 @@
+{
+  "cache_key": "55cf8aa905897f0364644cc04412e91a",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-14T01:29:16.234562+00:00",
+  "response": {
+    "question": "What trends can be observed in the principal repayments and interest payments across the listed loans and obligations, and how do they collectively contribute to the total contractual obligations over the presented periods?",
+    "answer": "The principal repayments show variability across different loans, with KPSI IQ Debenture consistently contributing significant amounts each period while other loans like Quebec PM Loan fluctuate more. Interest payments are generally high and consistently decline over the periods, contributing a substantial total to the overall obligations. The combined total contractual obligations reflect these trends, peaking in certain periods and indicating the overall financial commitment."
+  }
+}

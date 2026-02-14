@@ -1,0 +1,9 @@
+{
+  "cache_key": "ed77a1af6d372099019fbad1bfc951a3",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-14T01:29:38.243182+00:00",
+  "response": {
+    "question": "What are the main components of the corporate directory as described?",
+    "answer": "The main components of the corporate directory include the Directors, Company Secretary, Registered Office, and Auditor."
+  }
+}

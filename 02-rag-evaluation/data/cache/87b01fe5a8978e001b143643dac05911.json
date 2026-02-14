@@ -1,0 +1,9 @@
+{
+  "cache_key": "87b01fe5a8978e001b143643dac05911",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-14T01:28:40.082514+00:00",
+  "response": {
+    "question": "What were the significant personnel changes, option exercisability details, and financial contributions of Darryl Clark, Paul Kitto, and Raewyn Clark as mentioned in the document?",
+    "answer": "Darryl Clark resigned on 20 September 2021 and was replaced by Paul Kitto. The document outlines several stock options for both individuals: Darryl had options exercisable at $0.04 by 28 November 2022 for 1,000,000 shares and additional options at $0.06 by 21 June 2023 for 1,000,000 shares, among others. Paul Kitto had various exercisable options, with the first being at $0.06 by 29 March 2024 and additional options of $0.10 by 25 November 2024, both for 1,000,000 shares. Raewyn Clark is associated with 2,000,000 options at varying prices, including options at $0.06 and the $0.044 exercisable by 5 November 2023. The financial contributions include various amounts listed for each individual, with Darryl Clark contributing significantly through multiple option exercises, while Raewyn's contributions are noted in terms of received options."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "cache_key": "f55b3fa48ebb1652a93a2b6884310608",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-14T01:27:56.664162+00:00",
+  "response": {
+    "factual": {
+      "question": "Who is a member of the Corporation Audit Committee?",
+      "answer": "The individual mentioned is a member of the Corporation Audit Committee."
+    },
+    "analytical": {
+      "question": "How does the role of the member in the KPGP Audit Committee contribute to corporate governance?",
+      "answer": "The member's role in the KPGP Audit Committee contributes to corporate governance by overseeing financial reporting and ensuring accountability and transparency within the organization."
+    },
+    "connective": {
+      "question": "How do the responsibilities of the Audit Committees relate to the overall mission of Kruger Products Inc.?",
+      "answer": "The responsibilities of the Audit Committees relate to the overall mission of Kruger Products Inc. by ensuring financial integrity and governance, which are essential for making everyday life more comfortable for their customers."
+    }
+  }
+}

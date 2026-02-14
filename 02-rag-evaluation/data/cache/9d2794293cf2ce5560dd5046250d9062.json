@@ -1,0 +1,9 @@
+{
+  "cache_key": "9d2794293cf2ce5560dd5046250d9062",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-14T01:29:20.019741+00:00",
+  "response": {
+    "question": "How do the financial figures from the Consolidated Statement of Profit or Loss and Other Comprehensive Income for the year ended 30 June 2022 reflect the operational performance of Grant Thornton Audit Pty Ltd in relation to government support during the Covid pandemic, and what implications can be drawn from the year-over-year changes in income and expenses?",
+    "answer": "The financial figures show that there was a significant reduction in income from government grants due to Covid, dropping from $20,000 in 2021 to $0 in 2022. While sundry income increased to $1,863 from $350, the overall income remained low. On the expense side, there were increases in accounting fees, conferences and travel, depreciation, director fees, and particularly in heritage protection/community management fees, which rose significantly from $49,600 to $82,202. This suggests that while the company did not receive government support in 2022, it still faced rising costs, impacting its overall operational performance negatively compared to the previous year."
+  }
+}

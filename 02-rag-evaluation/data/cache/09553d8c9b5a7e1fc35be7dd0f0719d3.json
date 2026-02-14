@@ -1,0 +1,9 @@
+{
+  "cache_key": "09553d8c9b5a7e1fc35be7dd0f0719d3",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-14T01:28:12.190695+00:00",
+  "response": {
+    "question": "How did the total number of shares and the financial movements related to warrants impact the overall equity and comprehensive loss for the period ending 31 December 2022 compared to 31 December 2021?",
+    "answer": "As of 31 December 2022, the total number of shares issued increased to 3,324 from 3,275 at the end of 2021, reflecting a consistent issue of shares amounting to 1,296 each year, while the transfer on exercise and expiry of warrants resulted in a decrease of 563 shares. This contributed to a total of 22,279 for the equity share category by the end of 2022. Additionally, the total comprehensive loss for the year was (238), which was identical to the loss of (238) from the previous year, indicating that while the number of shares grew, the company maintained the same level of financial loss over the two years."
+  }
+}

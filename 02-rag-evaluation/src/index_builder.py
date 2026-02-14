@@ -33,9 +33,11 @@ from src.config import (
     ALL_CHUNK_CONFIGS,
     API_EMBEDDING_MODELS,
     BM25_CHUNK_CONFIG,
+    INDICES_DIR,
     INPUT_DIR,
     LOCAL_EMBEDDING_MODELS,
     OUTPUT_DIR,
+    model_key,
 )
 from src.embedder import create_embedder
 from src.models import Chunk, EmbeddingModel
@@ -43,10 +45,6 @@ from src.parser import parse_document
 from src.vector_store import FAISSVectorStore
 
 logger = logging.getLogger(__name__)
-
-# WHY data/output/indices/: keeps index files separate from other output files
-# (chunk JSONs, metrics, etc). Clean directory structure for 16+ files.
-INDICES_DIR = OUTPUT_DIR / "indices"
 
 
 # ===========================================================================
@@ -154,7 +152,7 @@ def _build_faiss_indices_local(
     INDICES_DIR.mkdir(parents=True, exist_ok=True)
 
     for model in LOCAL_EMBEDDING_MODELS:
-        model_key = _model_key(model)
+        model_key = model_key(model)
         logger.info("=" * 60)
         logger.info("Loading local model: %s", model.value)
         start = time.perf_counter()
@@ -184,7 +182,7 @@ def _build_faiss_indices_api(
     INDICES_DIR.mkdir(parents=True, exist_ok=True)
 
     for model in API_EMBEDDING_MODELS:
-        model_key = _model_key(model)
+        model_key = model_key(model)
         logger.info("=" * 60)
         logger.info("Using API model: %s", model.value)
         embedder = create_embedder(model)
@@ -354,19 +352,6 @@ def _run_checkpoint_queries(chunks_by_config: dict[str, list[Chunk]]) -> None:
 # ===========================================================================
 # Helpers
 # ===========================================================================
-
-def _model_key(model: EmbeddingModel) -> str:
-    """Convert EmbeddingModel enum to a short key for file naming.
-
-    WHY short keys: file names like 'minilm_A.faiss' are cleaner than
-    'all-MiniLM-L6-v2_A.faiss'. Also avoids special characters in paths.
-    """
-    return {
-        EmbeddingModel.MINILM: "minilm",
-        EmbeddingModel.MPNET: "mpnet",
-        EmbeddingModel.OPENAI: "openai",
-    }[model]
-
 
 def _model_enum_from_key(key: str) -> EmbeddingModel:
     """Reverse lookup: short key → EmbeddingModel enum."""

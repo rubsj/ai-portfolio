@@ -1,0 +1,19 @@
+{
+  "cache_key": "70fc926f3ab961bc895f456f3279bb2c",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-14T01:27:47.651912+00:00",
+  "response": {
+    "factual": {
+      "question": "What is Kruger Products known for producing?",
+      "answer": "Kruger Products is known for manufacturing quality tissue products for household, industrial and commercial use."
+    },
+    "analytical": {
+      "question": "Why is it significant that Kruger Products operates nine FSC\u00ae COC-certified production facilities?",
+      "answer": "It is significant because FSC\u00ae COC certification indicates that the products are sourced from responsibly managed forests, which is important for environmental sustainability and can enhance the company's reputation."
+    },
+    "connective": {
+      "question": "How does Kruger Products' role in the Canadian market compare to its operations in the U.S.?",
+      "answer": "Kruger Products is a leading manufacturer in Canada, serving the consumer market with well-known brands, while in the U.S., it produces the White Cloud\u00ae brand and private label products, indicating a different market strategy."
+    }
+  }
+}

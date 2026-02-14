@@ -1,0 +1,9 @@
+{
+  "cache_key": "045f78e8099c443bdd638a02307bd1ce",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-14T01:28:34.205052+00:00",
+  "response": {
+    "question": "What were the total dividends paid, the number of common shares issued, and the gross proceeds from the issuance in relation to the prices per share on the dividend payments and how does this relate to the dividend reinvestment plan and the Shareholders' Agreement following the Kruger Products Reorganization?",
+    "answer": "The total dividends paid amounted to 7,058 (in thousands of dollars), with 143,648 common shares issued, resulting in gross proceeds of 1,498 (in thousands of dollars). The price per share varied across different dates, ranging from 10.26 to 10.70. The dividend reinvestment plan (DRIP) allowed shareholders to reinvest dividends into additional common shares at close to this pricing, as established in the Shareholders' Agreement post-reorganization, which simplified the corporate structure and enhanced shareholder rights regarding dividends."
+  }
+}
