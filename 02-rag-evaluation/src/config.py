@@ -30,6 +30,10 @@ INPUT_DIR = DATA_DIR / "input"
 CACHE_DIR = DATA_DIR / "cache"
 OUTPUT_DIR = DATA_DIR / "output"
 
+# WHY separate indices dir: keeps 16+ index files (FAISS + BM25) separate
+# from other output files (chunk JSONs, QA pairs). Clean directory structure.
+INDICES_DIR = OUTPUT_DIR / "indices"
+
 RESULTS_DIR = PROJECT_ROOT / "results"
 CHARTS_DIR = RESULTS_DIR / "charts"
 METRICS_DIR = RESULTS_DIR / "metrics"
@@ -149,8 +153,9 @@ JUDGE_MODEL = "gpt-4o"               # RAGAS evaluation + LLM-as-Judge
 # K values for Recall@K, Precision@K, MRR@K (PRD Section 6a)
 RETRIEVAL_K_VALUES: list[int] = [1, 3, 5]
 
-# How many chunks to retrieve before reranking (PRD Section 2: "top-20 → top-5")
-RETRIEVAL_TOP_N = 20
+# WHY 10: Day 3 grid search retrieves top-10 for evaluation (no reranking).
+# Day 4 reranking will use RERANK_TOP_N=5 to narrow down.
+RETRIEVAL_TOP_N = 10
 RERANK_TOP_N = 5
 
 # BM25 uses Config B chunks (PRD Section 3c: "Config 16: BM25 baseline using Config B chunks")
@@ -184,3 +189,24 @@ SEMANTIC_MIN_TOKENS = 32
 
 # Sections above this token count get subdivided using SEMANTIC_SUBDIVISION_CONFIG
 SEMANTIC_MAX_TOKENS = 512
+
+
+# ===========================================================================
+# Model Key Mapping — used by index_builder, grid_search, synthetic_qa
+# ===========================================================================
+
+def model_key(model: EmbeddingModel) -> str:
+    """Convert EmbeddingModel enum to a short key for file naming.
+
+    WHY short keys: file names like 'minilm_A.faiss' are cleaner than
+    'all-MiniLM-L6-v2_A.faiss'. Also avoids special characters in paths.
+
+    WHY in config.py (not index_builder.py): multiple modules need this
+    mapping (grid_search, synthetic_qa). Central location avoids importing
+    private functions across modules.
+    """
+    return {
+        EmbeddingModel.MINILM: "minilm",
+        EmbeddingModel.MPNET: "mpnet",
+        EmbeddingModel.OPENAI: "openai",
+    }[model]
