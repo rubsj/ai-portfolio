@@ -458,6 +458,19 @@ def print_summary(evaluations: list[ConfigEvaluation]) -> None:
 # ===========================================================================
 
 if __name__ == "__main__":
+    # WHY force CPU: MPS (Apple Silicon GPU) causes SIGSEGV when loading
+    # a second SentenceTransformer model after gc.collect() frees the first.
+    # torch.set_default_device("cpu") must run before faiss C-library loads,
+    # but `python -m src.grid_search` runs module-level imports (faiss) first.
+    #
+    # WORKAROUND: run via inline script that sets torch device before imports:
+    #   uv run python -c "import torch; torch.set_default_device('cpu'); \
+    #     from src.grid_search import *; from src.synthetic_qa import load_qa_pairs; \
+    #     qa_pairs = load_qa_pairs(); evals = run_grid_search(qa_pairs); \
+    #     save_grid_results(evals); print_summary(evals)"
+    import torch
+    torch.set_default_device("cpu")
+
     logging.basicConfig(
         level=logging.INFO,
         format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
