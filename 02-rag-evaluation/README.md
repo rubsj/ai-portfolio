@@ -261,10 +261,19 @@ python -m src.cli report --format json | jq '.[] | {config: .config_id, recall: 
 ### 5. Launch Streamlit Demo
 
 ```bash
-streamlit run streamlit_app.py
+# From the monorepo root, navigate to project directory
+cd 02-rag-evaluation
+
+# Install dependencies (if not already installed)
+uv sync
+
+# Run Streamlit app
+uv run streamlit run streamlit_app.py
 ```
 
 **Access:** http://localhost:8501
+
+The app will automatically open in your default browser. If not, navigate to the URL manually.
 
 **Pages:**
 - 📊 Dashboard — Metrics overview + interactive heatmap
