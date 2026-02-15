@@ -19,6 +19,7 @@ from __future__ import annotations
 
 import json
 import logging
+import time
 
 import numpy as np
 
@@ -89,6 +90,11 @@ def rerank_chunks(
     # WHY lazy import: avoids loading cohere at module level, which would
     # require COHERE_API_KEY to be set even for tests that mock this function.
     import cohere
+
+    # WHY rate limit: Cohere trial key allows 10 API calls/minute.
+    # 6.5s between calls keeps us safely under the limit.
+    # Only affects uncached calls — cached responses bypass this.
+    time.sleep(6.5)
 
     client = cohere.ClientV2(api_key=COHERE_API_KEY)
     response = client.rerank(
