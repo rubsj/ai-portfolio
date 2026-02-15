@@ -8,6 +8,7 @@ dependencies = [
     "faiss-cpu>=1.13.2",
     "instructor>=1.14.5",
     "judges>=0.1.1",
+    "langchain-openai>=0.3.0",
     "langchain-text-splitters>=1.1.0",
     "litellm>=1.81.11",
     "matplotlib>=3.10.8",

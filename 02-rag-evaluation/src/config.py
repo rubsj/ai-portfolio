@@ -158,6 +158,11 @@ RETRIEVAL_K_VALUES: list[int] = [1, 3, 5]
 RETRIEVAL_TOP_N = 10
 RERANK_TOP_N = 5
 
+# WHY 20: wider candidate pool for Cohere cross-encoder reranking.
+# FAISS retrieves top-20, Cohere narrows to top-5 (RERANK_TOP_N).
+RERANK_RETRIEVAL_TOP_N = 20
+COHERE_RERANK_MODEL = "rerank-v3.5"
+
 # BM25 uses Config B chunks (PRD Section 3c: "Config 16: BM25 baseline using Config B chunks")
 BM25_CHUNK_CONFIG = CONFIG_B
 
