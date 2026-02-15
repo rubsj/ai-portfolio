@@ -1231,11 +1231,34 @@ class TestLayer5_AggregationCrossCheck:
     """
 
     def _load_grid_search_report(self) -> dict:
+        # WHY: Try both paths. Legacy reports in reports/, new results in metrics/
         report_path = REPORTS_DIR / "grid_search_report.json"
-        if not report_path.exists():
-            pytest.skip("Grid search report not found")
-        with open(report_path) as f:
-            return json.load(f)
+        metrics_path = PROJECT_ROOT / "results" / "metrics" / "grid_search_results.json"
+        ragas_path = PROJECT_ROOT / "results" / "metrics" / "ragas_results.json"
+
+        report = None
+        if report_path.exists():
+            with open(report_path) as f:
+                report = json.load(f)
+        elif metrics_path.exists():
+            with open(metrics_path) as f:
+                data = json.load(f)
+                # WHY: Metrics file is a list, but tests expect dict with config_evaluations key
+                if isinstance(data, list):
+                    report = {"config_evaluations": data}
+                else:
+                    report = data
+
+        if not report:
+            pytest.skip("Grid search report not found — run grid search first")
+
+        # WHY: Load RAGAS results separately if available (common when eval done separately)
+        if ragas_path.exists():
+            with open(ragas_path) as f:
+                ragas_data = json.load(f)
+                report["ragas_results"] = ragas_data
+
+        return report
 
     @requires_outputs
     def test_avg_recall_matches_manual_average(self):
@@ -1266,10 +1289,9 @@ class TestLayer5_AggregationCrossCheck:
             # Manually compute average Recall@5 from individual results
             recall_values = []
             for result in individual:
-                r5 = (
-                    result.get("recall_at_5")
-                    or result.get("recall_5")
-                )
+                # WHY: Use 'is not None' instead of 'or' to avoid skipping zero values.
+                # 0.0 is falsy in Python, so 'r5 or fallback' would skip all zeros.
+                r5 = result.get("recall_at_5")
                 if r5 is not None:
                     recall_values.append(r5)
 
