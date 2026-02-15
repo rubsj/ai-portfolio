@@ -303,16 +303,20 @@ echo "BRAINTRUST_API_KEY=..." >> .env
 - [ ] Task 24: Run reranking + all evaluations
 - [ ] Checkpoint: Complete evaluation pipeline, Braintrust dashboard
 
-### Day 5 — CLI, Streamlit, Docs, Deploy (Tue Feb 17)
-- [ ] Task 25: CLI with Rich output
-- [ ] Task 26: Streamlit app
-- [ ] Task 27: All 12 charts generated
-- [ ] Task 28: GridSearchReport compiled
-- [ ] Task 29: README with Mermaid diagram
-- [ ] Task 30: 5 ADRs written
-- [ ] Deployed to Streamlit Cloud
-- [ ] Loom recorded
-- [ ] P2 marked Done in Notion
+### Day 5 — CLI, Streamlit, Docs, Deploy (Sat Feb 15)
+- [x] Task 27: All 12 charts generated (8 new + 4 existing) — PR #TBD
+- [x] Task 29: README with Mermaid diagram and verified metrics — PR #TBD
+- [x] Task 26: Streamlit app (7 pages, interactive dashboard) — PR #TBD
+- [x] Task 28: GridSearchReport compiled — PR #TBD
+- [x] Task 25: CLI with Rich output (3 commands: run, report, compare) — PR #TBD
+- [x] Task 30: 5 ADRs written (completed on Day 4)
+- [ ] Deployed to Streamlit Cloud (Week 8 polish phase)
+- [ ] Loom recorded (Week 8 polish phase)
+- [ ] P2 marked Done in Notion (Week 8 polish phase)
+
+**Branch:** `feat/p2-day5-deliverables`
+**Commits:** 4 commits (3b95d8a, 9aae5f1, ff6bb88, d1ec69f)
+**Status:** All core Day 5 tasks complete. Ready for PR merge.
 
 ---
 
