@@ -1,0 +1,7 @@
+{
+  "config_id": "E-openai",
+  "faithfulness": 0.5107142857142858,
+  "answer_relevancy": 0.5625,
+  "context_recall": 0.7125,
+  "context_precision": 0.7339285714285715
+}

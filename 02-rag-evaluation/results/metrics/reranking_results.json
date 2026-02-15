@@ -1,0 +1,38 @@
+[
+  {
+    "config_id": "E-openai",
+    "precision_at_5_before": 0.23214285714285715,
+    "precision_at_5_after": 0.2642857142857143,
+    "recall_at_5_before": 0.624702380952381,
+    "recall_at_5_after": 0.7467261904761905,
+    "mrr_at_5_before": 0.5779761904761905,
+    "mrr_at_5_after": 0.7008928571428571,
+    "precision_improvement_pct": 13.846153846153845,
+    "recall_improvement_pct": 19.533111005240592,
+    "mrr_improvement_pct": 21.266735324407808
+  },
+  {
+    "config_id": "B-openai",
+    "precision_at_5_before": 0.2285714285714286,
+    "precision_at_5_after": 0.23214285714285715,
+    "recall_at_5_before": 0.6071428571428571,
+    "recall_at_5_after": 0.6666666666666667,
+    "mrr_at_5_before": 0.6211309523809524,
+    "mrr_at_5_after": 0.6428571428571429,
+    "precision_improvement_pct": 1.5624999999999942,
+    "recall_improvement_pct": 9.803921568627471,
+    "mrr_improvement_pct": 3.4978437949209447
+  },
+  {
+    "config_id": "D-openai",
+    "precision_at_5_before": 0.225,
+    "precision_at_5_after": 0.28214285714285714,
+    "recall_at_5_before": 0.529421768707483,
+    "recall_at_5_after": 0.6703656462585034,
+    "mrr_at_5_before": 0.49374999999999997,
+    "mrr_at_5_after": 0.6955357142857144,
+    "precision_improvement_pct": 25.39682539682539,
+    "recall_improvement_pct": 26.622229360745248,
+    "mrr_improvement_pct": 40.86799276672697
+  }
+]
