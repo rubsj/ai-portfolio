@@ -1,0 +1,29 @@
+{
+  "cache_key": "eaea0d7d07bfea424137f4ae7c4b18f6",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:59:26.537125+00:00",
+  "query": "What exploration tenements has the Company applied for in the years ending 30 June 2021 and 30 June 2022, what financial implications arose from the relinquishing of exploration tenure in the Paterson region, and how do the prepayments for tenement rents relate to these applications and their associated costs?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "D_2_153",
+      "relevance_score": 0.94263905
+    },
+    {
+      "chunk_id": "D_2_185",
+      "relevance_score": 0.9191869
+    },
+    {
+      "chunk_id": "D_2_50",
+      "relevance_score": 0.8029425
+    },
+    {
+      "chunk_id": "D_2_176",
+      "relevance_score": 0.7040996
+    },
+    {
+      "chunk_id": "D_2_9",
+      "relevance_score": 0.46978843
+    }
+  ]
+}

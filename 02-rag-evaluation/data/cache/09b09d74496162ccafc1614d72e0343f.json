@@ -1,0 +1,8 @@
+{
+  "cache_key": "09b09d74496162ccafc1614d72e0343f",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-15T03:14:51.022184+00:00",
+  "question": "What happens to the interest rate on the IQ Bathroom Tissue Loan if KPLP is in default, and how long can the increased rate last before it becomes permanent?",
+  "method": "bloom_classifier",
+  "response": "level: Understand  \nreasoning: The question asks for an explanation of the conditions and duration related to the interest rate change, which involves understanding the terms of the loan agreement."
+}

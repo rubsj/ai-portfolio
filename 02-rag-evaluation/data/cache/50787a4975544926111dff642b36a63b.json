@@ -1,0 +1,29 @@
+{
+  "cache_key": "50787a4975544926111dff642b36a63b",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:43:39.195449+00:00",
+  "query": "Who is the Chairman of Armadale Capital Plc?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "E_0_33",
+      "relevance_score": 0.3539422
+    },
+    {
+      "chunk_id": "E_0_21",
+      "relevance_score": 0.28795347
+    },
+    {
+      "chunk_id": "E_0_74",
+      "relevance_score": 0.26206607
+    },
+    {
+      "chunk_id": "E_0_22",
+      "relevance_score": 0.18387224
+    },
+    {
+      "chunk_id": "E_0_3",
+      "relevance_score": 0.17848319
+    }
+  ]
+}

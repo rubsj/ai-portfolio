@@ -1,0 +1,29 @@
+{
+  "cache_key": "cf7eae89ff18b66f31b8f71e3da957e1",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:48:28.245708+00:00",
+  "query": "What was the amount of deferred tax liabilities to be realized greater than 12 months reported on December 31, 2022?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "E_1_264",
+      "relevance_score": 0.77179235
+    },
+    {
+      "chunk_id": "E_1_265",
+      "relevance_score": 0.6072213
+    },
+    {
+      "chunk_id": "E_0_85",
+      "relevance_score": 0.48235655
+    },
+    {
+      "chunk_id": "E_2_112",
+      "relevance_score": 0.46759978
+    },
+    {
+      "chunk_id": "E_0_89",
+      "relevance_score": 0.33456823
+    }
+  ]
+}

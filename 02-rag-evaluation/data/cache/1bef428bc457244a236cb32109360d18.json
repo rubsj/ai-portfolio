@@ -1,0 +1,29 @@
+{
+  "cache_key": "1bef428bc457244a236cb32109360d18",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:51:18.340053+00:00",
+  "query": "What is Kruger Products known for producing?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "B_1_0",
+      "relevance_score": 0.91023487
+    },
+    {
+      "chunk_id": "B_1_32",
+      "relevance_score": 0.85797083
+    },
+    {
+      "chunk_id": "B_1_15",
+      "relevance_score": 0.7522497
+    },
+    {
+      "chunk_id": "B_1_33",
+      "relevance_score": 0.6617704
+    },
+    {
+      "chunk_id": "B_1_46",
+      "relevance_score": 0.46935064
+    }
+  ]
+}

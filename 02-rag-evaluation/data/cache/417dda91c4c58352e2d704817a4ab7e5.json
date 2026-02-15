@@ -1,0 +1,29 @@
+{
+  "cache_key": "417dda91c4c58352e2d704817a4ab7e5",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:43:40.914359+00:00",
+  "query": "Why might the Company have decided to subscribe for shares in Celsius Resources Limited?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "E_0_118",
+      "relevance_score": 0.74385756
+    },
+    {
+      "chunk_id": "E_0_32",
+      "relevance_score": 0.63234437
+    },
+    {
+      "chunk_id": "E_0_10",
+      "relevance_score": 0.13455996
+    },
+    {
+      "chunk_id": "E_0_112",
+      "relevance_score": 0.110961735
+    },
+    {
+      "chunk_id": "E_0_101",
+      "relevance_score": 0.0842289
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "cache_key": "b1ed35af382b34e1f39a0eaf0425663f",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-15T03:08:39.929256+00:00",
+  "question": "How does Kruger Products' market presence compare to KPT's equity interest based on the content?",
+  "method": "manual_fallback",
+  "response": "faithfulness: 0.0  \nanswer_relevancy: 0.0  \ncontext_recall: 1.0  \ncontext_precision: 1.0  "
+}

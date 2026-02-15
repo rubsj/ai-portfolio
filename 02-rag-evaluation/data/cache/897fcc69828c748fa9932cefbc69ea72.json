@@ -1,0 +1,8 @@
+{
+  "cache_key": "897fcc69828c748fa9932cefbc69ea72",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-15T03:07:59.380236+00:00",
+  "question": "Who is a member of the Corporation Audit Committee?",
+  "method": "manual_fallback",
+  "response": "faithfulness: 1.0  \nanswer_relevancy: 1.0  \ncontext_recall: 1.0  \ncontext_precision: 0.5  "
+}

@@ -1,0 +1,8 @@
+{
+  "cache_key": "debcddfea0b5c1ec60021672dd11162e",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-15T03:08:06.956827+00:00",
+  "question": "Why might the contact email provided be important for potential investors or clients?",
+  "method": "manual_fallback",
+  "response": "faithfulness: 0.0  \nanswer_relevancy: 0.0  \ncontext_recall: 0.0  \ncontext_precision: 0.0  "
+}

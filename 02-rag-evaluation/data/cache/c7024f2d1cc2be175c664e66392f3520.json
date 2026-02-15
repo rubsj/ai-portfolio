@@ -1,0 +1,29 @@
+{
+  "cache_key": "c7024f2d1cc2be175c664e66392f3520",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:54:14.487696+00:00",
+  "query": "What is the value of stock exchange and share registry costs listed in the report?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "B_2_66",
+      "relevance_score": 0.81665546
+    },
+    {
+      "chunk_id": "B_2_65",
+      "relevance_score": 0.8091708
+    },
+    {
+      "chunk_id": "B_1_201",
+      "relevance_score": 0.29657325
+    },
+    {
+      "chunk_id": "B_2_74",
+      "relevance_score": 0.29149538
+    },
+    {
+      "chunk_id": "B_0_58",
+      "relevance_score": 0.27233878
+    }
+  ]
+}

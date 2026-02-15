@@ -1,0 +1,29 @@
+{
+  "cache_key": "96089dd1cf417f7b5bddbdbdfd160052",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:46:36.956493+00:00",
+  "query": "How does the existence of an official contact point like ASX:PKO reinforce the importance of transparency in financial markets?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "E_2_183",
+      "relevance_score": 0.3333301
+    },
+    {
+      "chunk_id": "E_2_2",
+      "relevance_score": 0.2631475
+    },
+    {
+      "chunk_id": "E_2_1",
+      "relevance_score": 0.22281043
+    },
+    {
+      "chunk_id": "E_2_0",
+      "relevance_score": 0.17171332
+    },
+    {
+      "chunk_id": "E_2_3",
+      "relevance_score": 0.08904994
+    }
+  ]
+}

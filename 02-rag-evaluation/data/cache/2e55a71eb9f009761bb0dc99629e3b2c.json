@@ -1,0 +1,29 @@
+{
+  "cache_key": "2e55a71eb9f009761bb0dc99629e3b2c",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:50:44.413681+00:00",
+  "query": "What was the value of ShareCapital at 1 January 2021?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "B_0_57",
+      "relevance_score": 0.9210814
+    },
+    {
+      "chunk_id": "B_0_62",
+      "relevance_score": 0.9165366
+    },
+    {
+      "chunk_id": "B_0_114",
+      "relevance_score": 0.6580885
+    },
+    {
+      "chunk_id": "B_1_249",
+      "relevance_score": 0.5117904
+    },
+    {
+      "chunk_id": "B_1_273",
+      "relevance_score": 0.4511578
+    }
+  ]
+}

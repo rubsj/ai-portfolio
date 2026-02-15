@@ -1,0 +1,29 @@
+{
+  "cache_key": "92daa824e09d0d207a56d97c9963a5aa",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:45:47.369248+00:00",
+  "query": "How does the role of the member in the KPGP Audit Committee contribute to corporate governance?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "E_1_280",
+      "relevance_score": 0.7471924
+    },
+    {
+      "chunk_id": "E_1_281",
+      "relevance_score": 0.7460839
+    },
+    {
+      "chunk_id": "E_1_220",
+      "relevance_score": 0.24745098
+    },
+    {
+      "chunk_id": "E_1_170",
+      "relevance_score": 0.16677068
+    },
+    {
+      "chunk_id": "E_1_219",
+      "relevance_score": 0.14245868
+    }
+  ]
+}

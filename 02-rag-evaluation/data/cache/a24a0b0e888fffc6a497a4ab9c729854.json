@@ -1,0 +1,29 @@
+{
+  "cache_key": "a24a0b0e888fffc6a497a4ab9c729854",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T03:00:07.001158+00:00",
+  "query": "What does the text indicate is represented by the column headers?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "D_2_154",
+      "relevance_score": 0.1585521
+    },
+    {
+      "chunk_id": "D_2_109",
+      "relevance_score": 0.09583088
+    },
+    {
+      "chunk_id": "D_1_31",
+      "relevance_score": 0.056887858
+    },
+    {
+      "chunk_id": "D_0_79",
+      "relevance_score": 0.054666292
+    },
+    {
+      "chunk_id": "D_1_86",
+      "relevance_score": 0.05200422
+    }
+  ]
+}

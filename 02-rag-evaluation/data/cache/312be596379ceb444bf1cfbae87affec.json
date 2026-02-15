@@ -1,0 +1,29 @@
+{
+  "cache_key": "312be596379ceb444bf1cfbae87affec",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:47:47.527235+00:00",
+  "query": "What are the key contacts and corporate details of ASX:PKO Peako, including their directors, auditor, and share registry information?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "E_2_0",
+      "relevance_score": 0.9145431
+    },
+    {
+      "chunk_id": "E_2_2",
+      "relevance_score": 0.8571119
+    },
+    {
+      "chunk_id": "E_2_1",
+      "relevance_score": 0.8412138
+    },
+    {
+      "chunk_id": "E_2_183",
+      "relevance_score": 0.7596005
+    },
+    {
+      "chunk_id": "E_2_3",
+      "relevance_score": 0.7348247
+    }
+  ]
+}

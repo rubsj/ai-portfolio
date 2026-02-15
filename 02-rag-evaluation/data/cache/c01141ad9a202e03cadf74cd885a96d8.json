@@ -1,0 +1,8 @@
+{
+  "cache_key": "c01141ad9a202e03cadf74cd885a96d8",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-15T03:14:35.971549+00:00",
+  "question": "What is the value of stock exchange and share registry costs listed in the report?",
+  "method": "bloom_classifier",
+  "response": "level: Remember  \nreasoning: The question asks for a specific fact or piece of information from the report."
+}

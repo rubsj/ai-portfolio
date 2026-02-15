@@ -1,0 +1,8 @@
+{
+  "cache_key": "40a7f75f4f568457e4b6f26e8efb860b",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-15T03:08:25.797866+00:00",
+  "question": "What was the amount of deferred tax liabilities to be realized greater than 12 months reported on December 31, 2022?",
+  "method": "manual_fallback",
+  "response": "faithfulness: 1.0  \nanswer_relevancy: 1.0  \ncontext_recall: 1.0  \ncontext_precision: 1.0  "
+}

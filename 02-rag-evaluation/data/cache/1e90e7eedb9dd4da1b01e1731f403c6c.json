@@ -1,0 +1,29 @@
+{
+  "cache_key": "1e90e7eedb9dd4da1b01e1731f403c6c",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:59:19.815882+00:00",
+  "query": "What were the significant personnel changes, option exercisability details, and financial contributions of Darryl Clark, Paul Kitto, and Raewyn Clark as mentioned in the document?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "D_2_72",
+      "relevance_score": 0.7946564
+    },
+    {
+      "chunk_id": "D_2_68",
+      "relevance_score": 0.76385427
+    },
+    {
+      "chunk_id": "D_2_73",
+      "relevance_score": 0.7623715
+    },
+    {
+      "chunk_id": "D_2_74",
+      "relevance_score": 0.7318455
+    },
+    {
+      "chunk_id": "D_2_67",
+      "relevance_score": 0.6755297
+    }
+  ]
+}

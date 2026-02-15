@@ -1,0 +1,29 @@
+{
+  "cache_key": "dd932b007259315dda406c14ab53da9a",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:50:10.653495+00:00",
+  "query": "What are the main components of the corporate directory as described?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "E_1_21",
+      "relevance_score": 0.061995264
+    },
+    {
+      "chunk_id": "E_2_150",
+      "relevance_score": 0.047837958
+    },
+    {
+      "chunk_id": "E_2_53",
+      "relevance_score": 0.045594286
+    },
+    {
+      "chunk_id": "E_2_28",
+      "relevance_score": 0.035360802
+    },
+    {
+      "chunk_id": "E_0_18",
+      "relevance_score": 0.029898632
+    }
+  ]
+}

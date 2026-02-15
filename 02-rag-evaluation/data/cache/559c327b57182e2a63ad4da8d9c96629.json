@@ -1,0 +1,8 @@
+{
+  "cache_key": "559c327b57182e2a63ad4da8d9c96629",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-15T03:07:52.010811+00:00",
+  "question": "How does the Company's action of subscribing for shares in Celsius Resources Limited relate to investment strategies in publicly listed companies?",
+  "method": "manual_fallback",
+  "response": "faithfulness: 1.0  \nanswer_relevancy: 1.0  \ncontext_recall: 1.0  \ncontext_precision: 1.0  "
+}

@@ -1,0 +1,8 @@
+{
+  "cache_key": "986457619291eeb507210efdfbee5c83",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-15T03:14:44.164439+00:00",
+  "question": "What was the total amount of Retained Earnings at the beginning of the year on 1 January 2021, and what was the loss for the period that contributed to the Total comprehensive loss for the year?",
+  "method": "bloom_classifier",
+  "response": "level: Remember  \nreasoning: The question asks for specific factual information regarding financial figures."
+}

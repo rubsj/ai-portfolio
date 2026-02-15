@@ -1,0 +1,8 @@
+{
+  "cache_key": "7801d5dad7688288205efe62141f789f",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-15T03:07:46.784561+00:00",
+  "question": "What was the value of ShareCapital at 1 January 2021?",
+  "method": "manual_fallback",
+  "response": "faithfulness: 1.0  \nanswer_relevancy: 1.0  \ncontext_recall: 1.0  \ncontext_precision: 1.0  "
+}

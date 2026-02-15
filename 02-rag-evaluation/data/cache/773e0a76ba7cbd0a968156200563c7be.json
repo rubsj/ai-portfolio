@@ -1,0 +1,8 @@
+{
+  "cache_key": "773e0a76ba7cbd0a968156200563c7be",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-15T03:07:49.959507+00:00",
+  "question": "What happened at the Company since the year end?",
+  "method": "manual_fallback",
+  "response": "faithfulness: 0.0  \nanswer_relevancy: 0.0  \ncontext_recall: 0.0  \ncontext_precision: 0.0  "
+}

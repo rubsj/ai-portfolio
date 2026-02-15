@@ -1,0 +1,8 @@
+{
+  "cache_key": "b60b0a124a0a26a0d34f5b19ddc32a45",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-15T03:11:23.151593+00:00",
+  "question": "What is the maximum amount of the IQ Bathroom Tissue Loan available to KPSI?",
+  "method": "bloom_classifier",
+  "response": "level: Remember  \nreasoning: The question asks for a specific fact or piece of information."
+}

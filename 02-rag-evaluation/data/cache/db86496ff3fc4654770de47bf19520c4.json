@@ -1,0 +1,8 @@
+{
+  "cache_key": "db86496ff3fc4654770de47bf19520c4",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-15T03:08:06.038422+00:00",
+  "question": "What is the address of ASX:PKO?",
+  "method": "manual_fallback",
+  "response": "faithfulness: 1.0  \nanswer_relevancy: 1.0  \ncontext_recall: 1.0  \ncontext_precision: 1.0  "
+}

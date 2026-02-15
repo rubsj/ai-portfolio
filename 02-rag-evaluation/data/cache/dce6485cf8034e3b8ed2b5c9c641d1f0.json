@@ -1,0 +1,29 @@
+{
+  "cache_key": "dce6485cf8034e3b8ed2b5c9c641d1f0",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:57:45.363203+00:00",
+  "query": "How do the responsibilities of the Audit Committees relate to the overall mission of Kruger Products Inc.?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "D_1_328",
+      "relevance_score": 0.5911811
+    },
+    {
+      "chunk_id": "D_1_255",
+      "relevance_score": 0.2971083
+    },
+    {
+      "chunk_id": "D_1_258",
+      "relevance_score": 0.20544
+    },
+    {
+      "chunk_id": "D_1_0",
+      "relevance_score": 0.200699
+    },
+    {
+      "chunk_id": "D_1_262",
+      "relevance_score": 0.18683611
+    }
+  ]
+}

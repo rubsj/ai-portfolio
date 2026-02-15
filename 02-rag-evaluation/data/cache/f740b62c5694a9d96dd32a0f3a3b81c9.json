@@ -1,0 +1,8 @@
+{
+  "cache_key": "f740b62c5694a9d96dd32a0f3a3b81c9",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-15T03:09:44.976677+00:00",
+  "question": "How does the Company's action of subscribing for shares in Celsius Resources Limited relate to investment strategies in publicly listed companies?",
+  "method": "bloom_classifier",
+  "response": "level: Analyze  \nreasoning: The question requires breaking down and examining the relationship between the company's action and broader investment strategies."
+}

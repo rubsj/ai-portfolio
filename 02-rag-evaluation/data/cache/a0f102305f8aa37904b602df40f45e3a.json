@@ -1,0 +1,8 @@
+{
+  "cache_key": "a0f102305f8aa37904b602df40f45e3a",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-15T03:14:04.125180+00:00",
+  "question": "Who resigned on 20 September 2021?",
+  "method": "bloom_classifier",
+  "response": "level: Remember  \nreasoning: The question asks for a specific fact or event, which requires recalling information."
+}

@@ -1,0 +1,8 @@
+{
+  "cache_key": "3d517f41acb19ee898a5bc514a973d9d",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-15T03:07:48.932640+00:00",
+  "question": "How does the total comprehensive loss for the year relate to the overall financial health of the company?",
+  "method": "manual_fallback",
+  "response": "faithfulness: 0.0  \nanswer_relevancy: 0.0  \ncontext_recall: 0.5  \ncontext_precision: 0.5  "
+}

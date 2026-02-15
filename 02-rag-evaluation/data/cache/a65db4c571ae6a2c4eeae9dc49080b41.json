@@ -1,0 +1,8 @@
+{
+  "cache_key": "a65db4c571ae6a2c4eeae9dc49080b41",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-15T03:08:13.411105+00:00",
+  "question": "What was the total amount of Tax Distribution declared to KPT in 2022, what was the outcome of the Tax Distribution for KPLP in 2023, and how does the Reorganization affect future Tax Distribution obligations?",
+  "method": "manual_fallback",
+  "response": "faithfulness: 1.0  \nanswer_relevancy: 1.0  \ncontext_recall: 1.0  \ncontext_precision: 1.0  "
+}

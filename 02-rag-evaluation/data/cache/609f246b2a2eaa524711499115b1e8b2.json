@@ -1,0 +1,8 @@
+{
+  "cache_key": "609f246b2a2eaa524711499115b1e8b2",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-15T03:08:19.042627+00:00",
+  "question": "What exploration tenements has the Company applied for in the years ending 30 June 2021 and 30 June 2022, what financial implications arose from the relinquishing of exploration tenure in the Paterson region, and how do the prepayments for tenement rents relate to these applications and their associated costs?",
+  "method": "manual_fallback",
+  "response": "faithfulness: 1.0  \nanswer_relevancy: 1.0  \ncontext_recall: 1.0  \ncontext_precision: 1.0  "
+}

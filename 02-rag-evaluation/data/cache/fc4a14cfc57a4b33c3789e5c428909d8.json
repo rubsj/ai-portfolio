@@ -1,0 +1,8 @@
+{
+  "cache_key": "fc4a14cfc57a4b33c3789e5c428909d8",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-15T03:09:37.478931+00:00",
+  "question": "Why might the Company have decided to subscribe for shares in Celsius Resources Limited?",
+  "method": "bloom_classifier",
+  "response": "level: Analyze  \nreasoning: The question requires breaking down and examining the reasons behind the company's decision, which involves understanding relationships and motives."
+}

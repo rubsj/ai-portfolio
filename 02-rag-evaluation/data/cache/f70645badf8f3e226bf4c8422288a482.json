@@ -1,0 +1,8 @@
+{
+  "cache_key": "f70645badf8f3e226bf4c8422288a482",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-15T03:08:20.987005+00:00",
+  "question": "What is the total comprehensive loss for the year as shown in the provided content?",
+  "method": "manual_fallback",
+  "response": "faithfulness: 0.0  \nanswer_relevancy: 0.0  \ncontext_recall: 1.0  \ncontext_precision: 1.0  "
+}

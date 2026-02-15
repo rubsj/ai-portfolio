@@ -1,0 +1,8 @@
+{
+  "cache_key": "ff167a9924c0ca5d739444dec3226c17",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-15T03:07:57.537632+00:00",
+  "question": "Why was the IQ Bathroom Tissue Loan established for KPSI, and what project does it support?",
+  "method": "manual_fallback",
+  "response": "faithfulness: 1.0  \nanswer_relevancy: 1.0  \ncontext_recall: 1.0  \ncontext_precision: 1.0  "
+}

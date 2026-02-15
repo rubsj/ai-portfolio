@@ -1,0 +1,8 @@
+{
+  "cache_key": "b3b8c91ca790783f5e3426122040e6be",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-15T03:15:40.276181+00:00",
+  "question": "What is the Officers and Professional Advisers section as described in the document?",
+  "method": "bloom_classifier",
+  "response": "level: Remember  \nreasoning: The question asks for a recall of specific information from the document."
+}

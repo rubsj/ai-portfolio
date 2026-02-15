@@ -1,0 +1,8 @@
+{
+  "cache_key": "4482debb44fd22c4fe7bdc497584573a",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-15T03:11:53.669607+00:00",
+  "question": "How does the role of the member in the KPGP Audit Committee contribute to corporate governance?",
+  "method": "bloom_classifier",
+  "response": "level: Analyze  \nreasoning: The question requires breaking down the role of the member to understand its contribution to corporate governance, which involves examining relationships and components."
+}

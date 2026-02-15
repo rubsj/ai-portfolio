@@ -1,0 +1,7 @@
+{
+  "cache_key": "c901b4252e08f84642f906a1d2ba584c",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-15T03:03:34.463295+00:00",
+  "question": "How is impairment determined for individual assets according to the company's policy?",
+  "response": "Impairment for individual assets is determined by reviewing the carrying amounts of the assets at each reporting date to identify any indicators of impairment. If such indicators exist, the recoverable amount of the asset is estimated. The recoverable amount is defined as the higher of the asset's fair value less costs to sell and its value in use. In assessing value in use, the estimated future cash flows are discounted to their present value using a pre-tax discount rate that reflects current market assessments of the time value of money and the specific risks associated with the asset. If the recoverable amount is less than the carrying amount, the carrying amount is reduced to the recoverable amount, and an impairment loss is recognized in profit or loss."
+}

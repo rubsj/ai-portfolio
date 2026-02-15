@@ -1,0 +1,29 @@
+{
+  "cache_key": "5e1f6c3f902958feb2665ccfa18f954e",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T03:01:35.053027+00:00",
+  "query": "What are the key figures or statistics mentioned about subsequent events?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "D_1_266",
+      "relevance_score": 0.43554196
+    },
+    {
+      "chunk_id": "D_0_128",
+      "relevance_score": 0.19710459
+    },
+    {
+      "chunk_id": "D_0_90",
+      "relevance_score": 0.15894336
+    },
+    {
+      "chunk_id": "D_0_84",
+      "relevance_score": 0.14629474
+    },
+    {
+      "chunk_id": "D_1_270",
+      "relevance_score": 0.14549161
+    }
+  ]
+}

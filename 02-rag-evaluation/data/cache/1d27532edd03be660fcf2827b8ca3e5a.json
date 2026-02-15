@@ -1,0 +1,7 @@
+{
+  "cache_key": "1d27532edd03be660fcf2827b8ca3e5a",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-15T03:02:43.261090+00:00",
+  "question": "How did the total number of shares and the financial movements related to warrants impact the overall equity and comprehensive loss for the period ending 31 December 2022 compared to 31 December 2021?",
+  "response": "The total number of shares increased from 3,275 at 31 December 2021 to 3,324 at 31 December 2022, indicating an issuance of additional shares. The financial movements related to warrants included a transfer on exercise and expiry of warrants, which resulted in a decrease of (563) in the equity related to warrants in 2022. \n\nOverall, the total comprehensive loss for the period ending 31 December 2022 was (238), compared to (394) for the period ending 31 December 2021. This indicates an improvement in comprehensive loss despite the negative impact of the warrant movements. The increase in shares and the management of warrants contributed to a more favorable equity position, with total equity rising from 5,839 at the end of 2021 to 7,164 at the end of 2022."
+}

@@ -1,0 +1,29 @@
+{
+  "cache_key": "299f8d10505314d42ad9d7fe6e19e9e6",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:57:11.147808+00:00",
+  "query": "What is the maximum amount of the IQ Bathroom Tissue Loan available to KPSI?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "D_1_163",
+      "relevance_score": 0.9623101
+    },
+    {
+      "chunk_id": "D_1_166",
+      "relevance_score": 0.9065293
+    },
+    {
+      "chunk_id": "D_1_161",
+      "relevance_score": 0.8934678
+    },
+    {
+      "chunk_id": "D_1_165",
+      "relevance_score": 0.890761
+    },
+    {
+      "chunk_id": "D_1_169",
+      "relevance_score": 0.87681407
+    }
+  ]
+}

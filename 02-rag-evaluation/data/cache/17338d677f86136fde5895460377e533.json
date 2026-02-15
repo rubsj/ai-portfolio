@@ -1,0 +1,29 @@
+{
+  "cache_key": "17338d677f86136fde5895460377e533",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:54:41.489113+00:00",
+  "query": "What trends can be observed in the principal repayments and interest payments across the listed loans and obligations, and how do they collectively contribute to the total contractual obligations over the presented periods?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "B_1_94",
+      "relevance_score": 0.7602419
+    },
+    {
+      "chunk_id": "B_1_90",
+      "relevance_score": 0.7533401
+    },
+    {
+      "chunk_id": "B_1_93",
+      "relevance_score": 0.6546525
+    },
+    {
+      "chunk_id": "B_1_91",
+      "relevance_score": 0.5122296
+    },
+    {
+      "chunk_id": "B_1_92",
+      "relevance_score": 0.4611872
+    }
+  ]
+}

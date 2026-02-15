@@ -1,0 +1,8 @@
+{
+  "cache_key": "95cb7452fa0df3760464727b487483c0",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-15T03:08:36.858344+00:00",
+  "question": "What are the key themes and financial highlights presented in Kruger Products' 2022 Annual Report, and how do these elements reflect the company's overall performance and corporate strategy for driving long-term value?",
+  "method": "manual_fallback",
+  "response": "faithfulness: 0.0  \nanswer_relevancy: 0.0  \ncontext_recall: 1.0  \ncontext_precision: 1.0  "
+}

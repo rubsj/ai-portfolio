@@ -1,0 +1,29 @@
+{
+  "cache_key": "fa4f1b20511af62e2a5dfd0c88192b7c",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:53:07.069253+00:00",
+  "query": "What were the total dividends paid, the number of common shares issued, and the gross proceeds from the issuance in relation to the prices per share on the dividend payments and how does this relate to the dividend reinvestment plan and the Shareholders' Agreement following the Kruger Products Reorganization?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "B_1_267",
+      "relevance_score": 0.8571119
+    },
+    {
+      "chunk_id": "B_1_265",
+      "relevance_score": 0.8051581
+    },
+    {
+      "chunk_id": "B_1_52",
+      "relevance_score": 0.7587435
+    },
+    {
+      "chunk_id": "B_1_268",
+      "relevance_score": 0.7568076
+    },
+    {
+      "chunk_id": "B_1_34",
+      "relevance_score": 0.69697046
+    }
+  ]
+}

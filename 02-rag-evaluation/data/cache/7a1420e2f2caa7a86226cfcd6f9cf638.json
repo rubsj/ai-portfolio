@@ -1,0 +1,8 @@
+{
+  "cache_key": "7a1420e2f2caa7a86226cfcd6f9cf638",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-15T03:09:54.987945+00:00",
+  "question": "What is Kruger Products known for producing?",
+  "method": "bloom_classifier",
+  "response": "level: Remember  \nreasoning: The question asks for a recall of factual information about what Kruger Products produces."
+}

@@ -1,0 +1,8 @@
+{
+  "cache_key": "633604ca6720c8b8b714151bac0eb4c5",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-15T03:13:14.899756+00:00",
+  "question": "What are the key differences in the loan agreements KPLP has entered into with IQ and the Government of Ontario, specifically regarding loan amounts, purposes, interest rates, maturity dates, and repayment terms?",
+  "method": "bloom_classifier",
+  "response": "level: Analyze  \nreasoning: The question requires breaking down and comparing the components of two loan agreements to identify differences."
+}

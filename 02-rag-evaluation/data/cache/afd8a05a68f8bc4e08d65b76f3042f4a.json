@@ -1,0 +1,8 @@
+{
+  "cache_key": "afd8a05a68f8bc4e08d65b76f3042f4a",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-15T03:07:50.985293+00:00",
+  "question": "Why might the Company have decided to subscribe for shares in Celsius Resources Limited?",
+  "method": "manual_fallback",
+  "response": "faithfulness: 0.0  \nanswer_relevancy: 0.0  \ncontext_recall: 0.5  \ncontext_precision: 0.5  "
+}

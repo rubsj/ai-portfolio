@@ -1,0 +1,8 @@
+{
+  "cache_key": "c29baaf8f435d6f4e3a52abda7668969",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-15T03:12:05.648310+00:00",
+  "question": "Who is the Non-Executive Chairman of Peako?",
+  "method": "bloom_classifier",
+  "response": "level: Remember  \nreasoning: The question asks for a specific fact or piece of information."
+}

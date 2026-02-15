@@ -1,0 +1,29 @@
+{
+  "cache_key": "c1ecac561f1fde09cc6aae864de5e0a8",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:52:53.567427+00:00",
+  "query": "How did the total number of shares and the financial movements related to warrants impact the overall equity and comprehensive loss for the period ending 31 December 2022 compared to 31 December 2021?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "B_0_60",
+      "relevance_score": 0.8742601
+    },
+    {
+      "chunk_id": "B_0_65",
+      "relevance_score": 0.86954874
+    },
+    {
+      "chunk_id": "B_0_63",
+      "relevance_score": 0.8124067
+    },
+    {
+      "chunk_id": "B_0_58",
+      "relevance_score": 0.80698997
+    },
+    {
+      "chunk_id": "B_0_64",
+      "relevance_score": 0.78493005
+    }
+  ]
+}

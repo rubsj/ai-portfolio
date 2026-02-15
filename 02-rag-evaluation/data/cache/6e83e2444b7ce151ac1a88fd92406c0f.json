@@ -1,0 +1,29 @@
+{
+  "cache_key": "6e83e2444b7ce151ac1a88fd92406c0f",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:45:13.633016+00:00",
+  "query": "How does Kruger Products' role in the Canadian market compare to its operations in the U.S.?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "E_1_31",
+      "relevance_score": 0.89053273
+    },
+    {
+      "chunk_id": "E_1_36",
+      "relevance_score": 0.8832463
+    },
+    {
+      "chunk_id": "E_1_0",
+      "relevance_score": 0.88178825
+    },
+    {
+      "chunk_id": "E_1_8",
+      "relevance_score": 0.83710164
+    },
+    {
+      "chunk_id": "E_1_32",
+      "relevance_score": 0.8335554
+    }
+  ]
+}

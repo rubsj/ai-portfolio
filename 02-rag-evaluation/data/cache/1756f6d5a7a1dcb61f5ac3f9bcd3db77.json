@@ -1,0 +1,29 @@
+{
+  "cache_key": "1756f6d5a7a1dcb61f5ac3f9bcd3db77",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:47:54.319557+00:00",
+  "query": "What is the total comprehensive loss for the year as shown in the provided content?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "E_2_73",
+      "relevance_score": 0.8124067
+    },
+    {
+      "chunk_id": "E_0_59",
+      "relevance_score": 0.7890553
+    },
+    {
+      "chunk_id": "E_0_63",
+      "relevance_score": 0.7882741
+    },
+    {
+      "chunk_id": "E_2_71",
+      "relevance_score": 0.7823471
+    },
+    {
+      "chunk_id": "E_0_65",
+      "relevance_score": 0.77446437
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "cache_key": "9b38a34a84be25600cf7b5bc6a70c039",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:56:02.955206+00:00",
+  "query": "How does the structure of Armadale Capital Plc's annual report reflect best practices in corporate governance?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "D_0_25",
+      "relevance_score": 0.796562
+    },
+    {
+      "chunk_id": "D_0_42",
+      "relevance_score": 0.78866494
+    },
+    {
+      "chunk_id": "D_0_26",
+      "relevance_score": 0.7552947
+    },
+    {
+      "chunk_id": "D_0_0",
+      "relevance_score": 0.73846215
+    },
+    {
+      "chunk_id": "D_0_27",
+      "relevance_score": 0.6396691
+    }
+  ]
+}

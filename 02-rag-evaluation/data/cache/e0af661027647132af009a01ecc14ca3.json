@@ -1,0 +1,8 @@
+{
+  "cache_key": "e0af661027647132af009a01ecc14ca3",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-15T03:11:59.504447+00:00",
+  "question": "How do the responsibilities of the Audit Committees relate to the overall mission of Kruger Products Inc.?",
+  "method": "bloom_classifier",
+  "response": "level: Analyze  \nreasoning: The question requires breaking down and examining the relationship between the Audit Committees' responsibilities and the company's mission."
+}

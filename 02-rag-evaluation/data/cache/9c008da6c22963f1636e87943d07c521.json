@@ -1,0 +1,29 @@
+{
+  "cache_key": "9c008da6c22963f1636e87943d07c521",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:46:57.240156+00:00",
+  "query": "How did Kruger Products' financial performance in 2022, including their net losses and adjustments in accounting standards, reflect on their future outlook and operational changes?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "E_1_4",
+      "relevance_score": 0.9094659
+    },
+    {
+      "chunk_id": "E_1_0",
+      "relevance_score": 0.84183896
+    },
+    {
+      "chunk_id": "E_1_20",
+      "relevance_score": 0.8412138
+    },
+    {
+      "chunk_id": "E_1_242",
+      "relevance_score": 0.7680558
+    },
+    {
+      "chunk_id": "E_1_12",
+      "relevance_score": 0.7031221
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "cache_key": "3c96149d05b1bc6d61d3934c1da28247",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:50:03.877941+00:00",
+  "query": "Why does the Annual Meeting of Shareholders occur according to the document?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "E_1_281",
+      "relevance_score": 0.44102347
+    },
+    {
+      "chunk_id": "E_0_16",
+      "relevance_score": 0.25185508
+    },
+    {
+      "chunk_id": "E_0_17",
+      "relevance_score": 0.1771554
+    },
+    {
+      "chunk_id": "E_0_18",
+      "relevance_score": 0.09532438
+    },
+    {
+      "chunk_id": "E_2_122",
+      "relevance_score": 0.09282766
+    }
+  ]
+}

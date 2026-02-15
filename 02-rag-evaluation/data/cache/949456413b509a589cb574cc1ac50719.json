@@ -1,0 +1,8 @@
+{
+  "cache_key": "949456413b509a589cb574cc1ac50719",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-15T03:14:20.713096+00:00",
+  "question": "What does the text indicate is represented by the column headers?",
+  "method": "bloom_classifier",
+  "response": "level: Understand  \nreasoning: The question asks for an explanation of what the column headers represent, which involves interpreting and explaining concepts."
+}

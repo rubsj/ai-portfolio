@@ -1,0 +1,29 @@
+{
+  "cache_key": "0b108d9b6ffaf0a1cd8c969c3e5e69d0",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:49:23.273015+00:00",
+  "query": "How do the financial figures from the Consolidated Statement of Profit or Loss and Other Comprehensive Income for the year ended 30 June 2022 reflect the operational performance of Grant Thornton Audit Pty Ltd in relation to government support during the Covid pandemic, and what implications can be drawn from the year-over-year changes in income and expenses?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "E_2_61",
+      "relevance_score": 0.8682137
+    },
+    {
+      "chunk_id": "E_2_155",
+      "relevance_score": 0.78074646
+    },
+    {
+      "chunk_id": "E_2_62",
+      "relevance_score": 0.71377134
+    },
+    {
+      "chunk_id": "E_2_75",
+      "relevance_score": 0.6469293
+    },
+    {
+      "chunk_id": "E_2_145",
+      "relevance_score": 0.62687886
+    }
+  ]
+}

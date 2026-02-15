@@ -1,0 +1,29 @@
+{
+  "cache_key": "325990dddaa972a8b0da2bb051ed50aa",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:59:46.790678+00:00",
+  "query": "Who resigned on 20 September 2021?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "D_2_66",
+      "relevance_score": 0.8923472
+    },
+    {
+      "chunk_id": "D_2_68",
+      "relevance_score": 0.8914433
+    },
+    {
+      "chunk_id": "D_2_73",
+      "relevance_score": 0.89030397
+    },
+    {
+      "chunk_id": "D_2_74",
+      "relevance_score": 0.8896154
+    },
+    {
+      "chunk_id": "D_2_67",
+      "relevance_score": 0.8763069
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "cache_key": "3d272bda731b97013cd8c504af32e076",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:52:12.943210+00:00",
+  "query": "Why might the appointment of Paul Kitto as Non-Executive Technical Director be significant for Peako?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "B_2_32",
+      "relevance_score": 0.7043437
+    },
+    {
+      "chunk_id": "B_2_6",
+      "relevance_score": 0.70287734
+    },
+    {
+      "chunk_id": "B_2_0",
+      "relevance_score": 0.5923135
+    },
+    {
+      "chunk_id": "B_2_27",
+      "relevance_score": 0.507251
+    },
+    {
+      "chunk_id": "B_2_42",
+      "relevance_score": 0.39599866
+    }
+  ]
+}

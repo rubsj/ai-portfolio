@@ -1,0 +1,29 @@
+{
+  "cache_key": "0821b2a7b5239116566e83cede27a2f1",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:46:14.381551+00:00",
+  "query": "How does the structure of Peako's corporate directory reflect common practices in corporate governance?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "E_2_40",
+      "relevance_score": 0.37655488
+    },
+    {
+      "chunk_id": "E_2_39",
+      "relevance_score": 0.37147912
+    },
+    {
+      "chunk_id": "E_2_0",
+      "relevance_score": 0.26767683
+    },
+    {
+      "chunk_id": "E_2_137",
+      "relevance_score": 0.21820295
+    },
+    {
+      "chunk_id": "E_2_96",
+      "relevance_score": 0.18268816
+    }
+  ]
+}

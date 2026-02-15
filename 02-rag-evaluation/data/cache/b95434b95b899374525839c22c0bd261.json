@@ -1,0 +1,29 @@
+{
+  "cache_key": "b95434b95b899374525839c22c0bd261",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:52:46.704777+00:00",
+  "query": "What financial statements and key information are included in the Armadale Capital Plc Annual Report for the year ended 31 December 2022, and who are the professional advisers and directors associated with the company?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "B_0_0",
+      "relevance_score": 0.9740847
+    },
+    {
+      "chunk_id": "B_0_1",
+      "relevance_score": 0.94251215
+    },
+    {
+      "chunk_id": "B_0_19",
+      "relevance_score": 0.86024034
+    },
+    {
+      "chunk_id": "B_0_20",
+      "relevance_score": 0.8576849
+    },
+    {
+      "chunk_id": "B_0_30",
+      "relevance_score": 0.8173562
+    }
+  ]
+}

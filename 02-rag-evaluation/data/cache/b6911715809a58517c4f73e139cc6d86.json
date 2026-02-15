@@ -1,0 +1,8 @@
+{
+  "cache_key": "b6911715809a58517c4f73e139cc6d86",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-15T03:08:33.314946+00:00",
+  "question": "What trends can be observed in the principal repayments and interest payments across the listed loans and obligations, and how do they collectively contribute to the total contractual obligations over the presented periods?",
+  "method": "manual_fallback",
+  "response": "faithfulness: 0.0  \nanswer_relevancy: 0.0  \ncontext_recall: 1.0  \ncontext_precision: 1.0  "
+}

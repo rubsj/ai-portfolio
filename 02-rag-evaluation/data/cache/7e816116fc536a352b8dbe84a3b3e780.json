@@ -1,0 +1,8 @@
+{
+  "cache_key": "7e816116fc536a352b8dbe84a3b3e780",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-15T03:08:07.985658+00:00",
+  "question": "How does the existence of an official contact point like ASX:PKO reinforce the importance of transparency in financial markets?",
+  "method": "manual_fallback",
+  "response": "faithfulness: 0.0  \nanswer_relevancy: 0.0  \ncontext_recall: 0.0  \ncontext_precision: 0.0  "
+}

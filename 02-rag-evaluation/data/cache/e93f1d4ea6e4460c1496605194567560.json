@@ -1,0 +1,29 @@
+{
+  "cache_key": "e93f1d4ea6e4460c1496605194567560",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:48:14.543606+00:00",
+  "query": "What is the total number of other movements recorded in the document content?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "E_0_66",
+      "relevance_score": 0.6824261
+    },
+    {
+      "chunk_id": "E_0_61",
+      "relevance_score": 0.6824261
+    },
+    {
+      "chunk_id": "E_0_59",
+      "relevance_score": 0.63316137
+    },
+    {
+      "chunk_id": "E_0_64",
+      "relevance_score": 0.60498303
+    },
+    {
+      "chunk_id": "E_0_60",
+      "relevance_score": 0.48718598
+    }
+  ]
+}

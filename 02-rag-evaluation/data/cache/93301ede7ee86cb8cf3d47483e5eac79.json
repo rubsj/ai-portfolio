@@ -1,0 +1,8 @@
+{
+  "cache_key": "93301ede7ee86cb8cf3d47483e5eac79",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-15T03:08:15.250537+00:00",
+  "question": "How did corporate and other costs, selling, general and administrative expenses, and adjusted EBITDA contribute to the overall net income changes in Q4 2022 compared to Q4 2021?",
+  "method": "manual_fallback",
+  "response": "faithfulness: 1.0  \nanswer_relevancy: 1.0  \ncontext_recall: 1.0  \ncontext_precision: 1.0  "
+}

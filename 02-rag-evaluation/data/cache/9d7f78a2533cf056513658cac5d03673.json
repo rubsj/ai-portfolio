@@ -1,0 +1,29 @@
+{
+  "cache_key": "9d7f78a2533cf056513658cac5d03673",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:56:17.221246+00:00",
+  "query": "Why did the Retained Earnings show a negative value at 1 January 2021?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "D_0_74",
+      "relevance_score": 0.7065353
+    },
+    {
+      "chunk_id": "D_0_80",
+      "relevance_score": 0.6762998
+    },
+    {
+      "chunk_id": "D_1_277",
+      "relevance_score": 0.28119135
+    },
+    {
+      "chunk_id": "D_1_272",
+      "relevance_score": 0.21965577
+    },
+    {
+      "chunk_id": "D_2_184",
+      "relevance_score": 0.1591785
+    }
+  ]
+}

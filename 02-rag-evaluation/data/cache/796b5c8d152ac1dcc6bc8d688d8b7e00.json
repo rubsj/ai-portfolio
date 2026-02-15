@@ -1,0 +1,8 @@
+{
+  "cache_key": "796b5c8d152ac1dcc6bc8d688d8b7e00",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-15T03:08:42.796211+00:00",
+  "question": "How does the contact process described in one section relate to the service outcome in another?",
+  "method": "manual_fallback",
+  "response": "faithfulness: 0.0  \nanswer_relevancy: 0.0  \ncontext_recall: 0.0  \ncontext_precision: 0.5  "
+}

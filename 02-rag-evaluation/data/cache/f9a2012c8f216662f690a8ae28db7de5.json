@@ -1,0 +1,29 @@
+{
+  "cache_key": "f9a2012c8f216662f690a8ae28db7de5",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:57:52.114790+00:00",
+  "query": "Who is the Non-Executive Chairman of Peako?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "D_2_0",
+      "relevance_score": 0.9253988
+    },
+    {
+      "chunk_id": "D_2_37",
+      "relevance_score": 0.87218446
+    },
+    {
+      "chunk_id": "D_2_7",
+      "relevance_score": 0.61779
+    },
+    {
+      "chunk_id": "D_2_1",
+      "relevance_score": 0.588062
+    },
+    {
+      "chunk_id": "D_2_53",
+      "relevance_score": 0.46016815
+    }
+  ]
+}
