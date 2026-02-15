@@ -36,6 +36,15 @@
 - **Testing**: pytest
 - **Linting**: ruff
 
+## Claude Model Strategy
+
+- **Planning mode**: Use Opus 4.6 (maximum capability for architecture decisions)
+  - Specify `model: "opus"` when launching Plan agents
+- **Implementation**: Use Sonnet 4.5 (best balance of quality and cost for coding)
+  - Most code tasks run with Sonnet by default
+- **Fast mode**: Use `/fast` to switch to Opus with faster output when needed
+- When entering plan mode via EnterPlanMode, specify `model: "opus"` in the call
+
 ## Monorepo Structure
 
 ```
@@ -181,17 +190,17 @@ overall_progress: "1/9 complete"
 
 ## Current Sprint Context
 
-- **Active Project**: P1 — Synthetic Data, Home DIY Repair
-- **Week**: 1 of 8
-- **Phase**: Python primer (Feb 7), then Build (Feb 8-11)
-- **Blocker**: Need OpenAI API credits ($10) before generation runs
+- **Active Project**: P2 — RAG Evaluation Benchmarking Framework
+- **Week**: 2 of 8
+- **Phase**: Day 5 deliverables complete (CLI, Streamlit, README, charts)
+- **Status**: All core tasks done, ready for PR merge. Polish tasks deferred to Week 8.
 
 ## Project Schedule Reference
 
 | Project | Week | Dates | Status |
 |---------|------|-------|--------|
-| P1: Synthetic Data | W1 | Feb 8–11 | In Progress |
-| P2: RAG Evaluation | W1–2 | Feb 12–16 | Backlog |
+| P1: Synthetic Data | W1 | Feb 8–11 | Complete |
+| P2: RAG Evaluation | W1–2 | Feb 12–16 | Ready for Merge |
 | P3: Fine-Tuning & Guardrails | W2 | Feb 17–19 | Backlog |
 | P4: Resume Coach | W3 | Feb 20–25 | Backlog |
 | P5: Production RAG | W4 | Feb 27–Mar 2 | Backlog |

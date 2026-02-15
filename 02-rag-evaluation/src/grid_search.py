@@ -503,3 +503,109 @@ if __name__ == "__main__":
     # Step 6: Print final verification
     print(f"Total configs evaluated: {len(evaluations)}")
     print(f"Results at: {result_path}")
+
+
+def compile_grid_search_report(
+    pdf_name: str = "Kaggle Annual Reports 2024",
+    runtime_seconds: float | None = None,
+) -> GridSearchReport:
+    """Compile all evaluation results into a single GridSearchReport JSON.
+
+    WHY: Single source of truth for Streamlit and README. Aggregates 4 separate
+    result files into one validated Pydantic artifact.
+
+    Args:
+        pdf_name: Name of the evaluated document
+        runtime_seconds: Total pipeline runtime (optional)
+
+    Returns:
+        GridSearchReport model instance
+    """
+    from datetime import datetime
+    from pathlib import Path
+
+    from src.config import METRICS_DIR, REPORTS_DIR
+    from src.models import (
+        ConfigEvaluation,
+        GridSearchReport,
+        JudgeResult,
+        QADatasetReport,
+        RAGASResult,
+        RerankingComparison,
+    )
+
+    logger.info("Compiling GridSearchReport from result files...")
+
+    # Load all result files
+    grid_path = METRICS_DIR / "grid_search_results.json"
+    rerank_path = METRICS_DIR / "reranking_results.json"
+    ragas_path = METRICS_DIR / "ragas_results.json"
+    judge_path = METRICS_DIR / "judge_results.json"
+    qa_report_path = REPORTS_DIR / "qa_dataset_report.json"
+
+    # Parse config evaluations
+    grid_data = json.loads(grid_path.read_text())
+    config_evaluations = [ConfigEvaluation.model_validate(item) for item in grid_data]
+
+    # Parse reranking comparisons
+    rerank_data = json.loads(rerank_path.read_text())
+    reranking_comparisons = [RerankingComparison.model_validate(item) for item in rerank_data]
+
+    # Parse RAGAS results
+    ragas_data = json.loads(ragas_path.read_text())
+    ragas_results = [RAGASResult.model_validate(ragas_data)]
+
+    # Parse judge results
+    judge_data = json.loads(judge_path.read_text())
+    judge_results = [JudgeResult.model_validate(item) for item in judge_data]
+
+    # Parse QA dataset report
+    qa_report_data = json.loads(qa_report_path.read_text())
+    qa_dataset_report = QADatasetReport.model_validate(qa_report_data)
+
+    # Identify best configs
+    # Best retrieval: max Recall@5 across all vector configs (exclude BM25)
+    vector_configs = [ev for ev in config_evaluations if ev.retrieval_method.value == "vector"]
+    best_retrieval = max(vector_configs, key=lambda ev: ev.avg_recall_at_5)
+
+    # Best generation: E-openai (only config with RAGAS evaluation)
+    best_generation = "E-openai"
+
+    # Identify BM25 baseline
+    bm25_baseline = next((ev for ev in config_evaluations if ev.retrieval_method.value == "bm25"), None)
+
+    # Estimate API cost
+    # Embeddings: 56 questions × 16 configs × 50 tokens/query × $0.02/1M = $0.009
+    # Generation: 56 answers × 200 tokens/answer × $0.60/1M = $0.007
+    # Reranking: 3 configs × 56 questions × $1/1K = $0.17
+    # Total: ~$0.19
+    estimated_cost = 0.009 + 0.007 + 0.17
+
+    # Build report
+    report = GridSearchReport(
+        pdf_name=pdf_name,
+        total_configs=len(config_evaluations),
+        config_evaluations=config_evaluations,
+        bm25_baseline=bm25_baseline,
+        reranking_comparisons=reranking_comparisons,
+        ragas_results=ragas_results,
+        judge_results=judge_results,
+        best_retrieval_config=best_retrieval.config_id,
+        best_generation_config=best_generation,
+        qa_dataset_report=qa_dataset_report,
+        timestamp=datetime.now(),
+        total_runtime_seconds=runtime_seconds or 0.0,
+        estimated_api_cost_usd=estimated_cost,
+    )
+
+    # Save to JSON
+    output_path = REPORTS_DIR / "grid_search_report.json"
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    output_path.write_text(report.model_dump_json(indent=2))
+
+    logger.info(f"✅ GridSearchReport saved to {output_path}")
+    logger.info(f"   Best retrieval config: {report.best_retrieval_config}")
+    logger.info(f"   Best generation config: {report.best_generation_config}")
+    logger.info(f"   Estimated API cost: ${report.estimated_api_cost_usd:.2f}")
+
+    return report
