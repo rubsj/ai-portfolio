@@ -1,0 +1,8 @@
+{
+  "cache_key": "63acb707259461571cd7a7b5fa146d48",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-15T03:08:02.963326+00:00",
+  "question": "Who is the Non-Executive Chairman of Peako?",
+  "method": "manual_fallback",
+  "response": "faithfulness: 1.0  \nanswer_relevancy: 1.0  \ncontext_recall: 1.0  \ncontext_precision: 1.0  "
+}

@@ -1,0 +1,8 @@
+{
+  "cache_key": "db900b40d6e83545e00966764442da37",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-15T03:08:16.994638+00:00",
+  "question": "What were the total dividends paid, the number of common shares issued, and the gross proceeds from the issuance in relation to the prices per share on the dividend payments and how does this relate to the dividend reinvestment plan and the Shareholders' Agreement following the Kruger Products Reorganization?",
+  "method": "manual_fallback",
+  "response": "faithfulness: 0.0  \nanswer_relevancy: 0.0  \ncontext_recall: 1.0  \ncontext_precision: 1.0  "
+}

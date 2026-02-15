@@ -1,0 +1,29 @@
+{
+  "cache_key": "6215f08233f59bb299a2874a0f3a1a4d",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:58:12.351073+00:00",
+  "query": "What is the address of ASX:PKO?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "D_2_231",
+      "relevance_score": 0.89501935
+    },
+    {
+      "chunk_id": "D_2_0",
+      "relevance_score": 0.8810534
+    },
+    {
+      "chunk_id": "D_2_4",
+      "relevance_score": 0.7178241
+    },
+    {
+      "chunk_id": "D_2_3",
+      "relevance_score": 0.6989468
+    },
+    {
+      "chunk_id": "D_2_5",
+      "relevance_score": 0.18172778
+    }
+  ]
+}

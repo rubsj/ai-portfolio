@@ -1,0 +1,8 @@
+{
+  "cache_key": "a3e5e5f246eaa24523d72e18dc16d399",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-15T03:09:10.240004+00:00",
+  "question": "What was the value of ShareCapital at 1 January 2021?",
+  "method": "bloom_classifier",
+  "response": "level: Remember  \nreasoning: The question asks for a specific fact or piece of information."
+}

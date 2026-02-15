@@ -1,0 +1,8 @@
+{
+  "cache_key": "86c5f936126861e4c218d8c88303b08b",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-15T03:13:23.884595+00:00",
+  "question": "How did corporate and other costs, selling, general and administrative expenses, and adjusted EBITDA contribute to the overall net income changes in Q4 2022 compared to Q4 2021?",
+  "method": "bloom_classifier",
+  "response": "level: Analyze  \nreasoning: The question requires breaking down and examining the relationships between different financial components to understand their impact on net income changes."
+}

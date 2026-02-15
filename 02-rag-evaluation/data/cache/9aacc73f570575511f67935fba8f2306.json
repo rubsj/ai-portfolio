@@ -1,0 +1,8 @@
+{
+  "cache_key": "9aacc73f570575511f67935fba8f2306",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-15T03:11:47.118079+00:00",
+  "question": "Who is a member of the Corporation Audit Committee?",
+  "method": "bloom_classifier",
+  "response": "level: Remember  \nreasoning: The question asks for recalling a specific fact or piece of information."
+}

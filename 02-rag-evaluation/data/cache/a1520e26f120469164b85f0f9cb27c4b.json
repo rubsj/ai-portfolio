@@ -1,0 +1,29 @@
+{
+  "cache_key": "a1520e26f120469164b85f0f9cb27c4b",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:48:55.599200+00:00",
+  "query": "What happens to the interest rate on the IQ Bathroom Tissue Loan if KPLP is in default, and how long can the increased rate last before it becomes permanent?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "E_1_138",
+      "relevance_score": 0.93309647
+    },
+    {
+      "chunk_id": "E_1_141",
+      "relevance_score": 0.90907925
+    },
+    {
+      "chunk_id": "E_1_132",
+      "relevance_score": 0.8812988
+    },
+    {
+      "chunk_id": "E_1_136",
+      "relevance_score": 0.7361925
+    },
+    {
+      "chunk_id": "E_1_127",
+      "relevance_score": 0.5717911
+    }
+  ]
+}

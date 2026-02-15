@@ -1,0 +1,29 @@
+{
+  "cache_key": "17c52a6ebcdfc19dffc1c846d863cb98",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:49:09.098558+00:00",
+  "query": "How do the responsibilities of the Directors and the limitations of the Auditor's responsibilities interact to influence the overall reliability of the financial statements, particularly in regard to the potential for material misstatements due to fraud or error?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "E_0_43",
+      "relevance_score": 0.8989177
+    },
+    {
+      "chunk_id": "E_2_171",
+      "relevance_score": 0.85421735
+    },
+    {
+      "chunk_id": "E_2_168",
+      "relevance_score": 0.8449346
+    },
+    {
+      "chunk_id": "E_0_44",
+      "relevance_score": 0.8302782
+    },
+    {
+      "chunk_id": "E_2_169",
+      "relevance_score": 0.7999589
+    }
+  ]
+}

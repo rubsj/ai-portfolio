@@ -1,0 +1,29 @@
+{
+  "cache_key": "f6516eeaa7fc6dd75930c183538f1a68",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:46:30.201107+00:00",
+  "query": "Why might the contact email provided be important for potential investors or clients?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "E_2_3",
+      "relevance_score": 0.12142531
+    },
+    {
+      "chunk_id": "E_2_1",
+      "relevance_score": 0.086238965
+    },
+    {
+      "chunk_id": "E_1_279",
+      "relevance_score": 0.07660794
+    },
+    {
+      "chunk_id": "E_0_17",
+      "relevance_score": 0.06442369
+    },
+    {
+      "chunk_id": "E_0_16",
+      "relevance_score": 0.05484826
+    }
+  ]
+}

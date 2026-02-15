@@ -1,0 +1,8 @@
+{
+  "cache_key": "53c454feebdeb0d1448dcaf94959199d",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-15T03:08:00.404450+00:00",
+  "question": "How does the role of the member in the KPGP Audit Committee contribute to corporate governance?",
+  "method": "manual_fallback",
+  "response": "faithfulness: 0.0  \nanswer_relevancy: 0.0  \ncontext_recall: 0.0  \ncontext_precision: 0.5  "
+}

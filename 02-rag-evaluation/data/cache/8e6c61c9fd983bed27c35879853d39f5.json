@@ -1,0 +1,8 @@
+{
+  "cache_key": "8e6c61c9fd983bed27c35879853d39f5",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-15T03:08:23.696460+00:00",
+  "question": "What is the total number of other movements recorded in the document content?",
+  "method": "manual_fallback",
+  "response": "faithfulness: 0.0  \nanswer_relevancy: 1.0  \ncontext_recall: 1.0  \ncontext_precision: 1.0  "
+}

@@ -1,0 +1,8 @@
+{
+  "cache_key": "90b0b25cd970099b2843c064d85d6741",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-15T03:08:01.737121+00:00",
+  "question": "How do the responsibilities of the Audit Committees relate to the overall mission of Kruger Products Inc.?",
+  "method": "manual_fallback",
+  "response": "faithfulness: 0.0  \nanswer_relevancy: 0.0  \ncontext_recall: 0.0  \ncontext_precision: 0.0  "
+}

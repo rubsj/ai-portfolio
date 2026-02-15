@@ -1,0 +1,29 @@
+{
+  "cache_key": "19e02271f82094f1f2cbbb2ae5ac5a6a",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:49:36.819216+00:00",
+  "query": "What are the key themes and financial highlights presented in Kruger Products' 2022 Annual Report, and how do these elements reflect the company's overall performance and corporate strategy for driving long-term value?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "E_1_0",
+      "relevance_score": 0.94451064
+    },
+    {
+      "chunk_id": "E_1_19",
+      "relevance_score": 0.8215175
+    },
+    {
+      "chunk_id": "E_1_4",
+      "relevance_score": 0.81875163
+    },
+    {
+      "chunk_id": "E_1_242",
+      "relevance_score": 0.71496695
+    },
+    {
+      "chunk_id": "E_1_13",
+      "relevance_score": 0.63098115
+    }
+  ]
+}

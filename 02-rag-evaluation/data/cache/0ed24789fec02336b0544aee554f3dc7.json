@@ -1,0 +1,8 @@
+{
+  "cache_key": "0ed24789fec02336b0544aee554f3dc7",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-15T03:08:12.386789+00:00",
+  "question": "How did Kruger Products' financial performance in 2022, including their net losses and adjustments in accounting standards, reflect on their future outlook and operational changes?",
+  "method": "manual_fallback",
+  "response": "faithfulness: 0.0  \nanswer_relevancy: 0.0  \ncontext_recall: 0.0  \ncontext_precision: 0.0  "
+}

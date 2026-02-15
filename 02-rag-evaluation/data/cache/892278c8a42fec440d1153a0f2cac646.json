@@ -1,0 +1,8 @@
+{
+  "cache_key": "892278c8a42fec440d1153a0f2cac646",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-15T03:08:08.906287+00:00",
+  "question": "What financial statements and key information are included in the Armadale Capital Plc Annual Report for the year ended 31 December 2022, and who are the professional advisers and directors associated with the company?",
+  "method": "manual_fallback",
+  "response": "faithfulness: 0.8  \nanswer_relevancy: 1.0  \ncontext_recall: 1.0  \ncontext_precision: 1.0  "
+}

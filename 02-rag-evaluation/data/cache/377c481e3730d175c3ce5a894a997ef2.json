@@ -1,0 +1,8 @@
+{
+  "cache_key": "377c481e3730d175c3ce5a894a997ef2",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-15T03:11:16.907564+00:00",
+  "question": "How does Kruger Products' role in the Canadian market compare to its operations in the U.S.?",
+  "method": "bloom_classifier",
+  "response": "level: Analyze  \nreasoning: The question requires breaking down and comparing Kruger Products' roles in two different markets."
+}

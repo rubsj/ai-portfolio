@@ -1,0 +1,29 @@
+{
+  "cache_key": "976fef71a9589060ffe42cb35eb397ca",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:51:45.720831+00:00",
+  "query": "Who is a member of the Corporation Audit Committee?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "B_1_276",
+      "relevance_score": 0.6778372
+    },
+    {
+      "chunk_id": "B_1_277",
+      "relevance_score": 0.40570828
+    },
+    {
+      "chunk_id": "B_1_206",
+      "relevance_score": 0.30467278
+    },
+    {
+      "chunk_id": "B_1_219",
+      "relevance_score": 0.16035835
+    },
+    {
+      "chunk_id": "B_1_218",
+      "relevance_score": 0.1257404
+    }
+  ]
+}

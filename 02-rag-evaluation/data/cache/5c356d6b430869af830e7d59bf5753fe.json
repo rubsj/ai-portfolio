@@ -1,0 +1,8 @@
+{
+  "cache_key": "5c356d6b430869af830e7d59bf5753fe",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-15T03:07:43.816191+00:00",
+  "question": "Who is the Chairman of Armadale Capital Plc?",
+  "method": "manual_fallback",
+  "response": "faithfulness: 0.0  \nanswer_relevancy: 0.0  \ncontext_recall: 0.0  \ncontext_precision: 0.0  "
+}

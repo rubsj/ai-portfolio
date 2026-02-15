@@ -1,0 +1,29 @@
+{
+  "cache_key": "9b0afd966572d168e6ed2740e8def84d",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:56:44.188928+00:00",
+  "query": "How does the Company's action of subscribing for shares in Celsius Resources Limited relate to investment strategies in publicly listed companies?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "D_0_155",
+      "relevance_score": 0.63750535
+    },
+    {
+      "chunk_id": "D_0_39",
+      "relevance_score": 0.5976789
+    },
+    {
+      "chunk_id": "D_0_40",
+      "relevance_score": 0.5148644
+    },
+    {
+      "chunk_id": "D_0_11",
+      "relevance_score": 0.28479522
+    },
+    {
+      "chunk_id": "D_0_137",
+      "relevance_score": 0.11206474
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "cache_key": "32a4b20598ebf99bb6d0bbb896480f48",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:59:06.327548+00:00",
+  "query": "How did corporate and other costs, selling, general and administrative expenses, and adjusted EBITDA contribute to the overall net income changes in Q4 2022 compared to Q4 2021?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "D_1_227",
+      "relevance_score": 0.898277
+    },
+    {
+      "chunk_id": "D_1_76",
+      "relevance_score": 0.89545894
+    },
+    {
+      "chunk_id": "D_1_238",
+      "relevance_score": 0.89030397
+    },
+    {
+      "chunk_id": "D_1_239",
+      "relevance_score": 0.8834878
+    },
+    {
+      "chunk_id": "D_1_226",
+      "relevance_score": 0.86024034
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "cache_key": "f5a406e425c00a4b4a1eb8f0b1255c45",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-15T03:14:26.031085+00:00",
+  "question": "What was the amount of deferred tax liabilities to be realized greater than 12 months reported on December 31, 2022?",
+  "method": "bloom_classifier",
+  "response": "level: Remember  \nreasoning: The question asks for a specific fact or piece of information from a report."
+}

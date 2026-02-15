@@ -1,0 +1,8 @@
+{
+  "cache_key": "ad9781c388b42febeb84319045db3872",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-15T03:08:18.106976+00:00",
+  "question": "What were the significant personnel changes, option exercisability details, and financial contributions of Darryl Clark, Paul Kitto, and Raewyn Clark as mentioned in the document?",
+  "method": "manual_fallback",
+  "response": "faithfulness: 1.0  \nanswer_relevancy: 1.0  \ncontext_recall: 1.0  \ncontext_precision: 1.0  "
+}

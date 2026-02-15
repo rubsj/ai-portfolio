@@ -1,0 +1,29 @@
+{
+  "cache_key": "7745fd9d18774aff9dc3030599fb8159",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:55:42.354790+00:00",
+  "query": "How does the contact process described in one section relate to the service outcome in another?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "B_2_163",
+      "relevance_score": 0.04897146
+    },
+    {
+      "chunk_id": "B_0_16",
+      "relevance_score": 0.023475897
+    },
+    {
+      "chunk_id": "B_0_15",
+      "relevance_score": 0.021322012
+    },
+    {
+      "chunk_id": "B_0_80",
+      "relevance_score": 0.020553375
+    },
+    {
+      "chunk_id": "B_1_22",
+      "relevance_score": 0.018878335
+    }
+  ]
+}

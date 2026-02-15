@@ -1,0 +1,8 @@
+{
+  "cache_key": "3d73083dbb22c7e3a78eb8cb329434aa",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-15T03:14:14.671306+00:00",
+  "question": "What is the total number of other movements recorded in the document content?",
+  "method": "bloom_classifier",
+  "response": "level: Remember  \nreasoning: The question asks for a specific fact or piece of information from the document."
+}

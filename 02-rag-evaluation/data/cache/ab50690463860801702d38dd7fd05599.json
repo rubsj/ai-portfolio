@@ -1,0 +1,29 @@
+{
+  "cache_key": "ab50690463860801702d38dd7fd05599",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:54:21.274396+00:00",
+  "query": "What was the total amount of Retained Earnings at the beginning of the year on 1 January 2021, and what was the loss for the period that contributed to the Total comprehensive loss for the year?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "B_0_62",
+      "relevance_score": 0.9570577
+    },
+    {
+      "chunk_id": "B_0_57",
+      "relevance_score": 0.93911994
+    },
+    {
+      "chunk_id": "B_0_64",
+      "relevance_score": 0.75659186
+    },
+    {
+      "chunk_id": "B_0_58",
+      "relevance_score": 0.7336813
+    },
+    {
+      "chunk_id": "B_2_75",
+      "relevance_score": 0.69099766
+    }
+  ]
+}

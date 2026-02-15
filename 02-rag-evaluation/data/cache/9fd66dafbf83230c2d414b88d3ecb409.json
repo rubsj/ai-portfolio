@@ -1,0 +1,8 @@
+{
+  "cache_key": "9fd66dafbf83230c2d414b88d3ecb409",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-15T03:15:57.175600+00:00",
+  "question": "Why does the Annual Meeting of Shareholders occur according to the document?",
+  "method": "bloom_classifier",
+  "response": "level: Remember  \nreasoning: The question asks for a recall of specific information from the document."
+}

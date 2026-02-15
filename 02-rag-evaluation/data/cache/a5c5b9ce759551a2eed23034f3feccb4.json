@@ -1,0 +1,7 @@
+{
+  "cache_key": "a5c5b9ce759551a2eed23034f3feccb4",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-15T03:02:57.394297+00:00",
+  "question": "How did corporate and other costs, selling, general and administrative expenses, and adjusted EBITDA contribute to the overall net income changes in Q4 2022 compared to Q4 2021?",
+  "response": "In Q4 2022, corporate and other costs increased to a loss of \\$4.0 million from a loss of \\$3.7 million in Q4 2021, contributing negatively to net income. Selling, general and administrative (SG&A) expenses decreased by \\$1.1 million to \\$30.6 million, which positively impacted net income by reducing overall expenses. Adjusted EBITDA increased by \\$6.1 million to \\$44.4 million, also contributing positively to net income. However, the overall net income decreased by \\$26.3 million, primarily due to a significantly lower income tax recovery, higher depreciation expense, and restructuring costs, which outweighed the positive contributions from lower SG&A expenses and higher Adjusted EBITDA."
+}

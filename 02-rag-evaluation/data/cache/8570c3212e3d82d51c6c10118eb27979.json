@@ -1,0 +1,29 @@
+{
+  "cache_key": "8570c3212e3d82d51c6c10118eb27979",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:49:02.333597+00:00",
+  "query": "How is impairment determined for individual assets according to the company's policy?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "E_2_91",
+      "relevance_score": 0.72325134
+    },
+    {
+      "chunk_id": "E_0_87",
+      "relevance_score": 0.7031221
+    },
+    {
+      "chunk_id": "E_0_88",
+      "relevance_score": 0.35046637
+    },
+    {
+      "chunk_id": "E_2_109",
+      "relevance_score": 0.27608675
+    },
+    {
+      "chunk_id": "E_2_163",
+      "relevance_score": 0.22651015
+    }
+  ]
+}

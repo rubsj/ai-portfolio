@@ -1,0 +1,8 @@
+{
+  "cache_key": "d8c2b15c7d7b4d11cb4b4490d6b961d2",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-15T03:11:09.330324+00:00",
+  "question": "Why is it significant that Kruger Products operates nine FSC\u00ae COC-certified production facilities?",
+  "method": "bloom_classifier",
+  "response": "level: Understand  \nreasoning: The question asks for an explanation of the significance, which involves understanding the concept."
+}

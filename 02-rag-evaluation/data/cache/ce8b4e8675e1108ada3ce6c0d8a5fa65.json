@@ -1,0 +1,8 @@
+{
+  "cache_key": "ce8b4e8675e1108ada3ce6c0d8a5fa65",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-15T03:13:30.434745+00:00",
+  "question": "What were the total dividends paid, the number of common shares issued, and the gross proceeds from the issuance in relation to the prices per share on the dividend payments and how does this relate to the dividend reinvestment plan and the Shareholders' Agreement following the Kruger Products Reorganization?",
+  "method": "bloom_classifier",
+  "response": "level: Analyze  \nreasoning: The question requires breaking down and examining the relationships between dividends, share issuance, and agreements, which involves analysis."
+}

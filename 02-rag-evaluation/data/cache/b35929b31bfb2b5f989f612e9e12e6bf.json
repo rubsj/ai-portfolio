@@ -1,0 +1,8 @@
+{
+  "cache_key": "b35929b31bfb2b5f989f612e9e12e6bf",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-15T03:15:45.806796+00:00",
+  "question": "What are the key figures or statistics mentioned about subsequent events?",
+  "method": "bloom_classifier",
+  "response": "level: Remember  \nreasoning: The question asks for recalling specific facts or statistics mentioned, which aligns with the Remember level."
+}

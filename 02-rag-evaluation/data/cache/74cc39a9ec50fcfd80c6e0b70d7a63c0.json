@@ -1,0 +1,29 @@
+{
+  "cache_key": "74cc39a9ec50fcfd80c6e0b70d7a63c0",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T03:01:14.696071+00:00",
+  "query": "What are the key operational and corporate developments reported by Armadale Capital Plc in the Strategic Report for the year ended 31 December 2022, and how do these developments align with the company's overall focus on the Mahenge Liandu Graphite Project in Tanzania?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "D_0_2",
+      "relevance_score": 0.97299814
+    },
+    {
+      "chunk_id": "D_0_1",
+      "relevance_score": 0.9609261
+    },
+    {
+      "chunk_id": "D_0_24",
+      "relevance_score": 0.8649622
+    },
+    {
+      "chunk_id": "D_0_9",
+      "relevance_score": 0.8446273
+    },
+    {
+      "chunk_id": "D_0_0",
+      "relevance_score": 0.81489426
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "cache_key": "02c58715138ca5b215b9c0178facb828",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:55:22.025648+00:00",
+  "query": "How does Kruger Products' market presence compare to KPT's equity interest based on the content?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "B_1_0",
+      "relevance_score": 0.82391036
+    },
+    {
+      "chunk_id": "B_1_1",
+      "relevance_score": 0.7393665
+    },
+    {
+      "chunk_id": "B_1_255",
+      "relevance_score": 0.586926
+    },
+    {
+      "chunk_id": "B_1_25",
+      "relevance_score": 0.5582553
+    },
+    {
+      "chunk_id": "B_1_202",
+      "relevance_score": 0.48264915
+    }
+  ]
+}

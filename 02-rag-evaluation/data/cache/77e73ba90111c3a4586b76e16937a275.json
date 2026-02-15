@@ -1,0 +1,29 @@
+{
+  "cache_key": "77e73ba90111c3a4586b76e16937a275",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:43:40.423078+00:00",
+  "query": "How does the total comprehensive loss for the year relate to the overall financial health of the company?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "E_2_73",
+      "relevance_score": 0.7152057
+    },
+    {
+      "chunk_id": "E_0_63",
+      "relevance_score": 0.66959417
+    },
+    {
+      "chunk_id": "E_0_59",
+      "relevance_score": 0.6654328
+    },
+    {
+      "chunk_id": "E_2_71",
+      "relevance_score": 0.6546525
+    },
+    {
+      "chunk_id": "E_0_65",
+      "relevance_score": 0.6530611
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "cache_key": "accc27e23db9415708da3feac3f43f1f",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-15T03:08:37.884206+00:00",
+  "question": "What is the Officers and Professional Advisers section as described in the document?",
+  "method": "manual_fallback",
+  "response": "faithfulness: 1.0  \nanswer_relevancy: 1.0  \ncontext_recall: 1.0  \ncontext_precision: 1.0  "
+}

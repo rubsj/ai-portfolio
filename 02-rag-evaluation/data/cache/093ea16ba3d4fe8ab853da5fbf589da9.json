@@ -1,0 +1,8 @@
+{
+  "cache_key": "093ea16ba3d4fe8ab853da5fbf589da9",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-15T03:08:29.079106+00:00",
+  "question": "What was the total amount of Retained Earnings at the beginning of the year on 1 January 2021, and what was the loss for the period that contributed to the Total comprehensive loss for the year?",
+  "method": "manual_fallback",
+  "response": "faithfulness: 1.0  \nanswer_relevancy: 1.0  \ncontext_recall: 1.0  \ncontext_precision: 1.0  "
+}

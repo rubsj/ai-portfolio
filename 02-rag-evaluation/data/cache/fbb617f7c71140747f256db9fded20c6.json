@@ -1,0 +1,8 @@
+{
+  "cache_key": "fbb617f7c71140747f256db9fded20c6",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-15T03:12:18.346004+00:00",
+  "question": "How does the structure of Peako's corporate directory reflect common practices in corporate governance?",
+  "method": "bloom_classifier",
+  "response": "level: Analyze  \nreasoning: The question requires breaking down and comparing the structure of Peako's corporate directory with common practices in corporate governance to find relationships."
+}

@@ -1,0 +1,8 @@
+{
+  "cache_key": "118ec6b2dc9e7ff90536bb412d2d7a7e",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-15T03:08:32.146805+00:00",
+  "question": "How do the responsibilities of the Directors and the limitations of the Auditor's responsibilities interact to influence the overall reliability of the financial statements, particularly in regard to the potential for material misstatements due to fraud or error?",
+  "method": "manual_fallback",
+  "response": "faithfulness: 1.0  \nanswer_relevancy: 1.0  \ncontext_recall: 1.0  \ncontext_precision: 1.0  "
+}

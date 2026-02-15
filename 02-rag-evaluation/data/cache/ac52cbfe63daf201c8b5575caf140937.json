@@ -1,0 +1,8 @@
+{
+  "cache_key": "ac52cbfe63daf201c8b5575caf140937",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-15T03:07:45.762442+00:00",
+  "question": "How does the structure of Armadale Capital Plc's annual report reflect best practices in corporate governance?",
+  "method": "manual_fallback",
+  "response": "faithfulness: 0.0  \nanswer_relevancy: 0.0  \ncontext_recall: 1.0  \ncontext_precision: 1.0  "
+}

@@ -1,0 +1,29 @@
+{
+  "cache_key": "ed04d01a66f5d6df35bad3592877398d",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T03:00:20.482879+00:00",
+  "query": "What is the amount recorded for Director Fees as indicated in the provided content?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "D_2_62",
+      "relevance_score": 0.54666615
+    },
+    {
+      "chunk_id": "D_2_61",
+      "relevance_score": 0.54564947
+    },
+    {
+      "chunk_id": "D_2_80",
+      "relevance_score": 0.54477775
+    },
+    {
+      "chunk_id": "D_2_81",
+      "relevance_score": 0.533714
+    },
+    {
+      "chunk_id": "D_2_58",
+      "relevance_score": 0.459586
+    }
+  ]
+}

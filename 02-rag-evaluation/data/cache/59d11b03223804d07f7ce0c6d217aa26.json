@@ -1,0 +1,8 @@
+{
+  "cache_key": "59d11b03223804d07f7ce0c6d217aa26",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-15T03:07:44.740098+00:00",
+  "question": "Why is the role of the Chairman significant in the context of a company's annual report?",
+  "method": "manual_fallback",
+  "response": "faithfulness: 0.0  \nanswer_relevancy: 0.0  \ncontext_recall: 0.0  \ncontext_precision: 0.5  "
+}

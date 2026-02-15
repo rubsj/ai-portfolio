@@ -1,0 +1,8 @@
+{
+  "cache_key": "94fb774989d1bdae4db711cdc0736ff6",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-15T03:08:41.875634+00:00",
+  "question": "What are the main components of the corporate directory as described?",
+  "method": "manual_fallback",
+  "response": "faithfulness: 0.0  \nanswer_relevancy: 0.0  \ncontext_recall: 0.0  \ncontext_precision: 0.0  "
+}

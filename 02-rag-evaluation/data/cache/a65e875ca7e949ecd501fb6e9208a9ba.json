@@ -1,0 +1,29 @@
+{
+  "cache_key": "a65e875ca7e949ecd501fb6e9208a9ba",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:50:30.892695+00:00",
+  "query": "Why is the role of the Chairman significant in the context of a company's annual report?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "B_2_55",
+      "relevance_score": 0.12490542
+    },
+    {
+      "chunk_id": "B_0_26",
+      "relevance_score": 0.123820715
+    },
+    {
+      "chunk_id": "B_2_169",
+      "relevance_score": 0.11555113
+    },
+    {
+      "chunk_id": "B_0_41",
+      "relevance_score": 0.10415817
+    },
+    {
+      "chunk_id": "B_0_25",
+      "relevance_score": 0.09923447
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "cache_key": "e56d0401dd1adf1110144287f055a440",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-15T03:08:39.110854+00:00",
+  "question": "What are the key figures or statistics mentioned about subsequent events?",
+  "method": "manual_fallback",
+  "response": "faithfulness: 0.0  \nanswer_relevancy: 0.0  \ncontext_recall: 1.0  \ncontext_precision: 0.5  "
+}

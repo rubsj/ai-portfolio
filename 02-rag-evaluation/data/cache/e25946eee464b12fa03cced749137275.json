@@ -1,0 +1,29 @@
+{
+  "cache_key": "e25946eee464b12fa03cced749137275",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:47:06.466374+00:00",
+  "query": "What was the total amount of Tax Distribution declared to KPT in 2022, what was the outcome of the Tax Distribution for KPLP in 2023, and how does the Reorganization affect future Tax Distribution obligations?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "E_1_70",
+      "relevance_score": 0.93885136
+    },
+    {
+      "chunk_id": "E_1_96",
+      "relevance_score": 0.85995835
+    },
+    {
+      "chunk_id": "E_1_268",
+      "relevance_score": 0.8539252
+    },
+    {
+      "chunk_id": "E_1_49",
+      "relevance_score": 0.7327644
+    },
+    {
+      "chunk_id": "E_1_170",
+      "relevance_score": 0.7144891
+    }
+  ]
+}

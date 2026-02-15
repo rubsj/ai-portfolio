@@ -1,0 +1,8 @@
+{
+  "cache_key": "5b5d2347dc79ed9a1d3f0800519c7691",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-15T03:08:09.927669+00:00",
+  "question": "How did the total number of shares and the financial movements related to warrants impact the overall equity and comprehensive loss for the period ending 31 December 2022 compared to 31 December 2021?",
+  "method": "manual_fallback",
+  "response": "faithfulness: 0.8  \nanswer_relevancy: 1.0  \ncontext_recall: 1.0  \ncontext_precision: 0.9  "
+}

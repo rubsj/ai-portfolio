@@ -1,0 +1,8 @@
+{
+  "cache_key": "21243bc5e3bce9b9c5a42ee5ae5c337f",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-15T03:12:25.002511+00:00",
+  "question": "What is the address of ASX:PKO?",
+  "method": "bloom_classifier",
+  "response": "level: Remember  \nreasoning: The question asks for a specific fact or piece of information, which is characteristic of the Remember level."
+}

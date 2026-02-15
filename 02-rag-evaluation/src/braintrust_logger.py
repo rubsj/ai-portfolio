@@ -265,7 +265,10 @@ def log_feedback(
             update=True,
         )
 
+        # WHY input required: Braintrust SDK requires `input` on every log call.
+        # For feedback updates, pass question_id as a minimal input identifier.
         experiment.log(
+            input={"question_id": question_id},
             scores={"feedback": 1.0 if thumbs_up else 0.0},
             metadata={"feedback_comment": comment} if comment else None,
             id=question_id,

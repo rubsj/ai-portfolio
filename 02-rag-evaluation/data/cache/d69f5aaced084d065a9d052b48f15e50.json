@@ -1,0 +1,8 @@
+{
+  "cache_key": "d69f5aaced084d065a9d052b48f15e50",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-15T03:08:40.853592+00:00",
+  "question": "Why does the Annual Meeting of Shareholders occur according to the document?",
+  "method": "manual_fallback",
+  "response": "faithfulness: 0.8  \nanswer_relevancy: 1.0  \ncontext_recall: 0.6  \ncontext_precision: 0.7  "
+}

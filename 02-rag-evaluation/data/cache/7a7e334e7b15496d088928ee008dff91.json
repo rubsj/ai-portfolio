@@ -1,0 +1,8 @@
+{
+  "cache_key": "7a7e334e7b15496d088928ee008dff91",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-15T03:16:01.266373+00:00",
+  "question": "What are the main components of the corporate directory as described?",
+  "method": "bloom_classifier",
+  "response": "level: Remember  \nreasoning: The question asks for a recall of specific facts or components."
+}

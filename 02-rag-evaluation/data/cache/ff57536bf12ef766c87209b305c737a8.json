@@ -1,0 +1,8 @@
+{
+  "cache_key": "ff57536bf12ef766c87209b305c737a8",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-15T03:08:22.831884+00:00",
+  "question": "What is the total loss for the period as indicated in the content provided?",
+  "method": "manual_fallback",
+  "response": "faithfulness: 0.0  \nanswer_relevancy: 0.0  \ncontext_recall: 1.0  \ncontext_precision: 0.5  "
+}

@@ -1,0 +1,29 @@
+{
+  "cache_key": "8f36c5d96ddf84bbb528ed6de5d5485f",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:48:07.801850+00:00",
+  "query": "What is the total loss for the period as indicated in the content provided?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "E_0_63",
+      "relevance_score": 0.5513086
+    },
+    {
+      "chunk_id": "E_0_65",
+      "relevance_score": 0.54724693
+    },
+    {
+      "chunk_id": "E_0_58",
+      "relevance_score": 0.507544
+    },
+    {
+      "chunk_id": "E_0_59",
+      "relevance_score": 0.5013922
+    },
+    {
+      "chunk_id": "E_0_60",
+      "relevance_score": 0.43669468
+    }
+  ]
+}

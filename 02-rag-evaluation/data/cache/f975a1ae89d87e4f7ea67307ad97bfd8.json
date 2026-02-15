@@ -1,0 +1,29 @@
+{
+  "cache_key": "f975a1ae89d87e4f7ea67307ad97bfd8",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:45:06.886459+00:00",
+  "query": "Why is it significant that Kruger Products operates nine FSC\u00ae COC-certified production facilities?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "E_1_0",
+      "relevance_score": 0.91435975
+    },
+    {
+      "chunk_id": "E_1_15",
+      "relevance_score": 0.48528314
+    },
+    {
+      "chunk_id": "E_1_14",
+      "relevance_score": 0.46949652
+    },
+    {
+      "chunk_id": "E_1_31",
+      "relevance_score": 0.40260404
+    },
+    {
+      "chunk_id": "E_1_32",
+      "relevance_score": 0.40161797
+    }
+  ]
+}

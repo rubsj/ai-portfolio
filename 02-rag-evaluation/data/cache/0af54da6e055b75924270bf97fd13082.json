@@ -1,0 +1,8 @@
+{
+  "cache_key": "0af54da6e055b75924270bf97fd13082",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-15T03:08:05.113865+00:00",
+  "question": "How does the structure of Peako's corporate directory reflect common practices in corporate governance?",
+  "method": "manual_fallback",
+  "response": "faithfulness: 0.0  \nanswer_relevancy: 0.0  \ncontext_recall: 0.0  \ncontext_precision: 0.5  "
+}

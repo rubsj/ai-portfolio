@@ -1,0 +1,29 @@
+{
+  "cache_key": "e0be2f163ae5b107fe747622970b76d8",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:51:38.965647+00:00",
+  "query": "How does the IQ Bathroom Tissue Credit Agreement relate to the overall financing strategies in the paper manufacturing industry?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "B_1_137",
+      "relevance_score": 0.6994397
+    },
+    {
+      "chunk_id": "B_1_138",
+      "relevance_score": 0.474023
+    },
+    {
+      "chunk_id": "B_1_140",
+      "relevance_score": 0.33105537
+    },
+    {
+      "chunk_id": "B_1_141",
+      "relevance_score": 0.32556394
+    },
+    {
+      "chunk_id": "B_1_139",
+      "relevance_score": 0.21114053
+    }
+  ]
+}

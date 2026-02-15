@@ -1,0 +1,8 @@
+{
+  "cache_key": "3605b93fa2a3320665cfd8f1bd7ffc22",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-15T03:07:48.016369+00:00",
+  "question": "Why did the Retained Earnings show a negative value at 1 January 2021?",
+  "method": "manual_fallback",
+  "response": "faithfulness: 1.0  \nanswer_relevancy: 1.0  \ncontext_recall: 1.0  \ncontext_precision: 1.0  "
+}

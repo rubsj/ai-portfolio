@@ -1,0 +1,29 @@
+{
+  "cache_key": "d53cbc12858c1abc2f137bdb5141dbd2",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:57:17.888739+00:00",
+  "query": "Why was the IQ Bathroom Tissue Loan established for KPSI, and what project does it support?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "D_1_163",
+      "relevance_score": 0.88799405
+    },
+    {
+      "chunk_id": "D_1_166",
+      "relevance_score": 0.81025416
+    },
+    {
+      "chunk_id": "D_1_161",
+      "relevance_score": 0.64639384
+    },
+    {
+      "chunk_id": "D_1_151",
+      "relevance_score": 0.5837973
+    },
+    {
+      "chunk_id": "D_1_169",
+      "relevance_score": 0.52612424
+    }
+  ]
+}

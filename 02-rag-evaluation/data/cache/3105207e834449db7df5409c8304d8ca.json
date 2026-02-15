@@ -1,0 +1,29 @@
+{
+  "cache_key": "3105207e834449db7df5409c8304d8ca",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:43:40.647328+00:00",
+  "query": "What happened at the Company since the year end?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "E_0_19",
+      "relevance_score": 0.34481892
+    },
+    {
+      "chunk_id": "E_0_57",
+      "relevance_score": 0.27154663
+    },
+    {
+      "chunk_id": "E_2_37",
+      "relevance_score": 0.16612032
+    },
+    {
+      "chunk_id": "E_1_256",
+      "relevance_score": 0.16587698
+    },
+    {
+      "chunk_id": "E_0_61",
+      "relevance_score": 0.15878677
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "cache_key": "73175ade03836ad6195504c87c28f6b5",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-15T03:09:32.249883+00:00",
+  "question": "What happened at the Company since the year end?",
+  "method": "bloom_classifier",
+  "response": "level: Remember  \nreasoning: The question asks for a recall of events or facts that occurred since the year end."
+}

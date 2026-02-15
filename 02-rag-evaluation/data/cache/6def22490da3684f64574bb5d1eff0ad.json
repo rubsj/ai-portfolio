@@ -1,0 +1,8 @@
+{
+  "cache_key": "6def22490da3684f64574bb5d1eff0ad",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-15T03:15:51.438077+00:00",
+  "question": "How does Kruger Products' market presence compare to KPT's equity interest based on the content?",
+  "method": "bloom_classifier",
+  "response": "level: Analyze  \nreasoning: The question requires breaking down and comparing the market presence and equity interest, which involves finding relationships and differences."
+}

@@ -1,0 +1,29 @@
+{
+  "cache_key": "eb46e333cbf5c238a2593fc8c7ab9116",
+  "model": "rerank-v3.5",
+  "timestamp": "2026-02-15T02:49:43.568944+00:00",
+  "query": "What is the Officers and Professional Advisers section as described in the document?",
+  "top_n": 5,
+  "response": [
+    {
+      "chunk_id": "E_0_0",
+      "relevance_score": 0.6122407
+    },
+    {
+      "chunk_id": "E_0_1",
+      "relevance_score": 0.5013922
+    },
+    {
+      "chunk_id": "E_2_53",
+      "relevance_score": 0.067307346
+    },
+    {
+      "chunk_id": "E_0_27",
+      "relevance_score": 0.057266273
+    },
+    {
+      "chunk_id": "E_0_18",
+      "relevance_score": 0.046573047
+    }
+  ]
+}

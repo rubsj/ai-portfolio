@@ -1,0 +1,8 @@
+{
+  "cache_key": "0af16ceb0eda79e34bf36979087d2eda",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-15T03:12:55.207943+00:00",
+  "question": "How did the total number of shares and the financial movements related to warrants impact the overall equity and comprehensive loss for the period ending 31 December 2022 compared to 31 December 2021?",
+  "method": "bloom_classifier",
+  "response": "level: Analyze  \nreasoning: The question requires breaking down and comparing financial data from two different periods to understand the impact on equity and comprehensive loss."
+}
