@@ -240,7 +240,25 @@ python -c "from src.visualization import generate_all_charts; generate_all_chart
 
 **Output:** 12 PNG charts saved to `results/charts/`
 
-### 4. Launch Streamlit Demo
+### 4. Use CLI (Optional)
+
+```bash
+# View top 5 configs with Rich formatted tables
+python -m src.cli report
+
+# Compare specific configs side-by-side
+python -m src.cli compare E-openai B-openai A-openai
+
+# Export to JSON for further processing
+python -m src.cli report --format json | jq '.[] | {config: .config_id, recall: .avg_recall_at_5}'
+```
+
+**Available commands:**
+- `report` — Display results summary (table or JSON format)
+- `compare` — Side-by-side comparison of specific configs
+- `run` — Execute full grid search pipeline (alternative to step 2)
+
+### 5. Launch Streamlit Demo
 
 ```bash
 streamlit run streamlit_app.py
