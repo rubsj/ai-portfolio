@@ -387,6 +387,5 @@ MIT
 
 Built by **Ruby Jha** as part of AI Engineering portfolio (Project 2 of 9).
 
-📧 pratham@example.com
 🔗 [LinkedIn](https://linkedin.com/in/jharuby)
 💻 [GitHub](https://github.com/rubsj/ai-portfolio)
