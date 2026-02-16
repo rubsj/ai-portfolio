@@ -435,3 +435,92 @@ class TestRunReranking:
         # Verify rerank_config was called with the original gold IDs (no mapping)
         call_kwargs = mock_rerank_config.call_args[1]
         assert call_kwargs["gold_ids_per_question"] == [["B_0_1"]]
+
+
+# ===========================================================================
+# save_reranking_results Tests
+# ===========================================================================
+
+class TestSaveRerankingResults:
+    """Tests for saving reranking results to JSON."""
+
+    def test_saves_to_metrics_dir(self, tmp_path) -> None:
+        """Saves reranking results to metrics/reranking_results.json."""
+        from pathlib import Path
+        from unittest.mock import patch
+        import json
+        from src.reranker import save_reranking_results
+
+        # Mock METRICS_DIR to point to tmp_path
+        with patch("src.reranker.METRICS_DIR", tmp_path):
+            comparisons = [
+                RerankingComparison(
+                    config_id="E-openai",
+                    recall_at_5_before=0.625,
+                    recall_at_5_after=0.747,
+                    precision_at_5_before=0.125,
+                    precision_at_5_after=0.149,
+                    mrr_at_5_before=0.560,
+                    mrr_at_5_after=0.632,
+                    recall_improvement_pct=19.5,
+                    precision_improvement_pct=19.2,
+                    mrr_improvement_pct=12.9,
+                ),
+                RerankingComparison(
+                    config_id="B-openai",
+                    recall_at_5_before=0.607,
+                    recall_at_5_after=0.667,
+                    precision_at_5_before=0.121,
+                    precision_at_5_after=0.133,
+                    mrr_at_5_before=0.530,
+                    mrr_at_5_after=0.578,
+                    recall_improvement_pct=9.8,
+                    precision_improvement_pct=9.9,
+                    mrr_improvement_pct=9.1,
+                ),
+            ]
+
+            save_reranking_results(comparisons)
+
+            # Verify file was created
+            results_path = tmp_path / "reranking_results.json"
+            assert results_path.exists()
+
+            # Verify content
+            data = json.loads(results_path.read_text())
+            assert len(data) == 2
+            assert data[0]["config_id"] == "E-openai"
+            assert data[0]["recall_at_5_before"] == 0.625
+            assert data[0]["recall_at_5_after"] == 0.747
+            assert data[1]["config_id"] == "B-openai"
+
+    def test_creates_metrics_dir_if_missing(self, tmp_path) -> None:
+        """Creates metrics directory if it doesn't exist."""
+        from unittest.mock import patch
+        from src.reranker import save_reranking_results
+
+        # Use a non-existent subdirectory
+        metrics_dir = tmp_path / "metrics"
+        assert not metrics_dir.exists()
+
+        with patch("src.reranker.METRICS_DIR", metrics_dir):
+            comparisons = [
+                RerankingComparison(
+                    config_id="test",
+                    recall_at_5_before=0.5,
+                    recall_at_5_after=0.6,
+                    precision_at_5_before=0.3,
+                    precision_at_5_after=0.4,
+                    mrr_at_5_before=0.4,
+                    mrr_at_5_after=0.5,
+                    recall_improvement_pct=20.0,
+                    precision_improvement_pct=33.3,
+                    mrr_improvement_pct=25.0,
+                ),
+            ]
+
+            save_reranking_results(comparisons)
+
+            # Directory should be created
+            assert metrics_dir.exists()
+            assert (metrics_dir / "reranking_results.json").exists()
