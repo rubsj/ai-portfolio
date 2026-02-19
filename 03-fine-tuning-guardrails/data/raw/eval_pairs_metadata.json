@@ -1,0 +1,19 @@
+{
+  "total_pairs": 295,
+  "compatible_pairs": 158,
+  "incompatible_pairs": 137,
+  "dealbreaker_pairs": 45,
+  "complex_pairs": 90,
+  "llm_judged_pairs": 60,
+  "realistic_pairs": 10,
+  "subtle_mismatch_pairs": 50,
+  "categories_used": [
+    "lifestyle",
+    "interests",
+    "values",
+    "dealbreakers",
+    "realistic_example"
+  ],
+  "generation_timestamp": "2025-07-31T18:56:19.614000",
+  "random_seed": 42
+}

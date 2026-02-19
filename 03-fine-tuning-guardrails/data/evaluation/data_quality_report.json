@@ -1,0 +1,49 @@
+{
+  "scores": {
+    "data_quality": 100.0,
+    "diversity": 66.5,
+    "bias": 74.46,
+    "linguistic_quality": 79.74,
+    "overall": 80.17
+  },
+  "details": {
+    "data_quality": {
+      "sub_scores": {
+        "completeness": 100.0,
+        "consistency": 100.0,
+        "duplicates": 100.0,
+        "format": 100.0
+      },
+      "dimension_score": 100.0
+    },
+    "diversity": {
+      "sub_scores": {
+        "vocabulary_richness": 14.5,
+        "category_entropy": 90.22,
+        "label_balance": 61.29,
+        "text_complexity": 100.0
+      },
+      "dimension_score": 66.5
+    },
+    "bias": {
+      "sub_scores": {
+        "gender_bias": 100.0,
+        "category_label_correlation": 49.86,
+        "length_label_correlation": 100.0,
+        "vocabulary_label_bias": 48.0
+      },
+      "dimension_score": 74.46
+    },
+    "linguistic_quality": {
+      "sub_scores": {
+        "readability": 100.0,
+        "coherence": 92.58,
+        "naturalness": 30.84,
+        "repetition": 95.54
+      },
+      "dimension_score": 79.74
+    }
+  },
+  "record_count": 50,
+  "timestamp": "2026-02-19T04:33:01.349704+00:00"
+}
