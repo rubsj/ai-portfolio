@@ -1,0 +1,33 @@
+Data Quality Evaluation Summary
+========================================
+Records evaluated: 50
+Timestamp: 2026-02-19T04:33:01.349704+00:00
+
+Dimension Scores:
+  Data Quality:      100.0
+  Diversity:         66.5
+  Bias:              74.5
+  Linguistic Quality:79.7
+  Overall:           80.2
+
+Sub-scores:
+  [data_quality]
+    completeness                    100.0  [PASS]
+    consistency                     100.0  [PASS]
+    duplicates                      100.0  [PASS]
+    format                          100.0  [PASS]
+  [diversity]
+    vocabulary_richness              14.5  [FAIL]
+    category_entropy                 90.2  [PASS]
+    label_balance                    61.3  [PASS]
+    text_complexity                 100.0  [PASS]
+  [bias]
+    gender_bias                     100.0  [PASS]
+    category_label_correlation       49.9  [FAIL]
+    length_label_correlation        100.0  [PASS]
+    vocabulary_label_bias            48.0  [FAIL]
+  [linguistic_quality]
+    readability                     100.0  [PASS]
+    coherence                        92.6  [PASS]
+    naturalness                      30.8  [FAIL]
+    repetition                       95.5  [PASS]

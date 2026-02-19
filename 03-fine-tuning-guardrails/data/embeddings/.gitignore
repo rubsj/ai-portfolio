@@ -1,0 +1,3 @@
+# Generated embedding files — too large for git, regenerate with:
+# uv run python -m src.baseline_analysis
+*.npz
