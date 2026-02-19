@@ -313,7 +313,7 @@ def run_full_baseline(
     return metrics
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # pragma: no cover
     data_dir = Path("data/raw")
     train_pairs = load_pairs(data_dir / "dating_pairs.jsonl")
     eval_pairs = load_pairs(data_dir / "eval_pairs.jsonl")

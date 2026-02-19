@@ -120,3 +120,39 @@ def test_get_pair_types():
     ptypes = get_pair_types(pairs)
     assert len(ptypes) == 10
     assert ptypes[0] == pairs[0].pair_type
+
+
+def test_load_pairs_skips_empty_lines(tmp_path):
+    """Empty lines in JSONL are silently skipped."""
+    import json
+
+    pair = {
+        "text_1": "boy: hello", "text_2": "girl: hi",
+        "label": 1, "category": "test", "subcategory": "test", "pair_type": "compatible_match",
+    }
+    # Write JSONL with surrounding blank lines
+    jsonl = tmp_path / "test.jsonl"
+    jsonl.write_text("\n" + json.dumps(pair) + "\n\n" + json.dumps(pair) + "\n")
+    pairs = load_pairs(jsonl)
+    assert len(pairs) == 2
+
+
+def test_load_pairs_raises_on_invalid_json(tmp_path):
+    """Malformed JSON line raises ValueError with line number."""
+    jsonl = tmp_path / "bad.jsonl"
+    jsonl.write_text("not valid json\n")
+    with pytest.raises(ValueError, match="line 1"):
+        load_pairs(jsonl)
+
+
+def test_load_metadata(tmp_path):
+    """load_metadata reads and returns a raw dict from a JSON file."""
+    import json
+    from src.data_loader import load_metadata
+
+    meta = {"total_pairs": 42, "categories": ["hobbies", "values"]}
+    meta_file = tmp_path / "metadata.json"
+    meta_file.write_text(json.dumps(meta))
+    result = load_metadata(meta_file)
+    assert result["total_pairs"] == 42
+    assert result["categories"] == ["hobbies", "values"]
