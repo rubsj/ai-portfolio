@@ -5,7 +5,6 @@ from __future__ import annotations
 import csv
 import json
 import sys
-from pathlib import Path
 from unittest.mock import MagicMock, Mock
 
 import pytest
@@ -226,19 +225,20 @@ def test_train_returns_lora_result(mock_sentence_transformers_and_peft, tmp_path
 
 
 def test_hyperparams_same_as_standard(mock_sentence_transformers_and_peft, tmp_path):
-    """Verify all shared hyperparameters identical to StandardTrainer."""
+    """Verify shared hyperparameters match StandardTrainer (except learning_rate)."""
     train_pairs = [_make_pair()]
     eval_pairs = [_make_pair()]
 
     output_dir = tmp_path / "model"
     trainer = LoRATrainer(train_pairs, eval_pairs, output_dir=output_dir)
 
-    # WHY check hyperparams: LoRA should only differ in adapter config, not training
+    # WHY epochs/batch/warmup/eval identical: same training schedule as standard
     assert trainer.epochs == 4
     assert trainer.batch_size == 16
-    assert trainer.learning_rate == 2e-5
     assert trainer.warmup_steps == 100
     assert trainer.evaluation_steps == 500
+    # WHY 2e-4 not 2e-5: LoRA adapters need higher LR (only 0.32% of params trainable)
+    assert trainer.learning_rate == 2e-4
 
 
 def test_saves_training_info_json(mock_sentence_transformers_and_peft, tmp_path, monkeypatch):

@@ -14,12 +14,11 @@ from pathlib import Path
 
 from src.models import DatingPair, TrainingResult
 
-# WHY import shared constants: LoRA uses identical hyperparams except LoRA-specific ones
+# WHY import shared constants: LoRA uses identical hyperparams except learning_rate
 from src.trainer import (
     BATCH_SIZE,
     EPOCHS,
     EVALUATION_STEPS,
-    LEARNING_RATE,
     MODEL_NAME,
     WARMUP_STEPS,
 )
@@ -27,6 +26,11 @@ from src.trainer import (
 # LoRA-specific configuration
 OUTPUT_DIR = Path("training/model/lora_model")
 TRAINING_INFO_PATH = Path("training/lora_training_info.json")
+
+# WHY 2e-4 not 2e-5: LoRA adapters are only 0.32% of total params (73K/22.7M)
+# Higher LR needed for small parameter count to learn effectively. Standard uses 2e-5
+# for full 22.7M params. 10x higher LR compensates for ~32x fewer trainable params.
+LORA_LEARNING_RATE = 2e-4
 
 # WHY r=8: balance between expressiveness and efficiency, standard LoRA default
 # WHY alpha=16: scaling factor (alpha/r = 2.0), controls magnitude of LoRA updates
@@ -55,7 +59,7 @@ class LoRATrainer:
         output_dir: Path = OUTPUT_DIR,
         epochs: int = EPOCHS,
         batch_size: int = BATCH_SIZE,
-        learning_rate: float = LEARNING_RATE,
+        learning_rate: float = LORA_LEARNING_RATE,
         warmup_steps: int = WARMUP_STEPS,
         evaluation_steps: int = EVALUATION_STEPS,
         lora_rank: int = LORA_RANK,

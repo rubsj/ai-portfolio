@@ -2,15 +2,32 @@
   "model_type": "standard",
   "epochs": 4,
   "batch_size": 16,
-  "learning_rate": 0.00002,
+  "learning_rate": 2e-05,
   "warmup_steps": 100,
   "evaluation_steps": 500,
-  "training_time_seconds": 0.00021028518676757812,
-  "final_spearman": 0.0,
-  "spearman_history": [],
-  "output_path": "/private/var/folders/5w/3gt4_h7s6tb7sdvz37s81b5w0000gn/T/pytest-of-prathamjha/pytest-22/test_train_cleans_up_memory0/model",
-  "trainable_parameters": 1500,
-  "total_parameters": 1500,
+  "training_time_seconds": 61.43,
+  "final_spearman": 0.8528996822060586,
+  "spearman_history": [
+    [
+      1,
+      0.770770375356907
+    ],
+    [
+      2,
+      0.849627280281068
+    ],
+    [
+      3,
+      0.8518621908993443
+    ],
+    [
+      4,
+      0.8528996822060586
+    ]
+  ],
+  "output_path": "training/model/standard_model",
+  "trainable_parameters": 22713216,
+  "total_parameters": 22713216,
   "lora_rank": null,
   "lora_alpha": null,
   "lora_dropout": null,

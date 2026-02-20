@@ -17,6 +17,7 @@ dependencies = [
     "click>=8.1",
     "rich>=13.0",
     "numpy>=1.26",
+    "datasets>=4.5.0",
 ]
 
 [dependency-groups]

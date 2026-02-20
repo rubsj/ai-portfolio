@@ -2,20 +2,32 @@
   "model_type": "lora",
   "epochs": 4,
   "batch_size": 16,
-  "learning_rate": 0.00002,
+  "learning_rate": 0.0002,
   "warmup_steps": 100,
   "evaluation_steps": 500,
-  "training_time_seconds": 0.00026488304138183594,
-  "final_spearman": 0.8,
+  "training_time_seconds": 34.62619471549988,
+  "final_spearman": 0.8271993548927186,
   "spearman_history": [
     [
-      0,
-      0.8
+      1,
+      0.19690281826711084
+    ],
+    [
+      2,
+      0.7374876533393206
+    ],
+    [
+      3,
+      0.8067667965318024
+    ],
+    [
+      4,
+      0.8271993548927186
     ]
   ],
-  "output_path": "/private/var/folders/5w/3gt4_h7s6tb7sdvz37s81b5w0000gn/T/pytest-of-prathamjha/pytest-21/test_train_returns_lora_result0/model",
-  "trainable_parameters": 500,
-  "total_parameters": 10500,
+  "output_path": "training/model/lora_model",
+  "trainable_parameters": 73728,
+  "total_parameters": 22786944,
   "lora_rank": 8,
   "lora_alpha": 16,
   "lora_dropout": 0.1,
