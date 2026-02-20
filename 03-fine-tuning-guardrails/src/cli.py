@@ -110,5 +110,59 @@ def baseline() -> None:
     console.print(f"[green]Cohen's d:[/green] {metrics.cohens_d:.4f}")
 
 
+@cli.command()
+@click.option(
+    "--mode",
+    type=click.Choice(["standard", "lora", "all"]),
+    default="all",
+    help="Evaluation mode: standard, lora, or all (default: all)",
+)
+def evaluate(mode: str) -> None:
+    """Run post-training evaluation for fine-tuned models.
+
+    WHY separate from training: enables re-evaluation with different metrics
+    or after fixing bugs without re-training (45-90 min saved).
+
+    WHY mode parameter: allows running only standard or LoRA if one model
+    already has cached embeddings.
+    """
+    # WHY deferred import: avoid circular dependency with post_training_eval
+    from src.post_training_eval import run_post_training_evaluation
+
+    console.print(f"\n[bold blue]Running {mode} model evaluation...[/bold blue]\n")
+
+    # WHY always run full orchestrator: it automatically skips embedding generation
+    # if .npz files already exist, making mode distinction unnecessary for caching
+    run_post_training_evaluation()
+
+    console.print("\n[green]✓ Evaluation complete![/green]")
+    console.print("Metrics saved to:")
+    console.print("  • eval/finetuned_metrics.json (standard model)")
+    console.print("  • eval/lora_metrics.json (LoRA model)")
+
+
+@cli.command()
+def compare() -> None:
+    """Generate comparison charts and HTML report.
+
+    WHY separate from evaluate: comparison works from cached embeddings
+    and metrics JSONs, enabling fast re-runs when tweaking visualizations
+    without re-running evaluation.
+    """
+    # WHY deferred import: avoid loading matplotlib/seaborn until needed
+    from src.comparison import run_comparison
+
+    console.print("\n[bold blue]Generating comparison analysis...[/bold blue]\n")
+
+    run_comparison()
+
+    console.print("\n[green]✓ Comparison complete![/green]")
+    console.print("Outputs:")
+    console.print("  • eval/comparison_report.html (self-contained with charts)")
+    console.print("  • eval/visualizations/comparison/*.png (8 charts)")
+    console.print("  • eval/false_positive_analysis.txt")
+    console.print("  • eval/comparison_result.json")
+
+
 if __name__ == "__main__":
     cli()
