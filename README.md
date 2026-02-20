@@ -26,7 +26,7 @@ A focused 8-week engineering sprint (Feb–Apr 2026) building nine production-gr
 |---|---------|--------|----------------|-------|
 | 1 | [Synthetic Data — Home DIY Repair](./01-synthetic-data-home-diy/) | ✅ Complete | Structured generation, LLM-as-Judge, correction loop, Jaccard similarity | Pydantic, OpenAI, Instructor, Streamlit |
 | 2 | [Evaluating RAG for Any PDF](./02-rag-evaluation/) | ✅ Complete | 16-config grid search, chunking strategies, hybrid reranking, RAGAS metrics | LangChain, FAISS, RAGAS, Cohere, Braintrust, Click |
-| 3 | [Contrastive Embedding Fine-Tuning](./03-fine-tuning-guardrails/) | 🔄 In Progress | CosineSimilarityLoss, LoRA adapters, UMAP, HDBSCAN, Spearman correlation | Sentence-Transformers, PEFT/LoRA, OpenAI, Braintrust |
+| 3 | [Contrastive Embedding Fine-Tuning](./03-fine-tuning-guardrails/) | ✅ Complete | CosineSimilarityLoss, LoRA (PEFT), 8-metric evaluation, UMAP, HDBSCAN | Sentence-Transformers, PEFT/LoRA, scikit-learn, scipy, Click |
 | 4 | [AI-Powered Resume Coach](./04-resume-coach/) | ⏳ Upcoming | JD analysis, controlled fit levels, LLM-as-Judge evaluation | OpenAI, Pydantic, FastAPI |
 | 5 | [Production RAG System](./05-production-rag/) | ⏳ Upcoming | Multi-strategy chunking, hybrid search, Cohere reranking, REST API | LangChain, FAISS, Cohere, FastAPI, Click |
 | 6 | [Digital Writing Clone — 5-Agent](./06-digital-writing-clone/) | ⏳ Upcoming | StyleAnalyzer, RAG, Evaluator, Fallback, Planner agents; style-matched generation | CrewAI, LangChain, OpenAI |
@@ -64,9 +64,17 @@ A focused 8-week engineering sprint (Feb–Apr 2026) building nine production-gr
 
 ---
 
-### P3 — Contrastive Embedding Fine-Tuning *(In Progress)*
+### P3 — Contrastive Embedding Fine-Tuning
 
-Fine-tuning a sentence-transformer model on dating compatibility data using **CosineSimilarityLoss + LoRA adapters** to reshape the embedding space for compatible/incompatible pair separation. Before/after evaluation via cosine similarity distributions, UMAP clustering, HDBSCAN purity, and Cohen's d. Target: Spearman correlation baseline ~0.76 → ≥0.86 post-fine-tuning.
+**Flipped inverted embeddings** from Spearman -0.22 to +0.85 using contrastive fine-tuning, then compared standard vs. LoRA approaches.
+
+- **1,238% margin improvement**: Baseline margin -0.083 → +0.940 after standard fine-tuning (AUC-ROC 0.994, Cohen's d 7.73)
+- **LoRA efficiency**: 96.9% of standard performance with only 0.32% trainable parameters (73K vs 22.7M) and a 300x smaller model file
+- **8-metric evaluation framework**: Spearman, Margin, Cohen's d, AUC-ROC, F1, Cluster Purity, False Positive Analysis, Category Metrics
+- **97.8% false positive reduction**: 137 → 3 FPs after standard fine-tuning; self-contained HTML comparison report with 8 charts
+- **112 tests**, 3 ADRs, memory-constrained pipeline running on 8GB MacBook Air M2
+
+> [Project README](./03-fine-tuning-guardrails/README.md)
 
 ---
 
@@ -90,12 +98,13 @@ ai-portfolio/
 │   ├── docs/
 │   ├── streamlit_app.py
 │   └── pyproject.toml
-├── 03-fine-tuning-guardrails/    # P3 — In Progress
-│   ├── src/                      # models, data_loader, data_evaluator, metrics
+├── 03-fine-tuning-guardrails/    # P3 — Complete
+│   ├── src/                      # trainer, lora_trainer, post_training_eval, comparison, metrics, cli
 │   ├── tests/
 │   ├── data/
 │   ├── training/
 │   ├── eval/
+│   ├── docs/
 │   └── pyproject.toml
 ├── 04-resume-coach/              # P4 — Upcoming (Week 3)
 ├── 05-production-rag/            # P5 — Upcoming (Week 4)
@@ -124,8 +133,8 @@ ai-portfolio/
 
 ## Engineering Practices
 
-- **Architecture Decision Records** — every significant design choice documented per project (4 in P1, 5 in P2)
-- **95%+ test coverage targets** — pytest with parametrized cases covering happy path and failure modes
+- **Architecture Decision Records** — every significant design choice documented per project (4 in P1, 5 in P2, 3 in P3)
+- **95%+ test coverage targets** — pytest with parametrized cases covering happy path and failure modes (500+ tests across 3 projects)
 - **5-layer validation methodology** — schema validation, semantic checks, LLM-as-Judge, correction loops, re-evaluation
 - **LLM cost management** — MD5-keyed disk cache for all LLM calls; estimated cost logged per call
 - **Clean PR history** — feature branches, atomic commits, ~20 PRs merged across projects
