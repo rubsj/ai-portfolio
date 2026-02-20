@@ -9,3 +9,7 @@ data/cache/
 dist/
 build/
 .ruff_cache/
+
+# Training model weights (~90MB each, must not be committed)
+03-fine-tuning-guardrails/training/model/*/
+# DO commit training/*.json (training info) and training/*.png (charts)

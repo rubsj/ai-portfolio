@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from enum import IntEnum
+from typing import Literal
 
 from pydantic import BaseModel, Field, field_validator
 
@@ -96,3 +97,28 @@ class ComparisonResult(BaseModel):
     margin_improvement_pct: float
     cohens_d_improvement: float
     spearman_improvement: float
+
+
+class TrainingResult(BaseModel):
+    """Training hyperparameters, timing, and Spearman progression."""
+
+    # WHY Literal: Pydantic validates at construction, prevents typos like "standrd"
+    model_type: Literal["standard", "lora"]
+    epochs: int
+    batch_size: int
+    learning_rate: float
+    warmup_steps: int
+    evaluation_steps: int
+    training_time_seconds: float
+    final_spearman: float
+    # WHY list of tuples: preserves step order, CSV has (step, spearman) pairs
+    spearman_history: list[tuple[int, float]] = Field(default_factory=list)
+    output_path: str
+    trainable_parameters: int
+    total_parameters: int
+    # LoRA-specific (None for standard)
+    # WHY Optional: standard training doesn't use LoRA, fields must be nullable
+    lora_rank: int | None = None
+    lora_alpha: int | None = None
+    lora_dropout: float | None = None
+    lora_target_modules: list[str] | None = None

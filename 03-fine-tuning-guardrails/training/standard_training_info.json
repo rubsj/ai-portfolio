@@ -1,0 +1,18 @@
+{
+  "model_type": "standard",
+  "epochs": 4,
+  "batch_size": 16,
+  "learning_rate": 0.00002,
+  "warmup_steps": 100,
+  "evaluation_steps": 500,
+  "training_time_seconds": 0.00021386146545410156,
+  "final_spearman": 0.0,
+  "spearman_history": [],
+  "output_path": "/private/var/folders/5w/3gt4_h7s6tb7sdvz37s81b5w0000gn/T/pytest-of-prathamjha/pytest-20/test_train_cleans_up_memory0/model",
+  "trainable_parameters": 1500,
+  "total_parameters": 1500,
+  "lora_rank": null,
+  "lora_alpha": null,
+  "lora_dropout": null,
+  "lora_target_modules": null
+}
