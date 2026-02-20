@@ -1,11 +1,15 @@
 from __future__ import annotations
 
+import base64
 from pathlib import Path
 
 import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
 from sklearn.metrics import auc, roc_curve
+
+from src.data_loader import load_pairs
+from src.models import BaselineMetrics, ComparisonResult, EvaluationBundle
 
 # Chart color constants (enforced across all visualizations)
 COLOR_BASELINE = "#9E9E9E"  # gray
@@ -645,3 +649,381 @@ def write_false_positive_analysis(
     output_path.write_text("\n".join(lines))
 
     return output_path
+
+
+def generate_all_comparison_charts(
+    baseline_bundle: EvaluationBundle,
+    standard_bundle: EvaluationBundle,
+    lora_bundle: EvaluationBundle,
+) -> dict[str, Path]:
+    """Generate all 8 comparison charts and return path dict.
+
+    WHY orchestrator: centralizes chart generation logic, enables HTML report
+    to embed all charts without duplicating calls.
+
+    Args:
+        baseline_bundle: Baseline EvaluationBundle
+        standard_bundle: Standard EvaluationBundle
+        lora_bundle: LoRA EvaluationBundle
+
+    Returns:
+        Dict mapping chart keys to saved PNG paths
+    """
+    output_dir = Path("eval/visualizations/comparison")
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    chart_paths = {}
+
+    # Chart 1: Cosine distributions
+    chart_paths["distributions"] = plot_comparison_cosine_distributions(
+        baseline_sims=baseline_bundle.similarities,
+        baseline_labels=baseline_bundle.labels,
+        standard_sims=standard_bundle.similarities,
+        standard_labels=standard_bundle.labels,
+        lora_sims=lora_bundle.similarities,
+        lora_labels=lora_bundle.labels,
+        output_path=output_dir / "cosine_distributions.png",
+    )
+
+    # Chart 2: UMAP projections
+    chart_paths["umap"] = plot_comparison_umap(
+        baseline_projections=baseline_bundle.projections,
+        baseline_labels=baseline_bundle.labels,
+        standard_projections=standard_bundle.projections,
+        standard_labels=standard_bundle.labels,
+        lora_projections=lora_bundle.projections,
+        lora_labels=lora_bundle.labels,
+        output_path=output_dir / "umap.png",
+    )
+
+    # Chart 3: Cluster purity
+    chart_paths["cluster_purity"] = plot_comparison_cluster_purity(
+        baseline_purity=baseline_bundle.metrics.cluster_purity,
+        standard_purity=standard_bundle.metrics.cluster_purity,
+        lora_purity=lora_bundle.metrics.cluster_purity,
+        output_path=output_dir / "cluster_purity.png",
+    )
+
+    # Chart 4: ROC curves
+    chart_paths["roc"] = plot_comparison_roc_curves(
+        baseline_sims=baseline_bundle.similarities,
+        baseline_labels=baseline_bundle.labels,
+        standard_sims=standard_bundle.similarities,
+        standard_labels=standard_bundle.labels,
+        lora_sims=lora_bundle.similarities,
+        lora_labels=lora_bundle.labels,
+        output_path=output_dir / "roc_curves.png",
+    )
+
+    # Chart 5: Category heatmap
+    chart_paths["category_heatmap"] = plot_comparison_category_heatmap(
+        baseline_category_metrics=baseline_bundle.metrics.category_metrics,
+        standard_category_metrics=standard_bundle.metrics.category_metrics,
+        lora_category_metrics=lora_bundle.metrics.category_metrics,
+        output_path=output_dir / "category_heatmap.png",
+    )
+
+    # Chart 6: Cohen's d comparison
+    chart_paths["cohens_d"] = plot_comparison_cohens_d(
+        baseline_d=baseline_bundle.metrics.cohens_d,
+        standard_d=standard_bundle.metrics.cohens_d,
+        lora_d=lora_bundle.metrics.cohens_d,
+        output_path=output_dir / "cohens_d.png",
+    )
+
+    # Chart 7: Classification metrics
+    chart_paths["classification_metrics"] = plot_comparison_classification_metrics(
+        baseline_metrics=baseline_bundle.metrics,
+        standard_metrics=standard_bundle.metrics,
+        lora_metrics=lora_bundle.metrics,
+        output_path=output_dir / "classification_metrics.png",
+    )
+
+    # Chart 8: False positives
+    chart_paths["false_positives"] = plot_comparison_false_positives(
+        baseline_fp_counts=baseline_bundle.metrics.false_positive_counts,
+        standard_fp_counts=standard_bundle.metrics.false_positive_counts,
+        lora_fp_counts=lora_bundle.metrics.false_positive_counts,
+        output_path=output_dir / "false_positives.png",
+    )
+
+    return chart_paths
+
+
+def build_comparison_result(
+    baseline_metrics: BaselineMetrics,
+    standard_metrics: BaselineMetrics,
+    lora_metrics: BaselineMetrics,
+) -> ComparisonResult:
+    """Build ComparisonResult with improvement deltas.
+
+    WHY deltas: portfolio documentation needs clear improvement metrics
+    (e.g., "73% margin improvement from fine-tuning").
+
+    Args:
+        baseline_metrics: Baseline BaselineMetrics
+        standard_metrics: Standard BaselineMetrics
+        lora_metrics: LoRA BaselineMetrics
+
+    Returns:
+        ComparisonResult with computed improvement deltas
+    """
+    # WHY absolute improvement: baseline could be negative (inverted embeddings)
+    margin_improvement = standard_metrics.compatibility_margin - baseline_metrics.compatibility_margin
+
+    # WHY avoid division by zero: baseline margin might be zero or negative
+    if baseline_metrics.compatibility_margin != 0:
+        margin_improvement_pct = (margin_improvement / abs(baseline_metrics.compatibility_margin)) * 100
+    else:
+        margin_improvement_pct = 0.0
+
+    # WHY Cohen's d improvement: measures effect size change
+    cohens_d_improvement = standard_metrics.cohens_d - baseline_metrics.cohens_d
+
+    # WHY Spearman improvement: rank correlation change
+    spearman_improvement = standard_metrics.spearman_correlation - baseline_metrics.spearman_correlation
+
+    return ComparisonResult(
+        baseline=baseline_metrics,
+        standard_finetuned=standard_metrics,
+        lora_finetuned=lora_metrics,
+        margin_improvement=margin_improvement,
+        margin_improvement_pct=margin_improvement_pct,
+        cohens_d_improvement=cohens_d_improvement,
+        spearman_improvement=spearman_improvement,
+    )
+
+
+def generate_comparison_report_html(
+    baseline_metrics: BaselineMetrics,
+    standard_metrics: BaselineMetrics,
+    lora_metrics: BaselineMetrics,
+    chart_paths: dict[str, Path],
+) -> Path:
+    """Generate self-contained HTML report with all comparison charts.
+
+    WHY self-contained: base64-embeds PNGs so report is a single file
+    (easy to share, no broken links if files move).
+
+    Args:
+        baseline_metrics: Baseline BaselineMetrics
+        standard_metrics: Standard BaselineMetrics
+        lora_metrics: LoRA BaselineMetrics
+        chart_paths: Dict mapping chart keys to PNG paths
+
+    Returns:
+        Path to saved HTML report
+    """
+    output_path = Path("eval/comparison_report.html")
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    def _embed_png(path: Path) -> str:
+        """Embed PNG as base64 data URI."""
+        if not path.exists():
+            return "<p><em>Chart not found.</em></p>"
+        encoded = base64.b64encode(path.read_bytes()).decode("ascii")
+        return f'<img src="data:image/png;base64,{encoded}" style="max-width:100%;border-radius:6px;">'
+
+    # WHY exclude complex fields: focus on core numeric metrics for table
+    baseline_dict = baseline_metrics.model_dump(
+        exclude={"category_metrics", "pair_type_metrics", "false_positive_counts"}
+    )
+    standard_dict = standard_metrics.model_dump(
+        exclude={"category_metrics", "pair_type_metrics", "false_positive_counts"}
+    )
+    lora_dict = lora_metrics.model_dump(
+        exclude={"category_metrics", "pair_type_metrics", "false_positive_counts"}
+    )
+
+    # Build comparison table rows
+    rows = ""
+    for key in baseline_dict.keys():
+        label = key.replace("_", " ").title()
+        b_val = baseline_dict[key]
+        s_val = standard_dict[key]
+        l_val = lora_dict[key]
+
+        # WHY formatting: floats get 4 decimals, ints/strings as-is
+        if isinstance(b_val, float):
+            b_fmt = f"{b_val:.4f}"
+            s_fmt = f"{s_val:.4f}"
+            l_fmt = f"{l_val:.4f}"
+        else:
+            b_fmt = str(b_val)
+            s_fmt = str(s_val)
+            l_fmt = str(l_val)
+
+        rows += f"<tr><td><strong>{label}</strong></td><td>{b_fmt}</td><td>{s_fmt}</td><td>{l_fmt}</td></tr>\n"
+
+    # Build chart sections
+    sections = ""
+    for key, label in [
+        ("distributions", "Cosine Similarity Distributions"),
+        ("umap", "UMAP Projections"),
+        ("cluster_purity", "Cluster Purity Comparison"),
+        ("roc", "ROC Curves"),
+        ("category_heatmap", "Category Margin Heatmap"),
+        ("cohens_d", "Cohen's d Effect Size"),
+        ("classification_metrics", "Classification Metrics"),
+        ("false_positives", "False Positives by Pair Type"),
+    ]:
+        path = chart_paths.get(key)
+        if path is None:
+            continue
+        chart_html = _embed_png(path)
+        sections += f"""
+        <section>
+            <h2>{label}</h2>
+            {chart_html}
+        </section>
+        """
+
+    # WHY inline CSS: self-contained file, no external dependencies
+    html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>P3 — Comparison Report (Baseline vs Standard vs LoRA)</title>
+<style>
+  body {{ font-family: system-ui, sans-serif; margin: 0; padding: 2rem; background: #f9f9f9; color: #222; }}
+  h1 {{ border-bottom: 3px solid #2196F3; padding-bottom: 0.5rem; }}
+  h2 {{ color: #1565C0; margin-top: 2rem; }}
+  section {{ background: white; border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0;
+             box-shadow: 0 2px 6px rgba(0,0,0,0.08); }}
+  table {{ border-collapse: collapse; width: 100%; }}
+  th, td {{ text-align: left; padding: 0.5rem 0.75rem; border-bottom: 1px solid #e0e0e0; }}
+  th {{ background: #E3F2FD; color: #1565C0; }}
+  tr:hover {{ background: #f5f5f5; }}
+</style>
+</head>
+<body>
+<h1>P3 — Fine-Tuning Comparison Report</h1>
+<p>Comparison of baseline (pre-trained <code>all-MiniLM-L6-v2</code>), standard fine-tuned, and LoRA fine-tuned models on the dating compatibility eval split (n=295 pairs).</p>
+
+<section>
+  <h2>Core Metrics Comparison</h2>
+  <table>
+    <tr><th>Metric</th><th>Baseline</th><th>Standard</th><th>LoRA</th></tr>
+    {rows}
+  </table>
+</section>
+
+{sections}
+</body>
+</html>
+"""
+    output_path.write_text(html, encoding="utf-8")
+    return output_path
+
+
+def run_comparison() -> None:
+    """Main orchestrator for comparison analysis.
+
+    WHY separate from evaluation: enables fast re-run from cached data
+    (no model loading, just metrics + embeddings). Useful for iterating
+    on visualization tweaks.
+
+    Steps:
+    1. Load baseline, standard, LoRA metrics JSONs
+    2. Load baseline, standard, LoRA embeddings NPZs
+    3. Rebuild EvaluationBundles from saved data
+    4. Generate all 8 comparison charts
+    5. Generate HTML report
+    6. Generate false positive analysis
+    7. Save ComparisonResult JSON
+    """
+    from src.post_training_eval import evaluate_from_embeddings, resolve_baseline_path
+
+    print("=== COMPARISON ANALYSIS ===\n")
+
+    # --- Step 1: Load metrics JSONs ---
+    print("Loading metrics JSONs...")
+    baseline_metrics_path = resolve_baseline_path("baseline_metrics.json")
+    baseline_metrics = BaselineMetrics.model_validate_json(baseline_metrics_path.read_text())
+
+    standard_metrics_path = Path("eval/finetuned_metrics.json")
+    if not standard_metrics_path.exists():
+        msg = f"Standard metrics not found at {standard_metrics_path}. Run 'evaluate --mode all' first."
+        raise FileNotFoundError(msg)
+    standard_metrics = BaselineMetrics.model_validate_json(standard_metrics_path.read_text())
+
+    lora_metrics_path = Path("eval/lora_metrics.json")
+    if not lora_metrics_path.exists():
+        msg = f"LoRA metrics not found at {lora_metrics_path}. Run 'evaluate --mode all' first."
+        raise FileNotFoundError(msg)
+    lora_metrics = BaselineMetrics.model_validate_json(lora_metrics_path.read_text())
+
+    print(f"  ✓ Baseline: {baseline_metrics_path}")
+    print(f"  ✓ Standard: {standard_metrics_path}")
+    print(f"  ✓ LoRA: {lora_metrics_path}\n")
+
+    # --- Step 2: Load eval pairs ---
+    print("Loading eval pairs...")
+    eval_pairs = load_pairs(Path("data/raw/eval_pairs.jsonl"))
+    print(f"  ✓ Loaded {len(eval_pairs)} evaluation pairs\n")
+
+    # --- Step 3: Rebuild EvaluationBundles from embeddings ---
+    # WHY rebuild: we need intermediate arrays (similarities, projections, cluster_labels) for charts
+    print("Rebuilding EvaluationBundles from cached embeddings...")
+
+    baseline_emb_path = Path("data/embeddings/baseline_eval.npz")
+    if not baseline_emb_path.exists():
+        msg = f"Baseline embeddings not found at {baseline_emb_path}"
+        raise FileNotFoundError(msg)
+    baseline_bundle = evaluate_from_embeddings(baseline_emb_path, eval_pairs)
+    print("  ✓ Baseline bundle ready")
+
+    standard_emb_path = Path("data/embeddings/finetuned_eval.npz")
+    if not standard_emb_path.exists():
+        msg = f"Standard embeddings not found at {standard_emb_path}"
+        raise FileNotFoundError(msg)
+    standard_bundle = evaluate_from_embeddings(standard_emb_path, eval_pairs)
+    print("  ✓ Standard bundle ready")
+
+    lora_emb_path = Path("data/embeddings/lora_eval.npz")
+    if not lora_emb_path.exists():
+        msg = f"LoRA embeddings not found at {lora_emb_path}"
+        raise FileNotFoundError(msg)
+    lora_bundle = evaluate_from_embeddings(lora_emb_path, eval_pairs)
+    print("  ✓ LoRA bundle ready\n")
+
+    # --- Step 4: Generate all comparison charts ---
+    print("Generating comparison charts...")
+    chart_paths = generate_all_comparison_charts(baseline_bundle, standard_bundle, lora_bundle)
+    print(f"  ✓ Generated {len(chart_paths)} charts in eval/visualizations/comparison/\n")
+
+    # --- Step 5: Generate HTML report ---
+    print("Generating HTML report...")
+    html_path = generate_comparison_report_html(
+        baseline_metrics, standard_metrics, lora_metrics, chart_paths
+    )
+    html_size_kb = html_path.stat().st_size / 1024
+    print(f"  ✓ {html_path} ({html_size_kb:.1f} KB)\n")
+
+    # --- Step 6: Generate false positive analysis ---
+    print("Generating false positive analysis...")
+    fp_analysis_path = write_false_positive_analysis(
+        baseline_metrics, standard_metrics, lora_metrics, Path("eval/false_positive_analysis.txt")
+    )
+    print(f"  ✓ {fp_analysis_path}\n")
+
+    # --- Step 7: Save ComparisonResult JSON ---
+    print("Computing improvement deltas...")
+    comparison_result = build_comparison_result(baseline_metrics, standard_metrics, lora_metrics)
+    comparison_result_path = Path("eval/comparison_result.json")
+    comparison_result_path.write_text(comparison_result.model_dump_json(indent=2))
+    print(f"  ✓ {comparison_result_path}\n")
+
+    # --- Summary ---
+    print("=== SUMMARY ===")
+    print(f"Margin improvement: {comparison_result.margin_improvement:+.4f} "
+          f"({comparison_result.margin_improvement_pct:+.1f}%)")
+    print(f"Cohen's d improvement: {comparison_result.cohens_d_improvement:+.4f}")
+    print(f"Spearman improvement: {comparison_result.spearman_improvement:+.4f}")
+    print(f"\nHTML report: {html_path}")
+    print(f"Charts: eval/visualizations/comparison/ ({len(chart_paths)} files)")
+
+
+if __name__ == "__main__":  # pragma: no cover
+    run_comparison()
