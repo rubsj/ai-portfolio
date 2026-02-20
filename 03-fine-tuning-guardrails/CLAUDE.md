@@ -351,13 +351,23 @@ Do NOT re-debate architecture — follow the plan.
 - [ ] T1.8: Save baseline_metrics.json + baseline_report.html
 - [ ] **Checkpoint:** Full baseline established. Every metric has a "before" number.
 
-### Day 2 — Fine-Tuning: Standard + LoRA (Wed Feb 19)
-- [ ] T2.1: Implement trainer.py (DataLoader, CosineSimilarityLoss, evaluator)
-- [ ] T2.2: Run standard training (4 epochs, monitor Spearman)
-- [ ] T2.3: Implement lora_trainer.py (PEFT LoraConfig)
-- [ ] T2.4: Run LoRA training (same hyperparams)
-- [ ] T2.5: Compare training curves (standard vs LoRA)
-- [ ] **Checkpoint:** Fine-tuned model(s) saved. Training curves logged.
+### Day 2 — Fine-Tuning: Standard + LoRA (Wed Feb 19) — ✅ COMPLETE
+- [x] T2.1: Implement trainer.py (DataLoader, CosineSimilarityLoss, evaluator)
+- [x] T2.2: Run standard training (4 epochs, monitor Spearman) — **Final Spearman: 0.853**
+- [x] T2.3: Implement lora_trainer.py (PEFT LoraConfig)
+- [x] T2.4: Run LoRA training (same hyperparams) — **Final Spearman: 0.827**
+- [x] T2.5: Compare training curves (standard vs LoRA) — Chart saved to `training/training_curves.png`
+- [x] **Checkpoint:** Fine-tuned model(s) saved. Training curves logged.
+
+**Key Results:**
+- **Standard Fine-Tuning**: Spearman 0.771 → 0.850 → 0.852 → **0.853** (61.4 sec, 22.7M trainable params)
+- **LoRA Fine-Tuning**: Spearman 0.197 → 0.737 → 0.807 → **0.827** (34.6 sec, 73K trainable params, 0.32% of total)
+- **LoRA Efficiency**: Achieved 96.9% of standard performance with only 0.32% trainable parameters
+- **Both models flipped baseline**: Baseline Spearman -0.219 → Fine-tuned 0.85+ (inverted embeddings corrected)
+- **LoRA Fix Applied**: Increased learning rate from 2e-5 to 2e-4 (10x higher) to compensate for tiny adapter size
+- **Training Time**: ~1 minute each on MacBook Air M2 (1,195 training pairs, 75 steps/epoch, 300 total steps)
+- **Model Files**: Standard 86.65 MB, LoRA adapter 0.28 MB
+- **PR #27**: Merged to main (commit d92887d)
 
 ### Day 3 — Post-Training Evaluation + Documentation (Thu Feb 20)
 - [ ] T3.1: Post-training evaluation (all 8 metrics on fine-tuned model(s))
@@ -417,7 +427,8 @@ Both standard and LoRA training use identical hyperparameters (controlled experi
 |-----------|-------|-----------|
 | Epochs | 4 | Small dataset — more risks overfitting |
 | Batch size | 16 | Fits in 8GB M2 RAM |
-| Learning rate | 2e-5 | Standard for sentence-transformers |
+| Learning rate (standard) | 2e-5 | Standard for sentence-transformers full fine-tuning |
+| Learning rate (LoRA) | **2e-4** | **10x higher** — compensates for only 0.32% trainable params (73K/22.7M) |
 | Warmup steps | 100 | Prevents early destabilization |
 | Eval steps | 500 | Monitors Spearman during training |
 | Optimizer | AdamW | Weight decay prevents overfitting |
@@ -431,6 +442,8 @@ LoRA-specific:
 | Alpha | 16 | 2×r is standard scaling |
 | Dropout | 0.1 | Prevents overfitting on 1,195 examples |
 | Target modules | query, value | Attention matrices that determine "what to attend to" |
+
+**CRITICAL LoRA Learning Rate Discovery**: LoRA adapters (73,728 params) are only 0.32% of total parameters (22.7M). Using the same learning rate as full fine-tuning (2e-5) caused LoRA to learn too slowly (Spearman still negative after 4 epochs). Increasing to 2e-4 (10x higher) compensates for the drastically smaller parameter count — LoRA converged successfully and achieved 96.9% of standard performance.
 
 ---
 
