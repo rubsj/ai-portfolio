@@ -381,3 +381,61 @@ def generate_baseline_report_html(
 """
     save_path.write_text(html, encoding="utf-8")
     return save_path
+
+
+def plot_training_curves(
+    standard_history: list[tuple[int, float]],
+    lora_history: list[tuple[int, float]] | None = None,
+    save_path: Path | None = None,
+) -> Path:
+    """Line chart showing Spearman progression during fine-tuning.
+
+    WHY both models on same axes: direct comparison of standard vs LoRA learning curves.
+    Baseline reference at -0.219 shows the pre-training inversion problem.
+    Target reference at 0.86 shows the PRD goal (compatible_mean - incompatible_mean).
+
+    Args:
+        standard_history: List of (epoch, spearman) tuples from standard training
+        lora_history: Optional list of (epoch, spearman) tuples from LoRA training
+        save_path: Optional output path (default: training/training_curves.png)
+
+    Returns:
+        Path to saved PNG chart
+    """
+    save_path = save_path or Path("training/training_curves.png")
+    save_path.parent.mkdir(parents=True, exist_ok=True)
+
+    fig, ax = plt.subplots(figsize=(10, 6))
+
+    # WHY baseline at -0.219: shows pre-training inverted embeddings (Day 1 metric)
+    ax.axhline(-0.219, color="gray", linestyle="--", linewidth=1.5,
+               label="Baseline (pre-training, inverted)", alpha=0.7)
+
+    # WHY target at 0.86: PRD goal for fine-tuned margin
+    ax.axhline(0.86, color="green", linestyle="--", linewidth=1.5,
+               label="Target (margin goal = 0.86)", alpha=0.7)
+
+    # Plot standard training curve
+    if standard_history:
+        epochs = [step for step, _ in standard_history]
+        spearmans = [sp for _, sp in standard_history]
+        ax.plot(epochs, spearmans, marker="o", linewidth=2.5, markersize=8,
+                color="#2196F3", label=f"Standard Fine-Tuning (final={spearmans[-1]:.3f})")
+
+    # Plot LoRA training curve (if available)
+    if lora_history:
+        epochs = [step for step, _ in lora_history]
+        spearmans = [sp for _, sp in lora_history]
+        ax.plot(epochs, spearmans, marker="s", linewidth=2.5, markersize=8,
+                color="#FF9800", label=f"LoRA Fine-Tuning (final={spearmans[-1]:.3f})")
+
+    ax.set_title("Fine-Tuning Learning Curves — Spearman Correlation vs Epoch", fontsize=14)
+    ax.set_xlabel("Epoch", fontsize=12)
+    ax.set_ylabel("Spearman Correlation", fontsize=12)
+    ax.set_ylim(-0.3, 1.0)  # WHY range: shows full progression from negative to near-perfect
+    ax.grid(True, alpha=0.3, linestyle=":")
+    ax.legend(fontsize=10, loc="lower right")
+    fig.tight_layout()
+    fig.savefig(save_path, dpi=150)
+    plt.close(fig)
+    return save_path
