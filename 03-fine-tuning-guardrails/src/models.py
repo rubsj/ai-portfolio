@@ -1,8 +1,10 @@
 from __future__ import annotations
 
+from dataclasses import dataclass
 from enum import IntEnum
 from typing import Literal
 
+import numpy as np
 from pydantic import BaseModel, Field, field_validator
 
 
@@ -122,3 +124,21 @@ class TrainingResult(BaseModel):
     lora_alpha: int | None = None
     lora_dropout: float | None = None
     lora_target_modules: list[str] | None = None
+
+
+@dataclass
+class EvaluationBundle:
+    """Post-training evaluation results bundle.
+
+    WHY dataclass not Pydantic: numpy arrays don't need validation,
+    dataclass is lighter-weight for intermediate data structures passed
+    between evaluation and visualization functions.
+    """
+
+    metrics: BaselineMetrics  # All 8 computed metrics
+    similarities: np.ndarray  # (295,) — cosine similarities per pair
+    projections: np.ndarray  # (590, 2) — UMAP 2D projections (text1 + text2)
+    cluster_labels: np.ndarray  # (295,) — HDBSCAN cluster assignments
+    labels: list[int]  # Ground truth compatibility labels
+    categories: list[str]  # Category per pair (e.g., "music_taste")
+    pair_types: list[str]  # Pair type per pair (e.g., "CC", "II")
