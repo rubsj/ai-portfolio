@@ -196,8 +196,8 @@ class StandardTrainer:
         with csv_path.open("r") as f:
             reader = csv.DictReader(f)
             for row in reader:
-                # WHY int/float conversion: CSV stores as strings
-                step = int(row["epoch"])
+                # WHY int(float()): CSV epoch is "1.0" not "1", must convert float→int
+                step = int(float(row["epoch"]))
                 spearman = float(row["cosine_spearman"])
                 history.append((step, spearman))
 
