@@ -116,3 +116,189 @@ def test_evaluate_from_embeddings_returns_correct_bundle(tmp_path: Path) -> None
 
     # --- Verify false positive counts is a dict ---
     assert isinstance(metrics.false_positive_counts, dict)
+
+
+def test_generate_finetuned_embeddings_saves_npz(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    """Test generate_finetuned_embeddings creates .npz file with correct structure."""
+    # WHY mock: avoid loading actual SentenceTransformer model (expensive)
+    from unittest.mock import MagicMock, patch
+    from src.post_training_eval import generate_finetuned_embeddings
+
+    monkeypatch.chdir(tmp_path)
+
+    # Create fake eval pairs
+    eval_pairs = [
+        DatingPair(
+            text_1=f"boy: statement {i}",
+            text_2=f"girl: statement {i}",
+            label=i % 2,
+            category=f"category_{i % 3}",
+            subcategory=f"subcat_{i}",
+            pair_type="CC" if i % 2 == 0 else "II",
+        )
+        for i in range(5)
+    ]
+
+    output_path = tmp_path / "embeddings.npz"
+
+    # Create mock model that returns fake embeddings
+    mock_model = MagicMock()
+    # WHY return shape (N, 384): SentenceTransformer.encode() returns (num_texts, embedding_dim)
+    # WHY **kwargs: encode() accepts batch_size, show_progress_bar, etc. (line 125-127 in src/post_training_eval.py)
+    mock_model.encode.side_effect = lambda texts, **kwargs: np.random.randn(len(texts), 384).astype(np.float32)
+
+    # WHY patch sentence_transformers.SentenceTransformer: import happens inside function at line 91
+    with patch("sentence_transformers.SentenceTransformer", return_value=mock_model):
+        generate_finetuned_embeddings(
+            model_path="fake/path",
+            eval_pairs=eval_pairs,
+            output_path=output_path,
+            is_lora=False,
+        )
+
+    # Verify .npz file created
+    assert output_path.exists()
+
+    # Verify structure matches expected format
+    with np.load(output_path) as data:
+        assert "text1" in data
+        assert "text2" in data
+        assert data["text1"].shape == (5, 384)
+        assert data["text2"].shape == (5, 384)
+
+
+def test_generate_finetuned_embeddings_handles_lora_with_fallback(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    """Test generate_finetuned_embeddings falls back to base+adapter loading for LoRA."""
+    # WHY: LoRA models may not be loadable directly as SentenceTransformer
+    from unittest.mock import MagicMock, patch
+    from src.post_training_eval import generate_finetuned_embeddings
+
+    monkeypatch.chdir(tmp_path)
+
+    eval_pairs = [
+        DatingPair(
+            text_1="boy: test",
+            text_2="girl: test",
+            label=1,
+            category="test",
+            subcategory="test",
+            pair_type="CC",
+        )
+    ]
+
+    output_path = tmp_path / "lora_embeddings.npz"
+
+    # Mock LoRA loading scenario: first SentenceTransformer() fails, then base + PeftModel succeeds
+    mock_model = MagicMock()
+    # WHY **kwargs: encode() accepts batch_size, show_progress_bar, etc.
+    mock_model.encode.side_effect = lambda texts, **kwargs: np.random.randn(len(texts), 384).astype(np.float32)
+
+    call_count = 0
+
+    def mock_sentence_transformer(model_path):
+        nonlocal call_count
+        call_count += 1
+        if call_count == 1:
+            # First call (try direct load): raise exception to trigger fallback
+            raise Exception("Cannot load merged model")
+        else:
+            # Second call (base model load): succeed
+            return mock_model
+
+    # WHY patch sentence_transformers and peft: imports happen inside function
+    with patch("sentence_transformers.SentenceTransformer", side_effect=mock_sentence_transformer):
+        with patch("peft.PeftModel") as mock_peft:
+            # Mock PeftModel.from_pretrained to return mock that has merge_and_unload
+            mock_adapter = MagicMock()
+            mock_adapter.merge_and_unload.return_value = MagicMock()
+            mock_peft.from_pretrained.return_value = mock_adapter
+
+            generate_finetuned_embeddings(
+                model_path="fake/lora/path",
+                eval_pairs=eval_pairs,
+                output_path=output_path,
+                is_lora=True,
+            )
+
+    # Verify .npz created even with fallback loading
+    assert output_path.exists()
+
+
+def test_run_post_training_evaluation_creates_metrics_json(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    """Test run_post_training_evaluation creates finetuned_metrics.json and lora_metrics.json."""
+    # WHY: This is the main orchestrator that calls generate + evaluate for both models
+    from unittest.mock import MagicMock, patch
+    from src.post_training_eval import run_post_training_evaluation
+
+    monkeypatch.chdir(tmp_path)
+
+    # Create fake eval pairs file
+    (tmp_path / "data" / "raw").mkdir(parents=True)
+    eval_pairs_path = tmp_path / "data" / "raw" / "eval_pairs.jsonl"
+    eval_pairs_path.write_text(
+        '{"text_1": "boy: test", "text_2": "girl: test", "label": 1, "category": "test", "subcategory": "test"}\n'
+    )
+
+    # Create fake embeddings directory structure
+    (tmp_path / "data" / "embeddings").mkdir(parents=True)
+    (tmp_path / "eval").mkdir()
+    (tmp_path / "training" / "model" / "standard_model").mkdir(parents=True)
+    (tmp_path / "training" / "model" / "lora_model").mkdir(parents=True)
+
+    # Mock all the expensive operations using proper patch targets
+    # WHY: load_pairs is imported at module level (line 6), so patch at src.post_training_eval
+    # WHY: generate_finetuned_embeddings uses SentenceTransformer which is imported from sentence_transformers
+    with patch("src.post_training_eval.load_pairs") as mock_load_pairs:
+        # Return minimal eval pairs
+        mock_load_pairs.return_value = [
+            DatingPair(
+                text_1="boy: test",
+                text_2="girl: test",
+                label=1,
+                category="test",
+                subcategory="test",
+                pair_type="CC",
+            )
+        ]
+
+        with patch("sentence_transformers.SentenceTransformer"):
+            with patch("src.post_training_eval.evaluate_from_embeddings") as mock_eval:
+                # Return mock EvaluationBundle
+                from src.models import BaselineMetrics, EvaluationBundle
+                fake_metrics = BaselineMetrics(
+                    compatible_mean_cosine=0.85,
+                    incompatible_mean_cosine=-0.05,
+                    compatibility_margin=0.90,
+                    cohens_d=2.5,
+                    t_statistic=15.0,
+                    p_value=0.001,
+                    auc_roc=0.95,
+                    best_threshold=0.40,
+                    best_f1=0.92,
+                    accuracy_at_best_threshold=0.93,
+                    precision_at_best_threshold=0.91,
+                    recall_at_best_threshold=0.94,
+                    cluster_purity=0.88,
+                    n_clusters=2,
+                    noise_ratio=0.05,
+                    spearman_correlation=0.85,
+                    false_positive_counts={},
+                    category_metrics=[],
+                    pair_type_metrics=[],
+                )
+                mock_eval.return_value = EvaluationBundle(
+                    metrics=fake_metrics,
+                    similarities=np.array([0.9]),
+                    projections=np.array([[0.1, 0.2], [0.3, 0.4]]),
+                    cluster_labels=np.array([0]),
+                    labels=[1],
+                    categories=["test"],
+                    pair_types=["CC"],
+                )
+
+                # Run the orchestrator
+                run_post_training_evaluation()
+
+    # Verify metrics JSON files were created
+    assert (tmp_path / "eval" / "finetuned_metrics.json").exists()
+    assert (tmp_path / "eval" / "lora_metrics.json").exists()

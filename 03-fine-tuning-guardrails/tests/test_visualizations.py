@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from pathlib import Path
 
 import numpy as np
 
@@ -261,3 +262,64 @@ def test_generate_baseline_report_html_embeds_png(tmp_path):
 
     html = report_path.read_text()
     assert "data:image/png;base64," in html
+
+
+# ------------------------------------------------------------------ #
+# plot_training_curves
+# ------------------------------------------------------------------ #
+
+def test_plot_training_curves_saves_png(tmp_path):
+    """plot_training_curves creates PNG file with both standard and LoRA curves."""
+    from src.visualizations import plot_training_curves
+
+    # WHY training history format: list of (epoch, spearman) tuples (src/trainer.py line 125)
+    standard_history = [(0, -0.15), (1, 0.45), (2, 0.72), (3, 0.85)]
+    lora_history = [(0, -0.12), (1, 0.40), (2, 0.68), (3, 0.83)]
+
+    output_path = tmp_path / "curves.png"
+
+    result = plot_training_curves(
+        standard_history=standard_history,
+        lora_history=lora_history,
+        save_path=output_path,
+    )
+
+    assert result == output_path
+    assert output_path.exists()
+    # WHY >5KB: PNG with matplotlib chart + gridlines + legends
+    assert output_path.stat().st_size > 5000
+
+
+def test_plot_training_curves_handles_missing_lora(tmp_path):
+    """plot_training_curves works with only standard curve (no LoRA)."""
+    from src.visualizations import plot_training_curves
+
+    standard_history = [(0, -0.15), (1, 0.45), (2, 0.72), (3, 0.85)]
+
+    output_path = tmp_path / "curves_no_lora.png"
+
+    result = plot_training_curves(
+        standard_history=standard_history,
+        lora_history=None,  # WHY None: LoRA training might not be run
+        save_path=output_path,
+    )
+
+    assert result == output_path
+    assert output_path.exists()
+    assert output_path.stat().st_size > 5000
+
+
+def test_plot_training_curves_default_path(tmp_path, monkeypatch):
+    """plot_training_curves uses default path when save_path=None."""
+    from src.visualizations import plot_training_curves
+
+    monkeypatch.chdir(tmp_path)
+
+    standard_history = [(0, -0.15), (1, 0.85)]
+
+    # WHY no save_path: test default path behavior (line 405 in src/visualizations.py)
+    result = plot_training_curves(standard_history=standard_history)
+
+    expected_path = Path("training/training_curves.png")
+    assert result == expected_path
+    assert expected_path.exists()
