@@ -277,31 +277,31 @@ echo "BRAINTRUST_API_KEY=..." >> .env
 - [x] Checkpoint: All 3 input files parsed + chunked, counts verified
 
 ### Day 2 — Embeddings, FAISS, BM25 (Fri Feb 13)
-- [ ] Task 7: Embedder factory in `embedder.py`
-- [ ] Task 8: FAISS vector store in `vector_store.py`
-- [ ] Task 9: BM25 baseline in `bm25_baseline.py`
-- [ ] Task 10: LLM cache in `cache.py`
-- [ ] Task 11: Build all 15 FAISS indices + BM25
-- [ ] Task 12: Embedder tests
-- [ ] Checkpoint: 16 searchable retrieval backends on disk
+- [x] Task 7: Embedder factory in `embedder.py`
+- [x] Task 8: FAISS vector store in `vector_store.py`
+- [x] Task 9: BM25 baseline in `bm25_baseline.py`
+- [x] Task 10: LLM cache in `cache.py`
+- [x] Task 11: Build all 15 FAISS indices + BM25
+- [x] Task 12: Embedder tests
+- [x] Checkpoint: 16 searchable retrieval backends on disk
 
 ### Day 3 — Synthetic QA + Full Grid Search (Sun Feb 15)
-- [ ] Task 13: Synthetic QA generation (5 strategies, ≥50 questions)
-- [ ] Task 14: QA quality report (`QADatasetReport`)
-- [ ] Task 15: Retrieval evaluator (R/P/MRR @1,3,5)
-- [ ] Task 16: Grid search orchestrator
-- [ ] Task 17: Visualization (at least 4 core charts)
-- [ ] Task 18: Run full grid search
-- [ ] Task 19: QA + evaluator tests
-- [ ] Checkpoint: First heatmap, best config identified, BM25 comparison
+- [x] Task 13: Synthetic QA generation (5 strategies, ≥50 questions)
+- [x] Task 14: QA quality report (`QADatasetReport`)
+- [x] Task 15: Retrieval evaluator (R/P/MRR @1,3,5)
+- [x] Task 16: Grid search orchestrator
+- [x] Task 17: Visualization (at least 4 core charts)
+- [x] Task 18: Run full grid search
+- [x] Task 19: QA + evaluator tests
+- [x] Checkpoint: First heatmap, best config identified, BM25 comparison
 
 ### Day 4 — Reranking + RAGAS + Judges + Braintrust (Mon Feb 16)
-- [ ] Task 20: Reranker (Cohere)
-- [ ] Task 21: Generation evaluator (RAGAS)
-- [ ] Task 22: LLM-as-Judge (`judges` library + Bloom)
-- [ ] Task 23: Braintrust experiment logging
-- [ ] Task 24: Run reranking + all evaluations
-- [ ] Checkpoint: Complete evaluation pipeline, Braintrust dashboard
+- [x] Task 20: Reranker (Cohere)
+- [x] Task 21: Generation evaluator (RAGAS)
+- [x] Task 22: LLM-as-Judge (`judges` library + Bloom)
+- [x] Task 23: Braintrust experiment logging
+- [x] Task 24: Run reranking + all evaluations
+- [x] Checkpoint: Complete evaluation pipeline, Braintrust dashboard
 
 ### Day 5 — CLI, Streamlit, Docs, Deploy (Sat Feb 15)
 - [x] Task 27: All 12 charts generated (8 new + 4 existing) — PR #TBD

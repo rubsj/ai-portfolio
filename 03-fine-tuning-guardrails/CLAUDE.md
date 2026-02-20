@@ -369,17 +369,33 @@ Do NOT re-debate architecture — follow the plan.
 - **Model Files**: Standard 86.65 MB, LoRA adapter 0.28 MB
 - **PR #27**: Merged to main (commit d92887d)
 
-### Day 3 — Post-Training Evaluation + Documentation (Thu Feb 20)
-- [ ] T3.1: Post-training evaluation (all 8 metrics on fine-tuned model(s))
-- [ ] T3.2: Before/after comparison charts (8 charts minimum)
-- [ ] T3.3: Generate comparison_report.html
-- [ ] T3.4: False positive deep dive (pair_type/category breakdown)
-- [ ] T3.5: ADRs (LoRA vs standard, QLoRA skip, loss function choice)
-- [ ] T3.6: README with Mermaid diagram + results
-- [ ] T3.7: Loom recording
-- [ ] T3.8: Notion journal update
-- [ ] **Stretch:** T3.S1: Instructional fine-tuning variant
-- [ ] **P3 COMPLETE**
+### Day 3 — Post-Training Evaluation + Documentation (Thu Feb 20) — ✅ COMPLETE (pending Loom)
+- [x] T3.1: Post-training evaluation (all 8 metrics on fine-tuned model(s))
+- [x] T3.2: Before/after comparison charts (8 charts minimum)
+- [x] T3.3: Generate comparison_report.html
+- [x] T3.4: False positive deep dive (pair_type/category breakdown)
+- [x] T3.5: ADRs (LoRA vs standard, QLoRA skip, loss function choice)
+- [x] T3.6: README with Mermaid diagram + results
+- [ ] T3.7: Loom recording — PENDING
+- [x] T3.8: Notion journal update
+- [ ] **Stretch:** T3.S1: Instructional fine-tuning variant — DEFERRED
+- [x] **P3 COMPLETE** (pending Loom recording)
+
+**Final Evaluation Results:**
+
+| Metric | Baseline | Standard | LoRA |
+|--------|----------|----------|------|
+| Spearman | -0.219 | 0.853 | 0.827 |
+| Margin | -0.083 | 0.903 | 0.870 |
+| Cohen's d | -0.419 | 2.5 | 2.3 |
+| AUC-ROC | 0.185 | 0.954 | 0.944 |
+
+**Key Insights:**
+- LoRA achieved 96.9% of standard performance with only 0.32% trainable parameters (73K vs 22.7M)
+- Contrastive fine-tuning flipped inverted baseline embeddings: margin swung from -0.083 to +0.903 (total Δ = 0.986)
+- LoRA required 10x higher learning rate (2e-4 vs 2e-5) to compensate for drastically reduced parameter count
+- Portfolio deliverable: comparison_report.html shows all 8 comparison charts with headline metrics card
+- PR #29 created with all deliverables, 124 tests at 94% coverage
 
 ---
 
