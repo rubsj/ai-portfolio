@@ -1,0 +1,34 @@
+[project]
+name = "resume-coach"
+version = "0.1.0"
+description = "AI-Powered Resume Coach: synthetic data pipeline with generation, validation, analysis, correction, and REST API"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "instructor",
+    "openai",
+    "pydantic>=2.0",
+    "pandas",
+    "matplotlib",
+    "seaborn",
+    "fastapi",
+    "uvicorn",
+    # "chromadb",                # Day 3: vector store
+    # "sentence-transformers",   # Day 3: local embeddings
+    "rich",
+    "python-dotenv",
+    "scipy",
+]
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "httpx",
+    "ruff",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
