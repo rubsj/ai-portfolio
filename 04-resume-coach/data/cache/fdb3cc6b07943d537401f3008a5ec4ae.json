@@ -1,0 +1,90 @@
+{
+  "cache_key": "fdb3cc6b07943d537401f3008a5ec4ae",
+  "prompt_key": "resume_c4690ab6-b03f-4c12-b51c-7de87e54d215_good_casual",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:22:51.105578+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "1234567890",
+      "location": "New York, NY",
+      "linkedin": "https://linkedin.com/in/jordansmith",
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor's Degree in Health Informatics",
+        "institution": "New York University",
+        "graduation_date": "2020-05",
+        "gpa": 3.6,
+        "coursework": [
+          "Data Analysis",
+          "Health Information Systems",
+          "Statistical Methods"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Data Insights Corp.",
+        "title": "Data Analyst",
+        "start_date": "2020-06",
+        "end_date": "2023-02",
+        "responsibilities": [
+          "Extracted and manipulated data using SQL to create insightful reports.",
+          "Developed interactive dashboards using Tableau for various healthcare projects.",
+          "Conducted statistical analysis to identify trends in patient care and outcomes.",
+          "Collaborated with clinical staff to gather data from Electronic Health Records (EHR).",
+          "Performed data quality assessments and ensured compliance with healthcare regulations."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Tech Solutions LLC",
+        "title": "Junior Data Analyst",
+        "start_date": "2019-01",
+        "end_date": "2020-05",
+        "responsibilities": [
+          "Assisted in data collection and cleaning processes.",
+          "Utilized Excel for data manipulation and analysis.",
+          "Presented analytical findings to stakeholders in a clear and concise manner."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "SQL",
+        "proficiency_level": "Advanced",
+        "years": 3
+      },
+      {
+        "name": "Tableau",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Statistical Analysis",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Python",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Communication",
+        "proficiency_level": "Advanced",
+        "years": 3
+      },
+      {
+        "name": "Project Management",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      }
+    ],
+    "summary": "Data analyst with a passion for leveraging data to improve healthcare outcomes. Experienced in SQL, Tableau, and statistical analysis, with a strong ability to communicate findings to diverse audiences."
+  }
+}

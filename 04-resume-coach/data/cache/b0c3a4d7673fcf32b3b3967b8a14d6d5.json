@@ -1,0 +1,77 @@
+{
+  "cache_key": "b0c3a4d7673fcf32b3b3967b8a14d6d5",
+  "prompt_key": "resume_145c28be-4ffb-4699-8111-ab6a40de13a6_partial_technical",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:27:44.006155+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "+1234567890",
+      "location": "New York, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Master of Business Administration",
+        "institution": "New York University",
+        "graduation_date": "2015-05",
+        "gpa": null,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "Creative Marketing Agency",
+        "title": "Marketing Director",
+        "start_date": "2018-06",
+        "end_date": null,
+        "responsibilities": [
+          "Developed and managed a multi-million dollar marketing budget focusing on digital initiatives.",
+          "Implemented SEO and SEM strategies that increased website traffic by 40% year-over-year.",
+          "Led a cross-functional team to execute marketing campaigns aligning with business objectives.",
+          "Analyzed marketing performance metrics to enhance customer engagement and improve ROI."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Tech Innovations Inc.",
+        "title": "Senior Marketing Manager",
+        "start_date": "2015-08",
+        "end_date": "2018-05",
+        "responsibilities": [
+          "Oversaw brand management activities and contributed to the development of brand positioning strategies.",
+          "Managed social media marketing campaigns which improved brand awareness in target demographics.",
+          "Collaborated with product teams to integrate go-to-market strategies for new technology solutions."
+        ],
+        "achievements": [
+          "Successfully launched a product that resulted in a 25% increase in revenue within the first year."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Digital Marketing",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "SEO/SEM",
+        "proficiency_level": "Advanced",
+        "years": 6
+      },
+      {
+        "name": "Brand Management",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      },
+      {
+        "name": "Marketing Analytics",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      }
+    ],
+    "summary": "Strategic marketing professional with over 10 years of experience in digital marketing and brand management. Proven ability to develop and execute high-impact marketing strategies that drive brand growth and customer engagement. Seeking to leverage expertise in a challenging executive-level role."
+  }
+}

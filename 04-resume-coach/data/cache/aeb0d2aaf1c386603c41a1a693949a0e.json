@@ -1,0 +1,71 @@
+{
+  "cache_key": "aeb0d2aaf1c386603c41a1a693949a0e",
+  "prompt_key": "resume_095ecb93-d022-4081-9d73-de8c6be68db6_partial_technical",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:11:13.279451+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "+1234567890",
+      "location": "Austin, TX",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Science in Environmental Science",
+        "institution": "University of Texas at Austin",
+        "graduation_date": "2022-05",
+        "gpa": 3.4,
+        "coursework": [
+          "Environmental Impact Assessment",
+          "Data Analysis in Environmental Science",
+          "Sustainable Energy Systems"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "GreenEarth Consulting",
+        "title": "Environmental Intern",
+        "start_date": "2022-06",
+        "end_date": "2023-02",
+        "responsibilities": [
+          "Assisted in data collection and analysis for environmental projects using Excel.",
+          "Conducted literature reviews on renewable energy technologies and summarized findings for project reports.",
+          "Collaborated with senior analysts to ensure compliance with environmental regulations."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Excel",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "R",
+        "proficiency_level": "Beginner",
+        "years": null
+      },
+      {
+        "name": "Geographic Information Systems (GIS)",
+        "proficiency_level": "Beginner",
+        "years": null
+      },
+      {
+        "name": "SQL",
+        "proficiency_level": "Beginner",
+        "years": null
+      },
+      {
+        "name": "Data Analysis",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      }
+    ],
+    "summary": "Recent Environmental Science graduate with internship experience in data analysis and environmental compliance. Proficient in Excel and familiar with R and GIS tools, seeking to leverage analytical skills in renewable energy projects."
+  }
+}

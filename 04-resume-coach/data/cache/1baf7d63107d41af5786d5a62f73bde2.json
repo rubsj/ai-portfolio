@@ -1,0 +1,73 @@
+{
+  "cache_key": "1baf7d63107d41af5786d5a62f73bde2",
+  "prompt_key": "resume_61832b65-4beb-4663-a0d8-d7f4752953f8_poor_achievement",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:08:51.556765+00:00",
+  "response": {
+    "contact_info": {
+      "name": "John Doe",
+      "email": "johndoe@example.com",
+      "phone": "1234567890",
+      "location": "Los Angeles, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Associate's Degree in Marketing",
+        "institution": "Los Angeles Community College",
+        "graduation_date": "2019-05",
+        "gpa": null,
+        "coursework": [
+          "Principles of Marketing",
+          "Consumer Behavior"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Fashion Trends Retailers",
+        "title": "Sales Associate",
+        "start_date": "2020-06",
+        "end_date": "2023-08",
+        "responsibilities": [
+          "Assisted customers with product selection and inquiries",
+          "Maintained store appearance and merchandising standards",
+          "Processed transactions and handled cash register"
+        ],
+        "achievements": [
+          "Increased personal sales by 15% during peak holiday season",
+          "Trained new staff on customer service best practices"
+        ]
+      },
+      {
+        "company": "Quick Stop Convenience Store",
+        "title": "Store Clerk",
+        "start_date": "2018-01",
+        "end_date": "2020-05",
+        "responsibilities": [
+          "Managed inventory and stocked shelves",
+          "Ensured cleanliness and organization of the store",
+          "Provided exceptional customer service"
+        ],
+        "achievements": [
+          "Achieved employee of the month twice for outstanding service",
+          "Improved inventory turnover by 10% through better stock management"
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Customer Relationship Management (CRM) Software",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Data Analysis and Reporting",
+        "proficiency_level": "Beginner",
+        "years": 1
+      }
+    ],
+    "summary": null
+  }
+}

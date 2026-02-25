@@ -1,0 +1,68 @@
+{
+  "cache_key": "76258429e00ca65f9cc50316fc9f38a4",
+  "prompt_key": "resume_83703e74-0d77-42bb-8fe4-9b445c77747e_poor_achievement",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:23:21.349433+00:00",
+  "response": {
+    "contact_info": {
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "phone": "1234567890",
+      "location": "Los Angeles, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts in History",
+        "institution": "University of California, Los Angeles",
+        "graduation_date": "2022-06-15",
+        "gpa": null,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "History Museum of Los Angeles",
+        "title": "Visitor Services Associate",
+        "start_date": "2022-07-01",
+        "end_date": null,
+        "responsibilities": [
+          "Assisted visitors with inquiries and information about museum exhibits.",
+          "Managed scheduling for group tours and events.",
+          "Collaborated with the marketing team to promote special events through flyers."
+        ],
+        "achievements": [
+          "Increased visitor satisfaction ratings by 15% through improved customer service."
+        ]
+      },
+      {
+        "company": "Local Bookstore",
+        "title": "Sales Associate",
+        "start_date": "2021-05-01",
+        "end_date": "2022-05-01",
+        "responsibilities": [
+          "Assisted customers in finding books and processing sales transactions.",
+          "Organized book displays and managed inventory.",
+          "Engaged with customers on social media to promote new arrivals."
+        ],
+        "achievements": [
+          "Boosted sales by 10% during holiday promotions through effective product placement."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Social Media Management",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Customer Service",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      }
+    ],
+    "summary": "Motivated recent graduate with a background in customer service and a strong interest in marketing. Eager to transition into a digital experience role, leveraging skills in social media and communication."
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "cache_key": "ddd3f5acf648844d8f7def187e92d2ba",
+  "prompt_key": "resume_e3cb43b3-9148-4bf8-8f86-144c7c499b76_partial_technical",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:07:36.564105+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Alex Johnson",
+      "email": "alex.johnson@example.com",
+      "phone": "1234567890",
+      "location": "New York, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor's Degree in Business Administration",
+        "institution": "City University of New York",
+        "graduation_date": "2016-05",
+        "gpa": null,
+        "coursework": [
+          "Retail Management",
+          "Marketing Strategies",
+          "Financial Accounting"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Retail Solutions LLC",
+        "title": "Retail Manager",
+        "start_date": "2018-04",
+        "end_date": "2023-01",
+        "responsibilities": [
+          "Managed daily operations for a mid-sized retail store, overseeing staff performance and customer service.",
+          "Implemented sales strategies that led to a 15% increase in year-over-year sales.",
+          "Conducted regular inventory audits and applied inventory management techniques to minimize shrinkage.",
+          "Analyzed store performance metrics to identify areas for improvement and increase profitability."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Urban Outfitters",
+        "title": "Assistant Retail Manager",
+        "start_date": "2016-06",
+        "end_date": "2018-04",
+        "responsibilities": [
+          "Assisted in managing a team of 30+ employees, focusing on staff training and development.",
+          "Supported the implementation of visual merchandising standards to enhance store presentation.",
+          "Helped maintain inventory levels and assisted in budgeting for seasonal promotions."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Sales Strategy Development",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Inventory Management",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Team Leadership",
+        "proficiency_level": "Intermediate",
+        "years": 6
+      },
+      {
+        "name": "Retail Management Software",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      }
+    ],
+    "summary": "Dynamic retail manager with over 6 years of experience in driving sales growth and enhancing customer experiences in high-traffic retail environments. Proven ability to lead teams and manage operations effectively."
+  }
+}

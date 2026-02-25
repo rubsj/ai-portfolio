@@ -1,0 +1,39 @@
+{
+  "cache_key": "8ff269ab635e942a96eaa945c8ad71ec",
+  "prompt_key": "job_Legal_False_Lead",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:17:34.604367+00:00",
+  "response": {
+    "title": "Lead Corporate Counsel",
+    "company": {
+      "name": "Global Tech Solutions",
+      "industry": "Legal",
+      "size": "500-1000 employees",
+      "location": "San Francisco, CA"
+    },
+    "description": "We are seeking an experienced Lead Corporate Counsel to join our dynamic legal team at Global Tech Solutions. The ideal candidate will possess extensive knowledge of corporate law, including mergers and acquisitions, compliance, and intellectual property. This role requires strong leadership skills, with the ability to mentor junior lawyers and manage complex legal projects.",
+    "requirements": {
+      "required_skills": [
+        "10+ years of experience in corporate law",
+        "Expertise in mergers and acquisitions",
+        "Strong knowledge of compliance and regulatory frameworks",
+        "Proficiency in contract negotiation and drafting",
+        "Experience with intellectual property law",
+        "Ability to manage legal risk assessments",
+        "Strong analytical and problem-solving skills",
+        "Excellent communication and interpersonal abilities",
+        "Leadership experience in a legal setting"
+      ],
+      "preferred_skills": [
+        "Experience in the technology industry",
+        "Familiarity with international law",
+        "Knowledge of data privacy regulations",
+        "Advanced degree (LL.M) in Corporate Law",
+        "Fluency in a second language"
+      ],
+      "education": "Juris Doctor (JD) from an accredited law school",
+      "experience_years": 10,
+      "experience_level": "Lead"
+    }
+  }
+}

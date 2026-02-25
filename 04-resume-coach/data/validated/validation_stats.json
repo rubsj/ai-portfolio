@@ -1,0 +1,17 @@
+{
+  "total": 300,
+  "success_count": 300,
+  "failure_count": 0,
+  "success_rate": 1.0,
+  "by_model_type": {
+    "JobDescription": {
+      "successes": 50,
+      "failures": 0
+    },
+    "Resume": {
+      "successes": 250,
+      "failures": 0
+    }
+  },
+  "errors_by_field": {}
+}

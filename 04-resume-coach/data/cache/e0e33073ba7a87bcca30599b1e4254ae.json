@@ -1,0 +1,99 @@
+{
+  "cache_key": "e0e33073ba7a87bcca30599b1e4254ae",
+  "prompt_key": "resume_0cd99fc1-d8aa-42c2-9580-2f6a771bc9cd_good_casual",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:18:12.614970+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "5551234567",
+      "location": "New York, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Juris Doctor (JD)",
+        "institution": "Columbia Law School",
+        "graduation_date": "2018-05",
+        "gpa": 3.6,
+        "coursework": [
+          "Corporate Law",
+          "Contract Law",
+          "Intellectual Property"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Green & Associates",
+        "title": "Corporate Associate",
+        "start_date": "2018-08",
+        "end_date": "2021-05",
+        "responsibilities": [
+          "Drafted and reviewed various corporate agreements including partnership agreements, shareholder agreements, and licensing contracts.",
+          "Assisted in mergers and acquisitions, conducting due diligence and preparing transaction documents.",
+          "Advised clients on corporate governance and compliance issues.",
+          "Maintained client relationships and provided ongoing legal support."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Law Firm XYZ",
+        "title": "Legal Intern",
+        "start_date": "2017-06",
+        "end_date": "2017-08",
+        "responsibilities": [
+          "Conducted legal research on corporate law topics and assisted in drafting memos.",
+          "Supported senior attorneys in preparing cases for litigation.",
+          "Participated in client meetings to understand their legal needs."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Drafting and reviewing corporate agreements",
+        "proficiency_level": "Advanced",
+        "years": 3
+      },
+      {
+        "name": "Mergers and acquisitions experience",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Corporate governance knowledge",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Compliance regulations familiarity",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Contract negotiation skills",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Legal research software (e.g., LexisNexis)",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Public speaking",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "Project management",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      }
+    ],
+    "summary": null
+  }
+}

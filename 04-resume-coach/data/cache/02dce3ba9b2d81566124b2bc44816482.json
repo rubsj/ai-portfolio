@@ -1,0 +1,94 @@
+{
+  "cache_key": "02dce3ba9b2d81566124b2bc44816482",
+  "prompt_key": "resume_83703e74-0d77-42bb-8fe4-9b445c77747e_good_casual",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:22:58.722245+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jamie Turner",
+      "email": "jamie.turner@example.com",
+      "phone": "1234567890",
+      "location": "San Francisco, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor\u2019s in Marketing",
+        "institution": "University of California, Berkeley",
+        "graduation_date": "2023-05",
+        "gpa": null,
+        "coursework": [
+          "Digital Marketing",
+          "Consumer Behavior",
+          "Web Analytics"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Creative Media Agency",
+        "title": "Digital Marketing Intern",
+        "start_date": "2023-06",
+        "end_date": null,
+        "responsibilities": [
+          "Assisted in creating engaging blog posts and social media content to drive audience engagement.",
+          "Utilized Google Analytics to track user interactions and report on website performance.",
+          "Managed social media accounts using Hootsuite, scheduling posts and analyzing engagement metrics.",
+          "Collaborated with the design team to create eye-catching graphics using Canva."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Startup Inc.",
+        "title": "Social Media Volunteer",
+        "start_date": "2022-01",
+        "end_date": "2022-05",
+        "responsibilities": [
+          "Developed social media strategies to boost brand awareness and customer engagement.",
+          "Conducted A/B testing for different social media campaigns to analyze performance.",
+          "Created monthly newsletters using Mailchimp to keep the audience informed."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "HTML/CSS",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Google Analytics",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Hootsuite",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "SEO",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Canva",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Project Management (Trello)",
+        "proficiency_level": "Beginner",
+        "years": 0
+      },
+      {
+        "name": "Video Editing (iMovie)",
+        "proficiency_level": "Beginner",
+        "years": 0
+      }
+    ],
+    "summary": null
+  }
+}

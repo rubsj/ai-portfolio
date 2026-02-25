@@ -1,0 +1,72 @@
+{
+  "cache_key": "6227a890da5d8a8629f1835f69e41bbc",
+  "prompt_key": "resume_c171e502-b748-4667-b48a-c734f0e9411a_partial_technical",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:24:14.965766+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "+11234567890",
+      "location": "Brooklyn, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor's Degree in Communications",
+        "institution": "Brooklyn College",
+        "graduation_date": "2021-05",
+        "gpa": null,
+        "coursework": [
+          "Digital Marketing Strategies",
+          "Content Marketing",
+          "Market Research Techniques"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Media Hub Solutions",
+        "title": "Marketing Associate",
+        "start_date": "2021-06",
+        "end_date": "2023-08",
+        "responsibilities": [
+          "Assisted in the development and execution of marketing strategies to increase brand awareness.",
+          "Conducted market research and analysis to identify target audiences and improve campaign effectiveness.",
+          "Managed social media accounts and developed content calendars for various platforms.",
+          "Utilized Google Analytics to track website traffic and user engagement, providing insights for campaign adjustments."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "SEO optimization techniques",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Google Analytics",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Social media management",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Content creation",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Email marketing (Mailchimp)",
+        "proficiency_level": "Beginner",
+        "years": 0
+      }
+    ],
+    "summary": null
+  }
+}

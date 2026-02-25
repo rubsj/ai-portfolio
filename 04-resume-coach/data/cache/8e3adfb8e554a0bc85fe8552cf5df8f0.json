@@ -1,0 +1,113 @@
+{
+  "cache_key": "8e3adfb8e554a0bc85fe8552cf5df8f0",
+  "prompt_key": "resume_af18f3f0-ab1b-433a-93d3-094fb91cab7a_excellent_formal",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:23:29.929863+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "+14155598765",
+      "location": "San Francisco, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Master of Healthcare Administration",
+        "institution": "University of California, Berkeley",
+        "graduation_date": "2015-05",
+        "gpa": 3.8,
+        "coursework": [
+          "Healthcare Data Analytics",
+          "Healthcare Policy",
+          "Statistical Methods in Health Sciences"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "MedAnalytics Corp.",
+        "title": "Senior Healthcare Analytics Manager",
+        "start_date": "2018-06",
+        "end_date": null,
+        "responsibilities": [
+          "Led a team of data analysts in transforming healthcare data into actionable insights for clinical and operational improvements.",
+          "Utilized SQL for data manipulation and analysis, optimizing queries for efficiency.",
+          "Developed interactive dashboards using Tableau to visualize healthcare metrics for various stakeholders.",
+          "Implemented data governance practices ensuring compliance with HIPAA and HITECH regulations.",
+          "Collaborated with clinical teams to improve patient outcomes through data-driven decision making.",
+          "Mentored junior analysts, fostering a culture of continuous learning and improvement."
+        ],
+        "achievements": [
+          "Increased operational efficiency by 20% through data-driven initiatives.",
+          "Successfully led a project that reduced patient readmission rates by 15% using predictive modeling techniques."
+        ]
+      },
+      {
+        "company": "Health Insights LLC",
+        "title": "Healthcare Data Analyst",
+        "start_date": "2015-06",
+        "end_date": "2018-05",
+        "responsibilities": [
+          "Conducted statistical analysis on healthcare data to identify trends and insights.",
+          "Worked with Electronic Health Record (EHR) systems to integrate and analyze patient data.",
+          "Communicated findings to non-technical stakeholders through presentations and reports.",
+          "Performed data quality assessments to ensure accuracy and reliability of analytics."
+        ],
+        "achievements": [
+          "Developed a data visualization tool that improved reporting efficiency by 30%.",
+          "Recognized with the 'Analyst of the Year' award for outstanding contributions to data projects."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "SQL",
+        "proficiency_level": "Expert",
+        "years": 8
+      },
+      {
+        "name": "Tableau",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Data Visualization",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Predictive Modeling",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "Electronic Health Records (EHR)",
+        "proficiency_level": "Expert",
+        "years": 5
+      },
+      {
+        "name": "Data Governance",
+        "proficiency_level": "Expert",
+        "years": 5
+      },
+      {
+        "name": "Statistical Analysis",
+        "proficiency_level": "Advanced",
+        "years": 6
+      },
+      {
+        "name": "HIPAA Compliance",
+        "proficiency_level": "Expert",
+        "years": 5
+      },
+      {
+        "name": "Mentoring and Team Leadership",
+        "proficiency_level": "Advanced",
+        "years": 3
+      }
+    ],
+    "summary": "Results-driven Senior Healthcare Analytics Manager with over 8 years of experience in transforming healthcare data into actionable insights. Expert in SQL, predictive modeling, and data governance with a proven track record of improving clinical outcomes and operational efficiencies."
+  }
+}

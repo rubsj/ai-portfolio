@@ -1,0 +1,37 @@
+{
+  "cache_key": "addc31c6e8f538cabfd6fc3d2b75f843",
+  "prompt_key": "job_Healthcare_False_Mid",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:14:14.305420+00:00",
+  "response": {
+    "title": "Healthcare Data Analyst",
+    "company": {
+      "name": "HealthTech Innovations",
+      "industry": "Healthcare",
+      "size": "500-1000 employees",
+      "location": "New York, NY"
+    },
+    "description": "HealthTech Innovations is seeking a skilled Healthcare Data Analyst to join our team. The ideal candidate will leverage data analytics to improve patient outcomes and streamline healthcare operations. You will work closely with clinical and administrative staff to gather insights from various healthcare data sources. Your analytical expertise will support data-driven decision-making in our organization.",
+    "requirements": {
+      "required_skills": [
+        "Proficiency in SQL for data extraction and manipulation",
+        "Experience with data visualization tools such as Tableau or Power BI",
+        "Strong knowledge of statistical analysis techniques",
+        "Familiarity with Electronic Health Records (EHR) systems",
+        "Ability to conduct data quality assessments and validation",
+        "Effective communication skills for presenting analytical findings",
+        "Experience with programming languages such as Python or R",
+        "Understanding of healthcare regulations such as HIPAA"
+      ],
+      "preferred_skills": [
+        "Experience in predictive analytics and machine learning",
+        "Knowledge of clinical workflow processes",
+        "Familiarity with healthcare billing systems",
+        "Experience with database management systems like MySQL or Oracle"
+      ],
+      "education": "Bachelor's degree in Data Science, Health Informatics, or a related field",
+      "experience_years": 3,
+      "experience_level": "Mid"
+    }
+  }
+}

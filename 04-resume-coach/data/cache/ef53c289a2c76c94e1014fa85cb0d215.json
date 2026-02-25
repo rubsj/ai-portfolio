@@ -1,0 +1,97 @@
+{
+  "cache_key": "ef53c289a2c76c94e1014fa85cb0d215",
+  "prompt_key": "resume_9b40ec45-7dd6-4865-bb62-b50de1f49a7d_good_casual",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:20:25.832746+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Alex Johnson",
+      "email": "alex.johnson@email.com",
+      "phone": "4155551234",
+      "location": "San Francisco, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Juris Doctor (JD)",
+        "institution": "Stanford Law School",
+        "graduation_date": "2012-05",
+        "gpa": null,
+        "coursework": [
+          "Corporate Law",
+          "Intellectual Property",
+          "Contract Law",
+          "Mergers and Acquisitions"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Tech Innovations LLC",
+        "title": "Corporate Counsel",
+        "start_date": "2015-06",
+        "end_date": null,
+        "responsibilities": [
+          "Advised on various corporate law issues including compliance and regulatory matters.",
+          "Negotiated and drafted contracts to support business operations.",
+          "Conducted legal risk assessments for mergers and acquisitions.",
+          "Mentored junior lawyers in corporate law practices.",
+          "Worked closely with the executive team to align legal strategies with company goals."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Global Financial Corp",
+        "title": "Associate Attorney",
+        "start_date": "2012-06",
+        "end_date": "2015-05",
+        "responsibilities": [
+          "Assisted in mergers and acquisitions, conducting due diligence and preparing legal documentation.",
+          "Supported compliance initiatives and regulatory filings.",
+          "Developed policies for data privacy and protection.",
+          "Collaborated with cross-functional teams to resolve legal issues effectively."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Corporate Law",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Mergers and Acquisitions",
+        "proficiency_level": "Intermediate",
+        "years": 6
+      },
+      {
+        "name": "Contract Negotiation",
+        "proficiency_level": "Advanced",
+        "years": 7
+      },
+      {
+        "name": "Compliance and Regulatory Frameworks",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      },
+      {
+        "name": "Intellectual Property Law",
+        "proficiency_level": "Beginner",
+        "years": 3
+      },
+      {
+        "name": "Legal Research",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Public Speaking",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      }
+    ],
+    "summary": "Experienced corporate attorney with a strong background in corporate law and a passion for navigating complex legal landscapes. Skilled in contract negotiation and regulatory compliance, with a proven track record of mentoring junior lawyers and achieving favorable outcomes in mergers and acquisitions."
+  }
+}

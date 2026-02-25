@@ -1,0 +1,85 @@
+{
+  "cache_key": "2dd8e69bc4a84bfe3589ec9a4bdfbfe2",
+  "prompt_key": "resume_e9c72d68-38ff-4fe2-94b8-66a3cb066a65_mismatch_career_changer",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:52:08.230071+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "1234567890",
+      "location": "Los Angeles, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts in Graphic Design",
+        "institution": "University of California, Los Angeles",
+        "graduation_date": "2018-06",
+        "gpa": 3.5,
+        "coursework": [
+          "Digital Illustration",
+          "Typography",
+          "User Experience Design"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Creative Design Agency",
+        "title": "Junior Graphic Designer",
+        "start_date": "2018-07",
+        "end_date": "2021-12",
+        "responsibilities": [
+          "Collaborated with senior designers to create visual concepts for marketing campaigns.",
+          "Developed branding materials including logos, brochures, and digital graphics.",
+          "Utilized Adobe Creative Suite (Photoshop, Illustrator, InDesign) to produce design deliverables.",
+          "Participated in client meetings to understand design requirements and present creative ideas."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Fashion Retail Brand",
+        "title": "Visual Merchandiser",
+        "start_date": "2022-01",
+        "end_date": "2023-08",
+        "responsibilities": [
+          "Designed and implemented visual displays to enhance the shopping experience.",
+          "Collaborated with the marketing team to launch promotional displays and campaigns.",
+          "Analyzed customer behavior to optimize store layout and product presentation.",
+          "Trained staff on effective merchandising techniques and customer engagement."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Adobe Illustrator",
+        "proficiency_level": "Expert",
+        "years": 5
+      },
+      {
+        "name": "Adobe Photoshop",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Customer Engagement Strategies",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Visual Branding",
+        "proficiency_level": "Advanced",
+        "years": 3
+      },
+      {
+        "name": "Graphic Design Principles",
+        "proficiency_level": "Expert",
+        "years": 5
+      }
+    ],
+    "summary": "Creative and detail-oriented graphic designer with over 5 years of experience in visual design and merchandising. Proven ability to develop compelling visual narratives that enhance brand identity and customer engagement. Adept in using design software and collaborating with teams to achieve project goals."
+  }
+}

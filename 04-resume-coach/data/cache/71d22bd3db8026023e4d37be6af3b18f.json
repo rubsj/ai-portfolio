@@ -1,0 +1,35 @@
+{
+  "cache_key": "71d22bd3db8026023e4d37be6af3b18f",
+  "prompt_key": "job_Manufacturing_True_Entry",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:15:47.671859+00:00",
+  "response": {
+    "title": "Sustainable Manufacturing Technician",
+    "company": {
+      "name": "EcoTech Industries",
+      "industry": "Manufacturing",
+      "size": "Medium",
+      "location": "Austin, TX"
+    },
+    "description": "EcoTech Industries is seeking a dedicated Sustainable Manufacturing Technician to join our team. In this innovative role, you will be responsible for supporting our environmentally friendly production processes by combining manufacturing operations with sustainable practices. You will work alongside engineers and production teams to implement eco-efficient methods, enhance product lifecycle management, and minimize waste throughout our manufacturing workflow.",
+    "requirements": {
+      "required_skills": [
+        "Basic understanding of CAD software (AutoCAD or SolidWorks)",
+        "Familiarity with ISO 14001 environmental management standards",
+        "Knowledge of lean manufacturing principles",
+        "Experience with materials analysis (recyclability and sustainability)",
+        "Ability to conduct process audits and report findings",
+        "Basic statistical analysis skills (use of statistical software like Minitab)",
+        "Experience with energy efficiency practices in manufacturing"
+      ],
+      "preferred_skills": [
+        "Understanding of renewable energy sources and applications",
+        "Experience in project management tools (e.g., Trello, Asana)",
+        "Knowledge of supply chain sustainability practices"
+      ],
+      "education": "Associate's degree in Environmental Science, Manufacturing Technology, or related field",
+      "experience_years": 0,
+      "experience_level": "Entry"
+    }
+  }
+}

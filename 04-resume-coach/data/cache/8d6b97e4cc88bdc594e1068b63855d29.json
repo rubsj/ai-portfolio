@@ -1,0 +1,102 @@
+{
+  "cache_key": "8d6b97e4cc88bdc594e1068b63855d29",
+  "prompt_key": "resume_a5fdd737-d2ca-4597-95f4-59fc8130bd96_good_casual",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:19:44.956785+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "1234567890",
+      "location": "San Francisco, CA",
+      "linkedin": "https://www.linkedin.com/in/jordansmith",
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Science in Computer Science",
+        "institution": "University of California, Berkeley",
+        "graduation_date": "2018-05",
+        "gpa": 3.5,
+        "coursework": [
+          "Data Structures",
+          "Algorithms",
+          "Database Management",
+          "Web Development"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Digital Solutions Corp.",
+        "title": "Software Engineer",
+        "start_date": "2018-06",
+        "end_date": "2023-01",
+        "responsibilities": [
+          "Developed scalable applications using Java and Python.",
+          "Designed and implemented RESTful APIs for data access.",
+          "Collaborated with cross-functional teams to enhance software functionality.",
+          "Participated in Agile ceremonies to streamline development processes.",
+          "Optimized application performance and conducted debugging tasks."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Creative Tech LLC",
+        "title": "Junior Software Engineer",
+        "start_date": "2017-05",
+        "end_date": "2018-05",
+        "responsibilities": [
+          "Assisted in the development of web applications using JavaScript and Node.js.",
+          "Worked with Git for version control and collaborated on code reviews.",
+          "Implemented basic database operations using MongoDB.",
+          "Engaged in team discussions to improve feature development."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Java",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "Python",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "AWS",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "PostgreSQL",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Docker",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Agile",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "JavaScript",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Leadership",
+        "proficiency_level": "Beginner",
+        "years": 1
+      }
+    ],
+    "summary": "Passionate software engineer with over 4 years of hands-on experience in developing scalable applications. Adept at working in Agile environments and committed to writing clean and efficient code."
+  }
+}

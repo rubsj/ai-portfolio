@@ -1,0 +1,83 @@
+{
+  "cache_key": "16dbe6bf01222cbfd54c576f9c147519",
+  "prompt_key": "resume_f3e922dc-aaff-4b1e-9066-9737b85b7d26_partial_technical",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:06:29.932933+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jessica Taylor",
+      "email": "jessica.taylor@example.com",
+      "phone": "+1234567890",
+      "location": "New York, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts in Fashion Design",
+        "institution": "Fashion Institute of Technology",
+        "graduation_date": "2021-05",
+        "gpa": null,
+        "coursework": [
+          "Retail Management",
+          "Sales Techniques",
+          "Consumer Behavior"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Chic Boutique",
+        "title": "Sales Associate",
+        "start_date": "2021-06",
+        "end_date": null,
+        "responsibilities": [
+          "Assisted customers in selecting products, enhancing the overall shopping experience.",
+          "Managed inventory levels and coordinated stock replenishment to ensure product availability.",
+          "Trained new sales associates on customer service standards and operational procedures."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Urban Fashion Store",
+        "title": "Retail Assistant",
+        "start_date": "2020-01",
+        "end_date": "2021-05",
+        "responsibilities": [
+          "Facilitated visual merchandising to enhance store displays and attract customer attention.",
+          "Provided excellent customer service and resolved customer issues effectively.",
+          "Supported daily operations and assisted in achieving sales targets."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Customer Service Excellence",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Inventory Management",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Visual Merchandising",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Employee Training",
+        "proficiency_level": "Beginner",
+        "years": 0
+      },
+      {
+        "name": "Point of Sale (POS) Systems",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      }
+    ],
+    "summary": "Dedicated retail professional with experience in fashion sales and customer service. Skilled in inventory management and visual merchandising, seeking to leverage my background in fashion to support the operations at The Fashion Hub."
+  }
+}

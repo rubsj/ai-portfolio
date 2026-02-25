@@ -1,0 +1,38 @@
+{
+  "cache_key": "4c5037f7169bc652dab131a52e0bac2f",
+  "prompt_key": "job_Technology_False_Executive",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:14:07.747091+00:00",
+  "response": {
+    "title": "Chief Technology Officer (CTO)",
+    "company": {
+      "name": "InnovateTech Solutions",
+      "industry": "Technology",
+      "size": "500-1000 employees",
+      "location": "San Francisco, CA"
+    },
+    "description": "InnovateTech Solutions is seeking a dynamic Chief Technology Officer (CTO) to lead our technology vision and strategy, driving innovation and growth. The ideal candidate will possess exceptional leadership skills, with a strong technical background to guide our engineering and product teams. You will be responsible for overseeing the development and dissemination of technology platforms and ensuring alignment with our business goals.",
+    "requirements": {
+      "required_skills": [
+        "Proven experience in software architecture design and implementation",
+        "Expertise in cloud computing platforms (AWS, Azure, GCP)",
+        "In-depth knowledge of cybersecurity frameworks and best practices",
+        "Strong understanding of machine learning algorithms and data analysis techniques",
+        "Experience with Agile and DevOps methodologies",
+        "Ability to manage large-scale IT infrastructure and operations",
+        "Proficiency in programming languages such as Python, Java, or C++",
+        "Experience in managing cross-functional teams and projects",
+        "Strong analytical skills and data-driven decision-making"
+      ],
+      "preferred_skills": [
+        "Experience with blockchain technology and applications",
+        "Familiarity with user experience (UX) design principles",
+        "Knowledge of regulatory compliance in technology (e.g., GDPR, HIPAA)",
+        "Experience in mergers and acquisitions within the tech industry"
+      ],
+      "education": "Master's degree in Computer Science, Information Technology, or a related field",
+      "experience_years": 15,
+      "experience_level": "Executive"
+    }
+  }
+}

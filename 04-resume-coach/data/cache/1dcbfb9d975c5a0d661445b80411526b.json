@@ -1,0 +1,37 @@
+{
+  "cache_key": "1dcbfb9d975c5a0d661445b80411526b",
+  "prompt_key": "job_Finance_False_Senior",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:14:54.324312+00:00",
+  "response": {
+    "title": "Senior Financial Analyst",
+    "company": {
+      "name": "Global Finance Solutions Inc.",
+      "industry": "Finance",
+      "size": "500+ employees",
+      "location": "New York, NY"
+    },
+    "description": "Global Finance Solutions Inc. is seeking a highly analytical and detail-oriented Senior Financial Analyst to join our finance team. The ideal candidate will be responsible for providing in-depth financial analysis, preparing reports, and assisting in strategic planning to support the company's financial objectives. This position requires a thorough understanding of finance principles and the ability to communicate complex financial information effectively to stakeholders.",
+    "requirements": {
+      "required_skills": [
+        "Expertise in financial modeling and forecasting techniques",
+        "Proficient in data analysis and financial reporting using Excel and Tableau",
+        "Strong understanding of GAAP and IFRS accounting standards",
+        "Experience with ERP systems, preferably SAP or Oracle",
+        "Ability to conduct variance analysis and budget forecasting",
+        "Advanced proficiency in SQL for data querying and analysis",
+        "Knowledge of financial risk management principles",
+        "Proven track record of presenting financial data to senior management"
+      ],
+      "preferred_skills": [
+        "Experience with financial compliance and regulatory standards",
+        "Familiarity with investment analysis and portfolio management",
+        "Certifications such as CFA or CPA",
+        "Experience in mergers and acquisitions (M&A) analysis"
+      ],
+      "education": "Bachelor's degree in Finance, Accounting, or related field; Master's degree or MBA preferred",
+      "experience_years": 5,
+      "experience_level": "Senior"
+    }
+  }
+}

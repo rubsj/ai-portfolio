@@ -1,0 +1,82 @@
+{
+  "cache_key": "08697f56073397741b9bd531219bd1f5",
+  "prompt_key": "resume_277e5c9c-d977-46d9-ab10-8559f969b755_poor_achievement",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:05:42.212453+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jessica Lee",
+      "email": "jessica.lee@example.com",
+      "phone": "+1234567890",
+      "location": "Dallas, TX",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Associate of Arts",
+        "institution": "Dallas Community College",
+        "graduation_date": "2022-05",
+        "gpa": null,
+        "coursework": [
+          "Communications",
+          "Art Appreciation",
+          "Introduction to Business"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Fashion Retail Outlet",
+        "title": "Sales Associate",
+        "start_date": "2022-06",
+        "end_date": null,
+        "responsibilities": [
+          "Assisted customers with product selections and inquiries",
+          "Maintained store cleanliness and product displays",
+          "Processed transactions and handled cash register operations"
+        ],
+        "achievements": [
+          "Achieved a sales target of $5,000 in a month by upselling accessories"
+        ]
+      },
+      {
+        "company": "Local Coffee Shop",
+        "title": "Barista",
+        "start_date": "2021-01",
+        "end_date": "2022-05",
+        "responsibilities": [
+          "Provided excellent customer service in a fast-paced environment",
+          "Managed inventory and restocked supplies as needed",
+          "Crafted and served a variety of beverages and snacks"
+        ],
+        "achievements": [
+          "Improved customer satisfaction score by 15% through personalized service"
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Customer Service",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Visual Merchandising",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Adobe Spark",
+        "proficiency_level": "Beginner",
+        "years": 0
+      },
+      {
+        "name": "Social Media Engagement",
+        "proficiency_level": "Beginner",
+        "years": 1
+      }
+    ],
+    "summary": "Enthusiastic retail professional with experience in customer service and sales. Seeking to leverage skills in a dynamic Customer Experience role."
+  }
+}

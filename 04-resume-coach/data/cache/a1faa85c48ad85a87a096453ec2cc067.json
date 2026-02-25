@@ -1,0 +1,88 @@
+{
+  "cache_key": "a1faa85c48ad85a87a096453ec2cc067",
+  "prompt_key": "resume_281eef77-ca48-4414-9e5b-9931f7a5f863_excellent_formal",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:11:57.086475+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@example.com",
+      "phone": "+14155501234",
+      "location": "San Francisco, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Science in Human-Computer Interaction",
+        "institution": "University of California, Berkeley",
+        "graduation_date": "2023-05",
+        "gpa": 3.8,
+        "coursework": [
+          "User Experience Design",
+          "Augmented Reality Development",
+          "Data Analysis for UX",
+          "User Research Methodologies"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Tech Innovators Inc.",
+        "title": "UX Intern",
+        "start_date": "2023-06",
+        "end_date": "2023-09",
+        "responsibilities": [
+          "Collaborated with design and development teams to enhance user interactions in AR applications.",
+          "Conducted user research through surveys and interviews to gather insights on user behavior.",
+          "Utilized wireframing tools such as Figma to create prototypes for new features.",
+          "Analyzed user data using Google Analytics to identify areas for improvement."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Unity",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "ARKit",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Google Analytics",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Figma",
+        "proficiency_level": "Advanced",
+        "years": 1
+      },
+      {
+        "name": "Excel",
+        "proficiency_level": "Advanced",
+        "years": 2
+      },
+      {
+        "name": "JavaScript",
+        "proficiency_level": "Beginner",
+        "years": 0
+      },
+      {
+        "name": "Adobe Creative Suite",
+        "proficiency_level": "Beginner",
+        "years": 0
+      },
+      {
+        "name": "Jira",
+        "proficiency_level": "Beginner",
+        "years": 0
+      }
+    ],
+    "summary": null
+  }
+}

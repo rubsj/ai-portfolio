@@ -1,0 +1,98 @@
+{
+  "cache_key": "ec7c339df60bfe695c9fe7f95d5889a2",
+  "prompt_key": "resume_55c85fc5-6b17-49a1-bfb2-44bc89efa18f_good_casual",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:13:02.922106+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "+1234567890",
+      "location": "Remote",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Associate Degree in Health Information Technology",
+        "institution": "City College",
+        "graduation_date": "2022-05",
+        "gpa": 3.5,
+        "coursework": [
+          "Health Information Management",
+          "Medical Terminology",
+          "Patient Care Technologies"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "TechSupport Solutions",
+        "title": "Customer Service Representative",
+        "start_date": "2022-06",
+        "end_date": "2023-10",
+        "responsibilities": [
+          "Provided technical support to clients using various software applications.",
+          "Resolved customer inquiries and complaints through phone and email.",
+          "Assisted in the setup and troubleshooting of communication equipment."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "HealthCare Innovations",
+        "title": "Intern",
+        "start_date": "2022-01",
+        "end_date": "2022-05",
+        "responsibilities": [
+          "Assisted in managing patient records and scheduling appointments.",
+          "Shadowed healthcare professionals to learn about telehealth practices.",
+          "Participated in training sessions on healthcare software platforms."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Zoom for Healthcare",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Doxy.me",
+        "proficiency_level": "Beginner",
+        "years": 0
+      },
+      {
+        "name": "Customer Service",
+        "proficiency_level": "Advanced",
+        "years": 2
+      },
+      {
+        "name": "Electronic Health Records (EHR)",
+        "proficiency_level": "Beginner",
+        "years": 0
+      },
+      {
+        "name": "HIPAA Compliance",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Data Entry",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Basic HTML Coding",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Remote Patient Monitoring",
+        "proficiency_level": "Beginner",
+        "years": 0
+      }
+    ],
+    "summary": null
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "cache_key": "dda3876f5da7438e4e2bf1141aa77f5a",
+  "prompt_key": "resume_321debcc-716b-41ab-9159-8883b0eff9e9_mismatch_career_changer",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:49:53.877396+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@example.com",
+      "phone": "1234567890",
+      "location": "Los Angeles, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts in Fine Arts",
+        "institution": "University of California, Los Angeles",
+        "graduation_date": "2015-06",
+        "gpa": null,
+        "coursework": [
+          "Art History",
+          "Graphic Design",
+          "Sculpture"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Creative Solutions Agency",
+        "title": "Graphic Designer",
+        "start_date": "2016-08",
+        "end_date": "2023-05",
+        "responsibilities": [
+          "Developed visual concepts for marketing campaigns across various media.",
+          "Collaborated with clients to understand their branding needs and preferences.",
+          "Utilized Adobe Creative Suite (Photoshop, Illustrator) to create high-quality designs.",
+          "Managed multiple projects simultaneously, ensuring timely delivery of final products.",
+          "Participated in brainstorming sessions to introduce innovative design ideas."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Adobe Photoshop",
+        "proficiency_level": "Expert",
+        "years": 7
+      },
+      {
+        "name": "Graphic Design Principles",
+        "proficiency_level": "Advanced",
+        "years": 7
+      },
+      {
+        "name": "Project Management",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      },
+      {
+        "name": "Brand Development",
+        "proficiency_level": "Advanced",
+        "years": 6
+      },
+      {
+        "name": "Client Communication",
+        "proficiency_level": "Expert",
+        "years": 7
+      }
+    ],
+    "summary": null
+  }
+}

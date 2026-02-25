@@ -1,0 +1,101 @@
+{
+  "cache_key": "7b93233b8f6ef653eb14cd6d3e6dab0e",
+  "prompt_key": "resume_97d4f05b-4255-419f-b8c3-0778ac291c83_excellent_formal",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:28:30.516557+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "+12065551234",
+      "location": "Washington, D.C.",
+      "linkedin": "https://linkedin.com/in/jordansmith",
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor's Degree in Public Administration",
+        "institution": "George Washington University",
+        "graduation_date": "2022-05",
+        "gpa": 3.8,
+        "coursework": [
+          "Data Analysis in Public Administration",
+          "Public Policy and Community Engagement",
+          "Data Visualization Techniques",
+          "Communication Strategies"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "CivicTech Solutions",
+        "title": "Data Engagement Intern",
+        "start_date": "2022-06",
+        "end_date": "2023-08",
+        "responsibilities": [
+          "Assisted in data analysis projects using Excel and Google Sheets to support civic engagement initiatives.",
+          "Created interactive dashboards using Tableau to visualize community feedback and engagement metrics.",
+          "Collaborated with public relations teams to draft clear and concise reports on data analysis findings.",
+          "Utilized social media platforms to promote civic engagement campaigns and gather public input."
+        ],
+        "achievements": [
+          "Increased community feedback participation by 25% through targeted social media outreach.",
+          "Successfully developed a data visualization project that was presented at the annual CivicTech Conference."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Excel",
+        "proficiency_level": "Advanced",
+        "years": 1
+      },
+      {
+        "name": "Google Sheets",
+        "proficiency_level": "Advanced",
+        "years": 1
+      },
+      {
+        "name": "Tableau",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Power BI",
+        "proficiency_level": "Intermediate",
+        "years": 0
+      },
+      {
+        "name": "Public Engagement Strategies",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Report Writing",
+        "proficiency_level": "Advanced",
+        "years": 1
+      },
+      {
+        "name": "Social Media Outreach",
+        "proficiency_level": "Advanced",
+        "years": 1
+      },
+      {
+        "name": "Canva",
+        "proficiency_level": "Intermediate",
+        "years": 0
+      },
+      {
+        "name": "Trello",
+        "proficiency_level": "Intermediate",
+        "years": 0
+      },
+      {
+        "name": "Asana",
+        "proficiency_level": "Intermediate",
+        "years": 0
+      }
+    ],
+    "summary": "Detail-oriented and proactive recent graduate with expertise in public administration and data analysis. Proven ability to enhance community engagement through innovative data-driven solutions. Committed to fostering transparency and accessibility in government operations."
+  }
+}

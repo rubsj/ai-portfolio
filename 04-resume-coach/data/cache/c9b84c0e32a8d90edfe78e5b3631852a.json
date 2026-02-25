@@ -1,0 +1,57 @@
+{
+  "cache_key": "c9b84c0e32a8d90edfe78e5b3631852a",
+  "prompt_key": "resume_c2471804-9a3a-4d5d-874e-5455a13a43a2_poor_achievement",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:48:43.115928+00:00",
+  "response": {
+    "contact_info": {
+      "name": "John Doe",
+      "email": "johndoe@email.com",
+      "phone": "1234567890",
+      "location": "New York, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts in History",
+        "institution": "University of New York",
+        "graduation_date": "2020-05",
+        "gpa": 3.2,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "Local Museum",
+        "title": "Exhibit Coordinator",
+        "start_date": "2021-06",
+        "end_date": null,
+        "responsibilities": [
+          "Coordinated educational exhibits for school groups.",
+          "Developed and produced printed materials for exhibits.",
+          "Assisted in event planning for visitor engagement activities."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Basic Graphic Design",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Microsoft Office Suite",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Event Planning",
+        "proficiency_level": "Advanced",
+        "years": 2
+      }
+    ],
+    "summary": "Enthusiastic graduate with a background in history and experience in museum educational programming seeking to transition into a digital learning role. Strong organizational and communication skills, with a passion for educational engagement."
+  }
+}

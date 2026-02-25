@@ -1,0 +1,37 @@
+{
+  "cache_key": "f1e307a93d04f3849cffea50d8b9d268",
+  "prompt_key": "job_Education_False_Senior",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:15:28.031261+00:00",
+  "response": {
+    "title": "Senior Educational Program Manager",
+    "company": {
+      "name": "Innovative Learning Solutions",
+      "industry": "Education",
+      "size": "Medium",
+      "location": "New York, NY"
+    },
+    "description": "Innovative Learning Solutions is seeking a Senior Educational Program Manager to lead our program development and execution efforts. The ideal candidate will have extensive experience in curriculum design, educational assessment, and program evaluation. This role requires a strategic thinker who can collaborate across various departments to enhance our educational offerings and drive student success.",
+    "requirements": {
+      "required_skills": [
+        "Curriculum development and instructional design",
+        "Program evaluation and assessment methodologies",
+        "Data analysis and reporting using tools like Excel and Tableau",
+        "Experience with accreditation processes and standards",
+        "Project management skills, including familiarity with tools like Asana or Trello",
+        "Budget management and financial forecasting for educational programs",
+        "Leadership and team management experience in an educational setting",
+        "Strong written and verbal communication skills"
+      ],
+      "preferred_skills": [
+        "Familiarity with Learning Management Systems (LMS) like Canvas or Blackboard",
+        "Grant writing and fundraising experience",
+        "Knowledge of educational technology trends and tools",
+        "Experience with adult education or professional development programs"
+      ],
+      "education": "Master's degree in Education, Curriculum Development, or a related field",
+      "experience_years": 7,
+      "experience_level": "Senior"
+    }
+  }
+}

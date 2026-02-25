@@ -1,0 +1,90 @@
+{
+  "cache_key": "55c97160011ff33bf58d6ca0b1fa8af3",
+  "prompt_key": "resume_f3a8ebf0-9196-4a03-a6ea-ccf366ad50ba_partial_technical",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:04:39.091065+00:00",
+  "response": {
+    "contact_info": {
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "phone": "+1234567890",
+      "location": "Detroit, MI",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Master of Business Administration",
+        "institution": "University of Michigan",
+        "graduation_date": "2010-05",
+        "gpa": null,
+        "coursework": [
+          "Operations Management",
+          "Supply Chain Management",
+          "Financial Analysis"
+        ]
+      },
+      {
+        "degree": "Bachelor of Science in Industrial Engineering",
+        "institution": "Michigan State University",
+        "graduation_date": "2008-05",
+        "gpa": null,
+        "coursework": [
+          "Manufacturing Processes",
+          "Quality Control",
+          "Data Analytics"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "ABC Manufacturing Corp",
+        "title": "Director of Operations",
+        "start_date": "2015-06",
+        "end_date": null,
+        "responsibilities": [
+          "Oversaw operational processes across multiple manufacturing units, enhancing productivity by 15%.",
+          "Implemented Lean Manufacturing principles to streamline production workflows.",
+          "Managed cross-functional teams to drive quality enhancements and reduce defects.",
+          "Collaborated with the finance department to develop and manage annual budgets."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "XYZ Logistics Solutions",
+        "title": "Operations Manager",
+        "start_date": "2012-05",
+        "end_date": "2015-05",
+        "responsibilities": [
+          "Optimized supply chain operations, reducing logistics costs by 20%.",
+          "Utilized data analytics to improve performance metrics and operational efficiency.",
+          "Ensured compliance with industry standards and regulations in all logistics operations."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Lean Manufacturing",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      },
+      {
+        "name": "Supply Chain Management",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Data Analytics",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Budget Management",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      }
+    ],
+    "summary": "Results-driven operations professional with over 8 years of experience in the manufacturing and logistics sectors. Proven ability to implement efficiency-driven initiatives and enhance product quality through data-informed decision-making."
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "cache_key": "a257941768127b42a382886395f66916",
+  "prompt_key": "resume_7ea24385-6f7f-413a-82ec-357b4036e3a3_excellent_formal",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:53:20.420297+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@example.com",
+      "phone": "+15125551234",
+      "location": "Austin, TX",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Associate's Degree in Manufacturing Technology",
+        "institution": "Austin Community College",
+        "graduation_date": "2022-05",
+        "gpa": 3.8,
+        "coursework": [
+          "Sustainable Manufacturing Practices",
+          "Computer-Aided Design (CAD)",
+          "Environmental Management Systems",
+          "Lean Manufacturing Principles"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "GreenTech Solutions",
+        "title": "Sustainable Manufacturing Intern",
+        "start_date": "2022-06",
+        "end_date": "2023-06",
+        "responsibilities": [
+          "Assisted in implementing eco-efficient methods in production processes.",
+          "Conducted process audits and documented findings to minimize waste.",
+          "Collaborated with engineers to analyze materials for recyclability and sustainability.",
+          "Utilized AutoCAD for drafting layouts and designs for manufacturing workflows.",
+          "Engaged in training sessions on ISO 14001 environmental management standards."
+        ],
+        "achievements": [
+          "Contributed to a project that reduced waste by 15% through improved processes.",
+          "Helped achieve ISO 14001 certification for the facility."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "AutoCAD",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "ISO 14001 Standards",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Lean Manufacturing Principles",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Materials Analysis",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Process Auditing",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Statistical Analysis (Minitab)",
+        "proficiency_level": "Beginner",
+        "years": 0
+      },
+      {
+        "name": "Energy Efficiency Practices",
+        "proficiency_level": "Beginner",
+        "years": 0
+      },
+      {
+        "name": "Project Management Tools (Trello)",
+        "proficiency_level": "Beginner",
+        "years": 0
+      }
+    ],
+    "summary": null
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "cache_key": "29d6f3679ea78390c8dd461dc3b169af",
+  "prompt_key": "job_Government_False_Executive",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:18:36.845689+00:00",
+  "response": {
+    "title": "Director of Policy Development",
+    "company": {
+      "name": "Federal Governance Agency",
+      "industry": "Government",
+      "size": "2000+ employees",
+      "location": "Washington, D.C."
+    },
+    "description": "The Federal Governance Agency is seeking a highly experienced Director of Policy Development to lead our strategic initiatives and policy formulation processes. This executive role will be responsible for guiding policy direction, ensuring compliance with federal laws, and fostering collaboration across agencies to enhance service delivery to citizens. The ideal candidate will possess a strong understanding of government operations and a proven track record in policy advocacy and implementation.",
+    "requirements": {
+      "required_skills": [
+        "Expertise in federal regulatory frameworks and compliance",
+        "Proven experience in policy analysis and advocacy",
+        "Strong leadership skills with the ability to manage cross-functional teams",
+        "Advanced understanding of public administration and governance",
+        "Excellent communication and negotiation skills",
+        "Data-driven decision-making capabilities",
+        "Strategic planning and project management proficiency",
+        "Experience in stakeholder engagement and public relations"
+      ],
+      "preferred_skills": [
+        "Familiarity with state and local government operations",
+        "Experience with grant management and funding proposals",
+        "Knowledge of legislative processes and government relations",
+        "Advanced degree in Public Policy, Political Science, or related fields"
+      ],
+      "education": "Master's degree in Public Administration, Public Policy, or related fields",
+      "experience_years": 15,
+      "experience_level": "Executive"
+    }
+  }
+}

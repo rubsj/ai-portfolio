@@ -1,0 +1,63 @@
+{
+  "cache_key": "0470e0dfcb99a64af627ca979e3beb64",
+  "prompt_key": "resume_844c20b9-2024-47c2-96f1-7bfe56bde90c_poor_achievement",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:43:31.687896+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jane Doe",
+      "email": "jane.doe@example.com",
+      "phone": "1234567890",
+      "location": "Los Angeles, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts in Communication",
+        "institution": "University of California, Los Angeles",
+        "graduation_date": "2022-06",
+        "gpa": null,
+        "coursework": [
+          "Public Speaking",
+          "Digital Media",
+          "Graphic Design Basics"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Creative Media Solutions",
+        "title": "Junior Graphic Designer",
+        "start_date": "2022-07",
+        "end_date": null,
+        "responsibilities": [
+          "Designed marketing materials for various campaigns",
+          "Collaborated with team members to create visual content",
+          "Assisted in the management of social media accounts"
+        ],
+        "achievements": [
+          "Improved engagement on social media posts by 15%"
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Adobe Creative Suite",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Microsoft PowerPoint",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Basic Excel",
+        "proficiency_level": "Beginner",
+        "years": 0
+      }
+    ],
+    "summary": "Creative graphic designer with experience in digital media and a passion for storytelling through visuals. Eager to transition into a role that combines communication and data analysis."
+  }
+}

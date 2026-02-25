@@ -1,0 +1,93 @@
+{
+  "cache_key": "8d9aa9e98067c556be5f01d05c228866",
+  "prompt_key": "resume_3d27e240-8bfb-4816-a47f-199ccd82aef1_partial_technical",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:45:46.682946+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jessica Taylor",
+      "email": "jessica.taylor@example.com",
+      "phone": "1234567890",
+      "location": "New York, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Science in Finance",
+        "institution": "New York University",
+        "graduation_date": "2018-05",
+        "gpa": 3.8,
+        "coursework": [
+          "Financial Accounting",
+          "Corporate Finance",
+          "Investment Analysis"
+        ]
+      },
+      {
+        "degree": "Master of Business Administration",
+        "institution": "Columbia University",
+        "graduation_date": "2020-05",
+        "gpa": null,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "ABC Financial Services",
+        "title": "Financial Analyst",
+        "start_date": "2020-06",
+        "end_date": "2023-09",
+        "responsibilities": [
+          "Conducted financial analysis and prepared detailed reports for management review.",
+          "Utilized Excel to create financial models and forecasting tools.",
+          "Assisted in budget preparation and variance analysis to support financial planning.",
+          "Collaborated with the accounting team to ensure compliance with GAAP standards.",
+          "Presented financial data and insights to senior management during quarterly reviews."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "XYZ Investments",
+        "title": "Junior Financial Analyst",
+        "start_date": "2018-07",
+        "end_date": "2020-05",
+        "responsibilities": [
+          "Supported senior analysts in preparing financial reports and presentations.",
+          "Assisted in data analysis using SQL to retrieve relevant financial metrics.",
+          "Participated in investment analysis projects under the guidance of lead analysts.",
+          "Maintained financial databases and contributed to the reporting processes."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Financial Modeling",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Excel",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "SQL",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "GAAP",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Financial Reporting",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      }
+    ],
+    "summary": "Detail-oriented Financial Analyst with over 5 years of experience in financial reporting, data analysis, and budget forecasting. Proficient in financial modeling and advanced Excel techniques, with a strong understanding of GAAP principles."
+  }
+}

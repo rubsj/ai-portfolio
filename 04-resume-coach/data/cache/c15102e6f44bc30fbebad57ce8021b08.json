@@ -1,0 +1,77 @@
+{
+  "cache_key": "c15102e6f44bc30fbebad57ce8021b08",
+  "prompt_key": "resume_844c20b9-2024-47c2-96f1-7bfe56bde90c_good_casual",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:43:15.406522+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Alex Johnson",
+      "email": "alex.johnson@email.com",
+      "phone": "1234567890",
+      "location": "San Francisco, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Science",
+        "institution": "University of California, Berkeley",
+        "graduation_date": "2022-05",
+        "gpa": 3.7,
+        "coursework": [
+          "Financial Analysis",
+          "Data Visualization",
+          "Statistics",
+          "Econometrics"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Data Insights Corp",
+        "title": "Data Analyst Intern",
+        "start_date": "2022-06",
+        "end_date": "2023-05",
+        "responsibilities": [
+          "Analyzed large datasets to identify trends and insights for business decisions.",
+          "Created data visualizations using Tableau to communicate findings to stakeholders.",
+          "Collaborated with team members to prepare presentations using PowerPoint."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Microsoft Excel",
+        "proficiency_level": "Advanced",
+        "years": 2
+      },
+      {
+        "name": "Tableau",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "SQL",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "PowerPoint",
+        "proficiency_level": "Advanced",
+        "years": 2
+      },
+      {
+        "name": "Python",
+        "proficiency_level": "Beginner",
+        "years": 0
+      },
+      {
+        "name": "Graphic Design",
+        "proficiency_level": "Beginner",
+        "years": 1
+      }
+    ],
+    "summary": "Creative and analytical recent graduate with experience in data analysis and visualization. Passionate about transforming complex financial data into engaging narratives that drive decision-making."
+  }
+}

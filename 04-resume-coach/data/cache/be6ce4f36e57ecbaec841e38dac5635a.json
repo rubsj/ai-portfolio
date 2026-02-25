@@ -1,0 +1,38 @@
+{
+  "cache_key": "be6ce4f36e57ecbaec841e38dac5635a",
+  "prompt_key": "job_Manufacturing_False_Mid",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:15:54.290002+00:00",
+  "response": {
+    "title": "Manufacturing Engineer",
+    "company": {
+      "name": "ABC Manufacturing Corp",
+      "industry": "Manufacturing",
+      "size": "500-1000 employees",
+      "location": "Dallas, TX"
+    },
+    "description": "ABC Manufacturing Corp is seeking a skilled Manufacturing Engineer to join our dynamic team. In this role, you will be responsible for optimizing manufacturing processes, improving product quality, and reducing production costs. You will work closely with cross-functional teams to implement engineering solutions that enhance operational efficiency. Ideal candidates will have a strong background in manufacturing principles and a passion for continuous improvement.",
+    "requirements": {
+      "required_skills": [
+        "Proficient in CAD software (AutoCAD, SolidWorks)",
+        "Experience with lean manufacturing methodologies",
+        "Knowledge of Six Sigma principles",
+        "Ability to conduct root cause analysis",
+        "Familiarity with quality control standards (ISO 9001)",
+        "Understanding of materials and manufacturing processes",
+        "Experience with process optimization techniques",
+        "Strong data analysis skills (SPC, Minitab)"
+      ],
+      "preferred_skills": [
+        "Project management experience",
+        "Familiarity with ERP systems (SAP, Oracle)",
+        "Experience in automation and robotics",
+        "Knowledge of safety standards and regulations",
+        "Ability to lead training sessions for manufacturing staff"
+      ],
+      "education": "Bachelor's degree in Mechanical Engineering, Industrial Engineering, or related field",
+      "experience_years": 3,
+      "experience_level": "Mid"
+    }
+  }
+}

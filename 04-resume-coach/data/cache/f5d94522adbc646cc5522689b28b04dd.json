@@ -1,0 +1,75 @@
+{
+  "cache_key": "f5d94522adbc646cc5522689b28b04dd",
+  "prompt_key": "resume_83703e74-0d77-42bb-8fe4-9b445c77747e_mismatch_career_changer",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:23:31.180548+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Samuel Thompson",
+      "email": "samuel.thompson@email.com",
+      "phone": "4155551234",
+      "location": "Los Angeles, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts in History",
+        "institution": "University of California, Los Angeles",
+        "graduation_date": "2018-06",
+        "gpa": null,
+        "coursework": [
+          "Modern American History",
+          "Research Methodologies",
+          "Historical Perspectives on Technology"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Los Angeles Historical Society",
+        "title": "Museum Curator",
+        "start_date": "2019-01",
+        "end_date": "2023-09",
+        "responsibilities": [
+          "Curated multiple exhibits focusing on local history and community engagement.",
+          "Developed educational programs and workshops for diverse visitor groups.",
+          "Managed relationships with local schools and community organizations to promote historical events.",
+          "Oversaw the preservation and cataloging of historical artifacts."
+        ],
+        "achievements": [
+          "Increased museum visitation by 40% through enhanced programming.",
+          "Successfully launched a digital archive project to digitize historical documents."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Artifact Preservation",
+        "proficiency_level": "Expert",
+        "years": 4
+      },
+      {
+        "name": "Public Speaking",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "Event Planning",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "Research",
+        "proficiency_level": "Expert",
+        "years": 5
+      },
+      {
+        "name": "Community Engagement",
+        "proficiency_level": "Advanced",
+        "years": 4
+      }
+    ],
+    "summary": "Dedicated Museum Curator with extensive experience in historical research and community outreach. Proven track record in developing engaging educational programs and managing diverse teams. Seeking to leverage strong organizational and interpersonal skills in a new arena."
+  }
+}

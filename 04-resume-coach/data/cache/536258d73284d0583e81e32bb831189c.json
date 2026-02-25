@@ -1,0 +1,123 @@
+{
+  "cache_key": "536258d73284d0583e81e32bb831189c",
+  "prompt_key": "resume_e3cb43b3-9148-4bf8-8f86-144c7c499b76_excellent_formal",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:07:11.813093+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan A. Miller",
+      "email": "jordan.miller@email.com",
+      "phone": "+12125551234",
+      "location": "New York, NY",
+      "linkedin": "https://www.linkedin.com/in/jordanamiller",
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor's Degree in Business Administration",
+        "institution": "New York University",
+        "graduation_date": "2010-05",
+        "gpa": null,
+        "coursework": [
+          "Retail Management",
+          "Consumer Behavior",
+          "Marketing Strategies",
+          "Financial Management"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Innovative Retail Solutions",
+        "title": "Senior Retail Manager",
+        "start_date": "2016-06",
+        "end_date": "2023-09",
+        "responsibilities": [
+          "Led a team of 75 employees across multiple retail locations, focusing on staff development and performance management.",
+          "Developed and implemented sales strategies that resulted in a 25% increase in annual sales.",
+          "Oversaw inventory management and utilized advanced analytics tools to optimize stock levels and reduce shrink.",
+          "Managed annual budgets and forecasts, ensuring alignment with overall business objectives and profitability.",
+          "Enhanced customer experiences by integrating e-commerce solutions and in-store technology, including mobile payment systems."
+        ],
+        "achievements": [
+          "Achieved recognition as 'Retail Manager of the Year' for record sales growth in 2021.",
+          "Successfully reduced operational costs by 15% through effective resource management."
+        ]
+      },
+      {
+        "company": "Smart Retail Co.",
+        "title": "Retail Manager",
+        "start_date": "2012-03",
+        "end_date": "2016-05",
+        "responsibilities": [
+          "Managed daily operations of a flagship store, leading a team of 50+ employees.",
+          "Implemented visual merchandising strategies that improved customer engagement and store traffic.",
+          "Conducted performance assessments using key metrics to drive team accountability and performance improvement.",
+          "Collaborated with the marketing team to create promotional campaigns that increased foot traffic and online conversions."
+        ],
+        "achievements": [
+          "Increased store sales by 30% over three consecutive years.",
+          "Enhanced team productivity by implementing a staff training program that improved service delivery."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Retail Management",
+        "proficiency_level": "Expert",
+        "years": 11
+      },
+      {
+        "name": "Sales Strategy Development",
+        "proficiency_level": "Expert",
+        "years": 7
+      },
+      {
+        "name": "Inventory Management",
+        "proficiency_level": "Expert",
+        "years": 7
+      },
+      {
+        "name": "Analytical Skills",
+        "proficiency_level": "Expert",
+        "years": 7
+      },
+      {
+        "name": "Team Leadership",
+        "proficiency_level": "Expert",
+        "years": 11
+      },
+      {
+        "name": "Budget Management",
+        "proficiency_level": "Expert",
+        "years": 7
+      },
+      {
+        "name": "Visual Merchandising",
+        "proficiency_level": "Advanced",
+        "years": 7
+      },
+      {
+        "name": "POS Systems",
+        "proficiency_level": "Advanced",
+        "years": 7
+      },
+      {
+        "name": "CRM Tools",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "E-commerce Integration",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Bilingual Communication (Spanish/English)",
+        "proficiency_level": "Intermediate",
+        "years": 7
+      }
+    ],
+    "summary": "Dynamic and results-driven Senior Retail Manager with over 11 years of experience in retail management and a proven track record of driving sales growth and enhancing customer experiences. Adept at leading large teams, developing strategic initiatives, and ensuring operational excellence across multiple locations. Bilingual in Spanish and English, with expertise in inventory management, budget control, and visual merchandising."
+  }
+}

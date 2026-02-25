@@ -1,0 +1,96 @@
+{
+  "cache_key": "7ebfeda3f3f7a74aff1caaa8ea24d56c",
+  "prompt_key": "resume_0cd99fc1-d8aa-42c2-9580-2f6a771bc9cd_excellent_formal",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:17:57.380377+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Emily Clark",
+      "email": "emily.clark@lawfirm.com",
+      "phone": "+11234567890",
+      "location": "New York, NY",
+      "linkedin": "https://www.linkedin.com/in/emilyclark",
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Juris Doctor",
+        "institution": "New York University School of Law",
+        "graduation_date": "2018-05",
+        "gpa": 3.8,
+        "coursework": [
+          "Corporate Law",
+          "Mergers and Acquisitions",
+          "Contract Law",
+          "Intellectual Property Law"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Anderson & Smith Attorneys",
+        "title": "Corporate Associate",
+        "start_date": "2019-06",
+        "end_date": null,
+        "responsibilities": [
+          "Drafted and reviewed various corporate agreements including partnership agreements, non-disclosure agreements, and joint ventures.",
+          "Led due diligence processes and facilitated mergers and acquisitions for several mid-sized corporations.",
+          "Provided legal advice on corporate governance matters and compliance with state and federal regulations.",
+          "Negotiated contracts and resolved disputes with clients to ensure favorable outcomes."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Legal Services Group",
+        "title": "Junior Corporate Lawyer",
+        "start_date": "2018-06",
+        "end_date": "2019-06",
+        "responsibilities": [
+          "Assisted in drafting and reviewing contracts and corporate policies for compliance with legal standards.",
+          "Conducted legal research and prepared memoranda on various corporate law issues.",
+          "Supported senior attorneys in litigation support and client relationship management.",
+          "Participated in corporate governance meetings and provided actionable insights."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Drafting and reviewing corporate agreements",
+        "proficiency_level": "Advanced",
+        "years": 3
+      },
+      {
+        "name": "Mergers and acquisitions experience",
+        "proficiency_level": "Advanced",
+        "years": 3
+      },
+      {
+        "name": "Corporate governance knowledge",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Compliance regulations familiarity",
+        "proficiency_level": "Advanced",
+        "years": 3
+      },
+      {
+        "name": "Contract negotiation skills",
+        "proficiency_level": "Advanced",
+        "years": 3
+      },
+      {
+        "name": "Legal research software (LexisNexis, Westlaw)",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Client relationship management",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      }
+    ],
+    "summary": null
+  }
+}

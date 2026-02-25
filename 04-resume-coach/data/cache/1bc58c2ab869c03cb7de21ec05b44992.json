@@ -1,0 +1,62 @@
+{
+  "cache_key": "1bc58c2ab869c03cb7de21ec05b44992",
+  "prompt_key": "resume_281eef77-ca48-4414-9e5b-9931f7a5f863_poor_achievement",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:12:26.341092+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jake Thompson",
+      "email": "jake.thompson@email.com",
+      "phone": "1234567890",
+      "location": "Los Angeles, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts in Graphic Design",
+        "institution": "University of California, Los Angeles",
+        "graduation_date": "2022-06",
+        "gpa": null,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "Creative Design Agency",
+        "title": "Graphic Designer",
+        "start_date": "2022-07",
+        "end_date": null,
+        "responsibilities": [
+          "Created visual content for various print and digital media.",
+          "Collaborated with project managers and clients to meet design specifications.",
+          "Assisted in preparing presentations and marketing materials."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Adobe Creative Suite",
+        "proficiency_level": "Advanced",
+        "years": 1
+      },
+      {
+        "name": "Wireframing Tools (e.g., Balsamiq)",
+        "proficiency_level": "Intermediate",
+        "years": 0
+      },
+      {
+        "name": "Basic HTML/CSS",
+        "proficiency_level": "Beginner",
+        "years": 0
+      },
+      {
+        "name": "Microsoft Excel",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      }
+    ],
+    "summary": "Creative graphic designer with a strong passion for visual arts and a basic understanding of design principles. Seeking to transition into augmented reality user experience analysis."
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "cache_key": "ddb354684e5e6dcd0fb0289081e711ec",
+  "prompt_key": "resume_7352a577-78e8-4255-9497-36b07dc28307_good_casual",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:32:50.494717+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@example.com",
+      "phone": "+1234567890",
+      "location": "Washington, D.C.",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Master's in Public Administration",
+        "institution": "George Washington University",
+        "graduation_date": "2010-05",
+        "gpa": null,
+        "coursework": [
+          "Public Policy Analysis",
+          "Ethics in Public Administration",
+          "Quantitative Methods for Policy Research"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "National Policy Institute",
+        "title": "Senior Policy Advisor",
+        "start_date": "2015-01",
+        "end_date": "2023-10",
+        "responsibilities": [
+          "Led policy formulation processes that shaped national initiatives.",
+          "Conducted in-depth policy analysis to ensure alignment with federal regulations.",
+          "Fostered collaboration across multiple government agencies to enhance service delivery.",
+          "Managed cross-functional teams to develop strategic plans and project proposals.",
+          "Engaged with stakeholders to gather insights and feedback for policy development."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Public Affairs Group",
+        "title": "Policy Analyst",
+        "start_date": "2010-06",
+        "end_date": "2014-12",
+        "responsibilities": [
+          "Analyzed legislative processes and provided actionable recommendations to senior management.",
+          "Developed advocacy strategies that increased community awareness of policy issues.",
+          "Coordinated with local government agencies on grant proposals and funding initiatives.",
+          "Conducted research to support data-driven decision-making in policy development."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Federal Regulatory Compliance",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Policy Analysis",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Strategic Planning",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      },
+      {
+        "name": "Public Relations",
+        "proficiency_level": "Intermediate",
+        "years": 6
+      },
+      {
+        "name": "Project Management Software (Asana)",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Data Visualization (Tableau)",
+        "proficiency_level": "Beginner",
+        "years": 1
+      }
+    ],
+    "summary": "Experienced Policy Advisor with over 13 years in public administration, skilled in policy analysis, federal compliance, and strategic planning. Proven ability to lead projects and engage stakeholders effectively."
+  }
+}

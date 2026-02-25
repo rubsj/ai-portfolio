@@ -1,0 +1,85 @@
+{
+  "cache_key": "54957834bd37f8744cf6c6d23c759e3e",
+  "prompt_key": "resume_b12932e0-c911-4563-ba5e-0e825bbee52a_partial_technical",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:29:51.450143+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@example.com",
+      "phone": "+1234567890",
+      "location": "Springfield, IL",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Science in Business Administration",
+        "institution": "University of Springfield",
+        "graduation_date": "2020-05",
+        "gpa": 3.4,
+        "coursework": [
+          "Public Finance",
+          "Data Analysis",
+          "Organizational Behavior"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Springfield County Health Department",
+        "title": "Data Analyst",
+        "start_date": "2021-06",
+        "end_date": null,
+        "responsibilities": [
+          "Conducted data analysis using Microsoft Excel and SQL to generate insights on public health programs.",
+          "Assisted in the evaluation of health programs and performance metrics to improve service delivery.",
+          "Prepared reports and presentations for stakeholders to communicate findings and recommendations.",
+          "Engaged with community members to gather feedback and enhance program effectiveness."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Springfield Community Center",
+        "title": "Program Assistant",
+        "start_date": "2020-06",
+        "end_date": "2021-05",
+        "responsibilities": [
+          "Supported program implementation and evaluation for various community services.",
+          "Managed budgets for small-scale projects, ensuring financial compliance.",
+          "Assisted in the coordination of community events and stakeholder meetings.",
+          "Utilized qualitative research methods to gather data from program participants."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Data Analysis (Excel, SQL)",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Program Evaluation",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Budget Management",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Report Writing",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Project Management (Agile)",
+        "proficiency_level": "Beginner",
+        "years": 1
+      }
+    ],
+    "summary": "Detail-oriented professional with experience in data analysis and program evaluation within the public sector. Committed to improving community services through effective stakeholder engagement and data-driven decision-making."
+  }
+}

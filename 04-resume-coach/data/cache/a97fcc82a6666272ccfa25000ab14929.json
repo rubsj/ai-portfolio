@@ -1,0 +1,68 @@
+{
+  "cache_key": "a97fcc82a6666272ccfa25000ab14929",
+  "prompt_key": "resume_f69b76d8-3736-416f-ada3-b0cd5abab4fa_poor_achievement",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:50:51.840444+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Alex Johnson",
+      "email": "alex.johnson@email.com",
+      "phone": "5551234567",
+      "location": "Boston, MA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts in English",
+        "institution": "University of Massachusetts",
+        "graduation_date": "2018-05-15",
+        "gpa": 3.2,
+        "coursework": [
+          "Literature Analysis",
+          "Creative Writing",
+          "Communication Studies"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Bright Future Tutoring",
+        "title": "Tutor",
+        "start_date": "2019-06",
+        "end_date": "2023-08",
+        "responsibilities": [
+          "Provided personalized tutoring sessions for high school students in English and Math.",
+          "Assisted students with homework and exam preparation.",
+          "Developed lesson plans tailored to individual student needs."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Creative Kids Camp",
+        "title": "Camp Counselor",
+        "start_date": "2018-06",
+        "end_date": "2019-08",
+        "responsibilities": [
+          "Led recreational and educational activities for children aged 6-12.",
+          "Collaborated with other counselors to improve camp programs and schedules.",
+          "Maintained safety standards and ensured a positive camp environment."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Communication",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Project Coordination",
+        "proficiency_level": "Beginner",
+        "years": 2
+      }
+    ],
+    "summary": "Enthusiastic and dedicated tutor with a background in English education and camp counseling. Seeking to leverage communication skills and project coordination experience in a new role."
+  }
+}

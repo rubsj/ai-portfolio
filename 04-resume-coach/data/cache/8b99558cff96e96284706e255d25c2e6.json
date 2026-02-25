@@ -1,0 +1,37 @@
+{
+  "cache_key": "8b99558cff96e96284706e255d25c2e6",
+  "prompt_key": "job_Manufacturing_False_Lead",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:16:08.073924+00:00",
+  "response": {
+    "title": "Lead Manufacturing Engineer",
+    "company": {
+      "name": "Precision Manufacturing Inc.",
+      "industry": "Manufacturing",
+      "size": "500-1000 employees",
+      "location": "Chicago, IL"
+    },
+    "description": "Precision Manufacturing Inc. is seeking a Lead Manufacturing Engineer to oversee and enhance our production processes. The ideal candidate will lead a team of engineers and technicians to improve efficiency, reduce waste, and ensure high-quality standards. This is an exciting opportunity to play a key role in driving innovation and operational excellence in our manufacturing facility.",
+    "requirements": {
+      "required_skills": [
+        "Lean Manufacturing principles",
+        "Six Sigma certification (Green Belt or Black Belt)",
+        "Proficiency in CAD software (e.g., SolidWorks, AutoCAD)",
+        "Experience with PLC programming and troubleshooting",
+        "Knowledge of industry regulations (ISO, OSHA standards)",
+        "Strong project management skills",
+        "Ability to analyze production metrics and implement improvements",
+        "Familiarity with ERP systems (e.g., SAP, Oracle)"
+      ],
+      "preferred_skills": [
+        "Experience with additive manufacturing techniques",
+        "Understanding of supply chain management",
+        "Proficiency in data analysis tools (e.g., Minitab, Excel VBA)",
+        "Leadership experience in cross-functional teams"
+      ],
+      "education": "Bachelor's degree in Mechanical Engineering, Industrial Engineering, or related field",
+      "experience_years": 7,
+      "experience_level": "Lead"
+    }
+  }
+}

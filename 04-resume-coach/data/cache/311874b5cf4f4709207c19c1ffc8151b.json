@@ -1,0 +1,78 @@
+{
+  "cache_key": "311874b5cf4f4709207c19c1ffc8151b",
+  "prompt_key": "resume_af18f3f0-ab1b-433a-93d3-094fb91cab7a_mismatch_career_changer",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:24:10.173512+00:00",
+  "response": {
+    "contact_info": {
+      "name": "John Smith",
+      "email": "john.smith@example.com",
+      "phone": "+14155552671",
+      "location": "Los Angeles, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor's Degree in Graphic Design",
+        "institution": "University of California, Los Angeles",
+        "graduation_date": "2016-06",
+        "gpa": null,
+        "coursework": [
+          "Digital Media",
+          "User Interface Design",
+          "Color Theory",
+          "Typography"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Creative Agency Ltd.",
+        "title": "Lead Graphic Designer",
+        "start_date": "2018-01",
+        "end_date": "2023-08",
+        "responsibilities": [
+          "Developed visual concepts that aligned with client branding goals.",
+          "Collaborated with marketing teams to create promotional materials.",
+          "Led a team of designers in delivering high-quality graphics on tight deadlines.",
+          "Presented design concepts to clients and incorporated feedback into final designs."
+        ],
+        "achievements": [
+          "Successfully managed multiple projects that increased client engagement by 30%.",
+          "Awarded 'Designer of the Year' for exceptional creativity and innovation in design."
+        ]
+      },
+      {
+        "company": "Tech Solutions Inc.",
+        "title": "Junior Graphic Designer",
+        "start_date": "2016-07",
+        "end_date": "2017-12",
+        "responsibilities": [
+          "Assisted in designing layouts for websites and mobile applications.",
+          "Created graphics for social media campaigns and online advertisements.",
+          "Participated in brainstorming sessions to develop new ideas for marketing materials."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Adobe Creative Suite (Photoshop, Illustrator)",
+        "proficiency_level": "Expert",
+        "years": 5
+      },
+      {
+        "name": "UI/UX Design",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "HTML/CSS",
+        "proficiency_level": "Beginner",
+        "years": 1
+      }
+    ],
+    "summary": "Dynamic graphic designer with over 7 years of experience in creating visual content and leading creative teams. Strong expertise in design software and user experience principles, looking to transition into a new field where I can leverage my creativity and leadership skills."
+  }
+}

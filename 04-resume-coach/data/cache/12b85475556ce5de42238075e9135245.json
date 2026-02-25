@@ -1,0 +1,37 @@
+{
+  "cache_key": "12b85475556ce5de42238075e9135245",
+  "prompt_key": "job_Government_False_Lead",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:18:30.308292+00:00",
+  "response": {
+    "title": "Lead Policy Analyst",
+    "company": {
+      "name": "Department of State Affairs",
+      "industry": "Government",
+      "size": "500-1000 employees",
+      "location": "Washington, D.C."
+    },
+    "description": "The Lead Policy Analyst will be responsible for leading a team of analysts in evaluating and formulating policies that affect state affairs. The successful candidate will work closely with stakeholders to ensure policies are aligned with both organizational objectives and public interests. This role requires both analytical and leadership skills to drive initiatives and projects to successful completion.",
+    "requirements": {
+      "required_skills": [
+        "Policy development and analysis",
+        "Stakeholder engagement and management",
+        "Data analysis and interpretation using statistical software (e.g., SAS, R)",
+        "Legislative research and compliance",
+        "Project management methodologies (e.g., PMP, Agile)",
+        "Budgeting and financial forecasting",
+        "Public speaking and presentation skills",
+        "Report writing and documentation"
+      ],
+      "preferred_skills": [
+        "Advanced degree in Public Policy or related field",
+        "Experience with regulatory frameworks",
+        "Knowledge of state and federal legislation",
+        "Familiarity with grant writing and funding processes"
+      ],
+      "education": "Master's degree in Public Administration, Public Policy, or related field",
+      "experience_years": 7,
+      "experience_level": "Lead"
+    }
+  }
+}

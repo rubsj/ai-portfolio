@@ -1,0 +1,71 @@
+{
+  "cache_key": "d9fc7b51c019e10d6ba717aa9a94f7f1",
+  "prompt_key": "resume_7ea24385-6f7f-413a-82ec-357b4036e3a3_mismatch_career_changer",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:53:53.192299+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "5125551234",
+      "location": "Houston, TX",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts in Fine Arts",
+        "institution": "University of Houston",
+        "graduation_date": "2020-05-15",
+        "gpa": 3.6,
+        "coursework": [
+          "Sculpture Techniques",
+          "Digital Media Art",
+          "Art History",
+          "Creative Writing"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "ArtSpace Gallery",
+        "title": "Gallery Coordinator",
+        "start_date": "2020-06-01",
+        "end_date": null,
+        "responsibilities": [
+          "Organized and managed art exhibitions and events to showcase local artists.",
+          "Coordinated with artists for the setup and execution of art shows.",
+          "Developed promotional materials and social media strategies to increase gallery attendance.",
+          "Managed customer relationships and provided assistance in art sales."
+        ],
+        "achievements": [
+          "Increased gallery attendance by 30% through successful marketing campaigns.",
+          "Established partnerships with local businesses for event sponsorship."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Adobe Creative Suite",
+        "proficiency_level": "Advanced",
+        "years": 3
+      },
+      {
+        "name": "Photography",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "Event Planning",
+        "proficiency_level": "Expert",
+        "years": 3
+      },
+      {
+        "name": "Social Media Management",
+        "proficiency_level": "Advanced",
+        "years": 3
+      }
+    ],
+    "summary": "Dynamic gallery coordinator with a strong background in creative arts and event management. Proven success in increasing audience engagement through innovative marketing strategies."
+  }
+}

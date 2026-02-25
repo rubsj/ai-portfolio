@@ -1,0 +1,102 @@
+{
+  "cache_key": "077d1fc38082c93773a84553d37dde0d",
+  "prompt_key": "resume_f989177b-bc63-4ffb-87ea-cd402c38e8bf_excellent_formal",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:16:44.261589+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@example.com",
+      "phone": "+14155501234",
+      "location": "San Francisco, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Science in Legal Studies",
+        "institution": "University of California, Berkeley",
+        "graduation_date": "2023-05",
+        "gpa": 3.7,
+        "coursework": [
+          "Legal Research and Writing",
+          "Information Technology in Law",
+          "Data Privacy Law",
+          "Project Management"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "TechLaw Inc.",
+        "title": "Legal Intern",
+        "start_date": "2022-06",
+        "end_date": "2023-04",
+        "responsibilities": [
+          "Assisted legal teams in utilizing legal research databases such as Westlaw and LexisNexis for case preparation.",
+          "Participated in training sessions on document management systems, enhancing operational efficiency.",
+          "Conducted basic programming tasks in Python to automate document review processes.",
+          "Collaborated with project managers using Asana for task tracking and project updates.",
+          "Helped in the implementation of GDPR compliance measures within the organization."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "LawTech Innovations",
+        "title": "Project Management Assistant",
+        "start_date": "2021-01",
+        "end_date": "2022-05",
+        "responsibilities": [
+          "Coordinated project timelines and deliverables for software integration in legal firms.",
+          "Provided user training for new legal technology solutions, ensuring smooth adoption.",
+          "Analyzed various legal tech solutions to assess their efficiency and suitability for client needs.",
+          "Conducted research on emerging legal technology trends and presented findings to senior management."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Westlaw",
+        "proficiency_level": "Advanced",
+        "years": 1
+      },
+      {
+        "name": "LexisNexis",
+        "proficiency_level": "Advanced",
+        "years": 1
+      },
+      {
+        "name": "Microsoft Office Suite",
+        "proficiency_level": "Advanced",
+        "years": 3
+      },
+      {
+        "name": "Asana",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "GDPR Compliance",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Python",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Project Management",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Communication Skills",
+        "proficiency_level": "Advanced",
+        "years": 3
+      }
+    ],
+    "summary": "Motivated Legal Studies graduate with hands-on experience in legal technology integration and project management. Proficient in using legal research databases and project management tools. Strong analytical and communication skills, with a commitment to enhancing legal operations through innovative technology solutions."
+  }
+}

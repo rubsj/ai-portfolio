@@ -1,0 +1,85 @@
+{
+  "cache_key": "36b82c425842fb5cedf6ad9ad4e7985b",
+  "prompt_key": "resume_a5fdd737-d2ca-4597-95f4-59fc8130bd96_partial_technical",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:19:55.143581+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Alex Johnson",
+      "email": "alex.johnson@example.com",
+      "phone": "+14155552671",
+      "location": "San Francisco, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor's Degree in Computer Science",
+        "institution": "University of California, Berkeley",
+        "graduation_date": "2019-05",
+        "gpa": null,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "Dev Solutions LLC",
+        "title": "Software Engineer",
+        "start_date": "2019-06",
+        "end_date": "2022-09",
+        "responsibilities": [
+          "Developed web applications using Java and Python, focusing on back-end functionality.",
+          "Participated in the design and implementation of RESTful APIs for internal services.",
+          "Collaborated with cross-functional teams to deliver software projects using Agile methodologies.",
+          "Engaged in code reviews to ensure code quality and performance optimization."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Creative Tech Corp.",
+        "title": "Junior Software Developer",
+        "start_date": "2018-04",
+        "end_date": "2019-05",
+        "responsibilities": [
+          "Assisted in building and maintaining applications using Python.",
+          "Contributed to database management using PostgreSQL and MongoDB.",
+          "Worked with Git for version control and collaborated in a team environment."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Java",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Python",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "AWS",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "PostgreSQL",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Docker",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Agile Methodologies",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      }
+    ],
+    "summary": null
+  }
+}

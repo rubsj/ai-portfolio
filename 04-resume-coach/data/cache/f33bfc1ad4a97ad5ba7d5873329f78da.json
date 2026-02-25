@@ -1,0 +1,75 @@
+{
+  "cache_key": "f33bfc1ad4a97ad5ba7d5873329f78da",
+  "prompt_key": "resume_c4690ab6-b03f-4c12-b51c-7de87e54d215_poor_achievement",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:23:06.514226+00:00",
+  "response": {
+    "contact_info": {
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "phone": "1234567890",
+      "location": "Los Angeles, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts in Sociology",
+        "institution": "University of California, Los Angeles",
+        "graduation_date": "2020-06",
+        "gpa": null,
+        "coursework": [
+          "Introduction to Sociology",
+          "Statistical Methods in Sociology",
+          "Research Methods"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Social Research Solutions",
+        "title": "Data Assistant",
+        "start_date": "2020-07",
+        "end_date": null,
+        "responsibilities": [
+          "Assisted in data entry and collection for various social research projects.",
+          "Managed survey data and maintained databases.",
+          "Supported senior analysts with report generation."
+        ],
+        "achievements": [
+          "Improved data entry accuracy by 15% through attention to detail."
+        ]
+      },
+      {
+        "company": "Market Insights Inc.",
+        "title": "Research Intern",
+        "start_date": "2019-06",
+        "end_date": "2020-05",
+        "responsibilities": [
+          "Collected and analyzed market data.",
+          "Created visual presentations of market trends for team meetings.",
+          "Assisted in drafting research reports."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Microsoft Excel",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Basic Data Visualization",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Statistical Analysis",
+        "proficiency_level": "Beginner",
+        "years": 1
+      }
+    ],
+    "summary": null
+  }
+}

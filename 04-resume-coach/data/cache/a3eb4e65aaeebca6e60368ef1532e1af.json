@@ -1,0 +1,91 @@
+{
+  "cache_key": "a3eb4e65aaeebca6e60368ef1532e1af",
+  "prompt_key": "resume_cddd21ac-1b78-455a-ae9a-09c7d879ac2f_mismatch_career_changer",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:21:25.386713+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "1234567890",
+      "location": "Miami, FL",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts in Communication",
+        "institution": "University of Miami",
+        "graduation_date": "2015-05",
+        "gpa": null,
+        "coursework": [
+          "Public Relations",
+          "Media Studies",
+          "Strategic Communication"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Creative Marketing Solutions",
+        "title": "Marketing Coordinator",
+        "start_date": "2018-03",
+        "end_date": "2023-10",
+        "responsibilities": [
+          "Developed and executed marketing campaigns to enhance brand visibility.",
+          "Collaborated with design teams to create promotional materials and content.",
+          "Managed social media accounts and engaged with audiences to build community.",
+          "Analyzed campaign performance metrics to optimize future marketing strategies."
+        ],
+        "achievements": [
+          "Increased social media engagement by 40% over two years.",
+          "Successfully launched three major marketing campaigns, leading to a 25% increase in lead generation."
+        ]
+      },
+      {
+        "company": "Global Events Co.",
+        "title": "Event Planner",
+        "start_date": "2015-06",
+        "end_date": "2018-02",
+        "responsibilities": [
+          "Coordinated and executed various corporate events and functions.",
+          "Managed vendor relationships and negotiated contracts for event services.",
+          "Oversaw logistics, including transportation, catering, and venue setup.",
+          "Conducted post-event evaluations to assess success and gather feedback."
+        ],
+        "achievements": [
+          "Successfully planned over 50 corporate events, with a client satisfaction rate of 95%.",
+          "Reduced costs by negotiating better rates with service providers."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Project Management",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      },
+      {
+        "name": "Content Creation",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Data Analysis",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Social Media Marketing",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Event Coordination",
+        "proficiency_level": "Expert",
+        "years": 3
+      }
+    ],
+    "summary": "Dynamic marketing professional with a strong background in communication and event planning. Proven track record of executing successful campaigns and enhancing brand engagement. Seeking to leverage creative skills and experience in a leadership role in a new industry."
+  }
+}

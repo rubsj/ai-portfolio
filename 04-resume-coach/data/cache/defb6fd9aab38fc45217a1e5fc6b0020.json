@@ -1,0 +1,88 @@
+{
+  "cache_key": "defb6fd9aab38fc45217a1e5fc6b0020",
+  "prompt_key": "resume_277e5c9c-d977-46d9-ab10-8559f969b755_excellent_formal",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:05:15.012696+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@example.com",
+      "phone": "5125551234",
+      "location": "Austin, TX",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "High School Diploma",
+        "institution": "Austin High School",
+        "graduation_date": "2022-05",
+        "gpa": null,
+        "coursework": [
+          "Marketing",
+          "Visual Design",
+          "Business Management"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Retail Innovations Inc.",
+        "title": "Customer Experience Associate",
+        "start_date": "2022-06",
+        "end_date": null,
+        "responsibilities": [
+          "Provided exceptional customer service by assisting shoppers with inquiries and locating products.",
+          "Collaborated with the merchandising team to create engaging product displays that enhanced the shopping experience.",
+          "Gathered customer feedback through surveys and in-person interactions to inform improvements in service and layout.",
+          "Utilized Google Analytics to analyze foot traffic and customer behavior trends, influencing store layout decisions.",
+          "Managed social media accounts to promote in-store events and engage with the customer base."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Google Analytics",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Excel",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Canva",
+        "proficiency_level": "Advanced",
+        "years": 1
+      },
+      {
+        "name": "Adobe Spark",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Social Media Management",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Customer Feedback Tools (SurveyMonkey)",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Event Planning",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Visual Merchandising Principles",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      }
+    ],
+    "summary": "Detail-oriented Customer Experience Associate with a passion for enhancing the retail shopping journey. Experienced in leveraging data analysis tools and design software to create immersive customer experiences. Strong communicator and collaborator, committed to innovation in retail environments."
+  }
+}

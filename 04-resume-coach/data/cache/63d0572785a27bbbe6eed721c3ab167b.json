@@ -1,0 +1,83 @@
+{
+  "cache_key": "63d0572785a27bbbe6eed721c3ab167b",
+  "prompt_key": "resume_281eef77-ca48-4414-9e5b-9931f7a5f863_good_casual",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:12:10.088210+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Taylor",
+      "email": "jordan.taylor@email.com",
+      "phone": "+14155501234",
+      "location": "San Francisco, CA",
+      "linkedin": "https://www.linkedin.com/in/jordantaylor",
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Science in Human-Computer Interaction",
+        "institution": "San Francisco State University",
+        "graduation_date": "2023-05",
+        "gpa": 3.5,
+        "coursework": [
+          "User Interface Design",
+          "Data Analysis for UX",
+          "Augmented Reality Applications",
+          "Human Factors in Design"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Tech Insights Co.",
+        "title": "UX Intern",
+        "start_date": "2022-06",
+        "end_date": "2022-12",
+        "responsibilities": [
+          "Assisted with user research through surveys and interviews to gather feedback on mobile applications.",
+          "Collaborated with the design team to create wireframes and prototypes using Figma.",
+          "Utilized Google Analytics to analyze user engagement and behavior metrics.",
+          "Contributed to the presentation of findings to stakeholders and provided design recommendations."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Unity",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Excel",
+        "proficiency_level": "Advanced",
+        "years": 2
+      },
+      {
+        "name": "Figma",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "JavaScript",
+        "proficiency_level": "Beginner",
+        "years": 0
+      },
+      {
+        "name": "Adobe Creative Suite",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Project Management",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Python",
+        "proficiency_level": "Beginner",
+        "years": 0
+      }
+    ],
+    "summary": "Enthusiastic Human-Computer Interaction graduate with hands-on experience in UX design and analysis. Eager to leverage skills in AR technology and user behavior analysis to create immersive experiences at InnovateAR Solutions."
+  }
+}

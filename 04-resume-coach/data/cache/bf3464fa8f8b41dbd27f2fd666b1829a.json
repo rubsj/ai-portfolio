@@ -1,0 +1,74 @@
+{
+  "cache_key": "bf3464fa8f8b41dbd27f2fd666b1829a",
+  "prompt_key": "resume_ab04b637-863d-4ae5-9afb-76d382e37b07_poor_achievement",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:09:58.808646+00:00",
+  "response": {
+    "contact_info": {
+      "name": "John Doe",
+      "email": "john.doe@email.com",
+      "phone": "1234567890",
+      "location": "Los Angeles, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts in Communications",
+        "institution": "University of Southern California",
+        "graduation_date": "2010-06",
+        "gpa": null,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "Tech Innovations Inc.",
+        "title": "Marketing Coordinator",
+        "start_date": "2015-07",
+        "end_date": "2023-09",
+        "responsibilities": [
+          "Assisted in planning marketing campaigns for new tech products",
+          "Coordinated with external vendors for promotional materials",
+          "Conducted market research to understand consumer preferences"
+        ],
+        "achievements": [
+          "Increased social media engagement by 25% through targeted campaigns",
+          "Helped organize 5 successful product launch events"
+        ]
+      },
+      {
+        "company": "Small Retail Shop",
+        "title": "Assistant Manager",
+        "start_date": "2012-01",
+        "end_date": "2015-06",
+        "responsibilities": [
+          "Supervised daily operations and customer service",
+          "Managed inventory and restocked products as needed",
+          "Provided training for new employees"
+        ],
+        "achievements": [
+          "Improved customer satisfaction ratings by 15% through staff training"
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Microsoft Excel",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Social Media Marketing",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Customer Relationship Management (CRM)",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      }
+    ],
+    "summary": null
+  }
+}

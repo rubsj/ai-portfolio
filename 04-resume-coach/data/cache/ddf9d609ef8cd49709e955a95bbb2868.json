@@ -1,0 +1,67 @@
+{
+  "cache_key": "ddf9d609ef8cd49709e955a95bbb2868",
+  "prompt_key": "resume_97d4f05b-4255-419f-b8c3-0778ac291c83_partial_technical",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:28:48.625455+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jessica Taylor",
+      "email": "jessica.taylor@email.com",
+      "phone": "+12065543210",
+      "location": "Washington, D.C.",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts in Communications",
+        "institution": "George Washington University",
+        "graduation_date": "2022-05",
+        "gpa": 3.6,
+        "coursework": [
+          "Public Relations",
+          "Data Visualization",
+          "Community Engagement Strategies"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Community Connect",
+        "title": "Data and Communications Intern",
+        "start_date": "2022-06",
+        "end_date": "2023-05",
+        "responsibilities": [
+          "Assisted in gathering community feedback through surveys and outreach programs.",
+          "Helped analyze data collected from community events to identify engagement trends.",
+          "Drafted reports summarizing findings and recommendations for community outreach strategies.",
+          "Utilized Excel to manage and analyze data sets for project tracking."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Data Analysis with Excel",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Data Visualization with Tableau",
+        "proficiency_level": "Beginner",
+        "years": 0
+      },
+      {
+        "name": "Public Engagement Strategies",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Social Media Management",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      }
+    ],
+    "summary": null
+  }
+}

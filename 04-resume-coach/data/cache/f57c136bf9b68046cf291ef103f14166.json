@@ -1,0 +1,99 @@
+{
+  "cache_key": "f57c136bf9b68046cf291ef103f14166",
+  "prompt_key": "resume_b8d0ac75-8d06-4eb1-8d50-35f013192c39_good_casual",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:46:32.046451+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jessica Taylor",
+      "email": "jessica.taylor@email.com",
+      "phone": "1234567890",
+      "location": "New York, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor's in Finance",
+        "institution": "University of New York",
+        "graduation_date": "2015-05",
+        "gpa": 3.8,
+        "coursework": [
+          "Investment Analysis",
+          "Corporate Finance",
+          "Financial Reporting",
+          "Statistics"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Finance Corp.",
+        "title": "Senior Financial Analyst",
+        "start_date": "2018-06",
+        "end_date": "2023-09",
+        "responsibilities": [
+          "Conducted financial analysis and reporting for various projects to support strategic planning.",
+          "Developed complex financial models in Excel for forecasting and budgeting purposes.",
+          "Collaborated with cross-functional teams to align financial strategies with business objectives.",
+          "Prepared and presented detailed financial reports to senior management.",
+          "Managed a small team of junior analysts, providing mentorship and guidance."
+        ],
+        "achievements": [
+          "Increased forecasting accuracy by 15% through enhanced modeling techniques.",
+          "Successfully led the annual budgeting process, resulting in more efficient allocation of resources."
+        ]
+      },
+      {
+        "company": "Analytics Solutions Ltd.",
+        "title": "Financial Analyst",
+        "start_date": "2016-01",
+        "end_date": "2018-05",
+        "responsibilities": [
+          "Utilized ERP systems (Oracle) for financial data management and reporting.",
+          "Performed variance analysis and generated monthly reports to track performance against budget.",
+          "Worked closely with finance teams to ensure compliance with GAAP standards."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Financial Modeling in Excel",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "GAAP and IFRS Principles",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      },
+      {
+        "name": "ERP Systems (Oracle)",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Budget Preparation",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Data Visualization (Tableau)",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Communication Skills",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Project Management",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      }
+    ],
+    "summary": "Detail-oriented financial analyst with over 6 years of experience in financial analysis and strategic planning. Proven track record in financial modeling and budget preparation, with strong analytical skills. Looking to leverage my expertise to contribute as a Lead Financial Analyst at Global Finance Solutions Inc."
+  }
+}

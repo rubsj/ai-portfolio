@@ -1,0 +1,34 @@
+{
+  "cache_key": "4911dad8665296383fa6c080c7580573",
+  "prompt_key": "job_Government_True_Entry",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:18:14.737499+00:00",
+  "response": {
+    "title": "Civic Data Engagement Specialist",
+    "company": {
+      "name": "FutureCity Innovations",
+      "industry": "Government",
+      "size": "Medium",
+      "location": "Washington, D.C."
+    },
+    "description": "The Civic Data Engagement Specialist is responsible for enhancing community engagement through innovative data-driven solutions. This unique role merges data analytics with public relations to foster transparency and accessibility in government operations. The ideal candidate will work closely with various departments to gather, analyze, and present data in a manner that encourages public participation and feedback.",
+    "requirements": {
+      "required_skills": [
+        "Basic data analysis using Excel or Google Sheets",
+        "Familiarity with data visualization tools like Tableau or Power BI",
+        "Understanding of public engagement strategies",
+        "Ability to draft clear and concise reports",
+        "Knowledge of social media platforms for community outreach"
+      ],
+      "preferred_skills": [
+        "Experience with civic technology platforms",
+        "Basic graphic design skills using tools such as Canva",
+        "Understanding of user experience (UX) principles",
+        "Familiarity with project management software like Trello or Asana"
+      ],
+      "education": "Bachelor's degree in Public Administration, Data Science, Communications, or a related field",
+      "experience_years": 0,
+      "experience_level": "Entry"
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "cache_key": "ea48b057f310fc713e7247387fd501c6",
+  "prompt_key": "resume_f3a8ebf0-9196-4a03-a6ea-ccf366ad50ba_good_casual",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:04:26.875238+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Alex Johnson",
+      "email": "alex.johnson@email.com",
+      "phone": "+12125551234",
+      "location": "Detroit, MI",
+      "linkedin": "https://www.linkedin.com/in/alexjohnson",
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Master's in Business Administration",
+        "institution": "University of Michigan",
+        "graduation_date": "2010-05",
+        "gpa": 3.8,
+        "coursework": [
+          "Operations Management",
+          "Supply Chain Optimization",
+          "Financial Analysis"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Global Manufacturing Corp.",
+        "title": "Director of Operations",
+        "start_date": "2015-03",
+        "end_date": null,
+        "responsibilities": [
+          "Oversaw daily operations across multiple manufacturing sites to ensure efficiency and productivity.",
+          "Implemented Lean Manufacturing principles, leading to a 15% reduction in production costs.",
+          "Managed supply chain logistics, improving on-time delivery rates by 20%.",
+          "Developed and executed strategic initiatives to enhance product quality and reduce waste."
+        ],
+        "achievements": [
+          "Led a successful operational transformation project that improved overall production efficiency by 25%.",
+          "Recognized for excellence in operational leadership in 2019."
+        ]
+      },
+      {
+        "company": "Tech Innovations LLC",
+        "title": "Operations Manager",
+        "start_date": "2012-06",
+        "end_date": "2015-02",
+        "responsibilities": [
+          "Managed day-to-day operations, focusing on process optimization and team oversight.",
+          "Collaborated with cross-functional teams to drive efficiency improvements.",
+          "Monitored and analyzed key performance indicators to support decision-making."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Lean Manufacturing",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Supply Chain Management",
+        "proficiency_level": "Advanced",
+        "years": 7
+      },
+      {
+        "name": "Data Analytics",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Budget Management",
+        "proficiency_level": "Advanced",
+        "years": 6
+      },
+      {
+        "name": "Project Management Software (Asana)",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Robotics",
+        "proficiency_level": "Beginner",
+        "years": 1
+      }
+    ],
+    "summary": "Passionate operations leader with over 12 years of experience in manufacturing environments. Adept at driving efficiency, reducing costs, and enhancing product quality. Committed to fostering a culture of innovation and continuous improvement."
+  }
+}

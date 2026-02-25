@@ -1,0 +1,83 @@
+{
+  "cache_key": "d2d32d10a88ef2e4c56b0f6d8d63cf2a",
+  "prompt_key": "resume_f989177b-bc63-4ffb-87ea-cd402c38e8bf_good_casual",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:17:07.850634+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "4155551234",
+      "location": "San Francisco, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor's Degree in Legal Studies",
+        "institution": "University of California, Berkeley",
+        "graduation_date": "2023-05",
+        "gpa": null,
+        "coursework": [
+          "Introduction to Legal Technology",
+          "Legal Research and Writing",
+          "Information Systems in Law"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "LegalTech Interns, LLC",
+        "title": "Legal Technology Intern",
+        "start_date": "2022-06",
+        "end_date": "2023-05",
+        "responsibilities": [
+          "Assisted legal teams in navigating document management systems like iManage.",
+          "Conducted user training sessions on software applications and tools.",
+          "Supported project management tasks using Asana to track project timelines and deliverables.",
+          "Engaged in legal research using Westlaw and LexisNexis to gather relevant case law.",
+          "Collaborated with the IT department to understand data privacy regulations."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Westlaw",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "LexisNexis",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Microsoft Office Suite",
+        "proficiency_level": "Advanced",
+        "years": 3
+      },
+      {
+        "name": "Project Management (Asana)",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Data Privacy Regulations (CCPA)",
+        "proficiency_level": "Beginner",
+        "years": 0
+      },
+      {
+        "name": "Python",
+        "proficiency_level": "Beginner",
+        "years": 0
+      },
+      {
+        "name": "HTML/CSS",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      }
+    ],
+    "summary": "Recent Legal Studies graduate with hands-on experience in legal technology integration and project management. Passionate about leveraging technology to enhance legal operations."
+  }
+}

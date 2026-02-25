@@ -1,0 +1,64 @@
+{
+  "cache_key": "7e361d728c486758c08ea11e7c15088a",
+  "prompt_key": "resume_e9c72d68-38ff-4fe2-94b8-66a3cb066a65_poor_achievement",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:51:55.928247+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "+1234567890",
+      "location": "Austin, TX",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts in English",
+        "institution": "University of Texas",
+        "graduation_date": "2018-05",
+        "gpa": 3.5,
+        "coursework": [
+          "Creative Writing",
+          "Literature Analysis",
+          "Communication Theory"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Creative Writing Institute",
+        "title": "Curriculum Coordinator",
+        "start_date": "2020-01",
+        "end_date": "2023-05",
+        "responsibilities": [
+          "Collaborated with educators to develop writing programs for students",
+          "Assisted in organizing workshops for creative writing",
+          "Managed schedules and resources for curriculum implementation"
+        ],
+        "achievements": [
+          "Improved student engagement in writing courses by 15%",
+          "Facilitated 10 successful workshops with guest authors"
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Curriculum Development",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Project Management",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Microsoft Office Suite",
+        "proficiency_level": "Advanced",
+        "years": 5
+      }
+    ],
+    "summary": "Dedicated and creative professional with a background in English and experience in curriculum coordination. Looking to leverage skills in a new field."
+  }
+}

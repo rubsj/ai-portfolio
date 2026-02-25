@@ -1,0 +1,83 @@
+{
+  "cache_key": "9545c4ef7872b667db24b64dfc1622b3",
+  "prompt_key": "resume_34101125-a05a-4945-a555-c4938483901d_mismatch_career_changer",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:26:56.842124+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Taylor",
+      "email": "jordan.taylor@email.com",
+      "phone": "1234567890",
+      "location": "Los Angeles, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor's Degree in Environmental Science",
+        "institution": "University of California, Los Angeles",
+        "graduation_date": "2015-06",
+        "gpa": null,
+        "coursework": [
+          "Ecological Principles",
+          "Environmental Policy",
+          "Sustainable Resource Management"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Green Earth Organization",
+        "title": "Environmental Consultant",
+        "start_date": "2018-01",
+        "end_date": "2023-08",
+        "responsibilities": [
+          "Conducted environmental impact assessments for various projects.",
+          "Collaborated with local governments on sustainability initiatives.",
+          "Designed educational programs for community engagement on environmental issues."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Nature Conservation Society",
+        "title": "Field Researcher",
+        "start_date": "2015-07",
+        "end_date": "2017-12",
+        "responsibilities": [
+          "Performed data collection and analysis on wildlife populations.",
+          "Assisted in the development of conservation strategies.",
+          "Prepared reports and presentations on research findings for stakeholders."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Data Analysis",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      },
+      {
+        "name": "Project Management",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Public Speaking",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Community Outreach",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Report Writing",
+        "proficiency_level": "Expert",
+        "years": 5
+      }
+    ],
+    "summary": "Dedicated environmental professional with over 5 years of experience in project management and community engagement. Adept at conducting research and developing educational programs aimed at enhancing public awareness of environmental issues. Seeking to leverage strong communication and analytical skills in a new, dynamic industry."
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "cache_key": "557245d458d733d1d87dd83c619e08a5",
+  "prompt_key": "job_Retail_False_Mid",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:16:26.191827+00:00",
+  "response": {
+    "title": "Retail Store Assistant Manager",
+    "company": {
+      "name": "The Fashion Hub",
+      "industry": "Retail",
+      "size": "Medium (100-500 employees)",
+      "location": "New York, NY"
+    },
+    "description": "The Fashion Hub is seeking a Mid-level Retail Store Assistant Manager to support daily operations, lead a team of sales associates, and enhance our customer experience. The ideal candidate will have a passion for fashion, strong leadership skills, and a proven track record in retail management. This role involves training staff, managing inventory, and ensuring that sales targets are met.",
+    "requirements": {
+      "required_skills": [
+        "Team leadership and staff management",
+        "Sales forecasting and inventory management",
+        "Customer service excellence",
+        "Visual merchandising techniques",
+        "Point of Sale (POS) system proficiency",
+        "Employee training and development",
+        "Stock replenishment and loss prevention strategies"
+      ],
+      "preferred_skills": [
+        "Experience with retail analytics software",
+        "Knowledge of current fashion trends",
+        "Conflict resolution skills",
+        "Ability to manage multiple tasks in a fast-paced environment"
+      ],
+      "education": "Bachelor's degree in Business Administration, Retail Management or a related field",
+      "experience_years": 3,
+      "experience_level": "Mid"
+    }
+  }
+}

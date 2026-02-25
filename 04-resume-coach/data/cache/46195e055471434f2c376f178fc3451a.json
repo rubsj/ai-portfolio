@@ -1,0 +1,99 @@
+{
+  "cache_key": "46195e055471434f2c376f178fc3451a",
+  "prompt_key": "resume_c2471804-9a3a-4d5d-874e-5455a13a43a2_excellent_formal",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:48:13.527541+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Alex Johnson",
+      "email": "alex.johnson@email.com",
+      "phone": "+1234567890",
+      "location": "Remote",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor's Degree in Educational Technology",
+        "institution": "University of Education",
+        "graduation_date": "2023-05",
+        "gpa": 3.8,
+        "coursework": [
+          "Instructional Design Principles",
+          "E-Learning Development",
+          "User Experience Design",
+          "Digital Content Creation"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Educational Innovations Inc.",
+        "title": "Instructional Design Intern",
+        "start_date": "2023-06",
+        "end_date": null,
+        "responsibilities": [
+          "Assisted in the development of engaging eLearning modules using Articulate Storyline.",
+          "Collaborated with educators to incorporate instructional design principles such as ADDIE into course materials.",
+          "Conducted user testing sessions to gather feedback on eLearning modules and implemented improvements based on findings.",
+          "Developed visual content using Canva to enhance learner engagement and understanding.",
+          "Ensured all digital content met accessibility standards (WCAG) for diverse learners."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Learning Management Systems (LMS)",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Articulate Storyline",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Adobe Captivate",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Canva",
+        "proficiency_level": "Advanced",
+        "years": 2
+      },
+      {
+        "name": "User Testing",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "WCAG Accessibility Standards",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Data Analysis for Learner Engagement",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "HTML/CSS",
+        "proficiency_level": "Beginner",
+        "years": 0
+      },
+      {
+        "name": "Video Editing (Camtasia)",
+        "proficiency_level": "Beginner",
+        "years": 0
+      },
+      {
+        "name": "Project Management (Trello)",
+        "proficiency_level": "Beginner",
+        "years": 0
+      }
+    ],
+    "summary": null
+  }
+}

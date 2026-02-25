@@ -1,0 +1,78 @@
+{
+  "cache_key": "cf5980623de6b9036514bfcf17c15322",
+  "prompt_key": "resume_3095c51d-6f65-4ec3-9ff3-e6a8b443673f_mismatch_career_changer",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:19:18.437757+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jessica H. Taylor",
+      "email": "jessica.taylor@example.com",
+      "phone": "+14155512345",
+      "location": "New York, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts in English Literature",
+        "institution": "Columbia University",
+        "graduation_date": "2015-05",
+        "gpa": null,
+        "coursework": [
+          "Creative Writing",
+          "Literary Analysis",
+          "Media Studies"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Global Publishing Inc.",
+        "title": "Content Editor",
+        "start_date": "2015-06",
+        "end_date": "2023-08",
+        "responsibilities": [
+          "Edited and refined manuscripts for clarity, structure, and flow.",
+          "Collaborated with authors to develop engaging educational materials.",
+          "Managed multiple projects under tight deadlines, ensuring timely delivery."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Creative Marketing Group",
+        "title": "Social Media Manager",
+        "start_date": "2023-09",
+        "end_date": null,
+        "responsibilities": [
+          "Developed and implemented social media strategies to enhance brand visibility.",
+          "Analyzed audience engagement and adjusted content accordingly.",
+          "Created compelling narratives for marketing campaigns across various platforms."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Adobe Creative Suite",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Social Media Management Tools",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Content Management Systems (CMS)",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "SEO Best Practices",
+        "proficiency_level": "Beginner",
+        "years": 1
+      }
+    ],
+    "summary": "Dynamic content editor and social media manager with over 8 years of experience in the publishing and marketing industries. Proven ability to craft engaging narratives and manage projects effectively. Seeking to pivot into the tech industry with a focus on software development and team collaboration."
+  }
+}

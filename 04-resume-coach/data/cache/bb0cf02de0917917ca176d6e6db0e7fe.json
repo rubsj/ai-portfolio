@@ -1,0 +1,89 @@
+{
+  "cache_key": "bb0cf02de0917917ca176d6e6db0e7fe",
+  "prompt_key": "resume_626a50aa-b068-44ac-ab31-8721c93e1644_mismatch_career_changer",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:14:56.851838+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "1234567890",
+      "location": "New York, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts in English Literature",
+        "institution": "University of New York",
+        "graduation_date": "2015-05",
+        "gpa": null,
+        "coursework": [
+          "Creative Writing",
+          "Modern Literary Theory",
+          "Cultural Studies"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Creative Publishing House",
+        "title": "Senior Editorial Manager",
+        "start_date": "2018-06",
+        "end_date": null,
+        "responsibilities": [
+          "Led a team of editors to produce high-quality publications, ensuring adherence to publishing timelines.",
+          "Managed editorial budgets and resource allocation to optimize workflow and project outcomes.",
+          "Collaborated with authors and illustrators to refine manuscript content and design layouts.",
+          "Conducted market research to identify trends in literature and adapt publishing strategies accordingly."
+        ],
+        "achievements": [
+          "Successfully increased the publication output by 30% through process improvements and team training.",
+          "Developed a comprehensive editorial calendar that streamlined project management activities."
+        ]
+      },
+      {
+        "company": "Innovative Marketing Agency",
+        "title": "Content Strategist",
+        "start_date": "2015-06",
+        "end_date": "2018-05",
+        "responsibilities": [
+          "Created and implemented content strategies across various digital marketing platforms.",
+          "Analyzed audience engagement metrics to enhance content effectiveness, leading to a 25% increase in customer retention.",
+          "Facilitated brainstorming sessions to generate innovative marketing ideas, fostering a collaborative team environment."
+        ],
+        "achievements": [
+          "Received the 'Best Creative Strategy' award at the 2017 Marketing Excellence Awards."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Project Management Software (Asana)",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Content Management Systems (WordPress)",
+        "proficiency_level": "Advanced",
+        "years": 6
+      },
+      {
+        "name": "Data Analysis (Google Analytics)",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Graphic Design (Adobe Creative Suite)",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Public Speaking",
+        "proficiency_level": "Advanced",
+        "years": 3
+      }
+    ],
+    "summary": "Dynamic and creative editorial manager with over 8 years of experience in the publishing and marketing industries. Proven track record of leading teams and optimizing project workflows to achieve publication goals. Seeking to leverage strong communication skills and creative problem-solving abilities in a new and challenging role."
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "cache_key": "7c9f67c6cc50aad19d78a66eaf45458a",
+  "prompt_key": "resume_c2d7a497-a32d-4b7b-8d4c-035926ccd2d1_mismatch_career_changer",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:22:23.882199+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Alice Johnson",
+      "email": "alice.johnson@example.com",
+      "phone": "1234567890",
+      "location": "New York, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts in Sociology",
+        "institution": "Columbia University",
+        "graduation_date": "2010-05",
+        "gpa": null,
+        "coursework": [
+          "Social Research Methods",
+          "Quantitative Analysis"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Community Engagement Group",
+        "title": "Program Director",
+        "start_date": "2015-03",
+        "end_date": null,
+        "responsibilities": [
+          "Developed and implemented community outreach programs to foster engagement and participation.",
+          "Managed a team of 10 volunteers and staff, ensuring effective communication and collaboration.",
+          "Analyzed community feedback to enhance program effectiveness, resulting in a 30% increase in participation.",
+          "Coordinated events and workshops, leveraging partnerships with local organizations and stakeholders."
+        ],
+        "achievements": [
+          "Received Community Excellence Award for outstanding contributions to local initiatives in 2019.",
+          "Successfully secured $250,000 in grant funding for community programs."
+        ]
+      },
+      {
+        "company": "Urban Development Agency",
+        "title": "Project Coordinator",
+        "start_date": "2012-06",
+        "end_date": "2015-02",
+        "responsibilities": [
+          "Assisted in planning and execution of urban development projects aimed at improving community infrastructure.",
+          "Facilitated meetings between local government and community members to gather input and address concerns.",
+          "Monitored project progress and budgets to ensure alignment with goals and timelines."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Public Speaking",
+        "proficiency_level": "Expert",
+        "years": 8
+      },
+      {
+        "name": "Grant Writing",
+        "proficiency_level": "Advanced",
+        "years": 7
+      },
+      {
+        "name": "Team Leadership",
+        "proficiency_level": "Expert",
+        "years": 8
+      },
+      {
+        "name": "Data Analysis (Social Research)",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      }
+    ],
+    "summary": "Dedicated professional with over 8 years of experience in community engagement and program management. Proven track record in leading teams and enhancing community participation through innovative outreach initiatives. Passionate about social impact and dedicated to leveraging skills to foster collaboration and growth in community settings."
+  }
+}

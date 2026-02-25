@@ -1,0 +1,102 @@
+{
+  "cache_key": "63dae6f5923a06b3d2580f4029540f5a",
+  "prompt_key": "resume_3f24c2f5-d03e-484e-bd73-213b91152938_excellent_formal",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:11:47.991799+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Taylor",
+      "email": "jordan.taylor@email.com",
+      "phone": "5125551234",
+      "location": "Austin, Texas",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Science in Energy Management",
+        "institution": "University of Texas at Austin",
+        "graduation_date": "2020-05",
+        "gpa": 3.8,
+        "coursework": [
+          "Energy Systems Analysis",
+          "Renewable Energy Technologies",
+          "Environmental Policy"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Sustainable Energy Solutions Inc.",
+        "title": "Energy Analyst",
+        "start_date": "2020-06",
+        "end_date": "2023-10",
+        "responsibilities": [
+          "Conducted energy audits and assessments for commercial clients, identifying areas for efficiency improvements.",
+          "Utilized EnergyPlus and RETScreen for energy modeling to simulate consumption and forecast savings.",
+          "Collaborated with cross-functional teams to develop and implement energy efficiency strategies.",
+          "Analyzed energy consumption data and created visualizations using Excel and Tableau for stakeholder presentations.",
+          "Ensured compliance with EPA regulations and state/local energy policies in project designs.",
+          "Managed multiple projects simultaneously, ensuring they met timelines and budget constraints."
+        ],
+        "achievements": [
+          "Successfully reduced energy costs by an average of 15% for clients through tailored energy efficiency strategies.",
+          "Played a key role in securing a grant for a large-scale renewable energy project."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Energy modeling software (EnergyPlus)",
+        "proficiency_level": "Advanced",
+        "years": 3
+      },
+      {
+        "name": "Energy modeling software (RETScreen)",
+        "proficiency_level": "Advanced",
+        "years": 3
+      },
+      {
+        "name": "Data analysis and visualization tools (Excel)",
+        "proficiency_level": "Advanced",
+        "years": 3
+      },
+      {
+        "name": "Data analysis and visualization tools (Tableau)",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Knowledge of renewable energy technologies",
+        "proficiency_level": "Advanced",
+        "years": 3
+      },
+      {
+        "name": "Regulatory compliance understanding (EPA)",
+        "proficiency_level": "Advanced",
+        "years": 3
+      },
+      {
+        "name": "Experience with energy audits and assessments",
+        "proficiency_level": "Advanced",
+        "years": 3
+      },
+      {
+        "name": "Project management",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Report writing and presentation skills",
+        "proficiency_level": "Advanced",
+        "years": 3
+      },
+      {
+        "name": "Familiarity with energy management systems (EMS)",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      }
+    ],
+    "summary": "Detail-oriented Energy Analyst with over three years of experience in energy consumption analysis and efficiency strategy development. Proven track record in conducting energy audits, utilizing advanced modeling software, and ensuring compliance with energy regulations to promote sustainable energy solutions."
+  }
+}

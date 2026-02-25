@@ -1,0 +1,36 @@
+{
+  "cache_key": "7f64b28544cc2702e6cc309541df8fcb",
+  "prompt_key": "job_Finance_True_Entry",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:14:42.587944+00:00",
+  "response": {
+    "title": "Financial Data Storyteller",
+    "company": {
+      "name": "Innovative Finance Solutions",
+      "industry": "Finance",
+      "size": "50-200 employees",
+      "location": "San Francisco, CA"
+    },
+    "description": "Innovative Finance Solutions is seeking a creative and analytical Financial Data Storyteller to join our growing team. This unique role combines finance, data analysis, and storytelling to help our clients understand complex financial data through compelling narratives. As a Financial Data Storyteller, you will work closely with our finance and data teams to transform raw financial metrics into meaningful insights and engaging presentations that drive decision-making.",
+    "requirements": {
+      "required_skills": [
+        "Proficient in Microsoft Excel for data analysis and visualization",
+        "Experience with data visualization tools like Tableau or Power BI",
+        "Strong written and verbal communication skills for storytelling",
+        "Basic understanding of financial metrics and accounting principles",
+        "Ability to analyze and interpret quantitative data effectively",
+        "Familiarity with SQL for data extraction and manipulation",
+        "Experience in creating engaging presentations using PowerPoint or similar tools",
+        "Knowledge of financial modeling techniques"
+      ],
+      "preferred_skills": [
+        "Experience in graphic design or familiarity with design software (e.g., Adobe Creative Suite)",
+        "Familiarity with Python or R for data analysis",
+        "Interest in behavioral finance and its impact on data interpretation"
+      ],
+      "education": "Bachelor's degree in Finance, Economics, Data Science, or a related field",
+      "experience_years": 0,
+      "experience_level": "Entry"
+    }
+  }
+}

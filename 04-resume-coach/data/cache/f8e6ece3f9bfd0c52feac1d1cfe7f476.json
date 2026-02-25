@@ -1,0 +1,38 @@
+{
+  "cache_key": "f8e6ece3f9bfd0c52feac1d1cfe7f476",
+  "prompt_key": "job_Finance_False_Lead",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:15:02.399139+00:00",
+  "response": {
+    "title": "Lead Financial Analyst",
+    "company": {
+      "name": "Global Finance Solutions Inc.",
+      "industry": "Finance",
+      "size": "500+ employees",
+      "location": "New York, NY"
+    },
+    "description": "Global Finance Solutions Inc. is seeking a Lead Financial Analyst to join our dynamic finance team. The ideal candidate will utilize their extensive experience and analytical skills to drive strategic financial planning, budgeting, and forecasting processes. As a lead, you will oversee junior analysts, collaborate with cross-functional teams, and provide insights that will influence key business decisions.",
+    "requirements": {
+      "required_skills": [
+        "5+ years of experience in financial analysis and reporting",
+        "Proficiency in financial modeling using Excel and other analytical tools",
+        "Strong knowledge of GAAP and IFRS accounting principles",
+        "Experience with ERP systems (e.g., SAP, Oracle)",
+        "Ability to create and interpret complex financial statements and reports",
+        "Expertise in budget preparation and variance analysis",
+        "Strong analytical and quantitative skills with a focus on data-driven decision making",
+        "Excellent communication skills, both written and verbal"
+      ],
+      "preferred_skills": [
+        "Experience with data visualization tools (e.g., Tableau, Power BI)",
+        "Familiarity with corporate finance and investment analysis",
+        "Knowledge of regulatory compliance in the finance sector",
+        "MBA or relevant advanced degree",
+        "Leadership experience in managing teams or projects"
+      ],
+      "education": "Bachelor's degree in Finance, Accounting, or related field (MBA preferred)",
+      "experience_years": 5,
+      "experience_level": "Lead"
+    }
+  }
+}

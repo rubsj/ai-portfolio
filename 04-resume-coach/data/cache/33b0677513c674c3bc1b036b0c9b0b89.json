@@ -1,0 +1,35 @@
+{
+  "cache_key": "33b0677513c674c3bc1b036b0c9b0b89",
+  "prompt_key": "job_Retail_True_Entry",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:16:21.183824+00:00",
+  "response": {
+    "title": "Customer Experience Curator",
+    "company": {
+      "name": "Innovative Retail Solutions",
+      "industry": "Retail",
+      "size": "Medium",
+      "location": "Austin, TX"
+    },
+    "description": "As a Customer Experience Curator, you will be at the forefront of enhancing the customer journey in our retail locations. This unique role combines elements of customer service, data analysis, and visual merchandising to create an immersive shopping experience. You will collaborate with various teams to gather insights, design engaging displays, and leverage technology to improve customer interactions. If you are passionate about retail and eager to innovate, this is the perfect role for you.",
+    "requirements": {
+      "required_skills": [
+        "Basic proficiency in data analysis tools (e.g., Excel, Google Analytics)",
+        "Strong verbal and written communication skills",
+        "Ability to use design software (e.g., Canva, Adobe Spark)",
+        "Understanding of customer behavior and market trends",
+        "Experience with social media platforms for engagement strategy"
+      ],
+      "preferred_skills": [
+        "Familiarity with customer feedback tools (e.g., SurveyMonkey, Typeform)",
+        "Basic photography and videography skills",
+        "Knowledge of visual merchandising principles",
+        "Understanding of retail technology applications (e.g., mobile payment systems)",
+        "Experience in event planning or coordination"
+      ],
+      "education": "High School Diploma or equivalent; coursework in marketing, design, or business preferred",
+      "experience_years": 0,
+      "experience_level": "Entry"
+    }
+  }
+}
