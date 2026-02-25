@@ -25,6 +25,7 @@ dev = [
     "pytest",
     "httpx",
     "ruff",
+    "pytest-cov>=7.0.0",
 ]
 
 [tool.pytest.ini_options]
