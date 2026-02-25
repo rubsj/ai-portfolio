@@ -217,22 +217,31 @@ Do NOT re-debate architecture — follow the plan.
 > **Claude Code: UPDATE this section at the end of every session.**
 
 ### Day 0 (Pre-start)
-- [ ] Project directory created
-- [ ] Dependencies installed (`uv sync` passes)
-- [ ] .env with OPENAI_API_KEY configured
+- [x] Project directory created
+- [x] Dependencies installed (`uv sync` passes)
+- [x] .env with OPENAI_API_KEY configured
 - [ ] P4 card created in Notion Project Tracker
 
-### Day 1 — Schemas + Generation + Validation (Mon Feb 24)
-- [ ] T1.1: Project setup (directory, pyproject.toml, uv sync)
-- [ ] T1.2: schemas.py — ALL Pydantic models (Resume, Job, metadata, failure labels, judge)
-- [ ] T1.3: test_schemas.py — Valid/invalid data tests for every model
-- [ ] T1.4: normalizer.py + test_normalizer.py — Skill normalization
-- [ ] T1.5: templates.py — 5 prompt templates for A/B testing
-- [ ] T1.6: generator.py — Instructor-based generation + caching
-- [ ] T1.7: validator.py — Validation tracking + error categorization
-- [ ] T1.8: Run generation pipeline — 50 jobs + 250 resumes
-- [ ] T1.9: Sanity check — spot-check 5 pairs
-- [ ] **Checkpoint:** 250+ pairs generated and validated. Ready for analysis.
+### Day 1 — Schemas + Generation + Validation (Mon Feb 24) ✅ COMPLETE
+- [x] T1.1: Project setup (directory, pyproject.toml, uv sync)
+- [x] T1.2: schemas.py — ALL Pydantic models (Resume, Job, metadata, failure labels, judge)
+- [x] T1.3: test_schemas.py — Valid/invalid data tests for every model
+- [x] T1.4: normalizer.py + test_normalizer.py — Skill normalization
+- [x] T1.5: templates.py — 5 prompt templates for A/B testing
+- [x] T1.6: generator.py — Instructor-based generation + caching
+- [x] T1.7: validator.py — Validation tracking + error categorization
+- [x] T1.8: Run generation pipeline — 50 jobs + 250 resumes
+- [x] T1.9: Sanity check — spot-check 5 pairs
+- [x] **Checkpoint:** 250+ pairs generated and validated. Ready for analysis.
+
+### Day 1.5 — Data Quality Fixes (Wed Feb 25) ✅ COMPLETE (PR #34)
+- [x] schemas.py: `Field(description=...)` on `Skill.name`, `CompanyInfo.size`, `required_skills`, `preferred_skills` — enforces 1-3 word tokens
+- [x] templates.py: `CRITICAL FORMAT RULE` blocks in job + resume prompts with GOOD/BAD examples
+- [x] normalizer.py: Step 0 parenthetical stripping (`[^)]*` regex) before version removal
+- [x] test_normalizer.py: 4 new parametrized parenthetical tests — 220/220 pass
+- [x] Full regen: 50 jobs + 250 resumes + 250 pairs at 100% validation rate
+- [x] Jaccard confirmed: Excellent=73%, Mismatch=0% (was 0% across board before fix)
+- **Key metrics:** Skills now all 1-3 word tokens, company sizes standardized to 4 values, clear Jaccard gradient
 
 ### Day 2 — Labeling + Judge + Correction + Analysis (Tue Feb 25)
 - [ ] T2.1: labeler.py — All 6 failure modes
