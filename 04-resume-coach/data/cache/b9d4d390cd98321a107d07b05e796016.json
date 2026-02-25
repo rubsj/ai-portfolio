@@ -1,0 +1,141 @@
+{
+  "cache_key": "b9d4d390cd98321a107d07b05e796016",
+  "prompt_key": "resume_a586bba8-87e0-4310-b639-f18eb7491b79_excellent_formal",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T20:06:03.961070+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "+1234567890",
+      "location": "Austin, TX",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Master of Science",
+        "institution": "University of Texas at Austin",
+        "graduation_date": "2015-05",
+        "gpa": 3.8,
+        "coursework": [
+          "Energy Market Analysis",
+          "Renewable Energy Technologies",
+          "Financial Modeling"
+        ]
+      },
+      {
+        "degree": "Bachelor of Science",
+        "institution": "University of Texas at Austin",
+        "graduation_date": "2013-05",
+        "gpa": 3.6,
+        "coursework": [
+          "Environmental Science",
+          "Data Analysis",
+          "Project Management"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "GreenPower Solutions",
+        "title": "Senior Energy Analyst",
+        "start_date": "2018-06",
+        "end_date": null,
+        "responsibilities": [
+          "Led data analysis initiatives to support renewable energy projects, leveraging advanced SQL for data extraction and manipulation.",
+          "Developed financial models for project evaluations and investment recommendations, enhancing decision-making for new energy ventures.",
+          "Conducted comprehensive energy market analysis, identifying trends to inform strategic planning and policy compliance.",
+          "Utilized advanced Excel functions and data visualization tools to present analytical findings to stakeholders, ensuring clarity and effectiveness in communication.",
+          "Managed cross-functional teams in the execution of energy projects, ensuring timely delivery and adherence to regulatory requirements."
+        ],
+        "achievements": [
+          "Successfully optimized energy forecasting models, resulting in a 15% increase in project accuracy.",
+          "Spearheaded a data visualization initiative that improved stakeholder engagement in project presentations."
+        ]
+      },
+      {
+        "company": "EcoEnergy Analytics",
+        "title": "Energy Analyst",
+        "start_date": "2015-06",
+        "end_date": "2018-05",
+        "responsibilities": [
+          "Performed statistical analysis of energy data to identify patterns and inform policy recommendations.",
+          "Collaborated with project managers to ensure compliance with energy regulations, enhancing project viability.",
+          "Developed interactive dashboards using data visualization tools to communicate energy trends to clients and stakeholders."
+        ],
+        "achievements": [
+          "Received the 'Analyst of the Year' award for exceptional performance in data analysis and project support in 2017."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Energy market analysis",
+        "proficiency_level": "Expert",
+        "years": 7
+      },
+      {
+        "name": "Data visualization",
+        "proficiency_level": "Advanced",
+        "years": 6
+      },
+      {
+        "name": "SQL",
+        "proficiency_level": "Advanced",
+        "years": 7
+      },
+      {
+        "name": "Excel",
+        "proficiency_level": "Advanced",
+        "years": 7
+      },
+      {
+        "name": "Statistical analysis",
+        "proficiency_level": "Advanced",
+        "years": 6
+      },
+      {
+        "name": "Financial modeling",
+        "proficiency_level": "Expert",
+        "years": 7
+      },
+      {
+        "name": "Regulatory compliance",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Project management",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Python",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "R",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "GIS",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Energy forecasting",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "Renewable energy technologies",
+        "proficiency_level": "Advanced",
+        "years": 5
+      }
+    ],
+    "summary": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "cache_key": "5ed5db853b88f9fcc017c390e2191492",
+  "prompt_key": "job_Education_False_Senior",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:17:44.982480+00:00",
+  "response": {
+    "title": "Senior Education Program Manager",
+    "company": {
+      "name": "Future Learning Academy",
+      "industry": "Education",
+      "size": "Mid-size (201-500)",
+      "location": "New York, NY"
+    },
+    "description": "The Senior Education Program Manager will oversee the development, implementation, and evaluation of educational programs that enhance learning outcomes for students. This role requires strategic planning, collaboration with educators, and the ability to manage multi-faceted projects. The ideal candidate will have a strong background in education, program management, and data analysis to drive program improvements.",
+    "requirements": {
+      "required_skills": [
+        "Program Development",
+        "Project Management",
+        "Data Analysis",
+        "Budget Management",
+        "Curriculum Design"
+      ],
+      "preferred_skills": [
+        "Educational Technology",
+        "Grant Writing",
+        "Stakeholder Engagement"
+      ],
+      "education": "Master's Degree in Education or related field",
+      "experience_years": 7,
+      "experience_level": "Senior"
+    }
+  }
+}

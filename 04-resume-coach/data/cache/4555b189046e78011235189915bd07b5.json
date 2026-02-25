@@ -1,0 +1,103 @@
+{
+  "cache_key": "4555b189046e78011235189915bd07b5",
+  "prompt_key": "resume_f91b1a0d-ea9b-44c9-8641-56f3fa4fd547_excellent_formal",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T20:03:43.161468+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "1234567890",
+      "location": "San Francisco, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Science in Environmental Science",
+        "institution": "University of California, Berkeley",
+        "graduation_date": "2022-05",
+        "gpa": 3.8,
+        "coursework": [
+          "Data Analytics",
+          "Renewable Energy Systems",
+          "Environmental Policy",
+          "Statistical Methods"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Sustainable Solutions Co.",
+        "title": "Data Analyst Intern",
+        "start_date": "2021-06",
+        "end_date": "2022-05",
+        "responsibilities": [
+          "Conducted data analysis on renewable energy sources to identify trends and efficiencies.",
+          "Utilized Python and SQL to extract and manipulate energy consumption data.",
+          "Developed data visualizations using Tableau to present findings to stakeholders.",
+          "Assisted in the creation of energy models to assess potential sustainability solutions."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Excel",
+        "proficiency_level": "Advanced",
+        "years": 2
+      },
+      {
+        "name": "Python",
+        "proficiency_level": "Advanced",
+        "years": 2
+      },
+      {
+        "name": "SQL",
+        "proficiency_level": "Advanced",
+        "years": 2
+      },
+      {
+        "name": "GIS",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Data Visualization",
+        "proficiency_level": "Advanced",
+        "years": 2
+      },
+      {
+        "name": "Energy Modeling",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Statistical Analysis",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Machine Learning",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Tableau",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "R",
+        "proficiency_level": "Beginner",
+        "years": 0
+      },
+      {
+        "name": "ArcGIS",
+        "proficiency_level": "Beginner",
+        "years": 0
+      }
+    ],
+    "summary": null
+  }
+}

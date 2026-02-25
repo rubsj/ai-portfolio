@@ -1,0 +1,89 @@
+{
+  "cache_key": "800aec5717aa6ba9598c7cf3bed42d30",
+  "prompt_key": "resume_66086235-1585-4639-9e32-6383c5de18c8_mismatch_career_changer",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T20:24:39.517930+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "2025551234",
+      "location": "Austin, TX",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Fine Arts",
+        "institution": "University of Texas at Austin",
+        "graduation_date": "2010-05",
+        "gpa": 3.8,
+        "coursework": [
+          "Graphic Design",
+          "Art History",
+          "Digital Media"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Creative Design Agency",
+        "title": "Lead Graphic Designer",
+        "start_date": "2015-03",
+        "end_date": "2023-08",
+        "responsibilities": [
+          "Led a team of designers to create innovative branding solutions for various clients.",
+          "Managed multiple projects simultaneously while ensuring quality and adherence to deadlines.",
+          "Collaborated with marketing teams to develop promotional materials and campaigns."
+        ],
+        "achievements": [
+          "Received the 'Designer of the Year' award in 2019 for excellence in creative design.",
+          "Successfully increased client retention by 30% through enhanced visual communication strategies."
+        ]
+      },
+      {
+        "company": "Artistic Expressions Gallery",
+        "title": "Gallery Manager",
+        "start_date": "2010-06",
+        "end_date": "2015-02",
+        "responsibilities": [
+          "Oversaw gallery operations including exhibition planning and art curation.",
+          "Organized community events to promote local artists and engage the public.",
+          "Maintained relationships with artists and collectors to enhance gallery offerings."
+        ],
+        "achievements": [
+          "Increased gallery attendance by 50% through innovative event marketing.",
+          "Developed a successful art workshop series, attracting numerous participants."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Adobe Creative Suite",
+        "proficiency_level": "Expert",
+        "years": 8
+      },
+      {
+        "name": "User Experience Design",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      },
+      {
+        "name": "Event Management",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Brand Strategy",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Photography",
+        "proficiency_level": "Expert",
+        "years": 10
+      }
+    ],
+    "summary": "Creative and results-driven design professional with over a decade of experience in visual arts and project management in the creative industry. Proven ability to lead teams and manage multiple projects in fast-paced environments, with a focus on innovative design solutions."
+  }
+}

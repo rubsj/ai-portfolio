@@ -1,0 +1,73 @@
+{
+  "cache_key": "c9b1fc9fc19cc8fb8a225afbc9c9ca97",
+  "prompt_key": "resume_0aa78cbe-6c04-4ed6-85f0-7bddd406c950_poor_achievement",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T20:14:04.122180+00:00",
+  "response": {
+    "contact_info": {
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "phone": "1234567890",
+      "location": "New York, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts",
+        "institution": "State University",
+        "graduation_date": "2010-05",
+        "gpa": null,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "Tech Innovations Inc.",
+        "title": "Legal Assistant",
+        "start_date": "2015-06",
+        "end_date": "2023-09",
+        "responsibilities": [
+          "Assisted in preparing legal documents and contracts",
+          "Conducted basic legal research under supervision",
+          "Managed correspondence between clients and legal teams"
+        ],
+        "achievements": [
+          "Improved document processing time by 25%",
+          "Supported the legal team in winning a local business dispute case"
+        ]
+      },
+      {
+        "company": "Non-Profit Organization",
+        "title": "Compliance Coordinator",
+        "start_date": "2013-01",
+        "end_date": "2015-05",
+        "responsibilities": [
+          "Ensured compliance with organizational policies and procedures",
+          "Coordinated training sessions for staff on compliance issues"
+        ],
+        "achievements": [
+          "Increased staff compliance understanding by 30% through training programs"
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Legal Research",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      },
+      {
+        "name": "Contract Law",
+        "proficiency_level": "Beginner",
+        "years": 2
+      },
+      {
+        "name": "Compliance Regulations",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      }
+    ],
+    "summary": "Detail-oriented legal assistant with a background in compliance coordination and legal research. Seeking to leverage my experience in a more senior legal role."
+  }
+}

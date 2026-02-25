@@ -1,0 +1,117 @@
+{
+  "cache_key": "658e1cbbf9c79ee63d28229bfa2734c9",
+  "prompt_key": "resume_817678f9-4651-4fcb-b579-acad7c0eae69_good_casual",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T20:23:03.689807+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "1234567890",
+      "location": "Washington, D.C.",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor's Degree in Business Management",
+        "institution": "George Washington University",
+        "graduation_date": "2016-05",
+        "gpa": null,
+        "coursework": null
+      },
+      {
+        "degree": "Master's Degree in Public Administration",
+        "institution": "American University",
+        "graduation_date": "2018-05",
+        "gpa": null,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "City Development Agency",
+        "title": "Program Manager",
+        "start_date": "2018-06",
+        "end_date": null,
+        "responsibilities": [
+          "Led cross-functional teams to manage urban development projects, ensuring compliance with local regulations.",
+          "Developed performance metrics to evaluate project success and implemented strategies for improvement.",
+          "Engaged with stakeholders to communicate project updates and gather feedback.",
+          "Oversaw budget management for multiple projects, ensuring efficient resource allocation."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Non-Profit Organization for Community Development",
+        "title": "Project Coordinator",
+        "start_date": "2016-06",
+        "end_date": "2018-05",
+        "responsibilities": [
+          "Coordinated community outreach programs to enhance local engagement and participation.",
+          "Assisted in risk assessment processes for various community initiatives.",
+          "Collaborated with a diverse range of stakeholders to promote project goals."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Project Management",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Federal Regulations",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Budget Management",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Stakeholder Engagement",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Risk Assessment",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Performance Metrics",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Agile Methodology",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Contract Negotiation",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Change Management",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Data Analysis",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Leadership Training",
+        "proficiency_level": "Beginner",
+        "years": 1
+      }
+    ],
+    "summary": null
+  }
+}

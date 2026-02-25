@@ -1,0 +1,100 @@
+{
+  "cache_key": "3a26048b3256a716cc2acb7d35c0ac79",
+  "prompt_key": "resume_66c13e0c-e5fe-4618-bbd9-fc2810d044bf_excellent_formal",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:42:03.177872+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@example.com",
+      "phone": "5125551234",
+      "location": "Austin, TX",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Associate Degree",
+        "institution": "Austin Community College",
+        "graduation_date": "2022-05",
+        "gpa": 3.8,
+        "coursework": [
+          "Engineering Fundamentals",
+          "Introduction to IoT",
+          "Data Analysis Techniques",
+          "Automation Systems",
+          "Quality Control Methods"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Tech Innovations Inc.",
+        "title": "Manufacturing Intern",
+        "start_date": "2022-06",
+        "end_date": "2023-08",
+        "responsibilities": [
+          "Assisted in the implementation of IoT devices to monitor manufacturing processes.",
+          "Conducted data analysis to identify trends and improve operational efficiency.",
+          "Participated in the testing and troubleshooting of automated systems.",
+          "Utilized CAD software for designing layout modifications on the production floor.",
+          "Supported quality control processes to ensure product standards were met."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Data analysis",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "IoT devices",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Basic programming",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Automation tools",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "CAD software",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Quality control",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Robotics basics",
+        "proficiency_level": "Beginner",
+        "years": 0
+      },
+      {
+        "name": "Troubleshooting",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Manufacturing processes",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "3D modeling",
+        "proficiency_level": "Beginner",
+        "years": 0
+      }
+    ],
+    "summary": null
+  }
+}

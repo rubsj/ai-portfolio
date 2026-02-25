@@ -1,0 +1,105 @@
+{
+  "cache_key": "1175337ed31517d0637f6424a7cd62ef",
+  "prompt_key": "resume_d2c95a25-d542-4cd6-8177-08bfc6be87f0_good_casual",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T20:12:45.415382+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan T. Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "5551234567",
+      "location": "New York, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Juris Doctor",
+        "institution": "New York University School of Law",
+        "graduation_date": "2015-05",
+        "gpa": null,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "Smith & Associates Law Firm",
+        "title": "Senior Corporate Counsel",
+        "start_date": "2017-06",
+        "end_date": null,
+        "responsibilities": [
+          "Provided strategic legal advice to corporate clients on compliance issues and contract negotiations.",
+          "Managed complex mergers and acquisitions, ensuring all legal aspects were thoroughly assessed and addressed.",
+          "Oversaw litigation management and coordinated with external legal teams on significant cases.",
+          "Conducted legal research to support corporate governance and compliance initiatives."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Global Tech Innovations",
+        "title": "Corporate Counsel",
+        "start_date": "2015-06",
+        "end_date": "2017-05",
+        "responsibilities": [
+          "Drafted and negotiated a variety of commercial contracts and agreements.",
+          "Assisted in risk assessment related to product launches and intellectual property matters.",
+          "Collaborated with internal stakeholders to ensure compliance with labor laws and regulations."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Contract Negotiation",
+        "proficiency_level": "Advanced",
+        "years": 6
+      },
+      {
+        "name": "Compliance Management",
+        "proficiency_level": "Advanced",
+        "years": 6
+      },
+      {
+        "name": "Intellectual Property",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Corporate Governance",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Litigation Management",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Risk Assessment",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Data Privacy",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Negotiation Strategies",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Legal Research",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Insurance Law",
+        "proficiency_level": "Beginner",
+        "years": 1
+      }
+    ],
+    "summary": "Dynamic legal professional with extensive experience in corporate law, specializing in compliance and contract negotiation. Proven ability to manage complex legal matters and collaborate effectively with stakeholders."
+  }
+}

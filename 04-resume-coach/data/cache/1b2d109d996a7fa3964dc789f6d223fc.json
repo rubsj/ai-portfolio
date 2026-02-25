@@ -1,0 +1,115 @@
+{
+  "cache_key": "1b2d109d996a7fa3964dc789f6d223fc",
+  "prompt_key": "resume_deb5f0d0-dc86-412b-a3fe-b015a0a071fa_good_casual",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T20:01:25.331987+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Alex Johnson",
+      "email": "alex.johnson@example.com",
+      "phone": "1234567890",
+      "location": "New York, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Business Administration",
+        "institution": "New York University",
+        "graduation_date": "2018-05",
+        "gpa": 3.5,
+        "coursework": [
+          "Retail Management",
+          "Marketing",
+          "Operations Management"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Trendy Retailers LLC",
+        "title": "Operations Manager",
+        "start_date": "2019-06",
+        "end_date": null,
+        "responsibilities": [
+          "Led a team of 20 staff to optimize daily operations and customer service.",
+          "Implemented inventory management systems that reduced stock discrepancies by 30%.",
+          "Analyzed sales data to forecast trends and adjust inventory accordingly.",
+          "Developed and executed visual merchandising strategies to enhance store appearance.",
+          "Trained staff on customer relationship management systems and sales techniques."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Retail Solutions Corp.",
+        "title": "Sales Supervisor",
+        "start_date": "2018-03",
+        "end_date": "2019-05",
+        "responsibilities": [
+          "Supervised a team of sales associates to drive customer satisfaction and sales.",
+          "Collaborated with the management team to develop operational strategies.",
+          "Managed inventory and assisted in the development of promotional sales plans."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Inventory Management",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "Sales Forecasting",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Team Leadership",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "Customer Relationship Management",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Operational Strategy",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Data Analysis",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Visual Merchandising",
+        "proficiency_level": "Advanced",
+        "years": 3
+      },
+      {
+        "name": "Project Management",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Financial Acumen",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "E-commerce Strategy",
+        "proficiency_level": "Beginner",
+        "years": 0
+      },
+      {
+        "name": "Social Media Marketing",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      }
+    ],
+    "summary": "Passionate retail professional with a solid foundation in operations management and a knack for driving sales performance. Experienced in team leadership, inventory management, and creating exceptional customer experiences."
+  }
+}

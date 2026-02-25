@@ -1,0 +1,36 @@
+{
+  "cache_key": "de561308dfcdae6531f459c8cbabe577",
+  "prompt_key": "job_Technology_True_Entry",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:12:24.891917+00:00",
+  "response": {
+    "title": "Digital Fabrication Assistant",
+    "company": {
+      "name": "Innovative Tech Lab",
+      "industry": "Technology",
+      "size": "Startup (1-50)",
+      "location": "San Francisco, CA"
+    },
+    "description": "Innovative Tech Lab is seeking a passionate Digital Fabrication Assistant to join our dynamic team. This entry-level role combines skills from design, engineering, and programming to support our projects in digital fabrication and rapid prototyping. You will work closely with engineers and designers to create, test, and refine prototypes using cutting-edge technology. If you are enthusiastic about merging technology with creativity and want to be part of a pioneering environment, we would love to hear from you.",
+    "requirements": {
+      "required_skills": [
+        "3D Modeling",
+        "CNC Machining",
+        "Laser Cutting",
+        "Python",
+        "Arduino",
+        "SolidWorks",
+        "Git",
+        "Electronics Prototyping"
+      ],
+      "preferred_skills": [
+        "Blender",
+        "JavaScript",
+        "Digital Fabrication"
+      ],
+      "education": "Bachelor's degree in Engineering, Design, or related field",
+      "experience_years": 0,
+      "experience_level": "Entry"
+    }
+  }
+}

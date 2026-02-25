@@ -1,0 +1,109 @@
+{
+  "cache_key": "083762363339c1a562c28715a9cce138",
+  "prompt_key": "resume_c586573a-801f-498a-87fd-e439fdae039b_good_casual",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:31:47.850559+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Alex Johnson",
+      "email": "alex.johnson@email.com",
+      "phone": "1234567890",
+      "location": "New York, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor's in Finance",
+        "institution": "New York University",
+        "graduation_date": "2021-05",
+        "gpa": 3.5,
+        "coursework": [
+          "Financial Analysis",
+          "Investment Strategies",
+          "Corporate Finance"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "ABC Financial Services",
+        "title": "Financial Analyst",
+        "start_date": "2021-06",
+        "end_date": null,
+        "responsibilities": [
+          "Performed financial modeling to support investment decisions.",
+          "Assisted in preparing quarterly budgeting reports.",
+          "Conducted data analysis to identify trends and optimize financial performance.",
+          "Collaborated with cross-functional teams to enhance financial reporting processes."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "XYZ Investments",
+        "title": "Junior Financial Analyst",
+        "start_date": "2020-06",
+        "end_date": "2021-05",
+        "responsibilities": [
+          "Supported senior analysts in forecasting and financial planning.",
+          "Developed detailed Excel spreadsheets for data visualization.",
+          "Participated in risk analysis and management discussions."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Financial modeling",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Budgeting",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Data analysis",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Excel",
+        "proficiency_level": "Advanced",
+        "years": 3
+      },
+      {
+        "name": "SQL",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Power BI",
+        "proficiency_level": "Beginner",
+        "years": null
+      },
+      {
+        "name": "Financial reporting",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Tableau",
+        "proficiency_level": "Beginner",
+        "years": null
+      },
+      {
+        "name": "QuickBooks",
+        "proficiency_level": "Beginner",
+        "years": null
+      },
+      {
+        "name": "Python",
+        "proficiency_level": "Beginner",
+        "years": null
+      }
+    ],
+    "summary": null
+  }
+}

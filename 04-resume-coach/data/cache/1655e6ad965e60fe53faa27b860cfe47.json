@@ -1,0 +1,75 @@
+{
+  "cache_key": "1655e6ad965e60fe53faa27b860cfe47",
+  "prompt_key": "resume_20790e22-1bea-4343-b109-2e9ad9dafa97_mismatch_career_changer",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:39:20.969488+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Taylor",
+      "email": "jordan.taylor@example.com",
+      "phone": "1234567890",
+      "location": "Los Angeles, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor's Degree in Graphic Design",
+        "institution": "Art Institute of California",
+        "graduation_date": "2015-06",
+        "gpa": 3.5,
+        "coursework": [
+          "Visual Communication",
+          "User Experience Design",
+          "Digital Media"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Creative Studio",
+        "title": "Graphic Designer",
+        "start_date": "2016-07",
+        "end_date": "2023-08",
+        "responsibilities": [
+          "Designed digital marketing materials for various clients, ensuring alignment with brand guidelines.",
+          "Collaborated with cross-functional teams to develop visual concepts for advertising campaigns.",
+          "Managed timelines and deliverables for multiple projects simultaneously, adhering to strict deadlines.",
+          "Conducted client meetings to understand project requirements and incorporate feedback into final designs."
+        ],
+        "achievements": [
+          "Increased client satisfaction ratings by 30% through improved design quality and timely project delivery.",
+          "Led a project that resulted in a 25% increase in engagement for a client's social media platforms."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Adobe Photoshop",
+        "proficiency_level": "Advanced",
+        "years": 7
+      },
+      {
+        "name": "Adobe Illustrator",
+        "proficiency_level": "Advanced",
+        "years": 7
+      },
+      {
+        "name": "InVision",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "HTML",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "CSS",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      }
+    ],
+    "summary": "Creative and detail-oriented Graphic Designer with over 7 years of experience in the design industry, adept at managing multiple projects and collaborating with clients to achieve impactful visual outcomes."
+  }
+}

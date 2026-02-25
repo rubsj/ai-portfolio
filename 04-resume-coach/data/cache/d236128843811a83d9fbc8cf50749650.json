@@ -1,0 +1,81 @@
+{
+  "cache_key": "d236128843811a83d9fbc8cf50749650",
+  "prompt_key": "resume_6cd86b40-b3b2-43c0-84b9-cfbe3f4cbbd7_mismatch_career_changer",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:59:27.260174+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@example.com",
+      "phone": "1234567890",
+      "location": "San Francisco, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Master's in Fine Arts",
+        "institution": "University of California, Berkeley",
+        "graduation_date": "2020-05",
+        "gpa": null,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "Creative Minds LLC",
+        "title": "Art Director",
+        "start_date": "2020-06",
+        "end_date": null,
+        "responsibilities": [
+          "Led a team of designers to conceptualize and execute art projects for various clients.",
+          "Collaborated with marketing teams to develop visual content for online campaigns.",
+          "Managed timelines and budgets for multiple projects to ensure timely delivery.",
+          "Facilitated client meetings to align on creative direction and project goals."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Artisan Studio",
+        "title": "Graphic Designer",
+        "start_date": "2018-02",
+        "end_date": "2020-05",
+        "responsibilities": [
+          "Designed promotional materials including brochures, flyers, and social media graphics.",
+          "Worked closely with clients to understand their vision and deliver tailored designs.",
+          "Utilized design software such as Adobe Photoshop and Illustrator to create high-quality visuals.",
+          "Participated in brainstorming sessions to generate innovative design concepts."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Adobe Photoshop",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Adobe Illustrator",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Creative Strategy",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Project Management",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Client Communication",
+        "proficiency_level": "Advanced",
+        "years": 5
+      }
+    ],
+    "summary": "Dynamic Art Director with extensive experience in visual design and project management. Proven ability to lead creative teams and deliver exceptional client results. Seeking to leverage artistic vision and leadership skills in a new industry."
+  }
+}

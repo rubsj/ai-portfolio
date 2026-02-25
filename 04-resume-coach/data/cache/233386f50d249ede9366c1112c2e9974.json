@@ -1,0 +1,73 @@
+{
+  "cache_key": "233386f50d249ede9366c1112c2e9974",
+  "prompt_key": "resume_6cd86b40-b3b2-43c0-84b9-cfbe3f4cbbd7_poor_achievement",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:59:15.073416+00:00",
+  "response": {
+    "contact_info": {
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "phone": "1234567890",
+      "location": "Brooklyn, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Associate's Degree",
+        "institution": "Brooklyn Community College",
+        "graduation_date": "2020-05",
+        "gpa": null,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "Tech Solutions Inc.",
+        "title": "Customer Support Representative",
+        "start_date": "2021-06",
+        "end_date": "2023-06",
+        "responsibilities": [
+          "Assisted customers with technical issues regarding software products.",
+          "Managed support tickets to ensure timely resolutions.",
+          "Collaborated with the product team to relay customer feedback."
+        ],
+        "achievements": [
+          "Improved customer satisfaction ratings by 15% over one year."
+        ]
+      },
+      {
+        "company": "Gadget World",
+        "title": "Retail Associate",
+        "start_date": "2020-01",
+        "end_date": "2021-05",
+        "responsibilities": [
+          "Assisted customers in-store with product selections.",
+          "Maintained store appearance and restocked merchandise.",
+          "Operated cash register and processed customer transactions."
+        ],
+        "achievements": [
+          "Exceeded sales targets by 10% during holiday season."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Customer Service",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Data Entry",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Point of Sale (POS)",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      }
+    ],
+    "summary": null
+  }
+}

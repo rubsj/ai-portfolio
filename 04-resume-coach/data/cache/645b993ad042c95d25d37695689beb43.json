@@ -1,0 +1,124 @@
+{
+  "cache_key": "645b993ad042c95d25d37695689beb43",
+  "prompt_key": "resume_11639393-a9ca-43c4-812f-46dc82a67348_good_casual",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T20:17:53.299214+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jamie Taylor",
+      "email": "jamie.taylor@email.com",
+      "phone": "4151234567",
+      "location": "San Francisco, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor's Degree in Marketing",
+        "institution": "University of California, Berkeley",
+        "graduation_date": "2015-05",
+        "gpa": null,
+        "coursework": [
+          "Digital Marketing",
+          "Consumer Behavior",
+          "Market Research"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Creative Marketing Agency",
+        "title": "Senior Marketing Strategist",
+        "start_date": "2018-06",
+        "end_date": null,
+        "responsibilities": [
+          "Led a team in developing comprehensive marketing strategies across multiple channels.",
+          "Managed PPC campaigns, optimizing for budget and performance.",
+          "Utilized Google Analytics to track campaign effectiveness and drive data-informed decisions.",
+          "Collaborated with the content team to create engaging marketing materials.",
+          "Oversaw the implementation of email marketing campaigns with high open rates."
+        ],
+        "achievements": [
+          "Increased customer engagement by 30% through targeted social media strategies.",
+          "Successfully reduced acquisition costs by 15% through optimized conversion rate strategies."
+        ]
+      },
+      {
+        "company": "Tech Innovations Corp",
+        "title": "Marketing Coordinator",
+        "start_date": "2016-06",
+        "end_date": "2018-05",
+        "responsibilities": [
+          "Assisted in the development and execution of marketing campaigns.",
+          "Utilized SEO strategies to improve website visibility and traffic.",
+          "Conducted A/B testing to refine campaign effectiveness.",
+          "Created data visualizations to present marketing insights to the team."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "SEO",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "PPC",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Google Analytics",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Social Media Marketing",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Content Strategy",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Email Marketing",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Marketing Automation",
+        "proficiency_level": "Intermediate",
+        "years": null
+      },
+      {
+        "name": "Salesforce",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "A/B Testing",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Data Visualization",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Graphic Design",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "UX/UI Principles",
+        "proficiency_level": "Beginner",
+        "years": 1
+      }
+    ],
+    "summary": null
+  }
+}

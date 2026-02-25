@@ -1,0 +1,72 @@
+{
+  "cache_key": "6a52f23654b374df2ce94d3dd261988a",
+  "prompt_key": "resume_a586bba8-87e0-4310-b639-f18eb7491b79_poor_achievement",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T20:06:47.796390+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Alex Johnson",
+      "email": "alex.johnson@email.com",
+      "phone": "5125551234",
+      "location": "Austin, TX",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts",
+        "institution": "University of Texas",
+        "graduation_date": "2018-05",
+        "gpa": null,
+        "coursework": [
+          "Environmental Policy",
+          "Sustainability Practices"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Eco-Friendly Corp",
+        "title": "Junior Sustainability Analyst",
+        "start_date": "2018-06",
+        "end_date": "2021-12",
+        "responsibilities": [
+          "Assisted team in collecting and analyzing data related to sustainability practices.",
+          "Supported project management efforts for small-scale environmental initiatives.",
+          "Conducted basic data entry and maintained database records."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Green Solutions Inc.",
+        "title": "Intern Energy Consultant",
+        "start_date": "2021-01",
+        "end_date": "2022-08",
+        "responsibilities": [
+          "Helped in developing presentations on renewable energy trends.",
+          "Participated in team meetings to discuss energy project updates.",
+          "Performed routine analysis using Excel for energy consumption reports."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Excel",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Data visualization",
+        "proficiency_level": "Beginner",
+        "years": null
+      },
+      {
+        "name": "Project management",
+        "proficiency_level": "Beginner",
+        "years": null
+      }
+    ],
+    "summary": "Detail-oriented analyst with experience in sustainability projects and data entry. Seeking to transition into the energy sector."
+  }
+}

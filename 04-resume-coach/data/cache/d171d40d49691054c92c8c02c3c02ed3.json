@@ -1,0 +1,38 @@
+{
+  "cache_key": "d171d40d49691054c92c8c02c3c02ed3",
+  "prompt_key": "job_Healthcare_False_Lead",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:16:55.728509+00:00",
+  "response": {
+    "title": "Lead Healthcare Data Analyst",
+    "company": {
+      "name": "HealthTech Innovations",
+      "industry": "Healthcare",
+      "size": "Mid-size (201-500)",
+      "location": "San Francisco, CA"
+    },
+    "description": "We are seeking a Lead Healthcare Data Analyst to join our dynamic team at HealthTech Innovations. In this role, you will lead data analysis efforts to improve healthcare outcomes and drive strategic decision-making. You will work closely with cross-functional teams to gather data requirements, analyze complex datasets, and deliver actionable insights. The ideal candidate will have a strong background in healthcare analytics and a passion for data-driven solutions.",
+    "requirements": {
+      "required_skills": [
+        "SQL",
+        "Python",
+        "R",
+        "Tableau",
+        "SAS",
+        "Data Visualization",
+        "Healthcare Analytics",
+        "Statistical Analysis",
+        "ETL Processes"
+      ],
+      "preferred_skills": [
+        "Machine Learning",
+        "Big Data Technologies",
+        "Predictive Modeling",
+        "Data Warehousing"
+      ],
+      "education": "Bachelor's degree in Data Science, Statistics, or related field; Master's preferred",
+      "experience_years": 7,
+      "experience_level": "Lead"
+    }
+  }
+}

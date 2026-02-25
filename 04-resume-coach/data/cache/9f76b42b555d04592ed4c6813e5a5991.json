@@ -1,0 +1,79 @@
+{
+  "cache_key": "9f76b42b555d04592ed4c6813e5a5991",
+  "prompt_key": "resume_ec566b74-8db9-4993-8684-d9020c3975e7_mismatch_career_changer",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:31:16.821850+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Alex Morgan",
+      "email": "alex.morgan@email.com",
+      "phone": "1234567890",
+      "location": "Los Angeles, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts in Theater",
+        "institution": "University of California, Los Angeles",
+        "graduation_date": "2018-06",
+        "gpa": null,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "Theatrical Productions Inc.",
+        "title": "Stage Manager",
+        "start_date": "2018-07",
+        "end_date": null,
+        "responsibilities": [
+          "Coordinated rehearsals and performances for various productions, managing a team of actors and crew members.",
+          "Ensured all set and props were in place before performances, demonstrating attention to detail and organizational skills.",
+          "Developed communication strategies to relay complex information clearly to the team, enhancing collaborative efforts."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Creative Arts Group",
+        "title": "Event Coordinator",
+        "start_date": "2019-01",
+        "end_date": "2021-05",
+        "responsibilities": [
+          "Planned and executed artistic events and workshops, managing logistics and participant engagement.",
+          "Worked closely with local artists and stakeholders to develop community outreach programs.",
+          "Analyzed event attendance data to tailor future events to audience preferences, although not grounded in financial analysis."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Public Speaking",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Team Leadership",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Project Management",
+        "proficiency_level": "Advanced",
+        "years": 3
+      },
+      {
+        "name": "Customer Engagement",
+        "proficiency_level": "Advanced",
+        "years": 3
+      },
+      {
+        "name": "Creative Problem Solving",
+        "proficiency_level": "Advanced",
+        "years": 5
+      }
+    ],
+    "summary": "Dynamic and detail-oriented stage manager with extensive experience in team leadership and project management within the theatrical industry. Proven success in coordinating complex events and enhancing team communication to ensure seamless execution of artistic productions. Seeking to leverage my organizational and leadership skills in a new and challenging role."
+  }
+}

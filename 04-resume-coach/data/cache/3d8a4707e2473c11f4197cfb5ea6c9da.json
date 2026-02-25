@@ -1,0 +1,120 @@
+{
+  "cache_key": "3d8a4707e2473c11f4197cfb5ea6c9da",
+  "prompt_key": "resume_fdb36346-ad13-492f-9c05-deb7beb9652a_good_casual",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:29:45.989441+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Alex Johnson",
+      "email": "alex.johnson@email.com",
+      "phone": "1234567890",
+      "location": "New York, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Master's in Healthcare Administration",
+        "institution": "Columbia University",
+        "graduation_date": "2010-05",
+        "gpa": null,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "Wellness Corp",
+        "title": "Chief Operations Officer",
+        "start_date": "2015-01",
+        "end_date": "2023-09",
+        "responsibilities": [
+          "Developed and executed strategic initiatives to improve patient care delivery.",
+          "Oversaw financial operations including budgeting and forecasting.",
+          "Led a cross-functional team to enhance operational efficiency and reduce costs.",
+          "Engaged with stakeholders to ensure alignment with company goals and compliance."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Health Solutions Ltd.",
+        "title": "Director of Program Development",
+        "start_date": "2010-06",
+        "end_date": "2014-12",
+        "responsibilities": [
+          "Managed the implementation of health IT solutions to streamline operations.",
+          "Collaborated with clinical teams to ensure compliance with healthcare regulations.",
+          "Conducted data analysis to inform decision-making and improve service delivery."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Strategic Planning",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Healthcare Regulations",
+        "proficiency_level": "Intermediate",
+        "years": 6
+      },
+      {
+        "name": "Financial Management",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Data Analytics",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      },
+      {
+        "name": "Change Management",
+        "proficiency_level": "Intermediate",
+        "years": 6
+      },
+      {
+        "name": "Operational Excellence",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Stakeholder Engagement",
+        "proficiency_level": "Intermediate",
+        "years": 6
+      },
+      {
+        "name": "Risk Management",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      },
+      {
+        "name": "Clinical Expertise",
+        "proficiency_level": "Beginner",
+        "years": 2
+      },
+      {
+        "name": "Health IT Systems",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Quality Improvement",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Telemedicine Solutions",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Team Leadership",
+        "proficiency_level": "Advanced",
+        "years": 10
+      }
+    ],
+    "summary": null
+  }
+}

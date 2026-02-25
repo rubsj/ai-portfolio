@@ -1,0 +1,89 @@
+{
+  "cache_key": "6273be8af892fa93594f115db7021711",
+  "prompt_key": "resume_b272fa56-dbb8-4574-8f12-6e99922fa535_mismatch_career_changer",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T20:03:27.792161+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@example.com",
+      "phone": "1234567890",
+      "location": "San Francisco, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Fine Arts",
+        "institution": "California Institute of the Arts",
+        "graduation_date": "2010-05",
+        "gpa": null,
+        "coursework": [
+          "Visual Arts",
+          "Art History",
+          "Digital Media"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Creative Solutions Agency",
+        "title": "Senior Art Director",
+        "start_date": "2015-06",
+        "end_date": null,
+        "responsibilities": [
+          "Led creative direction for campaigns across digital and print media, enhancing brand visibility.",
+          "Collaborated with cross-functional teams to create engaging visual content, improving client satisfaction by 30%.",
+          "Managed a team of graphic designers, fostering a culture of innovation and creativity.",
+          "Oversaw project timelines and budgets, ensuring delivery within client expectations."
+        ],
+        "achievements": [
+          "Received the 'Best Campaign' award at the National Advertising Awards in 2018.",
+          "Increased client retention rate by 25% through improved visual storytelling."
+        ]
+      },
+      {
+        "company": "Innovative Design Studio",
+        "title": "Graphic Designer",
+        "start_date": "2010-06",
+        "end_date": "2015-05",
+        "responsibilities": [
+          "Created compelling designs for marketing materials, enhancing engagement and retention.",
+          "Worked closely with clients to understand their vision and translate it into visual representations.",
+          "Utilized Adobe Creative Suite to produce high-quality graphic designs and layouts."
+        ],
+        "achievements": [
+          "Contributed to a project that won the 'Design Excellence' award in 2014."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Adobe Creative Suite",
+        "proficiency_level": "Expert",
+        "years": 10
+      },
+      {
+        "name": "Visual Storytelling",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Project Management",
+        "proficiency_level": "Intermediate",
+        "years": 8
+      },
+      {
+        "name": "Brand Development",
+        "proficiency_level": "Advanced",
+        "years": 7
+      },
+      {
+        "name": "Web Design",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      }
+    ],
+    "summary": "Creative professional with over a decade of experience in the arts and design industry, leading innovative projects and enhancing brand visibility. Adept at visual storytelling and managing creative teams. Seeking to leverage artistic skills in a new operational role."
+  }
+}

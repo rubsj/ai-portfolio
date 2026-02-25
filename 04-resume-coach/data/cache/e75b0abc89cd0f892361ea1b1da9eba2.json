@@ -1,0 +1,130 @@
+{
+  "cache_key": "e75b0abc89cd0f892361ea1b1da9eba2",
+  "prompt_key": "resume_3fa22c52-7b03-433e-9b0b-38d25563fadc_good_casual",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:22:28.839401+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@example.com",
+      "phone": "1234567890",
+      "location": "San Francisco, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor's Degree in Computer Science",
+        "institution": "University of California, Berkeley",
+        "graduation_date": "2015-05",
+        "gpa": null,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "Innovative Solutions Co.",
+        "title": "Software Engineer",
+        "start_date": "2018-07",
+        "end_date": null,
+        "responsibilities": [
+          "Developed and maintained REST APIs for client applications using Java and Spring Boot.",
+          "Collaborated with cross-functional teams to integrate microservices into existing architectures.",
+          "Utilized Docker and Kubernetes for containerization and orchestration of applications.",
+          "Participated in Agile ceremonies, including sprint planning and daily stand-ups."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Web Startups Inc.",
+        "title": "Junior Software Engineer",
+        "start_date": "2016-06",
+        "end_date": "2018-06",
+        "responsibilities": [
+          "Assisted in the design and implementation of web applications using SQL databases.",
+          "Engaged in version control practices with Git and participated in code reviews.",
+          "Supported the transition to CI/CD pipelines to improve deployment frequency."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Java",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Spring Boot",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Microservices",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Kubernetes",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "SQL",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Git",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Docker",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "REST APIs",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "TypeScript",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "CI/CD",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "GraphQL",
+        "proficiency_level": "Beginner",
+        "years": 0
+      },
+      {
+        "name": "NoSQL",
+        "proficiency_level": "Beginner",
+        "years": 0
+      },
+      {
+        "name": "Cloud Services",
+        "proficiency_level": "Beginner",
+        "years": 0
+      },
+      {
+        "name": "Project Management",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Python",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      }
+    ],
+    "summary": null
+  }
+}

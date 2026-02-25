@@ -1,0 +1,84 @@
+{
+  "cache_key": "d3b291edcfb3111cec0353644d048b8a",
+  "prompt_key": "resume_0aa78cbe-6c04-4ed6-85f0-7bddd406c950_partial_technical",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T20:13:54.494163+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Alexandra Smith",
+      "email": "alexandra.smith@email.com",
+      "phone": "1234567890",
+      "location": "New York, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Juris Doctor",
+        "institution": "Columbia Law School",
+        "graduation_date": "2010-05",
+        "gpa": null,
+        "coursework": [
+          "Corporate Law",
+          "Intellectual Property Law",
+          "Contract Negotiation"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Smith & Partners Law Firm",
+        "title": "Senior Associate Attorney",
+        "start_date": "2015-06",
+        "end_date": "2023-08",
+        "responsibilities": [
+          "Managed litigation cases from inception to resolution, providing strategic recommendations throughout.",
+          "Conducted extensive legal research to support firm clients in corporate governance issues.",
+          "Collaborated with business clients to draft and negotiate contracts ensuring compliance with applicable laws.",
+          "Advised clients on intellectual property matters, including trademark and patent applications."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Johnson Legal Group",
+        "title": "Associate Attorney",
+        "start_date": "2010-06",
+        "end_date": "2015-05",
+        "responsibilities": [
+          "Assisted in managing legal disputes by providing research and drafting pleadings.",
+          "Supported compliance initiatives, ensuring adherence to local and federal regulations.",
+          "Participated in negotiation sessions, focusing on favorable outcomes for clients."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Corporate Governance",
+        "proficiency_level": "Intermediate",
+        "years": 8
+      },
+      {
+        "name": "Contract Law",
+        "proficiency_level": "Intermediate",
+        "years": 8
+      },
+      {
+        "name": "Litigation Management",
+        "proficiency_level": "Intermediate",
+        "years": 8
+      },
+      {
+        "name": "Intellectual Property",
+        "proficiency_level": "Intermediate",
+        "years": 6
+      },
+      {
+        "name": "Negotiation Skills",
+        "proficiency_level": "Intermediate",
+        "years": 8
+      }
+    ],
+    "summary": null
+  }
+}

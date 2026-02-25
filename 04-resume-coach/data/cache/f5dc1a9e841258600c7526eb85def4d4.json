@@ -1,0 +1,97 @@
+{
+  "cache_key": "f5dc1a9e841258600c7526eb85def4d4",
+  "prompt_key": "resume_66086235-1585-4639-9e32-6383c5de18c8_good_casual",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T20:24:04.293081+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "5551234567",
+      "location": "Washington, D.C.",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Master's in Public Administration",
+        "institution": "George Washington University",
+        "graduation_date": "2012-05",
+        "gpa": null,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "City Government Office",
+        "title": "Director of Operations",
+        "start_date": "2015-03",
+        "end_date": "2023-09",
+        "responsibilities": [
+          "Managed daily operations across multiple departments, ensuring alignment with strategic goals.",
+          "Developed and implemented performance metrics to track departmental efficiency and effectiveness.",
+          "Facilitated stakeholder engagement initiatives to gather feedback and improve community services.",
+          "Oversaw budget management, ensuring compliance with financial regulations and reducing costs by 15%."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Nonprofit Organization",
+        "title": "Program Manager",
+        "start_date": "2010-07",
+        "end_date": "2015-02",
+        "responsibilities": [
+          "Led project management efforts for community programs, enhancing operational efficiency.",
+          "Conducted program evaluations to assess effectiveness and implemented improvements.",
+          "Established policies and procedures to streamline service delivery."
+        ],
+        "achievements": [
+          "Increased program participation by 30% through targeted outreach and engagement."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Strategic Planning",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Performance Metrics",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Operational Efficiency",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Budget Management",
+        "proficiency_level": "Intermediate",
+        "years": 8
+      },
+      {
+        "name": "Stakeholder Engagement",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Data Analysis",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Risk Management",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Public Speaking",
+        "proficiency_level": "Advanced",
+        "years": 6
+      }
+    ],
+    "summary": "Dynamic operations leader with a strong background in public administration. Proven ability to develop strategic plans and drive operational excellence."
+  }
+}

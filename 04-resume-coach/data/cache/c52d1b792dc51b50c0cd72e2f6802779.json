@@ -1,0 +1,37 @@
+{
+  "cache_key": "c52d1b792dc51b50c0cd72e2f6802779",
+  "prompt_key": "job_Healthcare_False_Mid",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:16:44.260684+00:00",
+  "response": {
+    "title": "Healthcare Data Analyst",
+    "company": {
+      "name": "HealthTech Solutions",
+      "industry": "Healthcare",
+      "size": "Mid-size (201-500)",
+      "location": "San Francisco, CA"
+    },
+    "description": "We are seeking a skilled Healthcare Data Analyst to join our team. The ideal candidate will be responsible for analyzing healthcare data, generating reports, and providing insights to improve patient care and operational efficiency. The role requires strong analytical skills, attention to detail, and the ability to communicate findings effectively to both technical and non-technical stakeholders.",
+    "requirements": {
+      "required_skills": [
+        "SQL",
+        "Python",
+        "Tableau",
+        "R",
+        "Excel",
+        "Data Visualization",
+        "Healthcare Analytics",
+        "ETL Processes"
+      ],
+      "preferred_skills": [
+        "SAS",
+        "Power BI",
+        "Machine Learning",
+        "Data Warehousing"
+      ],
+      "education": "Bachelor's degree in Data Science, Statistics, or related field",
+      "experience_years": 3,
+      "experience_level": "Mid"
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "cache_key": "5945a698597ff6d7f7eab9f34c3cf0c0",
+  "prompt_key": "resume_ce6f22f5-d32f-4881-99e1-5507c48ad27c_partial_technical",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:36:42.426655+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@example.com",
+      "phone": "+15551234567",
+      "location": "Remote",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts in Game Design",
+        "institution": "University of Creative Arts",
+        "graduation_date": "2022-05",
+        "gpa": null,
+        "coursework": [
+          "Game Development",
+          "User Experience Design",
+          "Visual Communication"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Freelance Projects",
+        "title": "Junior Game Designer",
+        "start_date": "2022-06",
+        "end_date": null,
+        "responsibilities": [
+          "Collaborated with clients to conceptualize and design educational game modules.",
+          "Utilized basic coding skills to implement game mechanics in Unity.",
+          "Conducted user testing sessions to gather feedback on game experiences."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Local Community Center",
+        "title": "Educational Assistant",
+        "start_date": "2021-09",
+        "end_date": "2022-05",
+        "responsibilities": [
+          "Assisted in the development of educational materials incorporating gamification principles.",
+          "Engaged students using interactive learning strategies to enhance participation.",
+          "Facilitated workshops on basic coding and game design for youth."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Gamification",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Instructional Design",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "User Experience Design",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Data Analysis",
+        "proficiency_level": "Beginner",
+        "years": null
+      },
+      {
+        "name": "Unity",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "HTML/CSS",
+        "proficiency_level": "Beginner",
+        "years": null
+      }
+    ],
+    "summary": null
+  }
+}

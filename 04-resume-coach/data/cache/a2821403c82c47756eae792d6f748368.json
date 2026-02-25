@@ -1,0 +1,135 @@
+{
+  "cache_key": "a2821403c82c47756eae792d6f748368",
+  "prompt_key": "resume_817678f9-4651-4fcb-b579-acad7c0eae69_excellent_formal",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T20:22:48.212075+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "+12025551234",
+      "location": "Washington, D.C.",
+      "linkedin": "https://www.linkedin.com/in/jordansmith",
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Master's in Public Administration",
+        "institution": "George Washington University",
+        "graduation_date": "2018-05",
+        "gpa": 3.9,
+        "coursework": null
+      },
+      {
+        "degree": "Bachelor's in Business Management",
+        "institution": "University of Maryland",
+        "graduation_date": "2015-05",
+        "gpa": 3.7,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "Department of Veterans Affairs",
+        "title": "Senior Program Manager",
+        "start_date": "2018-06",
+        "end_date": null,
+        "responsibilities": [
+          "Oversaw multiple government projects ensuring compliance with federal regulations.",
+          "Developed and managed project budgets exceeding $5 million.",
+          "Engaged stakeholders at all levels to ensure effective communication and project alignment.",
+          "Implemented risk assessment methodologies to identify potential project challenges.",
+          "Established performance metrics to track project progress and outcomes."
+        ],
+        "achievements": [
+          "Successfully delivered 95% of projects on time and within budget.",
+          "Achieved a 20% increase in stakeholder satisfaction through improved communication strategies."
+        ]
+      },
+      {
+        "company": "Federal Emergency Management Agency",
+        "title": "Program Manager",
+        "start_date": "2015-06",
+        "end_date": "2018-05",
+        "responsibilities": [
+          "Managed cross-functional teams for disaster response and recovery projects.",
+          "Conducted contract negotiations with various service providers.",
+          "Led change management initiatives to enhance project efficiency.",
+          "Utilized agile methodology to adapt to project changes and improve delivery times."
+        ],
+        "achievements": [
+          "Reduced project delivery times by 30% through the implementation of agile practices.",
+          "Recognized with the FEMA Achievement Award for excellence in program management."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Project Management",
+        "proficiency_level": "Expert",
+        "years": 8
+      },
+      {
+        "name": "Federal Regulations",
+        "proficiency_level": "Expert",
+        "years": 8
+      },
+      {
+        "name": "Budget Management",
+        "proficiency_level": "Expert",
+        "years": 8
+      },
+      {
+        "name": "Stakeholder Engagement",
+        "proficiency_level": "Expert",
+        "years": 8
+      },
+      {
+        "name": "Risk Assessment",
+        "proficiency_level": "Advanced",
+        "years": 6
+      },
+      {
+        "name": "Performance Metrics",
+        "proficiency_level": "Advanced",
+        "years": 6
+      },
+      {
+        "name": "Contract Negotiation",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Change Management",
+        "proficiency_level": "Advanced",
+        "years": 6
+      },
+      {
+        "name": "Agile Methodology",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Data Analysis",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Leadership Training",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Policy Development",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Community Outreach",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      }
+    ],
+    "summary": null
+  }
+}

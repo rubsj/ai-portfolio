@@ -1,0 +1,72 @@
+{
+  "cache_key": "dc9e9d5c377b3771ddfbdca6bed4cb31",
+  "prompt_key": "resume_ec566b74-8db9-4993-8684-d9020c3975e7_partial_technical",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:30:58.609056+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Alex Johnson",
+      "email": "alex.johnson@example.com",
+      "phone": "4155551234",
+      "location": "San Francisco, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts in Psychology",
+        "institution": "University of California, Berkeley",
+        "graduation_date": "2022-05-15",
+        "gpa": 3.5,
+        "coursework": [
+          "Statistics",
+          "Data Analysis",
+          "Behavioral Psychology"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Data Insights Agency",
+        "title": "Data Intern",
+        "start_date": "2022-06",
+        "end_date": "2023-05",
+        "responsibilities": [
+          "Assisted in the analysis of consumer behavior data using SQL and Python.",
+          "Conducted preliminary statistical analyses to identify trends in financial product usage.",
+          "Collaborated with marketing teams to provide insights on user engagement and retention.",
+          "Learned and utilized A/B testing methodologies to evaluate marketing strategies."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "SQL",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Python",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Excel",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Data Visualization",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Statistical Analysis",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      }
+    ],
+    "summary": null
+  }
+}

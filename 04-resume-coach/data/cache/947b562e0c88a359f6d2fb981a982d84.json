@@ -1,0 +1,38 @@
+{
+  "cache_key": "947b562e0c88a359f6d2fb981a982d84",
+  "prompt_key": "job_Energy_True_Entry",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:18:53.899606+00:00",
+  "response": {
+    "title": "Sustainable Energy Data Analyst",
+    "company": {
+      "name": "Green Innovations Inc.",
+      "industry": "Energy",
+      "size": "Mid-size (201-500)",
+      "location": "San Francisco, CA"
+    },
+    "description": "Join Green Innovations Inc. as a Sustainable Energy Data Analyst where you'll analyze data from renewable energy sources and contribute to the development of sustainable energy solutions. This role involves working with data analytics, energy systems, and environmental science to drive efficient and eco-friendly energy practices.",
+    "requirements": {
+      "required_skills": [
+        "Excel",
+        "Python",
+        "SQL",
+        "GIS",
+        "Data Visualization",
+        "Energy Modeling",
+        "Statistical Analysis",
+        "Machine Learning"
+      ],
+      "preferred_skills": [
+        "Tableau",
+        "R",
+        "ArcGIS",
+        "Cloud Computing",
+        "Energy Management Systems"
+      ],
+      "education": "Bachelor's Degree in Environmental Science, Data Science, Renewable Energy, or related field",
+      "experience_years": 0,
+      "experience_level": "Entry"
+    }
+  }
+}

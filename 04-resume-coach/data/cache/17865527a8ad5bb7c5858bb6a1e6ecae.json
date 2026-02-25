@@ -1,0 +1,95 @@
+{
+  "cache_key": "17865527a8ad5bb7c5858bb6a1e6ecae",
+  "prompt_key": "resume_6fbe0762-c752-4b60-8ff6-7337a06e2f12_partial_technical",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:32:59.427214+00:00",
+  "response": {
+    "contact_info": {
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "phone": "1234567890",
+      "location": "New York, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Science in Finance",
+        "institution": "State University",
+        "graduation_date": "2016-05",
+        "gpa": null,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "Tech Solutions Ltd.",
+        "title": "Financial Analyst",
+        "start_date": "2018-03",
+        "end_date": "2023-02",
+        "responsibilities": [
+          "Conducted financial modeling to forecast revenue and expenses.",
+          "Performed variance analysis to identify discrepancies between projected and actual results.",
+          "Collaborated with business units to assist in the budgeting process.",
+          "Created detailed reports using SQL for data extraction and analysis."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Data Insights Corp.",
+        "title": "Junior Financial Analyst",
+        "start_date": "2016-06",
+        "end_date": "2018-02",
+        "responsibilities": [
+          "Assisted in financial reporting and cash flow management.",
+          "Utilized Excel for data analysis and visualization tasks.",
+          "Helped prepare forecasts and assist in budgeting."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Financial Modeling",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      },
+      {
+        "name": "Excel VBA",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "SQL",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Forecasting",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Variance Analysis",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Budgeting",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Data Visualization",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Power BI",
+        "proficiency_level": "Beginner",
+        "years": 1
+      }
+    ],
+    "summary": null
+  }
+}

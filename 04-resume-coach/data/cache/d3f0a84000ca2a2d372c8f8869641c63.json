@@ -1,0 +1,37 @@
+{
+  "cache_key": "d3f0a84000ca2a2d372c8f8869641c63",
+  "prompt_key": "job_Legal_False_Senior",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:19:30.764882+00:00",
+  "response": {
+    "title": "Senior Corporate Counsel",
+    "company": {
+      "name": "Legal Solutions Group",
+      "industry": "Legal",
+      "size": "Mid-size (201-500)",
+      "location": "Chicago, IL"
+    },
+    "description": "We are seeking a Senior Corporate Counsel to join our dynamic legal team. The ideal candidate will provide expert legal advice on corporate governance, compliance, and transactional matters. This role requires strong analytical skills, proactive problem-solving, and the ability to work collaboratively with cross-functional teams. You will manage complex legal issues and ensure the company's operations align with regulatory requirements while supporting business growth.",
+    "requirements": {
+      "required_skills": [
+        "Corporate governance",
+        "Contract negotiation",
+        "Regulatory compliance",
+        "Mergers and acquisitions",
+        "Risk management",
+        "Legal research",
+        "Intellectual property",
+        "Litigation management"
+      ],
+      "preferred_skills": [
+        "Commercial contracts",
+        "International law",
+        "Data privacy",
+        "Employment law"
+      ],
+      "education": "Juris Doctor (JD) from an accredited law school",
+      "experience_years": 7,
+      "experience_level": "Senior"
+    }
+  }
+}

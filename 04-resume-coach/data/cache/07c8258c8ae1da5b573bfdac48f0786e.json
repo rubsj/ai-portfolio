@@ -1,0 +1,88 @@
+{
+  "cache_key": "07c8258c8ae1da5b573bfdac48f0786e",
+  "prompt_key": "resume_d2c95a25-d542-4cd6-8177-08bfc6be87f0_partial_technical",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T20:12:58.276905+00:00",
+  "response": {
+    "contact_info": {
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "phone": "1234567890",
+      "location": "New York, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Juris Doctor",
+        "institution": "New York University School of Law",
+        "graduation_date": "2015-05",
+        "gpa": null,
+        "coursework": [
+          "Corporate Law",
+          "Intellectual Property Law",
+          "Litigation"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Tech Innovations LLC",
+        "title": "Corporate Counsel",
+        "start_date": "2018-06",
+        "end_date": null,
+        "responsibilities": [
+          "Provided legal counsel on corporate governance matters and compliance issues.",
+          "Managed and negotiated contracts with various stakeholders.",
+          "Conducted legal research and analysis to support business decisions."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Small Business Legal Aid",
+        "title": "Associate Attorney",
+        "start_date": "2015-06",
+        "end_date": "2018-05",
+        "responsibilities": [
+          "Assisted in litigation management for small businesses.",
+          "Supported clients in understanding labor law requirements.",
+          "Conducted risk assessments related to client operations."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Contract Negotiation",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      },
+      {
+        "name": "Compliance Management",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Intellectual Property",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Corporate Governance",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Litigation Management",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Legal Research",
+        "proficiency_level": "Intermediate",
+        "years": 6
+      }
+    ],
+    "summary": null
+  }
+}

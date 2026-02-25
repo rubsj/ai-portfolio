@@ -1,0 +1,138 @@
+{
+  "cache_key": "979faf558be53e17fa3d7f4ec0a0915b",
+  "prompt_key": "resume_f154b48e-4ec5-408b-a22c-5387d6f32b40_excellent_formal",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:27:09.213304+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "+14155552671",
+      "location": "San Francisco, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Master's in Data Science",
+        "institution": "Stanford University",
+        "graduation_date": "2018-06",
+        "gpa": 3.9,
+        "coursework": [
+          "Healthcare Analytics",
+          "Statistical Methods",
+          "Data Visualization"
+        ]
+      },
+      {
+        "degree": "Bachelor's in Healthcare Administration",
+        "institution": "University of California, Berkeley",
+        "graduation_date": "2016-05",
+        "gpa": null,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "HealthTech Innovations",
+        "title": "Senior Healthcare Data Analyst",
+        "start_date": "2018-07",
+        "end_date": null,
+        "responsibilities": [
+          "Analyzed healthcare data sets to derive actionable insights that enhanced patient outcomes and operational processes.",
+          "Developed complex SQL queries for data extraction and reporting, ensuring data integrity and accuracy.",
+          "Utilized Python and R for statistical analysis and predictive modeling to inform decision-making in clinical settings.",
+          "Created interactive dashboards using Tableau to visualize key performance indicators and trends for stakeholders.",
+          "Collaborated with cross-functional teams to implement analytics solutions that improved patient care delivery."
+        ],
+        "achievements": [
+          "Led a project that reduced patient readmission rates by 15% through data-driven insights.",
+          "Received 'Employee of the Month' award for outstanding contributions to data analysis and reporting."
+        ]
+      },
+      {
+        "company": "MedAnalytics Corp",
+        "title": "Healthcare Data Analyst",
+        "start_date": "2016-06",
+        "end_date": "2018-06",
+        "responsibilities": [
+          "Conducted data mining and statistical analysis on large healthcare databases.",
+          "Developed and maintained data pipelines for analytical processes using SAS.",
+          "Performed data visualization using Tableau to present findings to healthcare providers and executives.",
+          "Worked with EPIC systems to extract and analyze patient data for quality improvement initiatives."
+        ],
+        "achievements": [
+          "Improved reporting efficiency by 30% through automation of data aggregation processes."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "SQL",
+        "proficiency_level": "Expert",
+        "years": 5
+      },
+      {
+        "name": "Python",
+        "proficiency_level": "Expert",
+        "years": 5
+      },
+      {
+        "name": "R",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "Tableau",
+        "proficiency_level": "Expert",
+        "years": 5
+      },
+      {
+        "name": "SAS",
+        "proficiency_level": "Advanced",
+        "years": 3
+      },
+      {
+        "name": "EPIC",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Healthcare Analytics",
+        "proficiency_level": "Expert",
+        "years": 5
+      },
+      {
+        "name": "Data Visualization",
+        "proficiency_level": "Expert",
+        "years": 5
+      },
+      {
+        "name": "Statistical Analysis",
+        "proficiency_level": "Expert",
+        "years": 5
+      },
+      {
+        "name": "Machine Learning",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Big Data",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Cloud Computing",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Data Warehousing",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      }
+    ],
+    "summary": null
+  }
+}

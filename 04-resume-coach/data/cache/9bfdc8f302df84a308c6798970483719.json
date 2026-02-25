@@ -1,0 +1,109 @@
+{
+  "cache_key": "9bfdc8f302df84a308c6798970483719",
+  "prompt_key": "resume_a586bba8-87e0-4310-b639-f18eb7491b79_good_casual",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T20:06:15.740732+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "5125551234",
+      "location": "Austin, TX",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Science in Environmental Science",
+        "institution": "University of Texas at Austin",
+        "graduation_date": "2015-05",
+        "gpa": null,
+        "coursework": [
+          "Energy Policy",
+          "Sustainable Development",
+          "Data Analysis"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "EcoEnergy Solutions",
+        "title": "Energy Analyst",
+        "start_date": "2018-06",
+        "end_date": "2023-09",
+        "responsibilities": [
+          "Conducted in-depth analysis of energy market trends to inform strategic initiatives.",
+          "Developed interactive dashboards using Data visualization tools to present insights to stakeholders.",
+          "Performed statistical analysis on energy consumption data to identify opportunities for efficiency improvements.",
+          "Collaborated with project teams on regulatory compliance for energy projects."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "GreenTech Innovations",
+        "title": "Data Analyst",
+        "start_date": "2016-06",
+        "end_date": "2018-05",
+        "responsibilities": [
+          "Utilized SQL for data extraction and manipulation to support various business units.",
+          "Created advanced Excel models for financial forecasting and budget tracking.",
+          "Assisted in project management tasks to ensure timely delivery of energy efficiency programs."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Energy market analysis",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      },
+      {
+        "name": "Data visualization",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "SQL",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Excel",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Statistical analysis",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Financial modeling",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "GIS",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Python",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Project management",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Social Media Marketing",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      }
+    ],
+    "summary": null
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "cache_key": "57df4f8d315c080ff062fe884c03e34f",
+  "prompt_key": "resume_ea004894-ac26-4788-b682-788acb0fe8ec_partial_technical",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:41:20.164704+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@example.com",
+      "phone": "1234567890",
+      "location": "New York, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Master of Education",
+        "institution": "New York University",
+        "graduation_date": "2010-05",
+        "gpa": 3.8,
+        "coursework": [
+          "Educational Leadership",
+          "Curriculum Design",
+          "Data-Driven Decision Making"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Innovative Learning Solutions",
+        "title": "Director of Academic Programs",
+        "start_date": "2015-01",
+        "end_date": null,
+        "responsibilities": [
+          "Led the development of curriculum for K-12 educational programs, enhancing student engagement and learning outcomes.",
+          "Facilitated training sessions for educators on effective teaching methodologies and data analysis techniques.",
+          "Managed academic budgets and resource allocation to align with strategic goals."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Learning Innovations Inc.",
+        "title": "Program Manager",
+        "start_date": "2012-08",
+        "end_date": "2014-12",
+        "responsibilities": [
+          "Conducted program evaluations to assess the effectiveness of educational programs and make data-informed recommendations.",
+          "Engaged with stakeholders to gather feedback and ensure compliance with educational standards."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Curriculum Development",
+        "proficiency_level": "Intermediate",
+        "years": 7
+      },
+      {
+        "name": "Educational Leadership",
+        "proficiency_level": "Intermediate",
+        "years": 7
+      },
+      {
+        "name": "Data Analysis",
+        "proficiency_level": "Beginner",
+        "years": 3
+      },
+      {
+        "name": "Compliance Standards",
+        "proficiency_level": "Beginner",
+        "years": 2
+      },
+      {
+        "name": "Budget Management",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      },
+      {
+        "name": "Stakeholder Engagement",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      }
+    ],
+    "summary": null
+  }
+}

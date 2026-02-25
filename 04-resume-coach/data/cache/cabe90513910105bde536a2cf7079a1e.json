@@ -1,0 +1,117 @@
+{
+  "cache_key": "cabe90513910105bde536a2cf7079a1e",
+  "prompt_key": "resume_db818a3f-8de7-49b5-9c79-af68101c3844_good_casual",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:35:08.655844+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "1234567890",
+      "location": "New York, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Master's in Finance",
+        "institution": "Columbia University",
+        "graduation_date": "2010-05",
+        "gpa": null,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "FinTech Innovations",
+        "title": "Vice President of Finance",
+        "start_date": "2015-03",
+        "end_date": null,
+        "responsibilities": [
+          "Led the financial strategy and operational initiatives across the organization.",
+          "Developed complex financial models to forecast performance and guide strategic decisions.",
+          "Collaborated with executive teams to align business and financial strategies.",
+          "Managed budgeting and forecasting processes to enhance financial transparency.",
+          "Implemented cash flow management tactics to optimize working capital."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Bayside Investment Group",
+        "title": "Finance Manager",
+        "start_date": "2010-06",
+        "end_date": "2015-02",
+        "responsibilities": [
+          "Oversaw financial reporting and compliance with regulatory guidelines.",
+          "Developed and maintained performance metrics for financial analysis.",
+          "Executed budgeting processes and provided insights on investment management.",
+          "Conducted risk management assessments to identify financial vulnerabilities."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Financial modeling",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Risk management",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Mergers and acquisitions",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      },
+      {
+        "name": "Regulatory compliance",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Budgeting",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Financial reporting",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Cash flow management",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Data analytics",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "ERP systems",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Investment management",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Performance metrics",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Social Media Marketing",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      }
+    ],
+    "summary": null
+  }
+}

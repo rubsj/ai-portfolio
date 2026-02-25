@@ -1,0 +1,36 @@
+{
+  "cache_key": "f72b0c1aab61c66086340d8b3e291bbf",
+  "prompt_key": "job_Legal_False_Mid",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:19:25.541327+00:00",
+  "response": {
+    "title": "Mid-Level Corporate Attorney",
+    "company": {
+      "name": "Smith & Associates Law Firm",
+      "industry": "Legal",
+      "size": "Mid-size (201-500)",
+      "location": "New York, NY"
+    },
+    "description": "Smith & Associates Law Firm is seeking a Mid-Level Corporate Attorney to join our dynamic legal team. The ideal candidate will have experience in corporate law and will be responsible for providing legal counsel on various corporate matters, including mergers and acquisitions, compliance, and corporate governance. The role requires strong analytical skills and the ability to work collaboratively with clients and colleagues.",
+    "requirements": {
+      "required_skills": [
+        "Corporate law",
+        "Mergers and acquisitions",
+        "Contract drafting",
+        "Compliance regulations",
+        "Legal research",
+        "Negotiation skills",
+        "Due diligence",
+        "Corporate governance"
+      ],
+      "preferred_skills": [
+        "Real estate law",
+        "Intellectual property",
+        "Tax law"
+      ],
+      "education": "Juris Doctor (JD) from an accredited law school",
+      "experience_years": 3,
+      "experience_level": "Mid"
+    }
+  }
+}

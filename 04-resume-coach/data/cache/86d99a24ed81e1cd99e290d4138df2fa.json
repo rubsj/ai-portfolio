@@ -1,0 +1,39 @@
+{
+  "cache_key": "86d99a24ed81e1cd99e290d4138df2fa",
+  "prompt_key": "job_Marketing_False_Executive",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:20:27.859761+00:00",
+  "response": {
+    "title": "Chief Marketing Officer (CMO)",
+    "company": {
+      "name": "Innovative Marketing Solutions",
+      "industry": "Marketing",
+      "size": "Enterprise (500+)",
+      "location": "New York, NY"
+    },
+    "description": "As the Chief Marketing Officer (CMO) at Innovative Marketing Solutions, you will be responsible for driving the company's marketing strategy and overseeing all marketing activities to enhance brand awareness, engage customers, and drive revenue growth. This executive position requires a visionary leader who can leverage market data and consumer insights to develop effective marketing initiatives while managing a high-performing team.",
+    "requirements": {
+      "required_skills": [
+        "Digital Marketing",
+        "Brand Strategy",
+        "Content Marketing",
+        "Market Research",
+        "SEO Optimization",
+        "Data Analytics",
+        "Campaign Management",
+        "Social Media Advertising",
+        "P&L Management"
+      ],
+      "preferred_skills": [
+        "Marketing Automation",
+        "Email Marketing",
+        "Lead Generation",
+        "Customer Relationship Management",
+        "User Experience Design"
+      ],
+      "education": "Master's degree in Marketing, Business Administration, or related field",
+      "experience_years": 10,
+      "experience_level": "Executive"
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "cache_key": "4077a1b9927657bf11440ca3922171b7",
+  "prompt_key": "resume_cb6e5caf-e397-4515-bc58-c916b224c911_partial_technical",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T20:17:02.815596+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@example.com",
+      "phone": "+1234567890",
+      "location": "New York, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor's Degree",
+        "institution": "New York University",
+        "graduation_date": "2018-05",
+        "gpa": null,
+        "coursework": [
+          "Marketing Strategy",
+          "Consumer Behavior",
+          "Digital Marketing"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Digital Marketing Agency",
+        "title": "Marketing Coordinator",
+        "start_date": "2019-06",
+        "end_date": "2021-05",
+        "responsibilities": [
+          "Assisted in the execution of digital marketing campaigns to increase brand awareness.",
+          "Collaborated with the content team to create engaging blog posts and social media updates.",
+          "Monitored campaign performance using Google Analytics to report on key metrics.",
+          "Conducted A/B testing for email marketing campaigns to optimize open and click rates."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Tech Retail Company",
+        "title": "Marketing Associate",
+        "start_date": "2021-06",
+        "end_date": null,
+        "responsibilities": [
+          "Supported the development of content marketing strategies to promote new products.",
+          "Engaged with customers on social media platforms to enhance brand visibility.",
+          "Coordinated PPC campaigns to drive traffic and sales through targeted advertisements."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "SEO",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Google Analytics",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Content Marketing",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Email Marketing",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "A/B Testing",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Social Media Advertising",
+        "proficiency_level": "Beginner",
+        "years": 1
+      }
+    ],
+    "summary": null
+  }
+}

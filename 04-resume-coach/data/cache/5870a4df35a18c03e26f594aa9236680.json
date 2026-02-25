@@ -1,0 +1,135 @@
+{
+  "cache_key": "5870a4df35a18c03e26f594aa9236680",
+  "prompt_key": "resume_0f375e2f-59c7-4aaf-a5b2-65ecbd24aa22_good_casual",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T20:21:58.648185+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "2025551234",
+      "location": "Washington, D.C.",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Master's in Public Policy",
+        "institution": "George Washington University",
+        "graduation_date": "2016-05",
+        "gpa": 3.8,
+        "coursework": [
+          "Policy Analysis",
+          "Quantitative Methods",
+          "Public Finance"
+        ]
+      },
+      {
+        "degree": "Bachelor's in Political Science",
+        "institution": "University of Maryland",
+        "graduation_date": "2014-05",
+        "gpa": 3.5,
+        "coursework": [
+          "Political Theory",
+          "International Relations",
+          "Research Methods"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "National Policy Institute",
+        "title": "Policy Analyst",
+        "start_date": "2017-06",
+        "end_date": "2023-09",
+        "responsibilities": [
+          "Conducted comprehensive research on various governmental policies impacting the public sector.",
+          "Collaborated with stakeholders to gather insights and perspectives on policy implications.",
+          "Prepared detailed reports and presentations for senior management and external partners.",
+          "Analyzed data trends and interpreted results to inform policy recommendations."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Smith Consulting Group",
+        "title": "Research Assistant",
+        "start_date": "2015-06",
+        "end_date": "2017-05",
+        "responsibilities": [
+          "Assisted in legislative research and analysis for public sector clients.",
+          "Helped design and conduct surveys to gather public opinion on policy issues.",
+          "Coordinated workshops for stakeholders to discuss research findings."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Policy Analysis",
+        "proficiency_level": "Advanced",
+        "years": 6
+      },
+      {
+        "name": "Legislative Research",
+        "proficiency_level": "Advanced",
+        "years": 6
+      },
+      {
+        "name": "Data Interpretation",
+        "proficiency_level": "Advanced",
+        "years": 6
+      },
+      {
+        "name": "Stakeholder Engagement",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      },
+      {
+        "name": "Report Writing",
+        "proficiency_level": "Advanced",
+        "years": 6
+      },
+      {
+        "name": "Quantitative Analysis",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Public Speaking",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Grant Writing",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Project Management",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Statistical Software",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Survey Design",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Public Affairs",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Excel",
+        "proficiency_level": "Advanced",
+        "years": 5
+      }
+    ],
+    "summary": null
+  }
+}

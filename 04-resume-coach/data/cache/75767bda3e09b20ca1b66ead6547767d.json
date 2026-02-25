@@ -1,0 +1,73 @@
+{
+  "cache_key": "75767bda3e09b20ca1b66ead6547767d",
+  "prompt_key": "resume_f4ef0846-5a25-4891-b32b-12ca1f5483d7_partial_technical",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T20:20:11.950043+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@example.com",
+      "phone": "+12065551234",
+      "location": "Washington, D.C.",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts in Public Policy",
+        "institution": "George Washington University",
+        "graduation_date": "2022-05",
+        "gpa": 3.6,
+        "coursework": [
+          "Data Analysis Techniques",
+          "Public Policy Development",
+          "Quantitative Research Methods",
+          "Statistical Analysis"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Data Insights Group",
+        "title": "Data Analyst Intern",
+        "start_date": "2022-06",
+        "end_date": "2023-08",
+        "responsibilities": [
+          "Assisted in analyzing data sets to identify trends impacting public policy.",
+          "Utilized Excel for data manipulation and preliminary analysis.",
+          "Created data visualizations using Tableau to present findings to the team.",
+          "Collaborated with senior analysts to prepare reports on data insights."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Data Analysis",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Excel",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "SQL",
+        "proficiency_level": "Beginner",
+        "years": 0
+      },
+      {
+        "name": "Tableau",
+        "proficiency_level": "Beginner",
+        "years": 0
+      },
+      {
+        "name": "Public Policy",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      }
+    ],
+    "summary": "Motivated public policy graduate with hands-on experience in data analysis and visualization. Seeking to leverage analytical skills to support impactful public policy development."
+  }
+}

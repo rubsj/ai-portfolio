@@ -1,0 +1,79 @@
+{
+  "cache_key": "bcc94fbe0c422251cf7cb224b26d6d8f",
+  "prompt_key": "resume_db6cb15c-148f-4fd0-a6c6-6be33b44c033_poor_achievement",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:23:59.877317+00:00",
+  "response": {
+    "contact_info": {
+      "name": "John Doe",
+      "email": "john.doe@email.com",
+      "phone": "1234567890",
+      "location": "Los Angeles, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts",
+        "institution": "University of California, Los Angeles",
+        "graduation_date": "2019-06",
+        "gpa": null,
+        "coursework": [
+          "Digital Media",
+          "Graphic Design"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Creative Design Studios",
+        "title": "Junior Graphic Designer",
+        "start_date": "2019-07",
+        "end_date": null,
+        "responsibilities": [
+          "Collaborated with senior designers to create visual content for various marketing campaigns.",
+          "Assisted in the development of a new branding strategy with a focus on digital platforms."
+        ],
+        "achievements": [
+          "Increased social media engagement by 25% through innovative design."
+        ]
+      },
+      {
+        "company": "Tech Solutions Co.",
+        "title": "Technical Support Specialist",
+        "start_date": "2020-01",
+        "end_date": "2021-08",
+        "responsibilities": [
+          "Provided technical support for software applications in a customer service environment.",
+          "Trained new staff on software usage and troubleshooting techniques."
+        ],
+        "achievements": [
+          "Resolved 90% of support tickets within the first 48 hours."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Java",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Git",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Photoshop",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "Illustrator",
+        "proficiency_level": "Advanced",
+        "years": 4
+      }
+    ],
+    "summary": "Creative professional with a background in graphic design and technical support, seeking to transition into software engineering."
+  }
+}

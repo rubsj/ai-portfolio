@@ -1,0 +1,100 @@
+{
+  "cache_key": "5c1043b016b28204a35e07e2c1b68819",
+  "prompt_key": "resume_0aa78cbe-6c04-4ed6-85f0-7bddd406c950_good_casual",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T20:13:43.849660+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@example.com",
+      "phone": "5551234567",
+      "location": "New York, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Juris Doctor",
+        "institution": "New York University School of Law",
+        "graduation_date": "2010-05",
+        "gpa": null,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "Prestige Legal Group",
+        "title": "Senior Legal Counsel",
+        "start_date": "2015-06",
+        "end_date": null,
+        "responsibilities": [
+          "Provided strategic guidance on corporate governance and compliance regulations.",
+          "Managed complex litigation cases, ensuring effective resolution and risk mitigation.",
+          "Oversaw contract negotiations and drafted agreements to protect organizational interests.",
+          "Collaborated with executive leadership to align legal strategies with business objectives."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Innovate Law Firm",
+        "title": "Associate Attorney",
+        "start_date": "2010-07",
+        "end_date": "2015-05",
+        "responsibilities": [
+          "Conducted legal research to support litigation and compliance efforts.",
+          "Assisted in mergers and acquisitions, ensuring legal and regulatory compliance.",
+          "Provided legal advice on intellectual property matters."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Corporate Governance",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Contract Law",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Litigation Management",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Compliance Regulations",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Intellectual Property",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      },
+      {
+        "name": "Negotiation Skills",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Data Privacy",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Team Leadership",
+        "proficiency_level": "Intermediate",
+        "years": 6
+      },
+      {
+        "name": "Dispute Resolution",
+        "proficiency_level": "Beginner",
+        "years": 1
+      }
+    ],
+    "summary": null
+  }
+}

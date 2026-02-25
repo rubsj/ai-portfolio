@@ -1,0 +1,113 @@
+{
+  "cache_key": "e7810ed7d93dbfeb0fe5dec7ab23e6bb",
+  "prompt_key": "resume_83990341-d839-4930-83e9-4bfd025e16dc_excellent_formal",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T20:14:37.248279+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "1234567890",
+      "location": "San Francisco, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor's Degree in Marketing",
+        "institution": "University of California, Berkeley",
+        "graduation_date": "2021-05",
+        "gpa": 3.8,
+        "coursework": [
+          "Digital Marketing Strategies",
+          "User Experience Design",
+          "Content Creation and Management"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Creative Digital Agency",
+        "title": "Digital Marketing Intern",
+        "start_date": "2021-06",
+        "end_date": "2022-05",
+        "responsibilities": [
+          "Assisted in the design and implementation of digital marketing campaigns.",
+          "Utilized Google Analytics to track and analyze website traffic and user behavior.",
+          "Managed social media accounts, creating engaging content and monitoring audience interaction.",
+          "Performed A/B testing on various marketing materials to determine effectiveness.",
+          "Contributed to the development of user-friendly content for the agency's website."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Adobe Creative Suite",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Google Analytics",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "HTML",
+        "proficiency_level": "Beginner",
+        "years": 0
+      },
+      {
+        "name": "SEO",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Social Media Management",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Content Management Systems",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "A/B Testing",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "User Experience Design",
+        "proficiency_level": "Beginner",
+        "years": 0
+      },
+      {
+        "name": "Copywriting",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "WordPress",
+        "proficiency_level": "Beginner",
+        "years": 0
+      },
+      {
+        "name": "Email Marketing Tools",
+        "proficiency_level": "Beginner",
+        "years": 0
+      },
+      {
+        "name": "Data Visualization",
+        "proficiency_level": "Beginner",
+        "years": 0
+      },
+      {
+        "name": "Digital Photography",
+        "proficiency_level": "Beginner",
+        "years": 0
+      }
+    ],
+    "summary": "Detail-oriented and creative marketing professional specializing in digital experiences, seeking to leverage skills in Adobe Creative Suite, Google Analytics, and SEO to enhance client online presence."
+  }
+}

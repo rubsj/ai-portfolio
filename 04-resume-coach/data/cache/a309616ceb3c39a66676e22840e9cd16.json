@@ -1,0 +1,75 @@
+{
+  "cache_key": "a309616ceb3c39a66676e22840e9cd16",
+  "prompt_key": "resume_f491ce6f-7871-4ba6-ab5c-48ee7acd5521_poor_achievement",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T20:21:17.480988+00:00",
+  "response": {
+    "contact_info": {
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "phone": "1234567890",
+      "location": "Los Angeles, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts in Sociology",
+        "institution": "University of California, Los Angeles",
+        "graduation_date": "2020-06-15",
+        "gpa": 3.5,
+        "coursework": [
+          "Social Research",
+          "Cultural Studies",
+          "Statistics"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Community Outreach Program",
+        "title": "Program Coordinator",
+        "start_date": "2021-08",
+        "end_date": null,
+        "responsibilities": [
+          "Coordinated community events to raise awareness about social issues.",
+          "Managed volunteers and organized outreach activities.",
+          "Assisted in gathering feedback from community members."
+        ],
+        "achievements": [
+          "Increased community participation in events by 25% over one year.",
+          "Developed partnerships with local organizations to enhance outreach efforts."
+        ]
+      },
+      {
+        "company": "Local Non-Profit Organization",
+        "title": "Intern",
+        "start_date": "2020-01",
+        "end_date": "2021-05",
+        "responsibilities": [
+          "Provided administrative support to project managers.",
+          "Conducted basic data entry and maintained project records."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Data Entry",
+        "proficiency_level": "Beginner",
+        "years": 2
+      },
+      {
+        "name": "Event Coordination",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Public Speaking",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      }
+    ],
+    "summary": "Dedicated sociology graduate with experience in community outreach and program coordination. Aiming to leverage skills in public speaking and event coordination in a policy analysis role."
+  }
+}

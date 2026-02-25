@@ -1,0 +1,85 @@
+{
+  "cache_key": "c7262c0e9a91b55188881c59723d429c",
+  "prompt_key": "resume_84add8b1-86f8-4f12-9d48-1207e14df353_mismatch_career_changer",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:38:16.664884+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@example.com",
+      "phone": "4155551234",
+      "location": "New York, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor's Degree in Music",
+        "institution": "New York University",
+        "graduation_date": "2019-05-01",
+        "gpa": null,
+        "coursework": [
+          "Music Theory",
+          "Composition",
+          "Music History",
+          "Music Education"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Harmony Music Academy",
+        "title": "Music Instructor",
+        "start_date": "2019-08",
+        "end_date": "2023-08",
+        "responsibilities": [
+          "Developed lesson plans for students of various skill levels in various music disciplines.",
+          "Conducted individual and group lessons to enhance student musical abilities.",
+          "Organized and managed student performances, including recitals and competitions.",
+          "Collaborated with other instructors to create a cohesive learning environment."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Sound Innovations Studio",
+        "title": "Audio Technician",
+        "start_date": "2018-05",
+        "end_date": "2019-06",
+        "responsibilities": [
+          "Managed audio equipment during recording sessions for local artists.",
+          "Assisted in mixing and mastering audio tracks to achieve high-quality sound.",
+          "Coordinated with artists and producers to ensure project goals were met."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Music Composition",
+        "proficiency_level": "Expert",
+        "years": 5
+      },
+      {
+        "name": "Audio Engineering",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Piano",
+        "proficiency_level": "Expert",
+        "years": 15
+      },
+      {
+        "name": "Guitar",
+        "proficiency_level": "Intermediate",
+        "years": 10
+      },
+      {
+        "name": "Music Theory",
+        "proficiency_level": "Expert",
+        "years": 5
+      }
+    ],
+    "summary": "Creative and dedicated music instructor with a strong background in music composition and performance. Experienced in developing engaging lesson plans and fostering a supportive learning environment for students. Passionate about the arts and committed to enhancing artistic expression."
+  }
+}

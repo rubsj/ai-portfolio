@@ -1,0 +1,92 @@
+{
+  "cache_key": "d6085ad8d969033e640b3f9aca05e81c",
+  "prompt_key": "resume_deb5f0d0-dc86-412b-a3fe-b015a0a071fa_partial_technical",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T20:01:36.400560+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jessica L. Morgan",
+      "email": "jessica.morgan@example.com",
+      "phone": "+12125551234",
+      "location": "New York, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Science in Business Administration",
+        "institution": "New York University",
+        "graduation_date": "2018-05",
+        "gpa": null,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "Urban Outfitters",
+        "title": "Retail Operations Supervisor",
+        "start_date": "2020-06",
+        "end_date": null,
+        "responsibilities": [
+          "Supervised daily operations and ensured compliance with retail policies.",
+          "Led a team of 10 sales associates and provided ongoing training and performance feedback.",
+          "Implemented inventory management procedures that improved stock accuracy by 15%.",
+          "Analyzed sales data to forecast trends and adjust product placement and promotions."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Target",
+        "title": "Sales Associate",
+        "start_date": "2018-06",
+        "end_date": "2020-05",
+        "responsibilities": [
+          "Assisted customers with product inquiries and provided exceptional service.",
+          "Contributed to visual merchandising efforts to enhance store presentation.",
+          "Collaborated with team members to achieve sales targets and improve customer satisfaction."
+        ],
+        "achievements": [
+          "Awarded 'Employee of the Month' for outstanding sales performance in December 2019."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Inventory Management",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Team Leadership",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Customer Relationship Management",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Operational Strategy",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Data Analysis",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Visual Merchandising",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Project Management",
+        "proficiency_level": "Beginner",
+        "years": null
+      }
+    ],
+    "summary": "Dedicated retail operations professional with over 3 years of experience in retail management. Proven ability to lead teams, manage inventory, and enhance customer experiences."
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "cache_key": "e36185cdeaa3c65c7e15f4010d6eebf8",
+  "prompt_key": "resume_ce6f22f5-d32f-4881-99e1-5507c48ad27c_excellent_formal",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:36:12.044388+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@example.com",
+      "phone": "+1234567890",
+      "location": "Remote",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts in Game Design",
+        "institution": "University of California, Berkeley",
+        "graduation_date": "2022-05",
+        "gpa": 3.8,
+        "coursework": [
+          "Game Development",
+          "User Experience Design",
+          "Educational Technology",
+          "Digital Media Production"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Creative Learning Innovations",
+        "title": "EdTech Intern",
+        "start_date": "2022-06",
+        "end_date": "2023-06",
+        "responsibilities": [
+          "Assisted in the design and implementation of game-based learning modules for K-12 education.",
+          "Collaborated with educators to identify learning objectives and develop engaging content.",
+          "Conducted data analysis to evaluate the effectiveness of gamification strategies on student engagement.",
+          "Maintained and updated Learning Management Systems to ensure accessibility of educational resources.",
+          "Created graphics and user interfaces to enhance user experience in educational applications."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Gamification principles",
+        "proficiency_level": "Advanced",
+        "years": 1
+      },
+      {
+        "name": "Instructional design",
+        "proficiency_level": "Advanced",
+        "years": 1
+      },
+      {
+        "name": "Data analysis",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Learning Management Systems",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "User experience design",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Graphic design",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Basic coding",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Project management",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Content creation",
+        "proficiency_level": "Advanced",
+        "years": 1
+      },
+      {
+        "name": "Adobe Creative Suite",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "HTML/CSS",
+        "proficiency_level": "Beginner",
+        "years": 0
+      }
+    ],
+    "summary": "Dedicated EdTech professional with a strong background in game design and instructional strategies. Experienced in developing engaging, gamified learning experiences tailored for diverse educational environments."
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "cache_key": "7ecb6f843144d86a1ab46e229b584389",
+  "prompt_key": "resume_c1482334-cde0-4c2f-96dd-2d0d21beeac2_excellent_formal",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T20:18:40.708232+00:00",
+  "response": {
+    "contact_info": {
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "phone": "+1-234-567-8901",
+      "location": "New York, NY",
+      "linkedin": "https://www.linkedin.com/in/johndoe",
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Master of Business Administration",
+        "institution": "Columbia University",
+        "graduation_date": "2015-05",
+        "gpa": 3.9,
+        "coursework": [
+          "Marketing Strategy",
+          "Consumer Behavior",
+          "Data Analytics"
+        ]
+      },
+      {
+        "degree": "Bachelor of Arts in Marketing",
+        "institution": "University of California, Berkeley",
+        "graduation_date": "2010-05",
+        "gpa": 3.8,
+        "coursework": [
+          "Digital Marketing",
+          "Brand Management",
+          "Market Research"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Marketing Innovations Inc.",
+        "title": "Chief Marketing Officer",
+        "start_date": "2018-01",
+        "end_date": null,
+        "responsibilities": [
+          "Developed and executed comprehensive marketing strategies to enhance brand awareness and drive revenue growth.",
+          "Led a team of 30 marketing professionals to implement innovative digital marketing campaigns.",
+          "Utilized market research and consumer insights to inform marketing initiatives and product development.",
+          "Managed P&L for the marketing department, ensuring efficient allocation of resources and budget adherence.",
+          "Analyzed campaign performance data to optimize ongoing marketing efforts and increase ROI."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "NextGen Marketing Solutions",
+        "title": "Director of Marketing",
+        "start_date": "2015-06",
+        "end_date": "2017-12",
+        "responsibilities": [
+          "Oversaw the development and execution of content marketing strategies resulting in a 50% increase in customer engagement.",
+          "Implemented SEO optimization techniques that improved organic search rankings, leading to an increase in website traffic by 60%.",
+          "Managed social media advertising campaigns across multiple platforms, driving a 40% increase in lead generation.",
+          "Conducted market research to identify trends and adapt marketing strategies accordingly."
+        ],
+        "achievements": [
+          "Awarded 'Best Marketing Campaign' at the National Marketing Awards in 2016."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Digital Marketing",
+        "proficiency_level": "Expert",
+        "years": 8
+      },
+      {
+        "name": "Brand Strategy",
+        "proficiency_level": "Expert",
+        "years": 8
+      },
+      {
+        "name": "Content Marketing",
+        "proficiency_level": "Expert",
+        "years": 7
+      },
+      {
+        "name": "Market Research",
+        "proficiency_level": "Expert",
+        "years": 8
+      },
+      {
+        "name": "SEO Optimization",
+        "proficiency_level": "Advanced",
+        "years": 7
+      },
+      {
+        "name": "Data Analytics",
+        "proficiency_level": "Expert",
+        "years": 8
+      },
+      {
+        "name": "Campaign Management",
+        "proficiency_level": "Expert",
+        "years": 8
+      },
+      {
+        "name": "Social Media Advertising",
+        "proficiency_level": "Expert",
+        "years": 6
+      },
+      {
+        "name": "P&L Management",
+        "proficiency_level": "Expert",
+        "years": 5
+      },
+      {
+        "name": "Marketing Automation",
+        "proficiency_level": "Advanced",
+        "years": 6
+      },
+      {
+        "name": "Email Marketing",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Lead Generation",
+        "proficiency_level": "Expert",
+        "years": 7
+      },
+      {
+        "name": "Customer Relationship Management",
+        "proficiency_level": "Advanced",
+        "years": 6
+      },
+      {
+        "name": "User Experience Design",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      }
+    ],
+    "summary": "Results-driven marketing executive with over 10 years of experience in leading high-performing teams and executing innovative marketing strategies. Proven track record in driving brand growth and increasing revenue through data-driven decision-making and exceptional leadership."
+  }
+}

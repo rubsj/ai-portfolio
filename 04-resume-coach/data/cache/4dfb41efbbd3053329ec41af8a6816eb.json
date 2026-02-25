@@ -1,0 +1,92 @@
+{
+  "cache_key": "4dfb41efbbd3053329ec41af8a6816eb",
+  "prompt_key": "resume_e21429e6-ae08-4841-8f9d-da245d090e99_mismatch_career_changer",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:34:31.379498+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "1234567890",
+      "location": "Los Angeles, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts in Graphic Design",
+        "institution": "Art Institute of California",
+        "graduation_date": "2012-06",
+        "gpa": null,
+        "coursework": [
+          "Digital Media Design",
+          "Typography",
+          "User Experience Design"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Creative Solutions Agency",
+        "title": "Senior Graphic Designer",
+        "start_date": "2015-02",
+        "end_date": "2023-06",
+        "responsibilities": [
+          "Led the design and implementation of branding projects for clients across various industries.",
+          "Collaborated with cross-functional teams to deliver cohesive design solutions.",
+          "Utilized Adobe Creative Suite to create visual assets for digital and print media.",
+          "Conducted client presentations to communicate design concepts and gather feedback."
+        ],
+        "achievements": [
+          "Successfully rebranded a major client's visual identity, enhancing their market presence.",
+          "Streamlined design workflow processes, reducing project turnaround time by 30%."
+        ]
+      },
+      {
+        "company": "Freelance Graphic Designer",
+        "title": "Freelancer",
+        "start_date": "2012-08",
+        "end_date": "2015-01",
+        "responsibilities": [
+          "Developed unique design concepts for various clients in the fashion and tech industries.",
+          "Managed multiple design projects from initial concept to final delivery within deadlines.",
+          "Created digital graphics for social media marketing campaigns, enhancing client engagement."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Adobe Creative Suite",
+        "proficiency_level": "Expert",
+        "years": 8
+      },
+      {
+        "name": "UI/UX Design",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Digital Marketing",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Brand Development",
+        "proficiency_level": "Expert",
+        "years": 8
+      },
+      {
+        "name": "HTML",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "CSS",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      }
+    ],
+    "summary": "Creative and detail-oriented Graphic Designer with over 8 years of experience in developing innovative branding and design solutions. Proven ability to lead projects and deliver compelling visuals that resonate with target audiences. Skilled in Adobe Creative Suite and proficient in UI/UX principles."
+  }
+}

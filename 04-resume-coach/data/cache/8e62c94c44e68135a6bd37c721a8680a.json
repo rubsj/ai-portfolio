@@ -1,0 +1,74 @@
+{
+  "cache_key": "8e62c94c44e68135a6bd37c721a8680a",
+  "prompt_key": "resume_a662a120-6edd-4628-90de-328ebb3c376b_poor_achievement",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:40:18.548227+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Laura Thompson",
+      "email": "laura.thompson@email.com",
+      "phone": "5551234567",
+      "location": "Los Angeles, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor's Degree in Business Administration",
+        "institution": "University of California, Los Angeles",
+        "graduation_date": "2018-06",
+        "gpa": null,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "ABC Marketing Group",
+        "title": "Marketing Coordinator",
+        "start_date": "2020-01",
+        "end_date": null,
+        "responsibilities": [
+          "Assisted in the development of marketing materials for various campaigns.",
+          "Conducted market research to identify potential clients.",
+          "Collaborated with graphic designers to create promotional content."
+        ],
+        "achievements": [
+          "Increased brand awareness by 15% through targeted social media campaigns.",
+          "Managed a budget of $20,000 for marketing events."
+        ]
+      },
+      {
+        "company": "XYZ Non-Profit Organization",
+        "title": "Event Planner",
+        "start_date": "2018-09",
+        "end_date": "2019-12",
+        "responsibilities": [
+          "Organized fundraising events to support educational programs.",
+          "Coordinated logistics with vendors and sponsors."
+        ],
+        "achievements": [
+          "Raised over $50,000 for community education initiatives.",
+          "Increased attendance at events by 30% through effective outreach."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Project Management",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Data Analysis",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Event Planning",
+        "proficiency_level": "Advanced",
+        "years": 4
+      }
+    ],
+    "summary": "Detail-oriented marketing and event planning professional with a background in business administration. Experienced in project management and data analysis, seeking to leverage skills in a new domain."
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "cache_key": "673792fe9a01108c3853eb122bb22865",
+  "prompt_key": "resume_f491ce6f-7871-4ba6-ab5c-48ee7acd5521_excellent_formal",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T20:20:45.943962+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "2025550132",
+      "location": "Washington, D.C.",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts in Political Science",
+        "institution": "University of Washington",
+        "graduation_date": "2019-05",
+        "gpa": 3.8,
+        "coursework": [
+          "Public Policy Analysis",
+          "Statistical Methods",
+          "Political Theory"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Department of Justice",
+        "title": "Policy Analyst",
+        "start_date": "2019-06",
+        "end_date": "2023-09",
+        "responsibilities": [
+          "Conducted comprehensive research on policy issues affecting local communities.",
+          "Analyzed data sets using statistical software to evaluate the impact of proposed policies.",
+          "Collaborated with stakeholders including government officials and community organizations to gather input on policy initiatives.",
+          "Prepared detailed reports and policy briefs to communicate findings and recommendations.",
+          "Facilitated workshops to engage diverse groups in discussions about policy changes."
+        ],
+        "achievements": [
+          "Developed a policy recommendation that led to a 15% increase in community engagement in local government initiatives.",
+          "Received the 'Outstanding Contributor' award for collaborative efforts on a statewide policy reform project."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Data Analysis",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "Policy Research",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "Statistical Software",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "Report Writing",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "Stakeholder Engagement",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "Project Management",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Public Speaking",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Quantitative Analysis",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      }
+    ],
+    "summary": "Results-driven Policy Analyst with over four years of experience in research, data analysis, and stakeholder engagement. Proven track record of developing evidence-based policy recommendations and facilitating community involvement. Strong communication skills with a focus on collaborative problem-solving."
+  }
+}

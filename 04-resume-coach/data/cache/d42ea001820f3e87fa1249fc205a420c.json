@@ -1,0 +1,37 @@
+{
+  "cache_key": "d42ea001820f3e87fa1249fc205a420c",
+  "prompt_key": "job_Energy_False_Mid",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:18:59.221991+00:00",
+  "response": {
+    "title": "Energy Analyst",
+    "company": {
+      "name": "GreenTech Energy Solutions",
+      "industry": "Energy",
+      "size": "Mid-size (201-500)",
+      "location": "San Francisco, CA"
+    },
+    "description": "GreenTech Energy Solutions is seeking a motivated and detail-oriented Energy Analyst to join our dynamic team. The ideal candidate will analyze energy data, develop insights and recommendations, and support projects aimed at improving energy efficiency and sustainability. This role involves collaboration with cross-functional teams and requires a strong analytical mindset.",
+    "requirements": {
+      "required_skills": [
+        "Energy modeling",
+        "Data analysis",
+        "Excel",
+        "SQL",
+        "Energy efficiency",
+        "Renewable energy systems",
+        "Report generation",
+        "Statistical analysis"
+      ],
+      "preferred_skills": [
+        "Python",
+        "R",
+        "GIS",
+        "Power BI"
+      ],
+      "education": "Bachelor's degree in Environmental Science, Energy Management, or related field",
+      "experience_years": 3,
+      "experience_level": "Mid"
+    }
+  }
+}

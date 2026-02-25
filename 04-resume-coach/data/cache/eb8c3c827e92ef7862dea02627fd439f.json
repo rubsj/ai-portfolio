@@ -1,0 +1,96 @@
+{
+  "cache_key": "eb8c3c827e92ef7862dea02627fd439f",
+  "prompt_key": "resume_6cd86b40-b3b2-43c0-84b9-cfbe3f4cbbd7_partial_technical",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:59:04.080184+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Alex Johnson",
+      "email": "alex.johnson@email.com",
+      "phone": "+1234567890",
+      "location": "Brooklyn, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor's Degree in Business Administration",
+        "institution": "Brooklyn College",
+        "graduation_date": "2019-05",
+        "gpa": null,
+        "coursework": [
+          "Retail Management",
+          "Marketing Principles",
+          "Financial Accounting",
+          "Business Analytics"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "City Retail Stores",
+        "title": "Assistant Store Manager",
+        "start_date": "2020-06",
+        "end_date": null,
+        "responsibilities": [
+          "Assisted in managing daily operations of the retail store.",
+          "Oversaw inventory management, ensuring stock levels were maintained.",
+          "Trained new sales associates on customer service strategies.",
+          "Conducted sales forecasting and prepared weekly sales reports.",
+          "Implemented visual merchandising strategies to enhance store layout."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Local E-commerce Startup",
+        "title": "Customer Service Representative",
+        "start_date": "2019-07",
+        "end_date": "2020-05",
+        "responsibilities": [
+          "Handled customer inquiries and resolved issues efficiently.",
+          "Worked collaboratively with the sales team to enhance customer satisfaction.",
+          "Utilized CRM software to manage customer interactions."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Inventory Management",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Sales Forecasting",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Customer Service",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Team Leadership",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Data Analysis",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Visual Merchandising",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Point of Sale (POS)",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      }
+    ],
+    "summary": null
+  }
+}

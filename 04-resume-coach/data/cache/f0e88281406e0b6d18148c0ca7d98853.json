@@ -1,0 +1,76 @@
+{
+  "cache_key": "f0e88281406e0b6d18148c0ca7d98853",
+  "prompt_key": "resume_3e017fce-4640-402d-8781-44c607d9ea0b_poor_achievement",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:44:59.445299+00:00",
+  "response": {
+    "contact_info": {
+      "name": "John Doe",
+      "email": "johndoe@example.com",
+      "phone": "1234567890",
+      "location": "Chicago, IL",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor's Degree",
+        "institution": "University of Illinois",
+        "graduation_date": "2018-05",
+        "gpa": null,
+        "coursework": [
+          "Electrical Engineering Fundamentals",
+          "Basic Manufacturing Processes"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Tech Solutions Co.",
+        "title": "Junior Engineer",
+        "start_date": "2018-06",
+        "end_date": "2022-08",
+        "responsibilities": [
+          "Assisted in the design of electronic circuits for consumer products.",
+          "Conducted basic testing and quality checks on prototypes.",
+          "Collaborated with the engineering team to gather project requirements."
+        ],
+        "achievements": [
+          "Helped reduce testing time by 15% through improved documentation practices."
+        ]
+      },
+      {
+        "company": "Innovative Electronics Inc.",
+        "title": "Intern",
+        "start_date": "2017-06",
+        "end_date": "2017-08",
+        "responsibilities": [
+          "Supported the engineering team in conducting experiments and data collection.",
+          "Maintained laboratory equipment and prepared reports.",
+          "Participated in team meetings and provided input on project progress."
+        ],
+        "achievements": [
+          "Contributed to a project that received praise for design efficiency."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "CAD Software",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Data Analysis",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Project Management",
+        "proficiency_level": "Beginner",
+        "years": 1
+      }
+    ],
+    "summary": "Detail-oriented engineer with experience in electronics and a keen interest in manufacturing processes. Seeking to enhance skills in a more focused engineering role."
+  }
+}

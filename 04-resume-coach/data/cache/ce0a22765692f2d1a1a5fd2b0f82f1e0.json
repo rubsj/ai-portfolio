@@ -1,0 +1,73 @@
+{
+  "cache_key": "ce0a22765692f2d1a1a5fd2b0f82f1e0",
+  "prompt_key": "resume_cb6e5caf-e397-4515-bc58-c916b224c911_poor_achievement",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T20:17:12.133475+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Emily Johnson",
+      "email": "emily.johnson@email.com",
+      "phone": "1234567890",
+      "location": "Los Angeles, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor's Degree in Communications",
+        "institution": "University of Southern California",
+        "graduation_date": "2018-05",
+        "gpa": null,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "Tech Innovations LLC",
+        "title": "Marketing Coordinator",
+        "start_date": "2019-06",
+        "end_date": "2022-04",
+        "responsibilities": [
+          "Assisted in the development of marketing materials.",
+          "Coordinated events and promotional activities.",
+          "Managed social media accounts and content calendar."
+        ],
+        "achievements": [
+          "Increased social media engagement by 15% through targeted posts.",
+          "Supported a team that executed a product launch event which attracted 200 attendees."
+        ]
+      },
+      {
+        "company": "Creative Solutions Agency",
+        "title": "Junior Content Writer",
+        "start_date": "2018-06",
+        "end_date": "2019-05",
+        "responsibilities": [
+          "Wrote and edited blog posts and website content.",
+          "Collaborated with designers to create visual content."
+        ],
+        "achievements": [
+          "Contributed to a 10% increase in website traffic through effective content."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Social Media Management",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Content Creation",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Event Coordination",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      }
+    ],
+    "summary": "Creative marketing professional with a background in content creation and event coordination. Seeking to leverage experience in a more senior marketing role."
+  }
+}

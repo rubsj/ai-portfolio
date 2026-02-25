@@ -1,0 +1,122 @@
+{
+  "cache_key": "b1339a6bd2418b3e5dd3f3b257a26763",
+  "prompt_key": "resume_fdb36346-ad13-492f-9c05-deb7beb9652a_excellent_formal",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:29:33.372897+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Johnathan Smith",
+      "email": "johnathan.smith@example.com",
+      "phone": "+1234567890",
+      "location": "New York, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Master's in Healthcare Administration",
+        "institution": "Columbia University",
+        "graduation_date": "2010-05",
+        "gpa": null,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "MediCorp Solutions",
+        "title": "Chief Executive Officer",
+        "start_date": "2015-06",
+        "end_date": null,
+        "responsibilities": [
+          "Developed and implemented strategic plans that successfully aligned with organizational goals, resulting in a 30% increase in market share over three years.",
+          "Oversaw all operational aspects of the organization, ensuring compliance with healthcare regulations and industry standards.",
+          "Cultivated relationships with key stakeholders, including government agencies, industry partners, and community organizations to enhance service delivery.",
+          "Led initiatives in clinical excellence, utilizing data analytics to drive quality improvement and patient satisfaction."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "HealthTech Innovations",
+        "title": "Chief Operations Officer",
+        "start_date": "2010-03",
+        "end_date": "2015-05",
+        "responsibilities": [
+          "Directed operational management and change management initiatives, optimizing resource allocation and operational efficiency.",
+          "Implemented Health IT systems that improved data management and reporting accuracy, facilitating better decision-making.",
+          "Developed and monitored risk management strategies to mitigate potential operational risks and enhance patient safety."
+        ],
+        "achievements": [
+          "Achieved a 25% reduction in operational costs through innovative process improvements and strategic resource management."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Strategic Planning",
+        "proficiency_level": "Expert",
+        "years": 13
+      },
+      {
+        "name": "Healthcare Regulations",
+        "proficiency_level": "Expert",
+        "years": 15
+      },
+      {
+        "name": "Financial Management",
+        "proficiency_level": "Expert",
+        "years": 13
+      },
+      {
+        "name": "Data Analytics",
+        "proficiency_level": "Advanced",
+        "years": 10
+      },
+      {
+        "name": "Change Management",
+        "proficiency_level": "Expert",
+        "years": 10
+      },
+      {
+        "name": "Operational Excellence",
+        "proficiency_level": "Expert",
+        "years": 10
+      },
+      {
+        "name": "Stakeholder Engagement",
+        "proficiency_level": "Expert",
+        "years": 15
+      },
+      {
+        "name": "Risk Management",
+        "proficiency_level": "Advanced",
+        "years": 10
+      },
+      {
+        "name": "Clinical Expertise",
+        "proficiency_level": "Expert",
+        "years": 15
+      },
+      {
+        "name": "Health IT Systems",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Quality Improvement",
+        "proficiency_level": "Advanced",
+        "years": 10
+      },
+      {
+        "name": "Public Health Policy",
+        "proficiency_level": "Intermediate",
+        "years": 7
+      },
+      {
+        "name": "Telemedicine Solutions",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      }
+    ],
+    "summary": "Dynamic executive leader with over 15 years of experience in healthcare management, specializing in strategic planning, operational excellence, and stakeholder engagement. Proven track record of driving organizational growth and enhancing patient care through innovative solutions and strong leadership."
+  }
+}

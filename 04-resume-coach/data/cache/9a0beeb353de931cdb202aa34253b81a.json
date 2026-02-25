@@ -1,0 +1,75 @@
+{
+  "cache_key": "9a0beeb353de931cdb202aa34253b81a",
+  "prompt_key": "resume_b272fa56-dbb8-4574-8f12-6e99922fa535_poor_achievement",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T20:03:13.775401+00:00",
+  "response": {
+    "contact_info": {
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "phone": "1234567890",
+      "location": "Los Angeles, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts in Marketing",
+        "institution": "University of Southern California",
+        "graduation_date": "2010-05",
+        "gpa": 3.5,
+        "coursework": [
+          "Consumer Behavior",
+          "Market Research",
+          "Digital Marketing"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Digital Marketing Solutions",
+        "title": "Marketing Manager",
+        "start_date": "2015-06",
+        "end_date": "2023-07",
+        "responsibilities": [
+          "Developed and implemented digital marketing campaigns.",
+          "Managed social media accounts and content strategy.",
+          "Analyzed marketing data to improve campaign effectiveness."
+        ],
+        "achievements": [
+          "Increased website traffic by 30% through targeted campaigns."
+        ]
+      },
+      {
+        "company": "Creative Innovations Inc.",
+        "title": "Project Coordinator",
+        "start_date": "2012-03",
+        "end_date": "2015-05",
+        "responsibilities": [
+          "Coordinated project timelines and deliverables.",
+          "Collaborated with creative teams to meet client needs.",
+          "Maintained project documentation and reporting."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Data Analytics",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Project Management",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "E-commerce Strategies",
+        "proficiency_level": "Beginner",
+        "years": 1
+      }
+    ],
+    "summary": "Results-driven marketing professional with experience in digital campaigns and project coordination seeking to transition to operations management."
+  }
+}

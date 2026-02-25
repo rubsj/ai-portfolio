@@ -1,0 +1,85 @@
+{
+  "cache_key": "005a2ea8d5baacbf2d1224f7b0b0aea4",
+  "prompt_key": "resume_3c515b3d-3cac-4c39-8625-2372fbf3b5f8_partial_technical",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:46:07.603025+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@example.com",
+      "phone": "+12065551234",
+      "location": "Seattle, WA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Science in Mechanical Engineering",
+        "institution": "University of Washington",
+        "graduation_date": "2016-06",
+        "gpa": 3.5,
+        "coursework": [
+          "Thermodynamics",
+          "Fluid Mechanics",
+          "Manufacturing Processes",
+          "Materials Science"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Global Manufacturing Solutions",
+        "title": "Manufacturing Engineer",
+        "start_date": "2017-08",
+        "end_date": "2023-06",
+        "responsibilities": [
+          "Developed and implemented process optimization strategies which reduced production time by 15%.",
+          "Conducted quality assurance checks and collaborated with QA teams to ensure compliance with industry standards.",
+          "Participated in cross-functional teams to improve operational efficiency and implement lean manufacturing techniques.",
+          "Utilized CAD software to design and improve manufacturing layouts and processes."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Innovative Fabrication Corp.",
+        "title": "Junior Engineer",
+        "start_date": "2016-07",
+        "end_date": "2017-07",
+        "responsibilities": [
+          "Assisted in the development and execution of manufacturing plans and project management tasks.",
+          "Supported the implementation of Six Sigma methodologies to enhance quality and reduce defects.",
+          "Engaged in statistical analysis to monitor production metrics and identify areas for improvement."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Lean Manufacturing",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Six Sigma",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "CAD Software",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Quality Assurance",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Process Optimization",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      }
+    ],
+    "summary": "Detail-oriented Mechanical Engineer with experience in manufacturing processes and a solid foundation in Lean Manufacturing and Six Sigma methodologies. Eager to leverage technical skills and collaborate with teams to enhance operational efficiency."
+  }
+}

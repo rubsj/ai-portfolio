@@ -1,0 +1,83 @@
+{
+  "cache_key": "f5ad742918145f677c45d089fc5b3e1e",
+  "prompt_key": "resume_5af71a6c-dc89-4f73-9546-98aadfdfcc66_partial_technical",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T20:15:59.220789+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jessica Smith",
+      "email": "jessica.smith@email.com",
+      "phone": "+12135551234",
+      "location": "Brooklyn, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts in Communications",
+        "institution": "Brooklyn College",
+        "graduation_date": "2020-05",
+        "gpa": null,
+        "coursework": [
+          "Marketing Principles",
+          "Digital Media Strategies",
+          "Consumer Behavior"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Marketing Solutions LLC",
+        "title": "Digital Marketing Coordinator",
+        "start_date": "2021-06",
+        "end_date": null,
+        "responsibilities": [
+          "Assisted in the development and implementation of digital marketing strategies.",
+          "Monitored and analyzed performance metrics using Google Analytics.",
+          "Managed social media platforms and created engaging content to drive customer interaction."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Creative Ads Co.",
+        "title": "Marketing Intern",
+        "start_date": "2020-05",
+        "end_date": "2021-05",
+        "responsibilities": [
+          "Supported the execution of email marketing campaigns.",
+          "Conducted research for SEO optimization of web content.",
+          "Collaborated on A/B testing initiatives to improve email open rates."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "SEO",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Google Analytics",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Email Marketing",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Social Media Management",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Content Management Systems",
+        "proficiency_level": "Beginner",
+        "years": null
+      }
+    ],
+    "summary": null
+  }
+}

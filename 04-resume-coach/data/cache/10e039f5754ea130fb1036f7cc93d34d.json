@@ -1,0 +1,79 @@
+{
+  "cache_key": "10e039f5754ea130fb1036f7cc93d34d",
+  "prompt_key": "resume_20790e22-1bea-4343-b109-2e9ad9dafa97_partial_technical",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:38:59.771921+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Alex Johnson",
+      "email": "alex.johnson@email.com",
+      "phone": "+1-212-555-0198",
+      "location": "New York, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Master's Degree",
+        "institution": "Columbia University",
+        "graduation_date": "2015-05",
+        "gpa": null,
+        "coursework": [
+          "Educational Leadership",
+          "Program Evaluation",
+          "Data-Driven Decision Making"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Innovative Learning Solutions",
+        "title": "Program Manager",
+        "start_date": "2018-06",
+        "end_date": "2022-09",
+        "responsibilities": [
+          "Developed and implemented educational programs focused on STEM subjects for K-12 students.",
+          "Collaborated with educators and administrators to enhance learning outcomes.",
+          "Managed project timelines and budgets for multiple concurrent programs.",
+          "Analyzed student performance data to drive program improvements and adjustments."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Community Education Center",
+        "title": "Education Coordinator",
+        "start_date": "2015-07",
+        "end_date": "2018-05",
+        "responsibilities": [
+          "Assisted in designing curriculum and educational materials for after-school programs.",
+          "Engaged stakeholders including parents and community leaders to support educational initiatives.",
+          "Conducted program evaluations to measure effectiveness and gather feedback."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Program Development",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Project Management",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Data Analysis",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Curriculum Design",
+        "proficiency_level": "Beginner",
+        "years": 2
+      }
+    ],
+    "summary": "Experienced education program manager with a focus on developing and managing educational initiatives. Adept at collaborating with educators and analyzing data to enhance program effectiveness."
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "cache_key": "ff3eb8a32ab3e1abf354681f4c7b1b16",
+  "prompt_key": "job_Finance_False_Executive",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:17:29.418376+00:00",
+  "response": {
+    "title": "Chief Financial Officer (CFO)",
+    "company": {
+      "name": "Global Finance Solutions",
+      "industry": "Finance",
+      "size": "Enterprise (500+)",
+      "location": "New York, NY"
+    },
+    "description": "Global Finance Solutions is seeking a Chief Financial Officer (CFO) to lead our financial strategy and operations. The ideal candidate will possess deep knowledge of financial frameworks, excel in strategic decision-making, and drive financial performance to maximize shareholder value. This role requires close collaboration with the executive team to align financial and business strategies.",
+    "requirements": {
+      "required_skills": [
+        "Financial modeling",
+        "Risk management",
+        "Mergers and acquisitions",
+        "Regulatory compliance",
+        "Budgeting and forecasting",
+        "Financial reporting",
+        "Cash flow management",
+        "Tax planning",
+        "Performance metrics"
+      ],
+      "preferred_skills": [
+        "ERP systems",
+        "Data analytics",
+        "Investment management",
+        "Treasury management"
+      ],
+      "education": "Master's degree in Finance or related field",
+      "experience_years": 15,
+      "experience_level": "Executive"
+    }
+  }
+}
