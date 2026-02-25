@@ -1,0 +1,119 @@
+{
+  "cache_key": "35e6f551681750e93c0a9eb994322302",
+  "prompt_key": "resume_61832b65-4beb-4663-a0d8-d7f4752953f8_excellent_formal",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:08:13.563851+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "+11234567890",
+      "location": "New York, NY",
+      "linkedin": "https://www.linkedin.com/in/jordansmith",
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor's Degree in Business Administration",
+        "institution": "New York University",
+        "graduation_date": "2015-05",
+        "gpa": 3.8,
+        "coursework": [
+          "Retail Management",
+          "Operations Management",
+          "Financial Analysis",
+          "Marketing Strategies"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Retail Mastery Group",
+        "title": "Senior Retail Operations Manager",
+        "start_date": "2018-06",
+        "end_date": null,
+        "responsibilities": [
+          "Oversaw retail operations for 15 locations, leading a team of 50+ managers and associates.",
+          "Implemented inventory management systems (SAP) to optimize stock levels and reduce waste.",
+          "Conducted sales forecasting and performance analysis to drive a 20% increase in sales over three years.",
+          "Developed and executed training programs for staff to enhance customer service and operational efficiency.",
+          "Managed budgeting and financial reporting, ensuring adherence to annual financial goals.",
+          "Designed visual merchandising strategies that improved customer engagement and store layout efficiency.",
+          "Ensured operational compliance with safety standards and company policies."
+        ],
+        "achievements": [
+          "Recognized as 'Manager of the Year' for outstanding sales performance and team leadership.",
+          "Increased customer satisfaction scores by 30% through improved training and operational practices."
+        ]
+      },
+      {
+        "company": "ShopSmart Retailers",
+        "title": "Retail Operations Supervisor",
+        "start_date": "2015-06",
+        "end_date": "2018-05",
+        "responsibilities": [
+          "Coordinated supply chain operations, enhancing efficiency and reducing delivery times by 15%.",
+          "Implemented customer relationship management (CRM) software to improve customer engagement.",
+          "Led projects focused on e-commerce integration strategies, increasing online sales by 25%.",
+          "Conducted data analysis and reporting to support strategic decision-making."
+        ],
+        "achievements": [
+          "Successfully managed a project to streamline operations that saved the company $200,000 annually."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Inventory Management Systems (SAP)",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Sales Forecasting and Performance Analysis",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Team Leadership and Staff Training",
+        "proficiency_level": "Expert",
+        "years": 8
+      },
+      {
+        "name": "Budgeting and Financial Management",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Visual Merchandising Techniques",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Customer Relationship Management (CRM) Software",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Operational Compliance and Safety Standards",
+        "proficiency_level": "Expert",
+        "years": 8
+      },
+      {
+        "name": "Data Analysis and Reporting",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Supply Chain Coordination",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Advanced Excel and Data Visualization Tools",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      }
+    ],
+    "summary": "Accomplished retail operations manager with over 8 years of progressive experience in optimizing retail processes, enhancing customer satisfaction, and leading high-performing teams. Proven ability to implement strategic initiatives that align with business goals, drive sales growth, and ensure operational excellence."
+  }
+}

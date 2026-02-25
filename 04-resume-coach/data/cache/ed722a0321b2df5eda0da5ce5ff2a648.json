@@ -1,0 +1,90 @@
+{
+  "cache_key": "ed722a0321b2df5eda0da5ce5ff2a648",
+  "prompt_key": "resume_61832b65-4beb-4663-a0d8-d7f4752953f8_mismatch_career_changer",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:09:02.820820+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@example.com",
+      "phone": "5551234567",
+      "location": "Los Angeles, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Master of Fine Arts in Creative Writing",
+        "institution": "University of California, Los Angeles",
+        "graduation_date": "2020-06",
+        "gpa": null,
+        "coursework": null
+      },
+      {
+        "degree": "Bachelor of Arts in English Literature",
+        "institution": "New York University",
+        "graduation_date": "2018-05",
+        "gpa": null,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "Literary Magazine XYZ",
+        "title": "Editor-in-Chief",
+        "start_date": "2020-07",
+        "end_date": null,
+        "responsibilities": [
+          "Led editorial team in curating content for quarterly publications, enhancing the magazine's artistic vision.",
+          "Implemented innovative content strategies to increase readership and engagement.",
+          "Managed budgets related to publication costs, ensuring efficient allocation of resources.",
+          "Collaborated with writers on manuscript development, providing feedback and direction.",
+          "Organized workshops and events to promote literary talent and foster community engagement."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Public Library of Los Angeles",
+        "title": "Program Coordinator",
+        "start_date": "2018-06",
+        "end_date": "2020-06",
+        "responsibilities": [
+          "Coordinated and facilitated community programs focused on literacy and creative writing.",
+          "Developed promotional materials to raise awareness and increase participation in library events.",
+          "Oversaw logistics for events, including venue selection and scheduling.",
+          "Trained and mentored volunteers on program delivery and community engagement strategies.",
+          "Conducted surveys and collected feedback for program improvement."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Creative Writing",
+        "proficiency_level": "Expert",
+        "years": 5
+      },
+      {
+        "name": "Event Planning",
+        "proficiency_level": "Advanced",
+        "years": 3
+      },
+      {
+        "name": "Content Development",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "Budget Management",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Community Engagement",
+        "proficiency_level": "Expert",
+        "years": 3
+      }
+    ],
+    "summary": "Dynamic creative professional with extensive experience in editorial management, program coordination, and community engagement. Proven ability to lead teams in a collaborative environment and develop innovative strategies to enhance audience interaction and participation."
+  }
+}

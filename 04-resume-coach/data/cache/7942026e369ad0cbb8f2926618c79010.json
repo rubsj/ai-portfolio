@@ -1,0 +1,101 @@
+{
+  "cache_key": "7942026e369ad0cbb8f2926618c79010",
+  "prompt_key": "resume_34101125-a05a-4945-a555-c4938483901d_good_casual",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:26:16.904490+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jamie Taylor",
+      "email": "jamie.taylor@email.com",
+      "phone": "1234567890",
+      "location": "San Francisco, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor's Degree in Marketing",
+        "institution": "University of California, Berkeley",
+        "graduation_date": "2015-05-15",
+        "gpa": null,
+        "coursework": [
+          "Digital Marketing Strategies",
+          "Consumer Behavior",
+          "Market Research"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Creative Marketing Agency",
+        "title": "Marketing Manager",
+        "start_date": "2018-06",
+        "end_date": "2021-12",
+        "responsibilities": [
+          "Led a team of 5 in developing and executing marketing campaigns across digital platforms.",
+          "Utilized Google Analytics to track website performance and optimize SEO strategies.",
+          "Implemented CRM software (HubSpot) for lead management and customer engagement.",
+          "Developed and analyzed marketing KPIs to measure campaign effectiveness.",
+          "Collaborated with designers to create engaging marketing materials."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Digital Innovations Corp",
+        "title": "Marketing Strategist",
+        "start_date": "2016-01",
+        "end_date": "2018-05",
+        "responsibilities": [
+          "Designed and implemented PPC campaigns that increased lead generation by 30%.",
+          "Managed social media advertising strategies that enhanced brand visibility and engagement.",
+          "Conducted market research to inform marketing strategies and product development.",
+          "Regularly presented marketing performance metrics to stakeholders."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Google Analytics",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "SEO Tools (SEMrush, Moz)",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "CRM Software (HubSpot)",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Digital Marketing (PPC, Email, Social Media)",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Project Management (Agile)",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Marketing Automation Software (Marketo)",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Graphic Design (Adobe Creative Suite)",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Data Analysis",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      }
+    ],
+    "summary": "Experienced marketing professional with a strong background in digital marketing strategies and project management. Proven track record of leading teams and optimizing marketing initiatives to drive engagement and results."
+  }
+}

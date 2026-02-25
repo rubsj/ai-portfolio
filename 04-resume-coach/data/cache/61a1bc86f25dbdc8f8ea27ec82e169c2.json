@@ -1,0 +1,119 @@
+{
+  "cache_key": "61a1bc86f25dbdc8f8ea27ec82e169c2",
+  "prompt_key": "resume_e297a9b9-4ba8-4268-843a-019c6bcd1ed6_excellent_formal",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:25:17.961901+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Johnathan Smith",
+      "email": "johnathan.smith@email.com",
+      "phone": "+14155501234",
+      "location": "San Francisco, CA",
+      "linkedin": "https://www.linkedin.com/in/johnathansmith",
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Master of Healthcare Administration",
+        "institution": "University of California, San Francisco",
+        "graduation_date": "2010-06",
+        "gpa": null,
+        "coursework": null
+      },
+      {
+        "degree": "Bachelor of Business Administration",
+        "institution": "Stanford University",
+        "graduation_date": "2008-06",
+        "gpa": null,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "Wellness Healthcare Systems",
+        "title": "Chief Operating Officer",
+        "start_date": "2017-05",
+        "end_date": null,
+        "responsibilities": [
+          "Led operational management for a network of healthcare facilities, ensuring high-quality patient care and compliance with regulatory standards.",
+          "Developed and implemented financial strategies including budgeting, forecasting, and financial reporting to enhance operational efficiency.",
+          "Utilized Lean Six Sigma methodologies to drive performance improvement initiatives, resulting in a 25% increase in patient satisfaction scores.",
+          "Collaborated with senior leadership to establish long-term goals and operational strategies aligned with organizational objectives."
+        ],
+        "achievements": [
+          "Successfully implemented an electronic health records (EHR) system across all facilities, improving data management and patient care delivery."
+        ]
+      },
+      {
+        "company": "Pioneer Health Services",
+        "title": "Director of Operations",
+        "start_date": "2013-04",
+        "end_date": "2017-04",
+        "responsibilities": [
+          "Oversaw daily operations of healthcare facilities, managing a team of 150+ staff across multiple departments.",
+          "Devised strategic plans for business development, enhancing service offerings and identifying new revenue streams.",
+          "Maintained compliance with healthcare regulations and standards, ensuring all facilities met or exceeded state and federal requirements."
+        ],
+        "achievements": [
+          "Reduced operational costs by 15% through process optimization and enhanced resource allocation."
+        ]
+      },
+      {
+        "company": "NextGen Medical Group",
+        "title": "Operations Manager",
+        "start_date": "2011-02",
+        "end_date": "2013-03",
+        "responsibilities": [
+          "Managed operational functions within a busy healthcare practice, increasing efficiency through data analytics and performance metrics.",
+          "Promoted a culture of patient-centered care by training staff on best practices and enhancing teamwork across departments."
+        ],
+        "achievements": [
+          "Improved patient wait times by 30% through process improvements and staff training."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Healthcare Operations Management",
+        "proficiency_level": "Expert",
+        "years": 12
+      },
+      {
+        "name": "Financial Management",
+        "proficiency_level": "Expert",
+        "years": 10
+      },
+      {
+        "name": "Regulatory Compliance",
+        "proficiency_level": "Expert",
+        "years": 12
+      },
+      {
+        "name": "Lean Six Sigma",
+        "proficiency_level": "Advanced",
+        "years": 7
+      },
+      {
+        "name": "Data Analytics",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Health Information Technology Systems",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Strategic Planning",
+        "proficiency_level": "Expert",
+        "years": 10
+      },
+      {
+        "name": "Team Building and Staff Development",
+        "proficiency_level": "Expert",
+        "years": 12
+      }
+    ],
+    "summary": "Seasoned healthcare executive with over 12 years of experience in operations management, financial oversight, and strategic planning within the healthcare sector. Proven track record of driving operational excellence and enhancing patient care delivery through innovative methodologies and strong leadership."
+  }
+}

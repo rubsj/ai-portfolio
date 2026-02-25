@@ -1,0 +1,117 @@
+{
+  "cache_key": "d799fbe2ed029dff569c9a7ccee8fe52",
+  "prompt_key": "resume_e9c72d68-38ff-4fe2-94b8-66a3cb066a65_excellent_formal",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:51:26.549692+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jennifer Smith",
+      "email": "jennifer.smith@email.com",
+      "phone": "+14155512345",
+      "location": "San Francisco, CA",
+      "linkedin": "https://www.linkedin.com/in/jennifersmith",
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Master's in Education",
+        "institution": "Stanford University",
+        "graduation_date": "2015-06",
+        "gpa": 3.9,
+        "coursework": [
+          "Curriculum Development",
+          "Instructional Design",
+          "Educational Technology"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Global Learning Innovations",
+        "title": "Lead Curriculum Designer",
+        "start_date": "2018-08",
+        "end_date": null,
+        "responsibilities": [
+          "Led a team of curriculum designers to develop K-12 educational programs tailored to diverse learning needs.",
+          "Collaborated with educators and subject matter experts to create engaging curricula aligned with educational standards.",
+          "Implemented instructional methodologies that enhance student engagement and learning outcomes.",
+          "Managed project timelines and deliverables using Agile methodologies to ensure timely completion of curriculum projects.",
+          "Facilitated professional development workshops for educators on effective curriculum implementation and assessment techniques."
+        ],
+        "achievements": [
+          "Increased curriculum adoption rates by 30% across partnered schools through innovative design and effective stakeholder engagement.",
+          "Successfully integrated technology tools such as Google Classroom and Nearpod into curriculum design, enhancing the learning experience."
+        ]
+      },
+      {
+        "company": "Creative Learning Solutions",
+        "title": "Curriculum Developer",
+        "start_date": "2015-07",
+        "end_date": "2018-08",
+        "responsibilities": [
+          "Developed curriculum materials for K-12 educational institutions focusing on STEM subjects.",
+          "Conducted assessments and evaluations to determine the effectiveness of curriculum and make data-driven improvements.",
+          "Collaborated with instructional teams to ensure alignment with Common Core and NGSS standards.",
+          "Designed and implemented blended learning strategies to support diverse learners."
+        ],
+        "achievements": [
+          "Recognized for excellence in curriculum design with the 'Innovative Educator' award in 2017.",
+          "Played a key role in securing a grant for the development of an online learning platform for underprivileged students."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Curriculum Development",
+        "proficiency_level": "Expert",
+        "years": 8
+      },
+      {
+        "name": "Learning Management Systems (LMS)",
+        "proficiency_level": "Expert",
+        "years": 5
+      },
+      {
+        "name": "Assessment Design and Evaluation",
+        "proficiency_level": "Advanced",
+        "years": 6
+      },
+      {
+        "name": "Educational Standards (Common Core, NGSS)",
+        "proficiency_level": "Advanced",
+        "years": 6
+      },
+      {
+        "name": "Project Management (Agile Methodologies)",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Data Analysis for Curriculum Improvements",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Educational Technology Tools (Google Classroom, Nearpod)",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Facilitating Professional Development Workshops",
+        "proficiency_level": "Expert",
+        "years": 5
+      },
+      {
+        "name": "Blended and Online Learning Environments",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Universal Design for Learning (UDL)",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      }
+    ],
+    "summary": "Experienced Lead Curriculum Designer with over 8 years in developing innovative educational programs for K-12 institutions. Proficient in instructional methodologies, educational technology, and project management. Committed to enhancing student learning experiences through effective curriculum design."
+  }
+}

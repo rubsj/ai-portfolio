@@ -1,0 +1,81 @@
+{
+  "cache_key": "1d55944ff126ac285b2412e1647d31ac",
+  "prompt_key": "resume_23695202-550e-47cb-85f1-00ce50aa37c7_mismatch_career_changer",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:22:12.407544+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "1234567890",
+      "location": "San Francisco, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Science in Computer Science",
+        "institution": "University of California, Berkeley",
+        "graduation_date": "2010-05",
+        "gpa": null,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "Innovative Tech Solutions",
+        "title": "Senior Software Engineer",
+        "start_date": "2015-06",
+        "end_date": "2023-08",
+        "responsibilities": [
+          "Led a team of developers in creating web applications using React and Node.js.",
+          "Managed project timelines and delivered software solutions on schedule and within budget.",
+          "Collaborated with cross-functional teams for product design and feature implementation.",
+          "Conducted code reviews and implemented best practices for software development."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Tech Startups Inc.",
+        "title": "Software Developer",
+        "start_date": "2012-01",
+        "end_date": "2015-05",
+        "responsibilities": [
+          "Developed mobile applications for iOS using Swift and Objective-C.",
+          "Participated in agile development processes and sprint planning.",
+          "Provided technical support and troubleshooting for applications post-launch.",
+          "Documented technical specifications and user manuals for software products."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "React",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Node.js",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Swift",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Agile Methodologies",
+        "proficiency_level": "Advanced",
+        "years": 6
+      },
+      {
+        "name": "Project Management Tools (Jira, Trello)",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      }
+    ],
+    "summary": "Dynamic software engineer with over 10 years of experience in developing innovative technology solutions for various sectors. Proven track record in leading software projects, collaborating with diverse teams, and delivering high-quality products on time. Passionate about leveraging technology to solve complex problems."
+  }
+}

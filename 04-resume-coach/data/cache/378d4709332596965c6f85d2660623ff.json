@@ -1,0 +1,77 @@
+{
+  "cache_key": "378d4709332596965c6f85d2660623ff",
+  "prompt_key": "resume_a5fdd737-d2ca-4597-95f4-59fc8130bd96_poor_achievement",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:20:04.004972+00:00",
+  "response": {
+    "contact_info": {
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "phone": "1234567890",
+      "location": "Los Angeles, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts in Graphic Design",
+        "institution": "University of Southern California",
+        "graduation_date": "2019-05",
+        "gpa": null,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "Creative Solutions Agency",
+        "title": "Junior Graphic Designer",
+        "start_date": "2019-06",
+        "end_date": "2021-12",
+        "responsibilities": [
+          "Created visual content for various marketing campaigns",
+          "Collaborated with clients to understand design requirements",
+          "Assisted in the management of social media accounts"
+        ],
+        "achievements": [
+          "Improved client satisfaction scores by 15% through effective design solutions"
+        ]
+      },
+      {
+        "company": "Digital Media Corp",
+        "title": "Intern",
+        "start_date": "2021-01",
+        "end_date": "2022-08",
+        "responsibilities": [
+          "Supported the marketing team with content creation",
+          "Conducted research on design trends and competitors"
+        ],
+        "achievements": [
+          "Contributed to a campaign that increased engagement by 10%"
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Adobe Photoshop",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "Adobe Illustrator",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "Basic HTML",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Graphic Design Principles",
+        "proficiency_level": "Advanced",
+        "years": 4
+      }
+    ],
+    "summary": null
+  }
+}

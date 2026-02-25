@@ -1,0 +1,36 @@
+{
+  "cache_key": "639db9f89d597ae7d28c4e1bc1e314f8",
+  "prompt_key": "job_Marketing_False_Executive",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:18:09.313678+00:00",
+  "response": {
+    "title": "Chief Marketing Officer (CMO)",
+    "company": {
+      "name": "Innovative Marketing Solutions Inc.",
+      "industry": "Marketing",
+      "size": "500+ employees",
+      "location": "New York, NY"
+    },
+    "description": "Innovative Marketing Solutions Inc. is seeking a dynamic Chief Marketing Officer (CMO) to lead our marketing strategy and execution. The ideal candidate will have extensive experience in developing and implementing effective marketing initiatives that drive brand growth, customer engagement, and revenue generation. As a member of the executive team, the CMO will collaborate closely with other departments to align marketing efforts with overall business goals.",
+    "requirements": {
+      "required_skills": [
+        "Proven track record of developing and managing multi-million dollar marketing budgets",
+        "Expertise in digital marketing strategies, including SEO, SEM, and social media marketing",
+        "Strong analytical skills with experience in marketing analytics and performance measurement",
+        "Experience in brand management and development of brand positioning strategies",
+        "Ability to lead cross-functional teams and manage large-scale marketing projects",
+        "Excellent communication and presentation skills, with a focus on executive-level engagement",
+        "Deep understanding of consumer behavior and market research methodologies",
+        "Experience with CRM software and marketing automation tools"
+      ],
+      "preferred_skills": [
+        "Experience in B2B marketing, particularly in technology or SaaS industries",
+        "Familiarity with product marketing and go-to-market strategies",
+        "Knowledge of content marketing and thought leadership development"
+      ],
+      "education": "Master's degree in Marketing, Business Administration, or a related field",
+      "experience_years": 15,
+      "experience_level": "Executive"
+    }
+  }
+}

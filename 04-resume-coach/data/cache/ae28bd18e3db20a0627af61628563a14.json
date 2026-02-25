@@ -1,0 +1,68 @@
+{
+  "cache_key": "ae28bd18e3db20a0627af61628563a14",
+  "prompt_key": "resume_36abec22-a5f4-4aaf-8ba1-98b557f15a33_partial_technical",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:19:26.337585+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jessica Thompson",
+      "email": "jessica.thompson@email.com",
+      "phone": "2125557890",
+      "location": "New York, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Juris Doctor (JD)",
+        "institution": "Columbia Law School",
+        "graduation_date": "2018-05",
+        "gpa": 3.6,
+        "coursework": [
+          "Corporate Law",
+          "Mergers and Acquisitions",
+          "Contract Law",
+          "Securities Regulation"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Harrison Legal Group",
+        "title": "Corporate Attorney",
+        "start_date": "2018-06",
+        "end_date": null,
+        "responsibilities": [
+          "Provided legal counsel on corporate governance matters, advising clients on compliance with state and federal regulations.",
+          "Drafted and negotiated contracts for business transactions, ensuring legal and regulatory compliance.",
+          "Conducted legal research on complex corporate matters, assisting senior attorneys in case preparation.",
+          "Managed a portfolio of corporate clients, addressing their legal needs and providing timely feedback."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Corporate Law",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Contract Negotiation",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Legal Research",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Corporate Governance",
+        "proficiency_level": "Beginner",
+        "years": 2
+      }
+    ],
+    "summary": "Detail-oriented Corporate Attorney with 4 years of experience in providing legal counsel on corporate governance and contract negotiation. Adept at conducting legal research and managing client relationships. Committed to delivering high-quality legal services and supporting the legal team in complex corporate matters."
+  }
+}

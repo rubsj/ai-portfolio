@@ -1,0 +1,131 @@
+{
+  "cache_key": "1d9dba43e1a873b23f0d0d039cc35ece",
+  "prompt_key": "resume_f3a8ebf0-9196-4a03-a6ea-ccf366ad50ba_excellent_formal",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:04:09.543459+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "+1234567890",
+      "location": "Detroit, MI",
+      "linkedin": "https://www.linkedin.com/in/jordansmith",
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Master of Business Administration",
+        "institution": "University of Michigan",
+        "graduation_date": "2008-05",
+        "gpa": 3.9,
+        "coursework": [
+          "Operations Management",
+          "Strategic Planning",
+          "Financial Management"
+        ]
+      },
+      {
+        "degree": "Bachelor of Science in Industrial Engineering",
+        "institution": "Michigan State University",
+        "graduation_date": "2005-05",
+        "gpa": 3.8,
+        "coursework": [
+          "Lean Manufacturing",
+          "Quality Control",
+          "Supply Chain Management"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Global Manufacturing Solutions LLC",
+        "title": "Chief Operations Officer",
+        "start_date": "2015-06",
+        "end_date": null,
+        "responsibilities": [
+          "Oversaw operational processes across multiple manufacturing facilities, achieving a 20% reduction in operational costs.",
+          "Implemented Lean Manufacturing principles and Six Sigma methodologies to enhance product quality and productivity.",
+          "Led large-scale transformation initiatives that resulted in a 30% increase in manufacturing efficiency.",
+          "Developed supply chain management strategies that optimized logistics and reduced lead times by 15%.",
+          "Managed budgeting processes with a focus on financial performance and cost control."
+        ],
+        "achievements": [
+          "Successfully enhanced compliance with EHS regulations, achieving a reduction in workplace incidents by 25%.",
+          "Received the Executive Leadership Award for excellence in operational performance and innovation in 2020."
+        ]
+      },
+      {
+        "company": "Advanced Manufacturing Co.",
+        "title": "Director of Operations",
+        "start_date": "2010-04",
+        "end_date": "2015-05",
+        "responsibilities": [
+          "Directed daily operations in manufacturing, ensuring adherence to quality and safety standards.",
+          "Implemented advanced manufacturing technologies, including automation and robotics, to improve production capabilities.",
+          "Utilized data analytics to monitor performance metrics and drive informed decision-making.",
+          "Led cross-functional teams to achieve strategic goals and operational objectives."
+        ],
+        "achievements": [
+          "Drove the implementation of a Quality Management System (QMS) that achieved ISO 9001 certification."
+        ]
+      },
+      {
+        "company": "Manufacturing Innovations Group",
+        "title": "Operations Manager",
+        "start_date": "2005-06",
+        "end_date": "2010-03",
+        "responsibilities": [
+          "Managed operations for a production line, ensuring optimal workflow and employee performance.",
+          "Trained and developed staff on Lean principles and operational efficiencies.",
+          "Coordinated with supply chain teams to streamline inventory management and logistics."
+        ],
+        "achievements": [
+          "Achieved a 15% increase in production output while decreasing waste by 10% through process improvements."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Lean Manufacturing",
+        "proficiency_level": "Expert",
+        "years": 15
+      },
+      {
+        "name": "Six Sigma",
+        "proficiency_level": "Advanced",
+        "years": 12
+      },
+      {
+        "name": "Supply Chain Management",
+        "proficiency_level": "Expert",
+        "years": 15
+      },
+      {
+        "name": "Logistics Optimization",
+        "proficiency_level": "Advanced",
+        "years": 10
+      },
+      {
+        "name": "Advanced Manufacturing Technologies",
+        "proficiency_level": "Advanced",
+        "years": 10
+      },
+      {
+        "name": "Financial Management",
+        "proficiency_level": "Expert",
+        "years": 15
+      },
+      {
+        "name": "Data Analytics",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Quality Management Systems (ISO 9001)",
+        "proficiency_level": "Advanced",
+        "years": 5
+      }
+    ],
+    "summary": "Dynamic and results-oriented operations executive with over 15 years of experience in leading manufacturing operations. Proven expertise in Lean Manufacturing, Six Sigma, and supply chain management, with a strong focus on operational excellence and strategic initiatives. Adept at fostering a culture of innovation and efficiency within large-scale manufacturing environments."
+  }
+}

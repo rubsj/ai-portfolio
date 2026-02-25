@@ -1,0 +1,77 @@
+{
+  "cache_key": "7969b563ef163fadf945a599acba5f3f",
+  "prompt_key": "resume_7352a577-78e8-4255-9497-36b07dc28307_poor_achievement",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:33:20.009233+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jane Doe",
+      "email": "jane.doe@example.com",
+      "phone": "1234567890",
+      "location": "Los Angeles, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts in Sociology",
+        "institution": "University of California, Los Angeles",
+        "graduation_date": "2010-06",
+        "gpa": 3.5,
+        "coursework": [
+          "Social Research Methods",
+          "Community Organization",
+          "Public Speaking"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Community Non-Profit Organization",
+        "title": "Program Coordinator",
+        "start_date": "2015-03",
+        "end_date": "2022-11",
+        "responsibilities": [
+          "Coordinated community outreach programs to promote social services.",
+          "Developed educational materials for community workshops.",
+          "Managed a small team of volunteers to implement local initiatives."
+        ],
+        "achievements": [
+          "Increased community participation in programs by 25% over 2 years."
+        ]
+      },
+      {
+        "company": "Local Educational Institution",
+        "title": "Administrative Assistant",
+        "start_date": "2010-07",
+        "end_date": "2015-02",
+        "responsibilities": [
+          "Assisted with administrative tasks for the school board.",
+          "Organized events and meetings for staff and parents.",
+          "Maintained records and databases for student information."
+        ],
+        "achievements": [
+          "Improved scheduling efficiency by implementing new tracking systems."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Project Management",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      },
+      {
+        "name": "Public Speaking",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      },
+      {
+        "name": "Team Leadership",
+        "proficiency_level": "Beginner",
+        "years": 3
+      }
+    ],
+    "summary": "Detail-oriented professional with experience in community program coordination and administration. Seeking to leverage social service expertise into a new role."
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "cache_key": "207c99749be2e2d14dfb8a8b00487976",
+  "prompt_key": "resume_3d27e240-8bfb-4816-a47f-199ccd82aef1_good_casual",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:45:35.004724+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "1234567890",
+      "location": "New York, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor's Degree in Finance",
+        "institution": "University of New York",
+        "graduation_date": "2018-05",
+        "gpa": null,
+        "coursework": [
+          "Financial Analysis",
+          "Investment Strategies",
+          "Corporate Finance"
+        ]
+      },
+      {
+        "degree": "MBA",
+        "institution": "New York Business School",
+        "graduation_date": "2020-05",
+        "gpa": null,
+        "coursework": [
+          "Financial Management",
+          "Risk Analysis",
+          "Strategic Planning"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Financial Solutions Group",
+        "title": "Financial Analyst",
+        "start_date": "2018-06",
+        "end_date": "2023-02",
+        "responsibilities": [
+          "Developed financial models to support forecasting and budgeting processes.",
+          "Prepared detailed financial reports and analysis for management review.",
+          "Conducted variance analysis to identify discrepancies in financial data.",
+          "Collaborated with cross-functional teams to enhance financial planning efforts."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Tech Innovations LLC",
+        "title": "Junior Financial Analyst",
+        "start_date": "2020-01",
+        "end_date": "2021-12",
+        "responsibilities": [
+          "Assisted in preparing monthly financial statements and reports.",
+          "Helped analyze financial data using Excel and provided insights for decision-making.",
+          "Supported budgeting and forecasting processes by gathering relevant data."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Financial Modeling",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "Excel",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Tableau",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "SQL",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "SAP",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Financial Risk Management",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Piano Playing",
+        "proficiency_level": "Advanced",
+        "years": 10
+      },
+      {
+        "name": "Data Visualization",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      }
+    ],
+    "summary": "Detail-oriented Financial Analyst with a solid foundation in financial modeling and reporting. Experienced in collaborating with teams to drive financial performance. Seeking to leverage analytical skills and finance knowledge in a Senior Financial Analyst role."
+  }
+}

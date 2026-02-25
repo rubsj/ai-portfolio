@@ -1,0 +1,35 @@
+{
+  "cache_key": "e96f9ac309f080e28b00e534dc5fd4d4",
+  "prompt_key": "job_Healthcare_False_Executive",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:14:37.282672+00:00",
+  "response": {
+    "title": "Chief Operating Officer (COO)",
+    "company": {
+      "name": "HealthFirst Medical Center",
+      "industry": "Healthcare",
+      "size": "500-1000 employees",
+      "location": "San Francisco, CA"
+    },
+    "description": "HealthFirst Medical Center is seeking a strategic and experienced Chief Operating Officer (COO) to lead our operational functions and drive the overall performance of our healthcare services. The COO will be responsible for ensuring that the organization runs efficiently and effectively, promoting a culture of excellence and innovation in delivering patient care. This role will collaborate closely with the CEO and senior leadership team to establish long-term goals and operational strategies that align with our mission and objectives.",
+    "requirements": {
+      "required_skills": [
+        "Demonstrated experience in healthcare operations management with a minimum of 10 years in a senior leadership role.",
+        "Proficiency in financial management, including budgeting, forecasting, and financial reporting specific to healthcare settings.",
+        "In-depth knowledge of regulatory standards and compliance requirements in the healthcare industry.",
+        "Expertise in performance improvement methodologies, such as Lean Six Sigma, to enhance patient care delivery.",
+        "Strong capability in data analytics and utilizing metrics to drive decision-making and operational efficiency."
+      ],
+      "preferred_skills": [
+        "Experience with health information technology systems and electronic health records (EHR) implementation.",
+        "Background in strategic planning and business development within a healthcare context.",
+        "Strong leadership skills with experience in team building and staff development.",
+        "Familiarity with value-based care models and patient-centered care practices.",
+        "Proficient in stakeholder engagement and relationship management with diverse groups, including patients, staff, and community partners."
+      ],
+      "education": "Master's degree in Healthcare Administration, Business Administration, or a related field.",
+      "experience_years": 10,
+      "experience_level": "Executive"
+    }
+  }
+}

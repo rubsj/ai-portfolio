@@ -1,0 +1,83 @@
+{
+  "cache_key": "0bd2f68c5dce3ab08192e25740efd59f",
+  "prompt_key": "resume_2db3b3ed-91b7-433d-b996-234d73c27948_poor_achievement",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:47:48.231043+00:00",
+  "response": {
+    "contact_info": {
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "phone": "1234567890",
+      "location": "Los Angeles, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor's in Business Administration",
+        "institution": "University of California, Los Angeles",
+        "graduation_date": "2010-06",
+        "gpa": 3.5,
+        "coursework": [
+          "Marketing Principles",
+          "Human Resource Management",
+          "Business Law"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Marketing Solutions Corp.",
+        "title": "Marketing Manager",
+        "start_date": "2015-04",
+        "end_date": "2023-08",
+        "responsibilities": [
+          "Developed marketing strategies to increase brand awareness.",
+          "Oversaw the marketing budget and ensured effective allocation of resources.",
+          "Led a team of 5 marketing professionals."
+        ],
+        "achievements": [
+          "Increased customer engagement by 25% through targeted campaigns.",
+          "Boosted social media presence by 40% in one year."
+        ]
+      },
+      {
+        "company": "Retail Innovations Ltd.",
+        "title": "Sales Coordinator",
+        "start_date": "2012-01",
+        "end_date": "2015-03",
+        "responsibilities": [
+          "Coordinated sales activities and supported the sales team.",
+          "Managed customer inquiries and provided product information.",
+          "Assisted in organizing promotional events."
+        ],
+        "achievements": [
+          "Improved sales team efficiency by 15% through streamlined processes."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Microsoft Excel",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Sales Forecasting",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      },
+      {
+        "name": "Budgeting",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      },
+      {
+        "name": "Financial Reporting",
+        "proficiency_level": "Beginner",
+        "years": 2
+      }
+    ],
+    "summary": "Dynamic marketing professional with 8 years of experience in brand promotion and sales coordination. Seeking to leverage my marketing expertise in a financial role."
+  }
+}

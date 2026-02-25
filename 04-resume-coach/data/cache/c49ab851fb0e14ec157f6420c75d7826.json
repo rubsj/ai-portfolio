@@ -1,0 +1,38 @@
+{
+  "cache_key": "c49ab851fb0e14ec157f6420c75d7826",
+  "prompt_key": "job_Marketing_False_Senior",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:17:56.213246+00:00",
+  "response": {
+    "title": "Senior Marketing Manager",
+    "company": {
+      "name": "Innovative Marketing Solutions",
+      "industry": "Marketing",
+      "size": "Mid-sized (150-500 employees)",
+      "location": "New York, NY"
+    },
+    "description": "As a Senior Marketing Manager at Innovative Marketing Solutions, you will lead the strategic planning and execution of our marketing initiatives. You will work collaboratively with cross-functional teams to drive brand awareness, customer engagement, and revenue growth. This role requires a strong analytical mindset and a passion for marketing trends and technologies.",
+    "requirements": {
+      "required_skills": [
+        "5+ years of experience in a marketing management role",
+        "Proficiency in SEO and SEM strategies",
+        "Expertise in data analytics tools (e.g. Google Analytics, Tableau)",
+        "Strong understanding of CRM software (e.g. Salesforce, HubSpot)",
+        "Experience in managing multi-channel marketing campaigns (digital, social, email)",
+        "Ability to create and manage budgets for marketing projects",
+        "Excellent communication and presentation skills",
+        "Proven leadership and team management experience"
+      ],
+      "preferred_skills": [
+        "Familiarity with marketing automation tools (e.g. Marketo, Pardot)",
+        "Experience in B2B marketing strategies",
+        "Knowledge of content marketing best practices",
+        "Strong project management skills",
+        "Experience with A/B testing and conversion rate optimization"
+      ],
+      "education": "Bachelor's degree in Marketing, Business, or a related field; MBA preferred",
+      "experience_years": 5,
+      "experience_level": "Senior"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "cache_key": "e0fe7532ac0eb766a02a00611f3771d2",
+  "prompt_key": "resume_9b40ec45-7dd6-4865-bb62-b50de1f49a7d_poor_achievement",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:20:49.804372+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@example.com",
+      "phone": "1234567890",
+      "location": "Los Angeles, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts in Political Science",
+        "institution": "University of California, Los Angeles",
+        "graduation_date": "2015-06",
+        "gpa": null,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "City of Los Angeles",
+        "title": "Legal Assistant",
+        "start_date": "2016-01",
+        "end_date": "2023-08",
+        "responsibilities": [
+          "Assisted legal team with document preparation and filing",
+          "Conducted legal research on local laws and regulations",
+          "Coordinated schedules and managed communications"
+        ],
+        "achievements": [
+          "Improved document filing efficiency by 30%",
+          "Trained 5 new legal assistants over 2 years"
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Legal Research",
+        "proficiency_level": "Intermediate",
+        "years": 7
+      },
+      {
+        "name": "Document Drafting",
+        "proficiency_level": "Intermediate",
+        "years": 7
+      },
+      {
+        "name": "Team Coordination",
+        "proficiency_level": "Advanced",
+        "years": 7
+      }
+    ],
+    "summary": null
+  }
+}

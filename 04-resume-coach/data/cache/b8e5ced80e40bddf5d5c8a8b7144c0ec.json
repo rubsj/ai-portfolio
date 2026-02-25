@@ -1,0 +1,95 @@
+{
+  "cache_key": "b8e5ced80e40bddf5d5c8a8b7144c0ec",
+  "prompt_key": "resume_e3cb43b3-9148-4bf8-8f86-144c7c499b76_good_casual",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:07:27.073018+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@example.com",
+      "phone": "1234567890",
+      "location": "New York, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor's Degree",
+        "institution": "University of New York",
+        "graduation_date": "2015-05",
+        "gpa": null,
+        "coursework": [
+          "Retail Management",
+          "Marketing Strategies",
+          "Business Analytics"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Fashion Hub Retailers",
+        "title": "Retail Store Manager",
+        "start_date": "2018-06",
+        "end_date": "2023-08",
+        "responsibilities": [
+          "Led a team of 40+ employees to achieve sales targets and improve customer satisfaction.",
+          "Developed and implemented sales strategies that resulted in a 15% increase in year-over-year sales.",
+          "Managed inventory control processes to reduce excess stock by 30%.",
+          "Analyzed store performance metrics and adjusted strategies based on insights.",
+          "Coordinated staff training programs to enhance team performance and reduce turnover."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Electronics Emporium",
+        "title": "Assistant Store Manager",
+        "start_date": "2016-03",
+        "end_date": "2018-05",
+        "responsibilities": [
+          "Assisted in managing daily operations and overseeing a team of 25+ staff.",
+          "Contributed to the implementation of a new CRM system that improved customer relations and retention.",
+          "Helped develop visual merchandising strategies that enhanced store layout and customer engagement."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Retail Management Software (POS Systems)",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Inventory Management Techniques",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      },
+      {
+        "name": "Sales Strategy Development",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Analytical Skills",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Team Leadership",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      },
+      {
+        "name": "Customer Relationship Management",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Data Visualization Tools",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      }
+    ],
+    "summary": null
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "cache_key": "ef3de0055e265455fa78c2b72e1b0f30",
+  "prompt_key": "resume_626a50aa-b068-44ac-ab31-8721c93e1644_poor_achievement",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:14:40.946560+00:00",
+  "response": {
+    "contact_info": {
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "phone": "1234567890",
+      "location": "Austin, TX",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor's degree in Mechanical Engineering",
+        "institution": "University of Texas",
+        "graduation_date": "2015-05",
+        "gpa": null,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "ABC Manufacturing",
+        "title": "Mechanical Engineer",
+        "start_date": "2016-06",
+        "end_date": "2023-09",
+        "responsibilities": [
+          "Designed mechanical systems for manufacturing equipment",
+          "Collaborated with production teams to improve efficiency",
+          "Conducted technical analysis to optimize machinery performance"
+        ],
+        "achievements": [
+          "Increased production efficiency by 15% through equipment redesign",
+          "Reduced operational costs by $50,000 annually by implementing new materials"
+        ]
+      },
+      {
+        "company": "XYZ Energy Corp",
+        "title": "Energy Analyst",
+        "start_date": "2015-07",
+        "end_date": "2016-05",
+        "responsibilities": [
+          "Analyzed energy consumption data for commercial buildings",
+          "Assisted in the evaluation of energy efficiency measures"
+        ],
+        "achievements": [
+          "Contributed to a project that reduced energy costs by 5% for clients"
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "AutoCAD",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "MATLAB",
+        "proficiency_level": "Beginner",
+        "years": 1
+      }
+    ],
+    "summary": "Enthusiastic mechanical engineer with experience in energy analysis and manufacturing, seeking to transition into energy systems engineering."
+  }
+}

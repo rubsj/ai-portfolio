@@ -1,0 +1,80 @@
+{
+  "cache_key": "1e44b4efa65320844419a5fd3cb154a0",
+  "prompt_key": "resume_34101125-a05a-4945-a555-c4938483901d_partial_technical",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:26:30.076897+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "+14155551234",
+      "location": "San Jose, CA",
+      "linkedin": "https://www.linkedin.com/in/jordansmith",
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor's Degree in Business Administration",
+        "institution": "San Jose State University",
+        "graduation_date": "2015-05",
+        "gpa": null,
+        "coursework": [
+          "Marketing Management",
+          "Digital Marketing Strategies",
+          "Consumer Behavior"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Tech Solutions Group",
+        "title": "Marketing Manager",
+        "start_date": "2019-01",
+        "end_date": null,
+        "responsibilities": [
+          "Managed digital marketing campaigns across PPC, email, and social media platforms.",
+          "Analyzed marketing metrics using Google Analytics to optimize campaign strategies.",
+          "Collaborated with sales and product teams to develop marketing materials and strategy.",
+          "Led a small team of marketing specialists to deliver on project timelines and deliverables."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Creative Marketing Agency",
+        "title": "Marketing Coordinator",
+        "start_date": "2015-06",
+        "end_date": "2018-12",
+        "responsibilities": [
+          "Supported the marketing team in executing strategies and campaigns.",
+          "Utilized CRM software (HubSpot) to manage customer interactions and data.",
+          "Contributed to content creation for blogs and social media posts.",
+          "Assisted in tracking and reporting on marketing KPIs and metrics."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Google Analytics",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "CRM Software (HubSpot)",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Digital Marketing",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Project Management (Agile)",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      }
+    ],
+    "summary": null
+  }
+}

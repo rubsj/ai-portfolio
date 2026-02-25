@@ -1,0 +1,83 @@
+{
+  "cache_key": "043953c5234b72cf92508bbd9f2cc441",
+  "prompt_key": "resume_b8d0ac75-8d06-4eb1-8d50-35f013192c39_mismatch_career_changer",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:46:59.282279+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@example.com",
+      "phone": "5551234567",
+      "location": "San Francisco, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts",
+        "institution": "University of California, Berkeley",
+        "graduation_date": "2018-05",
+        "gpa": null,
+        "coursework": [
+          "Art History",
+          "Digital Media",
+          "Graphic Design"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Creative Agency XYZ",
+        "title": "Graphic Designer",
+        "start_date": "2018-06",
+        "end_date": "2023-06",
+        "responsibilities": [
+          "Developed visual concepts and designs for various marketing campaigns.",
+          "Collaborated with clients to understand their branding needs and deliver tailor-made solutions.",
+          "Utilized Adobe Creative Suite (Photoshop, Illustrator, InDesign) to create marketing materials.",
+          "Managed multiple projects and ensured timely delivery of design assets."
+        ],
+        "achievements": [
+          "Awarded 'Designer of the Year' for outstanding creativity in campaign designs."
+        ]
+      },
+      {
+        "company": "Art Gallery ABC",
+        "title": "Exhibition Coordinator",
+        "start_date": "2016-01",
+        "end_date": "2018-05",
+        "responsibilities": [
+          "Organized art exhibitions, coordinating with artists, vendors, and sponsors.",
+          "Maintained budgetary control over exhibition costs and managed expenses.",
+          "Created promotional materials for events using design software."
+        ],
+        "achievements": [
+          "Successfully organized the annual art fair, attracting over 5,000 visitors."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Adobe Creative Suite",
+        "proficiency_level": "Expert",
+        "years": 5
+      },
+      {
+        "name": "Project Management",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Client Relations",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Digital Marketing",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      }
+    ],
+    "summary": "Creative professional with over 5 years of experience in graphic design and project management. Proven ability to manage client relationships and deliver high-quality design solutions on time. Seeking to leverage my creative skills in a new industry."
+  }
+}

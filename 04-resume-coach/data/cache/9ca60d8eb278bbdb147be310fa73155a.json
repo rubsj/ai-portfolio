@@ -1,0 +1,126 @@
+{
+  "cache_key": "9ca60d8eb278bbdb147be310fa73155a",
+  "prompt_key": "resume_626a50aa-b068-44ac-ab31-8721c93e1644_excellent_formal",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:14:04.899088+00:00",
+  "response": {
+    "contact_info": {
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "phone": "+1234567890",
+      "location": "Houston, TX",
+      "linkedin": "https://www.linkedin.com/in/johndoe",
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Master of Science in Electrical Engineering",
+        "institution": "University of Texas at Austin",
+        "graduation_date": "2010-05",
+        "gpa": 3.8,
+        "coursework": [
+          "Renewable Energy Systems",
+          "Advanced Power Systems",
+          "Energy Systems Analysis"
+        ]
+      },
+      {
+        "degree": "Bachelor of Science in Electrical Engineering",
+        "institution": "Texas A&M University",
+        "graduation_date": "2008-05",
+        "gpa": 3.5,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "Energy Innovations LLC",
+        "title": "Lead Energy Systems Engineer",
+        "start_date": "2016-06",
+        "end_date": null,
+        "responsibilities": [
+          "Oversaw engineering projects from concept through implementation for renewable energy systems.",
+          "Led cross-functional teams to design and implement innovative energy solutions.",
+          "Conducted feasibility studies and economic analysis for various energy projects.",
+          "Ensured compliance with industry standards and regulatory requirements, including NERC and FERC.",
+          "Developed energy models using HOMER and EnergyPlus to optimize system designs.",
+          "Utilized AutoCAD for detailed energy systems design and documentation.",
+          "Managed project timelines and resources using Agile project management methodologies."
+        ],
+        "achievements": [
+          "Successfully led a project that increased energy efficiency by 30% across multiple installations.",
+          "Implemented a SCADA monitoring tool that improved operational efficiency by 20%."
+        ]
+      },
+      {
+        "company": "Green Solutions Inc.",
+        "title": "Energy Systems Engineer",
+        "start_date": "2012-05",
+        "end_date": "2016-06",
+        "responsibilities": [
+          "Designed renewable energy solutions, including solar and wind energy systems.",
+          "Performed advanced data analysis using MATLAB and Python to support project objectives.",
+          "Engaged with stakeholders and presented project findings at public forums.",
+          "Collaborated with regulatory bodies to ensure compliance with energy policies and standards."
+        ],
+        "achievements": [
+          "Played a key role in securing funding for a $5 million solar project through stakeholder engagement.",
+          "Contributed to a white paper on energy efficiency measures that received recognition in the industry."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "HOMER Energy Modeling Software",
+        "proficiency_level": "Expert",
+        "years": 5
+      },
+      {
+        "name": "EnergyPlus",
+        "proficiency_level": "Expert",
+        "years": 5
+      },
+      {
+        "name": "Renewable Energy Technologies (Solar, Wind, Battery Storage)",
+        "proficiency_level": "Expert",
+        "years": 6
+      },
+      {
+        "name": "Electrical Grid Operations",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Feasibility Studies and Economic Analysis",
+        "proficiency_level": "Expert",
+        "years": 6
+      },
+      {
+        "name": "NERC and FERC Regulatory Standards",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Project Management (Agile, PMP)",
+        "proficiency_level": "Expert",
+        "years": 5
+      },
+      {
+        "name": "AutoCAD",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "SCADA Systems",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "Data Analysis (MATLAB, Python)",
+        "proficiency_level": "Advanced",
+        "years": 4
+      }
+    ],
+    "summary": "Results-driven Lead Energy Systems Engineer with over 8 years of experience in designing and implementing innovative energy solutions. Demonstrated expertise in energy modeling, project management, and regulatory compliance. Proven ability to lead cross-functional teams and engage stakeholders effectively."
+  }
+}

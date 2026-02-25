@@ -1,0 +1,106 @@
+{
+  "cache_key": "29e2108eca80ef265023e32ca22cff03",
+  "prompt_key": "resume_c4690ab6-b03f-4c12-b51c-7de87e54d215_excellent_formal",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:22:37.298297+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@example.com",
+      "phone": "+11234567890",
+      "location": "New York, NY",
+      "linkedin": "https://www.linkedin.com/in/jordansmith",
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Science in Health Informatics",
+        "institution": "New York University",
+        "graduation_date": "2019-05",
+        "gpa": 3.8,
+        "coursework": [
+          "Data Analysis",
+          "Healthcare Systems",
+          "Statistics",
+          "Database Management"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Health Analytics Solutions",
+        "title": "Healthcare Data Analyst",
+        "start_date": "2020-07",
+        "end_date": null,
+        "responsibilities": [
+          "Utilized SQL for data extraction and manipulation across multiple healthcare databases to derive actionable insights.",
+          "Developed data visualizations using Tableau to present complex healthcare data in a user-friendly format for clinical and administrative stakeholders.",
+          "Applied statistical analysis techniques to assess patient outcomes, enhancing quality of care and operational efficiency.",
+          "Conducted data quality assessments and validation to ensure accurate reporting and compliance with healthcare regulations.",
+          "Collaborated with clinical staff to gather insights from Electronic Health Records (EHR) systems, supporting data-driven decision-making."
+        ],
+        "achievements": [
+          "Improved patient outcomes by 15% through data-driven initiatives and targeted interventions.",
+          "Successfully implemented a new dashboard in Tableau which reduced reporting time by 30%."
+        ]
+      },
+      {
+        "company": "MedData Insights",
+        "title": "Junior Data Analyst",
+        "start_date": "2019-06",
+        "end_date": "2020-06",
+        "responsibilities": [
+          "Assisted in the management of healthcare data and conducted analyses to support clinical research initiatives.",
+          "Utilized R for statistical analysis and predictive modeling to improve healthcare service delivery.",
+          "Participated in the development and maintenance of databases using MySQL, ensuring data integrity and accessibility."
+        ],
+        "achievements": [
+          "Contributed to a project that identified trends in patient data, leading to a 20% increase in service efficiency."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "SQL",
+        "proficiency_level": "Advanced",
+        "years": 3
+      },
+      {
+        "name": "Tableau",
+        "proficiency_level": "Advanced",
+        "years": 3
+      },
+      {
+        "name": "Statistical Analysis",
+        "proficiency_level": "Advanced",
+        "years": 3
+      },
+      {
+        "name": "Electronic Health Records (EHR)",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Data Quality Assessment",
+        "proficiency_level": "Advanced",
+        "years": 3
+      },
+      {
+        "name": "Python",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "HIPAA Compliance",
+        "proficiency_level": "Advanced",
+        "years": 3
+      },
+      {
+        "name": "MySQL",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      }
+    ],
+    "summary": "Detail-oriented Healthcare Data Analyst with over 3 years of experience in utilizing data analytics to improve patient outcomes and streamline healthcare operations. Proven expertise in SQL, data visualization, and statistical analysis, with a solid understanding of healthcare regulations and EHR systems."
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "cache_key": "9675650861124acba1be2780e269ea5e",
+  "prompt_key": "resume_277e5c9c-d977-46d9-ab10-8559f969b755_mismatch_career_changer",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:05:51.429117+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@example.com",
+      "phone": "5125551234",
+      "location": "Houston, TX",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Science in Mechanical Engineering",
+        "institution": "University of Texas at Austin",
+        "graduation_date": "2020-05",
+        "gpa": 3.5,
+        "coursework": [
+          "Thermodynamics",
+          "Fluid Mechanics",
+          "Mechanical Design"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Dynamic Engineering Solutions",
+        "title": "Mechanical Engineer",
+        "start_date": "2020-06",
+        "end_date": "2023-08",
+        "responsibilities": [
+          "Designed mechanical components for automotive applications using SolidWorks.",
+          "Collaborated with cross-functional teams to troubleshoot engineering problems.",
+          "Conducted performance testing and analysis on various prototypes.",
+          "Created detailed technical reports and documentation for internal audits."
+        ],
+        "achievements": [
+          "Led a project that reduced component failure rates by 30% through design optimization.",
+          "Received 'Employee of the Month' award twice for outstanding project contributions."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "SolidWorks",
+        "proficiency_level": "Advanced",
+        "years": 3
+      },
+      {
+        "name": "MATLAB",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "AutoCAD",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Mechanical Testing",
+        "proficiency_level": "Expert",
+        "years": 3
+      },
+      {
+        "name": "Technical Writing",
+        "proficiency_level": "Advanced",
+        "years": 3
+      }
+    ],
+    "summary": "Detail-oriented Mechanical Engineer with a strong background in design and analysis. Passionate about problem-solving and technology, seeking to transition into customer experience management within the retail sector."
+  }
+}

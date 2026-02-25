@@ -1,0 +1,81 @@
+{
+  "cache_key": "7df982e1fa29d5351629f44579cbb17f",
+  "prompt_key": "resume_7ea24385-6f7f-413a-82ec-357b4036e3a3_good_casual",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:53:31.174065+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "5125550123",
+      "location": "Austin, TX",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Associate's Degree in Environmental Science",
+        "institution": "Austin Community College",
+        "graduation_date": "2022-05",
+        "gpa": null,
+        "coursework": [
+          "Sustainable Practices in Manufacturing",
+          "Environmental Management Systems",
+          "Materials Science"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "GreenTech Solutions",
+        "title": "Manufacturing Intern",
+        "start_date": "2022-06",
+        "end_date": "2022-12",
+        "responsibilities": [
+          "Assisted in the implementation of lean manufacturing practices to enhance production efficiency.",
+          "Conducted process audits and documented findings to improve sustainability measures.",
+          "Collaborated with engineers to analyze materials for recyclability and overall sustainability."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "AutoCAD",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "ISO 14001 Standards",
+        "proficiency_level": "Beginner",
+        "years": null
+      },
+      {
+        "name": "Lean Manufacturing",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Minitab",
+        "proficiency_level": "Beginner",
+        "years": 0
+      },
+      {
+        "name": "Energy Efficiency Practices",
+        "proficiency_level": "Beginner",
+        "years": null
+      },
+      {
+        "name": "Trello",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Public Speaking",
+        "proficiency_level": "Advanced",
+        "years": 3
+      }
+    ],
+    "summary": "Enthusiastic Environmental Science graduate with hands-on experience in sustainable manufacturing practices. Eager to support EcoTech Industries in innovative production processes while leveraging my skills in CAD, lean manufacturing, and project management."
+  }
+}

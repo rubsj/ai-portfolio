@@ -1,0 +1,122 @@
+{
+  "cache_key": "6d818e8b6f3f755ad24366f07ca7724a",
+  "prompt_key": "resume_f69b76d8-3736-416f-ada3-b0cd5abab4fa_excellent_formal",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:50:19.401388+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@example.com",
+      "phone": "+12125551234",
+      "location": "New York, NY",
+      "linkedin": "https://www.linkedin.com/in/jordansmith",
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Master's in Education",
+        "institution": "Columbia University",
+        "graduation_date": "2015-05",
+        "gpa": 3.9,
+        "coursework": [
+          "Curriculum Development",
+          "Instructional Design",
+          "Assessment Methods"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Global Learning Partners",
+        "title": "Senior Educational Program Manager",
+        "start_date": "2018-06",
+        "end_date": null,
+        "responsibilities": [
+          "Led the design and implementation of curriculum for K-12 educational programs, enhancing student engagement and performance.",
+          "Developed and executed program evaluations using assessment methodologies to measure educational impact.",
+          "Utilized data analysis tools such as Excel and Tableau to generate reports on program effectiveness and stakeholder engagement.",
+          "Managed accreditation processes ensuring compliance with national education standards.",
+          "Oversaw project management tasks using Asana, coordinating cross-departmental teams to achieve program goals.",
+          "Managed budgets for educational initiatives, including forecasting and reallocating funds as necessary."
+        ],
+        "achievements": [
+          "Increased program enrollment by 30% over two years through strategic marketing and curriculum enhancements.",
+          "Received the 'Innovative Leadership Award' for outstanding contributions to educational program development."
+        ]
+      },
+      {
+        "company": "Future Leaders Academy",
+        "title": "Educational Program Coordinator",
+        "start_date": "2015-08",
+        "end_date": "2018-05",
+        "responsibilities": [
+          "Collaborated with faculty to develop curriculum that aligned with educational standards and student needs.",
+          "Conducted program assessments and provided actionable feedback for continuous improvement.",
+          "Led training sessions for educators on best practices in instructional design and program evaluation.",
+          "Participated in grant writing efforts to secure funding for innovative educational projects."
+        ],
+        "achievements": [
+          "Successfully applied for and received a $100,000 grant for a new literacy program, contributing to 15% improvement in student reading scores."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Curriculum development and instructional design",
+        "proficiency_level": "Expert",
+        "years": 7
+      },
+      {
+        "name": "Program evaluation and assessment methodologies",
+        "proficiency_level": "Expert",
+        "years": 7
+      },
+      {
+        "name": "Data analysis and reporting using Excel",
+        "proficiency_level": "Advanced",
+        "years": 7
+      },
+      {
+        "name": "Data analysis and reporting using Tableau",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Accreditation processes and standards",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Project management using Asana",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Budget management and financial forecasting",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Leadership and team management",
+        "proficiency_level": "Expert",
+        "years": 7
+      },
+      {
+        "name": "Communication skills (written and verbal)",
+        "proficiency_level": "Expert",
+        "years": 7
+      },
+      {
+        "name": "Learning Management Systems (LMS) - Canvas",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Grant writing",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      }
+    ],
+    "summary": "Dynamic and results-oriented Senior Educational Program Manager with over 7 years of experience in curriculum development, program evaluation, and educational leadership. Proven track record of enhancing educational offerings and driving student success through strategic planning and cross-departmental collaboration."
+  }
+}

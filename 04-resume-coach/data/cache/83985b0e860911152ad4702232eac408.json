@@ -1,0 +1,37 @@
+{
+  "cache_key": "83985b0e860911152ad4702232eac408",
+  "prompt_key": "job_Healthcare_False_Lead",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:14:27.961581+00:00",
+  "response": {
+    "title": "Lead Healthcare Analyst",
+    "company": {
+      "name": "HealthFirst Solutions",
+      "industry": "Healthcare",
+      "size": "500-1000 employees",
+      "location": "San Francisco, CA"
+    },
+    "description": "HealthFirst Solutions is seeking a motivated and experienced Lead Healthcare Analyst to join our dynamic team. The ideal candidate will have a strong background in healthcare data analysis and will lead analytical projects to improve patient care and operational efficiency. This role requires collaboration with clinical and operational teams to drive data-driven solutions and strategic initiatives.",
+    "requirements": {
+      "required_skills": [
+        "Proficient in SQL and database management",
+        "Experience with data visualization tools (e.g., Tableau, Power BI)",
+        "Strong understanding of healthcare data standards (e.g., HL7, ICD-10)",
+        "Expertise in statistical analysis and modeling techniques",
+        "Knowledge of healthcare regulations and compliance (e.g., HIPAA)",
+        "Ability to perform predictive analytics and trend analysis",
+        "Experience in project management methodologies (e.g., Agile, Six Sigma)"
+      ],
+      "preferred_skills": [
+        "Familiarity with Electronic Health Records (EHR) systems",
+        "Experience in healthcare quality improvement initiatives",
+        "Understanding of healthcare reimbursement models",
+        "Experience with machine learning algorithms",
+        "Ability to mentor junior analysts"
+      ],
+      "education": "Bachelor's degree in Healthcare Administration, Data Science, or related field; Master's degree preferred.",
+      "experience_years": 5,
+      "experience_level": "Lead"
+    }
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "cache_key": "50c66d935cb67f1a75bc817cff29a57a",
+  "prompt_key": "resume_2db3b3ed-91b7-433d-b996-234d73c27948_excellent_formal",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:47:14.744868+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan A. Smith",
+      "email": "jordan.smith@financepros.com",
+      "phone": "+12125551234",
+      "location": "New York, NY",
+      "linkedin": "https://www.linkedin.com/in/jordansmithfinance",
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Master of Business Administration (MBA)",
+        "institution": "Columbia Business School",
+        "graduation_date": "2010-05",
+        "gpa": 3.9,
+        "coursework": [
+          "Corporate Finance",
+          "Financial Reporting",
+          "Strategic Management"
+        ]
+      },
+      {
+        "degree": "Bachelor of Science in Accounting",
+        "institution": "University of California, Berkeley",
+        "graduation_date": "2005-05",
+        "gpa": 3.7,
+        "coursework": [
+          "Financial Accounting",
+          "Tax Accounting",
+          "Auditing"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Alpha Financial Group",
+        "title": "Chief Financial Officer",
+        "start_date": "2015-06",
+        "end_date": null,
+        "responsibilities": [
+          "Oversaw all financial operations, including budgeting, forecasting, and strategic planning.",
+          "Developed and implemented financial reporting systems in compliance with GAAP and IFRS.",
+          "Managed risk management frameworks and established internal financial controls.",
+          "Led the financial due diligence process for mergers and acquisitions.",
+          "Communicated complex financial information to the board and stakeholders."
+        ],
+        "achievements": [
+          "Successfully reduced operational costs by 20% through process optimization.",
+          "Led the company through a successful merger, increasing market share significantly."
+        ]
+      },
+      {
+        "company": "Beta Investments LLC",
+        "title": "Vice President of Finance",
+        "start_date": "2010-07",
+        "end_date": "2015-05",
+        "responsibilities": [
+          "Directed financial modeling and valuation techniques for investment opportunities.",
+          "Established strategic tax planning initiatives aligning with federal and state regulations.",
+          "Enhanced financial compliance frameworks and improved audit readiness across departments.",
+          "Collaborated with external investors to secure funding for expansion projects."
+        ],
+        "achievements": [
+          "Increased annual revenue growth rate by 15% through strategic investment decisions."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Financial Reporting and Compliance",
+        "proficiency_level": "Expert",
+        "years": 15
+      },
+      {
+        "name": "Financial Modeling and Valuation Techniques",
+        "proficiency_level": "Advanced",
+        "years": 10
+      },
+      {
+        "name": "Tax Regulations and Strategic Tax Planning",
+        "proficiency_level": "Expert",
+        "years": 10
+      },
+      {
+        "name": "Risk Management Frameworks and Financial Controls",
+        "proficiency_level": "Advanced",
+        "years": 10
+      },
+      {
+        "name": "Financial Software (SAP, Oracle, QuickBooks)",
+        "proficiency_level": "Advanced",
+        "years": 10
+      },
+      {
+        "name": "Capital Markets and Investment Strategies",
+        "proficiency_level": "Expert",
+        "years": 10
+      },
+      {
+        "name": "Analytical and Problem-Solving Skills",
+        "proficiency_level": "Expert",
+        "years": 15
+      },
+      {
+        "name": "Leadership and Team Management",
+        "proficiency_level": "Expert",
+        "years": 15
+      }
+    ],
+    "summary": "Accomplished financial executive with over 15 years of extensive experience in financial management and strategic leadership within the finance sector. Proven track record in driving financial performance, managing compliance, and leading large teams to achieve corporate objectives."
+  }
+}

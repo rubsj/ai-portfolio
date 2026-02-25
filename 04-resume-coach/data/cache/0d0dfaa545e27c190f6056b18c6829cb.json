@@ -1,0 +1,76 @@
+{
+  "cache_key": "0d0dfaa545e27c190f6056b18c6829cb",
+  "prompt_key": "resume_d1959899-fcae-4727-8985-7675e353a687_poor_achievement",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:32:09.541312+00:00",
+  "response": {
+    "contact_info": {
+      "name": "John Doe",
+      "email": "john.doe@email.com",
+      "phone": "1234567890",
+      "location": "Bethesda, MD",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts in Political Science",
+        "institution": "University of Maryland",
+        "graduation_date": "2015-05",
+        "gpa": null,
+        "coursework": [
+          "Introduction to Political Theory",
+          "American Government",
+          "International Relations"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Local Community Center",
+        "title": "Community Outreach Coordinator",
+        "start_date": "2018-04",
+        "end_date": null,
+        "responsibilities": [
+          "Organized community events to promote civic engagement.",
+          "Developed informational materials for public distribution.",
+          "Facilitated workshops on local governance."
+        ],
+        "achievements": [
+          "Increased community event attendance by 25% over two years.",
+          "Established partnerships with 10 local organizations to enhance outreach efforts."
+        ]
+      },
+      {
+        "company": "City Council",
+        "title": "Intern",
+        "start_date": "2016-06",
+        "end_date": "2018-04",
+        "responsibilities": [
+          "Assisted in research for local legislation.",
+          "Prepared summaries of council meetings for public record.",
+          "Conducted surveys to gather public feedback on council initiatives."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Community Engagement",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Public Speaking",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Research",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      }
+    ],
+    "summary": "Dedicated community outreach professional with a background in political science and experience in local governance. Seeking to transition into policy analysis."
+  }
+}

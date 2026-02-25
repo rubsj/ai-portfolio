@@ -1,0 +1,91 @@
+{
+  "cache_key": "a0d637c1b639097357022f9cfa5edbc6",
+  "prompt_key": "resume_ab04b637-863d-4ae5-9afb-76d382e37b07_partial_technical",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:09:50.334776+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@example.com",
+      "phone": "+12125551234",
+      "location": "New York, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Business Administration",
+        "institution": "New York University",
+        "graduation_date": "2008-05",
+        "gpa": null,
+        "coursework": [
+          "Marketing Management",
+          "Retail Operations",
+          "Financial Accounting"
+        ]
+      },
+      {
+        "degree": "Master of Business Administration",
+        "institution": "Columbia University",
+        "graduation_date": "2012-05",
+        "gpa": 3.8,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "Consumer Goods Corp",
+        "title": "Director of Retail Operations",
+        "start_date": "2015-06",
+        "end_date": "2023-09",
+        "responsibilities": [
+          "Managed multi-channel retail strategies, increasing overall sales by 20% within two years.",
+          "Collaborated with cross-functional teams to enhance customer experience across physical and online stores.",
+          "Oversaw inventory management systems to streamline stock levels and reduce costs by 15%.",
+          "Utilized data analysis tools like Excel for forecasting sales trends and optimizing product assortments."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "E-commerce Solutions LLC",
+        "title": "Retail Operations Manager",
+        "start_date": "2012-01",
+        "end_date": "2015-05",
+        "responsibilities": [
+          "Implemented digital marketing strategies that improved website traffic by 30% year-over-year.",
+          "Led a team responsible for the integration of new e-commerce platforms to enhance customer engagement.",
+          "Analyzed customer feedback to design improved shopping experiences, leading to a 15% increase in customer satisfaction scores."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Sales Forecasting",
+        "proficiency_level": "Intermediate",
+        "years": 6
+      },
+      {
+        "name": "Inventory Management Systems",
+        "proficiency_level": "Intermediate",
+        "years": 6
+      },
+      {
+        "name": "Data Analysis (Excel)",
+        "proficiency_level": "Intermediate",
+        "years": 8
+      },
+      {
+        "name": "Customer Experience Design",
+        "proficiency_level": "Beginner",
+        "years": 3
+      },
+      {
+        "name": "Digital Marketing Strategies",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      }
+    ],
+    "summary": "Results-oriented retail professional with over 10 years of experience in retail operations and strategic planning. Proven ability to drive sales growth and enhance customer experience in multi-channel environments."
+  }
+}

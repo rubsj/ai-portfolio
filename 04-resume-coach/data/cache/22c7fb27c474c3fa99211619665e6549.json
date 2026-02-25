@@ -1,0 +1,85 @@
+{
+  "cache_key": "22c7fb27c474c3fa99211619665e6549",
+  "prompt_key": "resume_844c20b9-2024-47c2-96f1-7bfe56bde90c_mismatch_career_changer",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:43:42.875462+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@example.com",
+      "phone": "5551234567",
+      "location": "Miami, FL",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts in Fine Arts",
+        "institution": "University of Miami",
+        "graduation_date": "2020-05",
+        "gpa": 3.8,
+        "coursework": [
+          "Digital Media Production",
+          "Art History",
+          "Design Principles"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Creative Arts Gallery",
+        "title": "Gallery Coordinator",
+        "start_date": "2020-06",
+        "end_date": "2023-08",
+        "responsibilities": [
+          "Managed art exhibitions and organized gallery events to enhance visitor engagement.",
+          "Developed marketing materials to promote gallery programs and events.",
+          "Collaborated with artists to curate compelling narratives around their artwork."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Sunshine Event Planning",
+        "title": "Event Designer",
+        "start_date": "2019-01",
+        "end_date": "2020-05",
+        "responsibilities": [
+          "Designed and executed themed events, focusing on aesthetic presentation and attendee experience.",
+          "Coordinated with vendors and managed logistics for successful event operations.",
+          "Created visual design concepts that resonated with diverse clientele."
+        ],
+        "achievements": [
+          "Successfully organized a charity art auction that raised over $20,000."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Adobe Creative Suite",
+        "proficiency_level": "Advanced",
+        "years": 3
+      },
+      {
+        "name": "Photography",
+        "proficiency_level": "Expert",
+        "years": 5
+      },
+      {
+        "name": "Public Speaking",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Event Planning Software (e.g., Cvent)",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Social Media Management",
+        "proficiency_level": "Advanced",
+        "years": 3
+      }
+    ],
+    "summary": "Creative and detail-oriented professional with a background in fine arts and event coordination. Proven ability to create engaging visual narratives and manage projects from concept to execution, seeking to leverage artistic skills and storytelling abilities in a new direction."
+  }
+}

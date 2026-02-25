@@ -1,0 +1,35 @@
+{
+  "cache_key": "3c1d90b452cbeafe563e172aec255b62",
+  "prompt_key": "job_Healthcare_True_Entry",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:11:45.001104+00:00",
+  "response": {
+    "title": "Telehealth Support Specialist",
+    "company": {
+      "name": "HealthConnect Innovations",
+      "industry": "Healthcare Technology",
+      "size": "50-200 employees",
+      "location": "Remote"
+    },
+    "description": "HealthConnect Innovations is seeking a motivated Telehealth Support Specialist to join our dynamic team. This entry-level position combines elements of healthcare assistance, customer service, and technology support to enhance patient experiences in a rapidly growing telehealth environment. As a Telehealth Support Specialist, you will assist patients in navigating our telehealth platform, troubleshoot technical issues, and coordinate with healthcare providers to ensure seamless virtual care delivery.",
+    "requirements": {
+      "required_skills": [
+        "Proficiency in using telehealth software platforms (e.g., Zoom for Healthcare, Doxy.me)",
+        "Basic understanding of medical terminology",
+        "Strong verbal communication skills for patient interactions",
+        "Ability to troubleshoot common technical issues (e.g., connectivity problems)",
+        "Familiarity with patient scheduling and electronic health record (EHR) systems"
+      ],
+      "preferred_skills": [
+        "Experience with customer service in a healthcare setting",
+        "Knowledge of HIPAA compliance and patient confidentiality practices",
+        "Basic data entry skills for maintaining patient records",
+        "Understanding of remote patient monitoring tools",
+        "Familiarity with telecommunication technologies"
+      ],
+      "education": "Associate degree in Health Information Technology, Nursing, or related field",
+      "experience_years": 0,
+      "experience_level": "Entry"
+    }
+  }
+}

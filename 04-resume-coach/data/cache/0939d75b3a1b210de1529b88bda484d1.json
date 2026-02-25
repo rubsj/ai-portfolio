@@ -1,0 +1,102 @@
+{
+  "cache_key": "0939d75b3a1b210de1529b88bda484d1",
+  "prompt_key": "resume_83703e74-0d77-42bb-8fe4-9b445c77747e_excellent_formal",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:22:44.279323+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "+14155552671",
+      "location": "San Francisco, CA",
+      "linkedin": "https://www.linkedin.com/in/jordansmith",
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts in Marketing",
+        "institution": "University of California, Berkeley",
+        "graduation_date": "2023-05",
+        "gpa": 3.8,
+        "coursework": [
+          "Digital Marketing Strategies",
+          "Consumer Behavior",
+          "Content Creation and Management",
+          "Data Analytics"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Creative Solutions Agency",
+        "title": "Digital Marketing Intern",
+        "start_date": "2022-06",
+        "end_date": "2023-04",
+        "responsibilities": [
+          "Assisted in the design and implementation of digital marketing campaigns across social media platforms.",
+          "Utilized Google Analytics to track user engagement and optimize content strategies.",
+          "Created engaging content for blog posts and social media channels, increasing audience interaction by 30%.",
+          "Conducted A/B testing for email campaigns to improve open rates and click-through rates.",
+          "Collaborated with the design team to develop visual content using Canva and Adobe Spark."
+        ],
+        "achievements": [
+          "Increased social media engagement by 25% through strategic content planning and execution.",
+          "Contributed to a project that enhanced brand awareness, leading to a 15% rise in website traffic."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "HTML/CSS",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "UX/UI Design Principles",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Google Analytics",
+        "proficiency_level": "Advanced",
+        "years": 1
+      },
+      {
+        "name": "Social Media Management (Hootsuite, Buffer)",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "SEO Best Practices",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Content Creation (Blog and Social Media Posts)",
+        "proficiency_level": "Advanced",
+        "years": 1
+      },
+      {
+        "name": "A/B Testing Methodologies",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Graphic Design Software (Canva, Adobe Spark)",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Email Marketing Platforms (Mailchimp)",
+        "proficiency_level": "Intermediate",
+        "years": 0
+      },
+      {
+        "name": "Project Management Tools (Trello)",
+        "proficiency_level": "Intermediate",
+        "years": 0
+      }
+    ],
+    "summary": "Motivated and detail-oriented Marketing graduate with hands-on experience in digital marketing strategies, user experience optimization, and content creation. Proven ability to drive engagement and enhance customer experiences through innovative digital solutions."
+  }
+}

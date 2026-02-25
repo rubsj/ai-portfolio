@@ -1,0 +1,121 @@
+{
+  "cache_key": "96d35de8e04dc1ff9742af04784c6c8f",
+  "prompt_key": "resume_ab04b637-863d-4ae5-9afb-76d382e37b07_excellent_formal",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:09:21.764545+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Michael Johnson",
+      "email": "michael.johnson@email.com",
+      "phone": "+1-917-555-0123",
+      "location": "New York, NY",
+      "linkedin": "https://www.linkedin.com/in/michaeljohnson",
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Master of Business Administration (MBA)",
+        "institution": "Columbia University",
+        "graduation_date": "2010-05",
+        "gpa": null,
+        "coursework": [
+          "Strategic Management",
+          "Marketing Analytics",
+          "Retail Operations Management"
+        ]
+      },
+      {
+        "degree": "Bachelor of Science in Business Administration",
+        "institution": "New York University",
+        "graduation_date": "2005-05",
+        "gpa": 3.8,
+        "coursework": [
+          "Retail Management",
+          "Consumer Behavior",
+          "Financial Accounting"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Global Retail Solutions Inc.",
+        "title": "Chief Operating Officer",
+        "start_date": "2015-04",
+        "end_date": null,
+        "responsibilities": [
+          "Led the development and execution of multi-channel retail strategies, achieving a 30% increase in sales over three years.",
+          "Oversaw budgeting and P&L management for a portfolio generating $1 billion in annual revenue.",
+          "Implemented advanced inventory management systems, resulting in a 25% reduction in holding costs.",
+          "Drove customer experience initiatives that improved overall satisfaction ratings by 40%."
+        ],
+        "achievements": [
+          "Successfully launched an omnichannel retail platform, integrating e-commerce and brick-and-mortar operations.",
+          "Recognized as Retail Executive of the Year by Retail Today in 2021."
+        ]
+      },
+      {
+        "company": "Retail Strategies LLC",
+        "title": "Director of Retail Operations",
+        "start_date": "2010-06",
+        "end_date": "2015-03",
+        "responsibilities": [
+          "Managed daily retail operations for 150+ stores across the Northeast, optimizing performance and profitability.",
+          "Executed strategic planning and operational execution leading to a 20% year-over-year growth in sales.",
+          "Utilized data analysis tools, including SQL and Excel, to monitor sales trends and forecast future performance.",
+          "Led cross-functional teams in implementing new customer experience design initiatives."
+        ],
+        "achievements": [
+          "Reduced operational costs by 15% through effective supply chain management and vendor negotiations."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Multi-channel Retail Management",
+        "proficiency_level": "Expert",
+        "years": 13
+      },
+      {
+        "name": "Sales Forecasting",
+        "proficiency_level": "Expert",
+        "years": 10
+      },
+      {
+        "name": "Inventory Management Systems",
+        "proficiency_level": "Advanced",
+        "years": 10
+      },
+      {
+        "name": "Data Analysis (Excel, SQL)",
+        "proficiency_level": "Advanced",
+        "years": 10
+      },
+      {
+        "name": "Customer Experience Design",
+        "proficiency_level": "Expert",
+        "years": 8
+      },
+      {
+        "name": "E-commerce Platforms",
+        "proficiency_level": "Advanced",
+        "years": 7
+      },
+      {
+        "name": "Project Management",
+        "proficiency_level": "Expert",
+        "years": 10
+      },
+      {
+        "name": "Budget Management",
+        "proficiency_level": "Expert",
+        "years": 13
+      },
+      {
+        "name": "Emerging Retail Technologies (AI, IoT)",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      }
+    ],
+    "summary": "Dynamic and results-driven retail executive with over 15 years of comprehensive experience in multi-channel retail operations, strategic planning, and customer experience enhancement. Proven track record of driving top-line growth and operational excellence."
+  }
+}

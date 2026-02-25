@@ -1,0 +1,80 @@
+{
+  "cache_key": "d134893008e81b18ade4b913997d8920",
+  "prompt_key": "resume_3095c51d-6f65-4ec3-9ff3-e6a8b443673f_poor_achievement",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:19:09.526250+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Alex Johnson",
+      "email": "alex.johnson@email.com",
+      "phone": "1234567890",
+      "location": "Los Angeles, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Associate's Degree",
+        "institution": "Community College of Los Angeles",
+        "graduation_date": "2021-05",
+        "gpa": null,
+        "coursework": [
+          "Introduction to Web Development",
+          "Database Fundamentals"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Techie Solutions",
+        "title": "Junior Software Developer",
+        "start_date": "2021-06",
+        "end_date": "2023-09",
+        "responsibilities": [
+          "Assisted in developing internal tools using HTML and CSS",
+          "Participated in team meetings to discuss application features",
+          "Helped document code and software functionalities"
+        ],
+        "achievements": [
+          "Contributed to reducing bug resolution time by 15% through documentation"
+        ]
+      },
+      {
+        "company": "Creative Web Design",
+        "title": "Intern Web Developer",
+        "start_date": "2020-01",
+        "end_date": "2021-05",
+        "responsibilities": [
+          "Supported the design and development of client websites",
+          "Created simple landing pages using basic JavaScript"
+        ],
+        "achievements": [
+          "Improved client satisfaction ratings by 10% through timely project updates"
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "HTML",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "CSS",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "JavaScript (basic)",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Git",
+        "proficiency_level": "Beginner",
+        "years": 1
+      }
+    ],
+    "summary": "Enthusiastic web developer with foundational experience in HTML and CSS, seeking to transition into software engineering. Eager to learn and grow within a dynamic team."
+  }
+}

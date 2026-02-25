@@ -1,4 +1,3 @@
-data/cache/
 data/chromadb/
 .env
 __pycache__/

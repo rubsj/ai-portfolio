@@ -1,0 +1,77 @@
+{
+  "cache_key": "7b720162dcb92b023ba7ac780251bc86",
+  "prompt_key": "resume_23695202-550e-47cb-85f1-00ce50aa37c7_poor_achievement",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:22:01.066141+00:00",
+  "response": {
+    "contact_info": {
+      "name": "John Smith",
+      "email": "john.smith@email.com",
+      "phone": "1234567890",
+      "location": "Boston, MA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts in Political Science",
+        "institution": "State University",
+        "graduation_date": "2010-05",
+        "gpa": null,
+        "coursework": [
+          "Public Policy",
+          "International Relations"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Local Advocacy Group",
+        "title": "Legal Advisor",
+        "start_date": "2015-01",
+        "end_date": "2023-08",
+        "responsibilities": [
+          "Provided legal advice to non-profit organizations",
+          "Drafted and reviewed contracts related to community programs",
+          "Assisted in compliance with local laws and regulations"
+        ],
+        "achievements": [
+          "Reduced legal costs by 15% through negotiation with service providers",
+          "Successfully advocated for community policy changes in local government"
+        ]
+      },
+      {
+        "company": "Small Business Solutions",
+        "title": "Contract Specialist",
+        "start_date": "2011-06",
+        "end_date": "2014-12",
+        "responsibilities": [
+          "Managed contracts for small business clients",
+          "Conducted research on business compliance issues",
+          "Facilitated workshops on contract management"
+        ],
+        "achievements": [
+          "Improved client satisfaction rates by 25% through enhanced contract clarity"
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Contract Management",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      },
+      {
+        "name": "Public Policy Analysis",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Regulatory Compliance",
+        "proficiency_level": "Beginner",
+        "years": 2
+      }
+    ],
+    "summary": "Detail-oriented legal advisor with a focus on non-profit organizations and small businesses. Looking to transition into a corporate legal role."
+  }
+}

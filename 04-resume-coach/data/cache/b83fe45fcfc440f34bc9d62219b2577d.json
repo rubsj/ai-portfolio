@@ -1,0 +1,101 @@
+{
+  "cache_key": "b83fe45fcfc440f34bc9d62219b2577d",
+  "prompt_key": "resume_3095c51d-6f65-4ec3-9ff3-e6a8b443673f_good_casual",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:18:48.636738+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@example.com",
+      "phone": "1234567890",
+      "location": "San Francisco, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Science in Computer Science",
+        "institution": "University of California, Berkeley",
+        "graduation_date": "2018-05",
+        "gpa": null,
+        "coursework": [
+          "Software Engineering",
+          "Web Development",
+          "Database Management"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Tech Innovators Inc.",
+        "title": "Software Engineer",
+        "start_date": "2020-07",
+        "end_date": null,
+        "responsibilities": [
+          "Designed and developed responsive web applications using React.js and Node.js.",
+          "Collaborated with cross-functional teams to define project requirements and specifications.",
+          "Implemented RESTful APIs to support front-end functionalities.",
+          "Managed and maintained SQL databases to ensure data integrity and performance.",
+          "Conducted unit testing using Jest to ensure application reliability and quality."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Creative Solutions",
+        "title": "Junior Developer",
+        "start_date": "2019-06",
+        "end_date": "2020-06",
+        "responsibilities": [
+          "Assisted in the development of various web applications using JavaScript (ES6+).",
+          "Participated in Agile/Scrum meetings to track project progress and updates.",
+          "Utilized Git for version control to manage code changes efficiently.",
+          "Worked on implementing features in a small team environment."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "JavaScript (ES6+)",
+        "proficiency_level": "Advanced",
+        "years": 3
+      },
+      {
+        "name": "React.js",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Node.js",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "SQL",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Git",
+        "proficiency_level": "Advanced",
+        "years": 3
+      },
+      {
+        "name": "TypeScript",
+        "proficiency_level": "Beginner",
+        "years": 0
+      },
+      {
+        "name": "Agile/Scrum",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "CSS Frameworks (Bootstrap)",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      }
+    ],
+    "summary": "Enthusiastic software engineer with a solid foundation in web development and a passion for creating scalable applications. Eager to contribute to team success through collaboration and innovative solutions."
+  }
+}

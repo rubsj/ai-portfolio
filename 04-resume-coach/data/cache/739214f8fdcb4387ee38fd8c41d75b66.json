@@ -1,0 +1,118 @@
+{
+  "cache_key": "739214f8fdcb4387ee38fd8c41d75b66",
+  "prompt_key": "resume_49dfe0ed-640e-410f-b4f8-2826c5d1f66c_excellent_formal",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:25:00.068057+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jessica Thompson",
+      "email": "jessica.thompson@email.com",
+      "phone": "+11234567890",
+      "location": "New York, NY",
+      "linkedin": "https://www.linkedin.com/in/jessicathompson",
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor's Degree in Marketing",
+        "institution": "New York University",
+        "graduation_date": "2015-05",
+        "gpa": 3.8,
+        "coursework": [
+          "Digital Marketing Strategies",
+          "Consumer Behavior",
+          "Market Research"
+        ]
+      },
+      {
+        "degree": "MBA in Marketing",
+        "institution": "Columbia University",
+        "graduation_date": "2018-05",
+        "gpa": 3.9,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "Creative Marketing Strategies",
+        "title": "Marketing Manager",
+        "start_date": "2018-06",
+        "end_date": null,
+        "responsibilities": [
+          "Developed and executed multi-channel marketing campaigns, including digital, social, and email channels.",
+          "Oversaw SEO and SEM strategies, leading to a 40% increase in organic traffic over 12 months.",
+          "Utilized Google Analytics and Tableau for data analysis, enhancing campaign performance and ROI.",
+          "Managed a marketing budget of $500,000, optimizing spend across various initiatives.",
+          "Collaborated with cross-functional teams to align marketing strategies with business objectives."
+        ],
+        "achievements": [
+          "Increased customer engagement rates by 30% through targeted marketing initiatives.",
+          "Led a team of 8 marketing professionals, fostering a collaborative environment."
+        ]
+      },
+      {
+        "company": "NextGen Marketing Solutions",
+        "title": "Senior Marketing Analyst",
+        "start_date": "2015-06",
+        "end_date": "2018-05",
+        "responsibilities": [
+          "Analyzed market trends and consumer data to inform marketing strategies.",
+          "Implemented CRM software (Salesforce) to streamline customer relationship management.",
+          "Conducted A/B testing and conversion rate optimization, resulting in a 25% increase in lead generation.",
+          "Collaborated with sales and product teams to enhance product positioning and messaging."
+        ],
+        "achievements": [
+          "Awarded 'Top Performer of the Year' for exceptional contributions to marketing strategy."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "SEO",
+        "proficiency_level": "Expert",
+        "years": 5
+      },
+      {
+        "name": "SEM",
+        "proficiency_level": "Expert",
+        "years": 5
+      },
+      {
+        "name": "Google Analytics",
+        "proficiency_level": "Expert",
+        "years": 5
+      },
+      {
+        "name": "Tableau",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "Salesforce",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Email Marketing",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Social Media Marketing",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Marketing Automation (Marketo)",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Project Management",
+        "proficiency_level": "Advanced",
+        "years": 5
+      }
+    ],
+    "summary": "Results-driven marketing professional with over 5 years of experience in leading marketing strategies and managing cross-functional teams. Proven track record in driving brand awareness, customer engagement, and revenue growth through data-driven decisions and innovative marketing solutions."
+  }
+}

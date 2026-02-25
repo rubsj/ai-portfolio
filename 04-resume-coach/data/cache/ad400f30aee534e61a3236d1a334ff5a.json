@@ -1,0 +1,98 @@
+{
+  "cache_key": "ad400f30aee534e61a3236d1a334ff5a",
+  "prompt_key": "resume_2db3b3ed-91b7-433d-b996-234d73c27948_good_casual",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:47:27.853198+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "1234567890",
+      "location": "New York, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "MBA in Finance",
+        "institution": "Columbia University",
+        "graduation_date": "2010-05",
+        "gpa": null,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "Finance Innovations Group",
+        "title": "Finance Director",
+        "start_date": "2015-06",
+        "end_date": "2023-08",
+        "responsibilities": [
+          "Led the financial strategy and operations for a mid-sized financial services firm.",
+          "Managed budgeting, forecasting, and compliance with GAAP regulations.",
+          "Developed financial models for various investment opportunities and projects.",
+          "Oversaw tax planning and compliance, ensuring alignment with local regulations.",
+          "Implemented financial controls and risk management frameworks.",
+          "Collaborated with cross-functional teams to present financial insights to stakeholders."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Tech Solutions Corp",
+        "title": "Senior Financial Analyst",
+        "start_date": "2011-08",
+        "end_date": "2015-05",
+        "responsibilities": [
+          "Supported financial reporting and compliance initiatives.",
+          "Conducted in-depth financial analysis and valuation modeling.",
+          "Assisted in budgeting and forecasting processes.",
+          "Analyzed market trends to provide strategic financial insights."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Financial Reporting (GAAP/IFRS)",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Financial Modeling",
+        "proficiency_level": "Advanced",
+        "years": 7
+      },
+      {
+        "name": "Tax Regulations",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      },
+      {
+        "name": "Risk Management",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      },
+      {
+        "name": "SAP",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "QuickBooks",
+        "proficiency_level": "Beginner",
+        "years": 2
+      },
+      {
+        "name": "Team Leadership",
+        "proficiency_level": "Advanced",
+        "years": 7
+      },
+      {
+        "name": "Data Analysis (Excel, R)",
+        "proficiency_level": "Advanced",
+        "years": 6
+      }
+    ],
+    "summary": "Experienced finance professional with a strong background in financial strategy, reporting, and team leadership. Adept at navigating complex financial landscapes and providing actionable insights to drive company growth."
+  }
+}

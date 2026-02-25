@@ -1,0 +1,125 @@
+{
+  "cache_key": "9bd3c1429410192edbb71525e1a5a9b7",
+  "prompt_key": "resume_7352a577-78e8-4255-9497-36b07dc28307_excellent_formal",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:32:37.284938+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Johnathan Davidson",
+      "email": "johnathan.davidson@email.com",
+      "phone": "+12065543210",
+      "location": "Washington, D.C.",
+      "linkedin": "https://www.linkedin.com/in/johnathandavidson",
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Master of Public Administration",
+        "institution": "Georgetown University",
+        "graduation_date": "2005-05",
+        "gpa": null,
+        "coursework": [
+          "Public Policy Analysis",
+          "Federal Regulatory Compliance",
+          "Public Sector Leadership"
+        ]
+      },
+      {
+        "degree": "Bachelor of Arts in Political Science",
+        "institution": "University of Maryland",
+        "graduation_date": "2003-05",
+        "gpa": 3.8,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "Department of Homeland Security",
+        "title": "Policy Development Director",
+        "start_date": "2015-06",
+        "end_date": null,
+        "responsibilities": [
+          "Led policy development initiatives aimed at enhancing national security and compliance with federal regulations.",
+          "Managed cross-functional teams to analyze and advocate for key policy issues influencing federal operations.",
+          "Fostered collaboration between government agencies to streamline service delivery and improve citizen engagement.",
+          "Conducted data-driven analyses to inform policy decisions and strategic planning processes."
+        ],
+        "achievements": [
+          "Successfully developed and implemented policies that increased inter-agency cooperation by 30%.",
+          "Recognized for excellence in policy advocacy at the National Policy Forum in 2020."
+        ]
+      },
+      {
+        "company": "U.S. Environmental Protection Agency",
+        "title": "Senior Policy Analyst",
+        "start_date": "2010-05",
+        "end_date": "2015-05",
+        "responsibilities": [
+          "Conducted comprehensive policy analyses to recommend changes to existing environmental regulations.",
+          "Prepared and presented reports on legislative impacts to senior leadership and key stakeholders.",
+          "Engaged with public interest groups and stakeholders to gather input for policy formation."
+        ],
+        "achievements": [
+          "Played a key role in the development of a landmark policy on renewable energy compliance."
+        ]
+      },
+      {
+        "company": "State Department",
+        "title": "Policy Research Specialist",
+        "start_date": "2005-06",
+        "end_date": "2010-04",
+        "responsibilities": [
+          "Performed in-depth research on international policies affecting U.S. foreign relations.",
+          "Assisted in drafting policy proposals and reports presented to Congress.",
+          "Supported grant management initiatives and funding proposals for international programs."
+        ],
+        "achievements": [
+          "Contributed to a policy initiative that secured $2 million in federal funding for international cooperation projects."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Federal Regulatory Compliance",
+        "proficiency_level": "Expert",
+        "years": 10
+      },
+      {
+        "name": "Policy Analysis and Advocacy",
+        "proficiency_level": "Expert",
+        "years": 15
+      },
+      {
+        "name": "Leadership",
+        "proficiency_level": "Advanced",
+        "years": 10
+      },
+      {
+        "name": "Public Administration",
+        "proficiency_level": "Expert",
+        "years": 15
+      },
+      {
+        "name": "Communication Skills",
+        "proficiency_level": "Advanced",
+        "years": 15
+      },
+      {
+        "name": "Strategic Planning",
+        "proficiency_level": "Advanced",
+        "years": 10
+      },
+      {
+        "name": "Stakeholder Engagement",
+        "proficiency_level": "Expert",
+        "years": 10
+      },
+      {
+        "name": "Project Management",
+        "proficiency_level": "Advanced",
+        "years": 10
+      }
+    ],
+    "summary": "Accomplished policy development professional with over 15 years of experience in federal governance, regulatory compliance, and strategic policy advocacy. Proven track record of leading cross-functional teams and enhancing inter-agency collaboration to improve service delivery. Committed to driving data-informed decision-making and stakeholder engagement in public administration."
+  }
+}

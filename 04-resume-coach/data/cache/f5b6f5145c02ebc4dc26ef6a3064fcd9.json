@@ -1,0 +1,116 @@
+{
+  "cache_key": "f5b6f5145c02ebc4dc26ef6a3064fcd9",
+  "prompt_key": "resume_bf7a08e1-687c-465e-822a-0258aabfce69_excellent_formal",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:54:37.920190+00:00",
+  "response": {
+    "contact_info": {
+      "name": "John Doe",
+      "email": "john.doe@email.com",
+      "phone": "+1234567890",
+      "location": "Dallas, TX",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Science in Mechanical Engineering",
+        "institution": "University of Texas at Dallas",
+        "graduation_date": "2018-05",
+        "gpa": 3.8,
+        "coursework": [
+          "Manufacturing Processes",
+          "Quality Control Systems",
+          "Engineering Management",
+          "Lean Manufacturing"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "XYZ Manufacturing Solutions",
+        "title": "Manufacturing Engineer",
+        "start_date": "2018-06",
+        "end_date": "2023-09",
+        "responsibilities": [
+          "Optimized manufacturing processes resulting in a 15% reduction in production costs.",
+          "Conducted root cause analysis to resolve quality issues, improving product consistency by 20%.",
+          "Implemented lean manufacturing methodologies, leading to a 30% increase in operational efficiency.",
+          "Collaborated with cross-functional teams to enhance product quality and workflow.",
+          "Utilized CAD software (SolidWorks) for design modifications and process improvements.",
+          "Oversaw quality control standards adherence, ensuring compliance with ISO 9001."
+        ],
+        "achievements": [
+          "Awarded 'Employee of the Year' for outstanding contributions to process optimization.",
+          "Led a team project that achieved a 25% decrease in waste through process improvement initiatives."
+        ]
+      },
+      {
+        "company": "ABC Tech Engineering",
+        "title": "Junior Manufacturing Engineer",
+        "start_date": "2016-05",
+        "end_date": "2018-05",
+        "responsibilities": [
+          "Assisted in the development and implementation of process optimization techniques.",
+          "Participated in Six Sigma projects aimed at improving production efficiency.",
+          "Conducted data analysis using Minitab to support manufacturing decisions.",
+          "Supported the manufacturing team in training sessions on safety regulations and quality standards."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "AutoCAD",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "SolidWorks",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Lean Manufacturing",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Six Sigma",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Root Cause Analysis",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "ISO 9001",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Statistical Process Control (SPC)",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Minitab",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "SAP",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Project Management",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      }
+    ],
+    "summary": null
+  }
+}

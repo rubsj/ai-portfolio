@@ -1,0 +1,39 @@
+{
+  "cache_key": "64641c0a92b999b8de0eea2659f8514d",
+  "prompt_key": "job_Retail_False_Lead",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:16:37.250572+00:00",
+  "response": {
+    "title": "Lead Retail Operations Manager",
+    "company": {
+      "name": "Retail Excellence Inc.",
+      "industry": "Retail",
+      "size": "500-1000 employees",
+      "location": "New York, NY"
+    },
+    "description": "Retail Excellence Inc. is seeking a Lead Retail Operations Manager to oversee and optimize our retail operations across multiple locations. This role will be crucial in enhancing customer experience, driving sales, and ensuring operational efficiency. The ideal candidate will have a proven track record in retail management with strong leadership skills to guide a team of managers and associates. You will be responsible for implementing strategies that align with our business goals while fostering an environment of collaboration and accountability.",
+    "requirements": {
+      "required_skills": [
+        "Inventory Management Systems (e.g., SAP, Oracle)",
+        "Sales Forecasting and Performance Analysis",
+        "Team Leadership and Staff Training",
+        "Budgeting and Financial Management",
+        "Visual Merchandising Techniques",
+        "Customer Relationship Management (CRM) Software",
+        "Operational Compliance and Safety Standards",
+        "Data Analysis and Reporting",
+        "Supply Chain Coordination"
+      ],
+      "preferred_skills": [
+        "E-commerce Integration Strategies",
+        "Change Management",
+        "Project Management Certification (PMP or similar)",
+        "Advanced Excel and Data Visualization Tools",
+        "Customer Experience Strategy Development"
+      ],
+      "education": "Bachelor's Degree in Business Administration or related field",
+      "experience_years": 7,
+      "experience_level": "Lead"
+    }
+  }
+}

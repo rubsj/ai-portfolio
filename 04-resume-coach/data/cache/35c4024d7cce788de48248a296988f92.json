@@ -1,0 +1,84 @@
+{
+  "cache_key": "35c4024d7cce788de48248a296988f92",
+  "prompt_key": "resume_0cd99fc1-d8aa-42c2-9580-2f6a771bc9cd_mismatch_career_changer",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:18:45.686969+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@example.com",
+      "phone": "+1234567890",
+      "location": "Los Angeles, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Fine Arts",
+        "institution": "California Institute of the Arts",
+        "graduation_date": "2018-05",
+        "gpa": null,
+        "coursework": [
+          "Visual Arts",
+          "Art History",
+          "Graphic Design"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Creative Minds Studio",
+        "title": "Senior Graphic Designer",
+        "start_date": "2019-06",
+        "end_date": "2023-08",
+        "responsibilities": [
+          "Designed and produced marketing materials for various campaigns, ensuring alignment with brand guidelines.",
+          "Collaborated with clients to understand their vision and deliver high-quality graphic content.",
+          "Led a team of designers in project execution, providing mentorship and feedback to junior staff.",
+          "Managed multiple projects simultaneously, consistently meeting tight deadlines without compromising quality."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "NextGen Media",
+        "title": "Junior Graphic Designer",
+        "start_date": "2018-06",
+        "end_date": "2019-05",
+        "responsibilities": [
+          "Assisted in the creation of visual content for social media platforms and digital marketing initiatives.",
+          "Worked closely with the marketing team to develop branding strategies and visual concepts.",
+          "Participated in brainstorming sessions to generate innovative design ideas that resonate with target audiences."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Adobe Creative Suite",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Sketch",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "HTML/CSS",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Brand Strategy Development",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "Client Relationship Management",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      }
+    ],
+    "summary": "Highly creative and detail-oriented graphic designer with over 5 years of experience in multimedia design and branding. Proven ability to lead projects and deliver exceptional visual content in fast-paced environments. Seeking to leverage artistic vision and design expertise in a new industry."
+  }
+}

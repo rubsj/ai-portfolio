@@ -1,0 +1,76 @@
+{
+  "cache_key": "b9b69c0b23c1795deac86e097a2b50ad",
+  "prompt_key": "resume_095ecb93-d022-4081-9d73-de8c6be68db6_mismatch_career_changer",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:11:32.794639+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "5129876543",
+      "location": "Dallas, TX",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts in Theater",
+        "institution": "University of Texas at Austin",
+        "graduation_date": "2019-05",
+        "gpa": null,
+        "coursework": [
+          "Acting Techniques",
+          "Stage Management",
+          "Playwriting",
+          "Theatrical Production"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Theater Arts Company",
+        "title": "Stage Manager",
+        "start_date": "2019-06",
+        "end_date": "2023-08",
+        "responsibilities": [
+          "Coordinated all aspects of production schedules and rehearsals",
+          "Managed communication between directors and actors to ensure clarity in performance expectations",
+          "Oversaw set design and logistics to maintain production quality and deadlines",
+          "Developed and implemented safety protocols for live performances"
+        ],
+        "achievements": [
+          "Successfully managed over 20 live productions with audiences of up to 500 people",
+          "Recognized for excellence in leadership at the Annual Theater Awards"
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Stage Management",
+        "proficiency_level": "Expert",
+        "years": 4
+      },
+      {
+        "name": "Public Speaking",
+        "proficiency_level": "Expert",
+        "years": 5
+      },
+      {
+        "name": "Creative Problem Solving",
+        "proficiency_level": "Expert",
+        "years": 5
+      },
+      {
+        "name": "Event Coordination",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "Team Leadership",
+        "proficiency_level": "Advanced",
+        "years": 4
+      }
+    ],
+    "summary": "Dynamic and detail-oriented stage manager with extensive experience in coordinating theatrical productions. Proven ability to lead teams and manage complex schedules while fostering collaboration among diverse stakeholders. Seeking to transfer strong organizational and communication skills to a new field."
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "cache_key": "653f8eefeb526e36f2148aeacefe48df",
+  "prompt_key": "resume_23695202-550e-47cb-85f1-00ce50aa37c7_good_casual",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:21:37.001476+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "5551234567",
+      "location": "New York, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Juris Doctor (JD)",
+        "institution": "Harvard Law School",
+        "graduation_date": "2008-05",
+        "gpa": 3.7,
+        "coursework": [
+          "Corporate Law",
+          "International Law",
+          "Intellectual Property"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Prestige Legal Group",
+        "title": "Senior Legal Counsel",
+        "start_date": "2015-06",
+        "end_date": null,
+        "responsibilities": [
+          "Provided strategic legal advice to C-suite executives on mergers and acquisitions.",
+          "Managed compliance initiatives and regulatory affairs for corporate clients.",
+          "Negotiated high-stakes contracts and settlements in complex litigation cases.",
+          "Oversaw corporate governance processes and developed risk management strategies."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Innovative Legal Solutions",
+        "title": "Legal Advisor",
+        "start_date": "2010-01",
+        "end_date": "2015-05",
+        "responsibilities": [
+          "Advised clients on compliance with state and federal regulations.",
+          "Conducted legal research and analysis on emerging legal trends.",
+          "Collaborated with cross-functional teams to develop internal policies.",
+          "Handled crisis management and implemented resolution strategies."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Corporate Law",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Compliance Management",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Risk Management",
+        "proficiency_level": "Intermediate",
+        "years": 6
+      },
+      {
+        "name": "Contract Negotiation",
+        "proficiency_level": "Advanced",
+        "years": 7
+      },
+      {
+        "name": "Litigation Management",
+        "proficiency_level": "Intermediate",
+        "years": 6
+      },
+      {
+        "name": "Crisis Management",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      },
+      {
+        "name": "Public Speaking",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      }
+    ],
+    "summary": "Experienced legal professional with a strong background in corporate law and compliance management. Adept at navigating complex legal frameworks and providing strategic guidance to executive leadership."
+  }
+}

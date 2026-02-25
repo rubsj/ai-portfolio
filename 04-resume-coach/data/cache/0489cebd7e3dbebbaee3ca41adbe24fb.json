@@ -1,0 +1,111 @@
+{
+  "cache_key": "0489cebd7e3dbebbaee3ca41adbe24fb",
+  "prompt_key": "resume_ab04b637-863d-4ae5-9afb-76d382e37b07_good_casual",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:09:37.922301+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "5551234567",
+      "location": "New York, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor's Degree in Business Administration",
+        "institution": "University of New York",
+        "graduation_date": "2008-05",
+        "gpa": null,
+        "coursework": [
+          "Retail Management",
+          "Marketing Strategies",
+          "Consumer Behavior"
+        ]
+      },
+      {
+        "degree": "MBA in Marketing",
+        "institution": "Business School of New York",
+        "graduation_date": "2012-05",
+        "gpa": null,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "Retail Solutions Corp.",
+        "title": "Senior Retail Manager",
+        "start_date": "2015-06",
+        "end_date": "2021-08",
+        "responsibilities": [
+          "Led a team of 50+ employees to improve sales performance across multiple stores.",
+          "Implemented strategic initiatives that increased revenue by 20% year-over-year.",
+          "Oversaw inventory management systems, ensuring optimal stock levels and minimizing shrinkage.",
+          "Analyzed sales data using Excel and SQL to forecast trends and inform business strategies.",
+          "Collaborated with marketing teams to enhance customer experience through targeted campaigns."
+        ],
+        "achievements": [
+          "Recognized for outstanding leadership resulting in a 15% increase in customer satisfaction scores.",
+          "Developed a training program that reduced employee turnover by 25%."
+        ]
+      },
+      {
+        "company": "Innovative Retail Group",
+        "title": "Retail Operations Director",
+        "start_date": "2012-05",
+        "end_date": "2015-05",
+        "responsibilities": [
+          "Managed retail operations across eight locations, focusing on maximizing efficiency and profitability.",
+          "Executed multi-channel retail strategies, integrating online and in-store sales.",
+          "Led cross-functional teams to optimize product sourcing and supply chain processes.",
+          "Maintained P&L oversight, ensuring budget adherence and financial targets were met."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Multi-channel Retail Management",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Sales Forecasting",
+        "proficiency_level": "Advanced",
+        "years": 6
+      },
+      {
+        "name": "Customer Experience Design",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Inventory Management Systems",
+        "proficiency_level": "Advanced",
+        "years": 7
+      },
+      {
+        "name": "Excel",
+        "proficiency_level": "Advanced",
+        "years": 10
+      },
+      {
+        "name": "SQL",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Project Management",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      },
+      {
+        "name": "Creative Problem Solving",
+        "proficiency_level": "Advanced",
+        "years": 10
+      }
+    ],
+    "summary": "Dynamic retail professional with over 10 years of experience in multi-channel management and operations. Proven track record in driving sales growth and enhancing customer experience. Strong analytical skills and a passion for leading teams to success."
+  }
+}

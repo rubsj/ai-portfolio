@@ -1,0 +1,132 @@
+{
+  "cache_key": "9f61d601685d1829a3633036cedb7814",
+  "prompt_key": "resume_cddd21ac-1b78-455a-ae9a-09c7d879ac2f_excellent_formal",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:20:34.793508+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Alex Johnson",
+      "email": "alex.johnson@example.com",
+      "phone": "+14155552671",
+      "location": "San Francisco, CA",
+      "linkedin": "https://www.linkedin.com/in/alexjohnson",
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Science in Computer Science",
+        "institution": "Stanford University",
+        "graduation_date": "2015-06",
+        "gpa": 3.8,
+        "coursework": [
+          "Software Engineering",
+          "Data Structures and Algorithms",
+          "Database Management Systems",
+          "Web Development"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Innovatech Solutions",
+        "title": "Lead Software Engineer",
+        "start_date": "2018-01",
+        "end_date": null,
+        "responsibilities": [
+          "Designed and implemented microservices architecture for multiple applications, enhancing scalability and performance.",
+          "Led a team of 10 developers in Agile and Scrum environments, ensuring timely delivery of high-quality software solutions.",
+          "Mentored junior engineers and facilitated knowledge sharing through code reviews and technical workshops.",
+          "Collaborated with cross-functional teams to gather requirements and deliver robust and innovative software products.",
+          "Developed and maintained CI/CD pipelines using Jenkins and GitLab CI, improving deployment efficiency."
+        ],
+        "achievements": [
+          "Reduced application downtime by 30% through the implementation of effective monitoring and logging strategies.",
+          "Achieved a 25% increase in team productivity by introducing Agile best practices and improving workflow management."
+        ]
+      },
+      {
+        "company": "Tech Masters Co.",
+        "title": "Senior Software Engineer",
+        "start_date": "2015-06",
+        "end_date": "2017-12",
+        "responsibilities": [
+          "Developed RESTful APIs to support various client applications, ensuring seamless integration and data exchange.",
+          "Utilized AWS services for cloud computing solutions, improving application reliability and scalability.",
+          "Coordinated with DevOps teams to enhance deployment processes and automate infrastructure management using Terraform.",
+          "Implemented containerization solutions with Docker and Kubernetes for efficient application deployment and management."
+        ],
+        "achievements": [
+          "Played a key role in transitioning the company to a microservices architecture, resulting in improved system performance."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Java",
+        "proficiency_level": "Expert",
+        "years": 8
+      },
+      {
+        "name": "Python",
+        "proficiency_level": "Advanced",
+        "years": 6
+      },
+      {
+        "name": "JavaScript",
+        "proficiency_level": "Advanced",
+        "years": 6
+      },
+      {
+        "name": "Microservices Architecture",
+        "proficiency_level": "Expert",
+        "years": 5
+      },
+      {
+        "name": "RESTful APIs",
+        "proficiency_level": "Expert",
+        "years": 5
+      },
+      {
+        "name": "AWS",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "Agile and Scrum",
+        "proficiency_level": "Expert",
+        "years": 5
+      },
+      {
+        "name": "CI/CD Pipelines",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "MySQL",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "MongoDB",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Docker",
+        "proficiency_level": "Advanced",
+        "years": 3
+      },
+      {
+        "name": "Kubernetes",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "React",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      }
+    ],
+    "summary": "Experienced Lead Software Engineer with over 8 years of extensive experience in software development, specializing in microservices architecture and cloud solutions. Proven track record in leading teams and delivering high-quality software products through Agile methodologies."
+  }
+}

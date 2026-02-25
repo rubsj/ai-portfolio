@@ -1,0 +1,97 @@
+{
+  "cache_key": "d7aa11645c883c328ded1db038f3d15a",
+  "prompt_key": "resume_49dfe0ed-640e-410f-b4f8-2826c5d1f66c_good_casual",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:25:15.997882+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "1234567890",
+      "location": "New York, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor's Degree in Marketing",
+        "institution": "New York University",
+        "graduation_date": "2015-05",
+        "gpa": null,
+        "coursework": [
+          "Digital Marketing Strategies",
+          "Consumer Behavior",
+          "Marketing Analytics"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Creative Marketing Agency",
+        "title": "Marketing Manager",
+        "start_date": "2019-06",
+        "end_date": "2023-08",
+        "responsibilities": [
+          "Developed and implemented marketing strategies that increased brand awareness by 30%.",
+          "Managed a team of 5 marketing professionals to execute multi-channel campaigns.",
+          "Utilized Google Analytics to analyze campaign performance and drive data-informed decisions.",
+          "Collaborated with sales to align marketing strategies with customer engagement initiatives."
+        ],
+        "achievements": [
+          "Successfully launched a social media campaign that increased engagement by 50%.",
+          "Created and managed a marketing budget of $500,000."
+        ]
+      },
+      {
+        "company": "Tech Solutions Inc.",
+        "title": "Assistant Marketing Manager",
+        "start_date": "2017-03",
+        "end_date": "2019-05",
+        "responsibilities": [
+          "Assisted in the planning and execution of digital marketing campaigns.",
+          "Conducted market research to identify trends and customer needs.",
+          "Worked with the design team to create marketing materials for events and promotions."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "SEO",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "Google Analytics",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "Salesforce",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Email Marketing (Mailchimp)",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Project Management (Asana)",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Content Creation",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "A/B Testing",
+        "proficiency_level": "Beginner",
+        "years": 1
+      }
+    ],
+    "summary": "Dynamic marketing professional with over 4 years of experience in managing marketing initiatives and leading teams. Skilled in SEO, data analytics, and CRM software. Passionate about leveraging trends to enhance brand presence and customer engagement."
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "cache_key": "4c20ce21570fa67decf80620ea6b81d8",
+  "prompt_key": "resume_f3a8ebf0-9196-4a03-a6ea-ccf366ad50ba_mismatch_career_changer",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:04:58.694631+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jessica Taylor",
+      "email": "jessica.taylor@email.com",
+      "phone": "1234567890",
+      "location": "Miami, FL",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts in Theater Arts",
+        "institution": "University of Miami",
+        "graduation_date": "2010-05",
+        "gpa": null,
+        "coursework": [
+          "Stage Management",
+          "Theatrical Production",
+          "Acting Techniques"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Miami Community Theater",
+        "title": "Artistic Director",
+        "start_date": "2015-01",
+        "end_date": "2023-09",
+        "responsibilities": [
+          "Oversaw the creative direction and programming of the theater's performances.",
+          "Managed a team of artists and technicians to produce high-quality theatrical productions.",
+          "Developed and maintained relationships with community stakeholders and sponsors to secure funding and support.",
+          "Facilitated workshops and training for aspiring actors, enhancing their skills in performance and production."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Sunshine Arts Center",
+        "title": "Event Coordinator",
+        "start_date": "2012-03",
+        "end_date": "2014-12",
+        "responsibilities": [
+          "Coordinated various cultural and artistic events, ensuring smooth execution and high attendance.",
+          "Managed budgets and liaised with vendors for event supplies and logistics.",
+          "Developed promotional materials and marketing strategies to attract diverse audiences."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Adobe Creative Suite",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Public Speaking",
+        "proficiency_level": "Expert",
+        "years": 10
+      },
+      {
+        "name": "Team Leadership",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Budget Management",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      }
+    ],
+    "summary": "Dynamic and passionate Artistic Director with over 8 years of experience in managing theater productions and events. Proven track record in creative leadership and community engagement. Excellent public speaking and team leadership skills, committed to fostering artistic development."
+  }
+}

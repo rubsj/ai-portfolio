@@ -1,0 +1,35 @@
+{
+  "cache_key": "ad07ff176bf7f916fdcd7713d25f8f8f",
+  "prompt_key": "job_Legal_False_Executive",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:17:39.182437+00:00",
+  "response": {
+    "title": "Chief Legal Officer",
+    "company": {
+      "name": "Global Law Associates",
+      "industry": "Legal",
+      "size": "500+ employees",
+      "location": "New York, NY"
+    },
+    "description": "Global Law Associates is seeking a seasoned Chief Legal Officer (CLO) to lead our legal department and provide strategic legal guidance to the executive team. The CLO will oversee all legal matters, compliance, and risk management, ensuring that the organization's practices align with current laws and regulations. This role requires a visionary leader with a deep understanding of legal frameworks and business strategy.",
+    "requirements": {
+      "required_skills": [
+        "Extensive knowledge of corporate law, including mergers and acquisitions",
+        "Proven experience in managing compliance and regulatory affairs",
+        "Strong negotiation skills in high-stakes contracts",
+        "Expertise in risk management and corporate governance",
+        "Ability to navigate complex litigation processes and manage outside counsel"
+      ],
+      "preferred_skills": [
+        "Experience in international law",
+        "Familiarity with intellectual property laws",
+        "Strong interpersonal skills for collaboration with executive leadership",
+        "Track record of developing internal policies and procedures",
+        "Experience with crisis management and resolution strategies"
+      ],
+      "education": "Juris Doctor (JD) from an accredited law school",
+      "experience_years": 15,
+      "experience_level": "Executive"
+    }
+  }
+}

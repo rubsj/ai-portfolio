@@ -1,0 +1,91 @@
+{
+  "cache_key": "72f808e7790fe5354c0cfa98bcfcf8e2",
+  "prompt_key": "resume_36abec22-a5f4-4aaf-8ba1-98b557f15a33_good_casual",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:19:14.254674+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "+1234567890",
+      "location": "New York, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Juris Doctor (JD)",
+        "institution": "Columbia Law School",
+        "graduation_date": "2015-05",
+        "gpa": null,
+        "coursework": [
+          "Corporate Law",
+          "Mergers and Acquisitions",
+          "Contract Law",
+          "Securities Regulation"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Smith & Associates Law Firm",
+        "title": "Corporate Attorney",
+        "start_date": "2016-06",
+        "end_date": null,
+        "responsibilities": [
+          "Provided legal advice on corporate matters to a diverse client base.",
+          "Drafted and negotiated contracts related to mergers and acquisitions.",
+          "Conducted legal research and analysis on corporate governance compliance.",
+          "Collaborated with clients to structure business transactions successfully.",
+          "Managed multiple transactions simultaneously, ensuring timely execution."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Johnson Legal Group",
+        "title": "Associate Attorney",
+        "start_date": "2015-06",
+        "end_date": "2016-05",
+        "responsibilities": [
+          "Assisted in the preparation and review of various corporate documents.",
+          "Participated in client meetings to discuss legal strategies.",
+          "Supported senior attorneys in litigation and compliance matters."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Corporate Law",
+        "proficiency_level": "Advanced",
+        "years": 7
+      },
+      {
+        "name": "Contract Negotiation",
+        "proficiency_level": "Advanced",
+        "years": 7
+      },
+      {
+        "name": "Mergers and Acquisitions",
+        "proficiency_level": "Intermediate",
+        "years": 6
+      },
+      {
+        "name": "Legal Research",
+        "proficiency_level": "Advanced",
+        "years": 7
+      },
+      {
+        "name": "Public Speaking",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Time Management",
+        "proficiency_level": "Expert",
+        "years": 8
+      }
+    ],
+    "summary": "Detail-oriented Corporate Attorney with 7 years of experience in corporate law, especially in mergers and acquisitions. Proven track record in contract negotiation and compliance. Strong legal research skills and a knack for managing multiple transactions."
+  }
+}

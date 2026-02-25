@@ -1,0 +1,84 @@
+{
+  "cache_key": "4aaf0e8bc3e90710eb55bf7c15384585",
+  "prompt_key": "resume_f69b76d8-3736-416f-ada3-b0cd5abab4fa_partial_technical",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:50:43.542814+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jessica Taylor",
+      "email": "jessica.taylor@email.com",
+      "phone": "1234567890",
+      "location": "Brooklyn, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Master's degree",
+        "institution": "New York University",
+        "graduation_date": "2016-05",
+        "gpa": 3.8,
+        "coursework": [
+          "Curriculum Design",
+          "Educational Assessment",
+          "Program Evaluation"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Future Learning Institute",
+        "title": "Educational Program Coordinator",
+        "start_date": "2017-06",
+        "end_date": "2023-02",
+        "responsibilities": [
+          "Collaborated with faculty to design and implement curriculum for adult education programs.",
+          "Performed program evaluations and assessments to measure student success and program effectiveness.",
+          "Managed project timelines and deliverables using Trello, ensuring alignment with educational standards.",
+          "Conducted data analysis and reporting using Microsoft Excel to support program improvement initiatives."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "TeachSmart Academy",
+        "title": "Instructional Designer",
+        "start_date": "2016-08",
+        "end_date": "2017-05",
+        "responsibilities": [
+          "Developed instructional materials for online courses in collaboration with subject matter experts.",
+          "Utilized Blackboard LMS to enhance course delivery and student engagement.",
+          "Assisted in the budget management for educational projects, tracking expenses and forecasting future needs."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Curriculum Development",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      },
+      {
+        "name": "Program Evaluation",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Data Analysis (Excel)",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      },
+      {
+        "name": "Project Management (Trello)",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Budget Management",
+        "proficiency_level": "Beginner",
+        "years": 2
+      }
+    ],
+    "summary": null
+  }
+}

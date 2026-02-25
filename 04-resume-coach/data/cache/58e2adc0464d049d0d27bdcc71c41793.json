@@ -1,0 +1,37 @@
+{
+  "cache_key": "58e2adc0464d049d0d27bdcc71c41793",
+  "prompt_key": "job_Healthcare_False_Senior",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:14:20.332021+00:00",
+  "response": {
+    "title": "Senior Healthcare Analytics Manager",
+    "company": {
+      "name": "HealthTech Solutions Inc.",
+      "industry": "Healthcare",
+      "size": "500-1000 employees",
+      "location": "San Francisco, CA"
+    },
+    "description": "We are seeking a Senior Healthcare Analytics Manager to lead our analytics team in transforming data into actionable insights that drive clinical and operational efficiencies. The ideal candidate will have extensive experience in healthcare analytics, a strong understanding of healthcare data governance, and the ability to collaborate with clinical and operational teams to improve patient outcomes.",
+    "requirements": {
+      "required_skills": [
+        "Proficiency in SQL for data manipulation and analysis",
+        "Hands-on experience with data visualization tools such as Tableau or Power BI",
+        "Knowledge of statistical analysis and predictive modeling techniques",
+        "Experience with Electronic Health Record (EHR) systems and data integration",
+        "Strong understanding of healthcare regulations (HIPAA, HITECH)",
+        "Ability to communicate complex data insights to non-technical stakeholders",
+        "Expertise in data quality assessment and data governance practices",
+        "Experience in leading and mentoring analytics teams"
+      ],
+      "preferred_skills": [
+        "Familiarity with machine learning algorithms and tools",
+        "Experience in value-based care analytics",
+        "Knowledge of healthcare reimbursement models",
+        "Certifications in healthcare analytics (e.g., CAHIMS, CPHIMS)"
+      ],
+      "education": "Master's degree in Healthcare Administration, Public Health, or a related field",
+      "experience_years": 7,
+      "experience_level": "Senior"
+    }
+  }
+}

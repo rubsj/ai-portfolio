@@ -1,0 +1,80 @@
+{
+  "cache_key": "aa183eb02cdbb35b166ce9629c8019d5",
+  "prompt_key": "resume_36abec22-a5f4-4aaf-8ba1-98b557f15a33_poor_achievement",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:19:37.804526+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@example.com",
+      "phone": "+1234567890",
+      "location": "Newark, NJ",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts in Business Administration",
+        "institution": "Newark University",
+        "graduation_date": "2019-05",
+        "gpa": null,
+        "coursework": [
+          "Business Law",
+          "Corporate Finance",
+          "Marketing Principles"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Smith & Associates Consulting",
+        "title": "Business Consultant",
+        "start_date": "2020-01",
+        "end_date": null,
+        "responsibilities": [
+          "Advised clients on business strategy and operational improvements",
+          "Conducted market research to identify growth opportunities",
+          "Drafted reports and presentations for client meetings"
+        ],
+        "achievements": [
+          "Increased client satisfaction ratings by 15% through improved service delivery",
+          "Managed a project that resulted in a 10% reduction in operational costs for a client"
+        ]
+      },
+      {
+        "company": "Newark Legal Aid Society",
+        "title": "Intern",
+        "start_date": "2018-06",
+        "end_date": "2018-08",
+        "responsibilities": [
+          "Assisted attorneys with legal research and document preparation",
+          "Reviewed case files and provided summaries to legal teams"
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Contract Analysis",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Legal Research",
+        "proficiency_level": "Beginner",
+        "years": 0
+      },
+      {
+        "name": "Business Strategy",
+        "proficiency_level": "Advanced",
+        "years": 3
+      },
+      {
+        "name": "Client Relations",
+        "proficiency_level": "Advanced",
+        "years": 3
+      }
+    ],
+    "summary": "Highly motivated business consultant with a background in business administration and experience in client relations. Seeking to leverage skills in legal research and contract analysis in a corporate legal setting."
+  }
+}

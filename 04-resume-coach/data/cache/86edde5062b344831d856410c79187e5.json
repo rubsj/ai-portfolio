@@ -1,0 +1,80 @@
+{
+  "cache_key": "86edde5062b344831d856410c79187e5",
+  "prompt_key": "resume_c2d7a497-a32d-4b7b-8d4c-035926ccd2d1_partial_technical",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T03:22:05.762666+00:00",
+  "response": {
+    "contact_info": {
+      "name": "John Smith",
+      "email": "john.smith@example.com",
+      "phone": "+14155552671",
+      "location": "San Francisco, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Master's in Information Technology",
+        "institution": "University of California, Berkeley",
+        "graduation_date": "2010-05",
+        "gpa": null,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "TechSolutions Inc.",
+        "title": "Director of Technology",
+        "start_date": "2018-03",
+        "end_date": null,
+        "responsibilities": [
+          "Led the design and implementation of software architecture for multiple cloud-based applications using AWS.",
+          "Managed a team of engineers to develop secure coding practices in line with cybersecurity frameworks.",
+          "Oversaw the migration of legacy infrastructure to a modern cloud environment, reducing operational costs by 30%.",
+          "Implemented Agile methodologies to enhance project delivery efficiency and team collaboration."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Data Innovations LLC",
+        "title": "Senior Software Engineer",
+        "start_date": "2015-06",
+        "end_date": "2018-02",
+        "responsibilities": [
+          "Contributed to the development of machine learning algorithms for data analysis and predictive modeling.",
+          "Collaborated with cross-functional teams to deliver software solutions that met client requirements.",
+          "Developed and maintained system documentation, ensuring compliance with industry standards."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "AWS",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Python",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Cybersecurity Best Practices",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Agile Methodologies",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "Data Analysis Techniques",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      }
+    ],
+    "summary": null
+  }
+}

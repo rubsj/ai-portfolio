@@ -1,0 +1,89 @@
+{
+  "cache_key": "4fb54755051dd21a8b0f4284da51fa53",
+  "prompt_key": "resume_851f1f6f-82c8-484e-a4df-04aef4ec2499_mismatch_career_changer",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T04:16:17.206443+00:00",
+  "response": {
+    "contact_info": {
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "phone": "1234567890",
+      "location": "New York, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts in Theatre",
+        "institution": "University of the Arts",
+        "graduation_date": "2010-05",
+        "gpa": null,
+        "coursework": [
+          "Stage Management",
+          "Directing",
+          "Sound Design"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Creative Productions Inc.",
+        "title": "Production Manager",
+        "start_date": "2015-06",
+        "end_date": "2023-08",
+        "responsibilities": [
+          "Coordinated logistics for over 100 live events annually, ensuring timely execution and adherence to production schedules.",
+          "Managed a team of 20 staff, including stage crew, lighting technicians, and set designers, fostering collaboration and efficiency.",
+          "Negotiated contracts with vendors and suppliers, focusing on cost-effectiveness and quality of service.",
+          "Developed marketing materials and promotional strategies to enhance audience engagement and ticket sales."
+        ],
+        "achievements": [
+          "Increased audience attendance by 30% through innovative marketing and community outreach initiatives.",
+          "Successfully managed a $500,000 budget, implementing cost-saving measures that reduced expenses by 15% while maintaining quality."
+        ]
+      },
+      {
+        "company": "Theatrical Arts Company",
+        "title": "Assistant Director",
+        "start_date": "2012-09",
+        "end_date": "2015-05",
+        "responsibilities": [
+          "Assisted in directing rehearsals and performances, providing feedback to cast members to enhance performance quality.",
+          "Collaborated with the design team to create visually compelling stage settings aligned with the artistic vision.",
+          "Scheduled and coordinated rehearsals, ensuring optimal use of time and resources."
+        ],
+        "achievements": [
+          "Contributed to a production that earned a regional award for innovative stage design and direction."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Event Coordination",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Creative Problem Solving",
+        "proficiency_level": "Expert",
+        "years": 10
+      },
+      {
+        "name": "Team Leadership",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Budget Management",
+        "proficiency_level": "Intermediate",
+        "years": 8
+      },
+      {
+        "name": "Negotiation",
+        "proficiency_level": "Advanced",
+        "years": 6
+      }
+    ],
+    "summary": "Dynamic production manager with over 8 years of experience in coordinating live events and managing creative teams. Recognized for innovative problem-solving and exceptional leadership skills in an artistic environment."
+  }
+}
