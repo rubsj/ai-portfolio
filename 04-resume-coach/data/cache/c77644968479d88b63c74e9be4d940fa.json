@@ -1,0 +1,38 @@
+{
+  "cache_key": "c77644968479d88b63c74e9be4d940fa",
+  "prompt_key": "job_Finance_True_Entry",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:17:07.707827+00:00",
+  "response": {
+    "title": "FinTech Data Analyst - Behavioral Insights",
+    "company": {
+      "name": "Innovate Finance Solutions",
+      "industry": "Finance",
+      "size": "Small (51-200)",
+      "location": "San Francisco, CA"
+    },
+    "description": "We are seeking a highly motivated and analytical FinTech Data Analyst specializing in behavioral insights to join our dynamic team. In this role, you will leverage data analytics and psychological principles to understand consumer behaviors and improve financial product offerings. You will work closely with product development, marketing, and data science teams to provide insights that drive innovation in our financial products.",
+    "requirements": {
+      "required_skills": [
+        "SQL",
+        "Python",
+        "Excel",
+        "Data Visualization",
+        "Statistical Analysis",
+        "Consumer Behavior",
+        "Machine Learning",
+        "A/B Testing"
+      ],
+      "preferred_skills": [
+        "R",
+        "Tableau",
+        "SAS",
+        "Financial Modeling",
+        "UX Research"
+      ],
+      "education": "Bachelor's degree in Finance, Economics, Data Science, Psychology, or a related field",
+      "experience_years": 0,
+      "experience_level": "Entry"
+    }
+  }
+}

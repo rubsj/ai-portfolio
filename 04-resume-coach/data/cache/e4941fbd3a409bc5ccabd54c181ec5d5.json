@@ -1,0 +1,99 @@
+{
+  "cache_key": "e4941fbd3a409bc5ccabd54c181ec5d5",
+  "prompt_key": "resume_a77e1152-97c7-4dea-8613-8af2fea7672e_mismatch_career_changer",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:14:42.405264+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@example.com",
+      "phone": "1234567890",
+      "location": "Los Angeles, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts",
+        "institution": "University of California, Los Angeles",
+        "graduation_date": "2020-06",
+        "gpa": 3.6,
+        "coursework": [
+          "Creative Writing",
+          "Digital Media",
+          "Arts Administration"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Creative Agency Inc.",
+        "title": "Content Strategist",
+        "start_date": "2020-07",
+        "end_date": null,
+        "responsibilities": [
+          "Developed innovative content strategies for diverse clients to enhance brand visibility.",
+          "Collaborated with graphic designers and marketing teams to create multimedia marketing campaigns.",
+          "Analyzed audience engagement metrics to refine content approaches and improve effectiveness.",
+          "Managed project timelines and deliverables to ensure timely execution of marketing initiatives."
+        ],
+        "achievements": [
+          "Increased client engagement by 30% through targeted content strategies.",
+          "Successfully launched a viral marketing campaign that tripled website traffic."
+        ]
+      },
+      {
+        "company": "Freelance",
+        "title": "Creative Writer",
+        "start_date": "2019-01",
+        "end_date": "2020-06",
+        "responsibilities": [
+          "Wrote and edited articles for various online publications, focusing on arts and culture.",
+          "Participated in brainstorming sessions to generate ideas for new content themes.",
+          "Maintained a consistent voice and style across different platforms and publications."
+        ],
+        "achievements": [
+          "Published over 100 articles, significantly increasing readership for clients."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Content Strategy",
+        "proficiency_level": "Advanced",
+        "years": 3
+      },
+      {
+        "name": "Creative Writing",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "Digital Marketing",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Project Management",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Graphic Design",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Social Media Management",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "SEO",
+        "proficiency_level": "Beginner",
+        "years": 1
+      }
+    ],
+    "summary": "Creative and detail-oriented Content Strategist with a strong background in digital marketing and content creation. Proven ability to develop engaging content and manage projects successfully, eager to leverage these skills in a new industry."
+  }
+}

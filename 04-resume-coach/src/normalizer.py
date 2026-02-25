@@ -59,6 +59,11 @@ class SkillNormalizer:
         if not s:
             return s
 
+        # Step 0: Remove parentheticals — "JavaScript (ES6+)" -> "JavaScript"
+        # WHY: LLMs generate "Cloud Computing (AWS, Azure)" instead of "AWS", "Azure" as separate tokens.
+        # [^)]* matches non-closing-paren chars, handling multiple separate groups correctly.
+        s = re.sub(r"\s*\([^)]*\)", "", s).strip()
+
         # Step 1: Remove version numbers (e.g., "python 3.10" -> "python")
         s = re.sub(r"\s*\d+(\.\d+)*\s*$", "", s).strip()
 

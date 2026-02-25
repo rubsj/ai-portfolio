@@ -1,0 +1,117 @@
+{
+  "cache_key": "194f411de2aba801ca801d68199cd92c",
+  "prompt_key": "resume_7fb904da-6cf3-4102-97e8-1f6c8aedad7f_excellent_formal",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T20:10:31.218827+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "+12125551234",
+      "location": "New York, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Juris Doctor",
+        "institution": "Columbia Law School",
+        "graduation_date": "2018-05",
+        "gpa": 3.7,
+        "coursework": [
+          "Corporate Law",
+          "Mergers and Acquisitions",
+          "Contract Law",
+          "Compliance Regulations"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Johnson & Partners Law Firm",
+        "title": "Corporate Attorney",
+        "start_date": "2018-06",
+        "end_date": null,
+        "responsibilities": [
+          "Provided legal counsel on corporate matters, including mergers and acquisitions.",
+          "Drafted and reviewed contracts to ensure compliance with applicable laws.",
+          "Conducted legal research to support corporate governance initiatives.",
+          "Negotiated terms and conditions on behalf of clients in corporate transactions.",
+          "Performed due diligence for mergers, acquisitions, and other corporate transactions."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Global Legal Services",
+        "title": "Associate Attorney",
+        "start_date": "2016-08",
+        "end_date": "2018-05",
+        "responsibilities": [
+          "Assisted in compliance with federal and state regulations for corporate clients.",
+          "Researched legal precedents and statutes to support case arguments.",
+          "Collaborated with senior attorneys on corporate governance matters.",
+          "Provided legal opinions on various corporate law issues."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Corporate law",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Mergers and acquisitions",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Contract drafting",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Compliance regulations",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Legal research",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Negotiation skills",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Due diligence",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Corporate governance",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Real estate law",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Intellectual property",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Tax law",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      }
+    ],
+    "summary": null
+  }
+}

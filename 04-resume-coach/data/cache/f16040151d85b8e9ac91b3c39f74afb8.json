@@ -1,0 +1,86 @@
+{
+  "cache_key": "f16040151d85b8e9ac91b3c39f74afb8",
+  "prompt_key": "resume_ce6f22f5-d32f-4881-99e1-5507c48ad27c_mismatch_career_changer",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:37:08.876631+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "1234567890",
+      "location": "New York, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Fine Arts",
+        "institution": "New York University",
+        "graduation_date": "2018-05",
+        "gpa": null,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "Creative Arts Studio",
+        "title": "Visual Artist",
+        "start_date": "2018-06",
+        "end_date": null,
+        "responsibilities": [
+          "Developed and executed artistic projects for exhibition, focusing on visual storytelling.",
+          "Collaborated with other artists to create multi-media installations that explore contemporary issues.",
+          "Managed all aspects of gallery shows, including logistics, marketing, and outreach to potential buyers."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Local Art Nonprofit",
+        "title": "Event Coordinator",
+        "start_date": "2016-01",
+        "end_date": "2018-05",
+        "responsibilities": [
+          "Planned and organized community art events, enhancing public engagement with local artists.",
+          "Coordinated volunteer efforts to ensure smooth event execution, including training and scheduling.",
+          "Developed promotional materials and managed social media accounts to increase event visibility."
+        ],
+        "achievements": [
+          "Successfully increased event attendance by 50% year over year."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Visual Arts",
+        "proficiency_level": "Expert",
+        "years": 5
+      },
+      {
+        "name": "Event Planning",
+        "proficiency_level": "Advanced",
+        "years": 2
+      },
+      {
+        "name": "Social Media Marketing",
+        "proficiency_level": "Advanced",
+        "years": 2
+      },
+      {
+        "name": "Adobe Creative Suite",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "Project Management",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Graphic Design",
+        "proficiency_level": "Advanced",
+        "years": 4
+      }
+    ],
+    "summary": "Creative professional with 5 years of experience in the visual arts and event coordination. Proven track record of successful project management and community engagement. Excited to leverage artistic skills and organizational expertise in new, dynamic environments."
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "cache_key": "47e1ad6cf4a88c9ccb07f9f1a0f55132",
+  "prompt_key": "resume_74da7ae6-8e76-4c78-bf34-a899ea8210f4_excellent_formal",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T20:04:48.903082+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "+14155552671",
+      "location": "San Francisco, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Science in Environmental Science",
+        "institution": "University of California, Berkeley",
+        "graduation_date": "2018-05",
+        "gpa": 3.8,
+        "coursework": [
+          "Energy Economics",
+          "Sustainable Energy Systems",
+          "Environmental Policy"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Green Solutions Consulting",
+        "title": "Energy Analyst",
+        "start_date": "2019-06",
+        "end_date": null,
+        "responsibilities": [
+          "Conducted energy modeling to assess the impact of various efficiency measures.",
+          "Analyzed energy data to identify trends and develop actionable insights for clients.",
+          "Collaborated with cross-functional teams to deliver comprehensive energy efficiency reports.",
+          "Utilized Excel and SQL for data manipulation and visualization.",
+          "Supported the development of renewable energy systems through data-driven recommendations."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "EcoEnergy Partners",
+        "title": "Junior Energy Analyst",
+        "start_date": "2018-06",
+        "end_date": "2019-05",
+        "responsibilities": [
+          "Assisted in data analysis and report generation for energy sustainability projects.",
+          "Conducted statistical analysis to evaluate project performance and efficiency.",
+          "Participated in workshops focused on renewable energy solutions and energy efficiency strategies."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Energy modeling",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "Data analysis",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "Excel",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "SQL",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "Energy efficiency",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "Renewable energy systems",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Report generation",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "Statistical analysis",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Python",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "R",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "GIS",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Power BI",
+        "proficiency_level": "Beginner",
+        "years": 1
+      }
+    ],
+    "summary": "Detail-oriented Energy Analyst with over 4 years of experience in energy modeling, data analysis, and sustainability projects. Proven track record in improving energy efficiency and collaborating with cross-functional teams to deliver impactful insights."
+  }
+}

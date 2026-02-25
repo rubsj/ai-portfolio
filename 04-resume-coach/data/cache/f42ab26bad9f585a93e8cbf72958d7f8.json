@@ -1,0 +1,85 @@
+{
+  "cache_key": "f42ab26bad9f585a93e8cbf72958d7f8",
+  "prompt_key": "resume_6fbe0762-c752-4b60-8ff6-7337a06e2f12_mismatch_career_changer",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:33:20.840694+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@example.com",
+      "phone": "5551234567",
+      "location": "Los Angeles, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts in Theater",
+        "institution": "University of California, Los Angeles",
+        "graduation_date": "2015-06",
+        "gpa": null,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "Creative Arts Productions",
+        "title": "Production Manager",
+        "start_date": "2016-08",
+        "end_date": "2023-08",
+        "responsibilities": [
+          "Managed multiple live theater productions from inception to completion, ensuring all elements were executed smoothly.",
+          "Coordinated with cross-functional teams including directors, actors, and stage crew to deliver high-quality performances.",
+          "Oversaw budget allocations for productions, negotiating costs with vendors to keep projects within financial constraints.",
+          "Facilitated communication between departments to enhance collaboration and resolve conflicts during production timelines."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Artistic Ventures LLC",
+        "title": "Event Coordinator",
+        "start_date": "2015-07",
+        "end_date": "2016-07",
+        "responsibilities": [
+          "Planned and executed various art events, managing logistics, budgeting, and vendor contracts.",
+          "Developed promotional materials and managed social media campaigns to increase event attendance.",
+          "Collaborated with artists and sponsors to curate engaging experiences at art exhibitions."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Project Management",
+        "proficiency_level": "Advanced",
+        "years": 7
+      },
+      {
+        "name": "Negotiation",
+        "proficiency_level": "Advanced",
+        "years": 7
+      },
+      {
+        "name": "Event Planning",
+        "proficiency_level": "Advanced",
+        "years": 6
+      },
+      {
+        "name": "Creative Problem Solving",
+        "proficiency_level": "Advanced",
+        "years": 7
+      },
+      {
+        "name": "Team Leadership",
+        "proficiency_level": "Advanced",
+        "years": 7
+      },
+      {
+        "name": "Social Media Marketing",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      }
+    ],
+    "summary": "Dynamic production manager with over 7 years of experience in the arts industry. Proven track record in project management, team collaboration, and budgeting, seeking to leverage creative problem-solving skills in a new environment."
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "cache_key": "324b86fb1a4e83cb67410b5c0dcfdebc",
+  "prompt_key": "resume_0dfed0e0-3bef-41f8-a8f9-1b354ea1b12b_partial_technical",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T20:08:54.872757+00:00",
+  "response": {
+    "contact_info": {
+      "name": "John Doe",
+      "email": "johndoe@example.com",
+      "phone": "1234567890",
+      "location": "Houston, TX",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Master of Business Administration",
+        "institution": "University of Houston",
+        "graduation_date": "2010-05",
+        "gpa": null,
+        "coursework": [
+          "Operations Management",
+          "Financial Accounting",
+          "Strategic Management"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Green Energy Solutions",
+        "title": "Director of Operations",
+        "start_date": "2015-01",
+        "end_date": "2023-09",
+        "responsibilities": [
+          "Developed and implemented operational strategies to enhance efficiency across multiple departments.",
+          "Oversaw project management initiatives aimed at reducing operational costs by 20%.",
+          "Collaborated with finance teams to manage budgets and financial reporting."
+        ],
+        "achievements": [
+          "Led a cross-functional team to streamline supply chain processes, reducing lead times by 15%.",
+          "Successfully managed a project that increased annual revenue by $5 million through enhanced service delivery."
+        ]
+      },
+      {
+        "company": "Renewable Ventures",
+        "title": "Senior Project Manager",
+        "start_date": "2012-06",
+        "end_date": "2014-12",
+        "responsibilities": [
+          "Managed multiple projects focused on energy efficiency improvements and compliance with regulations.",
+          "Conducted risk assessments for new initiatives to ensure operational viability and regulatory compliance.",
+          "Engaged with stakeholders to promote project visibility and gain necessary approvals."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Operational Strategy",
+        "proficiency_level": "Intermediate",
+        "years": 8
+      },
+      {
+        "name": "Project Management",
+        "proficiency_level": "Intermediate",
+        "years": 11
+      },
+      {
+        "name": "Financial Management",
+        "proficiency_level": "Intermediate",
+        "years": 8
+      },
+      {
+        "name": "Risk Assessment",
+        "proficiency_level": "Intermediate",
+        "years": 6
+      },
+      {
+        "name": "Supply Chain Optimization",
+        "proficiency_level": "Beginner",
+        "years": 2
+      }
+    ],
+    "summary": "Experienced operations leader with a strong background in project management and financial oversight within the energy sector."
+  }
+}

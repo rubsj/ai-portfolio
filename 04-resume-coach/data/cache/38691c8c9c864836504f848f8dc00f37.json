@@ -1,0 +1,38 @@
+{
+  "cache_key": "38691c8c9c864836504f848f8dc00f37",
+  "prompt_key": "job_Manufacturing_False_Lead",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:18:17.239605+00:00",
+  "response": {
+    "title": "Lead Manufacturing Engineer",
+    "company": {
+      "name": "Precision Manufacturing Inc.",
+      "industry": "Manufacturing",
+      "size": "Mid-size (201-500)",
+      "location": "Seattle, WA"
+    },
+    "description": "The Lead Manufacturing Engineer will oversee and optimize production processes, ensuring efficiency and adherence to quality standards. This role involves mentoring junior engineers, implementing lean manufacturing principles, and collaborating with cross-functional teams to drive continuous improvement initiatives. The ideal candidate will possess a strong technical background in manufacturing processes and demonstrate leadership in achieving operational goals.",
+    "requirements": {
+      "required_skills": [
+        "Lean Manufacturing",
+        "Six Sigma",
+        "CAD Software",
+        "Project Management",
+        "Process Optimization",
+        "Quality Assurance",
+        "Manufacturing Systems",
+        "Statistical Analysis"
+      ],
+      "preferred_skills": [
+        "Automation Technologies",
+        "Robotics",
+        "Industrial Engineering",
+        "Supply Chain Management",
+        "ERP Systems"
+      ],
+      "education": "Bachelor's degree in Engineering or related field",
+      "experience_years": 7,
+      "experience_level": "Lead"
+    }
+  }
+}

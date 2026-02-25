@@ -1,0 +1,80 @@
+{
+  "cache_key": "2f8acf63a77c99cd95042e977909e209",
+  "prompt_key": "resume_817678f9-4651-4fcb-b579-acad7c0eae69_partial_technical",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T20:23:12.685806+00:00",
+  "response": {
+    "contact_info": {
+      "name": "John Smith",
+      "email": "john.smith@email.com",
+      "phone": "1234567890",
+      "location": "Washington, D.C.",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Science in Business Management",
+        "institution": "George Washington University",
+        "graduation_date": "2015-05",
+        "gpa": null,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "State Development Agency",
+        "title": "Program Manager",
+        "start_date": "2018-04",
+        "end_date": null,
+        "responsibilities": [
+          "Managed multiple state-level projects ensuring compliance with local regulations.",
+          "Facilitated stakeholder engagement through regular updates and feedback sessions.",
+          "Oversaw budget management for several projects, tracking expenses against forecasts.",
+          "Collaborated with cross-functional teams to deliver project outcomes on time."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "City Planning Department",
+        "title": "Project Coordinator",
+        "start_date": "2015-06",
+        "end_date": "2018-03",
+        "responsibilities": [
+          "Assisted in the planning and execution of community development projects.",
+          "Developed performance metrics to evaluate project success and areas for improvement.",
+          "Coordinated meetings with various stakeholders to ensure project alignment."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Project Management",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      },
+      {
+        "name": "Budget Management",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Stakeholder Engagement",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      },
+      {
+        "name": "Risk Assessment",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Agile Methodology",
+        "proficiency_level": "Beginner",
+        "years": 1
+      }
+    ],
+    "summary": "Detail-oriented Program Manager with experience in managing government projects, ensuring compliance and successful delivery while engaging stakeholders effectively."
+  }
+}

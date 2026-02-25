@@ -1,0 +1,124 @@
+{
+  "cache_key": "fd6ec52494946063147bd81ff598d952",
+  "prompt_key": "resume_499f18fc-5438-4020-a398-ba469aa53888_good_casual",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T20:07:34.315726+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Alex Johnson",
+      "email": "alex.johnson@email.com",
+      "phone": "5125551234",
+      "location": "Austin, TX",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Science in Mechanical Engineering",
+        "institution": "University of Texas at Austin",
+        "graduation_date": "2015-05",
+        "gpa": 3.5,
+        "coursework": [
+          "Thermodynamics",
+          "Fluid Mechanics",
+          "Sustainable Energy Systems"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Sustainable Energy Innovations",
+        "title": "Renewable Energy Engineer",
+        "start_date": "2016-06",
+        "end_date": "2023-08",
+        "responsibilities": [
+          "Designed and implemented solar energy systems for residential and commercial clients.",
+          "Managed renewable energy projects from concept to completion, ensuring regulatory compliance and safety standards.",
+          "Conducted data analysis to optimize energy performance and efficiency in existing systems.",
+          "Prepared technical reports and presentations for stakeholders and clients."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "EcoTech Solutions",
+        "title": "Energy Analyst",
+        "start_date": "2015-06",
+        "end_date": "2016-05",
+        "responsibilities": [
+          "Analyzed data on energy consumption and identified opportunities for reductions.",
+          "Assisted in energy modeling and simulations to predict energy savings for new installations.",
+          "Collaborated with engineering teams to assess environmental impacts of proposed projects."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Solar Energy Systems",
+        "proficiency_level": "Advanced",
+        "years": 7
+      },
+      {
+        "name": "Wind Turbine Design",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Energy Storage Solutions",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Grid Integration",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Project Management",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      },
+      {
+        "name": "Regulatory Compliance",
+        "proficiency_level": "Advanced",
+        "years": 6
+      },
+      {
+        "name": "Data Analysis",
+        "proficiency_level": "Advanced",
+        "years": 6
+      },
+      {
+        "name": "Technical Reporting",
+        "proficiency_level": "Advanced",
+        "years": 6
+      },
+      {
+        "name": "Energy Modeling Software",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Financial Analysis",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Environmental Impact Assessment",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "AutoCAD",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Microsoft Excel",
+        "proficiency_level": "Advanced",
+        "years": 8
+      }
+    ],
+    "summary": null
+  }
+}

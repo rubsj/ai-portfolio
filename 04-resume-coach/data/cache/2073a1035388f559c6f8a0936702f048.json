@@ -1,0 +1,96 @@
+{
+  "cache_key": "2073a1035388f559c6f8a0936702f048",
+  "prompt_key": "resume_c1482334-cde0-4c2f-96dd-2d0d21beeac2_partial_technical",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T20:19:06.776931+00:00",
+  "response": {
+    "contact_info": {
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "phone": "+1234567890",
+      "location": "New York, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Master's in Business Administration",
+        "institution": "New York University",
+        "graduation_date": "2015-05-15",
+        "gpa": null,
+        "coursework": [
+          "Marketing Management",
+          "Consumer Behavior",
+          "Digital Marketing Strategies"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Creative Marketing Agency",
+        "title": "Senior Marketing Manager",
+        "start_date": "2018-03",
+        "end_date": null,
+        "responsibilities": [
+          "Developed and executed digital marketing campaigns to enhance brand visibility.",
+          "Managed a team of 5 marketing professionals focusing on content creation and strategy.",
+          "Conducted market research to identify trends and consumer preferences.",
+          "Oversaw SEO optimization efforts, resulting in a 30% increase in organic traffic."
+        ],
+        "achievements": [
+          "Achieved a 25% increase in customer engagement through targeted social media advertising."
+        ]
+      },
+      {
+        "company": "Tech Solutions Inc.",
+        "title": "Marketing Coordinator",
+        "start_date": "2015-06",
+        "end_date": "2018-02",
+        "responsibilities": [
+          "Assisted in the development of marketing strategies and tracked campaign performance.",
+          "Coordinated events and promotions to drive lead generation.",
+          "Supported the implementation of CRM tools to enhance customer relationship management."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Digital Marketing",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      },
+      {
+        "name": "Brand Strategy",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Market Research",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "SEO Optimization",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Data Analytics",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Campaign Management",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Marketing Automation",
+        "proficiency_level": "Beginner",
+        "years": 1
+      }
+    ],
+    "summary": "Experienced marketing professional with a focus on digital marketing and brand strategy. Proven track record in managing marketing teams and executing campaigns that drive customer engagement and brand awareness."
+  }
+}

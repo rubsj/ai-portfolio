@@ -1,0 +1,89 @@
+{
+  "cache_key": "90f8d4623421854d83e30f5a37600a20",
+  "prompt_key": "resume_3e017fce-4640-402d-8781-44c607d9ea0b_mismatch_career_changer",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:45:21.653625+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "5551234567",
+      "location": "Austin, TX",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor's in Fine Arts",
+        "institution": "University of Texas",
+        "graduation_date": "2015-05",
+        "gpa": null,
+        "coursework": [
+          "Graphic Design",
+          "Digital Media",
+          "Visual Communication"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Creative Designs Co.",
+        "title": "Senior Graphic Designer",
+        "start_date": "2019-06",
+        "end_date": null,
+        "responsibilities": [
+          "Led the design of branding and marketing materials for various clients, enhancing visual identity and engagement.",
+          "Collaborated with cross-functional teams to develop creative concepts that align with client objectives.",
+          "Managed multiple projects simultaneously, ensuring timely delivery and adherence to project specifications.",
+          "Utilized Adobe Creative Suite tools extensively to create high-quality graphics and layouts."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Artistic Events Group",
+        "title": "Event Coordinator",
+        "start_date": "2015-06",
+        "end_date": "2019-05",
+        "responsibilities": [
+          "Organized and managed art exhibitions and events, coordinating logistics and vendor relationships.",
+          "Developed promotional strategies to increase event attendance and community engagement.",
+          "Oversaw budgeting and scheduling to ensure events were executed within financial and time constraints."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Adobe Photoshop",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Adobe Illustrator",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "InDesign",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Event Planning",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "Budget Management",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Client Relations",
+        "proficiency_level": "Advanced",
+        "years": 4
+      }
+    ],
+    "summary": "Creative and detail-oriented professional with a background in graphic design and event coordination. Proven track record in managing projects from conception to execution while delivering high-quality visual content. Eager to bring innovative ideas and a unique perspective to new challenges."
+  }
+}

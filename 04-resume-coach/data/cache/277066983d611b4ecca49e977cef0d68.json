@@ -1,0 +1,114 @@
+{
+  "cache_key": "277066983d611b4ecca49e977cef0d68",
+  "prompt_key": "resume_c76fa460-ae95-4ee3-b236-b18950d89c2b_good_casual",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:21:23.275954+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "1234567890",
+      "location": "San Francisco, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor's Degree in Computer Science",
+        "institution": "University of California, Berkeley",
+        "graduation_date": "2020-05",
+        "gpa": 3.6,
+        "coursework": [
+          "Data Structures",
+          "Web Development",
+          "Database Management"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Web Solutions LLC",
+        "title": "Software Developer",
+        "start_date": "2020-06",
+        "end_date": null,
+        "responsibilities": [
+          "Developed and maintained scalable web applications using JavaScript and React.",
+          "Collaborated with cross-functional teams to deliver high-quality software solutions.",
+          "Integrated REST APIs for data exchange between front-end and back-end.",
+          "Participated in code reviews and improved code quality through best practices."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Tech Startups Co.",
+        "title": "Intern Software Engineer",
+        "start_date": "2019-05",
+        "end_date": "2019-08",
+        "responsibilities": [
+          "Assisted in the development of microservices using Node.js and MongoDB.",
+          "Contributed to the design and implementation of CI/CD pipelines.",
+          "Gained hands-on experience with Git for version control."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "JavaScript",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "React",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Node.js",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "MongoDB",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Git",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "AWS",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Docker",
+        "proficiency_level": "Beginner",
+        "years": null
+      },
+      {
+        "name": "TypeScript",
+        "proficiency_level": "Beginner",
+        "years": null
+      },
+      {
+        "name": "GraphQL",
+        "proficiency_level": "Beginner",
+        "years": null
+      },
+      {
+        "name": "Kubernetes",
+        "proficiency_level": "Beginner",
+        "years": null
+      },
+      {
+        "name": "Python",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      }
+    ],
+    "summary": null
+  }
+}

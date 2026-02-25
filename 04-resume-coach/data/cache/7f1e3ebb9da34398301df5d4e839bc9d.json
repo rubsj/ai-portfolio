@@ -1,0 +1,91 @@
+{
+  "cache_key": "7f1e3ebb9da34398301df5d4e839bc9d",
+  "prompt_key": "resume_b272fa56-dbb8-4574-8f12-6e99922fa535_partial_technical",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T20:03:03.326540+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@example.com",
+      "phone": "1234567890",
+      "location": "New York, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor's Degree",
+        "institution": "State University",
+        "graduation_date": "2010-05",
+        "gpa": null,
+        "coursework": [
+          "Business Management",
+          "Supply Chain Logistics",
+          "Financial Accounting"
+        ]
+      },
+      {
+        "degree": "MBA",
+        "institution": "City Graduate School",
+        "graduation_date": "2015-06",
+        "gpa": null,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "Tech Retail Solutions",
+        "title": "Operations Manager",
+        "start_date": "2015-07",
+        "end_date": "2022-11",
+        "responsibilities": [
+          "Managed day-to-day operations of the retail store, focusing on inventory management and supply chain processes.",
+          "Implemented data analytics tools to track sales performance and optimize inventory levels.",
+          "Collaborated with vendors to improve product delivery times and reduce costs.",
+          "Led process improvement initiatives that resulted in a 15% decrease in operational costs."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Consumer Goods Co.",
+        "title": "Supply Chain Analyst",
+        "start_date": "2012-01",
+        "end_date": "2015-06",
+        "responsibilities": [
+          "Analyzed supply chain data to identify trends and areas for improvement.",
+          "Developed inventory optimization models that improved stock turnover rates by 20%.",
+          "Coordinated with cross-functional teams to enhance customer experience through improved service levels."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Supply Chain Management",
+        "proficiency_level": "Intermediate",
+        "years": 7
+      },
+      {
+        "name": "Inventory Optimization",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      },
+      {
+        "name": "Data Analytics",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      },
+      {
+        "name": "Process Improvement",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Customer Experience Design",
+        "proficiency_level": "Beginner",
+        "years": 2
+      }
+    ],
+    "summary": null
+  }
+}

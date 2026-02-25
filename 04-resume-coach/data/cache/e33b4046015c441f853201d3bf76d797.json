@@ -1,0 +1,90 @@
+{
+  "cache_key": "e33b4046015c441f853201d3bf76d797",
+  "prompt_key": "resume_db818a3f-8de7-49b5-9c79-af68101c3844_mismatch_career_changer",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:35:46.133976+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Taylor",
+      "email": "jordan.taylor@email.com",
+      "phone": "1234567890",
+      "location": "Los Angeles, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor's Degree in Graphic Design",
+        "institution": "Art Institute of California",
+        "graduation_date": "2010-06",
+        "gpa": null,
+        "coursework": [
+          "Digital Illustration",
+          "User Interface Design",
+          "Typography",
+          "Color Theory"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Creative Minds Agency",
+        "title": "Senior Graphic Designer",
+        "start_date": "2015-04",
+        "end_date": "2023-01",
+        "responsibilities": [
+          "Led design projects from concept to completion, ensuring client satisfaction.",
+          "Collaborated with cross-functional teams to produce marketing materials.",
+          "Developed branding strategies for various clients to enhance market presence.",
+          "Utilized Adobe Creative Suite to create high-quality visual content."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Visual Innovations LLC",
+        "title": "Graphic Designer",
+        "start_date": "2010-06",
+        "end_date": "2015-03",
+        "responsibilities": [
+          "Designed promotional graphics for social media and print.",
+          "Participated in client meetings to understand design requirements.",
+          "Managed multiple projects with tight deadlines and budgets."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Adobe Illustrator",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Adobe Photoshop",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "InDesign",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      },
+      {
+        "name": "UI/UX Design",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      },
+      {
+        "name": "Brand Strategy",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      },
+      {
+        "name": "Digital Marketing",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      }
+    ],
+    "summary": "Creative and detail-oriented graphic designer with over 12 years of experience in visual communication. Proven ability to manage complex projects and drive innovative design solutions."
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "cache_key": "109d2da48518477e2c5574a6b74eb6cf",
+  "prompt_key": "resume_cdf8c373-ae23-484d-9c34-e7adb1122b91_excellent_formal",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:28:12.291159+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@example.com",
+      "phone": "+14155501234",
+      "location": "San Francisco, CA",
+      "linkedin": "https://www.linkedin.com/in/jordansmith",
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Master of Science in Data Science",
+        "institution": "University of California, Berkeley",
+        "graduation_date": "2018-05",
+        "gpa": 3.9,
+        "coursework": [
+          "Data Mining",
+          "Big Data Technologies",
+          "Statistical Analysis",
+          "Machine Learning"
+        ]
+      },
+      {
+        "degree": "Bachelor of Science in Statistics",
+        "institution": "University of California, Los Angeles",
+        "graduation_date": "2016-05",
+        "gpa": 3.8,
+        "coursework": [
+          "Probability Theory",
+          "Data Visualization",
+          "Regression Analysis"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Healthcare Analytics Solutions",
+        "title": "Lead Data Analyst",
+        "start_date": "2019-06",
+        "end_date": null,
+        "responsibilities": [
+          "Led a team of analysts to develop data-driven solutions for healthcare providers.",
+          "Conducted complex data analyses to identify trends and improve patient outcomes.",
+          "Collaborated with cross-functional teams to gather and define data requirements.",
+          "Implemented ETL processes to ensure data integrity and accessibility.",
+          "Utilized SQL and R for data manipulation and statistical analysis."
+        ],
+        "achievements": [
+          "Increased data accuracy by 30% through the implementation of new data validation processes.",
+          "Successfully optimized reporting processes, reducing report generation time by 50%."
+        ]
+      },
+      {
+        "company": "Health Insights Group",
+        "title": "Data Analyst",
+        "start_date": "2016-06",
+        "end_date": "2019-05",
+        "responsibilities": [
+          "Performed statistical analysis on large healthcare datasets to support decision-making.",
+          "Developed interactive dashboards using Tableau for real-time data tracking.",
+          "Conducted predictive modeling to forecast patient admissions and resource needs.",
+          "Collaborated with healthcare professionals to interpret and visualize data findings."
+        ],
+        "achievements": [
+          "Contributed to a project that identified key metrics for patient care, leading to a 15% reduction in readmission rates."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "SQL",
+        "proficiency_level": "Expert",
+        "years": 7
+      },
+      {
+        "name": "Python",
+        "proficiency_level": "Expert",
+        "years": 7
+      },
+      {
+        "name": "R",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Tableau",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "SAS",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Data Visualization",
+        "proficiency_level": "Expert",
+        "years": 6
+      },
+      {
+        "name": "Healthcare Analytics",
+        "proficiency_level": "Expert",
+        "years": 7
+      },
+      {
+        "name": "Statistical Analysis",
+        "proficiency_level": "Expert",
+        "years": 6
+      },
+      {
+        "name": "ETL Processes",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Machine Learning",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Big Data Technologies",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Predictive Modeling",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "Data Warehousing",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      }
+    ],
+    "summary": "Results-driven Lead Healthcare Data Analyst with over 7 years of experience in healthcare analytics and data visualization. Proficient in leveraging complex datasets to drive strategic decision-making and improve patient outcomes. Demonstrated expertise in SQL, Python, R, and Tableau, with a solid understanding of statistical analysis and predictive modeling."
+  }
+}

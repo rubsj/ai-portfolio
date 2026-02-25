@@ -1,0 +1,37 @@
+{
+  "cache_key": "036357dc63f38bee6bef3cc4fe495cd5",
+  "prompt_key": "job_Retail_False_Senior",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:18:36.257556+00:00",
+  "response": {
+    "title": "Senior Retail Manager",
+    "company": {
+      "name": "Retail Innovations Inc.",
+      "industry": "Retail",
+      "size": "Mid-size (201-500)",
+      "location": "New York, NY"
+    },
+    "description": "Seeking an experienced Senior Retail Manager to lead our team in enhancing store performance and customer experience. The ideal candidate will drive sales, manage operations, and implement strategies to achieve business objectives. This role requires a deep understanding of retail trends and the ability to foster a high-performing team culture.",
+    "requirements": {
+      "required_skills": [
+        "Inventory Management",
+        "Sales Forecasting",
+        "Budgeting",
+        "Staff Training",
+        "Customer Relationship Management",
+        "Visual Merchandising",
+        "Data Analysis",
+        "POS Systems",
+        "Supply Chain Coordination"
+      ],
+      "preferred_skills": [
+        "E-commerce Platforms",
+        "Market Research",
+        "Vendor Relations"
+      ],
+      "education": "Bachelor's degree in Business Administration, Retail Management, or related field",
+      "experience_years": 7,
+      "experience_level": "Senior"
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "cache_key": "64d2cc1e7f27d139ad14caa6c27933ae",
+  "prompt_key": "resume_3c515b3d-3cac-4c39-8625-2372fbf3b5f8_good_casual",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:45:53.781025+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "1234567890",
+      "location": "Seattle, WA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Science in Mechanical Engineering",
+        "institution": "University of Washington",
+        "graduation_date": "2015-06-15",
+        "gpa": 3.5,
+        "coursework": [
+          "Manufacturing Processes",
+          "Thermodynamics",
+          "Machine Design",
+          "Fluid Mechanics"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Tech Manufacturing Solutions",
+        "title": "Senior Manufacturing Engineer",
+        "start_date": "2018-05",
+        "end_date": null,
+        "responsibilities": [
+          "Led a team of engineers in optimizing production lines for increased efficiency.",
+          "Implemented lean manufacturing principles, resulting in a 15% reduction in waste.",
+          "Conducted quality assurance inspections and maintained compliance with industry standards.",
+          "Collaborated with cross-functional teams to drive continuous improvement initiatives."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Innovative Engineering Corp",
+        "title": "Manufacturing Engineer",
+        "start_date": "2015-07",
+        "end_date": "2018-04",
+        "responsibilities": [
+          "Assisted in the development and optimization of manufacturing processes.",
+          "Utilized CAD software for designing and modifying production layouts.",
+          "Supported statistical analysis for quality control measures."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Lean Manufacturing",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Six Sigma",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "CAD Software",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Project Management",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Process Optimization",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Quality Assurance",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Manufacturing Systems",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Statistical Analysis",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Python",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "AutoCAD",
+        "proficiency_level": "Advanced",
+        "years": 5
+      }
+    ],
+    "summary": null
+  }
+}

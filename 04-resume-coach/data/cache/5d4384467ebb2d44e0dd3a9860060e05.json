@@ -1,0 +1,37 @@
+{
+  "cache_key": "5d4384467ebb2d44e0dd3a9860060e05",
+  "prompt_key": "job_Finance_False_Senior",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:17:19.474803+00:00",
+  "response": {
+    "title": "Senior Financial Analyst",
+    "company": {
+      "name": "FinTech Innovations Inc.",
+      "industry": "Finance",
+      "size": "Mid-size (201-500)",
+      "location": "New York, NY"
+    },
+    "description": "We are seeking a Senior Financial Analyst to provide in-depth financial analysis and support the financial planning process. The successful candidate will collaborate with cross-functional teams to drive financial performance and deliver actionable insights to senior management.",
+    "requirements": {
+      "required_skills": [
+        "Financial Modeling",
+        "Excel VBA",
+        "SQL",
+        "Forecasting",
+        "Variance Analysis",
+        "Budgeting",
+        "Data Visualization",
+        "Power BI"
+      ],
+      "preferred_skills": [
+        "Advanced Excel",
+        "Tableau",
+        "Financial Reporting",
+        "Cash Flow Management"
+      ],
+      "education": "Bachelor's degree in Finance, Accounting, or related field; MBA preferred",
+      "experience_years": 7,
+      "experience_level": "Senior"
+    }
+  }
+}

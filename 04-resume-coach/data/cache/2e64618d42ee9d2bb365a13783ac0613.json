@@ -1,0 +1,101 @@
+{
+  "cache_key": "2e64618d42ee9d2bb365a13783ac0613",
+  "prompt_key": "resume_db6cb15c-148f-4fd0-a6c6-6be33b44c033_mismatch_career_changer",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:24:13.209429+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@example.com",
+      "phone": "1234567890",
+      "location": "Chicago, IL",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Master of Arts in Arts Management",
+        "institution": "University of Chicago",
+        "graduation_date": "2021-06",
+        "gpa": null,
+        "coursework": [
+          "Fundraising Strategies",
+          "Cultural Policy",
+          "Event Management"
+        ]
+      },
+      {
+        "degree": "Bachelor of Fine Arts",
+        "institution": "Columbia College Chicago",
+        "graduation_date": "2018-05",
+        "gpa": null,
+        "coursework": [
+          "Theater Production",
+          "Visual Arts",
+          "Digital Media"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Chicago Arts Foundation",
+        "title": "Event Coordinator",
+        "start_date": "2019-07",
+        "end_date": "2023-08",
+        "responsibilities": [
+          "Planned and executed large-scale cultural events for the community.",
+          "Managed logistics, including venue selection, catering, and vendor coordination.",
+          "Collaborated with artists and performers to ensure successful productions.",
+          "Developed marketing materials and social media campaigns to promote events."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Community Arts Collective",
+        "title": "Program Manager",
+        "start_date": "2018-01",
+        "end_date": "2019-06",
+        "responsibilities": [
+          "Oversaw community outreach programs to engage local artists.",
+          "Coordinated workshops and educational events to foster creative skills.",
+          "Managed budgets and ensured financial sustainability of programs.",
+          "Evaluated program success through participant feedback and attendance metrics."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Event Planning",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "Budget Management",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "Vendor Coordination",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "Community Engagement",
+        "proficiency_level": "Advanced",
+        "years": 2
+      },
+      {
+        "name": "Social Media Marketing",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Cultural Programming",
+        "proficiency_level": "Advanced",
+        "years": 3
+      }
+    ],
+    "summary": "Dynamic and passionate arts management professional with extensive experience in event coordination and community engagement. Proven ability to manage logistics, budgets, and collaborate with diverse stakeholders to create impactful cultural programs. Eager to leverage skills in a new environment."
+  }
+}

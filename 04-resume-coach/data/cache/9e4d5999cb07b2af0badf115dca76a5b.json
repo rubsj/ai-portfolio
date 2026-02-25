@@ -1,0 +1,133 @@
+{
+  "cache_key": "9e4d5999cb07b2af0badf115dca76a5b",
+  "prompt_key": "resume_3e017fce-4640-402d-8781-44c607d9ea0b_excellent_formal",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:44:11.998813+00:00",
+  "response": {
+    "contact_info": {
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "phone": "+1234567890",
+      "location": "Detroit, MI",
+      "linkedin": "https://www.linkedin.com/in/johndoe",
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Science in Mechanical Engineering",
+        "institution": "University of Michigan",
+        "graduation_date": "2015-05",
+        "gpa": 3.8,
+        "coursework": [
+          "Thermodynamics",
+          "Fluid Mechanics",
+          "Manufacturing Processes",
+          "Materials Science",
+          "Design Engineering"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Innovative Manufacturing Corp.",
+        "title": "Lead Manufacturing Engineer",
+        "start_date": "2016-06",
+        "end_date": null,
+        "responsibilities": [
+          "Led the design and implementation of new manufacturing processes, resulting in a 20% increase in production efficiency.",
+          "Collaborated with cross-functional teams to identify and resolve production issues, enhancing product quality.",
+          "Implemented Lean Manufacturing principles across the production floor, reducing waste and cycle time.",
+          "Conducted Root Cause Analysis to identify defects and improve quality control processes.",
+          "Managed multiple projects simultaneously, ensuring alignment with company goals and deadlines."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Quality Engineering Solutions",
+        "title": "Manufacturing Engineer",
+        "start_date": "2015-06",
+        "end_date": "2016-05",
+        "responsibilities": [
+          "Developed and optimized manufacturing processes for various products, resulting in enhanced operational capabilities.",
+          "Utilized Six Sigma methodologies to drive process improvements, achieving a 15% reduction in production costs.",
+          "Conducted quality audits to ensure compliance with TS16949 standards.",
+          "Performed data analysis to support decision-making in process enhancements and resource allocation."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Lean Manufacturing",
+        "proficiency_level": "Expert",
+        "years": 7
+      },
+      {
+        "name": "Six Sigma",
+        "proficiency_level": "Expert",
+        "years": 7
+      },
+      {
+        "name": "CAD Software",
+        "proficiency_level": "Advanced",
+        "years": 6
+      },
+      {
+        "name": "Process Optimization",
+        "proficiency_level": "Expert",
+        "years": 7
+      },
+      {
+        "name": "TS16949",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "Manufacturing Processes",
+        "proficiency_level": "Expert",
+        "years": 7
+      },
+      {
+        "name": "Root Cause Analysis",
+        "proficiency_level": "Expert",
+        "years": 6
+      },
+      {
+        "name": "Quality Control",
+        "proficiency_level": "Advanced",
+        "years": 6
+      },
+      {
+        "name": "Project Management",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Industrial Engineering",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Additive Manufacturing",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Automation Systems",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Data Analysis",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "ERP Systems",
+        "proficiency_level": "Beginner",
+        "years": 2
+      }
+    ],
+    "summary": "Results-driven Senior Manufacturing Engineer with over 7 years of experience in optimizing manufacturing processes and enhancing product quality. Expertise in Lean Manufacturing, Six Sigma, and CAD software, with a strong background in project management and quality control. Proven ability to lead cross-functional teams and drive innovative solutions in the manufacturing sector."
+  }
+}

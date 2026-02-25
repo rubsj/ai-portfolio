@@ -4,7 +4,7 @@ import re
 from datetime import datetime
 from enum import Enum
 
-from pydantic import BaseModel, field_validator, model_validator
+from pydantic import BaseModel, Field, field_validator, model_validator
 
 
 # ---------------------------------------------------------------------------
@@ -149,7 +149,13 @@ class Experience(BaseModel):
 
 
 class Skill(BaseModel):
-    name: str
+    name: str = Field(
+        description=(
+            "Individual skill or technology name as a short token (e.g., 'Python', 'React', 'PostgreSQL'). "
+            "Must be 1-3 words. NOT a description. NOT 'Proficient in Python'. "
+            "NOT 'Cloud Computing (AWS, Azure)' — instead list 'AWS' and 'Azure' as separate skills."
+        )
+    )
     proficiency_level: ProficiencyLevel
     years: int | None = None
 
@@ -199,13 +205,33 @@ class Resume(BaseModel):
 class CompanyInfo(BaseModel):
     name: str
     industry: str
-    size: str
+    size: str = Field(
+        description=(
+            "Company size. Use EXACTLY one of these values: "
+            "'Startup (1-50)', 'Small (51-200)', 'Mid-size (201-500)', 'Enterprise (500+)'"
+        )
+    )
     location: str
 
 
 class JobRequirements(BaseModel):
-    required_skills: list[str]
-    preferred_skills: list[str] | None = None
+    required_skills: list[str] = Field(
+        description=(
+            "List of individual skill/technology names as short tokens. "
+            "Each skill must be 1-3 words max — a specific tool, language, or technology name. "
+            "GOOD: ['Python', 'AWS', 'Docker', 'PostgreSQL', 'React', 'Git'] "
+            "BAD: ['Experience with Python programming', 'Knowledge of cloud platforms (e.g., AWS)']"
+        )
+    )
+    preferred_skills: list[str] | None = Field(
+        None,
+        description=(
+            "List of individual skill/technology names as short tokens. "
+            "Each skill must be 1-3 words max — a specific tool, language, or technology name. "
+            "GOOD: ['TypeScript', 'Docker', 'CI/CD', 'GraphQL'] "
+            "BAD: ['Experience with containerization tools', 'Knowledge of CI/CD pipelines (e.g., Jenkins)']"
+        ),
+    )
     education: str
     experience_years: int
     experience_level: ExperienceLevel

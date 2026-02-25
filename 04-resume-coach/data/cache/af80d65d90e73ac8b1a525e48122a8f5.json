@@ -1,0 +1,77 @@
+{
+  "cache_key": "af80d65d90e73ac8b1a525e48122a8f5",
+  "prompt_key": "resume_499f18fc-5438-4020-a398-ba469aa53888_poor_achievement",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T20:07:54.759945+00:00",
+  "response": {
+    "contact_info": {
+      "name": "John Doe",
+      "email": "johndoe@example.com",
+      "phone": "1234567890",
+      "location": "Dallas, TX",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor's in Environmental Science",
+        "institution": "University of Texas",
+        "graduation_date": "2015-05",
+        "gpa": null,
+        "coursework": [
+          "Environmental Policy",
+          "Sustainable Development",
+          "Ecology"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Eco-Friendly Products Inc.",
+        "title": "Junior Environmental Consultant",
+        "start_date": "2016-06",
+        "end_date": "2021-09",
+        "responsibilities": [
+          "Assisted in conducting environmental impact assessments for various projects.",
+          "Supported the development of sustainability reports for clients.",
+          "Conducted data collection and analysis for environmental regulations."
+        ],
+        "achievements": [
+          "Contributed to a project that reduced waste by 15% across client operations."
+        ]
+      },
+      {
+        "company": "Green Living Co.",
+        "title": "Project Coordinator",
+        "start_date": "2021-10",
+        "end_date": "2023-08",
+        "responsibilities": [
+          "Coordinated logistics for eco-friendly product distribution.",
+          "Managed project timelines and schedules for small-scale initiatives.",
+          "Collaborated with team members to develop promotional material."
+        ],
+        "achievements": [
+          "Increased project efficiency by 20% through improved scheduling practices."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Environmental Impact Assessment",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Data Analysis",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Project Management",
+        "proficiency_level": "Beginner",
+        "years": 1
+      }
+    ],
+    "summary": null
+  }
+}

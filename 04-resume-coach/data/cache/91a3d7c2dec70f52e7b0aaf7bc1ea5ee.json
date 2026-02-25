@@ -1,0 +1,78 @@
+{
+  "cache_key": "91a3d7c2dec70f52e7b0aaf7bc1ea5ee",
+  "prompt_key": "resume_83990341-d839-4930-83e9-4bfd025e16dc_poor_achievement",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T20:15:09.558173+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jane Doe",
+      "email": "jane.doe@email.com",
+      "phone": "1234567890",
+      "location": "Los Angeles, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Associate's Degree",
+        "institution": "Los Angeles Community College",
+        "graduation_date": "2021-05",
+        "gpa": null,
+        "coursework": [
+          "Introduction to Design",
+          "Basic Marketing Principles"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Local Coffee Shop",
+        "title": "Barista",
+        "start_date": "2021-06",
+        "end_date": null,
+        "responsibilities": [
+          "Provided customer service and managed cash register",
+          "Assisted in maintaining store cleanliness",
+          "Contributed to team efforts by accomplishing related results as needed"
+        ],
+        "achievements": null
+      },
+      {
+        "company": "College Campus Newspaper",
+        "title": "Editor",
+        "start_date": "2020-09",
+        "end_date": "2021-05",
+        "responsibilities": [
+          "Edited articles and coordinated with writers",
+          "Managed layout of the newspaper using basic design tools"
+        ],
+        "achievements": [
+          "Increased readership by 15% through engaging content and social media promotion"
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Adobe Creative Suite",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Social media management",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Copywriting",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "HTML",
+        "proficiency_level": "Beginner",
+        "years": 0
+      }
+    ],
+    "summary": null
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "cache_key": "cf40575852678c315df5df9c2a75e4ff",
+  "prompt_key": "resume_c1482334-cde0-4c2f-96dd-2d0d21beeac2_mismatch_career_changer",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T20:19:33.445289+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Alex Taylor",
+      "email": "alex.taylor@example.com",
+      "phone": "1234567890",
+      "location": "Denver, CO",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Science in Mechanical Engineering",
+        "institution": "University of Colorado Boulder",
+        "graduation_date": "2015-05",
+        "gpa": 3.6,
+        "coursework": [
+          "Thermodynamics",
+          "Fluid Mechanics",
+          "Material Science"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Tech Innovators Inc.",
+        "title": "Mechanical Design Engineer",
+        "start_date": "2015-06",
+        "end_date": null,
+        "responsibilities": [
+          "Designed and developed mechanical components for innovative tech products.",
+          "Collaborated with cross-functional teams to ensure product specifications and performance were met.",
+          "Conducted testing and analysis to ensure reliability and efficiency of designs."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Eco-Friendly Solutions Corp.",
+        "title": "Project Engineer",
+        "start_date": "2018-01",
+        "end_date": "2021-12",
+        "responsibilities": [
+          "Managed project timelines and budgets for environmentally responsible engineering solutions.",
+          "Prepared technical documentation and reports for project stakeholders.",
+          "Led site assessments and coordinated project implementation with field teams."
+        ],
+        "achievements": [
+          "Successfully completed projects under budget and ahead of schedule."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "AutoCAD",
+        "proficiency_level": "Advanced",
+        "years": 6
+      },
+      {
+        "name": "SolidWorks",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "MATLAB",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Project Management",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Thermal Analysis",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "CAD Software",
+        "proficiency_level": "Advanced",
+        "years": 6
+      },
+      {
+        "name": "Problem Solving",
+        "proficiency_level": "Expert",
+        "years": 8
+      }
+    ],
+    "summary": "Detail-oriented mechanical engineer with over 6 years of experience in design and project engineering. Proven track record in managing engineering projects successfully and delivering high-quality results."
+  }
+}

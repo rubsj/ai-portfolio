@@ -1,0 +1,80 @@
+{
+  "cache_key": "dfa2af76d26dc5ac37445359e0ac38a0",
+  "prompt_key": "resume_cdf8c373-ae23-484d-9c34-e7adb1122b91_mismatch_career_changer",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:29:19.771665+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "1234567890",
+      "location": "Austin, TX",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts in Fine Arts",
+        "institution": "University of Texas",
+        "graduation_date": "2015-05-15",
+        "gpa": null,
+        "coursework": [
+          "Visual Communication",
+          "Art History",
+          "Graphic Design"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Creative Design Studio",
+        "title": "Graphic Designer",
+        "start_date": "2016-06",
+        "end_date": "2023-02",
+        "responsibilities": [
+          "Developed visual concepts and designs for various clients, enhancing brand identity.",
+          "Collaborated with marketing teams to create engaging promotional materials.",
+          "Utilized Adobe Creative Suite to produce high-quality graphics and layouts.",
+          "Conducted client presentations to showcase design proposals and gather feedback."
+        ],
+        "achievements": [
+          "Led a successful rebranding project for a major client, resulting in a 30% increase in engagement.",
+          "Received 'Designer of the Year' award in 2019 for outstanding creative contributions."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Adobe Photoshop",
+        "proficiency_level": "Expert",
+        "years": 6
+      },
+      {
+        "name": "Adobe Illustrator",
+        "proficiency_level": "Expert",
+        "years": 6
+      },
+      {
+        "name": "InDesign",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "User Experience Design",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Brand Strategy",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Photography",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      }
+    ],
+    "summary": "Creative Graphic Designer with over 6 years of experience in visual communication and branding. Proven track record in producing compelling designs that enhance client engagement. Adept at collaborating with cross-functional teams to deliver innovative solutions in a fast-paced environment."
+  }
+}

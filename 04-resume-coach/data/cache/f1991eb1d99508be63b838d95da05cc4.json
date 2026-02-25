@@ -1,0 +1,89 @@
+{
+  "cache_key": "f1991eb1d99508be63b838d95da05cc4",
+  "prompt_key": "resume_7fb904da-6cf3-4102-97e8-1f6c8aedad7f_mismatch_career_changer",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T20:11:12.830359+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "1234567890",
+      "location": "Los Angeles, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts in Fine Arts",
+        "institution": "California State University",
+        "graduation_date": "2018-05",
+        "gpa": 3.8,
+        "coursework": [
+          "Graphic Design",
+          "Photography",
+          "Art History"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Creative Minds Art Studio",
+        "title": "Art Director",
+        "start_date": "2019-06",
+        "end_date": null,
+        "responsibilities": [
+          "Led creative projects and initiatives to enhance brand visibility and engagement.",
+          "Collaborated with clients to visualize and execute artistic concepts in various media.",
+          "Managed a team of artists and designers to ensure timely delivery of projects.",
+          "Conducted workshops and community events to promote artistic skills and appreciation."
+        ],
+        "achievements": [
+          "Increased client portfolio by 30% through innovative marketing strategies.",
+          "Received 'Best Art Studio' award from Local Arts Council."
+        ]
+      },
+      {
+        "company": "Design Innovations LLC",
+        "title": "Graphic Designer",
+        "start_date": "2018-06",
+        "end_date": "2019-05",
+        "responsibilities": [
+          "Created visual content for digital marketing campaigns and print media.",
+          "Worked closely with clients to develop branding strategies and design concepts.",
+          "Utilized Adobe Creative Suite for graphic design and layout projects."
+        ],
+        "achievements": [
+          "Designed a campaign that increased social media engagement by 50%."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Adobe Photoshop",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Adobe Illustrator",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "InDesign",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Photography",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "Project Management",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      }
+    ],
+    "summary": "Creative and detail-oriented Art Director with over 5 years of experience in visual design and project management. Proven track record of leading successful creative projects and enhancing brand visibility. Adept at collaborating with clients to bring artistic visions to life."
+  }
+}

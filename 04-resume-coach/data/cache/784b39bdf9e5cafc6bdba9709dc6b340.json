@@ -1,0 +1,80 @@
+{
+  "cache_key": "784b39bdf9e5cafc6bdba9709dc6b340",
+  "prompt_key": "resume_817678f9-4651-4fcb-b579-acad7c0eae69_poor_achievement",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T20:23:22.308573+00:00",
+  "response": {
+    "contact_info": {
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "phone": "1234567890",
+      "location": "New York, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor's degree",
+        "institution": "State University",
+        "graduation_date": "2015-05",
+        "gpa": null,
+        "coursework": [
+          "Business Management",
+          "Marketing Principles"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Tech Solutions Inc.",
+        "title": "Junior Project Coordinator",
+        "start_date": "2018-06",
+        "end_date": "2021-12",
+        "responsibilities": [
+          "Assisted in project planning and execution under the guidance of senior project managers.",
+          "Coordinated meetings and documented project progress for teams.",
+          "Maintained project schedules and ensured timely communication among team members."
+        ],
+        "achievements": [
+          "Successfully coordinated 5 small-scale projects with a focus on internal improvements."
+        ]
+      },
+      {
+        "company": "Marketing Agency LLC",
+        "title": "Marketing Assistant",
+        "start_date": "2016-06",
+        "end_date": "2018-05",
+        "responsibilities": [
+          "Supported marketing campaigns by managing social media accounts.",
+          "Analyzed customer engagement data to inform marketing strategies."
+        ],
+        "achievements": [
+          "Increased social media engagement by 30% over one year."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Project Management",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Data Analysis",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Stakeholder Engagement",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Budget Management",
+        "proficiency_level": "Beginner",
+        "years": 1
+      }
+    ],
+    "summary": null
+  }
+}

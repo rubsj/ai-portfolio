@@ -1,0 +1,111 @@
+{
+  "cache_key": "740dc9757c51cae73fcd4104907fed01",
+  "prompt_key": "resume_ea004894-ac26-4788-b682-788acb0fe8ec_good_casual",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:41:07.880574+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Lee",
+      "email": "jordan.lee@email.com",
+      "phone": "1234567890",
+      "location": "New York, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Doctorate in Education",
+        "institution": "Columbia University",
+        "graduation_date": "2015-05",
+        "gpa": null,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "Innovative Learning Solutions",
+        "title": "Director of Academic Programs",
+        "start_date": "2018-06",
+        "end_date": null,
+        "responsibilities": [
+          "Led curriculum development initiatives, enhancing student engagement and academic outcomes.",
+          "Managed a team of educators to ensure compliance with educational standards and regulations.",
+          "Implemented data analysis tools to assess program effectiveness and improve instructional practices.",
+          "Developed and maintained relationships with key stakeholders, including faculty, parents, and community partners.",
+          "Oversaw budget management for academic programs, ensuring resources were allocated efficiently."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Future Forward Academy",
+        "title": "Academic Coordinator",
+        "start_date": "2015-01",
+        "end_date": "2018-05",
+        "responsibilities": [
+          "Assisted in the evaluation of academic programs to meet compliance standards and accreditation requirements.",
+          "Facilitated change management processes to adapt to new educational technologies and methodologies.",
+          "Supported grant writing efforts to secure funding for new initiatives and programs."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Curriculum Development",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Educational Leadership",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Data Analysis",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Compliance Standards",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Budget Management",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Stakeholder Engagement",
+        "proficiency_level": "Advanced",
+        "years": 6
+      },
+      {
+        "name": "Program Evaluation",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Learning Management Systems",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Grant Writing",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Project Management",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      },
+      {
+        "name": "Public Speaking",
+        "proficiency_level": "Advanced",
+        "years": 7
+      }
+    ],
+    "summary": null
+  }
+}

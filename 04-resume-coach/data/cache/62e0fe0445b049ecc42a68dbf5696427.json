@@ -1,0 +1,120 @@
+{
+  "cache_key": "62e0fe0445b049ecc42a68dbf5696427",
+  "prompt_key": "resume_ea004894-ac26-4788-b682-788acb0fe8ec_excellent_formal",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:40:50.574026+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Dr. Jane Smith",
+      "email": "jane.smith@example.com",
+      "phone": "+11234567890",
+      "location": "New York, NY",
+      "linkedin": "https://www.linkedin.com/in/janesmith",
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Doctor of Education",
+        "institution": "Columbia University",
+        "graduation_date": "2010-05",
+        "gpa": null,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "Innovative Learning Solutions",
+        "title": "Chief Academic Officer",
+        "start_date": "2015-06",
+        "end_date": null,
+        "responsibilities": [
+          "Led the strategic development and implementation of academic programs across the organization.",
+          "Oversaw curriculum development to ensure alignment with educational standards and stakeholder expectations.",
+          "Collaborated with senior leadership to integrate academic goals with organizational objectives.",
+          "Managed budget for academic initiatives, ensuring responsible allocation of resources.",
+          "Engaged with stakeholders, including educators and community representatives, to gather feedback on academic programs.",
+          "Evaluated academic programs based on performance metrics and compliance standards.",
+          "Fostered a culture of innovation and continuous improvement in pedagogical practices."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Global Academic Services",
+        "title": "Director of Curriculum Development",
+        "start_date": "2010-06",
+        "end_date": "2015-05",
+        "responsibilities": [
+          "Directed the development of curriculum for K-12 educational programs across multiple states.",
+          "Implemented data analysis practices to assess curriculum effectiveness and student outcomes.",
+          "Ensured compliance with education regulations and accreditation standards.",
+          "Led a team of educators in the evaluation and revision of existing academic programs.",
+          "Managed grant writing efforts to secure funding for innovative educational projects."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Curriculum Development",
+        "proficiency_level": "Expert",
+        "years": 10
+      },
+      {
+        "name": "Educational Leadership",
+        "proficiency_level": "Expert",
+        "years": 15
+      },
+      {
+        "name": "Data Analysis",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Compliance Standards",
+        "proficiency_level": "Expert",
+        "years": 10
+      },
+      {
+        "name": "Budget Management",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Stakeholder Engagement",
+        "proficiency_level": "Expert",
+        "years": 10
+      },
+      {
+        "name": "Program Evaluation",
+        "proficiency_level": "Expert",
+        "years": 10
+      },
+      {
+        "name": "Change Management",
+        "proficiency_level": "Advanced",
+        "years": 7
+      },
+      {
+        "name": "Learning Management Systems",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Accreditation Processes",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Pedagogical Strategies",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Grant Writing",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      }
+    ],
+    "summary": "Accomplished educational leader with over 15 years of experience in academic program development and management. Proven track record of fostering educational excellence and innovation. Expertise in curriculum development, stakeholder engagement, and compliance with educational standards."
+  }
+}

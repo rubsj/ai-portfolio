@@ -1,0 +1,72 @@
+{
+  "cache_key": "b9cd2066137f956ed2ecc105257ec59a",
+  "prompt_key": "resume_f154b48e-4ec5-408b-a22c-5387d6f32b40_poor_achievement",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:27:43.517863+00:00",
+  "response": {
+    "contact_info": {
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "phone": "1234567890",
+      "location": "Los Angeles, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Associate's Degree",
+        "institution": "Los Angeles Community College",
+        "graduation_date": "2021-05",
+        "gpa": null,
+        "coursework": [
+          "Intro to Data Analysis",
+          "Database Management"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Tech Solutions Inc.",
+        "title": "Data Entry Specialist",
+        "start_date": "2021-06",
+        "end_date": null,
+        "responsibilities": [
+          "Entered and updated data in company databases",
+          "Assisted with organizing data for reporting"
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Retail Insights",
+        "title": "Junior Analyst",
+        "start_date": "2020-01",
+        "end_date": "2021-05",
+        "responsibilities": [
+          "Conducted basic data analysis using Excel",
+          "Created reports to summarize sales data"
+        ],
+        "achievements": [
+          "Improved report generation speed by 15%"
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Excel",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "SQL",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Python",
+        "proficiency_level": "Beginner",
+        "years": 0
+      }
+    ],
+    "summary": "Detail-oriented individual with basic knowledge in data analysis seeking opportunities to grow and develop analytical skills."
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "cache_key": "ba6be314e26d5ecaaba72fcad9d15c09",
+  "prompt_key": "resume_e21429e6-ae08-4841-8f9d-da245d090e99_good_casual",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:33:53.287558+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@example.com",
+      "phone": "1234567890",
+      "location": "New York, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor's in Finance",
+        "institution": "City University",
+        "graduation_date": "2015-05",
+        "gpa": 3.7,
+        "coursework": [
+          "Corporate Finance",
+          "Investment Analysis",
+          "Financial Markets"
+        ]
+      },
+      {
+        "degree": "MBA",
+        "institution": "State University",
+        "graduation_date": "2018-05",
+        "gpa": null,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "Finance Innovations",
+        "title": "Senior Financial Analyst",
+        "start_date": "2018-06",
+        "end_date": null,
+        "responsibilities": [
+          "Led the financial modeling and forecasting for annual budgets and strategic initiatives.",
+          "Provided actionable insights through variance analysis and performance reporting.",
+          "Collaborated with cross-functional teams to enhance financial reporting accuracy.",
+          "Developed dashboards and visualizations using Tableau to present financial data."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Money Matters Ltd.",
+        "title": "Financial Analyst",
+        "start_date": "2015-06",
+        "end_date": "2018-05",
+        "responsibilities": [
+          "Conducted detailed budget analysis and variance reporting.",
+          "Assisted in preparing comprehensive financial reports for stakeholders.",
+          "Applied SQL for data extraction and analysis to support financial reviews."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Financial modeling",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Forecasting",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Budgeting",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Variance analysis",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Data visualization",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "SQL",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Excel",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Financial reporting",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Risk analysis",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Tableau",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Power BI",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Communication",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Team leadership",
+        "proficiency_level": "Advanced",
+        "years": 4
+      }
+    ],
+    "summary": null
+  }
+}

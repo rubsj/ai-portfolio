@@ -1,0 +1,122 @@
+{
+  "cache_key": "c21e5999ba9ecc877e16d86b326814d3",
+  "prompt_key": "resume_9986c677-3ee0-41a7-aacb-aef45da8d3b0_excellent_formal",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:26:00.753668+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Alex Johnson",
+      "email": "alex.johnson@example.com",
+      "phone": "+14155552671",
+      "location": "San Francisco, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Science in Data Science",
+        "institution": "University of California, Berkeley",
+        "graduation_date": "2018-05",
+        "gpa": 3.8,
+        "coursework": [
+          "Statistics",
+          "Machine Learning",
+          "Data Mining",
+          "Healthcare Analytics"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Data Insights Group",
+        "title": "Healthcare Data Analyst",
+        "start_date": "2018-06",
+        "end_date": "2023-08",
+        "responsibilities": [
+          "Analyzed large datasets to identify trends and improve patient care outcomes.",
+          "Generated comprehensive reports utilizing SQL and Python for data extraction and analysis.",
+          "Created interactive dashboards in Tableau to visualize healthcare metrics for stakeholders.",
+          "Collaborated with cross-functional teams to enhance operational efficiency through data-driven insights.",
+          "Implemented ETL processes to streamline data management workflows."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Health Analytics Inc.",
+        "title": "Data Analyst Intern",
+        "start_date": "2017-06",
+        "end_date": "2018-05",
+        "responsibilities": [
+          "Assisted in the analysis of healthcare data to support research initiatives.",
+          "Utilized R to perform statistical analyses and data visualizations.",
+          "Conducted data cleaning and preparation tasks to ensure data integrity.",
+          "Collaborated with senior analysts to present findings to non-technical stakeholders."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "SQL",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Python",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Tableau",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "R",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Excel",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Data Visualization",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "Healthcare Analytics",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "ETL Processes",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "SAS",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Power BI",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Machine Learning",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Data Warehousing",
+        "proficiency_level": "Beginner",
+        "years": 1
+      }
+    ],
+    "summary": null
+  }
+}

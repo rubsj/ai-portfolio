@@ -75,7 +75,13 @@ class PromptTemplateLibrary:
             "- Include specific, measurable required skills (not generic buzzwords)\n"
             "- Required skills list should have 5-10 concrete technical or domain skills\n"
             "- Preferred skills should complement but not duplicate required skills\n"
-            "- Experience years should match the seniority level realistically"
+            "- Experience years should match the seniority level realistically\n\n"
+            "CRITICAL FORMAT RULE: required_skills and preferred_skills must be individual\n"
+            "technology/tool tokens (1-3 words each). NOT descriptions, NOT sentences,\n"
+            "NOT 'experience with X', NOT 'knowledge of Y'.\n"
+            "GOOD: ['Python', 'React', 'PostgreSQL', 'Docker', 'AWS', 'Git', 'REST APIs']\n"
+            "BAD: ['Experience with Python programming language', 'Knowledge of cloud platforms (e.g., AWS, GCP)']\n"
+            "Each item = one specific skill name only."
         )
 
         niche_instruction = ""
@@ -118,7 +124,11 @@ class PromptTemplateLibrary:
             "- Experience dates must be in ISO format (YYYY-MM-DD or YYYY-MM)\n"
             "- Each experience entry needs concrete responsibilities\n"
             "- Email must be a valid format (name@domain.tld)\n"
-            "- Phone must have at least 10 digits"
+            "- Phone must have at least 10 digits\n\n"
+            "CRITICAL: Each skill name must be a single technology/tool token (1-3 words).\n"
+            "GOOD: 'Python', 'AWS', 'Docker', 'React', 'PostgreSQL'\n"
+            "BAD: 'Cloud Computing (AWS, Azure)', 'RESTful API design and development'\n"
+            "If a skill has sub-items, list each as its own separate skill entry."
         )
 
         user_prompt = (

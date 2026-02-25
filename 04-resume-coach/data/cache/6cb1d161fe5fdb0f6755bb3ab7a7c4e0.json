@@ -1,0 +1,38 @@
+{
+  "cache_key": "6cb1d161fe5fdb0f6755bb3ab7a7c4e0",
+  "prompt_key": "job_Marketing_True_Entry",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:19:49.697285+00:00",
+  "response": {
+    "title": "Digital Experience Curator",
+    "company": {
+      "name": "Innovative Marketing Solutions",
+      "industry": "Marketing",
+      "size": "Mid-size (201-500)",
+      "location": "San Francisco, CA"
+    },
+    "description": "We are seeking a detail-oriented and creative Digital Experience Curator to join our team. This unique role merges digital marketing, user experience design, and content curation to enhance our clients' online presence. You will work closely with our marketing and design teams to create engaging, cohesive digital experiences across multiple platforms. If you have a passion for storytelling and a keen eye for design, we want to hear from you!",
+    "requirements": {
+      "required_skills": [
+        "Adobe Creative Suite",
+        "Google Analytics",
+        "HTML",
+        "SEO best practices",
+        "Social media management",
+        "Content management systems",
+        "A/B testing",
+        "User experience design",
+        "Copywriting"
+      ],
+      "preferred_skills": [
+        "WordPress",
+        "Email marketing tools",
+        "Data visualization",
+        "Digital photography"
+      ],
+      "education": "Bachelor's degree in Marketing, Communications, or related field",
+      "experience_years": 0,
+      "experience_level": "Entry"
+    }
+  }
+}

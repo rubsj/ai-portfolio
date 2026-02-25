@@ -1,0 +1,37 @@
+{
+  "cache_key": "8ad1c78b9bb29bed7b8cf0d60783a3aa",
+  "prompt_key": "job_Education_False_Executive",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:17:53.482947+00:00",
+  "response": {
+    "title": "Chief Academic Officer",
+    "company": {
+      "name": "Global Education Partners",
+      "industry": "Education",
+      "size": "Enterprise (500+)",
+      "location": "New York, NY"
+    },
+    "description": "The Chief Academic Officer (CAO) will be responsible for providing strategic leadership to the academic programs of Global Education Partners. This role involves overseeing curriculum development, ensuring academic excellence, and fostering innovation in educational practices across all levels of the organization. The CAO will collaborate with senior leadership to align academic goals with the overall mission and vision of the organization.",
+    "requirements": {
+      "required_skills": [
+        "Curriculum Development",
+        "Educational Leadership",
+        "Data Analysis",
+        "Compliance Standards",
+        "Budget Management",
+        "Stakeholder Engagement",
+        "Program Evaluation",
+        "Change Management"
+      ],
+      "preferred_skills": [
+        "Learning Management Systems",
+        "Accreditation Processes",
+        "Pedagogical Strategies",
+        "Grant Writing"
+      ],
+      "education": "Doctorate in Education or related field",
+      "experience_years": 15,
+      "experience_level": "Executive"
+    }
+  }
+}

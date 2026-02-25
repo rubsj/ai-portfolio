@@ -1,0 +1,118 @@
+{
+  "cache_key": "8abca68a57343e773604b1b656145ede",
+  "prompt_key": "resume_f4ef0846-5a25-4891-b32b-12ca1f5483d7_good_casual",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T20:20:03.272582+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@example.com",
+      "phone": "2025550198",
+      "location": "Washington, D.C.",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts in Public Policy",
+        "institution": "George Washington University",
+        "graduation_date": "2022-05",
+        "gpa": 3.6,
+        "coursework": [
+          "Data Analysis in Public Policy",
+          "Statistical Methods",
+          "Research Methodologies"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Policy Insights Inc.",
+        "title": "Research Assistant",
+        "start_date": "2021-06",
+        "end_date": "2022-08",
+        "responsibilities": [
+          "Conducted data analysis to support public policy recommendations.",
+          "Assisted in the creation of visual reports using Excel and basic GIS Software.",
+          "Collaborated with team members to evaluate existing policies and propose improvements."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Local Nonprofit Org",
+        "title": "Volunteer Data Analyst",
+        "start_date": "2021-01",
+        "end_date": "2021-05",
+        "responsibilities": [
+          "Collected and analyzed data related to community needs.",
+          "Created presentations to communicate findings to stakeholders.",
+          "Utilized SQL for database queries and data extraction."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Data Analysis",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Statistical Software",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Data Visualization",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Public Policy",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Research Methodologies",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Excel",
+        "proficiency_level": "Advanced",
+        "years": 2
+      },
+      {
+        "name": "SQL",
+        "proficiency_level": "Intermediate",
+        "years": 0
+      },
+      {
+        "name": "GIS Software",
+        "proficiency_level": "Beginner",
+        "years": 0
+      },
+      {
+        "name": "R Programming",
+        "proficiency_level": "Beginner",
+        "years": 0
+      },
+      {
+        "name": "Tableau",
+        "proficiency_level": "Beginner",
+        "years": 0
+      },
+      {
+        "name": "Public Speaking",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Project Management",
+        "proficiency_level": "Beginner",
+        "years": 0
+      }
+    ],
+    "summary": "Motivated recent graduate with a passion for data analytics and public policy. Experienced in conducting research and analyzing data to drive decision-making in a policy context. Eager to apply skills and contribute to impactful public policies."
+  }
+}

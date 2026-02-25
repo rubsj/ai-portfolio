@@ -1,0 +1,132 @@
+{
+  "cache_key": "f3b4db5fc46c6ca836b8ccadd2c5db18",
+  "prompt_key": "resume_3c515b3d-3cac-4c39-8625-2372fbf3b5f8_excellent_formal",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:45:38.424805+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "+12065551234",
+      "location": "Seattle, WA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Science in Mechanical Engineering",
+        "institution": "University of Washington",
+        "graduation_date": "2015-06",
+        "gpa": 3.8,
+        "coursework": [
+          "Manufacturing Processes",
+          "Quality Control",
+          "Industrial Automation",
+          "Project Management"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Precision Manufacturing Inc.",
+        "title": "Senior Manufacturing Engineer",
+        "start_date": "2018-08",
+        "end_date": null,
+        "responsibilities": [
+          "Oversaw production processes to ensure efficiency and quality standards.",
+          "Implemented lean manufacturing principles to optimize workflow and reduce waste.",
+          "Mentored junior engineers in best practices for manufacturing techniques.",
+          "Collaborated with cross-functional teams to drive continuous improvement initiatives.",
+          "Conducted statistical analysis to identify process improvements and maintain quality assurance."
+        ],
+        "achievements": [
+          "Reduced production costs by 15% through process optimization initiatives.",
+          "Led a project that improved product quality, resulting in a 20% decrease in defects."
+        ]
+      },
+      {
+        "company": "Tech Solutions Manufacturing",
+        "title": "Manufacturing Engineer",
+        "start_date": "2015-07",
+        "end_date": "2018-08",
+        "responsibilities": [
+          "Designed and implemented manufacturing systems to improve production efficiency.",
+          "Conducted quality assurance testing and implemented corrective actions.",
+          "Utilized CAD software to develop and refine production layouts.",
+          "Managed projects to ensure timely delivery of manufacturing objectives."
+        ],
+        "achievements": [
+          "Achieved Six Sigma certification and contributed to a significant quality improvement project."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Lean Manufacturing",
+        "proficiency_level": "Expert",
+        "years": 5
+      },
+      {
+        "name": "Six Sigma",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "CAD Software",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Project Management",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "Process Optimization",
+        "proficiency_level": "Expert",
+        "years": 5
+      },
+      {
+        "name": "Quality Assurance",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "Manufacturing Systems",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Statistical Analysis",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "Automation Technologies",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Robotics",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Industrial Engineering",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Supply Chain Management",
+        "proficiency_level": "Beginner",
+        "years": 2
+      },
+      {
+        "name": "ERP Systems",
+        "proficiency_level": "Beginner",
+        "years": 2
+      }
+    ],
+    "summary": "Results-driven manufacturing engineer with over 7 years of experience in optimizing production processes and ensuring quality standards. Proven expertise in lean manufacturing, Six Sigma, and project management. Demonstrated leadership in mentoring junior engineers and driving continuous improvement initiatives."
+  }
+}

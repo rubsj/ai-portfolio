@@ -1,0 +1,84 @@
+{
+  "cache_key": "c631a9154082c9eed13e4631dd8706b4",
+  "prompt_key": "resume_a662a120-6edd-4628-90de-328ebb3c376b_partial_technical",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:40:07.048983+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jessica Thompson",
+      "email": "jessica.thompson@email.com",
+      "phone": "4155551234",
+      "location": "San Francisco, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor's Degree in Education",
+        "institution": "University of California, Berkeley",
+        "graduation_date": "2015-05",
+        "gpa": null,
+        "coursework": [
+          "Curriculum Development",
+          "Educational Psychology",
+          "Instructional Design"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Tech-Savvy Education",
+        "title": "Curriculum Specialist",
+        "start_date": "2017-06",
+        "end_date": "2023-08",
+        "responsibilities": [
+          "Collaborated with educators to design curriculum materials for K-12 classrooms.",
+          "Developed assessment tools aligned with Common Core standards.",
+          "Integrated technology tools into the curriculum to enhance student engagement.",
+          "Analyzed student performance data to improve instructional strategies."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Learning Innovations",
+        "title": "Instructional Designer",
+        "start_date": "2015-07",
+        "end_date": "2017-05",
+        "responsibilities": [
+          "Assisted in the development of online learning modules.",
+          "Conducted training sessions for teachers on instructional strategies.",
+          "Supported the integration of learning management systems into the curriculum."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Curriculum Design",
+        "proficiency_level": "Intermediate",
+        "years": 6
+      },
+      {
+        "name": "Assessment Development",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Data Analysis",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Technology Integration",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Learning Management Systems",
+        "proficiency_level": "Beginner",
+        "years": 1
+      }
+    ],
+    "summary": "Dedicated education professional with experience in curriculum development and instructional design. Adept at collaborating with educators to create engaging learning experiences."
+  }
+}

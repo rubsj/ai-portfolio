@@ -1,0 +1,112 @@
+{
+  "cache_key": "d403ac3f3bacabb1516ef4ec51165967",
+  "prompt_key": "resume_a9137be0-4c26-4b70-91a6-c2b93e11b65d_good_casual",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:48:16.639162+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jamie Smith",
+      "email": "jamie.smith@email.com",
+      "phone": "5551234567",
+      "location": "Chicago, IL",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Master of Business Administration",
+        "institution": "University of Illinois at Chicago",
+        "graduation_date": "2010-05",
+        "gpa": null,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "Global Manufacturing Solutions",
+        "title": "Director of Operations",
+        "start_date": "2014-06",
+        "end_date": "2023-01",
+        "responsibilities": [
+          "Led operational strategy and execution across multiple manufacturing plants.",
+          "Improved efficiency through implementing Lean Manufacturing principles, resulting in a 15% reduction in waste.",
+          "Spearheaded Six Sigma projects that enhanced product quality and reduced defects by 20%.",
+          "Oversaw supply chain management processes to ensure timely delivery of materials and reduced costs.",
+          "Managed a team of 50+ employees, providing training and support to enhance their operational skills."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Innovative Tech Solutions",
+        "title": "Project Manager",
+        "start_date": "2012-01",
+        "end_date": "2014-05",
+        "responsibilities": [
+          "Directed cross-functional teams in the execution of technology-driven projects.",
+          "Implemented project management methodologies that improved project delivery timelines.",
+          "Collaborated with stakeholders to define project scope and objectives.",
+          "Utilized data analysis to streamline operations and identify productivity bottlenecks."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Lean Manufacturing",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Six Sigma",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      },
+      {
+        "name": "Supply Chain Management",
+        "proficiency_level": "Advanced",
+        "years": 7
+      },
+      {
+        "name": "Project Management",
+        "proficiency_level": "Advanced",
+        "years": 10
+      },
+      {
+        "name": "Quality Control",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      },
+      {
+        "name": "Operations Strategy",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      },
+      {
+        "name": "Data Analysis",
+        "proficiency_level": "Intermediate",
+        "years": 6
+      },
+      {
+        "name": "ERP Systems",
+        "proficiency_level": "Beginner",
+        "years": 2
+      },
+      {
+        "name": "Regulatory Compliance",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Team Leadership",
+        "proficiency_level": "Advanced",
+        "years": 9
+      },
+      {
+        "name": "Automation Technologies",
+        "proficiency_level": "Beginner",
+        "years": 1
+      }
+    ],
+    "summary": "Dynamic operations leader with over 13 years of experience in manufacturing and project management. Proven track record in implementing Lean and Six Sigma methodologies to enhance operational efficiency and drive quality improvements."
+  }
+}

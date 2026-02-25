@@ -1,0 +1,100 @@
+{
+  "cache_key": "dedcb3038422c028c8a2f68ace109f4f",
+  "prompt_key": "resume_a662a120-6edd-4628-90de-328ebb3c376b_mismatch_career_changer",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:40:35.009029+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Ellis",
+      "email": "jordan.ellis@email.com",
+      "phone": "1234567890",
+      "location": "Austin, TX",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor's Degree in Fine Arts",
+        "institution": "University of Texas",
+        "graduation_date": "2015-05",
+        "gpa": 3.8,
+        "coursework": [
+          "Graphic Design",
+          "Art History",
+          "Digital Media"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Creative Innovations Inc.",
+        "title": "Senior Graphic Designer",
+        "start_date": "2018-06",
+        "end_date": null,
+        "responsibilities": [
+          "Led design projects for branding and marketing materials, ensuring alignment with client vision and objectives.",
+          "Collaborated with teams to develop creative solutions for visual storytelling.",
+          "Conducted client presentations to communicate design concepts and gather feedback.",
+          "Managed project timelines and budgets, ensuring deliverables met quality standards."
+        ],
+        "achievements": [
+          "Increased client satisfaction scores by 30% through innovative design strategies.",
+          "Successfully implemented a new design software that reduced project turnaround time by 20%."
+        ]
+      },
+      {
+        "company": "Artistry & Co.",
+        "title": "Graphic Designer",
+        "start_date": "2015-06",
+        "end_date": "2018-05",
+        "responsibilities": [
+          "Produced high-quality visual content for various digital platforms.",
+          "Worked closely with marketing teams to align visual and promotional strategies.",
+          "Developed branding guidelines to maintain consistency across all media.",
+          "Participated in client workshops to understand their needs and tailor designs accordingly."
+        ],
+        "achievements": [
+          "Contributed to a successful rebranding campaign that resulted in a 25% increase in sales."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Adobe Creative Suite",
+        "proficiency_level": "Expert",
+        "years": 5
+      },
+      {
+        "name": "Print Design",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Web Design",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Brand Strategy",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "User Experience Design",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Color Theory",
+        "proficiency_level": "Expert",
+        "years": 5
+      },
+      {
+        "name": "Typography",
+        "proficiency_level": "Expert",
+        "years": 5
+      }
+    ],
+    "summary": "Creative and detail-oriented graphic designer with over 8 years of experience in delivering innovative design solutions. Proven track record of enhancing brand visibility through visual storytelling and strategic design implementation."
+  }
+}

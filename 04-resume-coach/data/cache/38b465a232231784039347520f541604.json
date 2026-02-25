@@ -1,0 +1,113 @@
+{
+  "cache_key": "38b465a232231784039347520f541604",
+  "prompt_key": "resume_66c13e0c-e5fe-4618-bbd9-fc2810d044bf_good_casual",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:42:16.284053+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Taylor",
+      "email": "jordan.taylor@example.com",
+      "phone": "5121234567",
+      "location": "Austin, TX",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Associate Degree",
+        "institution": "Austin Community College",
+        "graduation_date": "2022-05",
+        "gpa": null,
+        "coursework": [
+          "Engineering Technology",
+          "Manufacturing Processes",
+          "Basic Programming"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Tech Innovations Inc.",
+        "title": "Manufacturing Intern",
+        "start_date": "2021-06",
+        "end_date": "2022-05",
+        "responsibilities": [
+          "Assisted in the integration of IoT devices into existing manufacturing setups.",
+          "Conducted data analysis to track production efficiency and quality control metrics.",
+          "Collaborated with team members to troubleshoot machinery and automation tools."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Freelance",
+        "title": "3D Modeler",
+        "start_date": "2022-06",
+        "end_date": "2023-10",
+        "responsibilities": [
+          "Created 3D models for various clients using CAD software.",
+          "Worked with clients to understand their design requirements and provided feedback on designs.",
+          "Managed project timelines and delivered projects on schedule."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Data analysis",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "IoT devices",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Basic programming",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Automation tools",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "CAD software",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Quality control",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Robotics basics",
+        "proficiency_level": "Beginner",
+        "years": 0
+      },
+      {
+        "name": "Troubleshooting",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "3D modeling",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Photoshop",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Project management",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      }
+    ],
+    "summary": null
+  }
+}

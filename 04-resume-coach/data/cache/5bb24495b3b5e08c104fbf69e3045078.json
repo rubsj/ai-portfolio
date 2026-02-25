@@ -1,0 +1,37 @@
+{
+  "cache_key": "5bb24495b3b5e08c104fbf69e3045078",
+  "prompt_key": "job_Marketing_False_Senior",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:20:17.305438+00:00",
+  "response": {
+    "title": "Senior Marketing Manager",
+    "company": {
+      "name": "Innovate Marketing Solutions",
+      "industry": "Marketing",
+      "size": "Mid-size (201-500)",
+      "location": "New York, NY"
+    },
+    "description": "We are seeking a talented Senior Marketing Manager to drive our marketing strategies and initiatives. The ideal candidate will have a proven track record of developing and executing successful marketing campaigns that enhance brand awareness and drive customer engagement. You will lead a team of marketing professionals, collaborate with cross-functional teams, and utilize data-driven insights to optimize marketing performance.",
+    "requirements": {
+      "required_skills": [
+        "SEO",
+        "Google Analytics",
+        "Content Marketing",
+        "Email Marketing",
+        "Social Media Advertising",
+        "PPC Campaigns",
+        "Marketing Automation",
+        "CRM Software"
+      ],
+      "preferred_skills": [
+        "A/B Testing",
+        "Lead Generation",
+        "Brand Strategy",
+        "Budget Management"
+      ],
+      "education": "Bachelor's degree in Marketing, Business, or related field",
+      "experience_years": 5,
+      "experience_level": "Senior"
+    }
+  }
+}

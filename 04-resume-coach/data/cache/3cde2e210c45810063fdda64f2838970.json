@@ -1,0 +1,94 @@
+{
+  "cache_key": "3cde2e210c45810063fdda64f2838970",
+  "prompt_key": "resume_a9137be0-4c26-4b70-91a6-c2b93e11b65d_mismatch_career_changer",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:48:57.801551+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Alex Johnson",
+      "email": "alex.johnson@example.com",
+      "phone": "3125557890",
+      "location": "San Francisco, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Fine Arts",
+        "institution": "University of California, Berkeley",
+        "graduation_date": "2010-05",
+        "gpa": 3.8,
+        "coursework": [
+          "Graphic Design",
+          "Visual Arts",
+          "Art History"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Creative Arts Agency",
+        "title": "Senior Graphic Designer",
+        "start_date": "2015-06",
+        "end_date": "2023-09",
+        "responsibilities": [
+          "Developed innovative visual designs for marketing campaigns, increasing brand visibility across various media.",
+          "Collaborated with cross-functional teams to deliver client projects on time and within budget.",
+          "Led design workshops for junior designers, enhancing their skills in software tools and design principles."
+        ],
+        "achievements": [
+          "Awarded 'Designer of the Year' in 2021 for outstanding creative contributions.",
+          "Successfully increased client satisfaction ratings by 30% through enhanced design strategies."
+        ]
+      },
+      {
+        "company": "Freelance Design Projects",
+        "title": "Independent Graphic Designer",
+        "start_date": "2013-01",
+        "end_date": "2015-05",
+        "responsibilities": [
+          "Managed multiple design projects for diverse clients, ensuring high-quality outputs and timely deliveries.",
+          "Utilized Adobe Creative Suite to create compelling visual content tailored to client specifications.",
+          "Conducted market research to understand industry trends and applied findings to improve design effectiveness."
+        ],
+        "achievements": [
+          "Built a robust portfolio that attracted high-profile clients within two years.",
+          "Received positive feedback and repeat business from 85% of clients."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Adobe Photoshop",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Adobe Illustrator",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Adobe InDesign",
+        "proficiency_level": "Intermediate",
+        "years": 6
+      },
+      {
+        "name": "User Experience Design",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      },
+      {
+        "name": "Photography",
+        "proficiency_level": "Advanced",
+        "years": 10
+      },
+      {
+        "name": "Social Media Marketing",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      }
+    ],
+    "summary": "Creative and detail-oriented graphic designer with over 10 years of experience in visual arts and marketing. Passionate about crafting unique designs that resonate with target audiences."
+  }
+}

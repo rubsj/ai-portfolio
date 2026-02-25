@@ -1,0 +1,78 @@
+{
+  "cache_key": "e83f904ba4cbc3a480e5beedcafd2e76",
+  "prompt_key": "resume_7d6b1f5d-66ce-4810-893c-8c3bd0935a22_partial_technical",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:49:29.058962+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@example.com",
+      "phone": "5121234567",
+      "location": "Austin, TX",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor's Degree",
+        "institution": "University of Texas at Austin",
+        "graduation_date": "2022-05",
+        "gpa": 3.5,
+        "coursework": [
+          "Marketing Principles",
+          "Consumer Behavior",
+          "Retail Management",
+          "Data Analysis"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Retail Innovations Inc.",
+        "title": "Marketing Assistant",
+        "start_date": "2022-06",
+        "end_date": null,
+        "responsibilities": [
+          "Assisted in the development of marketing campaigns to enhance customer engagement.",
+          "Conducted data analysis to identify trends and insights to inform marketing strategies.",
+          "Collaborated with the visual merchandising team to optimize in-store displays and layouts.",
+          "Participated in customer journey mapping to improve the overall shopping experience."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Data Analysis",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Visual Merchandising",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Digital Marketing",
+        "proficiency_level": "Beginner",
+        "years": null
+      },
+      {
+        "name": "Customer Journey Mapping",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Trend Analysis",
+        "proficiency_level": "Beginner",
+        "years": null
+      },
+      {
+        "name": "UX Design",
+        "proficiency_level": "Beginner",
+        "years": null
+      }
+    ],
+    "summary": null
+  }
+}

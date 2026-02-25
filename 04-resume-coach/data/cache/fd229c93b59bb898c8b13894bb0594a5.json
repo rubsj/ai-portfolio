@@ -1,0 +1,104 @@
+{
+  "cache_key": "fd229c93b59bb898c8b13894bb0594a5",
+  "prompt_key": "resume_d2c95a25-d542-4cd6-8177-08bfc6be87f0_excellent_formal",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T20:12:30.943657+00:00",
+  "response": {
+    "contact_info": {
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "phone": "+12125551234",
+      "location": "New York, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Juris Doctor (JD)",
+        "institution": "Harvard Law School",
+        "graduation_date": "2015-05",
+        "gpa": null,
+        "coursework": [
+          "Corporate Law",
+          "Intellectual Property Law",
+          "Litigation Strategies",
+          "Legal Research"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Legal Advisors Group",
+        "title": "Senior Corporate Counsel",
+        "start_date": "2015-06",
+        "end_date": null,
+        "responsibilities": [
+          "Provided strategic legal advice to various business units on corporate governance and compliance issues.",
+          "Managed complex legal agreements including mergers and acquisitions, ensuring all legal requirements were met.",
+          "Oversaw litigation management and collaborated with external counsel on high-stakes disputes.",
+          "Conducted risk assessments and advised on compliance with labor laws and regulations.",
+          "Led a team of junior attorneys in legal research and contract negotiations, fostering professional development."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Contract Negotiation",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Compliance Management",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Intellectual Property",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Corporate Governance",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Litigation Management",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Risk Assessment",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Labor Law",
+        "proficiency_level": "Intermediate",
+        "years": 5
+      },
+      {
+        "name": "Legal Research",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Mergers and Acquisitions",
+        "proficiency_level": "Advanced",
+        "years": 8
+      },
+      {
+        "name": "Data Privacy",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Antitrust Law",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      }
+    ],
+    "summary": null
+  }
+}

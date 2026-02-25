@@ -1,0 +1,102 @@
+{
+  "cache_key": "4f3e37524433d5426a81664e0d0ea9b7",
+  "prompt_key": "resume_3e017fce-4640-402d-8781-44c607d9ea0b_good_casual",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:44:24.077850+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@email.com",
+      "phone": "1234567890",
+      "location": "Detroit, MI",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Science in Mechanical Engineering",
+        "institution": "University of Michigan",
+        "graduation_date": "2016-05",
+        "gpa": null,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "Innovative Solutions LLC",
+        "title": "Manufacturing Engineer",
+        "start_date": "2017-06",
+        "end_date": "2023-09",
+        "responsibilities": [
+          "Led initiatives to optimize manufacturing processes, resulting in a 15% increase in overall efficiency.",
+          "Collaborated with cross-functional teams to establish and maintain quality control standards.",
+          "Implemented Lean Manufacturing principles to reduce waste and improve production workflows.",
+          "Conducted root cause analysis to resolve production issues swiftly.",
+          "Managed projects to upgrade CAD software systems and ensure team proficiency."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Tech Manufacturing Co.",
+        "title": "Junior Manufacturing Engineer",
+        "start_date": "2016-06",
+        "end_date": "2017-05",
+        "responsibilities": [
+          "Assisted in the development and implementation of manufacturing processes.",
+          "Supported quality control initiatives and maintained documentation for compliance.",
+          "Analyzed production data to identify areas for improvement.",
+          "Worked on minor automation projects to enhance production efficiency."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Lean Manufacturing",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Six Sigma",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "CAD Software",
+        "proficiency_level": "Advanced",
+        "years": 5
+      },
+      {
+        "name": "Process Optimization",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Root Cause Analysis",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "Quality Control",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Project Management",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Additive Manufacturing",
+        "proficiency_level": "Beginner",
+        "years": 1
+      },
+      {
+        "name": "Data Analysis",
+        "proficiency_level": "Beginner",
+        "years": 1
+      }
+    ],
+    "summary": null
+  }
+}

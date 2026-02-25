@@ -1,0 +1,81 @@
+{
+  "cache_key": "2ebdcb858ac029a9f3d8a2a577c47f1f",
+  "prompt_key": "resume_a586bba8-87e0-4310-b639-f18eb7491b79_mismatch_career_changer",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T20:07:02.026071+00:00",
+  "response": {
+    "contact_info": {
+      "name": "Jordan Smith",
+      "email": "jordan.smith@example.com",
+      "phone": "5123456789",
+      "location": "New York, NY",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Arts",
+        "institution": "University of Arts",
+        "graduation_date": "2015-05",
+        "gpa": null,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "Creative Designs Agency",
+        "title": "Graphic Designer",
+        "start_date": "2016-06",
+        "end_date": "2023-08",
+        "responsibilities": [
+          "Developed visual concepts for various marketing campaigns across digital platforms.",
+          "Collaborated with clients to understand their branding needs and deliver tailored design solutions.",
+          "Utilized Adobe Creative Suite to create engaging graphics, flyers, and social media content.",
+          "Managed multiple design projects simultaneously, ensuring deadlines were met."
+        ],
+        "achievements": null
+      },
+      {
+        "company": "Trendy Apparel Co.",
+        "title": "Marketing Assistant",
+        "start_date": "2015-06",
+        "end_date": "2016-05",
+        "responsibilities": [
+          "Assisted in the development of marketing materials for new product launches.",
+          "Conducted market research to identify trends in consumer preferences and feedback.",
+          "Coordinated social media campaigns to increase brand awareness and engagement.",
+          "Worked closely with the design team to create visually appealing advertisements."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Adobe Creative Suite",
+        "proficiency_level": "Advanced",
+        "years": 7
+      },
+      {
+        "name": "Social Media Management",
+        "proficiency_level": "Intermediate",
+        "years": 4
+      },
+      {
+        "name": "Market Research",
+        "proficiency_level": "Intermediate",
+        "years": 2
+      },
+      {
+        "name": "Project Coordination",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      },
+      {
+        "name": "Brand Strategy",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      }
+    ],
+    "summary": "Creative Graphic Designer with over 7 years of experience in visual communication and branding. Proven ability to manage multiple projects and deliver high-quality design solutions. Seeking to transition into a new industry to leverage creative skills in a different context."
+  }
+}

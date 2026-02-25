@@ -1,0 +1,77 @@
+{
+  "cache_key": "a0f55b0558563c5dace3b12ba0368888",
+  "prompt_key": "resume_66c13e0c-e5fe-4618-bbd9-fc2810d044bf_partial_technical",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-02-25T19:42:26.473763+00:00",
+  "response": {
+    "contact_info": {
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "phone": "+11234567890",
+      "location": "Austin, TX",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "Associate Degree",
+        "institution": "Austin Community College",
+        "graduation_date": "2022-05",
+        "gpa": null,
+        "coursework": [
+          "Engineering Fundamentals",
+          "Computer-Aided Design",
+          "Manufacturing Processes"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Tech Solutions Inc.",
+        "title": "Junior Technician",
+        "start_date": "2022-06",
+        "end_date": "2023-06",
+        "responsibilities": [
+          "Assisted in the setup and maintenance of automation systems to streamline workflows.",
+          "Conducted basic data analysis to identify operational inefficiencies.",
+          "Supported the integration of IoT devices for monitoring manufacturing processes.",
+          "Collaborated with senior engineers on troubleshooting equipment issues."
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Data analysis",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "IoT devices",
+        "proficiency_level": "Beginner",
+        "years": 0
+      },
+      {
+        "name": "Basic programming",
+        "proficiency_level": "Beginner",
+        "years": 0
+      },
+      {
+        "name": "Automation tools",
+        "proficiency_level": "Beginner",
+        "years": 0
+      },
+      {
+        "name": "CAD software",
+        "proficiency_level": "Intermediate",
+        "years": 1
+      },
+      {
+        "name": "Quality control",
+        "proficiency_level": "Beginner",
+        "years": 0
+      }
+    ],
+    "summary": null
+  }
+}

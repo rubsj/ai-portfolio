@@ -86,3 +86,12 @@ class TestSkillNormalizer:
 
     def test_normalize_set_empty_list(self, normalizer):
         assert normalizer.normalize_set([]) == set()
+
+    @pytest.mark.parametrize("input_skill,expected", [
+        ("JavaScript (ES6+)", "javascript"),
+        ("Cloud Computing (AWS, Azure)", "cloud computing"),
+        ("Tools (e.g., AWS) and more (GCP)", "tools and more"),
+        ("React", "react"),  # no change for clean inputs
+    ])
+    def test_parenthetical_stripping(self, normalizer, input_skill, expected):
+        assert normalizer.normalize(input_skill) == expected
