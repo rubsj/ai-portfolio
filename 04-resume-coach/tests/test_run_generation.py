@@ -5,7 +5,6 @@ import uuid
 from datetime import datetime, timezone
 from unittest.mock import MagicMock, patch
 
-import pytest
 
 from src.schemas import (
     CompanyInfo,
@@ -112,7 +111,7 @@ class TestMainDryRun:
                     with patch(
                         "src.run_generation.generate_all_resumes",
                         return_value=([resume], [pair], 5),
-                    ) as mock_resumes:
+                    ) as _:
                         with patch(
                             "src.run_generation.ValidationTracker.save_stats"
                         ):
