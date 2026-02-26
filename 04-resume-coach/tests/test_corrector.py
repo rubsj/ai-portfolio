@@ -13,15 +13,25 @@ from unittest.mock import MagicMock
 import pytest
 from pydantic import ValidationError
 
+import json
+from pathlib import Path
+from unittest.mock import patch
+
 from src.corrector import (
+    _load_cache,
+    _prompt_hash,
+    _save_cache,
     build_correction_prompt,
     correct_batch,
     correct_record,
     extract_validation_errors,
     generate_seeded_broken_records,
+    save_correction_results,
 )
 from src.schemas import (
     ContactInfo,
+    CorrectionResult,
+    CorrectionSummary,
     Education,
     Experience,
     ProficiencyLevel,
@@ -366,3 +376,316 @@ class TestCorrectBatch:
 
         # avg_attempts should be 1.0 (only the actually-corrected record counts)
         assert summary.avg_attempts_per_success == 1.0
+
+
+# ---------------------------------------------------------------------------
+# TestCacheHelpers — covers _load_cache and _save_cache
+# ---------------------------------------------------------------------------
+
+
+class TestCacheHelpers:
+    def test_load_cache_miss_returns_none(self, tmp_path: Path) -> None:
+        """Cache file does not exist → _load_cache returns None."""
+        import src.corrector as cmod
+
+        with patch.object(cmod, "_CACHE_DIR", tmp_path):
+            result = _load_cache("nonexistent-key")
+        assert result is None
+
+    def test_load_cache_hit_returns_dict(self, tmp_path: Path) -> None:
+        """Valid cache file exists → _load_cache returns the 'response' dict."""
+        import src.corrector as cmod
+
+        cache_key = "abc123def"
+        payload = {
+            "cache_key": cache_key,
+            "model": "gpt-4o-mini",
+            "response": {"contact_info": {"name": "John"}, "education": []},
+        }
+        cache_file = tmp_path / f"{cache_key}.json"
+        cache_file.write_text(json.dumps(payload))
+
+        with patch.object(cmod, "_CACHE_DIR", tmp_path):
+            result = _load_cache(cache_key)
+
+        assert result is not None
+        assert result["contact_info"]["name"] == "John"
+
+    def test_load_cache_corrupted_returns_none(self, tmp_path: Path) -> None:
+        """Malformed JSON in cache file → _load_cache returns None (no crash)."""
+        import src.corrector as cmod
+
+        cache_key = "bad-json-key"
+        (tmp_path / f"{cache_key}.json").write_text("{not valid json}")
+
+        with patch.object(cmod, "_CACHE_DIR", tmp_path):
+            result = _load_cache(cache_key)
+
+        assert result is None
+
+    def test_load_cache_missing_response_key_returns_none(self, tmp_path: Path) -> None:
+        """Cache file valid JSON but no 'response' key → _load_cache returns None."""
+        import src.corrector as cmod
+
+        cache_key = "no-response-key"
+        (tmp_path / f"{cache_key}.json").write_text(json.dumps({"cache_key": cache_key}))
+
+        with patch.object(cmod, "_CACHE_DIR", tmp_path):
+            result = _load_cache(cache_key)
+
+        assert result is None
+
+    def test_save_cache_creates_file(self, tmp_path: Path) -> None:
+        """_save_cache writes a JSON file with the expected structure."""
+        import src.corrector as cmod
+
+        cache_key = "save-test-key"
+        response_dict = {"contact_info": {"name": "Saved"}}
+
+        with patch.object(cmod, "_CACHE_DIR", tmp_path):
+            _save_cache(cache_key, response_dict)
+
+        cache_file = tmp_path / f"{cache_key}.json"
+        assert cache_file.exists()
+        payload = json.loads(cache_file.read_text())
+        assert payload["cache_key"] == cache_key
+        assert payload["response"]["contact_info"]["name"] == "Saved"
+
+    def test_save_then_load_roundtrip(self, tmp_path: Path) -> None:
+        """Save followed by load returns the same dict."""
+        import src.corrector as cmod
+
+        cache_key = "roundtrip-key"
+        original = {"skills": [{"name": "Python", "years": 3}]}
+
+        with patch.object(cmod, "_CACHE_DIR", tmp_path):
+            _save_cache(cache_key, original)
+            loaded = _load_cache(cache_key)
+
+        assert loaded == original
+
+
+# ---------------------------------------------------------------------------
+# TestPromptHash — covers _prompt_hash
+# ---------------------------------------------------------------------------
+
+
+class TestPromptHash:
+    def test_same_inputs_produce_same_hash(self) -> None:
+        h1 = _prompt_hash("system", "user")
+        h2 = _prompt_hash("system", "user")
+        assert h1 == h2
+
+    def test_different_inputs_produce_different_hash(self) -> None:
+        h1 = _prompt_hash("system A", "user")
+        h2 = _prompt_hash("system B", "user")
+        assert h1 != h2
+
+    def test_hash_is_32_hex_chars(self) -> None:
+        h = _prompt_hash("sys", "usr")
+        assert len(h) == 32
+        assert all(c in "0123456789abcdef" for c in h)
+
+
+# ---------------------------------------------------------------------------
+# TestSaveCorrectionResults — covers save_correction_results
+# ---------------------------------------------------------------------------
+
+
+class TestSaveCorrectionResults:
+    def _make_result(self, pair_id: str = "r-001") -> CorrectionResult:
+        return CorrectionResult(
+            pair_id=pair_id,
+            attempt_number=1,
+            original_errors=["email: invalid format"],
+            corrected_successfully=True,
+            remaining_errors=[],
+        )
+
+    def _make_summary(self) -> CorrectionSummary:
+        return CorrectionSummary(
+            total_invalid=2,
+            total_corrected=2,
+            correction_rate=1.0,
+            avg_attempts_per_success=1.0,
+            common_failure_reasons={},  # dict[str, int], not list
+        )
+
+    def test_creates_results_jsonl(self, tmp_path: Path) -> None:
+        import src.corrector as cmod
+
+        results = [self._make_result("r-001"), self._make_result("r-002")]
+        summary = self._make_summary()
+
+        with patch.object(cmod, "_CORRECTED_DIR", tmp_path):
+            results_path, summary_path = save_correction_results(results, summary)
+
+        assert results_path.exists()
+        lines = results_path.read_text().strip().splitlines()
+        assert len(lines) == 2
+
+    def test_creates_summary_json(self, tmp_path: Path) -> None:
+        import src.corrector as cmod
+
+        results = [self._make_result()]
+        summary = self._make_summary()
+
+        with patch.object(cmod, "_CORRECTED_DIR", tmp_path):
+            results_path, summary_path = save_correction_results(results, summary)
+
+        assert summary_path.exists()
+        data = json.loads(summary_path.read_text())
+        assert data["total_invalid"] == 2
+        assert data["correction_rate"] == 1.0
+
+    def test_returns_tuple_of_paths(self, tmp_path: Path) -> None:
+        import src.corrector as cmod
+
+        with patch.object(cmod, "_CORRECTED_DIR", tmp_path):
+            results_path, summary_path = save_correction_results(
+                [self._make_result()], self._make_summary()
+            )
+
+        assert isinstance(results_path, Path)
+        assert isinstance(summary_path, Path)
+
+
+# ---------------------------------------------------------------------------
+# TestCorrectRecordCachePath — covers cache hit + save branches (lines 208-242)
+# ---------------------------------------------------------------------------
+
+
+class TestCorrectRecordCachePath:
+    def test_cache_hit_valid_result_skips_llm(self, tmp_path: Path) -> None:
+        """Pre-populate cache with a valid Resume dict → cache hit avoids LLM call."""
+        import src.corrector as cmod
+
+        # Build a valid resume dict and cache it
+        valid_resume = _make_valid_resume()
+        broken = _make_broken_dict("cache-hit-001")
+
+        # Pre-compute cache key the same way correct_record does
+        system_prompt, user_prompt = build_correction_prompt(
+            broken,
+            extract_validation_errors(broken, Resume),
+        )
+        key = _prompt_hash(system_prompt, user_prompt)
+        payload = {"cache_key": key, "model": "gpt-4o-mini", "response": valid_resume.model_dump()}
+        (tmp_path / f"{key}.json").write_text(json.dumps(payload))
+
+        client = _make_mock_client(return_value=valid_resume)
+
+        with patch.object(cmod, "_CACHE_DIR", tmp_path):
+            result = correct_record(client, broken, use_cache=True)
+
+        # LLM was NOT called — cache hit returned the valid resume
+        client.chat.completions.create.assert_not_called()
+        assert result.corrected_successfully is True
+
+    def test_cache_hit_with_invalid_result_falls_through_to_llm(self, tmp_path: Path) -> None:
+        """Cache hit returns an INVALID Resume dict → errors found → fall through to LLM retry.
+
+        Covers corrector.py lines 222-224: the branch where a cached result still fails
+        Resume validation. The corrector updates context (errors + current_data) and
+        continues to the next attempt, where the mock LLM returns a valid Resume.
+        """
+        import src.corrector as cmod
+
+        broken = _make_broken_dict("cache-invalid-001")
+        valid_resume = _make_valid_resume()
+        client = _make_mock_client(return_value=valid_resume)
+
+        # Build an INVALID cached dict — still has a bad email so validation will fail
+        invalid_cached_dict = {
+            "contact_info": {
+                "name": "Test User",
+                "email": "still-invalid@nodomain",  # still missing TLD → fails validation
+                "phone": "555-123-4567",
+                "location": "Test City, CA",
+            },
+            "education": [
+                {"degree": "B.S. CS", "institution": "Test U", "graduation_date": "2020-05"}
+            ],
+            "experience": [
+                {
+                    "company": "Corp",
+                    "title": "Engineer",
+                    "start_date": "2020-06",
+                    "end_date": "2023-01",
+                    "responsibilities": ["Did work"],
+                }
+            ],
+            "skills": [{"name": "Python", "proficiency_level": "Advanced", "years": 3}],
+            "summary": "Engineer.",
+        }
+
+        # Pre-compute the attempt-1 cache key (same logic as correct_record uses)
+        errors = extract_validation_errors(broken, Resume)
+        system_prompt, user_prompt = build_correction_prompt(broken, errors)
+        key = _prompt_hash(system_prompt, user_prompt)
+        payload = {"cache_key": key, "model": "gpt-4o-mini", "response": invalid_cached_dict}
+        (tmp_path / f"{key}.json").write_text(json.dumps(payload))
+
+        with patch.object(cmod, "_CACHE_DIR", tmp_path):
+            result = correct_record(client, broken, use_cache=True)
+
+        # Attempt 1: cache hit → invalid result → lines 222-224 execute → continue
+        # Attempt 2: cache miss → LLM called → valid Resume returned → success
+        client.chat.completions.create.assert_called_once()
+        assert result.corrected_successfully is True
+
+    def test_cache_miss_saves_to_cache_after_llm_call(self, tmp_path: Path) -> None:
+        """Cache miss → LLM called → result saved to cache for future use."""
+        import src.corrector as cmod
+
+        valid_resume = _make_valid_resume()
+        broken = _make_broken_dict("cache-save-001")
+        client = _make_mock_client(return_value=valid_resume)
+
+        with patch.object(cmod, "_CACHE_DIR", tmp_path):
+            result = correct_record(client, broken, use_cache=True)
+
+        # LLM was called
+        client.chat.completions.create.assert_called_once()
+        assert result.corrected_successfully is True
+        # Cache file was created
+        cache_files = list(tmp_path.glob("*.json"))
+        assert len(cache_files) == 1
+
+
+# ---------------------------------------------------------------------------
+# TestCreateClient — covers _create_client missing API key branch (lines 49-55)
+# ---------------------------------------------------------------------------
+
+
+class TestCreateClient:
+    def test_create_client_raises_without_api_key(self, tmp_path: Path, monkeypatch: Any) -> None:
+        """_create_client raises RuntimeError when OPENAI_API_KEY is not set."""
+        import src.corrector as cmod
+
+        monkeypatch.delenv("OPENAI_API_KEY", raising=False)
+        # Point _PROJECT_ROOT to tmp_path so load_dotenv finds no .env file
+        monkeypatch.setattr(cmod, "_PROJECT_ROOT", tmp_path)
+
+        with pytest.raises(RuntimeError, match="OPENAI_API_KEY"):
+            cmod._create_client()
+
+    def test_create_client_returns_instructor_with_api_key(
+        self, tmp_path: Path, monkeypatch: Any
+    ) -> None:
+        """_create_client returns an Instructor client when OPENAI_API_KEY is set."""
+        from unittest.mock import MagicMock
+
+        import src.corrector as cmod
+
+        monkeypatch.setenv("OPENAI_API_KEY", "test-key-for-unit-tests")
+        monkeypatch.setattr(cmod, "_PROJECT_ROOT", tmp_path)
+
+        mock_instructor = MagicMock()
+        with (
+            patch("instructor.from_openai", return_value=mock_instructor),
+            patch("openai.OpenAI", return_value=MagicMock()),
+        ):
+            client = cmod._create_client()
+
+        assert client is mock_instructor

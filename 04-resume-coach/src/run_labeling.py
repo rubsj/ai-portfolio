@@ -196,5 +196,5 @@ def run() -> None:
     console.print(f"\n[bold green]Done! {total} failure labels written to {OUTPUT_FILE}[/bold green]")
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # pragma: no cover
     run()

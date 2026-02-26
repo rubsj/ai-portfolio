@@ -454,7 +454,7 @@ def save_correction_results(
 # ---------------------------------------------------------------------------
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # pragma: no cover
     from rich.console import Console
 
     console = Console()

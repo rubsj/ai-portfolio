@@ -211,6 +211,24 @@ class TestCalculateTotalExperience:
         total = calculate_total_experience(exp)
         assert total == 0.0
 
+    def test_skips_malformed_start_date(self) -> None:
+        """ValueError from strptime is caught — malformed entry skipped, valid ones still summed.
+
+        WHY MagicMock: Experience.start_date has a Pydantic date validator that rejects
+        "not-a-date". MagicMock bypasses Pydantic so we can reach the except ValueError
+        branch (labeler.py lines 150-153) that guards against belt-and-suspenders bad dates.
+        """
+        from unittest.mock import MagicMock
+
+        good_exp = _make_experience(start_date="2020-01", end_date="2022-01")  # 2.0 years
+        bad_exp = MagicMock()
+        bad_exp.start_date = "not-a-date"  # "not-a-"[:7] → strptime raises ValueError
+        bad_exp.end_date = None
+
+        total = calculate_total_experience([good_exp, bad_exp])
+        # bad_exp is silently skipped; only good_exp (24 months = 2.0 years) counts
+        assert abs(total - 2.0) < 0.1
+
 
 # ---------------------------------------------------------------------------
 # TestInferSeniority

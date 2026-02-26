@@ -359,7 +359,7 @@ def save_judge_results(results: list[JudgeResult]) -> Path:
 # ---------------------------------------------------------------------------
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # pragma: no cover
     from rich.console import Console
 
     console = Console()
