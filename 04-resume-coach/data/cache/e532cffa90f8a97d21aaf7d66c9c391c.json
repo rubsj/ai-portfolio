@@ -1,0 +1,23 @@
+{
+  "cache_key": "e532cffa90f8a97d21aaf7d66c9c391c",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:18:23.093333+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.4,
+    "fit_assessment": "Alex Johnson's resume shows some relevant skills and experience for the EdTech Engagement Specialist position, but lacks several key requirements. The candidate has a background in content creation and project management, which are relevant to the job. However, there is no evidence of experience or skills in gamification principles, instructional design, learning management systems, user experience design, or basic coding, which are critical for the role. Additionally, the educational background in English Literature and Creative Writing does not directly align with the preferred fields of Education or Game Design.",
+    "recommendations": [
+      "Gain experience or training in gamification principles and instructional design to better align with the job requirements.",
+      "Consider obtaining certifications or taking courses in Learning Management Systems and user experience design.",
+      "Develop basic coding skills, particularly in HTML/CSS, to meet the job's technical requirements.",
+      "Highlight any relevant projects or experiences that demonstrate an ability to blend technology and education."
+    ],
+    "red_flags": [
+      "Lack of experience in gamification and instructional design.",
+      "Educational background not directly related to the preferred fields for the position."
+    ]
+  }
+}

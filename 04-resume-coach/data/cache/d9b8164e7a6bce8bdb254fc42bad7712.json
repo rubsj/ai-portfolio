@@ -1,0 +1,22 @@
+{
+  "cache_key": "d9b8164e7a6bce8bdb254fc42bad7712",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:26:14.884457+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The resume claims 5 years of experience in policy analysis, but the timeline from 2017 to present (2023) only accounts for 6 years in total, including a role as a Research Assistant. This does not align with the 7 years of senior-level experience required.",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.6,
+    "fit_assessment": "Jane Doe has relevant experience in policy analysis and legislative research, which aligns with the job requirements. However, she lacks the 7 years of senior-level experience required for the Senior Policy Analyst role. Her skills in stakeholder engagement and report writing are a good match, but her proficiency levels are only intermediate, which may not meet the expectations for a senior position.",
+    "recommendations": [
+      "Gain additional experience in a senior policy analyst role to meet the 7-year requirement.",
+      "Enhance proficiency in key skills such as policy analysis and stakeholder engagement to reach an advanced level.",
+      "Consider obtaining experience in preferred skills like grant writing and project management to strengthen the application."
+    ],
+    "red_flags": [
+      "Insufficient years of experience for a senior-level position.",
+      "Intermediate proficiency in key skills that are expected to be advanced for a senior role."
+    ]
+  }
+}

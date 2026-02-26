@@ -1,0 +1,19 @@
+{
+  "cache_key": "e34eba034a865dcc41ab1e8068fd9a1f",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:23:52.622861+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.9,
+    "fit_assessment": "Jordan Smith's resume is a strong match for the Senior Corporate Counsel position at Legal Solutions Group. The candidate has relevant experience in corporate governance, contract negotiation, regulatory compliance, and mergers and acquisitions, which are key requirements for the role. The educational background with a JD from a reputable law school and the location in Chicago, IL, further align with the job description. While the resume lacks specific achievements and a summary, the experience and skills listed are well-suited for the position.",
+    "recommendations": [
+      "Include specific achievements or outcomes in the responsibilities section to demonstrate impact.",
+      "Add a professional summary to provide a concise overview of qualifications and career goals.",
+      "Consider highlighting any experience or knowledge in international law and data privacy, as these are preferred skills for the role."
+    ],
+    "red_flags": []
+  }
+}

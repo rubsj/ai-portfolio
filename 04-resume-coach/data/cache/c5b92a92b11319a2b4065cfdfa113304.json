@@ -1,0 +1,24 @@
+{
+  "cache_key": "c5b92a92b11319a2b4065cfdfa113304",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:17:23.770694+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The resume claims advanced proficiency in skills such as 'Project Management' and 'Customer Engagement' without relevant industry experience in finance or data analytics. The candidate's background in theater does not align with the technical skills required for a FinTech Data Analyst role.",
+    "has_awkward_language": true,
+    "awkward_language_details": "The summary uses phrases like 'dynamic and detail-oriented stage manager' and 'proven success in coordinating complex events,' which are not relevant to a data analyst role. The language does not address the specific requirements of the job description.",
+    "overall_quality_score": 0.2,
+    "fit_assessment": "The resume does not match the job description for a FinTech Data Analyst specializing in behavioral insights. The candidate lacks the necessary technical skills, such as SQL, Python, data visualization, and statistical analysis, as well as relevant educational background in finance, economics, data science, or psychology.",
+    "recommendations": [
+      "Acquire foundational skills in SQL, Python, and data visualization through online courses or certifications.",
+      "Gain experience in data analysis, possibly through internships or entry-level positions in related fields.",
+      "Consider further education or training in finance, economics, data science, or psychology to align educational background with job requirements.",
+      "Tailor the resume to highlight any transferable skills relevant to data analysis and consumer behavior."
+    ],
+    "red_flags": [
+      "Lack of relevant technical skills required for the job.",
+      "Educational background in theater, which does not align with the job's preferred fields.",
+      "No experience in finance or data analytics."
+    ]
+  }
+}

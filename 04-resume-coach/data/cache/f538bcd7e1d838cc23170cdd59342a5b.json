@@ -1,0 +1,22 @@
+{
+  "cache_key": "f538bcd7e1d838cc23170cdd59342a5b",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:16:20.898122+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The candidate claims 3 years of SQL experience, but the timeline only supports 2 years at most, given the job history. Additionally, the resume does not mention experience with R, SAS, or EPIC, which are required skills.",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.6,
+    "fit_assessment": "Jessica Smith has relevant experience in healthcare data analysis and is located in San Francisco, which matches the job location. However, she lacks some of the key required skills such as R, SAS, and EPIC. Her experience level and educational background are suitable, but the proficiency in required tools and methodologies is not fully met.",
+    "recommendations": [
+      "Gain experience with R, SAS, and EPIC to better align with the job requirements.",
+      "Consider pursuing a Master's degree to enhance qualifications.",
+      "Improve proficiency in Healthcare Analytics to at least an intermediate level."
+    ],
+    "red_flags": [
+      "Lack of experience with R, SAS, and EPIC, which are required skills.",
+      "Discrepancy in claimed SQL experience years."
+    ]
+  }
+}

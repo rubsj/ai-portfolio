@@ -1,0 +1,22 @@
+{
+  "cache_key": "6cd9d7e52ee92fc7ff712510d88d2873",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:23:27.500608+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The resume claims expertise in graphic design and related fields, but there is no mention of legal research, data analysis, SQL, Excel, Python, or data visualization skills, which are required for the job.",
+    "has_awkward_language": true,
+    "awkward_language_details": "The summary states 'Seeking to leverage artistic skills in a new field,' which is vague and does not align with the specific requirements of the Legal Technology Data Analyst position.",
+    "overall_quality_score": 0.1,
+    "fit_assessment": "The resume is not a good fit for the Legal Technology Data Analyst position. The candidate's background is in graphic design and art, with no relevant experience or skills in legal technology, data analysis, or the specific technical skills required for the role.",
+    "recommendations": [
+      "Gain experience or training in data analysis, SQL, Excel, Python, and data visualization.",
+      "Consider obtaining a certification or coursework in legal studies or data science to align with the job requirements.",
+      "Revise the resume to highlight any transferable skills or experiences that may relate to the job description, such as project management or market research."
+    ],
+    "red_flags": [
+      "Lack of relevant skills and experience in legal technology and data analysis.",
+      "The education and work experience do not align with the job's requirements for legal research and data analysis."
+    ]
+  }
+}

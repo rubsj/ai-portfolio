@@ -1,0 +1,19 @@
+{
+  "cache_key": "651b4e30a4d7d185f392a328c165e6bf",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:15:45.951590+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.9,
+    "fit_assessment": "Jordan Taylor's resume is a strong match for the Healthcare Data Liaison Specialist position at Innovative Health Solutions. The candidate has a relevant educational background with a Bachelor of Science in Health Information Management and has completed coursework directly applicable to the job requirements, such as Health Data Management and Electronic Health Records Management. The experience as a Data Analyst Intern at Healthcare Technologies Inc. aligns well with the job description, particularly in managing and integrating electronic health record systems, conducting data analysis, and ensuring compliance with healthcare regulations. The skills listed, including SQL, Data Visualization, Healthcare Compliance, and Electronic Health Records, match the required skills for the position. Additionally, the candidate possesses some of the preferred skills, such as Tableau and Python, which further enhances their suitability for the role.",
+    "recommendations": [
+      "Include specific achievements or projects from the internship to strengthen the experience section.",
+      "Add a professional summary to highlight key strengths and career objectives.",
+      "Consider providing a LinkedIn profile link if available to offer more insight into professional background."
+    ],
+    "red_flags": []
+  }
+}

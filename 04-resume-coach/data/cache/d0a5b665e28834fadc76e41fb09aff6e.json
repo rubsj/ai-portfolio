@@ -1,0 +1,18 @@
+{
+  "cache_key": "d0a5b665e28834fadc76e41fb09aff6e",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:21:27.072749+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.9,
+    "fit_assessment": "Alex Johnson's resume is a strong match for the Lead Retail Operations Manager position at Retail Innovations Inc. The candidate has relevant experience in operations management, team leadership, and inventory management, which aligns well with the job requirements. The educational background in Business Administration and specific coursework in Retail Management further support the fit for this role. The skills listed, such as sales forecasting, customer relationship management, and operational strategy, are directly relevant to the job description. While the candidate's experience level is slightly below the preferred 5 years, the depth and relevance of the experience compensate for this.",
+    "recommendations": [
+      "Highlight any specific achievements or metrics in the current role as Operations Manager to strengthen the application.",
+      "Consider expanding on any experience with retail technology systems or e-commerce strategy, as these are relevant to the job description."
+    ],
+    "red_flags": []
+  }
+}

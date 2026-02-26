@@ -1,0 +1,23 @@
+{
+  "cache_key": "6f2ca1bce6d844c4ad9f89062f4d7eb8",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:19:24.632303+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The candidate claims 7 years of experience in Curriculum Development and Educational Leadership, but the timeline from the resume suggests only 8 years of total experience in relevant roles, making it implausible to have 7 years at an intermediate level for both skills. Additionally, the candidate does not have a Doctorate in Education or related field, which is a requirement.",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.4,
+    "fit_assessment": "The candidate lacks the required Doctorate in Education and has only 8 years of relevant experience, which is significantly less than the 15 years required. While they have experience in curriculum development and educational leadership, their proficiency levels and years of experience do not meet the executive level expected for a Chief Academic Officer. Furthermore, the resume lacks mention of several preferred skills such as Learning Management Systems, Accreditation Processes, and Grant Writing.",
+    "recommendations": [
+      "Pursue a Doctorate in Education or a related field to meet the educational requirements.",
+      "Gain more executive-level experience in educational leadership roles to build a stronger case for a Chief Academic Officer position.",
+      "Develop proficiency in preferred skills such as Learning Management Systems, Accreditation Processes, and Grant Writing.",
+      "Consider adding a professional summary to the resume to better highlight career achievements and goals."
+    ],
+    "red_flags": [
+      "Lack of required Doctorate in Education or related field.",
+      "Insufficient years of experience for an executive-level position."
+    ]
+  }
+}

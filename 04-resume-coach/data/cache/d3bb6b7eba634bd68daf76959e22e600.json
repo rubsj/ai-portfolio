@@ -1,0 +1,19 @@
+{
+  "cache_key": "d3bb6b7eba634bd68daf76959e22e600",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:20:18.057795+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.9,
+    "fit_assessment": "Jordan Smith's resume is a strong match for the Lead Manufacturing Engineer position at Precision Manufacturing Inc. The candidate has relevant experience in manufacturing engineering, with a focus on lean manufacturing and process optimization, which aligns well with the job requirements. The education background in Mechanical Engineering and the location in Seattle, WA, further support the fit.",
+    "recommendations": [
+      "Include specific achievements or metrics in the experience section to demonstrate impact, such as quantifiable improvements in efficiency or cost savings.",
+      "Highlight any leadership or mentoring experience explicitly, as this is a key aspect of the Lead role.",
+      "Consider adding a summary section to provide a concise overview of qualifications and career goals."
+    ],
+    "red_flags": []
+  }
+}

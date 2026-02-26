@@ -1,0 +1,19 @@
+{
+  "cache_key": "52c2328bf9fe633b5375654e150357b0",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:24:04.363268+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.9,
+    "fit_assessment": "Jordan T. Smith's resume is a strong match for the Lead Corporate Counsel position at Global Legal Solutions Inc. The candidate has relevant experience as a Senior Corporate Counsel, providing strategic legal advice, managing mergers and acquisitions, and overseeing litigation management, which aligns well with the job requirements. The educational background with a JD from a reputable law school and the location in New York, NY, also fit the job description. While the candidate has most of the required skills, there is a slight gap in preferred skills like Antitrust Law and Insurance Law, which are not highly proficient.",
+    "recommendations": [
+      "Highlight any leadership roles or experiences to emphasize strong leadership skills.",
+      "Consider adding specific achievements or outcomes from previous roles to demonstrate impact.",
+      "If possible, include more details on experience with Antitrust Law and Insurance Law to cover preferred skills."
+    ],
+    "red_flags": []
+  }
+}

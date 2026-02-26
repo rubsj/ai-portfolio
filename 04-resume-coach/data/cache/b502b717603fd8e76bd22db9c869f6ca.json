@@ -1,0 +1,23 @@
+{
+  "cache_key": "b502b717603fd8e76bd22db9c869f6ca",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:21:37.110146+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The candidate claims advanced proficiency in Team Leadership with only 2 years of experience, which may not align with the 'Lead' level experience typically expected for the role. Additionally, the resume lacks direct experience in retail operations, inventory management, or sales forecasting, which are critical for the job.",
+    "has_awkward_language": true,
+    "awkward_language_details": "The summary uses vague phrases like 'seeking to transition into a new industry to explore new opportunities,' which may not convey a strong commitment to the retail sector. The language does not clearly align with the specific requirements of the job description.",
+    "overall_quality_score": 0.2,
+    "fit_assessment": "The resume is not a strong fit for the Lead Retail Operations Manager position. The candidate's experience is primarily in the arts and theater sectors, lacking the necessary retail operations background and specific skills like inventory management and sales forecasting.",
+    "recommendations": [
+      "Highlight any relevant retail experience, even if minimal, to better align with the job requirements.",
+      "Include specific examples of leadership in a retail or sales context, if available.",
+      "Emphasize any experience with inventory management or customer relationship management.",
+      "Consider obtaining additional training or certifications in retail management to strengthen the application."
+    ],
+    "red_flags": [
+      "Lack of direct retail experience.",
+      "No mention of key skills such as Inventory Management, Sales Forecasting, or Operational Strategy."
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "cache_key": "6a29d8a3ac0ff1a2cce8e60fe4d01775",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:17:04.785214+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The resume claims advanced proficiency in data entry and customer service, which are not relevant or sufficient for a CEO role. Additionally, the candidate's experience does not align with the executive level required for a CEO position.",
+    "has_awkward_language": true,
+    "awkward_language_details": "The summary states, 'Seeking to leverage management skills in a healthcare-related role,' which is vague and not tailored to an executive position. It lacks the strategic focus expected for a CEO role.",
+    "overall_quality_score": 0.1,
+    "fit_assessment": "The candidate's experience as an Operations Manager and Assistant to the Director does not meet the executive-level experience required for a CEO position. The educational background, a Bachelor's degree in Psychology, does not meet the Master's degree requirement in Healthcare Administration or Business Administration. The skills listed are not aligned with the strategic and high-level management skills needed for a CEO role.",
+    "recommendations": [
+      "Gain experience in higher-level management roles to build a strategic and operational leadership background.",
+      "Pursue a Master's degree in Healthcare Administration or Business Administration to meet educational requirements.",
+      "Develop expertise in strategic planning, healthcare regulations, and financial management to align with the job requirements."
+    ],
+    "red_flags": [
+      "Lack of executive-level experience.",
+      "Educational background does not meet the Master's degree requirement.",
+      "Skills and experience are not aligned with the strategic and operational demands of a CEO role."
+    ]
+  }
+}

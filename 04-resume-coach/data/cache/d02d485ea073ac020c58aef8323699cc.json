@@ -1,0 +1,23 @@
+{
+  "cache_key": "d02d485ea073ac020c58aef8323699cc",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:21:45.787194+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The candidate claims to have skills in E-commerce Strategies and Data Analytics, but these are at a beginner to intermediate level, which does not align with the executive-level expertise required for a COO role. Additionally, the candidate's experience is primarily in marketing, not in retail operations or supply chain management.",
+    "has_awkward_language": true,
+    "awkward_language_details": "The summary states, 'Results-driven marketing professional with experience in digital campaigns and project coordination seeking to transition to operations management.' This is awkward for a COO role, as it suggests a career transition rather than established expertise.",
+    "overall_quality_score": 0.2,
+    "fit_assessment": "The resume is not a strong fit for the Chief Operations Officer position. The candidate lacks the required executive-level experience in retail operations, supply chain management, and strategic growth. Their background is in marketing, which does not align with the core responsibilities of a COO.",
+    "recommendations": [
+      "Gain experience in retail operations and supply chain management to better align with COO roles.",
+      "Pursue an MBA or relevant executive education to enhance qualifications for senior leadership positions.",
+      "Develop skills in financial acumen, vendor management, and process improvement to match the job requirements."
+    ],
+    "red_flags": [
+      "Lack of executive-level experience in operations or retail.",
+      "No demonstrated experience in supply chain management or inventory optimization.",
+      "The candidate's career focus is on marketing, not operations."
+    ]
+  }
+}

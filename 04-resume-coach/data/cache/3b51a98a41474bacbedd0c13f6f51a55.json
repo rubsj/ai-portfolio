@@ -1,0 +1,18 @@
+{
+  "cache_key": "3b51a98a41474bacbedd0c13f6f51a55",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:31:23.805566+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.9,
+    "fit_assessment": "Dr. Jane Smith's resume is highly suitable for the Chief Academic Officer position at Global Education Partners. She has over 15 years of experience in educational leadership, including a current role as a Chief Academic Officer, which aligns perfectly with the job requirements. Her experience in curriculum development, stakeholder engagement, and compliance standards matches the key skills needed for the role. Additionally, her educational background with a Doctorate in Education from Columbia University meets the educational requirements.",
+    "recommendations": [
+      "Include specific achievements or metrics to demonstrate the impact of her leadership and initiatives.",
+      "Highlight any experience with Learning Management Systems or specific accreditation processes to strengthen the fit with preferred skills."
+    ],
+    "red_flags": []
+  }
+}

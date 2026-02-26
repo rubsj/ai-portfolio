@@ -1,0 +1,22 @@
+{
+  "cache_key": "e24544ca37c3f44a841db45ff5833ec3",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:18:39.308651+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The candidate claims proficiency in Graphic Design, which is a preferred skill for the job, but only has one year of beginner-level experience. Additionally, there is no relevant experience in curriculum design or educational roles, which is a core requirement for the position.",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.1,
+    "fit_assessment": "The resume does not align well with the job description. The candidate lacks the required educational background and experience in curriculum development, assessment development, and educational technology. The experience is primarily in customer service, which does not match the job's focus on curriculum design.",
+    "recommendations": [
+      "Gain relevant experience in curriculum design or educational roles to better match the job requirements.",
+      "Consider pursuing a Bachelor's degree in Education or a related field to meet the educational requirements.",
+      "Develop skills in Learning Management Systems and Instructional Strategies to align with the job's required skills."
+    ],
+    "red_flags": [
+      "Lack of relevant experience in curriculum development or educational roles.",
+      "Educational background does not meet the job's requirement of a Bachelor's degree."
+    ]
+  }
+}

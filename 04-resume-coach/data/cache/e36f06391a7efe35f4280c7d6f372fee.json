@@ -1,0 +1,19 @@
+{
+  "cache_key": "e36f06391a7efe35f4280c7d6f372fee",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:26:14.787076+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.9,
+    "fit_assessment": "Jordan Smith's resume is a strong match for the Senior Policy Analyst position. The candidate has a Master's degree in Public Policy, which meets the educational requirement. With over six years of experience in policy analysis and legislative research, Jordan possesses the necessary skills and experience level required for the role. The resume highlights relevant skills such as policy analysis, legislative research, data interpretation, and stakeholder engagement, aligning well with the job description. Additionally, the candidate's experience in preparing reports and collaborating with stakeholders is pertinent to the job responsibilities.",
+    "recommendations": [
+      "Include specific achievements or outcomes in the experience section to demonstrate impact.",
+      "Highlight any experience with strategic recommendations or program evaluation to strengthen the fit for the role.",
+      "Consider adding a professional summary to provide a concise overview of qualifications and career goals."
+    ],
+    "red_flags": []
+  }
+}

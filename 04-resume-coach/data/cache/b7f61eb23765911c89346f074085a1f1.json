@@ -1,0 +1,19 @@
+{
+  "cache_key": "b7f61eb23765911c89346f074085a1f1",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:18:48.759867+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.8,
+    "fit_assessment": "Alex Johnson's resume is a strong match for the Senior Education Program Manager position at Future Learning Academy. The candidate has relevant experience in program management and collaboration with educators, as well as a Master's Degree in Education, which aligns well with the job requirements. However, there is a slight gap in the preferred skills such as Educational Technology and Grant Writing, and the proficiency levels in some required skills like Curriculum Design are lower than expected for a senior role.",
+    "recommendations": [
+      "Highlight any experience with Educational Technology or Grant Writing if applicable.",
+      "Consider emphasizing any achievements or specific outcomes from previous roles to strengthen the resume.",
+      "Increase proficiency in Curriculum Design to better align with the senior-level expectations."
+    ],
+    "red_flags": []
+  }
+}

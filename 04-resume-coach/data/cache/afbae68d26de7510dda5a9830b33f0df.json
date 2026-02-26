@@ -1,0 +1,23 @@
+{
+  "cache_key": "afbae68d26de7510dda5a9830b33f0df",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:23:08.041383+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The candidate's experience level and skill proficiency claims do not fully align with the requirements for a COO position. The resume lists 'Intermediate' proficiency in key areas like Operational Strategy, Project Management, and Financial Management, which are expected to be at an 'Expert' level for an executive role. Additionally, the candidate's experience as a Director of Operations and Senior Project Manager does not clearly demonstrate the 15 years of executive experience required.",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.6,
+    "fit_assessment": "The candidate has relevant experience in the energy sector and has held leadership roles, which partially aligns with the COO position. However, the resume lacks evidence of the required executive experience and expertise in several critical areas such as Regulatory Compliance, Risk Assessment, and Supply Chain Optimization. The candidate's skills are listed as 'Intermediate' or 'Beginner,' which does not meet the expectations for a COO role.",
+    "recommendations": [
+      "Highlight any executive-level experience or responsibilities that demonstrate leadership at a strategic level.",
+      "Emphasize expertise in Regulatory Compliance, Risk Assessment, and Supply Chain Optimization, possibly through specific achievements or projects.",
+      "Consider revising the proficiency levels of key skills to better reflect the requirements of an executive role, if applicable.",
+      "Include any relevant achievements or initiatives related to Sustainability, Digital Transformation, or Change Management."
+    ],
+    "red_flags": [
+      "Lack of executive-level experience and leadership roles.",
+      "Skills listed at 'Intermediate' or 'Beginner' levels for a COO position."
+    ]
+  }
+}

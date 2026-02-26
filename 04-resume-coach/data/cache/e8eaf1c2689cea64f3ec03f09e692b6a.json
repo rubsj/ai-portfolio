@@ -1,0 +1,22 @@
+{
+  "cache_key": "e8eaf1c2689cea64f3ec03f09e692b6a",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:23:51.908907+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The resume claims experience in marketing and brand management, which does not align with the legal expertise required for a Senior Corporate Counsel position. There is no mention of legal education or experience.",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.0,
+    "fit_assessment": "The resume is completely unsuitable for the Senior Corporate Counsel position. The candidate's background is in marketing, with no legal education or experience, which is essential for the role.",
+    "recommendations": [
+      "The candidate should pursue a Juris Doctor degree if interested in transitioning to a legal career.",
+      "Gain relevant legal experience through internships or entry-level positions in legal firms.",
+      "Highlight any legal-related coursework or certifications if available."
+    ],
+    "red_flags": [
+      "Lack of legal education and experience.",
+      "No mention of skills related to corporate governance, contract negotiation, or regulatory compliance."
+    ]
+  }
+}

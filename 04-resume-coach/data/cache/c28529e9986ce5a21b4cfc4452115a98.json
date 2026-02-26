@@ -1,0 +1,23 @@
+{
+  "cache_key": "c28529e9986ce5a21b4cfc4452115a98",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:22:56.162950+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The resume claims 6 years of experience in solar energy systems and 4 years in wind turbine design, but the candidate's work history only supports 6 years total in the field, making these claims potentially overlapping or exaggerated.",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.6,
+    "fit_assessment": "Jordan Smith has relevant experience in renewable energy engineering, particularly in solar energy systems and wind turbine design, which aligns with the job requirements. However, the candidate's experience level and years do not fully meet the 8 years required for a lead position. Additionally, proficiency in grid integration and energy storage solutions is not clearly demonstrated, and the candidate's project management experience is only at an intermediate level.",
+    "recommendations": [
+      "Clarify the timeline and depth of experience in solar and wind energy to ensure it aligns with the job's requirements.",
+      "Highlight any leadership or lead roles taken in past projects to better fit the 'Lead' position requirement.",
+      "Expand on experience with grid integration and energy storage solutions, as these are critical skills for the role.",
+      "Consider gaining further experience or certification in energy modeling software and financial analysis to strengthen the application."
+    ],
+    "red_flags": [
+      "The candidate does not meet the 8 years of experience required for a lead position.",
+      "Lack of demonstrated proficiency in grid integration and energy storage solutions."
+    ]
+  }
+}

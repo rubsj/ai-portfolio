@@ -1,0 +1,18 @@
+{
+  "cache_key": "c8146c50456d93643f7b518e2e76db93",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:31:33.694018+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.9,
+    "fit_assessment": "John Smith's resume is a strong match for the Manufacturing Engineer position at Precision Manufacturing Solutions. He possesses the required skills such as Lean Manufacturing, Six Sigma, AutoCAD, Quality Control, Process Improvement, and Data Analysis, all at an advanced level. His experience aligns well with the job description, having worked as a Manufacturing Engineer since 2015, which meets the experience requirement. Additionally, his educational background in Mechanical Engineering is relevant to the position.",
+    "recommendations": [
+      "Include specific achievements or metrics from the role at Precision Manufacturing Technologies to strengthen the experience section.",
+      "Highlight any experience with Robotics or Simulation Software if applicable, as these are preferred skills."
+    ],
+    "red_flags": []
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "cache_key": "b337fdca70a001d80127e1d0e76b02c1",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:18:07.393681+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The resume claims extensive experience in financial analysis and management, but the candidate's highest role is Senior Financial Analyst, which is not typically considered an executive-level position. The timeline also shows only 10 years of experience, which is insufficient for the 15 years required for a CFO role.",
+    "has_awkward_language": true,
+    "awkward_language_details": "The summary uses vague phrases like 'extensive experience' and 'proven ability' without specific achievements or metrics to back them up. This can be seen as boilerplate language.",
+    "overall_quality_score": 0.3,
+    "fit_assessment": "John Doe's resume does not meet the requirements for the CFO position at Global Finance Solutions. The candidate lacks the necessary executive experience and years of experience required for the role. While some relevant skills are present, they are not at the level expected for a CFO.",
+    "recommendations": [
+      "Gain more experience in executive roles to qualify for a CFO position.",
+      "Develop skills in mergers and acquisitions, regulatory compliance, and tax planning to better align with the job requirements.",
+      "Consider obtaining additional certifications or training in advanced financial management topics.",
+      "Include specific achievements and metrics in the resume to demonstrate impact and success."
+    ],
+    "red_flags": [
+      "Insufficient years of experience for an executive role.",
+      "Lack of executive-level positions in work history.",
+      "Missing key skills such as mergers and acquisitions, regulatory compliance, and tax planning."
+    ]
+  }
+}

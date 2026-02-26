@@ -1,0 +1,18 @@
+{
+  "cache_key": "15dd03d1a1d1ce6ca77f8a5d5160709c",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:22:05.983760+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.9,
+    "fit_assessment": "Jordan Smith's resume is a strong match for the Energy Analyst position at GreenTech Energy Solutions. The candidate has a relevant educational background with a Bachelor's degree in Environmental Science from a reputable university. They have over four years of experience in energy modeling, data analysis, and energy efficiency, which aligns well with the job requirements. The resume also demonstrates proficiency in required skills such as Excel, SQL, and report generation. Additionally, Jordan has some exposure to preferred skills like Python, R, GIS, and Power BI, which adds value to their application.",
+    "recommendations": [
+      "Include specific achievements or quantifiable results from previous roles to strengthen the impact of the experience section.",
+      "Consider adding a LinkedIn profile to provide more context and professional connections."
+    ],
+    "red_flags": []
+  }
+}

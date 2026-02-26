@@ -1,0 +1,23 @@
+{
+  "cache_key": "bdd5fcf2c65b0068ed235a1b7ee67678",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:21:07.655349+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The resume lists skills and experience in art direction and graphic design, which do not align with the retail management skills required for the Retail Operations Manager position. There is no mention of retail-specific skills such as Inventory Management, Sales Forecasting, or Customer Service.",
+    "has_awkward_language": true,
+    "awkward_language_details": "The summary uses generic phrases such as 'Dynamic Art Director' and 'extensive experience' without specific achievements or metrics. The statement 'Seeking to leverage artistic vision and leadership skills in a new industry' is vague and does not directly address the retail management role.",
+    "overall_quality_score": 0.2,
+    "fit_assessment": "The resume does not match the Retail Operations Manager position requirements. The candidate's background is in art and design, with no relevant retail management experience or skills.",
+    "recommendations": [
+      "Highlight any relevant retail or customer service experience, if available.",
+      "Include specific skills related to retail operations, such as Inventory Management or Team Leadership.",
+      "Tailor the summary to reflect interest and skills in retail management.",
+      "Consider gaining experience in retail through part-time work or certifications to strengthen the application."
+    ],
+    "red_flags": [
+      "Lack of relevant retail management experience.",
+      "Education and work experience are not aligned with the job requirements."
+    ]
+  }
+}

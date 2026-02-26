@@ -1,0 +1,23 @@
+{
+  "cache_key": "3bdd7ac18d1769d8c2c296fbc703afbe",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:16:52.491455+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": true,
+    "awkward_language_details": "The resume summary uses vague terms like 'dynamic operations leader' and 'significant experience' without specifying achievements or outcomes. The skills section lists proficiency levels as 'Intermediate,' which may not align with the executive level required for a CEO role.",
+    "overall_quality_score": 0.6,
+    "fit_assessment": "John Doe's resume demonstrates relevant experience in healthcare operations and strategic planning, which are critical for the CEO role at HealthFirst Innovations. However, the resume lacks evidence of executive-level leadership, such as CEO or equivalent experience, and does not highlight clinical expertise or experience with Health IT Systems, which are important for this position.",
+    "recommendations": [
+      "Highlight any executive-level achievements or leadership roles that demonstrate readiness for a CEO position.",
+      "Include specific outcomes or achievements in previous roles to demonstrate impact and success.",
+      "Emphasize any clinical expertise or experience with Health IT Systems to align with the job's requirements.",
+      "Consider revising language to reflect a higher level of proficiency and leadership, particularly in strategic planning and operational excellence."
+    ],
+    "red_flags": [
+      "Lack of CEO or equivalent executive-level experience.",
+      "No mention of clinical expertise, which is a requirement for the role."
+    ]
+  }
+}

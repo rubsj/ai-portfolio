@@ -1,0 +1,18 @@
+{
+  "cache_key": "1b2b344c2b09f7bf635c2c1630091bd7",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:15:40.310148+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 1.0,
+    "fit_assessment": "Jordan Smith's resume is an excellent match for the Chief Technology Officer position at Innovative Tech Solutions. The candidate has over 15 years of experience in technology leadership roles, including a current position as CTO, which aligns perfectly with the executive experience requirement. The resume demonstrates expertise in all required skills such as Cloud Architecture, Data Analytics, Cybersecurity, Agile Methodologies, DevOps Practices, Software Development, AI/ML Technologies, and Blockchain. Additionally, the candidate possesses preferred skills like Microservices, Enterprise Architecture, Big Data, and IoT Solutions. The educational background with a Master's Degree in Computer Science from Stanford University further strengthens the fit for the role.",
+    "recommendations": [
+      "Highlight specific examples of innovation and technology strategy that led to competitive advantages.",
+      "Include any awards or recognitions received in the technology field to further bolster the resume."
+    ],
+    "red_flags": []
+  }
+}

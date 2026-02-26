@@ -1,0 +1,23 @@
+{
+  "cache_key": "1d3e34208e05837556786f89d7a7da4a",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:25:17.065167+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The candidate's experience as a Junior Graphic Designer does not align with the Lead Marketing Strategist role, which requires 7 years of experience and specific marketing skills such as SEO, PPC, Google Analytics, and more. The resume does not demonstrate any experience in these areas.",
+    "has_awkward_language": true,
+    "awkward_language_details": "The summary states a desire to 'transition into a marketing role,' which suggests a lack of current experience in marketing, making it unsuitable for a lead position. The phrasing 'Detail-oriented graphic designer with a passion for creative marketing solutions' is vague and does not align with the specific requirements of the job.",
+    "overall_quality_score": 0.1,
+    "fit_assessment": "The resume is largely unsuitable for the Lead Marketing Strategist position. The candidate lacks the necessary experience and skills required for the role, such as SEO, PPC, and leadership experience in marketing strategy.",
+    "recommendations": [
+      "Gain experience in marketing roles that focus on strategy development and execution.",
+      "Acquire skills in SEO, PPC, Google Analytics, and other required marketing tools.",
+      "Consider entry-level marketing positions to build relevant experience before applying for a lead role.",
+      "Update the resume to reflect any new marketing-related experiences and skills."
+    ],
+    "red_flags": [
+      "Lack of relevant marketing experience and skills.",
+      "No leadership experience mentioned, which is crucial for a lead role."
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "cache_key": "96e47cb9a4c8a48edb3f962a4d08a2d3",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:26:02.043483+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The resume claims skills and experience in graphic design and art consultation, which do not align with the requirements for a Mid-level Policy Analyst role that demands data analysis, policy research, and statistical software proficiency.",
+    "has_awkward_language": true,
+    "awkward_language_details": "The summary states a desire to leverage 'unique creative expertise in a new professional environment,' which is vague and does not align with the policy analyst role. The language does not address the specific skills or experiences relevant to the job description.",
+    "overall_quality_score": 0.1,
+    "fit_assessment": "The resume is not a good fit for the Mid-level Policy Analyst position. The candidate's background in fine arts and graphic design does not meet the requirements for policy research, data analysis, or stakeholder engagement.",
+    "recommendations": [
+      "Highlight any relevant experience or skills related to policy analysis or data analysis, if available.",
+      "Consider additional education or certifications in public policy or related fields to align better with the job requirements.",
+      "Revise the summary to focus on skills and experiences relevant to policy analysis and government work."
+    ],
+    "red_flags": [
+      "Lack of relevant educational background in public policy or political science.",
+      "No demonstrated experience in data analysis, policy research, or stakeholder engagement."
+    ]
+  }
+}

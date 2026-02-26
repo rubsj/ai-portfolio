@@ -1,0 +1,23 @@
+{
+  "cache_key": "90d38f44b808ddcabdcde550e55649ed",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:16:40.505159+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The candidate claims 4 years of experience with SQL and Python, but the timeline suggests only 3.5 years (June 2018 to December 2022). Additionally, the candidate lists 'Healthcare Analytics' as a skill with 2 years of experience, but the timeline suggests more experience in healthcare-related roles.",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.6,
+    "fit_assessment": "Alex Johnson has relevant experience in data analysis and healthcare analytics, which aligns with the job's requirements. However, the candidate lacks the 7 years of experience required for a lead role and does not mention experience with R, SAS, or preferred skills like machine learning and big data technologies.",
+    "recommendations": [
+      "Clarify the timeline and ensure consistency in years of experience across skills and job roles.",
+      "Highlight any leadership experience or projects that demonstrate readiness for a lead role.",
+      "Include any experience with R, SAS, or preferred skills like machine learning if applicable.",
+      "Consider obtaining a Master's degree or additional certifications to strengthen qualifications for a lead position."
+    ],
+    "red_flags": [
+      "Inconsistencies in years of experience with SQL and Python.",
+      "Lack of experience with R, SAS, and other preferred skills."
+    ]
+  }
+}

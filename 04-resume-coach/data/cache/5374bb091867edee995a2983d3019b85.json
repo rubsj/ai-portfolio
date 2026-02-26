@@ -1,0 +1,24 @@
+{
+  "cache_key": "5374bb091867edee995a2983d3019b85",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:17:53.465241+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The candidate's experience does not align with the level of expertise required for a Lead Financial Analyst role. The resume shows a background in data entry and junior analysis, with no evidence of financial modeling, forecasting, or leading financial planning efforts.",
+    "has_awkward_language": true,
+    "awkward_language_details": "The summary uses vague and generic language such as 'detail-oriented analyst' and 'basic reporting,' which does not convey the advanced skills needed for the job. The phrase 'looking to transition into financial analysis' suggests a lack of current relevant experience.",
+    "overall_quality_score": 0.1,
+    "fit_assessment": "The resume is largely unsuitable for the Lead Financial Analyst position. The candidate lacks the required years of experience, specific financial skills, and leadership experience necessary for the role.",
+    "recommendations": [
+      "Gain experience in financial modeling, forecasting, and budgeting.",
+      "Pursue further education in finance, such as an MBA, to meet educational preferences.",
+      "Develop advanced skills in Excel and learn financial software tools like Tableau or Power BI.",
+      "Seek roles that provide exposure to financial analysis and reporting to build relevant experience."
+    ],
+    "red_flags": [
+      "Lack of relevant financial experience and leadership roles.",
+      "No evidence of advanced financial skills or software proficiency.",
+      "Current role as Data Entry Specialist does not align with the requirements of a Lead Financial Analyst."
+    ]
+  }
+}

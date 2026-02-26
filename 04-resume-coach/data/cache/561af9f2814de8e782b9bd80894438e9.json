@@ -1,0 +1,23 @@
+{
+  "cache_key": "561af9f2814de8e782b9bd80894438e9",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:26:43.441510+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The candidate claims to be seeking a 'more strategic operational role,' but the position is for a COO, which is an executive-level role requiring significant strategic experience. The resume does not reflect the 15 years of executive experience required for the COO position.",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.3,
+    "fit_assessment": "The resume does not align well with the job description for a Chief Operations Officer. The candidate lacks the required executive experience and educational qualifications, such as a Master's degree. The experience listed is more operational management rather than strategic leadership at an executive level.",
+    "recommendations": [
+      "Gain more experience in strategic planning and change management at a higher organizational level.",
+      "Consider pursuing a Master's degree in Public Administration or a related field to meet educational requirements.",
+      "Seek roles that offer more exposure to policy development and stakeholder engagement to build relevant experience."
+    ],
+    "red_flags": [
+      "Lack of executive-level experience.",
+      "Does not meet the educational requirement of a Master's degree.",
+      "Experience primarily in operations management, not strategic leadership."
+    ]
+  }
+}

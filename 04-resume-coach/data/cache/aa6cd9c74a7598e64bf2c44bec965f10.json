@@ -1,0 +1,23 @@
+{
+  "cache_key": "aa6cd9c74a7598e64bf2c44bec965f10",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:22:06.970149+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": true,
+    "awkward_language_details": "The summary statement 'seeking to shift into the energy sector' is somewhat awkward and could be rephrased to sound more confident and targeted, such as 'eager to apply data analysis skills in the energy sector.'",
+    "overall_quality_score": 0.6,
+    "fit_assessment": "Jane Doe's resume shows a partial fit for the Sustainable Energy Data Analyst position. She meets the educational requirement with a Bachelor's degree and has some relevant skills such as Excel, Python, SQL, and Statistical Analysis, albeit at a beginner level. However, she lacks experience with GIS, Energy Modeling, and Machine Learning, which are required skills. Her experience as a Junior Data Assistant provides some relevant exposure, but she would need to develop more advanced skills in data analytics and energy systems to be a stronger candidate.",
+    "recommendations": [
+      "Gain proficiency in GIS and Energy Modeling to better align with the job requirements.",
+      "Develop skills in Machine Learning and Tableau to enhance qualifications.",
+      "Consider obtaining certifications in data analysis or energy systems to strengthen the resume.",
+      "Rephrase the summary to be more assertive and focused on the energy sector."
+    ],
+    "red_flags": [
+      "Lack of experience with GIS and Energy Modeling, which are required skills.",
+      "Limited proficiency in Python and SQL, which are essential for data analysis roles."
+    ]
+  }
+}

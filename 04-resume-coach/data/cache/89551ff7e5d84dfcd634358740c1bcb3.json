@@ -1,0 +1,19 @@
+{
+  "cache_key": "89551ff7e5d84dfcd634358740c1bcb3",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:17:02.883767+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.9,
+    "fit_assessment": "Jordan Smith's resume is a strong match for the FinTech Data Analyst - Behavioral Insights position at Innovate Finance Solutions. The candidate has relevant education in Data Science with coursework in Consumer Behavior Analysis and Financial Modeling, aligning well with the job's requirements. The internship experience at Data Insights Inc. demonstrates practical skills in SQL, Python, data visualization, statistical analysis, and A/B testing, all of which are required skills for the job. Additionally, the candidate has a good grasp of machine learning and some exposure to R and Tableau, which are preferred skills.",
+    "recommendations": [
+      "Include a professional summary to highlight key strengths and career objectives.",
+      "Provide specific achievements or outcomes from the internship to strengthen the experience section.",
+      "Consider adding any relevant projects or extracurricular activities that demonstrate skills in consumer behavior or financial analysis."
+    ],
+    "red_flags": []
+  }
+}

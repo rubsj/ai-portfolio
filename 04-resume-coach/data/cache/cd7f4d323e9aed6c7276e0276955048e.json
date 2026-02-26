@@ -1,0 +1,24 @@
+{
+  "cache_key": "cd7f4d323e9aed6c7276e0276955048e",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:19:52.756842+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The resume claims skills in data entry and Microsoft Excel, but lacks any mention of core manufacturing engineering skills such as Lean Manufacturing, Six Sigma, AutoCAD, or Quality Control.",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.1,
+    "fit_assessment": "The resume is not a good fit for the Manufacturing Engineer position. The candidate lacks the required educational background and relevant experience in manufacturing engineering. The skills listed do not align with the job requirements.",
+    "recommendations": [
+      "Acquire a Bachelor's degree in Engineering or a related field to meet the educational requirements.",
+      "Gain experience in manufacturing settings, focusing on roles that involve process improvement and quality control.",
+      "Develop skills in Lean Manufacturing, Six Sigma, AutoCAD, and other relevant manufacturing engineering tools.",
+      "Consider entry-level engineering roles to build relevant experience before applying for mid-level positions."
+    ],
+    "red_flags": [
+      "Lack of relevant education (Bachelor's degree in Engineering is required).",
+      "No experience in manufacturing engineering roles.",
+      "Skills listed do not match the job requirements."
+    ]
+  }
+}

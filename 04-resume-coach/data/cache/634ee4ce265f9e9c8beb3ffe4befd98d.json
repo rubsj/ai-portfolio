@@ -1,0 +1,24 @@
+{
+  "cache_key": "634ee4ce265f9e9c8beb3ffe4befd98d",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:22:34.863201+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The candidate claims to have experience in sustainability projects and data entry, but lacks the extensive experience in energy markets and data analytics required for a Senior Energy Analyst position. The timeline also suggests a maximum of 5 years of experience, not the 7 years required.",
+    "has_awkward_language": true,
+    "awkward_language_details": "The summary uses vague language such as 'detail-oriented analyst' and 'seeking to transition into the energy sector,' which does not convey the senior-level expertise required for the job.",
+    "overall_quality_score": 0.2,
+    "fit_assessment": "The resume does not match the job description well. The candidate lacks the required years of experience, advanced skills in SQL, financial modeling, and regulatory compliance. Additionally, the education background does not align with the preferred fields of study.",
+    "recommendations": [
+      "Gain more experience in energy market analysis and data analytics to meet the senior-level requirements.",
+      "Develop proficiency in SQL, financial modeling, and regulatory compliance.",
+      "Consider pursuing a Master's degree in a relevant field to improve educational qualifications.",
+      "Enhance skills in data visualization and project management to at least an intermediate level."
+    ],
+    "red_flags": [
+      "Insufficient years of experience for a senior role.",
+      "Lack of advanced skills in key areas such as SQL and financial modeling.",
+      "Education background does not align with job requirements."
+    ]
+  }
+}

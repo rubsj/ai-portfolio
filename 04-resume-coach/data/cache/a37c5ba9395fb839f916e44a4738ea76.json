@@ -1,0 +1,23 @@
+{
+  "cache_key": "a37c5ba9395fb839f916e44a4738ea76",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:20:41.177118+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.7,
+    "fit_assessment": "John Doe's resume demonstrates relevant experience in operations management within the manufacturing industry, aligning with the COO role's requirements. He has a Master's degree in Business Administration, which meets the educational requirement. His experience as Director of Operations and Operations Manager provides a solid foundation for the COO position, although his experience level is slightly below the executive level typically expected for a COO. His skills in Lean Manufacturing, Supply Chain Management, and Quality Control are relevant, but he lacks proficiency in some preferred skills such as ERP Systems and Automation Technologies.",
+    "recommendations": [
+      "Highlight any leadership roles or strategic initiatives led at ABC Manufacturing Corp. to demonstrate executive-level experience.",
+      "Expand on achievements in previous roles to showcase impact and results.",
+      "Consider gaining additional experience or training in ERP Systems and Automation Technologies to strengthen the fit for the COO role.",
+      "Include any relevant certifications, such as Six Sigma, to enhance qualifications."
+    ],
+    "red_flags": [
+      "Lack of executive-level experience typically required for a COO position.",
+      "Limited proficiency in some preferred skills such as ERP Systems and Automation Technologies."
+    ]
+  }
+}

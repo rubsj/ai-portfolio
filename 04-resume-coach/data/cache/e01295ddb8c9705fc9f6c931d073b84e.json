@@ -1,0 +1,23 @@
+{
+  "cache_key": "e01295ddb8c9705fc9f6c931d073b84e",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:16:52.166220+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.7,
+    "fit_assessment": "Alex Johnson's resume demonstrates relevant experience and skills for the CEO position at HealthFirst Innovations. With a Master's in Healthcare Administration and significant experience as a Chief Operations Officer, Alex has a strong background in strategic planning, financial management, and operational excellence. However, the resume lacks explicit mention of executive-level experience and robust clinical expertise, which are critical for the CEO role. Additionally, while Alex has intermediate proficiency in healthcare regulations and data analytics, these areas could be stronger to better align with the job requirements.",
+    "recommendations": [
+      "Highlight any executive-level decision-making experience or initiatives led at the C-suite level.",
+      "Emphasize any direct experience with clinical operations or collaborations with clinical teams to strengthen the clinical expertise aspect.",
+      "Include specific achievements or outcomes from previous roles to demonstrate impact and leadership capabilities.",
+      "Consider adding a professional summary to provide a concise overview of qualifications and career goals."
+    ],
+    "red_flags": [
+      "Limited clinical expertise, which is a critical requirement for the CEO role.",
+      "No explicit mention of executive-level leadership experience, which is essential for a CEO position."
+    ]
+  }
+}

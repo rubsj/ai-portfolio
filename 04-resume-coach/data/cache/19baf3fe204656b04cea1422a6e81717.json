@@ -1,0 +1,23 @@
+{
+  "cache_key": "19baf3fe204656b04cea1422a6e81717",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:16:21.169904+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The resume does not demonstrate any experience or skills related to healthcare data analysis, SQL, Python, Tableau, R, Excel, or ETL processes, which are required for the job.",
+    "has_awkward_language": true,
+    "awkward_language_details": "The summary uses phrases like 'dynamic professional' and 'proven ability to communicate effectively' which are generic and do not provide specific evidence of relevant skills or experience.",
+    "overall_quality_score": 0.0,
+    "fit_assessment": "The resume is completely unsuitable for the Healthcare Data Analyst position. The candidate's background in real estate and graphic design does not align with the job requirements in healthcare analytics, data analysis, or the technical skills needed.",
+    "recommendations": [
+      "Acquire relevant skills in SQL, Python, Tableau, R, and Excel.",
+      "Gain experience in healthcare analytics and ETL processes.",
+      "Consider obtaining a degree or certification in data science or a related field.",
+      "Tailor the resume to highlight any relevant analytical or data-related experience, even if it's from a different industry."
+    ],
+    "red_flags": [
+      "No relevant experience in data analysis or healthcare.",
+      "Lack of required technical skills such as SQL, Python, and Tableau."
+    ]
+  }
+}

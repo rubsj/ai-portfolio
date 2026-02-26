@@ -1,0 +1,22 @@
+{
+  "cache_key": "3a5b85359e6ca92cf2c66ff2ac3ee2ea",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:17:53.465748+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The resume claims over 5 years of experience, but the job requires 8 years of experience at a lead level. The candidate's experience level and timeline do not match the job's requirements.",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.5,
+    "fit_assessment": "John Doe has relevant experience in financial analysis, budgeting, and variance analysis, which are required for the Lead Financial Analyst role. However, he lacks the 8 years of experience and lead-level expertise required for the position. Additionally, his skills in SQL and data visualization are at a beginner level, which may not meet the job's expectations for proficiency in these areas.",
+    "recommendations": [
+      "Gain additional experience in a lead financial analyst role to meet the 8-year experience requirement.",
+      "Improve proficiency in SQL and data visualization tools like Tableau or Power BI to align with job requirements.",
+      "Consider pursuing an MBA to strengthen educational qualifications, as it is preferred for the role."
+    ],
+    "red_flags": [
+      "Insufficient years of experience for a lead-level position.",
+      "Beginner proficiency in SQL and data visualization, which are important for the role."
+    ]
+  }
+}

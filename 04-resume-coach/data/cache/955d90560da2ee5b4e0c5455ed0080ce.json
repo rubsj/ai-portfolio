@@ -1,0 +1,18 @@
+{
+  "cache_key": "955d90560da2ee5b4e0c5455ed0080ce",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:34:31.050691+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.9,
+    "fit_assessment": "John Doe's resume is highly suitable for the Chief Marketing Officer position at Innovative Marketing Solutions. He meets the educational requirement with a Master's degree in Business Administration from Columbia University. His experience as a CMO at Marketing Innovations Inc. since 2018 aligns well with the executive experience required by the job description. He has demonstrated expertise in digital marketing, brand strategy, content marketing, market research, SEO optimization, and data analytics, which are all required skills for the role. Additionally, his previous role as Director of Marketing at NextGen Marketing Solutions showcases his ability to manage content marketing, SEO, and social media advertising, further supporting his fit for the position. His skills section also covers most of the preferred skills, such as marketing automation and email marketing, enhancing his candidacy.",
+    "recommendations": [
+      "Include specific achievements in the current CMO role to strengthen the impact of the responsibilities listed.",
+      "Provide more quantitative results or metrics for the achievements in the current role to demonstrate effectiveness and impact."
+    ],
+    "red_flags": []
+  }
+}

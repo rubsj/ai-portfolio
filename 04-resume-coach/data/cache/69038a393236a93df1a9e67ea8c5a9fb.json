@@ -1,0 +1,19 @@
+{
+  "cache_key": "69038a393236a93df1a9e67ea8c5a9fb",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:26:24.629461+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.9,
+    "fit_assessment": "Jordan Smith's resume aligns well with the Lead Program Manager position at the Federal Development Agency. The candidate has relevant experience in government program management, including roles at the Department of Veterans Affairs and FEMA, which are directly applicable to the job description. The educational background with a Master's in Public Administration and a Bachelor's in Business Management meets and exceeds the educational requirements. The skills listed, such as project management, federal regulations, and budget management, match the required skills for the position. Additionally, the candidate has experience with preferred skills like agile methodology and leadership training.",
+    "recommendations": [
+      "Include a professional summary to provide a quick overview of qualifications and career goals.",
+      "Highlight specific examples of strategic planning and cross-functional team management to further align with the job requirements.",
+      "Consider adding more details on how performance metrics were established and tracked in previous roles."
+    ],
+    "red_flags": []
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "cache_key": "18bc31a01f89787f88d75f628efb2738",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:15:30.522305+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The resume claims skills and experience in graphic design and art coordination, which do not align with the technical requirements of the Software Engineer position, such as JavaScript, React, Node.js, and other programming skills.",
+    "has_awkward_language": true,
+    "awkward_language_details": "The summary states a desire to 'leverage artistic skills and creative thinking in a new direction,' which is vague and does not specifically address the transition to a software engineering role.",
+    "overall_quality_score": 0.0,
+    "fit_assessment": "The resume does not match the job description for a Software Engineer at Tech Innovations Inc. The candidate's background is in graphic design and art coordination, with no relevant experience or skills in software development, programming, or the technologies listed in the job requirements.",
+    "recommendations": [
+      "Acquire relevant technical skills such as JavaScript, React, Node.js, and other programming languages and frameworks mentioned in the job description.",
+      "Pursue a degree or certification in Computer Science or a related field to meet the educational requirements.",
+      "Gain experience in software development, possibly through internships, projects, or entry-level positions in the tech industry.",
+      "Revise the resume to highlight any transferable skills and experiences that could be relevant to a software engineering role."
+    ],
+    "red_flags": [
+      "No relevant technical skills or experience in software development.",
+      "Educational background in Fine Arts, which does not align with the job's requirement for a degree in Computer Science or related field.",
+      "Current and past job roles are unrelated to software engineering."
+    ]
+  }
+}

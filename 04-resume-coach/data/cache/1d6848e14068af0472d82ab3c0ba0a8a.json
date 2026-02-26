@@ -1,0 +1,22 @@
+{
+  "cache_key": "1d6848e14068af0472d82ab3c0ba0a8a",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:19:09.784737+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The resume claims 6 years of experience in Curriculum Design, but the candidate's work history only supports 5 years (2017-2023). Additionally, the job description requires a Master's Degree, which the candidate does not possess.",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.6,
+    "fit_assessment": "Jessica Thompson has relevant experience in curriculum development and instructional design, which aligns with the job requirements. However, she lacks the required Master's Degree and the full 7 years of experience at a lead level. Her skills in Learning Management Systems and Professional Development are not strong, which are preferred for the role.",
+    "recommendations": [
+      "Consider pursuing a Master's Degree to meet educational requirements.",
+      "Gain more experience in Learning Management Systems and Professional Development to strengthen the application.",
+      "Highlight any leadership or project management experiences to better align with the 'Lead' level requirement."
+    ],
+    "red_flags": [
+      "Lack of required Master's Degree.",
+      "Insufficient years of experience at a lead level."
+    ]
+  }
+}

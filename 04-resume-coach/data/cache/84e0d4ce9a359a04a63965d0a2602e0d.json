@@ -1,0 +1,23 @@
+{
+  "cache_key": "84e0d4ce9a359a04a63965d0a2602e0d",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:22:07.830852+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The resume claims expertise in project management, public speaking, and event planning, which are unrelated to the technical skills required for a Sustainable Energy Data Analyst role, such as Python, SQL, GIS, and energy modeling.",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.1,
+    "fit_assessment": "The resume is largely unsuitable for the Sustainable Energy Data Analyst position. The candidate's background in history and museum curation does not align with the technical and analytical skills required for the job. There are no relevant skills or experience in data analysis, energy systems, or environmental science.",
+    "recommendations": [
+      "Gain relevant skills in data analysis tools such as Python, SQL, and GIS.",
+      "Pursue additional education or certifications in environmental science or data science.",
+      "Acquire experience in energy modeling and statistical analysis through internships or entry-level roles in the energy sector."
+    ],
+    "red_flags": [
+      "Lack of relevant education in environmental science, data science, or renewable energy.",
+      "No experience with data analytics or energy systems.",
+      "Skills listed are unrelated to the job requirements."
+    ]
+  }
+}

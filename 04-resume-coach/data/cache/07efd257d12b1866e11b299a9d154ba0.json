@@ -1,0 +1,22 @@
+{
+  "cache_key": "07efd257d12b1866e11b299a9d154ba0",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:22:05.984172+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.7,
+    "fit_assessment": "Jordan Smith's resume is a good match for the Sustainable Energy Data Analyst position at Green Innovations Inc. The candidate has a relevant educational background in Environmental Science and Data Science, which aligns well with the job's requirements. The experience as a Junior Data Analyst at EcoTech Solutions is appropriate for an entry-level role and demonstrates some relevant skills such as data analysis and visualization using Excel and Python. However, there are gaps in certain required skills such as GIS, Energy Modeling, and Machine Learning, which are not mentioned in the resume. Additionally, preferred skills like Tableau, R, ArcGIS, and Cloud Computing are also missing.",
+    "recommendations": [
+      "Highlight any coursework or projects related to GIS, Energy Modeling, and Machine Learning if applicable.",
+      "Consider gaining familiarity with preferred skills such as Tableau, R, ArcGIS, and Cloud Computing to strengthen the application.",
+      "Include any relevant achievements or projects from the current role at EcoTech Solutions to demonstrate impact."
+    ],
+    "red_flags": [
+      "Lack of experience or mention of GIS, Energy Modeling, and Machine Learning skills.",
+      "No mention of preferred skills such as Tableau, R, ArcGIS, and Cloud Computing."
+    ]
+  }
+}

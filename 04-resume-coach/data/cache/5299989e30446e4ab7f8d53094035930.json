@@ -1,0 +1,24 @@
+{
+  "cache_key": "5299989e30446e4ab7f8d53094035930",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:21:20.074136+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The candidate claims intermediate proficiency in Customer Relationship Management and POS Systems with 3 years of experience, but their work history does not clearly support this level of expertise, particularly in a senior management context.",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.2,
+    "fit_assessment": "The resume is not well-suited for the Senior Retail Manager position. The candidate lacks the necessary senior-level experience, educational background, and specific skills required for the role. The experience listed is more aligned with entry-level or junior positions in customer support and sales, rather than senior management.",
+    "recommendations": [
+      "Gain more experience in retail management roles to build a track record of leadership and strategic decision-making.",
+      "Pursue further education, such as a Bachelor's degree in Business Administration or Retail Management, to meet the educational requirements.",
+      "Develop skills in inventory management, sales forecasting, budgeting, and staff training to align with the job requirements.",
+      "Consider obtaining certifications or additional training in retail management to enhance qualifications."
+    ],
+    "red_flags": [
+      "Lack of senior-level experience in retail management.",
+      "Educational background does not meet the Bachelor's degree requirement.",
+      "Skills listed do not match the depth and breadth required for a senior management role."
+    ]
+  }
+}

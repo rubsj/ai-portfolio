@@ -1,0 +1,24 @@
+{
+  "cache_key": "234e6e22fc3561eaa936f44fe629f7ba",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:24:18.385266+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The resume claims 8 years of experience in Corporate Governance, Contract Law, and Litigation Management, which aligns with the candidate's timeline. However, the candidate lacks executive-level experience and does not mention experience in Mergers and Acquisitions, Compliance Regulations, or Risk Management, which are crucial for a CLO role.",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.3,
+    "fit_assessment": "The candidate has a solid legal background with experience in Corporate Governance, Contract Law, and Litigation Management, which are relevant to the CLO role. However, the resume lacks evidence of executive-level experience and key skills such as Mergers and Acquisitions, Compliance Regulations, and Risk Management. Additionally, the candidate has not demonstrated the 15 years of experience typically required for a Chief Legal Officer position.",
+    "recommendations": [
+      "Highlight any leadership or managerial roles within previous positions to demonstrate executive-level experience.",
+      "Include specific examples of experience with Mergers and Acquisitions, Compliance Regulations, and Risk Management.",
+      "Consider adding a professional summary to emphasize strategic legal guidance and alignment with business objectives.",
+      "Expand on any experience related to Data Privacy, Employment Law, Dispute Resolution, or International Law if applicable."
+    ],
+    "red_flags": [
+      "Lack of executive-level experience.",
+      "Missing key skills such as Mergers and Acquisitions, Compliance Regulations, and Risk Management.",
+      "Does not meet the 15 years of required experience for the role."
+    ]
+  }
+}

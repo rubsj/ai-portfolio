@@ -1,0 +1,21 @@
+{
+  "cache_key": "e54de9af8c65b231e41af5bccffb50d2",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:21:18.266903+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": true,
+    "awkward_language_details": "The summary uses generic phrases like 'Detail-oriented' and 'strong focus on team development' which are common in AI-generated content. The skills section lists proficiency levels and years in a way that seems formulaic and lacks specificity.",
+    "overall_quality_score": 0.7,
+    "fit_assessment": "Jordan Smith's resume is a good match for the Senior Retail Manager position at Retail Innovations Inc. The candidate has relevant experience as a Retail Manager and Assistant Retail Manager, which aligns with the job's requirement for 7 years of experience in a senior role. The skills listed match many of the required skills, such as Inventory Management, Sales Forecasting, and Customer Relationship Management. However, there is a lack of mention of Budgeting, POS Systems, and Supply Chain Coordination, which are also required. The education requirement is met with a Bachelor's Degree in Business Administration.",
+    "recommendations": [
+      "Include more specific achievements or metrics in the experience section to demonstrate impact, such as sales growth percentages or customer satisfaction improvements.",
+      "Add skills related to Budgeting, POS Systems, and Supply Chain Coordination to better match the job requirements.",
+      "Consider elaborating on the proficiency levels and providing context or examples of how these skills were applied in past roles."
+    ],
+    "red_flags": [
+      "Lack of mention of Budgeting, POS Systems, and Supply Chain Coordination, which are required skills for the job."
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "cache_key": "0a4afe3e13533ae0dcc55d376365d4f2",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:15:34.765983+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.9,
+    "fit_assessment": "John Doe's resume is a strong match for the Lead Software Engineer position at Tech Innovators Inc. He has the required educational background with a Bachelor's Degree in Computer Science and over 8 years of relevant experience, which exceeds the 7-year requirement. His experience as a Senior Software Engineer includes leading a team and working with technologies such as Java, Spring Boot, Microservices, Kubernetes, MySQL, and GraphQL, all of which are required skills for the job. Additionally, he has experience with preferred skills like Docker, Jenkins, and AWS. His achievements in optimizing backend services and improving project delivery timelines demonstrate his capability to deliver high-quality software solutions and foster innovation, aligning well with the job description.",
+    "recommendations": [
+      "Highlight any specific projects or initiatives where innovation was fostered, as this aligns with the company's focus on innovation.",
+      "Consider adding more details about collaboration with product managers and stakeholders to emphasize experience in cross-functional teamwork."
+    ],
+    "red_flags": []
+  }
+}

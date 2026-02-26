@@ -1,0 +1,19 @@
+{
+  "cache_key": "cc2002cc9f887adff564e850457511f0",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:24:27.296674+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.9,
+    "fit_assessment": "Jordan Smith's resume is a strong match for the Digital Experience Curator position. The candidate has a relevant educational background with a Bachelor's Degree in Marketing and coursework in Digital Marketing Strategies and User Experience Design. The internship experience at Creative Digital Agency aligns well with the job's requirements, showcasing skills in Google Analytics, social media management, and A/B testing. The skills section covers most of the required and preferred skills, including Adobe Creative Suite, Google Analytics, and SEO, which are crucial for the role. The location in San Francisco is also a match with the job's location.",
+    "recommendations": [
+      "Highlight specific achievements or projects from the internship to demonstrate impact.",
+      "Include a link to a LinkedIn profile or a portfolio if available to provide more context on past work.",
+      "Consider expanding on the 'User Experience Design' skill to show more depth, as it is a key aspect of the job."
+    ],
+    "red_flags": []
+  }
+}

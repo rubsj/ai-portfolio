@@ -1,0 +1,21 @@
+{
+  "cache_key": "c21c179740e7738b5410b2cd3e00f368",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:22:37.416386+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The candidate claims 'Intermediate' proficiency in energy market analysis with only 3 years of experience, which may not align with the 'Senior' level requirement of 7 years. Additionally, the proficiency levels in SQL, statistical analysis, and financial modeling seem lower than expected for a senior role.",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.6,
+    "fit_assessment": "Jordan Smith has a relevant educational background and some applicable experience, but the overall experience level and proficiency in key skills like energy market analysis, SQL, and financial modeling do not fully meet the senior-level expectations outlined in the job description.",
+    "recommendations": [
+      "Gain additional experience in energy market analysis to reach a senior proficiency level.",
+      "Enhance skills in SQL and financial modeling to meet the job's requirements.",
+      "Consider obtaining certifications or additional training in Python and R to align with preferred skills."
+    ],
+    "red_flags": [
+      "The candidate's experience and proficiency levels may not meet the senior-level expectations for the role."
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "cache_key": "20b57018fb5c27d5d2f0cbd2d5aef422",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:15:42.572021+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The candidate's experience does not align with the executive-level role required for a CTO position. The candidate has only been a Director of Engineering since 2018, which is insufficient for the 15 years of executive experience required.",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.4,
+    "fit_assessment": "The candidate has relevant skills such as Cloud Architecture, Data Analytics, and Agile Methodologies, but lacks the required executive experience and proficiency in key areas like AI/ML Technologies, Cybersecurity, and DevOps Practices. The resume does not demonstrate experience in leading technology strategy at an enterprise level, which is crucial for the CTO role.",
+    "recommendations": [
+      "Gain more executive-level experience in technology leadership roles.",
+      "Enhance proficiency in key areas such as AI/ML Technologies, Cybersecurity, and DevOps Practices.",
+      "Consider roles that bridge the gap between current experience and executive responsibilities, such as VP of Engineering.",
+      "Highlight any strategic initiatives or leadership experiences that align with the responsibilities of a CTO."
+    ],
+    "red_flags": [
+      "Lack of executive-level experience.",
+      "Insufficient proficiency in several required skills for the CTO role."
+    ]
+  }
+}

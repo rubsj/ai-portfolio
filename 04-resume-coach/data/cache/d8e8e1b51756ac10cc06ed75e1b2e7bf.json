@@ -1,0 +1,20 @@
+{
+  "cache_key": "d8e8e1b51756ac10cc06ed75e1b2e7bf",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:23:26.042437+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The resume claims 5 years of experience in skills like Corporate law, Mergers and acquisitions, and others, but the timeline only supports 5 years of total professional experience since graduation in 2018. This suggests an overlap or exaggeration.",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.9,
+    "fit_assessment": "The candidate is a strong fit for the Mid-Level Corporate Attorney position. They have a Juris Doctor from a prestigious law school and relevant experience in corporate law, mergers and acquisitions, contract drafting, compliance regulations, legal research, negotiation skills, due diligence, and corporate governance. They also possess some knowledge in preferred areas like real estate law, intellectual property, and tax law.",
+    "recommendations": [
+      "Clarify the timeline and proficiency claims to ensure they align with the actual years of experience.",
+      "Consider adding a professional summary to highlight key strengths and career objectives."
+    ],
+    "red_flags": [
+      "Discrepancy in claimed years of proficiency versus actual years of experience."
+    ]
+  }
+}

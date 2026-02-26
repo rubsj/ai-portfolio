@@ -1,0 +1,21 @@
+{
+  "cache_key": "d9af387afa40e47f9161ead9180ab44d",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:22:58.490148+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.8,
+    "fit_assessment": "Jordan Smith's resume is a strong fit for the Chief Operating Officer position at Energy Innovations Inc. The candidate has relevant experience in the energy sector, having served as a Chief Operations Officer at Green Solutions LLC, where they developed operational strategies and managed regulatory compliance. Their experience aligns well with the job requirements, including operational strategy, regulatory compliance, project management, and financial management. However, there is limited experience in energy market analysis and sustainability initiatives, which are preferred skills for the role.",
+    "recommendations": [
+      "Highlight any experience or initiatives related to sustainability and digital transformation to align with the preferred skills.",
+      "Expand on achievements or specific outcomes in previous roles to demonstrate impact and leadership capabilities.",
+      "Consider adding more detail on stakeholder engagement and change management experiences, if applicable."
+    ],
+    "red_flags": [
+      "Limited experience in energy market analysis and sustainability initiatives, which are preferred skills for the role."
+    ]
+  }
+}

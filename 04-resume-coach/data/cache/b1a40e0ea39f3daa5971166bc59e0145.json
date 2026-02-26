@@ -1,0 +1,24 @@
+{
+  "cache_key": "b1a40e0ea39f3daa5971166bc59e0145",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:26:02.758513+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The resume claims proficiency in 'Public Speaking' and 'Event Coordination,' but lacks direct experience or evidence of skills in 'Data Analysis,' 'Policy Research,' or 'Statistical Software,' which are critical for the Policy Analyst role. Additionally, the candidate's experience is more aligned with community outreach rather than policy analysis.",
+    "has_awkward_language": true,
+    "awkward_language_details": "The summary uses vague language like 'aiming to leverage skills' without specifying how these skills translate to the policy analysis role. The phrase 'dedicated sociology graduate' is generic and does not highlight specific qualifications relevant to the job.",
+    "overall_quality_score": 0.3,
+    "fit_assessment": "The candidate has some relevant skills in public speaking and event coordination, but lacks the required experience and skills in data analysis, policy research, and statistical software. The educational background in Sociology does not directly align with the preferred fields of Public Policy or Political Science.",
+    "recommendations": [
+      "Highlight any relevant coursework or projects in policy analysis or data analysis.",
+      "Gain experience in policy research or data analysis through internships or volunteer work.",
+      "Consider obtaining certifications in statistical software or data analysis tools.",
+      "Revise the summary to focus on specific skills and experiences that align with the job requirements."
+    ],
+    "red_flags": [
+      "Lack of direct experience in policy analysis or data analysis.",
+      "No mention of statistical software proficiency.",
+      "Experience primarily in community outreach, not policy development or analysis."
+    ]
+  }
+}

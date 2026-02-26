@@ -1,0 +1,22 @@
+{
+  "cache_key": "6d90beb105e62d154e3df3368757f10d",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:16:52.841257+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The resume does not contain any relevant experience or skills in healthcare data analysis, SQL, Python, R, Tableau, SAS, or any other data analysis tools mentioned in the job description. The candidate's background is in graphic design, which is unrelated to the requirements of the job.",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.0,
+    "fit_assessment": "The resume is completely unsuitable for the Lead Healthcare Data Analyst position. The candidate's experience and skills are in graphic design, which does not align with the data analysis and healthcare analytics requirements of the job.",
+    "recommendations": [
+      "Jordan Smith should consider applying for roles that align with their graphic design experience, such as a senior graphic designer or art director position.",
+      "If interested in transitioning to data analysis, Jordan should pursue relevant education or certifications in data science, analytics, or related fields.",
+      "Consider gaining experience with data analysis tools such as SQL, Python, R, and Tableau through online courses or bootcamps."
+    ],
+    "red_flags": [
+      "No relevant experience in healthcare data analysis or any data analysis tools.",
+      "Educational background in Fine Arts, unrelated to the job requirements."
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "cache_key": "0d5814cc86d71ddb6386642f46fcb3a1",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:33:59.209347+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 1.0,
+    "fit_assessment": "Jordan Smith's resume is a strong match for the Digital Marketing Specialist position at Creative Solutions Inc. The candidate has relevant experience as a Digital Marketing Specialist, having worked in similar roles since 2018. The resume demonstrates proficiency in all required skills such as SEO, Google Analytics, PPC Advertising, Email Marketing, and Social Media Management, as well as several preferred skills like Content Management Systems, A/B Testing, and CRM Software. The educational background aligns with the job's requirements, and the candidate's experience level and years of experience match the job's expectations.",
+    "recommendations": [
+      "Highlight specific achievements or metrics related to social media management to further emphasize expertise in this area.",
+      "Include a portfolio link if available, to showcase previous work and campaigns."
+    ],
+    "red_flags": []
+  }
+}

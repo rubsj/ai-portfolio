@@ -1,0 +1,23 @@
+{
+  "cache_key": "1bf5679d75122e2f79bc59a992333002",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:25:16.353394+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The candidate claims 4 years of experience in SEO, but the timeline from the resume suggests only 3 years since starting the first relevant job in 2018.",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.6,
+    "fit_assessment": "Jane Doe has relevant experience in marketing, particularly in digital marketing campaigns, SEO, and Google Analytics, which align with the job requirements. However, she lacks the required 7 years of experience and leadership experience at the 'Lead' level. Her skills in PPC and Email Marketing are at a beginner level, which may not meet the expectations for a Lead Marketing Strategist role.",
+    "recommendations": [
+      "Gain more experience in PPC and Email Marketing to reach an intermediate or advanced level.",
+      "Seek opportunities to lead projects or teams to develop leadership skills.",
+      "Consider obtaining certifications in marketing automation tools like HubSpot or Salesforce to strengthen the resume.",
+      "Clarify any discrepancies in the timeline of experience to avoid confusion."
+    ],
+    "red_flags": [
+      "Lack of leadership experience at the 'Lead' level.",
+      "Insufficient years of experience compared to the job requirement."
+    ]
+  }
+}

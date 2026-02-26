@@ -1,0 +1,23 @@
+{
+  "cache_key": "3c94defa2d2ce220fb520c0a0644db33",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:15:25.998104+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The resume claims experience in graphic design and content creation, with no mention of software development experience or skills in JavaScript, React, Node.js, MongoDB, REST APIs, Git, AWS, or Docker, which are required for the job.",
+    "has_awkward_language": true,
+    "awkward_language_details": "The summary states a desire to pivot into software development, which is not supported by the experience or skills listed. This creates a disconnect and may confuse the recruiter.",
+    "overall_quality_score": 0.1,
+    "fit_assessment": "The resume is not a good fit for the Software Engineer position at Tech Innovations Inc. as it lacks relevant software development experience and required technical skills.",
+    "recommendations": [
+      "Acquire relevant software development skills, particularly in JavaScript, React, Node.js, and other technologies listed in the job description.",
+      "Gain experience in software development roles to build a foundation for a career in this field.",
+      "Consider including a portfolio or GitHub link to showcase any personal projects or coding experience.",
+      "Revise the summary to better align with the skills and experiences relevant to a software engineering role."
+    ],
+    "red_flags": [
+      "No experience in software development roles.",
+      "Lack of required technical skills for the job."
+    ]
+  }
+}

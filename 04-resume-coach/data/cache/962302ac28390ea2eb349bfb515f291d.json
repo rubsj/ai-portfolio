@@ -1,0 +1,23 @@
+{
+  "cache_key": "962302ac28390ea2eb349bfb515f291d",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:25:11.595137+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The candidate claims to seek a senior marketing role but lacks the necessary senior-level experience and skills required for the position. The resume shows only 3 years of experience, primarily in junior roles, which contradicts the job's requirement of 5 years of senior-level experience.",
+    "has_awkward_language": true,
+    "awkward_language_details": "The summary uses vague language such as 'seeking to leverage experience in a more senior marketing role,' which does not effectively communicate the candidate's readiness for a senior position. The use of 'creative marketing professional' is generic and does not align with the specific requirements of the job.",
+    "overall_quality_score": 0.3,
+    "fit_assessment": "Emily Johnson's resume does not meet the requirements for the Senior Marketing Manager position. She lacks the necessary senior-level experience and specific skills such as SEO, Google Analytics, and marketing automation, which are critical for the role.",
+    "recommendations": [
+      "Gain more experience in senior marketing roles to meet the experience requirement.",
+      "Develop skills in SEO, Google Analytics, and marketing automation to align with the job requirements.",
+      "Revise the summary to clearly articulate relevant experiences and skills that match the job description.",
+      "Consider obtaining certifications or additional training in digital marketing tools and strategies."
+    ],
+    "red_flags": [
+      "Insufficient experience for a senior-level position.",
+      "Lack of required skills such as SEO, Google Analytics, and marketing automation."
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "cache_key": "2fdafd24f7f856a1e083a220783d92be",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:26:25.088629+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.8,
+    "fit_assessment": "Jordan Smith's resume is a strong fit for the Lead Program Manager position at the Federal Development Agency. The candidate has relevant educational qualifications with a Master's Degree in Public Administration, which aligns with the preferred education requirement. The experience as a Program Manager at the City Development Agency is directly relevant, showcasing skills in managing cross-functional teams, budget oversight, stakeholder engagement, and performance metrics, which are crucial for the role. While the candidate has intermediate proficiency in federal regulations and lacks extensive experience in contract negotiation and change management, the overall experience and skills align well with the job requirements.",
+    "recommendations": [
+      "Highlight any specific achievements or successful projects in the current role to strengthen the application.",
+      "Consider gaining more experience or training in contract negotiation and change management to improve proficiency in these areas.",
+      "Include a professional summary to provide a quick overview of qualifications and career goals."
+    ],
+    "red_flags": []
+  }
+}

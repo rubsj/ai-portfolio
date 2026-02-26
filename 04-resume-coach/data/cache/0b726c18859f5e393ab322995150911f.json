@@ -1,0 +1,24 @@
+{
+  "cache_key": "0b726c18859f5e393ab322995150911f",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:26:52.675104+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The candidate claims expertise in areas such as Adobe Creative Suite, User Experience Design, and Photography, which are unrelated to the COO role. There is no mention of strategic planning, change management, or other required skills for a COO position. The candidate's education and experience are in the creative industry, not in public administration or operations management.",
+    "has_awkward_language": true,
+    "awkward_language_details": "The resume uses language that is overly focused on creative design and art, such as 'innovative branding solutions' and 'enhanced visual communication strategies,' which are not relevant to the COO role. The summary emphasizes design experience rather than operational leadership.",
+    "overall_quality_score": 0.1,
+    "fit_assessment": "The resume is not a good fit for the COO position at a federal government agency. The candidate lacks the necessary experience in strategic planning, policy development, and operational efficiency. Their background in the creative industry does not align with the executive leadership and public service focus required for the role.",
+    "recommendations": [
+      "Gain experience in strategic planning and operations management.",
+      "Pursue a Master's degree in Public Administration or Business Administration.",
+      "Develop skills in policy development and stakeholder engagement.",
+      "Seek roles with increasing responsibility in operations or management within a relevant industry."
+    ],
+    "red_flags": [
+      "Lack of relevant experience in government or operations management.",
+      "Educational background unrelated to the requirements of the COO role.",
+      "No mention of required skills such as budget management or program evaluation."
+    ]
+  }
+}

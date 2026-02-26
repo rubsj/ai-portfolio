@@ -1,0 +1,19 @@
+{
+  "cache_key": "726605b8f8a89e4c225857016aa8e292",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:16:08.406930+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.9,
+    "fit_assessment": "Jamie Taylor's resume is a strong match for the Healthcare Data Analyst position at HealthTech Solutions. The candidate has relevant educational background with a Bachelor's degree in Data Science and approximately three years of experience as a Junior Data Analyst, which aligns with the job's experience requirements. Jamie possesses the required skills such as SQL, Python, Tableau, Excel, and has experience with ETL processes and healthcare analytics, which are crucial for the role. The candidate also has some exposure to preferred skills like Machine Learning and Data Warehousing, enhancing their fit for the position.",
+    "recommendations": [
+      "Consider improving proficiency in R and gaining more experience with SAS, as these are relevant to the preferred skills.",
+      "Highlight any specific achievements or projects that demonstrate impact in previous roles to strengthen the resume.",
+      "Include a professional summary to provide a quick overview of qualifications and career goals."
+    ],
+    "red_flags": []
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "cache_key": "df825e55377acb48e79f842236ae0c05",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:24:38.222590+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.8,
+    "fit_assessment": "Emily Johnson's resume is a strong fit for the Digital Experience Curator position. She possesses the required skills such as Adobe Creative Suite, Google Analytics, SEO, social media management, and A/B testing. Her education in Communications with relevant coursework aligns well with the job's educational requirements. Her experience as a Marketing Intern and Content Creator demonstrates practical application of these skills, making her a suitable candidate for an entry-level position.",
+    "recommendations": [
+      "Include a summary section to highlight key strengths and career objectives.",
+      "Add proficiency in content management systems and user experience design if applicable, as these are required skills in the job description.",
+      "Consider mentioning any experience with WordPress or email marketing tools to align with preferred skills."
+    ],
+    "red_flags": []
+  }
+}

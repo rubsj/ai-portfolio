@@ -1,0 +1,23 @@
+{
+  "cache_key": "732dd437242d2549d8c0a4b1a9df78ee",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:18:10.768217+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.8,
+    "fit_assessment": "Jordan Smith's resume is a strong fit for the Chief Financial Officer position at Global Finance Solutions. The candidate has a solid educational background with a Master's in Finance from Columbia University and over 13 years of relevant experience in finance roles, including a Vice President of Finance position. The resume demonstrates proficiency in key required skills such as financial modeling, risk management, regulatory compliance, budgeting, and financial reporting. However, there is a slightly weaker experience in mergers and acquisitions and investment management, which are important for the role. The candidate's experience aligns well with the job description, but the lack of explicit achievements and a summary section could be improved.",
+    "recommendations": [
+      "Add specific achievements or quantifiable results in previous roles to demonstrate impact.",
+      "Include a professional summary to provide a concise overview of qualifications and career goals.",
+      "Highlight any experience or involvement in mergers and acquisitions more prominently.",
+      "Consider expanding on experience with investment management, as it is a preferred skill."
+    ],
+    "red_flags": [
+      "The resume lacks a LinkedIn profile, which is often expected for executive roles.",
+      "The inclusion of 'Social Media Marketing' as a skill is irrelevant to the CFO role and could be removed to maintain focus."
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "cache_key": "37ae2298e99b28c597045e63e6a78342",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:15:30.582488+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.7,
+    "fit_assessment": "Jordan Smith's resume demonstrates relevant experience and skills for the Senior Software Engineer position at Tech Innovators Inc. They have a solid background in Java, Spring Boot, REST APIs, and Agile methodologies, which align well with the job requirements. However, there are some areas where the candidate's experience does not fully meet the job description's expectations, such as Kubernetes and CI/CD, which are only mentioned briefly. Additionally, the candidate's proficiency in Docker is at a beginner level, which may not be sufficient for a senior role. The resume lacks any mention of leadership experience, which is crucial for a senior position.",
+    "recommendations": [
+      "Gain more experience with Kubernetes and CI/CD to strengthen the application.",
+      "Improve proficiency in Docker to meet the senior-level expectations.",
+      "Highlight any leadership or project management experience to better align with the senior role requirements.",
+      "Consider adding a summary to the resume to provide a quick overview of skills and experiences relevant to the job."
+    ],
+    "red_flags": [
+      "Lack of leadership experience mentioned in the resume.",
+      "Beginner level proficiency in Docker, which is essential for the role."
+    ]
+  }
+}

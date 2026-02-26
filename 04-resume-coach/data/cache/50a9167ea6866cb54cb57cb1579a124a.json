@@ -1,0 +1,18 @@
+{
+  "cache_key": "50a9167ea6866cb54cb57cb1579a124a",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:20:20.241680+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.95,
+    "fit_assessment": "Jordan Smith's resume is highly suitable for the Lead Manufacturing Engineer position at Precision Manufacturing Inc. The candidate has relevant experience in overseeing production processes, implementing lean manufacturing principles, and mentoring junior engineers, which aligns well with the job description. The skills listed, such as Lean Manufacturing, Six Sigma, CAD Software, and Process Optimization, match the required skills for the role. Additionally, the candidate has a Bachelor's degree in Mechanical Engineering and over 7 years of experience, meeting the educational and experience requirements.",
+    "recommendations": [
+      "Highlight any specific leadership roles or projects that demonstrate the ability to lead a team of engineers.",
+      "Include any relevant certifications or training in Automation Technologies or Robotics to strengthen the preferred skills section."
+    ],
+    "red_flags": []
+  }
+}

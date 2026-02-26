@@ -1,0 +1,23 @@
+{
+  "cache_key": "856f0e6d34b141340e27b7367d9da5e7",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:20:09.156685+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The candidate claims only 4 years of experience post-graduation, which does not meet the 7-year requirement for a Senior position. Additionally, the resume does not demonstrate experience with Lean Manufacturing, Six Sigma, TS16949, or significant process optimization, which are critical for the job.",
+    "has_awkward_language": true,
+    "awkward_language_details": "The summary uses vague phrasing like 'keen interest in manufacturing processes' without specifying relevant experience or achievements in manufacturing. The skills section lists 'Beginner' levels for critical skills like Data Analysis and Project Management, which is not suitable for a Senior role.",
+    "overall_quality_score": 0.2,
+    "fit_assessment": "The resume is a poor fit for the Senior Manufacturing Engineer position. The candidate lacks the required years of experience, specific skills, and relevant achievements in manufacturing engineering.",
+    "recommendations": [
+      "Gain more experience in manufacturing engineering roles, focusing on Lean Manufacturing, Six Sigma, and process optimization.",
+      "Pursue certifications or further education in relevant areas like TS16949 and industrial engineering.",
+      "Update the resume to reflect more relevant experience and skills for a Senior Manufacturing Engineer role.",
+      "Consider applying for roles that match current experience level, such as Junior or Associate Engineer positions."
+    ],
+    "red_flags": [
+      "Insufficient years of experience for a Senior role.",
+      "Lack of demonstrated expertise in key required skills like Lean Manufacturing and Six Sigma."
+    ]
+  }
+}
