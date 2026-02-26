@@ -41,7 +41,7 @@
     "test": "chi_squared_independence",
     "null_hypothesis": "Resume template has no effect on failure rate",
     "chi_squared_statistic": 32.7381,
-    "chi_squared_p_value": 0.0,
+    "chi_squared_p_value": 1.3514e-06,
     "degrees_of_freedom": 4,
     "significant": true,
     "best_template": "casual",

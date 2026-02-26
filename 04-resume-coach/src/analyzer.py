@@ -570,7 +570,7 @@ def compute_template_ab_test(df: pd.DataFrame) -> dict:
 
     return {
         "chi_squared_statistic": round(chi2, 4),
-        "chi_squared_p_value": round(p_value, 4),
+        "chi_squared_p_value": max(round(p_value, 10), 1e-15),  # WHY: clamp to avoid misleading 0.0 from float underflow
         "degrees_of_freedom": dof,
         "significant": bool(p_value < 0.05),
         "best_template": best_template,
