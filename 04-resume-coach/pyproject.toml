@@ -13,8 +13,8 @@ dependencies = [
     "seaborn",
     "fastapi",
     "uvicorn",
-    # "chromadb",                # Day 3: vector store
-    # "sentence-transformers",   # Day 3: local embeddings
+    "chromadb",                # Day 3: vector store
+    "sentence-transformers",   # Day 3: local embeddings
     "rich",
     "python-dotenv",
     "scipy",
