@@ -278,6 +278,25 @@ class TestCreateClient:
                 with pytest.raises(RuntimeError, match="OPENAI_API_KEY"):
                     _create_client()
 
+    def test_returns_instructor_client_with_api_key(self, tmp_path, monkeypatch):
+        """_create_client returns an Instructor client when OPENAI_API_KEY is set.
+
+        Covers generator.py line 49: return instructor.from_openai(OpenAI(), ...).
+        """
+        import src.generator as gmod
+
+        monkeypatch.setenv("OPENAI_API_KEY", "test-key-for-unit-tests")
+        monkeypatch.setattr(gmod, "_PROJECT_ROOT", tmp_path)
+
+        mock_instructor = MagicMock()
+        with (
+            patch("instructor.from_openai", return_value=mock_instructor),
+            patch("openai.OpenAI", return_value=MagicMock()),
+        ):
+            client = gmod._create_client()
+
+        assert client is mock_instructor
+
 
 # ---------------------------------------------------------------------------
 # generate_job

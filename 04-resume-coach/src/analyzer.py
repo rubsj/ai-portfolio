@@ -677,7 +677,7 @@ def generate_all_charts(df: pd.DataFrame) -> list[Path]:
 # ---------------------------------------------------------------------------
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # pragma: no cover
     from rich.console import Console
     from rich.table import Table
 

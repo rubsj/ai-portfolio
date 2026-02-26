@@ -419,5 +419,5 @@ def run() -> None:
     console.print(f"\n[bold green]Done! {len(responses) * 4} questions → {OUTPUT_FILE}[/bold green]")
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # pragma: no cover
     run()
