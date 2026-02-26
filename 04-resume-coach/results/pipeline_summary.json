@@ -1,0 +1,58 @@
+{
+  "project": "P4 \u2014 Resume Coach",
+  "day": "Day 2",
+  "generation": {
+    "jobs_generated": 50,
+    "resumes_generated": 250,
+    "pairs_generated": 250,
+    "validation_rate": 1.0,
+    "field_errors": 0
+  },
+  "labeling": {
+    "pairs_labeled": 250,
+    "failure_mode_rates": {
+      "experience_mismatch": 0.068,
+      "seniority_mismatch": 0.176,
+      "missing_core_skills": 0.508,
+      "has_hallucinations": 0.02,
+      "has_awkward_language": 0.584
+    },
+    "avg_jaccard_by_fit_level": {
+      "excellent": 0.669,
+      "good": 0.607,
+      "mismatch": 0.005,
+      "partial": 0.62,
+      "poor": 0.212
+    }
+  },
+  "judging": {
+    "pairs_evaluated": 250,
+    "avg_quality_score": 0.5408,
+    "hallucination_rate": 0.448,
+    "awkward_language_rate": 0.268
+  },
+  "correction": {
+    "records_processed": 8,
+    "records_corrected": 8,
+    "correction_rate": 1.0,
+    "avg_attempts_per_success": 1.0
+  },
+  "ab_testing": {
+    "test": "chi_squared_independence",
+    "null_hypothesis": "Resume template has no effect on failure rate",
+    "chi_squared_statistic": 32.7381,
+    "p_value": 0.0,
+    "degrees_of_freedom": 4,
+    "significant": true,
+    "best_template": "casual",
+    "worst_template": "career_changer",
+    "failure_rates_by_template": {
+      "achievement": 0.98,
+      "career_changer": 1.0,
+      "casual": 0.66,
+      "formal": 0.82,
+      "technical": 0.74
+    }
+  },
+  "charts_generated": 9
+}
