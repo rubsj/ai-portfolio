@@ -25,7 +25,7 @@
       "poor": 0.212
     }
   },
-  "judging": {
+  "judge": {
     "pairs_evaluated": 250,
     "avg_quality_score": 0.5408,
     "hallucination_rate": 0.448,
@@ -41,7 +41,7 @@
     "test": "chi_squared_independence",
     "null_hypothesis": "Resume template has no effect on failure rate",
     "chi_squared_statistic": 32.7381,
-    "p_value": 0.0,
+    "chi_squared_p_value": 0.0,
     "degrees_of_freedom": 4,
     "significant": true,
     "best_template": "casual",

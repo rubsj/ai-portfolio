@@ -11,7 +11,6 @@ import json
 from pathlib import Path
 from unittest.mock import patch
 
-import pytest
 
 from src.multi_hop import (
     _q_career_progression,

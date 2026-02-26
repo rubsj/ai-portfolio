@@ -570,7 +570,7 @@ def compute_template_ab_test(df: pd.DataFrame) -> dict:
 
     return {
         "chi_squared_statistic": round(chi2, 4),
-        "p_value": round(p_value, 4),
+        "chi_squared_p_value": round(p_value, 4),
         "degrees_of_freedom": dof,
         "significant": bool(p_value < 0.05),
         "best_template": best_template,
@@ -610,7 +610,7 @@ def generate_pipeline_summary(df: pd.DataFrame, ab_results: dict) -> dict:
     }
 
     # --- Judge stats ---
-    judging = {
+    judge = {
         "pairs_evaluated": int(df["overall_quality_score"].notna().sum()),
         "avg_quality_score": round(float(df["overall_quality_score"].mean()), 4),
         "hallucination_rate": round(float(df["judge_has_hallucinations"].astype(float).mean()), 4),
@@ -639,7 +639,7 @@ def generate_pipeline_summary(df: pd.DataFrame, ab_results: dict) -> dict:
         "day": "Day 2",
         "generation": generation,
         "labeling": labeling,
-        "judging": judging,
+        "judge": judge,
         "correction": correction,
         "ab_testing": ab_testing,
         "charts_generated": 9,
@@ -699,7 +699,7 @@ if __name__ == "__main__":  # pragma: no cover
     # A/B test
     console.print("\n[yellow]Running chi-squared A/B test...[/yellow]")
     ab_results = compute_template_ab_test(df)
-    console.print(f"  χ² = {ab_results['chi_squared_statistic']:.4f}, p = {ab_results['p_value']:.4f}")
+    console.print(f"  χ² = {ab_results['chi_squared_statistic']:.4f}, p = {ab_results['chi_squared_p_value']:.4f}")
     sig = "[green]YES[/green]" if ab_results["significant"] else "[yellow]NO[/yellow]"
     console.print(f"  Significant (p<0.05): {sig}")
     console.print(f"  Best template:  {ab_results['best_template']}")
@@ -722,9 +722,9 @@ if __name__ == "__main__":  # pragma: no cover
 
     # Print judge stats
     console.print("\n[bold]Judge Stats (GPT-4o):[/bold]")
-    console.print(f"  Avg quality score:    {summary['judging']['avg_quality_score']:.3f}")
-    console.print(f"  Hallucination rate:   {summary['judging']['hallucination_rate']:.1%}")
-    console.print(f"  Awkward language:     {summary['judging']['awkward_language_rate']:.1%}")
+    console.print(f"  Avg quality score:    {summary['judge']['avg_quality_score']:.3f}")
+    console.print(f"  Hallucination rate:   {summary['judge']['hallucination_rate']:.1%}")
+    console.print(f"  Awkward language:     {summary['judge']['awkward_language_rate']:.1%}")
 
     console.print(
         f"\n[bold green]Done! {len(chart_paths)} charts → {_CHARTS_DIR}[/bold green]"

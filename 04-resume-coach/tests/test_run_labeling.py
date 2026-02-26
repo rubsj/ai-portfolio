@@ -15,7 +15,6 @@ from __future__ import annotations
 from pathlib import Path
 from unittest.mock import patch
 
-import pytest
 
 import src.run_labeling as rl
 from src.run_labeling import load_jobs, load_pairs, load_resumes
