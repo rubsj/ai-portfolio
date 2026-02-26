@@ -1,0 +1,21 @@
+{
+  "cache_key": "d0a85e6a8f3f0de8d281f5221fa0339e",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:15:26.624230+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.8,
+    "fit_assessment": "Jordan Smith's resume is a strong match for the Senior Software Engineer position at Tech Innovators Inc. They have the required educational background with a Bachelor's Degree in Computer Science and over five years of relevant experience. Their skills in Java, Spring Boot, Microservices, Kubernetes, SQL, Git, Docker, and REST APIs align well with the job requirements. Additionally, their experience with Agile methodologies and CI/CD pipelines is beneficial. While their proficiency in some preferred skills like TypeScript, GraphQL, and Cloud Services is limited, their overall experience and skills make them a good candidate for the role.",
+    "recommendations": [
+      "Highlight any leadership or project management experience to strengthen the application for a senior role.",
+      "Include specific achievements or metrics to demonstrate impact in previous roles.",
+      "Consider adding a professional summary to provide a quick overview of qualifications and career goals."
+    ],
+    "red_flags": [
+      "Limited experience with preferred skills such as TypeScript, GraphQL, and Cloud Services."
+    ]
+  }
+}

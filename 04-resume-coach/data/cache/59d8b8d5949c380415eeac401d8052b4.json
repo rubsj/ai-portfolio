@@ -1,0 +1,24 @@
+{
+  "cache_key": "59d8b8d5949c380415eeac401d8052b4",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:23:15.850113+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The resume claims a 'background in technical support and basic knowledge of legal concepts,' but the educational background only includes an Associate's Degree with 'Introduction to Law' and 'Basic Computer Skills,' which is insufficient for a legal technology role.",
+    "has_awkward_language": true,
+    "awkward_language_details": "The summary states 'seeking to transition into a data analysis role but lacking direct experience in legal technology,' which is a negative way to present oneself and could deter recruiters.",
+    "overall_quality_score": 0.3,
+    "fit_assessment": "The candidate has some relevant skills such as Excel and basic data analysis, but lacks the required educational background and experience in legal research, SQL, Python, and regulatory compliance. The resume does not demonstrate the necessary blend of legal knowledge and data analysis skills needed for the role.",
+    "recommendations": [
+      "Gain experience in SQL and Python through online courses or certifications.",
+      "Consider pursuing a Bachelor's degree in a related field to meet educational requirements.",
+      "Highlight any projects or experiences that demonstrate data analysis skills.",
+      "Reframe the summary to focus on strengths and eagerness to learn rather than lack of experience."
+    ],
+    "red_flags": [
+      "Lack of Bachelor's degree as required by the job description.",
+      "No experience in legal research or regulatory compliance.",
+      "Limited data analysis experience and no mention of SQL or Python skills."
+    ]
+  }
+}

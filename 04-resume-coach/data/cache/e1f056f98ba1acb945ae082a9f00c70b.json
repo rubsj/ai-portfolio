@@ -1,0 +1,22 @@
+{
+  "cache_key": "e1f056f98ba1acb945ae082a9f00c70b",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:22:59.850715+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The resume claims proficiency in marketing-related skills such as Market Research and Social Media Analytics, which are unrelated to the engineering and renewable energy skills required by the job description.",
+    "has_awkward_language": true,
+    "awkward_language_details": "The resume includes a summary that focuses on marketing experience, which is irrelevant to the engineering role. Phrases like 'Dynamic marketing professional' and 'enhancing brand presence' are not aligned with the technical and engineering focus of the job.",
+    "overall_quality_score": 0.0,
+    "fit_assessment": "The resume is completely unsuitable for the Lead Renewable Energy Engineer position. The candidate's background is in marketing, with no relevant experience or education in engineering or renewable energy.",
+    "recommendations": [
+      "The candidate should pursue additional education or training in engineering or renewable energy if interested in transitioning to this field.",
+      "Consider tailoring the resume to highlight any relevant technical skills or experiences, if applicable.",
+      "If interested in a career change, the candidate might seek entry-level positions or internships in the renewable energy sector to gain relevant experience."
+    ],
+    "red_flags": [
+      "The candidate's education and experience are entirely in marketing, with no overlap with the required engineering skills.",
+      "There is a lack of any technical skills or project management experience related to renewable energy."
+    ]
+  }
+}

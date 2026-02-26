@@ -243,18 +243,19 @@ Do NOT re-debate architecture — follow the plan.
 - [x] Jaccard confirmed: Excellent=73%, Mismatch=0% (was 0% across board before fix)
 - **Key metrics:** Skills now all 1-3 word tokens, company sizes standardized to 4 values, clear Jaccard gradient
 
-### Day 2 — Labeling + Judge + Correction + Analysis (Tue Feb 25)
-- [ ] T2.1: labeler.py — All 6 failure modes
-- [ ] T2.2: test_labeler.py — Unit tests for each mode
-- [ ] T2.3: Run labeling pipeline on all pairs
-- [ ] T2.4: judge.py — LLM-as-Judge (GPT-4o) on all pairs
-- [ ] T2.5: corrector.py — Correction loop implementation
-- [ ] T2.6: test_corrector.py — Correction tests
-- [ ] T2.7: Run correction pipeline on invalid records
-- [ ] T2.8: analyzer.py — DataFrame + 9 visualizations + A/B chi-squared test
-- [ ] T2.9: pipeline_summary.json generation
-- [ ] T2.10: Multi-hop evaluation questions (bonus)
-- [ ] **Checkpoint:** Complete analysis pipeline. All metrics calculated.
+### Day 2 — Labeling + Judge + Correction + Analysis (Tue Feb 25) ✅ COMPLETE
+- [x] T2.1: labeler.py — All 6 failure modes
+- [x] T2.2: test_labeler.py — Unit tests for each mode (~42 tests)
+- [x] T2.3: Run labeling pipeline on all 250 pairs → failure_labels.jsonl
+- [x] T2.4: judge.py — LLM-as-Judge (GPT-4o) on all 250 pairs → judge_results.jsonl
+- [x] T2.5: corrector.py — Correction loop (8 seeded broken records)
+- [x] T2.6: test_corrector.py — 22 corrector tests (mocked Instructor)
+- [x] T2.7: Run correction pipeline → 8/8 corrected (100% rate, 1 avg attempt)
+- [x] T2.8: analyzer.py — 9 visualizations (DataFrame join, 5 data sources)
+- [x] T2.9: pipeline_summary.json — χ²=32.74, p=0.0000; best=casual, worst=career_changer
+- [x] T2.10: multi_hop.py — 40 questions (4 per pair × 10 pairs, 2 per fit level)
+- [x] **Checkpoint:** Complete analysis pipeline. All metrics calculated.
+- **Key metrics:** Jaccard gradient confirmed (excellent=0.669→mismatch=0.005), judge avg quality=0.541, hallucination rate=44.8%, A/B significant (p<0.001)
 
 ### Day 3 — API + Vector Store + Demo + Documentation (Wed Feb 26)
 - [ ] T3.1: api.py — FastAPI with 9 endpoints (all features exposed)

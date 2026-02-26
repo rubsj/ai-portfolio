@@ -1,0 +1,19 @@
+{
+  "cache_key": "39acfeaaddfc8e2658a3a8378840bec0",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:30:51.096948+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.9,
+    "fit_assessment": "Jordan Smith's resume is a strong match for the EdTech Engagement Specialist position with a focus on gamification. The candidate holds a relevant degree in Game Design and has practical experience as an EdTech Intern, where they developed game-based learning modules and collaborated with educators. The skills listed align well with the job requirements, including gamification principles, instructional design, data analysis, and user experience design. The resume also includes some preferred skills like Adobe Creative Suite and HTML/CSS, although proficiency in Unity and educational psychology is not mentioned.",
+    "recommendations": [
+      "Consider gaining experience or training in Unity to enhance qualifications for similar roles.",
+      "Include any specific achievements or metrics from the internship to strengthen the impact of the experience section.",
+      "Expand on any experience or coursework related to educational psychology if applicable."
+    ],
+    "red_flags": []
+  }
+}

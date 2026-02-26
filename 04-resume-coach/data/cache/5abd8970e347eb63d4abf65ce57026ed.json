@@ -1,0 +1,21 @@
+{
+  "cache_key": "5abd8970e347eb63d4abf65ce57026ed",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:15:29.916896+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The resume claims expertise in graphic design and related fields, not software engineering. There are no mentions of Java, Spring Boot, Microservices, or any other required technical skills for the Senior Software Engineer position.",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.0,
+    "fit_assessment": "The resume is completely unsuitable for the Senior Software Engineer position. The candidate's background is in graphic design, with no relevant experience or skills in software development, which are essential for the job.",
+    "recommendations": [
+      "Jordan Smith should consider applying for roles that align with their graphic design experience, such as Senior Graphic Designer or UX Designer positions.",
+      "If interested in transitioning to software engineering, Jordan should pursue relevant education or certifications in computer science and gain experience with the required technical skills."
+    ],
+    "red_flags": [
+      "No relevant software engineering experience or skills listed.",
+      "Educational background is in Graphic Design, not Computer Science or a related field."
+    ]
+  }
+}

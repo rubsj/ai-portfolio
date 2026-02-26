@@ -1,0 +1,22 @@
+{
+  "cache_key": "67774f9b7c4087ff5390951d9cb9469f",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:20:49.594149+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The resume claims experience and skills in graphic design and visual arts, which are unrelated to the COO position in manufacturing. There are no mentions of Lean Manufacturing, Six Sigma, Supply Chain Management, or any other relevant skills for the COO role.",
+    "has_awkward_language": true,
+    "awkward_language_details": "The resume uses language that is overly focused on design and creativity, such as 'Creative and detail-oriented graphic designer,' which does not align with the operational and strategic language expected for a COO role.",
+    "overall_quality_score": 0.0,
+    "fit_assessment": "The resume is completely unsuitable for the COO position at Innovative Manufacturing Solutions Inc. The candidate's background is in graphic design, with no relevant experience or skills in operations, manufacturing, or executive leadership.",
+    "recommendations": [
+      "The candidate should consider roles more aligned with their background in graphic design and visual arts.",
+      "If interested in transitioning to operations, the candidate should gain relevant experience and education in operations management or a related field."
+    ],
+    "red_flags": [
+      "Lack of relevant experience in manufacturing or operations.",
+      "No mention of required skills such as Lean Manufacturing, Six Sigma, or Supply Chain Management.",
+      "Educational background in Fine Arts, which is unrelated to the COO role."
+    ]
+  }
+}

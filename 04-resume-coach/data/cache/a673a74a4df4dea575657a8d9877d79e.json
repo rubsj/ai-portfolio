@@ -1,0 +1,18 @@
+{
+  "cache_key": "a673a74a4df4dea575657a8d9877d79e",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:15:25.405800+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.95,
+    "fit_assessment": "John Doe's resume is highly suitable for the Senior Software Engineer position at Tech Innovators Inc. He meets the required 5+ years of experience and has a strong background in the necessary skills such as Java, Spring Boot, Microservices, Kubernetes, SQL, Git, Docker, REST APIs, and Agile methodologies. Additionally, he possesses several of the preferred skills, including TypeScript, GraphQL, CI/CD, NoSQL, and Cloud Services. His educational background in Computer Science and his current location in San Francisco, CA, align well with the job requirements.",
+    "recommendations": [
+      "Highlight any specific projects or achievements related to TypeScript, GraphQL, or Cloud Services to strengthen the alignment with preferred skills.",
+      "Consider adding a portfolio link if available to showcase past projects or code samples."
+    ],
+    "red_flags": []
+  }
+}

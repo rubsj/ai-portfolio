@@ -1,0 +1,19 @@
+{
+  "cache_key": "fd6a47c2eab28bfe155565ad0d289e1a",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:20:45.740979+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.9,
+    "fit_assessment": "Jordan Smith's resume is a strong match for the Retail Experience Innovator position at NextGen Retail Solutions. The candidate has relevant education and experience in marketing and retail management, and possesses the required skills such as data analysis, visual merchandising, and customer journey mapping. The experience at Retail Innovations Inc. aligns well with the job description, demonstrating involvement in enhancing customer engagement and optimizing in-store experiences. Additionally, the candidate is located in Austin, TX, which matches the job location.",
+    "recommendations": [
+      "Include a summary section to highlight key strengths and career objectives.",
+      "Provide specific achievements or metrics in the experience section to demonstrate impact.",
+      "Expand on digital marketing and trend analysis experience to strengthen alignment with job requirements."
+    ],
+    "red_flags": []
+  }
+}

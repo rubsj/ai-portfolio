@@ -1,0 +1,18 @@
+{
+  "cache_key": "39cd0068967f7045bbcf661b66059b9f",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:15:19.663796+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.9,
+    "fit_assessment": "Jordan Smith's resume is a strong match for the Software Engineer position at Tech Innovations Inc. The candidate possesses the required skills such as JavaScript, React, Node.js, MongoDB, REST APIs, Git, AWS, and Docker, and has relevant experience in developing scalable web applications. The educational background aligns well with the job's requirements, and the experience level is appropriate for a mid-level position.",
+    "recommendations": [
+      "Highlight specific projects or accomplishments using TypeScript, GraphQL, and Kubernetes to strengthen the preferred skills section.",
+      "Provide more details on achievements in the Junior Software Engineer role to demonstrate growth and impact."
+    ],
+    "red_flags": []
+  }
+}

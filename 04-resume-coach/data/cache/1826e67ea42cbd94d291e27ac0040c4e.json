@@ -1,0 +1,19 @@
+{
+  "cache_key": "1826e67ea42cbd94d291e27ac0040c4e",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:23:26.041680+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.9,
+    "fit_assessment": "Jordan Smith's resume is a strong match for the Legal Technology Data Analyst position at LexTech Innovations. The candidate possesses the required skills such as legal research, data analysis, SQL, Excel, Python, and data visualization. The educational background in Data Science with relevant coursework and an internship experience at Legal Data Solutions align well with the job requirements. Additionally, the candidate's location in San Francisco, CA, matches the job location, which is a plus.",
+    "recommendations": [
+      "Include any specific achievements or outcomes from the internship to strengthen the experience section.",
+      "Consider adding a LinkedIn profile to provide more professional context.",
+      "Highlight any specific projects or case studies from coursework that relate to legal technology or data analysis."
+    ],
+    "red_flags": []
+  }
+}

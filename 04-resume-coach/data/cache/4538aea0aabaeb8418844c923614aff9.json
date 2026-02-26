@@ -1,0 +1,22 @@
+{
+  "cache_key": "4538aea0aabaeb8418844c923614aff9",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:17:38.518166+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.7,
+    "fit_assessment": "John Doe's resume presents a solid background in financial analysis, with relevant experience and skills that align with the Senior Financial Analyst position at FinTech Innovations Inc. He has experience in financial modeling, variance analysis, budgeting, and SQL, which are crucial for the role. However, his proficiency in Power BI is at a beginner level, which may be a concern since data visualization is an important requirement. Additionally, while he meets the educational requirement, he does not have an MBA, which is preferred. His experience level is slightly below the 7 years required, but his relevant experience in financial analysis roles could compensate for this.",
+    "recommendations": [
+      "Enhance skills in Power BI and consider gaining proficiency in Tableau to strengthen data visualization capabilities.",
+      "Consider pursuing an MBA to align with the preferred educational qualifications.",
+      "Highlight any leadership or senior-level responsibilities undertaken in previous roles to demonstrate readiness for a senior position."
+    ],
+    "red_flags": [
+      "Beginner proficiency in Power BI, which is a required skill for the job.",
+      "Total years of experience (approximately 6.5 years) is slightly below the 7 years required for the senior position."
+    ]
+  }
+}

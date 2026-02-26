@@ -1,0 +1,19 @@
+{
+  "cache_key": "f0af9fdef4596ec1ea3de455d11cb0fe",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:23:15.122882+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.9,
+    "fit_assessment": "Jordan Smith's resume is a strong match for the Legal Technology Data Analyst position at LexTech Innovations. The candidate possesses a relevant educational background with a Bachelor of Science in Data Science and coursework in Legal Informatics, which aligns well with the legal technology focus of the role. The internship experience at Data Insights Inc. demonstrates practical data analysis skills using SQL and Excel, both of which are required for the job. Additionally, the resume highlights skills in Python and data visualization, further aligning with the job requirements. The candidate's location in San Francisco, CA, matches the job location, and the entry-level experience is appropriate for the position.",
+    "recommendations": [
+      "Include a summary section to provide a brief overview of career goals and how they align with the job.",
+      "Highlight any specific projects or achievements during the internship that demonstrate impact or success.",
+      "Consider mentioning any familiarity with regulatory compliance or document management if applicable."
+    ],
+    "red_flags": []
+  }
+}

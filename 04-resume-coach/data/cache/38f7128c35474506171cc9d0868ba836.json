@@ -1,0 +1,19 @@
+{
+  "cache_key": "38f7128c35474506171cc9d0868ba836",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:23:53.060658+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.9,
+    "fit_assessment": "John Doe's resume aligns very well with the job description for the Lead Corporate Counsel position at Global Legal Solutions Inc. He possesses the required Juris Doctor degree and has over 8 years of relevant experience as a Senior Corporate Counsel. His experience includes strategic legal advice, compliance management, contract negotiation, and litigation management, which are all key requirements for the role. Additionally, his skills in mergers and acquisitions, corporate governance, and risk assessment match the job's needs. While he lacks explicit mention of preferred skills like insurance law, his background in data privacy and antitrust law adds value.",
+    "recommendations": [
+      "Include specific achievements or notable cases handled to strengthen the resume.",
+      "Mention any leadership roles or initiatives that demonstrate strong leadership skills.",
+      "Consider adding a professional summary to provide a quick overview of qualifications and career goals."
+    ],
+    "red_flags": []
+  }
+}

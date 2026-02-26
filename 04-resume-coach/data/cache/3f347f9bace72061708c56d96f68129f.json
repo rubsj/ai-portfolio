@@ -1,0 +1,18 @@
+{
+  "cache_key": "3f347f9bace72061708c56d96f68129f",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:30:19.965067+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.9,
+    "fit_assessment": "John Smith's resume is a strong match for the Senior Financial Analyst position at FinTech Innovations Inc. He meets the educational requirements with a Bachelor's degree in Finance and an MBA. His experience as a Senior Financial Analyst at ABC Financial Services aligns well with the job description, particularly in financial modeling, Excel VBA, variance analysis, budgeting, and data visualization using Power BI. His skills in SQL and Tableau, although not advanced, are present and relevant. The resume demonstrates a solid track record of relevant experience and skills, making him a suitable candidate for the role.",
+    "recommendations": [
+      "Highlight any specific experience with cash flow management, as it is a preferred skill in the job description.",
+      "Provide more details on achievements at XYZ Consulting Group to strengthen the resume further."
+    ],
+    "red_flags": []
+  }
+}

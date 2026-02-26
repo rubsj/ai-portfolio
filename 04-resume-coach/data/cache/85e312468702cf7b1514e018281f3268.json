@@ -1,0 +1,21 @@
+{
+  "cache_key": "85e312468702cf7b1514e018281f3268",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:19:57.146536+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The resume claims proficiency in skills such as Photoshop, Illustrator, and InDesign, which are unrelated to the required skills for a Manufacturing Engineer position such as Lean Manufacturing, Six Sigma, and AutoCAD. Additionally, the educational background in Fine Arts does not align with the required engineering degree.",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.0,
+    "fit_assessment": "The resume is completely unsuitable for the Manufacturing Engineer position. The candidate's background in the arts and design industry does not match the technical and engineering requirements of the job. There is a lack of relevant experience, skills, and educational qualifications needed for the role.",
+    "recommendations": [
+      "Jordan should consider roles that align with their background in art and design, such as positions in creative direction or graphic design.",
+      "If interested in transitioning to manufacturing engineering, Jordan should pursue relevant education and certifications in engineering and gain experience in the field."
+    ],
+    "red_flags": [
+      "Mismatch between educational background and job requirements.",
+      "Lack of relevant experience in manufacturing or engineering roles."
+    ]
+  }
+}

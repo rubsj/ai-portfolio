@@ -1,0 +1,23 @@
+{
+  "cache_key": "accc000343ae56742916819950632071",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:24:04.362224+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.7,
+    "fit_assessment": "John Doe's resume shows relevant experience and skills for the Lead Corporate Counsel position, but there are gaps in the specific requirements. He has a solid legal background with a Juris Doctor degree and experience in corporate governance, compliance, and contract negotiation. However, the resume lacks direct experience in some key areas such as Mergers and Acquisitions, Labor Law, and Risk Assessment at a lead level. Additionally, the skills listed are at an intermediate level, which may not fully meet the 'Lead' experience level required by the job description.",
+    "recommendations": [
+      "Highlight any leadership roles or experiences that demonstrate strong leadership skills.",
+      "Include any experience or exposure to Mergers and Acquisitions, Labor Law, and Risk Assessment at a higher level.",
+      "Emphasize any strategic advice provided to business units or involvement in complex legal agreements.",
+      "Consider adding a summary section to highlight key qualifications and career achievements."
+    ],
+    "red_flags": [
+      "The resume does not mention experience with Mergers and Acquisitions, which is a required skill for the job.",
+      "The skills are listed as intermediate, which may not align with the 'Lead' level experience required."
+    ]
+  }
+}

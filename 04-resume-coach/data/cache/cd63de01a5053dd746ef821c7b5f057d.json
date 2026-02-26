@@ -1,0 +1,22 @@
+{
+  "cache_key": "cd63de01a5053dd746ef821c7b5f057d",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:21:56.565913+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The candidate claims to seek an operational role but has no relevant experience in operations, supply chain management, or retail, which are critical for the COO position.",
+    "has_awkward_language": true,
+    "awkward_language_details": "The summary states 'seeking to leverage artistic skills in a new operational role,' which is awkward and does not align with the requirements of a COO position.",
+    "overall_quality_score": 0.1,
+    "fit_assessment": "The resume is not a fit for the COO position at Retail Innovations Inc. The candidate's background is in arts and design, with no experience in retail operations, supply chain management, or strategic growth, which are essential for the role.",
+    "recommendations": [
+      "Gain experience in retail operations and supply chain management to align with the COO role requirements.",
+      "Consider pursuing an MBA to strengthen business acumen and strategic management skills.",
+      "Tailor the resume to highlight any relevant experience or skills that align with operational strategy and leadership."
+    ],
+    "red_flags": [
+      "Lack of relevant experience in retail or operations.",
+      "Educational background in Fine Arts, which does not align with the business-focused requirements of the COO role."
+    ]
+  }
+}

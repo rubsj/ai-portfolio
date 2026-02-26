@@ -1,0 +1,19 @@
+{
+  "cache_key": "9b856ca90a6b326e7177c5422405d858",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:24:59.567277+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.8,
+    "fit_assessment": "Alex Johnson's resume aligns well with the Senior Marketing Manager position at Innovate Marketing Solutions. Alex has relevant experience as a Marketing Manager, leading a team and developing marketing strategies, which matches the job's requirements. The skills listed, such as SEO, Google Analytics, Content Marketing, and Email Marketing, are directly relevant to the job description. However, proficiency in PPC Campaigns and Marketing Automation is at a beginner level, which might be a slight gap for a senior role. Additionally, while Alex has some experience with A/B Testing and Lead Generation, these are preferred skills that could be further developed.",
+    "recommendations": [
+      "Enhance proficiency in PPC Campaigns and Marketing Automation to strengthen fit for the senior role.",
+      "Highlight any specific achievements or quantifiable results from past roles to bolster the resume.",
+      "Consider adding more details about budget management experience, as it is a preferred skill in the job description."
+    ],
+    "red_flags": []
+  }
+}

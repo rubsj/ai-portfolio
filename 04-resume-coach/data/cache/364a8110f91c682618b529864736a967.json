@@ -1,0 +1,21 @@
+{
+  "cache_key": "364a8110f91c682618b529864736a967",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:21:17.607376+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.8,
+    "fit_assessment": "Jamie Taylor's resume is a strong match for the Senior Retail Manager position at Retail Innovations Inc. Jamie has relevant experience as a Retail Manager and Assistant Retail Manager, which aligns well with the job's requirements for managing operations, sales, and staff training. The skills listed, such as Inventory Management, Sales Forecasting, and Customer Relationship Management, match the required skills for the job. The education requirement is also met with a Bachelor's Degree in Business Administration. However, Jamie's experience level is slightly below the preferred 7 years, and proficiency in some preferred skills like E-commerce Platforms and Vendor Relations is at a beginner level.",
+    "recommendations": [
+      "Highlight any specific achievements or metrics from previous roles to demonstrate impact and success.",
+      "Consider gaining more experience or training in E-commerce Platforms and Vendor Relations to strengthen the application.",
+      "Include any leadership or team-building experiences to emphasize the ability to foster a high-performing team culture."
+    ],
+    "red_flags": [
+      "Experience level is slightly below the preferred 7 years for a senior role."
+    ]
+  }
+}

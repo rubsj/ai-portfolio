@@ -1,0 +1,20 @@
+{
+  "cache_key": "355b36f3e0e20e8d375cfb408eb3c7eb",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:24:02.944622+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The resume claims 8 years of experience in graphic design, which is unrelated to the legal field. The candidate's education and work experience do not align with the requirements for a Lead Corporate Counsel position.",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.0,
+    "fit_assessment": "The resume is completely unsuitable for the Lead Corporate Counsel position. The candidate's background in graphic design does not meet any of the legal requirements or skills listed in the job description.",
+    "recommendations": [
+      "The candidate should pursue opportunities in graphic design, which aligns with their experience and skills.",
+      "If interested in transitioning to a legal career, the candidate should consider obtaining a Juris Doctor degree and gaining relevant legal experience."
+    ],
+    "red_flags": [
+      "No legal education or experience is present in the resume, which is essential for the Lead Corporate Counsel role."
+    ]
+  }
+}

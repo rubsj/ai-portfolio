@@ -1,0 +1,23 @@
+{
+  "cache_key": "1c6be92dfb8ccbaaf85cfff1b56bfd88",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:35:03.208658+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The resume does not demonstrate any experience in program management, federal regulations, budget management, or stakeholder engagement, which are critical for the Lead Program Manager role. The candidate's background is in graphic design, which is unrelated to the job description.",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.1,
+    "fit_assessment": "The resume is largely unsuitable for the Lead Program Manager position at the Federal Development Agency. The candidate's experience and skills are focused on graphic design, which does not align with the requirements of program management, federal regulations, or budget oversight needed for this role.",
+    "recommendations": [
+      "Gain experience in program management and federal regulations.",
+      "Pursue education or certifications related to public administration or business management.",
+      "Develop skills in budget management and stakeholder engagement.",
+      "Consider entry-level positions in government or project management to build relevant experience."
+    ],
+    "red_flags": [
+      "Lack of relevant experience in program management or government settings.",
+      "Educational background in fine arts, which is unrelated to the job requirements."
+    ]
+  }
+}

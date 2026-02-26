@@ -1,0 +1,19 @@
+{
+  "cache_key": "3cf1168961653f097679245502e71a1b",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:26:00.069916+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.8,
+    "fit_assessment": "Alex Johnson's resume aligns well with the job description for a Mid-level Policy Analyst. The candidate has a relevant educational background and three years of experience as a Junior Policy Analyst, which meets the experience requirement. The skills listed, such as Data Analysis, Statistical Software, and Report Writing, match the required skills for the position. However, the proficiency in Stakeholder Engagement and Project Management is at a beginner level, which could be a minor gap.",
+    "recommendations": [
+      "Highlight any specific achievements or projects completed at Consulting Firm Inc. to strengthen the experience section.",
+      "Consider enhancing the proficiency level in Stakeholder Engagement and Project Management to better match the preferred skills.",
+      "Add a professional summary to provide a quick overview of qualifications and career goals."
+    ],
+    "red_flags": []
+  }
+}

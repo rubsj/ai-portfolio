@@ -1,0 +1,18 @@
+{
+  "cache_key": "8bea8693594e44d6c2e5d93cf0becf3e",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:34:51.927783+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.9,
+    "fit_assessment": "Jordan A. Smith's resume is highly suitable for the Senior Policy Analyst position at the Department of Government Affairs. The candidate possesses the required educational background with a Master's degree in Public Policy and relevant coursework. With over 7 years of experience in policy analysis, legislative research, and stakeholder engagement, the candidate meets the experience requirements. The resume demonstrates expertise in key skills such as policy analysis, report writing, and public speaking, which align well with the job description. Additionally, the candidate's location in Washington, D.C. is advantageous for the position.",
+    "recommendations": [
+      "Include specific achievements or outcomes in the current role to strengthen the impact of the responsibilities listed.",
+      "Add a professional summary to provide a quick overview of qualifications and career goals."
+    ],
+    "red_flags": []
+  }
+}

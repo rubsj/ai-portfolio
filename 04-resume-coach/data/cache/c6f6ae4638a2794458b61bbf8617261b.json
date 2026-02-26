@@ -1,0 +1,24 @@
+{
+  "cache_key": "c6f6ae4638a2794458b61bbf8617261b",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:19:10.840534+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The resume claims skills in project management and data analysis, but these are at an intermediate and beginner level, respectively, which does not align with the 'Lead' experience level required for the job. Additionally, there is no experience in curriculum design, assessment development, or educational standards, which are critical for the role.",
+    "has_awkward_language": true,
+    "awkward_language_details": "The summary uses generic phrases like 'seeking to leverage skills in a new domain,' which does not specifically address the transition to education or curriculum development.",
+    "overall_quality_score": 0.2,
+    "fit_assessment": "The resume does not match the job description well. The candidate lacks the required education in a related field, relevant experience in curriculum development, and proficiency in key skills such as educational standards and instructional strategies.",
+    "recommendations": [
+      "Gain experience in curriculum development and educational standards.",
+      "Pursue a Master's Degree in Education or a related field.",
+      "Develop skills in assessment development and instructional strategies.",
+      "Tailor the resume to highlight any relevant experience or transferable skills related to education."
+    ],
+    "red_flags": [
+      "Lack of relevant education and experience in curriculum development.",
+      "Skills listed do not meet the proficiency level required for a lead position.",
+      "No mention of collaboration with educators or stakeholders, which is crucial for the role."
+    ]
+  }
+}

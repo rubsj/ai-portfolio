@@ -1,0 +1,19 @@
+{
+  "cache_key": "fabd01f6e4cd345d5407930605379a27",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:18:38.838115+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.8,
+    "fit_assessment": "Jordan Smith's resume is a strong fit for the Curriculum Development Specialist position at Innovative Learning Solutions. The candidate has relevant educational background with a Bachelor's degree in Education and coursework in Curriculum Development and Instructional Design. Their experience as a Curriculum Designer and Instructional Coordinator aligns well with the job requirements, particularly in areas like curriculum design, assessment development, and use of learning management systems. While they have intermediate proficiency in most required skills, their beginner level in project management and collaboration tools suggests room for growth in these areas. The resume lacks mention of preferred skills such as eLearning Development and Graphic Design, which could enhance the fit.",
+    "recommendations": [
+      "Highlight any experience or coursework related to eLearning Development or Graphic Design, if applicable.",
+      "Consider gaining additional experience or training in project management and collaboration tools to strengthen these areas.",
+      "Include any specific achievements or projects that demonstrate impact in previous roles."
+    ],
+    "red_flags": []
+  }
+}

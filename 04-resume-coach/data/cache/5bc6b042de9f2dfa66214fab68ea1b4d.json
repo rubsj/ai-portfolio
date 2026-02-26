@@ -1,0 +1,19 @@
+{
+  "cache_key": "5bc6b042de9f2dfa66214fab68ea1b4d",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:32:38.002100+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.9,
+    "fit_assessment": "Jordan Smith's resume is highly suitable for the Lead Retail Operations Manager position at Retail Innovations Inc. The candidate has relevant experience as a Senior Retail Operations Manager, demonstrating a proven track record in managing retail teams, implementing operational strategies, and driving sales performance. The skills listed, such as Inventory Management, Sales Forecasting, and Team Leadership, align well with the job requirements. Additionally, the educational background with a Bachelor's degree in Business Administration meets the educational requirement.",
+    "recommendations": [
+      "Include a professional summary to provide a quick overview of qualifications and career goals.",
+      "Consider adding a LinkedIn profile link to enhance professional visibility.",
+      "Highlight any specific achievements related to optimizing inventory management and enhancing store efficiency, as these are key responsibilities in the job description."
+    ],
+    "red_flags": []
+  }
+}

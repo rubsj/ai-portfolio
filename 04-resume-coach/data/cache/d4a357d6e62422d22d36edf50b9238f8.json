@@ -1,0 +1,22 @@
+{
+  "cache_key": "d4a357d6e62422d22d36edf50b9238f8",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:31:45.759189+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The resume claims proficiency in event planning and production management, but there is no evidence of experience or skills in manufacturing, lean principles, Six Sigma, CAD software, or any other relevant technical skills required for the Lead Manufacturing Engineer role.",
+    "has_awkward_language": true,
+    "awkward_language_details": "The summary uses generic phrases like 'dynamic and creative professional' and 'proven ability to lead teams,' which are not specific to the manufacturing industry or the job description.",
+    "overall_quality_score": 0.1,
+    "fit_assessment": "The resume is not a fit for the Lead Manufacturing Engineer position. The candidate's background is in theater arts and event planning, with no relevant experience or skills in manufacturing engineering, process optimization, or quality assurance.",
+    "recommendations": [
+      "Gain relevant experience in manufacturing or engineering roles to build a foundation for a career transition.",
+      "Consider obtaining certifications in Lean Manufacturing or Six Sigma to align with the job requirements.",
+      "Pursue additional education or training in engineering or a related field to meet the educational requirements of the job."
+    ],
+    "red_flags": [
+      "Lack of relevant technical skills and experience in manufacturing processes.",
+      "No educational background in engineering or related fields."
+    ]
+  }
+}

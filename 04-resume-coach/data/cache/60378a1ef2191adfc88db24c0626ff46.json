@@ -1,0 +1,20 @@
+{
+  "cache_key": "60378a1ef2191adfc88db24c0626ff46",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:25:40.904882+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.9,
+    "fit_assessment": "Jordan Smith's resume is well-suited for the Data-Driven Public Policy Analyst position at InnovateGov Solutions. The candidate possesses the required educational background with a Bachelor's degree in Public Policy and relevant coursework in data analysis and statistical methods. The internship experience at Data Insights Group aligns well with the job's responsibilities, demonstrating practical experience in data analysis, visualization, and collaboration with cross-functional teams. The skills listed, such as Data Analysis, Excel, and Tableau, match the job requirements, although proficiency in SQL and GIS Software could be improved. Overall, Jordan is a strong candidate for this entry-level role.",
+    "recommendations": [
+      "Enhance SQL skills to at least an intermediate level to better meet job requirements.",
+      "Gain experience with GIS Software, as it is a required skill for the position.",
+      "Consider obtaining a LinkedIn profile to increase professional visibility.",
+      "Include any specific achievements or projects from the internship to strengthen the experience section."
+    ],
+    "red_flags": []
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "cache_key": "f8d11ebb2ecf455469b648705d9c8f3f",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:31:01.197927+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 1.0,
+    "fit_assessment": "Jane Doe's resume is an excellent match for the Curriculum Development Specialist position at Innovative Learning Solutions. She has direct experience in the same role at the same company, which is a strong indicator of her fit for the job. Her educational background in Education, with coursework in Curriculum Development and Instructional Design, aligns well with the job requirements. Additionally, her skills in Curriculum Design, Assessment Development, and Educational Technology are highly relevant to the position. Her achievements, such as increasing student engagement and leading successful projects, further demonstrate her capability in this role.",
+    "recommendations": [
+      "Highlight specific examples of how she has used data analysis to improve curriculum outcomes.",
+      "Include any certifications related to educational technology or curriculum development, if applicable."
+    ],
+    "red_flags": []
+  }
+}

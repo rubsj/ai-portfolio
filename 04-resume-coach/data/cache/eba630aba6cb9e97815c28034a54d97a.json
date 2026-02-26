@@ -1,0 +1,18 @@
+{
+  "cache_key": "eba630aba6cb9e97815c28034a54d97a",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:25:51.387778+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 1.0,
+    "fit_assessment": "Jordan Smith's resume is a perfect match for the Mid-level Policy Analyst position. The candidate has a Bachelor's degree in Political Science, which aligns with the educational requirement. With over four years of experience as a Policy Analyst at the Department of Justice, Jordan has relevant experience in policy research, data analysis, and stakeholder engagement. The skills listed, including data analysis, policy research, statistical software, report writing, and stakeholder engagement, match the required skills in the job description. Additionally, the candidate's achievements and responsibilities demonstrate the ability to conduct research, analyze data, and collaborate with stakeholders, which are key components of the job description.",
+    "recommendations": [
+      "Include a LinkedIn profile if available to provide additional professional context.",
+      "Consider adding more specific examples of statistical software used to further strengthen the resume."
+    ],
+    "red_flags": []
+  }
+}

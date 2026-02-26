@@ -1,0 +1,24 @@
+{
+  "cache_key": "51e1a03c10b494c19487371a01938680",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:22:22.682342+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The candidate claims beginner proficiency in data analysis and Power BI, which are not sufficient for the mid-level Energy Analyst position requiring strong analytical skills and preferred experience with Power BI. Additionally, the candidate's education and work experience do not align with the energy sector, lacking specific energy modeling or renewable energy systems experience.",
+    "has_awkward_language": true,
+    "awkward_language_details": "The summary contains a vague statement: 'Motivated individual with a background in urban planning and event coordination seeking to transition into energy analysis.' This does not effectively communicate relevant skills or experiences for the Energy Analyst role.",
+    "overall_quality_score": 0.2,
+    "fit_assessment": "The resume is largely unsuitable for the Energy Analyst position. The candidate lacks the required education background in Environmental Science or Energy Management and relevant work experience in the energy sector. Skills listed are not at the required proficiency level, and there is no mention of key skills like SQL, energy modeling, or renewable energy systems.",
+    "recommendations": [
+      "Gain relevant experience in the energy sector, focusing on energy modeling and renewable energy systems.",
+      "Pursue further education or certifications in Environmental Science or Energy Management.",
+      "Improve proficiency in required technical skills such as SQL, Python, and statistical analysis.",
+      "Revise the resume to highlight any transferable skills or experiences more relevant to the energy industry."
+    ],
+    "red_flags": [
+      "Lack of relevant education in Environmental Science or Energy Management.",
+      "Insufficient experience in energy-related roles or projects.",
+      "Skills listed do not meet the required proficiency level for a mid-level position."
+    ]
+  }
+}

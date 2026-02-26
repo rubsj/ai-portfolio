@@ -1,0 +1,22 @@
+{
+  "cache_key": "803fde93e3457530b630ee9161f62e3a",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:16:22.404173+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.8,
+    "fit_assessment": "Jordan Smith's resume aligns well with the job description for a Senior Healthcare Data Analyst at HealthTech Innovations. The candidate has a relevant educational background with a Bachelor's Degree in Data Science and has gained experience in healthcare data analysis through previous roles. The skills listed, such as SQL, Python, R, and Tableau, match the required skills for the position. However, there is a slight gap in experience with SAS and EPIC, which are also required. The candidate has 4 years of relevant experience, which is slightly less than the 5 years required, but the depth of experience in healthcare data analysis and data visualization is strong.",
+    "recommendations": [
+      "Gain more experience with SAS and EPIC to better meet the job requirements.",
+      "Highlight any specific achievements or projects that demonstrate impact in previous roles.",
+      "Consider obtaining a Master's degree or additional certifications to strengthen qualifications."
+    ],
+    "red_flags": [
+      "The candidate has only beginner proficiency in SAS, which is a required skill.",
+      "There is no mention of experience with EPIC, which is also required."
+    ]
+  }
+}

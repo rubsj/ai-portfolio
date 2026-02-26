@@ -1,0 +1,24 @@
+{
+  "cache_key": "50a484233ee1aa7d25b00bf6f1af011f",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:16:07.794731+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The resume claims proficiency in 'Basic SQL' and 'Data Visualization' at a beginner level, which is insufficient for the required skills of SQL and Data Visualization in the job description. Additionally, there is no mention of Python, R, Tableau, or ETL processes, which are required skills.",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.3,
+    "fit_assessment": "The resume does not align well with the job description. The candidate lacks the necessary experience in healthcare analytics and does not possess the required technical skills such as Python, R, Tableau, and ETL processes. The educational background in Business Administration does not match the preferred field of Data Science or Statistics.",
+    "recommendations": [
+      "Gain experience in healthcare analytics to better align with the job requirements.",
+      "Develop proficiency in required technical skills such as SQL, Python, R, Tableau, and ETL processes.",
+      "Consider obtaining a certification or additional coursework in Data Science or Statistics to enhance educational qualifications.",
+      "Highlight any relevant projects or experiences that demonstrate analytical skills and data handling capabilities."
+    ],
+    "red_flags": [
+      "Lack of experience in healthcare analytics.",
+      "Missing key technical skills required for the position.",
+      "Educational background does not match the preferred field."
+    ]
+  }
+}

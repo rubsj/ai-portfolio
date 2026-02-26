@@ -1,0 +1,22 @@
+{
+  "cache_key": "4f1d46c6336a211491c81235d06742f6",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:20:19.629368+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": true,
+    "awkward_language_details": "The resume lacks a professional summary which could provide a concise overview of the candidate's qualifications and career goals. Additionally, the skills section uses vague proficiency levels like 'Intermediate' and 'Beginner' without context, which can be seen as boilerplate.",
+    "overall_quality_score": 0.7,
+    "fit_assessment": "Jordan Smith's resume is a reasonably good match for the Senior Manufacturing Engineer position at Precision Manufacturing Inc. The candidate has relevant experience in manufacturing engineering, including process optimization, Lean Manufacturing, and CAD Software, which align with the job requirements. However, the resume lacks evidence of expertise in Six Sigma, TS16949, and some preferred skills like Additive Manufacturing and Automation Systems. The candidate's experience level is slightly below the required 7 years, but they have demonstrated significant achievements in their roles.",
+    "recommendations": [
+      "Include a professional summary to provide a quick overview of qualifications and career objectives.",
+      "Highlight any experience or training related to Six Sigma and TS16949 to better match the job requirements.",
+      "Expand on project management experience and any leadership roles to strengthen the senior-level fit.",
+      "Consider adding any relevant certifications or training in preferred skills such as Automation Systems or ERP Systems."
+    ],
+    "red_flags": [
+      "Lack of explicit experience with Six Sigma and TS16949, which are required skills for the job."
+    ]
+  }
+}

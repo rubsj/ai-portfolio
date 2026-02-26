@@ -1,0 +1,23 @@
+{
+  "cache_key": "43345dd38b76612ad2b81815a9751e93",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:23:36.098245+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The resume claims experience as a Legal Assistant but does not demonstrate any direct experience in corporate law, mergers and acquisitions, or corporate governance, which are required for the Mid-Level Corporate Attorney role.",
+    "has_awkward_language": true,
+    "awkward_language_details": "The summary states 'Seeking to transition into a corporate attorney role,' which is not appropriate for a mid-level attorney position that requires specific experience.",
+    "overall_quality_score": 0.2,
+    "fit_assessment": "The resume does not fit the job description well. The candidate lacks the required experience in corporate law, mergers and acquisitions, and corporate governance. The education does not include a Juris Doctor degree, which is mandatory for the role.",
+    "recommendations": [
+      "Gain relevant experience in corporate law, possibly through internships or entry-level positions in a corporate legal department.",
+      "Pursue a Juris Doctor degree from an accredited law school to meet the educational requirements.",
+      "Develop skills in mergers and acquisitions, compliance, and corporate governance through coursework or certifications."
+    ],
+    "red_flags": [
+      "Lack of Juris Doctor degree.",
+      "No direct experience in corporate law or related fields.",
+      "Current role as Legal Assistant does not align with the responsibilities of a Mid-Level Corporate Attorney."
+    ]
+  }
+}

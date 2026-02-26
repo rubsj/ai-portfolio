@@ -1,0 +1,23 @@
+{
+  "cache_key": "e34c4612695945315fdc4bccdd2cc261",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:26:44.104792+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.7,
+    "fit_assessment": "John Doe's resume demonstrates relevant experience in operations management within government settings, aligning with the COO role's requirements. He has held positions that involve strategic planning, change management, and stakeholder engagement, which are crucial for the COO position. However, his experience level is slightly below the 15 years required, and his proficiency in some key skills, such as Budget Management and Data Analysis, is not at the executive level expected for a COO.",
+    "recommendations": [
+      "Highlight any leadership roles or initiatives led at the State Department to demonstrate executive-level experience.",
+      "Emphasize any achievements or quantifiable results from past roles to strengthen the impact of the responsibilities listed.",
+      "Consider adding a professional summary to provide a concise overview of qualifications and career goals.",
+      "Enhance proficiency levels in key areas such as Budget Management and Data Analysis to meet the expectations for an executive role."
+    ],
+    "red_flags": [
+      "Less than 15 years of experience, which is below the requirement for the COO position.",
+      "Proficiency levels in key skills are not at the executive level expected for a COO."
+    ]
+  }
+}

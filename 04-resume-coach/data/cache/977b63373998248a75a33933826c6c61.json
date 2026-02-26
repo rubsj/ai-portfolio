@@ -1,0 +1,24 @@
+{
+  "cache_key": "977b63373998248a75a33933826c6c61",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:25:36.535199+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The resume claims a proficiency in SEO and Email Marketing at an intermediate level with only 2 years of experience, which is unlikely to meet the executive-level expertise required for a CMO position. Additionally, the candidate's experience is limited to junior and coordinator roles, which do not align with the executive experience required.",
+    "has_awkward_language": true,
+    "awkward_language_details": "The summary uses generic phrases like 'detail-oriented marketing professional' and 'experience in supporting marketing campaigns,' which do not convey the strategic leadership or high-level impact expected of a CMO candidate.",
+    "overall_quality_score": 0.1,
+    "fit_assessment": "The candidate's experience and education do not align with the requirements for a Chief Marketing Officer position. The resume lacks evidence of executive-level experience, strategic leadership, and the advanced skills necessary for the role.",
+    "recommendations": [
+      "Gain significant experience in senior marketing roles to develop strategic leadership skills.",
+      "Pursue a Master's degree in Marketing or Business Administration to meet educational requirements.",
+      "Develop expertise in key areas such as P&L management, brand strategy, and data analytics.",
+      "Consider obtaining certifications in advanced marketing techniques and tools."
+    ],
+    "red_flags": [
+      "Lack of executive-level experience.",
+      "No Master's degree as required by the job description.",
+      "Limited proficiency in required skills such as data analytics and market research."
+    ]
+  }
+}

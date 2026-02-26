@@ -1,0 +1,22 @@
+{
+  "cache_key": "510a5bb78fa3a0de3f466f70d8b5e53c",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:15:37.277360+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The candidate claims to have 6 years of experience with Java, but the timeline suggests only 8 years of total experience since graduation, which is plausible. However, the proficiency level for Java is marked as 'Intermediate,' which is not consistent with the expected level for a lead role. Additionally, the candidate has only 2 years of experience with microservices, which may not be sufficient for a lead position requiring robust experience in this area.",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.7,
+    "fit_assessment": "The candidate has a solid foundation in Java, Spring Boot, and Agile methodologies, which are critical for the role. However, there is a lack of experience in Kubernetes, MySQL, and AWS, which are important for the job. The candidate's leadership experience is relatively recent, with only 2 years as a Senior Software Engineer leading a team, which might not fully meet the 'Lead' experience level expected. The proficiency levels for key skills like Java and Spring Boot are marked as 'Intermediate,' which might not align with the expectations for a lead role.",
+    "recommendations": [
+      "Gain more experience with Kubernetes, MySQL, and AWS to align better with the job requirements.",
+      "Consider advancing proficiency in Java and Spring Boot to a lead level.",
+      "Highlight any leadership achievements or specific projects led to strengthen the leadership aspect of the resume."
+    ],
+    "red_flags": [
+      "Intermediate proficiency in Java and Spring Boot for a lead position.",
+      "Limited experience with microservices and lack of Kubernetes experience."
+    ]
+  }
+}

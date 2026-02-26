@@ -1,0 +1,22 @@
+{
+  "cache_key": "829c45a515f65655e0575df819ff9242",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:23:46.952867+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.7,
+    "fit_assessment": "Johnathan Smith's resume presents a strong foundation for the Senior Corporate Counsel position, particularly in corporate governance, contract negotiation, and regulatory compliance. His JD from a prestigious law school and relevant experience as Corporate Counsel align well with the job's requirements. However, there are some gaps in experience with mergers and acquisitions, risk management, and litigation management, which are crucial for the role.",
+    "recommendations": [
+      "Highlight any specific achievements or successful projects in previous roles to demonstrate impact.",
+      "Include any experience or exposure to mergers and acquisitions beyond assisting senior attorneys, if applicable.",
+      "Expand on experience with risk management and litigation management, as these are key requirements for the role.",
+      "Consider adding a professional summary to provide a concise overview of qualifications and career objectives."
+    ],
+    "red_flags": [
+      "Lack of explicit experience in litigation management and risk management, which are required for the position."
+    ]
+  }
+}

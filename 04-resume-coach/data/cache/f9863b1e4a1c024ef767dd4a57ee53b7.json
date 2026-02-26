@@ -1,0 +1,24 @@
+{
+  "cache_key": "f9863b1e4a1c024ef767dd4a57ee53b7",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:26:37.145781+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The candidate claims proficiency in Stakeholder Engagement and Budget Management, but only at a beginner level with limited years of experience, which is insufficient for a Lead Program Manager role. Additionally, the candidate's experience as a Junior Project Coordinator and Marketing Assistant does not align with the required 8 years of experience in program management within government settings.",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.2,
+    "fit_assessment": "The resume is not a good fit for the Lead Program Manager position. The candidate lacks the required 8 years of experience, particularly in government settings, and does not demonstrate expertise in key areas such as federal regulations, budget management, and performance metrics. The roles listed are more junior and do not align with the leadership and strategic planning responsibilities of the job description.",
+    "recommendations": [
+      "Gain experience in government program management to better align with the job requirements.",
+      "Develop skills in federal regulations, budget management, and performance metrics to meet the job's core requirements.",
+      "Consider pursuing a Master's degree in Public Administration or a related field to strengthen educational qualifications.",
+      "Seek roles that offer opportunities to lead cross-functional teams and manage large-scale projects to build relevant experience."
+    ],
+    "red_flags": [
+      "Insufficient years of experience in program management.",
+      "Lack of experience in government settings.",
+      "Limited proficiency in key skills such as Stakeholder Engagement and Budget Management."
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "cache_key": "a86ccc59adb8b08112963de18b6324c2",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:24:41.408141+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The resume claims skills and experience that do not align with the job description requirements, such as Adobe Creative Suite, Google Analytics, HTML, SEO, and user experience design, which are not mentioned in the candidate's experience or skills sections.",
+    "has_awkward_language": true,
+    "awkward_language_details": "The summary uses generic language like 'creative approach to problem-solving' and 'executing successful projects' without specific examples or metrics. This can be seen as boilerplate language.",
+    "overall_quality_score": 0.2,
+    "fit_assessment": "The resume does not match well with the job description for a Digital Experience Curator. The candidate lacks relevant experience in digital marketing, user experience design, and content curation. The skills listed do not align with the required skills for the position.",
+    "recommendations": [
+      "Highlight any relevant digital marketing or design experience, even if it's from personal projects or coursework.",
+      "Include specific skills related to the job description, such as Adobe Creative Suite or Google Analytics, if applicable.",
+      "Provide examples of creative storytelling or design work, possibly in a portfolio.",
+      "Consider additional training or certification in digital marketing or user experience design to enhance fit for the role."
+    ],
+    "red_flags": [
+      "Lack of relevant experience in digital marketing or user experience design.",
+      "No mention of required technical skills such as Adobe Creative Suite or Google Analytics."
+    ]
+  }
+}

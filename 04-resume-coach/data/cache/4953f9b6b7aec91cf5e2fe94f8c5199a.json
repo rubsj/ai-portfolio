@@ -1,0 +1,18 @@
+{
+  "cache_key": "4953f9b6b7aec91cf5e2fe94f8c5199a",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:33:49.474289+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 1.0,
+    "fit_assessment": "Jordan Smith's resume is an excellent match for the Chief Legal Officer position at Global Law Partners. The candidate has extensive experience in corporate governance, compliance, and litigation management, which are key requirements for the role. Additionally, Jordan has already held the position of Chief Legal Officer at the same company, demonstrating direct experience with the organization's legal strategies and objectives. The skills listed, such as mergers and acquisitions, risk management, and negotiation skills, align perfectly with the job description. The educational background with a JD from Columbia Law School further supports the qualifications for this executive-level position.",
+    "recommendations": [
+      "Highlight specific achievements as Chief Legal Officer at Global Law Partners to further demonstrate impact and success in the role.",
+      "Include any additional certifications or memberships in legal associations that may enhance credibility."
+    ],
+    "red_flags": []
+  }
+}

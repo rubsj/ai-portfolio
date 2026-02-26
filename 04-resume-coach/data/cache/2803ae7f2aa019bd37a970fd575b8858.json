@@ -1,0 +1,23 @@
+{
+  "cache_key": "2803ae7f2aa019bd37a970fd575b8858",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:17:26.229701+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.7,
+    "fit_assessment": "John Doe's resume is a partial fit for the Financial Analyst position at FinTech Innovations. He has relevant educational background and experience as a Junior Financial Analyst, which aligns with the job's requirements. However, his proficiency in some key skills like SQL and Power BI is at a beginner level, which might not meet the expectations for a mid-level position. Additionally, he lacks experience in forecasting and financial reporting, which are crucial for the role.",
+    "recommendations": [
+      "Improve proficiency in SQL and Power BI to at least an intermediate level.",
+      "Gain experience in forecasting and financial reporting to align with the job requirements.",
+      "Consider obtaining certifications or additional training in financial analysis tools like Tableau and QuickBooks.",
+      "Highlight any experience with cross-functional team collaboration to match the job's emphasis on teamwork."
+    ],
+    "red_flags": [
+      "Beginner level in SQL and Power BI, which are required skills.",
+      "Lack of explicit experience in forecasting and financial reporting."
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "cache_key": "9e658eb1599331763c03bc3e6b206e58",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:17:12.409470+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.8,
+    "fit_assessment": "Alex Johnson's resume is a strong match for the FinTech Data Analyst - Behavioral Insights position. The candidate has relevant educational background in Psychology, which aligns with the job's focus on consumer behavior. The experience as a Data Intern at Data Insights Agency provides practical exposure to SQL, Python, statistical analysis, and A/B testing, which are key requirements for the role. While the resume does not mention machine learning or preferred skills like R, Tableau, or SAS, the foundational skills and experience make Alex a suitable candidate for this entry-level position.",
+    "recommendations": [
+      "Include any exposure to machine learning, even if it's through coursework or projects, to strengthen the application.",
+      "Highlight any experience with data visualization tools like Tableau if applicable.",
+      "Consider adding a brief summary to the resume to provide a snapshot of career goals and relevant skills."
+    ],
+    "red_flags": []
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "cache_key": "c0b4d5185588efb9ff887dbf89abae32",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:21:46.530370+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.7,
+    "fit_assessment": "Jordan Smith has a strong background in retail operations, having held roles such as Director of Operations and Operations Manager, which align well with the COO position. The candidate possesses key required skills such as Supply Chain Management, Inventory Optimization, and Operational Strategy. However, there is a slight gap in experience with E-commerce Strategies and Omni-channel Retailing, which are preferred skills for the role. Additionally, the candidate has not explicitly mentioned experience with CRM Software, which could be relevant for the Customer Experience Design requirement.",
+    "recommendations": [
+      "Highlight any experience or projects related to E-commerce Strategies and Omni-channel Retailing.",
+      "Include any relevant achievements or metrics from previous roles to demonstrate impact.",
+      "Mention any experience with CRM Software to strengthen the fit for Customer Experience Design.",
+      "Consider adding a professional summary to provide a concise overview of qualifications and career goals."
+    ],
+    "red_flags": [
+      "The resume does not mention experience with CRM Software, which could be important for the role.",
+      "Limited experience with E-commerce Strategies and Omni-channel Retailing, which are preferred skills."
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "cache_key": "e99d930038710235678e5160dd187f43",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:25:52.941836+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The candidate claims proficiency in 'Data Analysis' with only 1 year of experience and a 'Beginner' level, which may not meet the expectations for a role requiring strong data analytics skills. Additionally, there is no mention of experience with statistical software, SQL, GIS Software, or data visualization tools, which are critical for the job.",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.3,
+    "fit_assessment": "John Doe's resume shows some relevant skills like Data Analysis and Excel, but lacks the required educational background in Public Policy or Data Science, and does not demonstrate experience with statistical software, SQL, GIS Software, or data visualization tools. His experience is primarily in marketing, which does not align well with the data-driven public policy analyst role.",
+    "recommendations": [
+      "Gain experience with statistical software and data visualization tools such as R, Tableau, and GIS Software.",
+      "Consider pursuing additional education or certifications in Public Policy or Data Science to better align with the job requirements.",
+      "Highlight any relevant coursework or projects that demonstrate skills in data analysis and public policy.",
+      "Include any volunteer or extracurricular activities related to public policy or data analysis to strengthen the application."
+    ],
+    "red_flags": [
+      "Lack of relevant educational background in Public Policy or Data Science.",
+      "No demonstrated experience with SQL, GIS Software, or data visualization tools."
+    ]
+  }
+}

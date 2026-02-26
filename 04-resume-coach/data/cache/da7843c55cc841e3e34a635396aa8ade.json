@@ -1,0 +1,19 @@
+{
+  "cache_key": "da7843c55cc841e3e34a635396aa8ade",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:21:06.624889+00:00",
+  "response": {
+    "has_hallucinations": false,
+    "hallucination_details": "",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.8,
+    "fit_assessment": "Alex Johnson's resume is a strong match for the Retail Operations Manager position at Retail Innovations Inc. The candidate has relevant experience as an Assistant Store Manager, where they managed daily operations, inventory, and sales forecasting, which aligns well with the job requirements. Additionally, Alex has a Bachelor's degree in Business Administration, meeting the educational requirement. While Alex has a beginner level in Team Leadership, they have intermediate proficiency in key areas such as Inventory Management, Sales Forecasting, and Customer Service, which are crucial for the role. The experience in a customer service role at an e-commerce startup adds value, particularly in CRM software, which is a preferred skill.",
+    "recommendations": [
+      "Highlight specific achievements or metrics in the Assistant Store Manager role to demonstrate impact.",
+      "Consider elaborating on leadership experiences or initiatives that demonstrate team management skills.",
+      "Include any relevant certifications or training in retail management or customer service."
+    ],
+    "red_flags": []
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "cache_key": "d215eda8ba2c8634d579f901beaadc0a",
+  "model": "gpt-4o",
+  "timestamp": "2026-02-26T04:23:38.382012+00:00",
+  "response": {
+    "has_hallucinations": true,
+    "hallucination_details": "The resume claims experience and skills in art and design, which are unrelated to the legal field. There are no qualifications or experience in corporate law, mergers and acquisitions, or any legal practice.",
+    "has_awkward_language": false,
+    "awkward_language_details": "",
+    "overall_quality_score": 0.0,
+    "fit_assessment": "The resume does not match the job description for a Mid-Level Corporate Attorney. The candidate has a background in art and design with no legal education or experience, which are essential for the role.",
+    "recommendations": [
+      "The candidate should pursue a Juris Doctor (JD) degree if interested in transitioning to a legal career.",
+      "Gain relevant legal experience through internships or entry-level positions in law firms.",
+      "Highlight any legal coursework or certifications if available.",
+      "Tailor the resume to include any transferable skills that could be relevant to a legal position, such as negotiation or compliance if applicable."
+    ],
+    "red_flags": [
+      "No legal education or experience is mentioned.",
+      "The skills listed are entirely unrelated to the requirements of the job description."
+    ]
+  }
+}
