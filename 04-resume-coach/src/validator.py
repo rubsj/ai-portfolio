@@ -4,6 +4,7 @@ import json
 import logging
 from collections import Counter
 from dataclasses import dataclass, field
+from datetime import datetime, timezone
 from pathlib import Path
 
 from pydantic import BaseModel
@@ -72,9 +73,24 @@ class ValidationTracker:
         }
 
     def save_stats(self, output_path: Path) -> None:
-        """Save validation stats to JSON file."""
+        """Save validation stats to JSON file.
+
+        Writes all internal keys plus the PRD-required aliases:
+          valid / invalid / field_errors / timestamp
+        WHY aliases: downstream consumers (analyzer, tests) expect the PRD schema;
+        keeping the original keys avoids breaking existing tests.
+        """
+        stats = self.get_stats()
+        # WHY: add PRD-schema aliases so downstream files match spec
+        output = {
+            **stats,
+            "valid": stats["success_count"],
+            "invalid": stats["failure_count"],
+            "field_errors": stats["errors_by_field"],
+            "timestamp": datetime.now(timezone.utc).isoformat(),
+        }
         output_path.parent.mkdir(parents=True, exist_ok=True)
-        output_path.write_text(json.dumps(self.get_stats(), indent=2))
+        output_path.write_text(json.dumps(output, indent=2))
         logger.info("Saved validation stats to %s", output_path)
 
     @staticmethod

@@ -8,6 +8,7 @@ from pathlib import Path
 from rich.console import Console
 
 from src.generator import _create_client, generate_all_jobs, generate_all_resumes
+from src.schemas import GeneratedJob, GeneratedResume
 from src.validator import ValidationTracker
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(name)s - %(message)s")
@@ -21,6 +22,50 @@ _DRY_RUN_INDUSTRIES = 2
 _DRY_RUN_JOBS_PER_INDUSTRY = 1
 
 
+def write_stats_from_generated_files(stats_path: Path | None = None) -> Path:
+    """
+    Derive validation stats from the existing generated JSONL files — no API calls.
+
+    WHY this function: saves_stats() is called inside main() which needs a live client.
+    --stats-only lets us regenerate the artifact after schema changes without re-running
+    the expensive (even if cached) generation loop.
+    """
+    generated_dir = _PROJECT_ROOT / "data" / "generated"
+    stats_path = stats_path or (_PROJECT_ROOT / "data" / "validated" / "validation_stats.json")
+
+    tracker = ValidationTracker()
+
+    # WHY max(key=stat().st_size): partial dry-run files share the same glob pattern but
+    # have fewer records. Selecting by file size picks the canonical full-run artifact.
+    jobs_candidates = list(generated_dir.glob("jobs_*.jsonl"))
+    resumes_candidates = list(generated_dir.glob("resumes_*.jsonl"))
+
+    if jobs_candidates:
+        jobs_file = max(jobs_candidates, key=lambda p: p.stat().st_size)
+        for line in jobs_file.read_text().splitlines():
+            line = line.strip()
+            if line:
+                gj = GeneratedJob.model_validate_json(line)
+                tracker.record_success("JobDescription", gj.trace_id)
+
+    if resumes_candidates:
+        resumes_file = max(resumes_candidates, key=lambda p: p.stat().st_size)
+        for line in resumes_file.read_text().splitlines():
+            line = line.strip()
+            if line:
+                gr = GeneratedResume.model_validate_json(line)
+                tracker.record_success("Resume", gr.trace_id)
+
+    tracker.save_stats(stats_path)
+
+    stats = tracker.get_stats()
+    console.print(f"  total={stats['total']}, valid={stats['success_count']}, "
+                  f"invalid={stats['failure_count']}, "
+                  f"success_rate={stats['success_rate']:.1%}")
+    console.print(f"  Written to [cyan]{stats_path}[/cyan]")
+    return stats_path
+
+
 def main() -> None:
     """
     End-to-end generation pipeline:
@@ -32,6 +77,15 @@ def main() -> None:
     Use --dry-run for quick validation: 2 jobs × 5 resumes = 10 pairs.
     """
     dry_run = "--dry-run" in sys.argv
+    stats_only = "--stats-only" in sys.argv
+
+    # WHY early exit: --stats-only reads existing JSONL files and rewrites the stats
+    # artifact without touching the API — useful after schema changes.
+    if stats_only:
+        console.print("[bold green]P4 Resume Coach — Stats-Only Mode[/bold green]")
+        console.print("[yellow]Reading existing generated files (no API calls)...[/yellow]")
+        write_stats_from_generated_files()
+        return
 
     console.print("[bold green]P4 Resume Coach — Generation Pipeline[/bold green]")
     if dry_run:
