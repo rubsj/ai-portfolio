@@ -103,7 +103,7 @@ class TestComputeTemplateAbTest:
         df = _make_df()
         result = compute_template_ab_test(df)
         assert "chi_squared_statistic" in result
-        assert "p_value" in result
+        assert "chi_squared_p_value" in result
         assert "degrees_of_freedom" in result
         assert "significant" in result
         assert "best_template" in result
@@ -245,7 +245,7 @@ class TestGeneratePipelineSummary:
 
         assert "generation" in result
         assert "labeling" in result
-        assert "judging" in result
+        assert "judge" in result
         assert "correction" in result
         assert "ab_testing" in result
         assert "charts_generated" in result
@@ -278,7 +278,7 @@ class TestGeneratePipelineSummary:
         assert "mismatch" in jaccard
         assert jaccard["excellent"] > jaccard["mismatch"]  # gradient preserved
 
-    def test_judging_section_has_quality_metrics(self, tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    def test_judge_section_has_quality_metrics(self, tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
         summary_file = _make_correction_summary(tmp_path)
         monkeypatch.setattr(amod, "_CORRECTION_SUMMARY_FILE", summary_file)
         monkeypatch.setattr(amod, "_RESULTS_DIR", tmp_path)
@@ -287,7 +287,7 @@ class TestGeneratePipelineSummary:
         ab = compute_template_ab_test(df)
         result = generate_pipeline_summary(df, ab)
 
-        judging = result["judging"]
+        judging = result["judge"]
         assert "avg_quality_score" in judging
         assert "hallucination_rate" in judging
         assert "awkward_language_rate" in judging
