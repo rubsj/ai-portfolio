@@ -1,0 +1,49 @@
+{
+  "cache_key": "fc6dfbf39d7f14e03e0857e6dee54a89",
+  "model": "gpt-4o-mini",
+  "response": {
+    "contact_info": {
+      "name": "Test Candidate",
+      "email": "test@example.com",
+      "phone": "1234567890",
+      "location": "San Francisco, CA",
+      "linkedin": null,
+      "portfolio": null
+    },
+    "education": [
+      {
+        "degree": "B.S. Computer Science",
+        "institution": "State University",
+        "graduation_date": "2019-05",
+        "gpa": 3.7,
+        "coursework": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "Acme Corp",
+        "title": "Software Engineer",
+        "start_date": "2019-06",
+        "end_date": "2023-01",
+        "responsibilities": [
+          "Built REST APIs",
+          "Mentored junior developers"
+        ],
+        "achievements": null
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "proficiency_level": "Advanced",
+        "years": 4
+      },
+      {
+        "name": "SQL",
+        "proficiency_level": "Intermediate",
+        "years": 3
+      }
+    ],
+    "summary": "Experienced software engineer focused on backend systems."
+  }
+}
