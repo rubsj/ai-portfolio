@@ -241,7 +241,7 @@ Full pipeline run: ~$0.50 (250 resumes + 250 GPT-4o judge evaluations + correcti
 
 ## Demo
 
-📹 [2-minute walkthrough](LOOM_LINK) — pipeline execution → API testing → Streamlit demo
+📹 2-minute walkthrough (coming in Week 8) — pipeline execution → API testing → Streamlit demo
 
 ---
 
