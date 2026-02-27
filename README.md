@@ -27,7 +27,7 @@ A focused 8-week engineering sprint (Feb–Apr 2026) building nine production-gr
 | 1 | [Synthetic Data — Home DIY Repair](./01-synthetic-data-home-diy/) | ✅ Complete | Structured generation, LLM-as-Judge, correction loop, Jaccard similarity | Pydantic, OpenAI, Instructor, Streamlit |
 | 2 | [Evaluating RAG for Any PDF](./02-rag-evaluation/) | ✅ Complete | 16-config grid search, chunking strategies, hybrid reranking, RAGAS metrics | LangChain, FAISS, RAGAS, Cohere, Braintrust, Click |
 | 3 | [Contrastive Embedding Fine-Tuning](./03-fine-tuning-guardrails/) | ✅ Complete | CosineSimilarityLoss, LoRA (PEFT), 8-metric evaluation, UMAP, HDBSCAN | Sentence-Transformers, PEFT/LoRA, scikit-learn, scipy, Click |
-| 4 | [AI-Powered Resume Coach](./04-resume-coach/) | ⏳ Upcoming | JD analysis, controlled fit levels, LLM-as-Judge evaluation | OpenAI, Pydantic, FastAPI |
+| 4 | [AI-Powered Resume Coach](./04-resume-coach/) | ✅ Complete | 250 synthetic resumes, 5 failure modes, A/B template test (χ²=32.74), ChromaDB vector search | OpenAI, Pydantic, Instructor, FastAPI, ChromaDB, Streamlit |
 | 5 | [Production RAG System](./05-production-rag/) | ⏳ Upcoming | Multi-strategy chunking, hybrid search, Cohere reranking, REST API | LangChain, FAISS, Cohere, FastAPI, Click |
 | 6 | [Digital Writing Clone — 5-Agent](./06-digital-writing-clone/) | ⏳ Upcoming | StyleAnalyzer, RAG, Evaluator, Fallback, Planner agents; style-matched generation | CrewAI, LangChain, OpenAI |
 | 7 | [Customer Feedback Intelligence](./07-feedback-intelligence/) | ⏳ Upcoming | CrewAI pipeline: Sentiment, Theme, Mapping, Gap agents | CrewAI, OpenAI, Pydantic |
@@ -78,6 +78,19 @@ A focused 8-week engineering sprint (Feb–Apr 2026) building nine production-gr
 
 ---
 
+### P4 — AI-Powered Resume Coach
+
+**250 synthetic resumes** across 5 fit levels, labeled for 5 failure modes, with statistically rigorous A/B testing across 5 writing templates.
+
+- **Jaccard gradient confirmed**: excellent=0.669 → mismatch=0.005 — skill overlap is the dominant fit signal
+- **A/B test**: `casual` template (34% failure) vs `career_changer` (100%) — χ²=32.74, p<0.001, 66-point spread
+- **GPT-4o judge**: avg quality score 0.541 across 250 pairs; 8/8 corrections via Instructor retry loop (100% rate)
+- **532 tests**, 9 FastAPI endpoints, ChromaDB vector store (all-MiniLM-L6-v2), 5-page Streamlit demo, 5 ADRs
+
+→ [Project README](./04-resume-coach/README.md)
+
+---
+
 ## Repository Structure
 
 ```
@@ -106,7 +119,7 @@ ai-portfolio/
 │   ├── eval/
 │   ├── docs/
 │   └── pyproject.toml
-├── 04-resume-coach/              # P4 — Upcoming (Week 3)
+├── 04-resume-coach/              # P4 — Complete
 ├── 05-production-rag/            # P5 — Upcoming (Week 4)
 ├── 06-digital-writing-clone/     # P6 — Upcoming (Week 4–5)
 ├── 07-feedback-intelligence/     # P7 — Upcoming (Week 5)
@@ -133,8 +146,8 @@ ai-portfolio/
 
 ## Engineering Practices
 
-- **Architecture Decision Records** — every significant design choice documented per project (4 in P1, 5 in P2, 3 in P3)
-- **95%+ test coverage targets** — pytest with parametrized cases covering happy path and failure modes (500+ tests across 3 projects)
+- **Architecture Decision Records** — every significant design choice documented per project (4 in P1, 5 in P2, 3 in P3, 5 in P4)
+- **95%+ test coverage targets** — pytest with parametrized cases covering happy path and failure modes (1,100+ tests across 4 projects)
 - **5-layer validation methodology** — schema validation, semantic checks, LLM-as-Judge, correction loops, re-evaluation
 - **LLM cost management** — MD5-keyed disk cache for all LLM calls; estimated cost logged per call
 - **Clean PR history** — feature branches, atomic commits, ~20 PRs merged across projects
