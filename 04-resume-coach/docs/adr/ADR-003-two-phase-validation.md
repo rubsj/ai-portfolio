@@ -18,7 +18,7 @@ These are different failure modes with different detection costs. Structural fai
 
 Mixing both into one layer creates three problems:
 - **Cost**: Putting semantic rules into Instructor retry prompts means every labeling check costs $0.002/pair (GPT-4o-mini round-trip). For 250 pairs, that's $0.50 just for deterministic comparisons that Python can compute in 250ms total.
-- **Testability**: If the labeler requires an LLM to run, `test_labeler.py` needs API mocking or real API calls. P4 has 504 tests — making any of them depend on LLM responses introduces flakiness.
+- **Testability**: If the labeler requires an LLM to run, `test_labeler.py` needs API mocking or real API calls. P4 has 532 tests — making any of them depend on LLM responses introduces flakiness.
 - **Coupling**: The generator would need to know about business rules (experience thresholds, seniority mappings) to inject them as retry prompts, and the labeler would need to parse raw JSON. Each module would do two jobs instead of one.
 
 ## Decision
