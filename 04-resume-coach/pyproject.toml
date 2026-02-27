@@ -15,6 +15,7 @@ dependencies = [
     "uvicorn",
     "chromadb",                # Day 3: vector store
     "sentence-transformers",   # Day 3: local embeddings
+    "streamlit",               # Day 3: interactive demo
     "rich",
     "python-dotenv",
     "scipy",
