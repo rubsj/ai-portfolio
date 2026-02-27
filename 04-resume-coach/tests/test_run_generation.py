@@ -235,3 +235,119 @@ class TestMainFullRun:
                             from src.run_generation import main
 
                             main()  # Must not raise ZeroDivisionError
+
+
+# ---------------------------------------------------------------------------
+# write_stats_from_generated_files — derives stats without API calls
+# ---------------------------------------------------------------------------
+
+
+class TestWriteStatsFromGeneratedFiles:
+    def test_returns_stats_path(self, tmp_path) -> None:
+        from src.run_generation import write_stats_from_generated_files
+
+        # No JSONL files → still writes an empty stats file
+        stats_path = tmp_path / "validation_stats.json"
+        result = write_stats_from_generated_files(stats_path=stats_path)
+        assert result == stats_path
+
+    def test_creates_stats_file(self, tmp_path) -> None:
+        from src.run_generation import write_stats_from_generated_files
+
+        stats_path = tmp_path / "stats" / "validation_stats.json"
+        write_stats_from_generated_files(stats_path=stats_path)
+        assert stats_path.exists()
+
+    def test_reads_jobs_jsonl_when_present(self, tmp_path) -> None:
+        import uuid
+        from datetime import datetime, timezone
+
+        from src.run_generation import write_stats_from_generated_files
+        from src.schemas import (
+            CompanyInfo,
+            ExperienceLevel,
+            GeneratedJob,
+            JobDescription,
+            JobRequirements,
+        )
+
+        # Write a valid jobs JSONL file into a temp generated dir
+        generated_dir = tmp_path / "data" / "generated"
+        generated_dir.mkdir(parents=True)
+
+        gj = GeneratedJob(
+            trace_id=str(uuid.uuid4()),
+            job=JobDescription(
+                title="Dev",
+                company=CompanyInfo(name="Co", industry="Tech", size="50", location="NYC"),
+                description="Build stuff",
+                requirements=JobRequirements(
+                    required_skills=["Python"],
+                    education="BS",
+                    experience_years=2,
+                    experience_level=ExperienceLevel.MID,
+                ),
+            ),
+            is_niche_role=False,
+            generated_at=datetime.now(timezone.utc).isoformat(),
+            prompt_template="standard",
+            model_used="gpt-4o-mini",
+        )
+
+        jobs_file = generated_dir / "jobs_20260220.jsonl"
+        jobs_file.write_text(gj.model_dump_json() + "\n")
+
+        stats_path = tmp_path / "stats.json"
+
+        with patch("src.run_generation._PROJECT_ROOT", tmp_path):
+            write_stats_from_generated_files(stats_path=stats_path)
+
+        assert stats_path.exists()
+
+    def test_handles_no_jobs_or_resumes_files(self, tmp_path) -> None:
+        from src.run_generation import write_stats_from_generated_files
+
+        # Neither jobs nor resumes JSONL files → no crash
+        stats_path = tmp_path / "stats.json"
+        with patch("src.run_generation._PROJECT_ROOT", tmp_path):
+            write_stats_from_generated_files(stats_path=stats_path)
+
+        assert stats_path.exists()
+
+
+# ---------------------------------------------------------------------------
+# main() — --stats-only branch
+# ---------------------------------------------------------------------------
+
+
+class TestMainStatsOnly:
+    def test_stats_only_calls_write_stats_and_returns_early(self) -> None:
+        import sys
+        from unittest.mock import patch, MagicMock
+
+        with patch.object(sys, "argv", ["prog", "--stats-only"]):
+            with patch(
+                "src.run_generation.write_stats_from_generated_files"
+            ) as mock_write:
+                with patch("src.run_generation._create_client") as mock_client:
+                    from src.run_generation import main
+
+                    main()
+
+        mock_write.assert_called_once()
+        # Should return early — _create_client never called (no generation)
+        mock_client.assert_not_called()
+
+    def test_stats_only_does_not_call_generate_all_jobs(self) -> None:
+        import sys
+
+        with patch.object(sys, "argv", ["prog", "--stats-only"]):
+            with patch("src.run_generation.write_stats_from_generated_files"):
+                with patch(
+                    "src.run_generation.generate_all_jobs"
+                ) as mock_gen:
+                    from src.run_generation import main
+
+                    main()
+
+        mock_gen.assert_not_called()

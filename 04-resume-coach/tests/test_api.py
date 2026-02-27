@@ -701,3 +701,43 @@ class TestPairDetail:
             resp = client.get("/pairs/pair-001")
         assert resp.status_code == 200
         assert resp.json()["judge_result"] is None
+
+    def test_pair_detail_404_when_resume_missing_from_store(self) -> None:
+        """Covers line 336: resume is None or job is None → 404."""
+        store = _make_mock_store()
+        # Pair exists but its resume_trace_id is not in store.resumes
+        store.resumes = {}  # Empty — resume lookup returns None
+        with patch("src.api._store", store):
+            from src.api import app
+
+            client = TestClient(app)
+            resp = client.get("/pairs/pair-001")
+        assert resp.status_code == 404
+
+
+# ---------------------------------------------------------------------------
+# search/similar-candidates — trace_id not in store (line 218)
+# ---------------------------------------------------------------------------
+
+
+class TestSimilarCandidatesOrphanHit:
+    """Covers line 218: gr is None → continue (trace_id in vector store but not in DataStore)."""
+
+    def test_orphan_trace_id_is_silently_skipped(self) -> None:
+        store = _make_mock_store()
+        collection = MagicMock()
+        collection.count.return_value = 250
+        # Return a trace_id that does NOT exist in store.resumes
+        hits = [{"trace_id": "nonexistent-trace-id", "score": 0.95, "metadata": {"fit_level": "excellent"}}]
+        with (
+            patch("src.api._store", store),
+            patch("src.api._collection", collection),
+            patch("src.api.search_similar", return_value=hits),
+        ):
+            from src.api import app
+
+            client = TestClient(app)
+            resp = client.get("/search/similar-candidates?query=python")
+        assert resp.status_code == 200
+        # Orphan hit is skipped → results list is empty
+        assert resp.json()["results"] == []
