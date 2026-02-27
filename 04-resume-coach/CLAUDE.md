@@ -220,7 +220,7 @@ Do NOT re-debate architecture — follow the plan.
 - [x] Project directory created
 - [x] Dependencies installed (`uv sync` passes)
 - [x] .env with OPENAI_API_KEY configured
-- [ ] P4 card created in Notion Project Tracker
+- [x] P4 card updated in Notion Project Tracker (Feb 27)
 
 ### Day 1 — Schemas + Generation + Validation (Mon Feb 24) ✅ COMPLETE
 - [x] T1.1: Project setup (directory, pyproject.toml, uv sync)
@@ -257,18 +257,18 @@ Do NOT re-debate architecture — follow the plan.
 - [x] **Checkpoint:** Complete analysis pipeline. All metrics calculated.
 - **Key metrics:** Jaccard gradient confirmed (excellent=0.669→mismatch=0.005), judge avg quality=0.541, hallucination rate=44.8%, A/B significant (p<0.001)
 
-### Day 3 — API + Vector Store + Demo + Documentation (Wed Feb 26)
-- [ ] T3.1: api.py — FastAPI with 9 endpoints (all features exposed)
-- [ ] T3.2: test_api.py — TestClient tests for all endpoints
-- [ ] T3.3: vector_store.py — ChromaDB integration (embed, persist, search with metadata filtering)
-- [ ] T3.4: Wire vector store + feedback into API endpoints
-- [ ] T3.5: pipeline.py — End-to-end orchestrator
-- [ ] T3.6: streamlit_app.py — Full demo (browse jobs → analyze → search → feedback)
-- [ ] T3.7: ADRs (ADR-001 through ADR-005)
-- [ ] T3.8: README.md with Mermaid diagram + API endpoint table + results
-- [ ] T3.9: Loom recording
-- [ ] T3.10: Final git push + Notion update
-- [ ] **P4 COMPLETE**
+### Day 3 — API + Vector Store + Demo + Documentation (Wed Feb 26) ✅ COMPLETE
+- [x] T3.1: api.py — FastAPI with 9 endpoints (PR #40)
+- [x] T3.2: test_api.py — 532 tests total, ~99% coverage (PR #40, expanded PR #41)
+- [x] T3.3: vector_store.py — ChromaDB, all-MiniLM-L6-v2, 384d, 250 resumes indexed (PR #40)
+- [x] T3.4: Wire vector store + feedback into API endpoints (PR #40)
+- [x] T3.5: pipeline.py — End-to-end orchestrator (PR #40)
+- [x] T3.6: streamlit_app.py — 5-page demo (PR #40)
+- [x] T3.7: ADRs (ADR-001 through ADR-005) (PR #40)
+- [x] T3.8: README.md — gold-standard portfolio quality (PR #49)
+- [ ] T3.9: Loom recording — deferred to Week 8 polish
+- [x] T3.10: Final git push + Notion update (Feb 27)
+- [x] **P4 COMPLETE** (Feb 27, 2026)
 
 ---
 
