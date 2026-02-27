@@ -144,4 +144,4 @@ ai-portfolio/
 
 Each project includes comprehensive documentation and reproducible results.
 
-**Connect:** [LinkedIn](https://linkedin.com/in/jharuby) · [Portfolio Site](https://yourportfolio.dev)
+**Connect:** [LinkedIn](https://linkedin.com/in/jharuby) · [Portfolio Site](https://rubyjha.dev)
