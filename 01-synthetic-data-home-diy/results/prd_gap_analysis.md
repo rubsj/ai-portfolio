@@ -206,7 +206,7 @@ These are additions that exceed the PRD specification:
 | 7th chart: correction improvement 4-bar chart | `results/charts/correction_improvement.png` (PRD required 6) |
 | Reproducible 4-stage pipeline (`run_full_pipeline()`) | `src/corrector.py:490–600` |
 | `correction_comparison.json` with experiment metadata | `results/correction_comparison.json` |
-| Stage-specific label files for all 4 pipeline stages | `data/labels/llm_labels_corrected.csv`, `llm_labels_v2.csv`, `v2_corrected_llm_labels.csv` |
+| Stage-specific label files for all 4 pipeline stages | `data/labels/llm_labels_corrected.csv`, `llm_labels_v2.csv`, `llm_labels_v2_corrected.csv` |
 | Interactive Streamlit demo with 6 sections | PRD only specified "demo app" |
 
 ---
