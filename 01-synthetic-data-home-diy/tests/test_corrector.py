@@ -17,11 +17,22 @@ from unittest.mock import MagicMock, patch
 import pytest
 
 from src.corrector import (
+    _build_correction_prompt,
+    _correction_cache_key,
     _count_failures,
+    _load_correction_cache,
+    _save_correction_cache,
+    _v2_prompt_hash,
     analyze_failure_patterns,
     build_comparison_metrics,
+    build_v2_system_prompt,
+    build_v2_templates,
+    build_v2_user_prompt,
     correct_batch,
+    correct_record,
+    generate_v2_batch,
     run_full_pipeline,
+    save_corrected_records,
 )
 from src.schemas import DIYRepairRecord, GeneratedRecord
 
@@ -206,6 +217,20 @@ class TestCorrectBatch:
         assert len(result) == 1
         assert result[0].template_version == "v1_corrected"
 
+    def test_correct_batch_when_no_judge_result_passes_through(self) -> None:
+        """When no judge result exists for a record, it passes through unchanged."""
+        record = _make_generated_record("r1")
+        # Judge result is for a different trace_id
+        judge = [_make_judge_dict("r99", ["incomplete_answer"])]
+
+        result = correct_batch(
+            [record], judge, client=MagicMock(), version_tag="v1_corrected"
+        )
+
+        assert len(result) == 1
+        assert result[0].trace_id == "r1"
+        assert result[0].template_version == "v1"  # unchanged
+
     def test_correct_batch_when_version_tag_set_propagates_to_corrected(self) -> None:
         record = _make_generated_record("r1")
         judge = [_make_judge_dict("r1", ["safety_violations"])]
@@ -228,6 +253,15 @@ class TestCorrectBatch:
 
 class TestAnalyzeFailurePatterns:
     """Tests for analyze_failure_patterns."""
+
+    def test_analyze_failure_patterns_when_no_judge_result_skips_record(self) -> None:
+        records = [_make_generated_record("r1")]
+        # Judge results have no matching trace_id
+        judges = [_make_judge_dict("r99", ["incomplete_answer"])]
+
+        patterns = analyze_failure_patterns(records, judges)
+        # r1 was skipped — plumbing_repair has no data
+        assert "plumbing_repair" not in patterns
 
     def test_analyze_failure_patterns_returns_sorted_modes_per_category(self) -> None:
         records = [
@@ -345,3 +379,348 @@ class TestRunFullPipeline:
         assert "v2_corrected" in result
         assert "generated_at" in result
         assert result["pipeline_version"] == "1.0"
+
+
+# ===========================================================================
+# Cache helpers
+# ===========================================================================
+
+
+class TestCorrectionCacheKey:
+    """Tests for _correction_cache_key."""
+
+    def test_correction_cache_key_starts_with_correct_prefix(self) -> None:
+        key = _correction_cache_key("some prompt")
+        assert key.startswith("correct_")
+
+    def test_correction_cache_key_is_deterministic(self) -> None:
+        key1 = _correction_cache_key("prompt A")
+        key2 = _correction_cache_key("prompt A")
+        assert key1 == key2
+
+    def test_correction_cache_key_differs_for_different_prompts(self) -> None:
+        key1 = _correction_cache_key("prompt A")
+        key2 = _correction_cache_key("prompt B")
+        assert key1 != key2
+
+
+class TestLoadCorrectionCache:
+    """Tests for _load_correction_cache."""
+
+    def test_load_correction_cache_when_no_file_returns_none(self, tmp_path: Path) -> None:
+        with patch("src.corrector._CACHE_DIR", tmp_path):
+            result = _load_correction_cache("nonexistent_key")
+        assert result is None
+
+    def test_load_correction_cache_when_valid_file_returns_record(self, tmp_path: Path) -> None:
+        record = _make_generated_record("r1").record
+        payload = {
+            "cache_key": "k1",
+            "trace_id": "r1",
+            "model": "gpt-4o-mini",
+            "type": "correction",
+            "timestamp": "2026-01-01T00:00:00Z",
+            "response": record.model_dump(),
+        }
+        (tmp_path / "k1.json").write_text(json.dumps(payload))
+
+        with patch("src.corrector._CACHE_DIR", tmp_path):
+            result = _load_correction_cache("k1")
+
+        assert result is not None
+        assert result.question == record.question
+
+    def test_load_correction_cache_when_corrupt_returns_none(self, tmp_path: Path) -> None:
+        (tmp_path / "bad.json").write_text("NOT JSON")
+        with patch("src.corrector._CACHE_DIR", tmp_path):
+            result = _load_correction_cache("bad")
+        assert result is None
+
+    def test_load_correction_cache_when_missing_response_returns_none(self, tmp_path: Path) -> None:
+        (tmp_path / "nokey.json").write_text(json.dumps({"cache_key": "nokey"}))
+        with patch("src.corrector._CACHE_DIR", tmp_path):
+            result = _load_correction_cache("nokey")
+        assert result is None
+
+
+class TestSaveCorrectionCache:
+    """Tests for _save_correction_cache."""
+
+    def test_save_correction_cache_creates_json_file(self, tmp_path: Path) -> None:
+        record = _make_generated_record("r1").record
+        with patch("src.corrector._CACHE_DIR", tmp_path):
+            _save_correction_cache("key1", "r1", record)
+        assert (tmp_path / "key1.json").exists()
+
+    def test_save_correction_cache_has_response_key(self, tmp_path: Path) -> None:
+        record = _make_generated_record("r1").record
+        with patch("src.corrector._CACHE_DIR", tmp_path):
+            _save_correction_cache("key2", "r1", record)
+        data = json.loads((tmp_path / "key2.json").read_text())
+        assert "response" in data
+        assert data["trace_id"] == "r1"
+        assert data["type"] == "correction"
+
+
+# ===========================================================================
+# _build_correction_prompt
+# ===========================================================================
+
+
+class TestBuildCorrectionPrompt:
+    """Tests for _build_correction_prompt."""
+
+    def test_build_correction_prompt_contains_category(self) -> None:
+        record = _make_generated_record("r1")
+        failures = [{"mode": "incomplete_answer", "reason": "too short"}]
+        prompt = _build_correction_prompt(record, failures)
+        assert "plumbing" in prompt.lower()
+
+    def test_build_correction_prompt_contains_failure_mode(self) -> None:
+        record = _make_generated_record("r1")
+        failures = [{"mode": "incomplete_answer", "reason": "answer is too vague"}]
+        prompt = _build_correction_prompt(record, failures)
+        assert "incomplete_answer" in prompt
+
+    def test_build_correction_prompt_contains_reason(self) -> None:
+        record = _make_generated_record("r1")
+        failures = [{"mode": "poor_quality_tips", "reason": "tips are generic"}]
+        prompt = _build_correction_prompt(record, failures)
+        assert "generic" in prompt
+
+
+# ===========================================================================
+# correct_record
+# ===========================================================================
+
+
+class TestCorrectRecord:
+    """Tests for correct_record."""
+
+    def test_correct_record_when_cache_hit_returns_cached(self, tmp_path: Path) -> None:
+        from src.corrector import _CORRECTION_SYSTEM_PROMPT as _CSP
+        record = _make_generated_record("r1")
+        cached_diy = record.record
+        failures = [{"mode": "incomplete_answer", "reason": "too short"}]
+
+        user_prompt = _build_correction_prompt(record, failures)
+        full_prompt = f"{_CSP}\n---\n{user_prompt}"
+        cache_key = _correction_cache_key(full_prompt)
+
+        payload = {
+            "cache_key": cache_key,
+            "trace_id": "r1",
+            "model": "gpt-4o-mini",
+            "type": "correction",
+            "timestamp": "2026-01-01T00:00:00Z",
+            "response": cached_diy.model_dump(),
+        }
+        (tmp_path / f"{cache_key}.json").write_text(json.dumps(payload))
+
+        client = MagicMock()
+        with patch("src.corrector._CACHE_DIR", tmp_path):
+            result = correct_record(client, record, failures, use_cache=True)
+
+        client.chat.completions.create.assert_not_called()
+        assert result.question == cached_diy.question
+
+    def test_correct_record_when_cache_miss_calls_client(self, tmp_path: Path) -> None:
+        record = _make_generated_record("r1")
+        failures = [{"mode": "incomplete_answer", "reason": "too short"}]
+
+        client = MagicMock()
+        client.chat.completions.create.return_value = record.record
+
+        with patch("src.corrector._CACHE_DIR", tmp_path):
+            result = correct_record(client, record, failures, use_cache=False)
+
+        client.chat.completions.create.assert_called_once()
+        assert result is not None
+
+    def test_correct_batch_when_exception_falls_back_to_original(self, tmp_path: Path) -> None:
+        """When correct_record raises, the original record should be kept."""
+        record = _make_generated_record("r1")
+        judge = [_make_judge_dict("r1", ["incomplete_answer"])]
+
+        client = MagicMock()
+        client.chat.completions.create.side_effect = RuntimeError("LLM error")
+
+        with patch("src.corrector._CACHE_DIR", tmp_path):
+            result = correct_batch(
+                [record], judge, client=client, use_cache=False
+            )
+
+        assert len(result) == 1
+        assert result[0].trace_id == "r1"
+        assert result[0].template_version == "v1"  # unchanged (not v1_corrected)
+
+
+# ===========================================================================
+# V2 template functions
+# ===========================================================================
+
+
+class TestBuildV2Templates:
+    """Tests for build_v2_templates."""
+
+    def test_build_v2_templates_returns_all_categories(self, tmp_path: Path) -> None:
+        with patch("src.corrector._PROJECT_ROOT", tmp_path):
+            v2 = build_v2_templates()
+
+        expected = {
+            "appliance_repair", "plumbing_repair", "electrical_repair",
+            "hvac_maintenance", "general_home_repair",
+        }
+        assert set(v2.keys()) == expected
+
+    def test_build_v2_templates_each_entry_has_required_keys(self, tmp_path: Path) -> None:
+        with patch("src.corrector._PROJECT_ROOT", tmp_path):
+            v2 = build_v2_templates()
+
+        for cat, tmpl in v2.items():
+            assert "persona" in tmpl
+            assert "emphasis" in tmpl
+            assert "v2_additions" in tmpl
+
+    def test_build_v2_templates_when_metrics_exist_adds_instructions(self, tmp_path: Path) -> None:
+        results_dir = tmp_path / "results"
+        results_dir.mkdir()
+        metrics = {
+            "per_mode_failures": {
+                "incomplete_answer": {"count": 5, "rate": "16.7%"},
+                "poor_quality_tips": {"count": 3, "rate": "10.0%"},
+                "safety_violations": {"count": 0, "rate": "0.0%"},
+                "unrealistic_tools": {"count": 0, "rate": "0.0%"},
+                "overcomplicated_solution": {"count": 0, "rate": "0.0%"},
+                "missing_context": {"count": 0, "rate": "0.0%"},
+            }
+        }
+        (results_dir / "metrics.json").write_text(json.dumps(metrics))
+
+        with patch("src.corrector._PROJECT_ROOT", tmp_path):
+            v2 = build_v2_templates()
+
+        any_additions = any(v["v2_additions"] for v in v2.values())
+        assert any_additions
+
+
+class TestBuildV2SystemPrompt:
+    """Tests for build_v2_system_prompt."""
+
+    def test_build_v2_system_prompt_contains_persona(self) -> None:
+        tmpl = {"persona": "Expert plumber", "emphasis": "Safety", "v2_additions": ""}
+        prompt = build_v2_system_prompt("plumbing_repair", tmpl)
+        assert "Expert plumber" in prompt
+
+    def test_build_v2_system_prompt_with_additions_includes_quality_section(self) -> None:
+        tmpl = {
+            "persona": "Expert plumber",
+            "emphasis": "Safety",
+            "v2_additions": "Add troubleshooting",
+        }
+        prompt = build_v2_system_prompt("plumbing_repair", tmpl)
+        assert "QUALITY REQUIREMENTS" in prompt
+        assert "troubleshooting" in prompt
+
+    def test_build_v2_system_prompt_no_additions_excludes_quality_section(self) -> None:
+        tmpl = {"persona": "Expert plumber", "emphasis": "Safety", "v2_additions": ""}
+        prompt = build_v2_system_prompt("plumbing_repair", tmpl)
+        assert "QUALITY REQUIREMENTS" not in prompt
+
+
+class TestBuildV2UserPrompt:
+    """Tests for build_v2_user_prompt."""
+
+    def test_build_v2_user_prompt_variant_0_no_variation_hint(self) -> None:
+        prompt = build_v2_user_prompt("plumbing_repair", "beginner", variant=0)
+        assert "IMPORTANT: This is variation" not in prompt
+
+    def test_build_v2_user_prompt_variant_1_has_variation_hint(self) -> None:
+        prompt = build_v2_user_prompt("plumbing_repair", "beginner", variant=1)
+        assert "variation" in prompt.lower()
+
+    def test_build_v2_user_prompt_beginner_uses_article_a(self) -> None:
+        prompt = build_v2_user_prompt("plumbing_repair", "beginner")
+        assert "a beginner" in prompt
+
+    def test_build_v2_user_prompt_advanced_uses_article_an(self) -> None:
+        prompt = build_v2_user_prompt("plumbing_repair", "advanced")
+        assert "an advanced" in prompt
+
+
+class TestV2PromptHash:
+    """Tests for _v2_prompt_hash."""
+
+    def test_v2_prompt_hash_is_deterministic(self) -> None:
+        h1 = _v2_prompt_hash("sys", "usr")
+        h2 = _v2_prompt_hash("sys", "usr")
+        assert h1 == h2
+
+    def test_v2_prompt_hash_differs_from_v1_hash(self) -> None:
+        from src.generator import _prompt_hash
+        h_v1 = _prompt_hash("sys", "usr")
+        h_v2 = _v2_prompt_hash("sys", "usr")
+        assert h_v1 != h_v2  # "v2:" prefix makes them different
+
+
+# ===========================================================================
+# generate_v2_batch
+# ===========================================================================
+
+
+class TestGenerateV2Batch:
+    """Tests for generate_v2_batch."""
+
+    def test_generate_v2_batch_returns_generated_records(self, tmp_path: Path) -> None:
+        diy_record = _make_generated_record("r1").record
+
+        client = MagicMock()
+        client.chat.completions.create.return_value = diy_record
+
+        with patch("src.corrector._PROJECT_ROOT", tmp_path), \
+             patch("src.generator._CACHE_DIR", tmp_path):
+            results = generate_v2_batch(client, use_cache=False, records_per_combo=1)
+
+        assert len(results) == 15
+
+    def test_generate_v2_batch_records_have_v2_template_version(self, tmp_path: Path) -> None:
+        diy_record = _make_generated_record("r1").record
+
+        client = MagicMock()
+        client.chat.completions.create.return_value = diy_record
+
+        with patch("src.corrector._PROJECT_ROOT", tmp_path), \
+             patch("src.generator._CACHE_DIR", tmp_path):
+            results = generate_v2_batch(client, use_cache=False, records_per_combo=1)
+
+        assert all(r.template_version == "v2" for r in results)
+
+
+# ===========================================================================
+# save_corrected_records
+# ===========================================================================
+
+
+class TestSaveCorrectedRecords:
+    """Tests for save_corrected_records."""
+
+    def test_save_corrected_records_creates_json_file(self, tmp_path: Path) -> None:
+        records = [_make_generated_record("r1"), _make_generated_record("r2")]
+        with patch("src.corrector._CORRECTED_DIR", tmp_path):
+            path = save_corrected_records(records, "test_corrected.json")
+        assert path.exists()
+
+    def test_save_corrected_records_content_is_list(self, tmp_path: Path) -> None:
+        records = [_make_generated_record("r1"), _make_generated_record("r2")]
+        with patch("src.corrector._CORRECTED_DIR", tmp_path):
+            path = save_corrected_records(records, "test_corrected.json")
+        data = json.loads(path.read_text())
+        assert isinstance(data, list)
+        assert len(data) == 2
+
+    def test_save_corrected_records_creates_parent_dir(self, tmp_path: Path) -> None:
+        nested = tmp_path / "nested" / "corrected"
+        records = [_make_generated_record("r1")]
+        with patch("src.corrector._CORRECTED_DIR", nested):
+            path = save_corrected_records(records)
+        assert path.exists()

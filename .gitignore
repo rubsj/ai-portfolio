@@ -3,7 +3,6 @@
 __pycache__/
 *.pyc
 .DS_Store
-data/cache/
 .coverage
 *.egg-info/
 dist/
