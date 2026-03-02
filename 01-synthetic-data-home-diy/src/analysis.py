@@ -340,7 +340,18 @@ def plot_agreement_matrix(
     for ax in axes:
         ax.set_xticklabels(ax.get_xticklabels(), rotation=45, ha="right")
 
-    plt.suptitle("Inter-Rater Agreement: Manual vs LLM Judge (10 records)", fontsize=14, y=1.02)
+    # Annotate with kappa if agreement report is available
+    kappa_annotation = ""
+    report_path = _LABELS_DIR / "agreement_report.json"
+    if report_path.exists():
+        report = json.loads(report_path.read_text())
+        kappa_annotation = f"  |  Cohen's κ: {report.get('overall_kappa', 'N/A')}"
+
+    plt.suptitle(
+        f"Inter-Rater Agreement: Manual vs LLM Judge (10 records){kappa_annotation}",
+        fontsize=14,
+        y=1.02,
+    )
     plt.tight_layout()
 
     path = _CHARTS_DIR / "agreement_matrix.png"
