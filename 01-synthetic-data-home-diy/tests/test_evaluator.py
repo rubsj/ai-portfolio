@@ -32,6 +32,7 @@ from src.evaluator import (
     evaluate_batch,
     evaluate_record,
     load_manual_labels,
+    save_agreement_report,
     save_llm_labels,
     save_llm_labels_json,
 )
@@ -486,6 +487,68 @@ class TestComputeAgreement:
         assert "matched_records" in result
         assert "per_mode_agreement" in result
         assert "overall_agreement" in result
+
+    def test_compute_agreement_includes_kappa_keys(self) -> None:
+        result = compute_agreement([], [])
+        assert "per_mode_kappa" in result
+        assert "overall_kappa" in result
+
+    def test_compute_agreement_kappa_when_perfect_agreement_with_two_classes_is_one(self) -> None:
+        # Two records: one flagged, one not — both raters agree → kappa = 1.0
+        manual = [
+            self._make_row("r1", {"incomplete_answer": "1"}),
+            self._make_row("r2", {"incomplete_answer": "0"}),
+        ]
+        llm = [
+            self._make_row("r1", {"incomplete_answer": "1"}),
+            self._make_row("r2", {"incomplete_answer": "0"}),
+        ]
+        result = compute_agreement(manual, llm)
+        assert result["per_mode_kappa"]["incomplete_answer"] == "1.000"
+
+    def test_compute_agreement_kappa_when_all_same_label_is_na(self) -> None:
+        # All zeros in both raters → only one unique class → kappa is undefined
+        manual = [
+            self._make_row("r1", {"overcomplicated_solution": "0"}),
+            self._make_row("r2", {"overcomplicated_solution": "0"}),
+        ]
+        llm = [
+            self._make_row("r1", {"overcomplicated_solution": "0"}),
+            self._make_row("r2", {"overcomplicated_solution": "0"}),
+        ]
+        result = compute_agreement(manual, llm)
+        assert result["per_mode_kappa"]["overcomplicated_solution"] == "N/A"
+
+    def test_compute_agreement_overall_kappa_is_na_when_all_modes_degenerate(self) -> None:
+        # All modes all-zero → no valid per-mode kappas → overall_kappa = "N/A"
+        manual = [self._make_row("r1", {m: "0" for m in _FAILURE_MODES})]
+        llm = [self._make_row("r1", {m: "0" for m in _FAILURE_MODES})]
+        result = compute_agreement(manual, llm)
+        assert result["overall_kappa"] == "N/A"
+
+
+# ===========================================================================
+# save_agreement_report
+# ===========================================================================
+
+
+class TestSaveAgreementReport:
+    """Tests for save_agreement_report."""
+
+    def test_save_agreement_report_creates_json_file(self, tmp_path: Path) -> None:
+        report = {"overall_agreement": "81.7%", "overall_kappa": "0.500"}
+        with patch("src.evaluator._LABELS_DIR", tmp_path):
+            path = save_agreement_report(report, "agreement_report.json")
+        assert path.exists()
+        assert path.suffix == ".json"
+
+    def test_save_agreement_report_content_matches(self, tmp_path: Path) -> None:
+        report = {"overall_agreement": "81.7%", "overall_kappa": "0.500"}
+        with patch("src.evaluator._LABELS_DIR", tmp_path):
+            path = save_agreement_report(report, "agreement_report.json")
+        data = json.loads(path.read_text())
+        assert data["overall_agreement"] == "81.7%"
+        assert data["overall_kappa"] == "0.500"
 
 
 # ===========================================================================

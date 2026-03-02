@@ -88,23 +88,33 @@
       "missing_context": "100.0%",
       "poor_quality_tips": "60.0%"
     },
-    "overall_agreement": "81.7%"
+    "overall_agreement": "81.7%",
+    "per_mode_kappa": {
+      "incomplete_answer": "0.545",
+      "safety_violations": "0.412",
+      "unrealistic_tools": "-0.154",
+      "overcomplicated_solution": "N/A",
+      "missing_context": "N/A",
+      "poor_quality_tips": "0.000"
+    },
+    "overall_kappa": "0.201"
   },
-  "combined_pipeline": {
+  "correction_pipeline": {
     "v1_original": {
       "total_failures": 36,
       "failure_rate": "20.0%"
     },
+    "corrected": {
+      "total_failures": 12,
+      "failure_rate": "6.7%"
+    },
     "v2_generated": {
       "total_failures": 8,
-      "failure_rate": "4.4%",
-      "reduction_vs_v1": "77.8%"
+      "failure_rate": "4.4%"
     },
     "v2_corrected": {
       "total_failures": 0,
-      "failure_rate": "0.0%",
-      "reduction_vs_v1": "100.0%"
-    },
-    "target_80pct_met": true
+      "failure_rate": "0.0%"
+    }
   }
 }

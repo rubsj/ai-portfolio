@@ -26,6 +26,7 @@ import instructor
 from dotenv import load_dotenv
 from openai import OpenAI
 from pydantic import ValidationError
+from sklearn.metrics import cohen_kappa_score
 
 from src.schemas import GeneratedRecord, JudgeResult
 
@@ -328,19 +329,21 @@ def compute_agreement(
     manual_labels: list[dict],
     llm_labels: list[dict],
 ) -> dict:
-    """Compute per-mode agreement rate between manual and LLM labels.
+    """Compute per-mode agreement rate and Cohen's Kappa between manual and LLM labels.
 
     For the records that have BOTH manual and LLM labels, compare each
-    failure mode's binary label and report the agreement percentage.
+    failure mode's binary label and report the agreement percentage plus
+    Cohen's Kappa (accounts for chance agreement).
 
-    PRD Section 6b, Step 3: per-mode agreement rate.
+    PRD Section 6b, Steps 3–4: per-mode agreement rate + Cohen's Kappa.
 
     Args:
         manual_labels: List of dicts from manual_labels.csv.
         llm_labels: List of dicts from llm_labels.csv.
 
     Returns:
-        Dict with per-mode agreement rates and overall agreement.
+        Dict with per-mode agreement rates, per-mode kappa, overall agreement,
+        and overall kappa.
     """
     # Index LLM labels by trace_id for fast lookup
     llm_by_id = {row["trace_id"]: row for row in llm_labels}
@@ -354,9 +357,11 @@ def compute_agreement(
         "poor_quality_tips",
     ]
 
-    # Track agreements per mode
+    # Track agreements AND the raw binary arrays (needed for kappa)
     mode_agree: dict[str, int] = {m: 0 for m in failure_modes}
     mode_total: dict[str, int] = {m: 0 for m in failure_modes}
+    mode_manual_vals: dict[str, list[int]] = {m: [] for m in failure_modes}
+    mode_llm_vals: dict[str, list[int]] = {m: [] for m in failure_modes}
 
     matched_count = 0
 
@@ -377,11 +382,13 @@ def compute_agreement(
             manual_val = int(raw_manual)
             llm_val = int(raw_llm)
             mode_total[mode] += 1
+            mode_manual_vals[mode].append(manual_val)
+            mode_llm_vals[mode].append(llm_val)
             if manual_val == llm_val:
                 mode_agree[mode] += 1
 
     # Compute per-mode agreement rates
-    per_mode = {}
+    per_mode: dict[str, str] = {}
     for mode in failure_modes:
         if mode_total[mode] > 0:
             rate = mode_agree[mode] / mode_total[mode]
@@ -389,16 +396,65 @@ def compute_agreement(
         else:
             per_mode[mode] = "N/A"
 
+    # Compute per-mode Cohen's Kappa
+    # WHY kappa over raw agreement: kappa accounts for chance agreement.
+    # If a mode is rarely flagged, two raters could agree 90%+ just by always
+    # saying "pass" — kappa penalises this and gives a clearer signal.
+    per_mode_kappa: dict[str, str] = {}
+    valid_kappas: list[float] = []
+
+    for mode in failure_modes:
+        m_vals = mode_manual_vals[mode]
+        l_vals = mode_llm_vals[mode]
+
+        # Degenerate when fewer than 2 samples OR both arrays have only one
+        # unique value combined (e.g. all zeros) — kappa is undefined in that case
+        # because Pe = 1.0 causes division by zero.
+        if len(m_vals) < 2 or len(set(m_vals) | set(l_vals)) < 2:
+            per_mode_kappa[mode] = "N/A"
+            continue
+
+        try:
+            kappa = float(cohen_kappa_score(m_vals, l_vals))
+            per_mode_kappa[mode] = f"{kappa:.3f}"
+            valid_kappas.append(kappa)
+        except (ValueError, ZeroDivisionError):
+            per_mode_kappa[mode] = "N/A"
+
     # Overall agreement (across all modes and records)
     total_comparisons = sum(mode_total.values())
     total_agreements = sum(mode_agree.values())
     overall = total_agreements / total_comparisons if total_comparisons > 0 else 0.0
 
+    # Overall kappa = mean of per-mode kappas (excluding degenerate modes)
+    overall_kappa = (
+        f"{sum(valid_kappas) / len(valid_kappas):.3f}" if valid_kappas else "N/A"
+    )
+
     return {
         "matched_records": matched_count,
         "per_mode_agreement": per_mode,
         "overall_agreement": f"{overall * 100:.1f}%",
+        "per_mode_kappa": per_mode_kappa,
+        "overall_kappa": overall_kappa,
     }
+
+
+def save_agreement_report(report: dict, filename: str = "agreement_report.json") -> Path:
+    """Save the agreement report (raw agreement + Cohen's Kappa) to JSON.
+
+    Args:
+        report: Dict returned by compute_agreement().
+        filename: Output filename in data/labels/.
+
+    Returns:
+        Path to the saved JSON.
+    """
+    _LABELS_DIR.mkdir(parents=True, exist_ok=True)
+    path = _LABELS_DIR / filename
+    path.write_text(json.dumps(report, indent=2))
+    logger.info("Saved agreement report to %s", path)
+    return path
 
 
 # ---------------------------------------------------------------------------
@@ -433,9 +489,11 @@ if __name__ == "__main__":
     # Check for manual labels and compute agreement if available
     manual = load_manual_labels()
     if manual:
-        print(f"\nFound {len(manual)} manual labels. Computing agreement...")
+        print(f"\nFound {len(manual)} manual labels. Computing agreement + Cohen's Kappa...")
         llm_csv = _load_llm_labels_csv()
         agreement = compute_agreement(manual, llm_csv)
+        report_path = save_agreement_report(agreement)
         print(json.dumps(agreement, indent=2))
+        print(f"\nAgreement report saved to: {report_path}")
     else:
         print("\nNo manual labels found yet. Create data/labels/manual_labels.csv to enable agreement analysis.")

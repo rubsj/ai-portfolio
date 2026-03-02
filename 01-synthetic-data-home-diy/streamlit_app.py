@@ -98,7 +98,7 @@ def load_labels(version: str) -> list[dict]:
         "v1": "llm_labels.json",
         "v1_corrected": "llm_labels_corrected.json",
         "v2": "llm_labels_v2.json",
-        "v2_corrected": "v2_corrected_llm_labels.json",
+        "v2_corrected": "llm_labels_v2_corrected.json",
     }
     data = load_json(DATA_DIR / "labels" / filenames.get(version, "llm_labels.json"))
     return data if data else []

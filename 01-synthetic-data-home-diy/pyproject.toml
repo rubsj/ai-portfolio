@@ -11,6 +11,7 @@ dependencies = [
     "pandas>=2.3.3",
     "pydantic>=2.12.5",
     "python-dotenv>=1.2.1",
+    "scikit-learn>=1.6.0",
     "seaborn>=0.13.2",
     "streamlit>=1.54.0",
 ]
