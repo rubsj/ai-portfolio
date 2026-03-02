@@ -1,4 +1,8 @@
 {
+  "generated_at": "2026-03-02T06:21:26.315802+00:00",
+  "generator_model": "gpt-4o-mini",
+  "judge_model": "gpt-4o",
+  "pipeline_version": "1.0",
   "v1_original": {
     "total_failures": 36,
     "failure_rate": "20.0%",
@@ -38,21 +42,21 @@
     "improvement_vs_v1": "77.8%"
   },
   "v2_corrected": {
-    "total_failures": 0,
-    "failure_rate": "0.0%",
+    "total_failures": 8,
+    "failure_rate": "4.4%",
     "per_mode": {
-      "incomplete_answer": 0,
+      "incomplete_answer": 5,
       "safety_violations": 0,
       "unrealistic_tools": 0,
-      "overcomplicated_solution": 0,
+      "overcomplicated_solution": 1,
       "missing_context": 0,
-      "poor_quality_tips": 0
+      "poor_quality_tips": 2
     },
-    "improvement_vs_v1": "100.0%"
+    "improvement_vs_v1": "77.8%"
   },
   "target_met": {
     "corrected_meets_80pct": false,
     "v2_meets_80pct": false,
-    "v2_corrected_meets_80pct": true
+    "v2_corrected_meets_80pct": false
   }
 }

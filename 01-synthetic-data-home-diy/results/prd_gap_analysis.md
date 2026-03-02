@@ -1,8 +1,7 @@
 # PRD Gap Analysis — P1: Synthetic Data, Home DIY Repair
 
 **Generated:** 2026-03-02
-**Branch:** feat/p1-cohen-kappa
-**Test run:** `uv run pytest tests/ -v` → **209 passed, 0 failed (6.90s)**
+**Test run:** `uv run pytest tests/ -v` → **209 passed, 0 failed (5.23s)**
 
 ---
 
@@ -10,320 +9,270 @@
 
 ### Section 3: Data Schema
 
-**DIYRepairRecord — all 7 fields present**
-[src/schemas.py:52–94](../src/schemas.py) — `question`, `answer`, `equipment_problem`, `tools_required`, `steps`, `safety_info`, `tips` all defined as required fields.
+**DIYRepairRecord — all 7 fields present with all validators**
 
-**All validators from PRD table**
 | Field | PRD Spec | Implementation | Location |
 |-------|----------|----------------|----------|
-| `question` | `min_length=10`, ends with `?` | `Field(min_length=10)` + `@field_validator` | `schemas.py:63–108` |
-| `answer` | `min_length=50` | `Field(min_length=50)` | `schemas.py:67` |
-| `equipment_problem` | `min_length=5` | `Field(min_length=5)` | `schemas.py:71` |
-| `tools_required` | list `min_length=1`, each item `min_length=2` | `list[Annotated[str, Field(min_length=2)]]` with `Field(min_length=1)` | `schemas.py:78–81` |
-| `steps` | list `min_length=2`, each item `min_length=10` | `list[Annotated[str, Field(min_length=10)]]` with `Field(min_length=2)` | `schemas.py:83–86` |
-| `safety_info` | `min_length=10` | `Field(min_length=10)` | `schemas.py:87` |
-| `tips` | `min_length=5` | `Field(min_length=5)` | `schemas.py:91` |
+| `question` | `min_length=10`, ends with `?` | `Field(min_length=10)` + `@field_validator` | `src/schemas.py:63-108` |
+| `answer` | `min_length=50` | `Field(min_length=50)` | `src/schemas.py:67-69` |
+| `equipment_problem` | `min_length=5` | `Field(min_length=5)` | `src/schemas.py:71-73` |
+| `tools_required` | list `min_length=1`, each item `min_length=2` | `list[Annotated[str, Field(min_length=2)]]` with `Field(min_length=1)` | `src/schemas.py:78-80` |
+| `steps` | list `min_length=2`, each item `min_length=10` | `list[Annotated[str, Field(min_length=10)]]` with `Field(min_length=2)` | `src/schemas.py:83-85` |
+| `safety_info` | `min_length=10` | `Field(min_length=10)` | `src/schemas.py:87-89` |
+| `tips` | `min_length=5` | `Field(min_length=5)` | `src/schemas.py:91-93` |
 
-**GeneratedRecord — all 8 metadata fields present**
-[src/schemas.py:114–148](../src/schemas.py) — `trace_id`, `category`, `difficulty`, `template_version`, `generation_timestamp`, `model_used`, `prompt_hash`, `record` all defined.
+**GeneratedRecord — all 8 metadata fields:** `trace_id`, `category` (typed `Category` Literal), `difficulty` (typed `Difficulty` Literal), `template_version`, `generation_timestamp`, `model_used`, `prompt_hash`, `record`. (`src/schemas.py:114-147`)
 
-**FailureLabel and JudgeResult models**
-[src/schemas.py:153–218](../src/schemas.py) — `FailureLabel` has `mode` (typed `FailureMode` Literal), `label` (`Literal[0, 1]`), `reason`. `JudgeResult` has `trace_id`, `labels` (exactly 6), `overall_quality_score` (1–5). `@field_validator` ensures all 6 modes are present.
+**FailureLabel and JudgeResult models:** `FailureLabel` has `mode` (`FailureMode` Literal), `label` (`Literal[0, 1]`), `reason` (`min_length=5`). `JudgeResult` has `trace_id`, `labels` (exactly 6 via `min_length`/`max_length` + `@field_validator` ensuring all modes present), `overall_quality_score` (1-5 via `ge=1, le=5`). (`src/schemas.py:153-217`)
 
 ---
 
 ### Section 4: Generation Pipeline
 
-**5 templates (v1) with correct personas and emphasis**
-[src/templates.py:43–70](../src/templates.py) — all 5 categories (`appliance_repair`, `plumbing_repair`, `electrical_repair`, `hvac_maintenance`, `general_home_repair`) mapped with PRD-specified personas and emphasis strings.
+**5 templates (v1) with correct personas and emphasis:** All 5 categories mapped with PRD-specified personas and emphasis strings. (`src/templates.py:43-70`)
 
-**30 records generated (5 × 3 × 2 matrix)**
-`data/generated/batch_v1.json` — confirmed 30 records. `data/generated/batch_v2.json` — confirmed 30 records.
+**30 records generated (5 × 3 × 2 matrix):** `data/generated/batch_v1.json` confirmed 30 records. Every (category, difficulty) combo has exactly 2 records. `data/generated/batch_v2.json` also 30 records.
 
-**JSON file cache (MD5 keyed)**
-[src/generator.py:68–123](../src/generator.py) — `_prompt_hash()` uses MD5 on `system + "---" + user`. `load_from_cache()` / `save_to_cache()` check/write `data/cache/{key}.json`. Cache format matches PRD Section 4d spec (cache_key, prompt_hash, category, difficulty, model, timestamp, response).
+**JSON file cache (MD5 keyed):** `_prompt_hash()` uses MD5 on `system + "---" + user`. `load_from_cache()` / `save_to_cache()` manage `data/cache/{key}.json`. Cache format matches PRD Section 4d (cache_key, prompt_hash, category, difficulty, model, timestamp, response). 176 cache files present. (`src/generator.py:68-123`)
 
-**Instructor integration**
-[src/generator.py:177–183](../src/generator.py) — `instructor.from_openai(OpenAI())` wrapping, `response_model=DIYRepairRecord`, `max_retries=3`, `temperature=0.7`.
+**Instructor integration:** `instructor.from_openai(OpenAI())`, `response_model=DIYRepairRecord`, `max_retries=3`, `temperature=0.7`, model `gpt-4o-mini`. (`src/generator.py:130-183`)
 
-**Batch generation matrix**
-[src/generator.py:194–268](../src/generator.py) — `generate_batch()` loops 5 categories × 3 difficulties × 2 variants = 30 records. `_generate_variant()` appends variation hint for index > 0 to ensure unique prompts and diverse outputs.
+**Batch generation with variant diversity:** `generate_batch()` loops 5 × 3 × 2. `_generate_variant()` appends variation hint for index > 0. (`src/generator.py:194-320`)
 
 ---
 
 ### Section 5: Validation Pipeline
 
-**Success rate tracking**
-[src/validator.py:69–73](../src/validator.py) — `ValidationReport.success_rate` property returns `valid_count / total_records`. `success_rate_pct` is human-readable string.
+**Success rate tracking:** `ValidationReport` with `success_rate` property, `success_rate_pct` string. (`src/validator.py:56-88`)
 
-**Per-field error frequency**
-[src/validator.py:66](../src/validator.py) — `field_error_counts: Counter` tracks field name → count. Exposed via `ValidationReport.summary()` at `validator.py:80–88`.
+**Per-field error frequency:** `field_error_counts: Counter` tracks per-field errors. (`src/validator.py:66`)
 
-**validated_records.json and rejected_records.json**
-Both files present: `data/validated/validated_records.json`, `data/validated/rejected_records.json`. Code at [src/validator.py:181–207](../src/validator.py).
+**validated_records.json and rejected_records.json:** Both present in `data/validated/`. `validation_report.json` confirms 30/30 valid, 0 rejected, 100.0% success rate. (`src/validator.py:181-207`)
 
 ---
 
 ### Section 6: Failure Labeling
 
-**All 6 failure modes implemented**
-[src/schemas.py:36–43](../src/schemas.py) — `FailureMode` Literal type defines all 6: `incomplete_answer`, `safety_violations`, `unrealistic_tools`, `overcomplicated_solution`, `missing_context`, `poor_quality_tips`. Judge prompt criteria at [src/evaluator.py:56–88](../src/evaluator.py).
+**All 6 failure modes:** Defined in `FailureMode` Literal type (`src/schemas.py:36-43`). Detailed judge prompt criteria for each mode (`src/evaluator.py:49-88`).
 
-**Manual labels for exactly 10 records**
-`data/labels/manual_labels.csv` — confirmed 10 rows.
+**Manual labels for 10 records:** `data/labels/manual_labels.csv` — 10 data rows with all 6 binary failure modes.
 
-**LLM labels for all 30 records**
-`data/labels/llm_labels.csv` and `data/labels/llm_labels.json` — both present with full 30-record coverage. LLM labels also exist for all pipeline stages: `llm_labels_corrected.{csv,json}`, `llm_labels_v2.{csv,json}`, `llm_labels_v2_corrected.{csv,json}`.
+**LLM labels for all 30 records:** `data/labels/llm_labels.csv` and `llm_labels.json` — 30 entries each. Additional label files for all pipeline stages: `llm_labels_corrected`, `llm_labels_v2`, `llm_labels_v2_corrected` (both CSV and JSON).
 
-**Per-mode agreement rate**
-[src/evaluator.py:391–397](../src/evaluator.py) — `per_mode_agreement` dict computed for each failure mode. Results in `data/labels/agreement_report.json`:
-- `incomplete_answer`: 80.0%
-- `safety_violations`: 80.0%
-- `unrealistic_tools`: 70.0%
-- `overcomplicated_solution`: 100.0%
-- `missing_context`: 100.0%
-- `poor_quality_tips`: 60.0%
+**Per-mode agreement rate:** Computed in `compute_agreement()` (`src/evaluator.py:328-440`). Results in `data/labels/agreement_report.json`:
+- `incomplete_answer`: 80.0%, `safety_violations`: 80.0%, `unrealistic_tools`: 70.0%, `overcomplicated_solution`: 100.0%, `missing_context`: 100.0%, `poor_quality_tips`: 60.0%
 - **Overall: 81.7%**
 
-**Cohen's Kappa**
-[src/evaluator.py:403–431](../src/evaluator.py) — `cohen_kappa_score` from sklearn, computed per-mode and aggregated. Results in `data/labels/agreement_report.json`:
-- Per-mode: `incomplete_answer=0.545`, `safety_violations=0.412`, `unrealistic_tools=-0.154`, `poor_quality_tips=0.000`, `overcomplicated_solution=N/A` (degenerate — all zeros in both raters), `missing_context=N/A` (degenerate)
-- **Overall kappa: 0.201** (mean of valid modes)
+**Cohen's Kappa:** `cohen_kappa_score` from sklearn (`src/evaluator.py:29`). Per-mode kappa computed with degenerate-case handling. Results: `incomplete_answer=0.545`, `safety_violations=0.412`, `unrealistic_tools=-0.154`, `poor_quality_tips=0.000`, `overcomplicated_solution=N/A`, `missing_context=N/A`. **Overall kappa: 0.201**.
 
 ---
 
 ### Section 7: Analysis
 
-**All 6 PRD-specified charts generated**
-All files present in `results/charts/`:
-| Chart | PRD Spec | File | Code |
-|-------|----------|------|------|
-| Failure mode heatmap | `failure_heatmap.png` | ✅ exists | `analysis.py:119–150` |
-| Failure frequency bar | `failure_frequency.png` | ✅ exists | `analysis.py:153–177` |
-| Correlation matrix | `failure_correlation.png` | ✅ exists | `analysis.py:180–212` |
-| Category breakdown | `category_failures.png` | ✅ exists | `analysis.py:215–235` |
-| Difficulty breakdown | `difficulty_failures.png` | ✅ exists | `analysis.py:238–263` |
-| Agreement matrix | `agreement_matrix.png` | ✅ exists | `analysis.py:266–361` |
+**All 6 PRD-specified charts + 1 bonus:**
 
-**Extra chart not in PRD** (bonus deliverable): `results/charts/correction_improvement.png` — 4-bar red-to-green pipeline chart. [src/analysis.py:364–421](../src/analysis.py).
+| Chart | File | Code |
+|-------|------|------|
+| Failure mode heatmap | `results/charts/failure_heatmap.png` | `src/analysis.py:119-150` |
+| Failure frequency bar | `results/charts/failure_frequency.png` | `src/analysis.py:153-177` |
+| Correlation matrix | `results/charts/failure_correlation.png` | `src/analysis.py:180-212` |
+| Category breakdown | `results/charts/category_failures.png` | `src/analysis.py:215-235` |
+| Difficulty breakdown | `results/charts/difficulty_failures.png` | `src/analysis.py:238-263` |
+| Agreement matrix | `results/charts/agreement_matrix.png` | `src/analysis.py:266-361` |
+| Correction improvement (bonus) | `results/charts/correction_improvement.png` | `src/analysis.py:364-421` |
 
-**Per-category and per-difficulty breakdowns**
-[src/analysis.py:447–467](../src/analysis.py) — `compute_metrics()` produces per-category and per-difficulty failure rate dicts. Saved to `results/metrics.json`.
+**Per-category and per-difficulty breakdowns:** `compute_metrics()` produces both. Saved to `results/metrics.json`. (`src/analysis.py:447-467`)
 
-**Key analysis questions answered (Section 7c)**
-[src/analysis.py:428–508](../src/analysis.py) — `compute_metrics()` computes per-mode failures (Q1), per-category rates (Q2), per-difficulty profiles (Q3); correlation matrix answers Q4 visually; agreement report answers Q5.
+**Key analysis questions (Section 7c) all answered:**
+1. Most common failure mode: `incomplete_answer` at 50.0% (15/30)
+2. Category differences: `electrical_repair` = 0.0%, `general_home_repair` = 30.6%
+3. Difficulty profiles: `intermediate` = 23.3%, `beginner` = 16.7%, `advanced` = 20.0%
+4. Co-occurrence: correlation matrix chart
+5. Manual vs LLM agreement: 81.7% with kappa
 
 ---
 
 ### Section 8: Correction Loop
 
-**Strategy A — Individual record correction**
-[src/corrector.py:97–181](../src/corrector.py) — `correct_record()` builds correction prompt with original record + flagged issues + judge reasons. Sends to GPT-4o-mini via Instructor. `correct_batch()` at `corrector.py:184–254` processes all records with ≥1 failure; clean records pass through unchanged.
+**Strategy A — Individual record correction:** `correct_record()` sends original record + judge feedback to GPT-4o-mini via Instructor. `correct_batch()` processes all records with ≥1 failure. (`src/corrector.py:97-254`)
 
-**Strategy B — Template v2 improvement**
-[src/corrector.py:261–487](../src/corrector.py) — `analyze_failure_patterns()` identifies top modes per category; `build_v2_templates()` adds targeted instructions per failure mode (6 instruction strings in `_V2_MODE_INSTRUCTIONS` at `corrector.py:296–331`); `generate_v2_batch()` regenerates full 30-record matrix with v2 system prompts.
+**Strategy B — Template v2 improvement:** `analyze_failure_patterns()` identifies top modes per category. `_V2_MODE_INSTRUCTIONS` dict provides 6 failure-prevention instruction strings. `build_v2_templates()` assembles per-category templates. `generate_v2_batch()` regenerates 30 records. (`src/corrector.py:261-487`)
 
-**Full 4-stage pipeline (36 → 12 → 8 → 0)**
-[src/corrector.py:624–741](../src/corrector.py) — `run_full_pipeline()` orchestrates all 9 sub-stages end-to-end. `results/correction_comparison.json` confirms:
-- V1 Original: **36 failures** (20.0%)
-- V1 Corrected: **12 failures** (−66.7%)
-- V2 Generated: **8 failures** (−77.8%)
-- V2 Corrected: **0 failures** (−100%)
+**Full 4-stage pipeline:** `run_full_pipeline()` orchestrates all stages end-to-end. (`src/corrector.py:624-740`)
 
-**>80% improvement target**
-`results/correction_comparison.json` → `target_met.v2_corrected_meets_80pct: true`. Final stage achieves 100% reduction, meeting the >80% criterion.
+**Per-record and per-template correction tracking:** `correct_batch()` counts corrected vs unchanged. `build_comparison_metrics()` computes `improvement_vs_v1` for each stage. (`src/corrector.py:553-617`)
 
 ---
 
 ### Section 9: File Structure
 
-All required directories and files present:
+All required files and directories present:
 
 | Required Path | Status |
 |---------------|--------|
-| `CLAUDE.md` | ✅ |
-| `PRD.md` | ✅ |
-| `src/__init__.py` | ✅ |
-| `src/schemas.py` | ✅ |
-| `src/templates.py` | ✅ (v1 only — see PARTIAL) |
-| `src/generator.py` | ✅ |
-| `src/validator.py` | ✅ |
-| `src/evaluator.py` | ✅ |
-| `src/corrector.py` | ✅ |
-| `src/analysis.py` | ✅ |
-| `tests/__init__.py` | ✅ |
-| `tests/test_schemas.py` | ✅ |
-| `tests/test_generator.py` | ✅ |
-| `tests/test_evaluator.py` | ✅ |
-| `data/cache/` | ✅ |
-| `data/generated/batch_v1.json` | ✅ 30 records |
-| `data/generated/batch_v2.json` | ✅ 30 records |
-| `data/validated/validated_records.json` | ✅ |
-| `data/validated/rejected_records.json` | ✅ |
-| `data/labels/manual_labels.csv` | ✅ 10 rows |
-| `data/labels/llm_labels.csv` | ✅ |
-| `data/corrected/corrected_records.json` | ✅ |
-| `data/corrected/v2_corrected_records.json` | ✅ |
-| `results/charts/` (6 required PNGs) | ✅ all 6 present + 1 bonus |
-| `results/metrics.json` | ✅ |
-| `docs/adr/` (4 ADRs) | ✅ |
-| `streamlit_app.py` | ✅ |
-| `README.md` | ✅ |
+| `CLAUDE.md` | Present |
+| `PRD.md` | Present |
+| `pyproject.toml` (with `instructor` dep) | Present |
+| `src/__init__.py` | Present |
+| `src/schemas.py` | Present |
+| `src/templates.py` | Present |
+| `src/generator.py` | Present |
+| `src/validator.py` | Present |
+| `src/evaluator.py` | Present |
+| `src/corrector.py` | Present |
+| `src/analysis.py` | Present |
+| `tests/__init__.py` | Present |
+| `tests/test_schemas.py` | Present |
+| `tests/test_generator.py` | Present |
+| `tests/test_evaluator.py` | Present |
+| `data/cache/` | 176 files |
+| `data/generated/` | `batch_v1.json` (30 records), `batch_v2.json` (30 records) |
+| `data/validated/` | `validated_records.json`, `rejected_records.json`, `validation_report.json` |
+| `data/labels/` | `manual_labels.csv` (10 rows), `llm_labels.csv`, `llm_labels.json`, + corrected/v2 variants, `agreement_report.json` |
+| `data/corrected/` | `corrected_records.json`, `v2_corrected_records.json` |
+| `results/charts/` | 7 PNG files (6 required + 1 bonus) |
+| `results/metrics.json` | Present |
+| `docs/adr/` | 5 ADR files (4 required + 1 bonus) |
+| `streamlit_app.py` | Present (633 lines) |
+| `README.md` | Present (portfolio-quality) |
 
-**Extra test files beyond PRD minimum:** `tests/test_templates.py`, `tests/test_validator.py`, `tests/test_corrector.py`, `tests/test_analysis.py` — all passing. Test count: 209 (PRD did not specify a count).
+**Bonus test files beyond PRD minimum:** `test_templates.py`, `test_validator.py`, `test_corrector.py`, `test_analysis.py`. Total: 209 tests across 7 test files.
 
 ---
 
 ### Section 12: ADRs
 
-**ADR-001** (`docs/adr/ADR-001-instructor-over-raw-openai.md`): "Why Instructor over raw OpenAI API" — matches PRD spec exactly. Full template: context, decision (with code snippet), alternatives table, quantified validation (30/30 records, ~120 LOC saved), consequences, Java/TS parallel, interview signal.
-
-**ADR-002** (`docs/adr/ADR-002-flat-schema-over-nested-models.md`): "Flat Schema over Nested Models" — matches PRD spec.
-
-**ADR-004** (`docs/adr/ADR-004-template-improvement-correction.md`): "Template Improvement as Correction Strategy" — matches PRD spec.
+| ADR | PRD Title | Actual Title | Status |
+|-----|-----------|-------------|--------|
+| ADR-001 | Why Instructor over raw OpenAI API | "Instructor over Raw OpenAI API" | PASS |
+| ADR-002 | Flat schema matching spec over nested models | "Flat Schema over Nested Models" | PASS |
+| ADR-004 | Template improvement as correction strategy | "Template Improvement as Correction Strategy" | PASS |
+| ADR-005 | (not in PRD — bonus) | "Dual Labeling Strategy — Manual + LLM Inter-Rater Agreement" | PASS |
 
 ---
 
 ### Streamlit App
 
-`streamlit_app.py` — exists, loads from `data/` and `results/` dirs with `@st.cache_data`. Displays all 6 failure modes, 5 categories, 3 difficulties. Loads generated records, labels, metrics, charts. PRD Section 9 requirement met.
+`streamlit_app.py` exists (633 lines), loads from `data/` and `results/` with `@st.cache_data`, displays categories, failure modes, charts, correction pipeline metrics.
 
 ### README
 
-`README.md` — has problem statement ("36 → 0 story"), architecture (Mermaid flowchart), results table (20.0% → 0.0%), engineering practices (ADRs, caching, dual labeling), key insights, demo link section. PRD requirement met.
+`README.md` has: problem statement ("Why This Matters"), architecture (Mermaid flowchart), key results table (20.0% → 0.0%), engineering practices, key insights, embedded screenshot.
 
 ### All Tests Pass
 
 ```
-209 passed in 6.90s
+209 passed in 5.23s
 ```
-
-All 7 test files pass.
 
 ---
 
 ## PARTIAL — Implemented but incomplete or deviating from PRD
 
-### §4 / §9: v2 Templates Not in templates.py
+### 1. First-attempt success rate not tracked (Section 5b)
 
-**PRD spec** (`Section 9`): `src/templates.py — 5 prompt templates (v1 and v2)`
+**PRD says:** "First-attempt success rate — Track but no target — Records that passed without retry"
 
-**Actual**: `src/templates.py` contains v1 only (`TEMPLATE_VERSION = "v1"` at `templates.py:96`). V2 templates are built **programmatically at runtime** in `src/corrector.py`:
-- `_V2_MODE_INSTRUCTIONS` dict at `corrector.py:296–331` — 6 failure-mode-specific instruction strings
-- `build_v2_templates()` at `corrector.py:334–374` — reads `results/metrics.json` to determine which modes to address, then assembles per-category v2 templates
-- `build_v2_system_prompt()` at `corrector.py:377–387` — builds the actual system prompt string
+**Actual:** Not tracked. `src/validator.py` re-validates saved records but has no concept of retry history. Instructor's `client.chat.completions.create()` either succeeds (possibly after internal retries) or raises — the return value contains no retry count.
 
-**Gap**: V2 prompt content is not a static, reviewable artifact in `templates.py` as the PRD implies. It is dynamically assembled from failure metrics at runtime.
+**Why:** Instructor does not expose per-call retry count in its standard return path. Tracking this would require Instructor's `hooks` mechanism or wrapping each call with `max_retries=0` as a probe.
 
-**Impact**: Low. The v2 templates function correctly — `batch_v2.json` exists with 30 records, v2 failure rate is 4.4% (−77.8%). The gap is organizational: a reader of `templates.py` does not see v2 content.
+**Impact:** Low. PRD explicitly says "no target" for this metric. All 30 records passed validation, so the data is complete — the gap is in observability, not correctness.
 
 ---
 
-### §5: First-Attempt Success Rate Not Tracked
+### 2. correction_comparison.json disagrees with metrics.json on final result (Section 8c)
 
-**PRD spec** (`Section 5b`): "First-attempt success rate — Track but no target — Records that passed without retry"
+**PRD says:** "Target: improvement > 80%"
 
-**Actual**: Not tracked anywhere. `src/validator.py` only re-validates saved records; it has no concept of retry history. `src/generator.py:177–183` calls `client.chat.completions.create()`, which either succeeds after Instructor's internal retries or raises after exhausting `max_retries=3`. The return value contains no retry count.
+**Actual:** Two conflicting data files exist:
+- **`results/correction_comparison.json`** (newer, 2026-03-02T06:21): V2 Corrected = **8 failures** (77.8% improvement). All three `target_met` flags are `false`.
+- **`results/metrics.json`** (older, 2026-03-02T06:08): `correction_pipeline.v2_corrected` = **0 failures** (100% improvement).
 
-**Gap**: Instructor does not expose per-call retry count in its standard return path. Tracking this would require: (a) Instructor's `hooks` mechanism (not currently used), or (b) wrapping `client.chat.completions.create()` with `max_retries=0` as a probe then escalating — a significant complexity addition.
+The README and CLAUDE.md document the "36 → 12 → 8 → 0" narrative which matched the earlier successful run, but the latest `correction_comparison.json` shows "36 → 12 → 8 → 8" — the V2 correction stage failed to reduce failures further.
 
-**Impact**: Low. PRD explicitly says "no target" for this metric. The practical information value is minimal since Instructor's auto-retry ensures near-100% first-attempt success for well-structured schemas like `DIYRepairRecord`.
+**Root cause:** Non-deterministic LLM outputs between pipeline runs. The v2_corrected stage in the latest run produced the same 8 failures as v2_generated, suggesting either stale cache entries or the corrections didn't resolve the remaining failures.
 
----
-
-### §8: V1 Correction Alone Does Not Meet >80%
-
-**PRD spec** (`Section 8c`): "Target: improvement > 80%"
-
-**Actual**: The >80% target is met only by the **final stage** (V2 Corrected, −100%). Intermediate stages fall short:
-- V1 Corrected: **−66.7%** (36 → 12 failures) — below target
-- V2 Generated: **−77.8%** (36 → 8 failures) — below target
-- V2 Corrected: **−100%** ✅ — meets target
-
-`correction_comparison.json` correctly reports `corrected_meets_80pct: false` and `v2_meets_80pct: false`.
-
-**Gap**: The PRD's "Target: improvement > 80%" is semantically ambiguous about which stage must meet it. The implementation meets the spirit (final result is 100%) but the individually-labeled intermediate stage ("corrected") is documented as not meeting the threshold, and `target_met.corrected_meets_80pct: false` is visible in the artifact.
-
-**Impact**: Medium. An interviewer examining `correction_comparison.json` will see two `false` target flags. The README correctly emphasizes the 36→0 end result, but the per-stage story requires explanation: Strategy A alone is insufficient; Strategy B (template improvement) is what pushes past 80%.
+**Impact:** Medium. The >80% target was met in a prior run (per `metrics.json`) but is not reproducible in the most recent pipeline execution. The `correction_comparison.json` and `metrics.json` are inconsistent with each other. An interviewer examining `correction_comparison.json` would see all `target_met` flags as `false`.
 
 ---
 
-### §12: ADR-003 Topic Mismatches PRD Spec
+### 3. ADR-003 topic mismatches PRD spec (Section 12)
 
-**PRD spec**: `ADR-003 — Dual labeling — manual + LLM agreement as evaluation strategy`
+**PRD says:** `ADR-003 — Dual labeling — manual + LLM agreement as evaluation strategy`
 
-**Actual** (`docs/adr/ADR-003-judge-prompt-calibration.md`): "Judge Prompt Calibration (0% → 20%)" — documents the prompt engineering decision that moved failure rate from 0% to 20%. The dual labeling approach and its 81.7% agreement result are mentioned in the "Quantified Validation" section, but the ADR's central thesis is prompt strictness calibration, not the dual labeling design choice.
+**Actual:** ADR-003 is titled "Judge Prompt Calibration (0% → 20%)" and documents the prompt engineering decision for judge strictness — not the dual labeling design choice. The dual labeling topic was written as ADR-005 instead.
 
-**Note**: ADR-003 also contains this line: _"Cohen's Kappa not computed — acknowledged gap, though 81.7% on strict binary labels indicates concordance well above chance"_ — which is now outdated. Kappa **is** computed (overall: 0.201, per-mode in `agreement_report.json`) as of the current branch.
+Additionally, ADR-003 contains the outdated line: _"Cohen's Kappa not computed — acknowledged gap"_ — but Kappa IS now computed (`agreement_report.json` has per-mode and overall kappa values).
 
-**Gap**: The decision "why use both manual labels AND LLM labels" — the portfolio signal about validating LLM evaluation against human ground truth — has no dedicated ADR. The data exists; the architectural rationale is not documented with PRD template structure.
-
-**Impact**: Low-to-medium. All the evidence is present (`agreement_report.json`, `agreement_matrix.png`, Kappa scores). The missing piece is the documented reasoning for *why* dual labeling was chosen and what it proves about judge reliability — a strong EM interview talking point.
+**Impact:** Low. All dual labeling content exists (ADR-005 covers it thoroughly). The numbering doesn't match the PRD, and ADR-003 has a stale statement about Kappa.
 
 ---
 
-### §9: correction_comparison.json Artifact Missing Metadata Fields
+### 4. V2 templates not in templates.py (Section 9)
 
-**PRD spec**: Not explicitly required, but `build_comparison_metrics()` at [src/corrector.py:553–617](../src/corrector.py) is designed to emit experiment metadata: `generated_at`, `generator_model`, `judge_model`, `pipeline_version`.
+**PRD says:** `src/templates.py — 5 prompt templates (v1 and v2)`
 
-**Actual** (`results/correction_comparison.json`): The file does **not** contain these four fields. The artifact on disk was generated before the metadata fields were added to `build_comparison_metrics()`. Current file structure:
-```json
-{
-  "v1_original": {...},
-  "corrected": {...},
-  "v2_generated": {...},
-  "v2_corrected": {...},
-  "target_met": {...}
-}
-```
+**Actual:** `src/templates.py` contains v1 only (`TEMPLATE_VERSION = "v1"` at line 96). V2 templates are built programmatically at runtime in `src/corrector.py`:
+- `_V2_MODE_INSTRUCTIONS` dict (`corrector.py:296-331`) — 6 failure-prevention strings
+- `build_v2_templates()` (`corrector.py:334-374`) — reads metrics to assemble per-category templates
+- `build_v2_system_prompt()` (`corrector.py:377-387`) — generates the system prompt
 
-**Gap**: The code and the artifact are out of sync on metadata. Running `uv run python -m src.corrector` would regenerate the file with correct metadata (since all pipeline inputs are cached, this would be a cache-only run with no API cost).
+**Impact:** Low. V2 templates function correctly (`batch_v2.json` exists with 30 records, 4.4% failure rate). The gap is organizational — a reader of `templates.py` does not see v2 content.
 
-**Impact**: Very low. Failure counts and improvement percentages are correct. Only experiment provenance is missing from the saved file.
+---
+
+### 5. No live Streamlit deployment link in README
+
+**PRD says:** Section 11 item 20 calls for Streamlit Cloud deployment.
+
+**Actual:** README has embedded screenshot but no live deployment URL. CLAUDE.md explicitly marks this as "deferred until all 9 projects complete."
+
+**Impact:** Low. Intentionally deferred — not a gap in implementation, just deployment.
 
 ---
 
 ## MISSING — Not implemented at all
 
-**None found.** All PRD sections have implementations. Every requirement has either a PASS or a PARTIAL.
+**None.** All PRD sections have implementations. Every requirement has either a PASS or a PARTIAL.
 
 ---
 
-## Summary Table
+## Summary
 
 | PRD Section | Requirement | Status |
 |-------------|-------------|--------|
-| §3 | DIYRepairRecord — 7 fields + all validators | ✅ PASS |
-| §3 | GeneratedRecord — 8 metadata fields | ✅ PASS |
-| §3 | FailureLabel + JudgeResult models | ✅ PASS |
-| §4 | 5 v1 templates (category × persona × emphasis) | ✅ PASS |
-| §4 | v2 templates in `templates.py` | ⚠️ PARTIAL — v2 in `corrector.py` instead |
-| §4 | 30 records (5 × 3 × 2 matrix) | ✅ PASS |
-| §4 | JSON cache (MD5 keyed, PRD format) | ✅ PASS |
-| §4 | Instructor integration (response_model, max_retries) | ✅ PASS |
-| §5 | Generation success rate tracking | ✅ PASS |
-| §5 | First-attempt success rate | ⚠️ PARTIAL — architecturally untrackable via Instructor |
-| §5 | Per-field error frequency | ✅ PASS |
-| §5 | validated_records.json + rejected_records.json | ✅ PASS |
-| §6 | All 6 failure modes defined | ✅ PASS |
-| §6 | Manual labels — 10 records | ✅ PASS |
-| §6 | LLM labels — all 30 records | ✅ PASS |
-| §6 | Per-mode agreement rate | ✅ PASS (81.7% overall) |
-| §6 | Cohen's Kappa | ✅ PASS (0.201 overall, per-mode) |
-| §7 | All 6 specified charts | ✅ PASS |
-| §7 | Per-category breakdown | ✅ PASS |
-| §7 | Per-difficulty breakdown | ✅ PASS |
-| §8 | Strategy A — individual record correction | ✅ PASS |
-| §8 | Strategy B — template v2 | ✅ PASS |
-| §8 | 4-stage pipeline (36→12→8→0) | ✅ PASS |
-| §8 | >80% improvement (final stage) | ✅ PASS (100%) |
-| §8 | >80% improvement (V1 corrected alone) | ⚠️ PARTIAL (66.7%) |
-| §9 | All required files and directories | ✅ PASS |
-| §9 | correction_comparison.json metadata fields | ⚠️ PARTIAL — stale artifact |
-| §12 | ADR-001 (Instructor) | ✅ PASS |
-| §12 | ADR-002 (flat schema) | ✅ PASS |
-| §12 | ADR-003 (dual labeling topic) | ⚠️ PARTIAL — written as "Judge Prompt Calibration"; Kappa note is now outdated |
-| §12 | ADR-004 (template improvement) | ✅ PASS |
-| — | Streamlit app | ✅ PASS |
-| — | README (problem + architecture + results + demo) | ✅ PASS |
-| — | All tests pass | ✅ PASS (209/209) |
+| §3 | DIYRepairRecord — 7 fields + all validators | PASS |
+| §3 | GeneratedRecord — 8 metadata fields | PASS |
+| §3 | FailureLabel + JudgeResult models | PASS |
+| §4 | 5 v1 templates (category × persona × emphasis) | PASS |
+| §4 | v2 templates in `templates.py` | PARTIAL — in `corrector.py` instead |
+| §4 | 30 records (5 × 3 × 2 matrix) | PASS |
+| §4 | JSON cache (MD5 keyed, PRD format) | PASS |
+| §4 | Instructor integration | PASS |
+| §5 | Generation success rate >90% | PASS (100%) |
+| §5 | First-attempt success rate tracking | PARTIAL — not trackable via Instructor |
+| §5 | Per-field error frequency | PASS |
+| §5 | validated_records.json + rejected_records.json | PASS |
+| §6 | All 6 failure modes | PASS |
+| §6 | Manual labels — 10 records | PASS |
+| §6 | LLM labels — 30 records | PASS |
+| §6 | Per-mode agreement rate | PASS (81.7%) |
+| §6 | Cohen's Kappa | PASS (0.201 overall) |
+| §7 | All 6 charts | PASS |
+| §7 | Per-category breakdown | PASS |
+| §7 | Per-difficulty breakdown | PASS |
+| §7 | Key analysis questions answered | PASS |
+| §8 | Strategy A — individual correction | PASS |
+| §8 | Strategy B — template v2 | PASS |
+| §8 | 4-stage pipeline | PASS |
+| §8 | >80% improvement target (final stage) | PARTIAL — met in prior run (100%) but latest `correction_comparison.json` shows 77.8% |
+| §9 | All files and directories | PASS |
+| §12 | ADR-001, ADR-002, ADR-004 | PASS |
+| §12 | ADR-003 (dual labeling topic) | PARTIAL — covers judge calibration instead; dual labeling is ADR-005 |
+| — | Streamlit app exists and works | PASS |
+| — | README with problem + architecture + results | PASS |
+| — | Live demo link | PARTIAL — deferred |
+| — | All tests pass | PASS (209/209) |
+
+**Final tally: 27 PASS, 5 PARTIAL, 0 MISSING**
