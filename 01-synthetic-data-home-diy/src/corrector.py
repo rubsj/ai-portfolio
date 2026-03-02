@@ -187,6 +187,7 @@ def correct_batch(
     client: instructor.Instructor | None = None,
     *,
     use_cache: bool = True,
+    version_tag: str = "v1_corrected",
 ) -> list[GeneratedRecord]:
     """Correct all records that have >=1 failure.
 
@@ -195,6 +196,8 @@ def correct_batch(
         judge_results: Full JudgeResult dicts from llm_labels.json.
         client: Instructor client (created if None).
         use_cache: Whether to use cache.
+        version_tag: Template version string for corrected records
+            (e.g. "v1_corrected", "v2_corrected").
 
     Returns:
         List of GeneratedRecord objects — corrected records replace originals,
@@ -235,7 +238,7 @@ def correct_batch(
             corrected_diy = correct_record(client, record, failures, use_cache=use_cache)
             # Wrap corrected record with original metadata (same trace_id)
             corrected_gen = record.model_copy(
-                update={"record": corrected_diy, "template_version": "v1_corrected"}
+                update={"record": corrected_diy, "template_version": version_tag}
             )
             corrected_records.append(corrected_gen)
             corrected_count += 1
@@ -503,6 +506,241 @@ def save_corrected_records(
 
 
 # ---------------------------------------------------------------------------
+# Pipeline metrics helpers
+# ---------------------------------------------------------------------------
+
+# Failure modes tracked by the LLM judge — same list as evaluator/analysis
+_FAILURE_MODES = [
+    "incomplete_answer",
+    "safety_violations",
+    "unrealistic_tools",
+    "overcomplicated_solution",
+    "missing_context",
+    "poor_quality_tips",
+]
+
+
+def _count_failures(
+    judge_results: list[dict],
+    num_records: int,
+) -> dict[str, int | float]:
+    """Count failures per mode from a list of JudgeResult dicts.
+
+    Single source of truth for derived metrics — build_comparison_metrics()
+    consumes this directly instead of re-deriving rates.
+
+    Args:
+        judge_results: List of JudgeResult dicts (with 'labels' key).
+        num_records: Total number of records in the batch (for rate calc).
+
+    Returns:
+        Dict with per-mode counts, 'total' count, and 'failure_rate' float.
+    """
+    counts: dict[str, int] = {mode: 0 for mode in _FAILURE_MODES}
+    for jr in judge_results:
+        for label in jr.get("labels", []):
+            if label.get("label") == 1 and label.get("mode") in counts:
+                counts[label["mode"]] += 1
+
+    total = sum(counts.values())
+    # Rate is total failures / (num_records * 6 modes)
+    total_possible = num_records * len(_FAILURE_MODES)
+    failure_rate = total / total_possible if total_possible > 0 else 0.0
+
+    return {**counts, "total": total, "failure_rate": failure_rate}
+
+
+def build_comparison_metrics(
+    v1_results: list[dict],
+    v1_corrected_results: list[dict],
+    v2_results: list[dict],
+    v2_corrected_results: list[dict],
+    total_records: int,
+) -> dict:
+    """Build the 4-stage comparison metrics dict.
+
+    Args:
+        v1_results: JudgeResult dicts for original v1 batch.
+        v1_corrected_results: JudgeResult dicts for corrected v1 batch.
+        v2_results: JudgeResult dicts for v2 batch.
+        v2_corrected_results: JudgeResult dicts for corrected v2 batch.
+        total_records: Number of records per batch (for rate calculation).
+
+    Returns:
+        Dict matching correction_comparison.json format with experiment metadata.
+    """
+    v1 = _count_failures(v1_results, total_records)
+    v1c = _count_failures(v1_corrected_results, total_records)
+    v2 = _count_failures(v2_results, total_records)
+    v2c = _count_failures(v2_corrected_results, total_records)
+
+    def _improvement(baseline_total: int, current_total: int) -> str:
+        if baseline_total == 0:
+            return "N/A"
+        return f"{(1 - current_total / baseline_total) * 100:.1f}%"
+
+    def _stage_dict(counts: dict[str, int | float], vs_v1: str | None = None) -> dict:
+        stage: dict = {
+            "total_failures": counts["total"],
+            "failure_rate": f"{counts['failure_rate'] * 100:.1f}%",
+            "per_mode": {m: counts[m] for m in _FAILURE_MODES},
+        }
+        if vs_v1 is not None:
+            stage["improvement_vs_v1"] = vs_v1
+        return stage
+
+    # Experiment metadata for reproducibility
+    from src.evaluator import _JUDGE_MODEL
+
+    comparison = {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "generator_model": _GENERATION_MODEL,
+        "judge_model": _JUDGE_MODEL,
+        "pipeline_version": "1.0",
+        "v1_original": _stage_dict(v1),
+        "corrected": _stage_dict(v1c, _improvement(v1["total"], v1c["total"])),
+        "v2_generated": _stage_dict(v2, _improvement(v1["total"], v2["total"])),
+        "v2_corrected": _stage_dict(v2c, _improvement(v1["total"], v2c["total"])),
+        "target_met": {
+            "corrected_meets_80pct": (
+                v1["total"] > 0 and (1 - v1c["total"] / v1["total"]) >= 0.8
+            ),
+            "v2_meets_80pct": (
+                v1["total"] > 0 and (1 - v2["total"] / v1["total"]) >= 0.8
+            ),
+            "v2_corrected_meets_80pct": (
+                v1["total"] > 0 and (1 - v2c["total"] / v1["total"]) >= 0.8
+            ),
+        },
+    }
+
+    return comparison
+
+
+# ---------------------------------------------------------------------------
+# Full pipeline orchestrator
+# ---------------------------------------------------------------------------
+
+def run_full_pipeline() -> dict:
+    """Run the full 4-stage correction pipeline end-to-end.
+
+    Stages:
+      1. Load v1 + v1 labels
+      2. Strategy A: correct v1 → corrected_records.json
+      3. Evaluate corrected v1 → llm_labels_corrected.csv/.json
+      4. Strategy B: generate v2 → batch_v2.json
+      5. Evaluate v2 → llm_labels_v2.csv/.json
+      6. Strategy A on v2 → v2_corrected_records.json
+      7. Evaluate corrected v2 → llm_labels_v2_corrected.csv/.json
+      8. Build comparison metrics → correction_comparison.json
+      9. Print summary table
+
+    Returns:
+        The comparison metrics dict.
+    """
+    from src.evaluator import evaluate_batch, save_llm_labels, save_llm_labels_json
+    from src.generator import load_generated_records, save_generated_records
+
+    # Guard clause — fail fast before any LLM calls
+    v1_path = _GENERATED_DIR / "batch_v1.json"
+    labels_path = _LABELS_DIR / "llm_labels.json"
+    if not v1_path.exists():
+        raise FileNotFoundError(
+            f"{v1_path.name} not found — run 'uv run python -m src.generator' first"
+        )
+    if not labels_path.exists():
+        raise FileNotFoundError(
+            f"{labels_path.name} not found — run 'uv run python -m src.evaluator' first"
+        )
+
+    # ── Stage 1: Load v1 + v1 labels ──
+    print("Loading v1 records and judge results...")
+    v1_records = load_generated_records("batch_v1.json")
+    v1_judge_results = json.loads(labels_path.read_text())
+    total_records = len(v1_records)
+    print(f"  {total_records} records, {_count_failures(v1_judge_results, total_records)['total']} failures")
+
+    # ── Stage 2: Strategy A — correct v1 ──
+    print("\n=== Strategy A: Individual Record Correction (V1) ===")
+    v1_corrected = correct_batch(v1_records, v1_judge_results)
+    save_corrected_records(v1_corrected)
+
+    # ── Stage 3: Evaluate corrected v1 ──
+    print("\n=== Evaluating Corrected V1 ===")
+    v1c_judge = evaluate_batch(v1_corrected)
+    save_llm_labels(v1c_judge, filename="llm_labels_corrected.csv")
+    save_llm_labels_json(v1c_judge, filename="llm_labels_corrected.json")
+    # TODO: accept JudgeResult directly — mismatch exists because correct_batch
+    # was written to consume raw JSON from cache files
+    v1c_judge_dicts = [r.model_dump() for r in v1c_judge]
+    print(f"  {_count_failures(v1c_judge_dicts, total_records)['total']} failures")
+
+    # ── Stage 4: Strategy B — generate v2 ──
+    print("\n=== Strategy B: Template V2 Generation ===")
+    patterns = analyze_failure_patterns(v1_records, v1_judge_results)
+    for cat, modes in patterns.items():
+        print(f"  {cat}: {modes}")
+    v2_records = generate_v2_batch()
+    save_generated_records(v2_records, filename="batch_v2.json")
+
+    # ── Stage 5: Evaluate v2 ──
+    print("\n=== Evaluating V2 ===")
+    v2_judge = evaluate_batch(v2_records)
+    save_llm_labels(v2_judge, filename="llm_labels_v2.csv")
+    save_llm_labels_json(v2_judge, filename="llm_labels_v2.json")
+    # TODO: accept JudgeResult directly — mismatch exists because correct_batch
+    # was written to consume raw JSON from cache files
+    v2_judge_dicts = [r.model_dump() for r in v2_judge]
+    print(f"  {_count_failures(v2_judge_dicts, total_records)['total']} failures")
+
+    # ── Stage 6: Strategy A on v2 ──
+    print("\n=== Strategy A: Individual Record Correction (V2) ===")
+    v2_corrected = correct_batch(
+        v2_records, v2_judge_dicts, version_tag="v2_corrected"
+    )
+    save_corrected_records(v2_corrected, filename="v2_corrected_records.json")
+
+    # ── Stage 7: Evaluate corrected v2 ──
+    print("\n=== Evaluating Corrected V2 ===")
+    v2c_judge = evaluate_batch(v2_corrected)
+    save_llm_labels(v2c_judge, filename="llm_labels_v2_corrected.csv")
+    save_llm_labels_json(v2c_judge, filename="llm_labels_v2_corrected.json")
+    # TODO: accept JudgeResult directly — mismatch exists because correct_batch
+    # was written to consume raw JSON from cache files
+    v2c_judge_dicts = [r.model_dump() for r in v2c_judge]
+    print(f"  {_count_failures(v2c_judge_dicts, total_records)['total']} failures")
+
+    # ── Stage 8: Build comparison metrics ──
+    print("\n=== Building Comparison Metrics ===")
+    comparison = build_comparison_metrics(
+        v1_judge_results, v1c_judge_dicts, v2_judge_dicts, v2c_judge_dicts,
+        total_records,
+    )
+    _RESULTS_DIR = _PROJECT_ROOT / "results"
+    _RESULTS_DIR.mkdir(parents=True, exist_ok=True)
+    comparison_path = _RESULTS_DIR / "correction_comparison.json"
+    comparison_path.write_text(json.dumps(comparison, indent=2))
+    print(f"  Saved -> {comparison_path}")
+
+    # ── Stage 9: Summary table ──
+    print("\n" + "=" * 60)
+    print("CORRECTION PIPELINE SUMMARY")
+    print("=" * 60)
+    for stage_key, stage_name in [
+        ("v1_original", "V1 Original"),
+        ("corrected", "V1 Corrected"),
+        ("v2_generated", "V2 Generated"),
+        ("v2_corrected", "V2 Corrected"),
+    ]:
+        stage = comparison[stage_key]
+        imp = f" ({stage['improvement_vs_v1']} improvement)" if "improvement_vs_v1" in stage else ""
+        print(f"  {stage_name:20s}: {stage['total_failures']:3d} failures ({stage['failure_rate']}){imp}")
+    print("=" * 60)
+
+    return comparison
+
+
+# ---------------------------------------------------------------------------
 # CLI entry point
 # ---------------------------------------------------------------------------
 
@@ -511,30 +749,4 @@ if __name__ == "__main__":
         level=logging.INFO,
         format="%(asctime)s %(levelname)s %(name)s: %(message)s",
     )
-
-    from src.generator import load_generated_records, save_generated_records
-
-    # Load v1 records + judge results
-    print("Loading v1 records and judge results...")
-    v1_records = load_generated_records("batch_v1.json")
-    judge_results = json.loads(
-        (_LABELS_DIR / "llm_labels.json").read_text()
-    )
-
-    # Strategy A: Individual correction
-    print("\n=== Strategy A: Individual Record Correction ===")
-    corrected = correct_batch(v1_records, judge_results)
-    save_corrected_records(corrected)
-
-    # Strategy B: Template v2 generation
-    print("\n=== Strategy B: Template V2 Generation ===")
-    print("Analyzing failure patterns...")
-    patterns = analyze_failure_patterns(v1_records, judge_results)
-    for cat, modes in patterns.items():
-        print(f"  {cat}: {modes}")
-
-    print("\nGenerating v2 batch...")
-    v2_records = generate_v2_batch()
-    save_generated_records(v2_records, filename="batch_v2.json")
-
-    print(f"\nDone! Corrected: {len(corrected)}, V2: {len(v2_records)}")
+    run_full_pipeline()

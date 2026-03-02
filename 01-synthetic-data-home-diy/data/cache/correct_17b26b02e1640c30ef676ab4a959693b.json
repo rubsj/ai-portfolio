@@ -1,0 +1,22 @@
+{
+  "cache_key": "correct_17b26b02e1640c30ef676ab4a959693b",
+  "trace_id": "r1",
+  "model": "gpt-4o-mini",
+  "type": "correction",
+  "timestamp": "2026-03-02T05:10:58.968703+00:00",
+  "response": {
+    "question": "How do I fix a leaking kitchen faucet?",
+    "answer": "First, turn off the water supply valve under the sink. Then remove the faucet handle by unscrewing the decorative cap. Replace the worn cartridge with a new one from the hardware store.",
+    "equipment_problem": "Leaking single-handle kitchen faucet",
+    "tools_required": [
+      "adjustable wrench",
+      "plumber tape"
+    ],
+    "steps": [
+      "Turn off the water supply valve under the sink",
+      "Remove the faucet handle by unscrewing the cap"
+    ],
+    "safety_info": "Always turn off water supply before starting",
+    "tips": "Take a photo before disassembly for reference"
+  }
+}

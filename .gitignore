@@ -3,8 +3,8 @@
 __pycache__/
 *.pyc
 .DS_Store
-data/cache/
 .coverage
+coverage.json
 *.egg-info/
 dist/
 build/
