@@ -350,6 +350,66 @@ def plot_agreement_matrix(
     return path
 
 
+def plot_correction_improvement() -> Path:
+    """Bar chart showing failure counts across the 4-stage correction pipeline.
+
+    Reads results/correction_comparison.json and creates a bar chart with
+    4 bars (V1 Original, V1 Corrected, V2 Generated, V2 Corrected) showing
+    the failure count reduction. Color gradient: red → orange → blue → green.
+
+    Returns:
+        Path to the saved PNG.
+
+    Raises:
+        FileNotFoundError: If correction_comparison.json doesn't exist.
+    """
+    _ensure_charts_dir()
+
+    comparison_path = _RESULTS_DIR / "correction_comparison.json"
+    if not comparison_path.exists():
+        raise FileNotFoundError(
+            f"{comparison_path} not found — run 'uv run python -m src.corrector' first"
+        )
+
+    comparison = json.loads(comparison_path.read_text())
+
+    stages = [
+        ("V1 Original", "v1_original"),
+        ("V1 Corrected", "corrected"),
+        ("V2 Generated", "v2_generated"),
+        ("V2 Corrected", "v2_corrected"),
+    ]
+    labels = [s[0] for s in stages]
+    counts = [comparison[s[1]]["total_failures"] for s in stages]
+    rates = [comparison[s[1]]["failure_rate"] for s in stages]
+    colors = ["#d32f2f", "#f57c00", "#1976d2", "#388e3c"]
+
+    fig, ax = plt.subplots(figsize=(8, 5))
+    bars = ax.bar(labels, counts, color=colors, edgecolor="black", width=0.6)
+
+    # Add count on top + failure rate below
+    for bar, count, rate in zip(bars, counts, rates):
+        ax.text(
+            bar.get_x() + bar.get_width() / 2, bar.get_height() + 0.5,
+            str(count), ha="center", fontweight="bold", fontsize=12,
+        )
+        ax.text(
+            bar.get_x() + bar.get_width() / 2, bar.get_height() / 2,
+            rate, ha="center", va="center", color="white", fontsize=10,
+        )
+
+    ax.set_title("Correction Pipeline: Failure Reduction", fontsize=14)
+    ax.set_ylabel("Total Failures")
+    ax.set_ylim(0, max(counts) * 1.2 if max(counts) > 0 else 5)
+    plt.tight_layout()
+
+    path = _CHARTS_DIR / "correction_improvement.png"
+    fig.savefig(path, dpi=150)
+    plt.close(fig)
+    logger.info("Saved %s", path)
+    return path
+
+
 # ---------------------------------------------------------------------------
 # Summary metrics (PRD Section 7c)
 # ---------------------------------------------------------------------------
@@ -401,7 +461,21 @@ def compute_metrics(df: pd.DataFrame) -> dict:
     if agreement_path.exists():
         agreement = json.loads(agreement_path.read_text())
 
-    return {
+    # Load correction pipeline comparison if it exists
+    comparison_path = _RESULTS_DIR / "correction_comparison.json"
+    correction_pipeline = {}
+    if comparison_path.exists():
+        comparison = json.loads(comparison_path.read_text())
+        correction_pipeline = {
+            stage_key: {
+                "total_failures": comparison[stage_key]["total_failures"],
+                "failure_rate": comparison[stage_key]["failure_rate"],
+            }
+            for stage_key in ["v1_original", "corrected", "v2_generated", "v2_corrected"]
+            if stage_key in comparison
+        }
+
+    result = {
         "dataset_summary": {
             "total_records": total_records,
             "total_possible_failures": total_possible,
@@ -416,6 +490,11 @@ def compute_metrics(df: pd.DataFrame) -> dict:
         "per_difficulty": per_difficulty,
         "inter_rater_agreement": agreement,
     }
+
+    if correction_pipeline:
+        result["correction_pipeline"] = correction_pipeline
+
+    return result
 
 
 # ---------------------------------------------------------------------------
@@ -447,10 +526,13 @@ def run_full_analysis(
         ("category_failures", plot_category_failures),
         ("difficulty_failures", plot_difficulty_failures),
         ("agreement_matrix", plot_agreement_matrix),
+        ("correction_improvement", plot_correction_improvement),
     ]
+    # Charts that don't take a DataFrame argument
+    _no_df_charts = {"agreement_matrix", "correction_improvement"}
     for name, fn in charts:
         try:
-            if name == "agreement_matrix":
+            if name in _no_df_charts:
                 path = fn()
             else:
                 path = fn(df)
