@@ -1,10 +1,10 @@
 [
   {
-    "trace_id": "3825f511-8806-4147-8ff6-08b38634252f",
+    "trace_id": "bfa219b8-8f03-4d2a-b976-da8cc47374e4",
     "category": "appliance_repair",
     "difficulty": "beginner",
     "template_version": "v2",
-    "generation_timestamp": "2026-02-10T03:46:28.605308+00:00",
+    "generation_timestamp": "2026-03-02T06:21:26.270134+00:00",
     "model_used": "gpt-4o-mini",
     "prompt_hash": "1e6681989020473d9856f6c834f49d36",
     "record": {
@@ -31,11 +31,11 @@
     }
   },
   {
-    "trace_id": "4cf2824e-aa79-4f2c-8edf-eba06ce11712",
+    "trace_id": "9c592648-ab0a-4d3a-a812-3501c94365af",
     "category": "appliance_repair",
     "difficulty": "beginner",
     "template_version": "v2",
-    "generation_timestamp": "2026-02-10T03:46:36.592538+00:00",
+    "generation_timestamp": "2026-03-02T06:21:26.270549+00:00",
     "model_used": "gpt-4o-mini",
     "prompt_hash": "b8fae6e696f54e1033dd7c65788f9878",
     "record": {
@@ -61,11 +61,11 @@
     }
   },
   {
-    "trace_id": "82cf0d26-8e5d-40cf-ad85-286460b0b708",
+    "trace_id": "23b25821-0c44-4941-9830-da1baf37599c",
     "category": "appliance_repair",
     "difficulty": "intermediate",
     "template_version": "v2",
-    "generation_timestamp": "2026-02-10T03:46:42.459019+00:00",
+    "generation_timestamp": "2026-03-02T06:21:26.270848+00:00",
     "model_used": "gpt-4o-mini",
     "prompt_hash": "4167d7dcfd73660754e4b37451681735",
     "record": {
@@ -90,11 +90,11 @@
     }
   },
   {
-    "trace_id": "41284d9f-b5d1-4985-b845-74b22fcdc2ff",
+    "trace_id": "f6016f90-fbab-443b-bdb7-216f9104ca96",
     "category": "appliance_repair",
     "difficulty": "intermediate",
     "template_version": "v2",
-    "generation_timestamp": "2026-02-10T03:46:47.449575+00:00",
+    "generation_timestamp": "2026-03-02T06:21:26.271093+00:00",
     "model_used": "gpt-4o-mini",
     "prompt_hash": "dc031827cd76cc163f0060edbde491a8",
     "record": {
@@ -114,11 +114,11 @@
     }
   },
   {
-    "trace_id": "5898f0d2-2375-484f-a580-ca31d24a84a4",
+    "trace_id": "d0c8c704-ad5d-4bc4-874f-12aec94d830b",
     "category": "appliance_repair",
     "difficulty": "advanced",
     "template_version": "v2",
-    "generation_timestamp": "2026-02-10T03:46:54.203667+00:00",
+    "generation_timestamp": "2026-03-02T06:21:26.271336+00:00",
     "model_used": "gpt-4o-mini",
     "prompt_hash": "e8fa0ccc60bec672849a19f4cf49d4c3",
     "record": {
@@ -142,11 +142,11 @@
     }
   },
   {
-    "trace_id": "51e9e4db-39f8-4068-a00f-5b3698f407e7",
+    "trace_id": "0c3fd911-ed5c-4c5f-b8fc-8005179e739f",
     "category": "appliance_repair",
     "difficulty": "advanced",
     "template_version": "v2",
-    "generation_timestamp": "2026-02-10T03:47:03.982742+00:00",
+    "generation_timestamp": "2026-03-02T06:21:26.271789+00:00",
     "model_used": "gpt-4o-mini",
     "prompt_hash": "78c23bd5ef5b488fa85d9f2e97ed6de2",
     "record": {
@@ -167,11 +167,11 @@
     }
   },
   {
-    "trace_id": "395e816e-1cdc-4e93-8de1-eceacab202e0",
+    "trace_id": "1381103f-0ffe-4f16-8dac-6b9eff8779df",
     "category": "plumbing_repair",
     "difficulty": "beginner",
     "template_version": "v2",
-    "generation_timestamp": "2026-02-10T03:47:12.577014+00:00",
+    "generation_timestamp": "2026-03-02T06:21:26.271947+00:00",
     "model_used": "gpt-4o-mini",
     "prompt_hash": "cd09fceabffe7ea76374b227d0c7aee1",
     "record": {
@@ -196,11 +196,11 @@
     }
   },
   {
-    "trace_id": "a66efd7a-5a5f-45e3-a6b0-9d022c0fa8ef",
+    "trace_id": "66c88a03-f9bc-4273-af5b-0b56b83d7090",
     "category": "plumbing_repair",
     "difficulty": "beginner",
     "template_version": "v2",
-    "generation_timestamp": "2026-02-10T03:47:18.224075+00:00",
+    "generation_timestamp": "2026-03-02T06:21:26.272095+00:00",
     "model_used": "gpt-4o-mini",
     "prompt_hash": "f44ca46deff647e2067d1a80507ccf66",
     "record": {
@@ -225,11 +225,11 @@
     }
   },
   {
-    "trace_id": "738f3c79-dd3b-4d24-a7ed-1d8471b57a8c",
+    "trace_id": "f24f7d0b-82a7-4d7d-9cfa-61e9bfea6e75",
     "category": "plumbing_repair",
     "difficulty": "intermediate",
     "template_version": "v2",
-    "generation_timestamp": "2026-02-10T03:47:23.669120+00:00",
+    "generation_timestamp": "2026-03-02T06:21:26.272306+00:00",
     "model_used": "gpt-4o-mini",
     "prompt_hash": "09ebf1434b2adef40e9ea4a1c5265fbd",
     "record": {
@@ -254,11 +254,11 @@
     }
   },
   {
-    "trace_id": "c5d9daf7-4059-486e-833c-4e9466c0f363",
+    "trace_id": "9a08d266-e892-4176-a32b-81dd1db5bb18",
     "category": "plumbing_repair",
     "difficulty": "intermediate",
     "template_version": "v2",
-    "generation_timestamp": "2026-02-10T03:47:30.796591+00:00",
+    "generation_timestamp": "2026-03-02T06:21:26.272442+00:00",
     "model_used": "gpt-4o-mini",
     "prompt_hash": "7d9ed81399b905fc44afff47523be126",
     "record": {
@@ -286,11 +286,11 @@
     }
   },
   {
-    "trace_id": "45902e09-a781-4934-92fa-378a6f76047f",
+    "trace_id": "9e768aa4-a546-4fd3-9b7f-3b3af9ac8e84",
     "category": "plumbing_repair",
     "difficulty": "advanced",
     "template_version": "v2",
-    "generation_timestamp": "2026-02-10T03:47:37.748244+00:00",
+    "generation_timestamp": "2026-03-02T06:21:26.272578+00:00",
     "model_used": "gpt-4o-mini",
     "prompt_hash": "80b991bdce007033fa80d7da4ae7d3b8",
     "record": {
@@ -317,11 +317,11 @@
     }
   },
   {
-    "trace_id": "01385eb6-60c0-47bc-be8c-a911b4f3f4fd",
+    "trace_id": "9c440148-978c-43e3-9016-83ad769cbe40",
     "category": "plumbing_repair",
     "difficulty": "advanced",
     "template_version": "v2",
-    "generation_timestamp": "2026-02-10T03:47:44.792627+00:00",
+    "generation_timestamp": "2026-03-02T06:21:26.272794+00:00",
     "model_used": "gpt-4o-mini",
     "prompt_hash": "6ad079a6548d238ff56f45d2d92cc654",
     "record": {
@@ -345,11 +345,11 @@
     }
   },
   {
-    "trace_id": "2423a9f5-e119-4d8f-94d6-7282b9ecdd0c",
+    "trace_id": "f70261dd-1fe5-4de2-a94d-b0150b1194b6",
     "category": "electrical_repair",
     "difficulty": "beginner",
     "template_version": "v2",
-    "generation_timestamp": "2026-02-10T03:47:53.603208+00:00",
+    "generation_timestamp": "2026-03-02T06:21:26.272988+00:00",
     "model_used": "gpt-4o-mini",
     "prompt_hash": "f3c174caaefdcf4f2c1e9d68cea0bff3",
     "record": {
@@ -376,11 +376,11 @@
     }
   },
   {
-    "trace_id": "7951d4d2-4017-475b-86e6-e94c641e5e22",
+    "trace_id": "65ff3232-5a68-4608-babc-ef2d3e46f587",
     "category": "electrical_repair",
     "difficulty": "beginner",
     "template_version": "v2",
-    "generation_timestamp": "2026-02-10T03:48:02.505947+00:00",
+    "generation_timestamp": "2026-03-02T06:21:26.273346+00:00",
     "model_used": "gpt-4o-mini",
     "prompt_hash": "26c097d8d7a4ba969119f5cc6e3490c0",
     "record": {
@@ -407,11 +407,11 @@
     }
   },
   {
-    "trace_id": "5ddf7601-889f-4d85-8be4-1156c76d6a58",
+    "trace_id": "1b4be19f-782e-49b6-b2e2-a9f5655fee16",
     "category": "electrical_repair",
     "difficulty": "intermediate",
     "template_version": "v2",
-    "generation_timestamp": "2026-02-10T03:48:11.419260+00:00",
+    "generation_timestamp": "2026-03-02T06:21:26.273556+00:00",
     "model_used": "gpt-4o-mini",
     "prompt_hash": "7d06248326a975494d3ba55a2ba3651e",
     "record": {
@@ -439,11 +439,11 @@
     }
   },
   {
-    "trace_id": "1bbf42c3-dc16-4f45-aaa6-3ffa9e0e5cf5",
+    "trace_id": "9428430b-52fb-4105-8e09-fd70f996e58b",
     "category": "electrical_repair",
     "difficulty": "intermediate",
     "template_version": "v2",
-    "generation_timestamp": "2026-02-10T03:48:18.630853+00:00",
+    "generation_timestamp": "2026-03-02T06:21:26.273746+00:00",
     "model_used": "gpt-4o-mini",
     "prompt_hash": "6cff63b05eb6b1c9c14afda5e4999b13",
     "record": {
@@ -468,11 +468,11 @@
     }
   },
   {
-    "trace_id": "379f158c-67ae-401b-9b64-4714ed9d490a",
+    "trace_id": "00da3efd-4f3b-4ebf-b53e-98ddc4ece06d",
     "category": "electrical_repair",
     "difficulty": "advanced",
     "template_version": "v2",
-    "generation_timestamp": "2026-02-10T03:48:26.674798+00:00",
+    "generation_timestamp": "2026-03-02T06:21:26.274260+00:00",
     "model_used": "gpt-4o-mini",
     "prompt_hash": "357a277261cb68d806ed65b11c0396bf",
     "record": {
@@ -500,11 +500,11 @@
     }
   },
   {
-    "trace_id": "1630c42e-dd3f-4db2-9842-1d1a7219e788",
+    "trace_id": "864a7e14-2adb-4b6a-83ae-05f4e9299b88",
     "category": "electrical_repair",
     "difficulty": "advanced",
     "template_version": "v2",
-    "generation_timestamp": "2026-02-10T03:48:43.467596+00:00",
+    "generation_timestamp": "2026-03-02T06:21:26.274545+00:00",
     "model_used": "gpt-4o-mini",
     "prompt_hash": "acb45d04be054d0df7c819f012b0358e",
     "record": {
@@ -529,11 +529,11 @@
     }
   },
   {
-    "trace_id": "37b3b238-36b8-4fe1-ac72-18996ccf8ec3",
+    "trace_id": "87150f0c-66a0-4bb5-8303-f56ed8249e25",
     "category": "hvac_maintenance",
     "difficulty": "beginner",
     "template_version": "v2",
-    "generation_timestamp": "2026-02-10T03:48:50.225312+00:00",
+    "generation_timestamp": "2026-03-02T06:21:26.274815+00:00",
     "model_used": "gpt-4o-mini",
     "prompt_hash": "7584da9c5ffc49b7b1bd347bc1b9d8b4",
     "record": {
@@ -560,11 +560,11 @@
     }
   },
   {
-    "trace_id": "5185a7a6-8332-473e-a66b-9877f52a926c",
+    "trace_id": "689c332c-8033-409f-941c-853a52876903",
     "category": "hvac_maintenance",
     "difficulty": "beginner",
     "template_version": "v2",
-    "generation_timestamp": "2026-02-10T03:48:59.009813+00:00",
+    "generation_timestamp": "2026-03-02T06:21:26.275098+00:00",
     "model_used": "gpt-4o-mini",
     "prompt_hash": "21d9bee75067657a6c6c288318436b70",
     "record": {
@@ -590,11 +590,11 @@
     }
   },
   {
-    "trace_id": "fdad91e5-90b7-4d63-a445-09610146c116",
+    "trace_id": "80c299a1-e589-4555-8640-86169c68e55b",
     "category": "hvac_maintenance",
     "difficulty": "intermediate",
     "template_version": "v2",
-    "generation_timestamp": "2026-02-10T03:49:07.533738+00:00",
+    "generation_timestamp": "2026-03-02T06:21:26.275312+00:00",
     "model_used": "gpt-4o-mini",
     "prompt_hash": "619dda2aaac3d58371db96245a0aa955",
     "record": {
@@ -619,11 +619,11 @@
     }
   },
   {
-    "trace_id": "d7172ff1-6cd1-421e-886e-bea029c928d6",
+    "trace_id": "9503340c-1daa-4375-9419-d720c6a003f1",
     "category": "hvac_maintenance",
     "difficulty": "intermediate",
     "template_version": "v2",
-    "generation_timestamp": "2026-02-10T03:49:14.806830+00:00",
+    "generation_timestamp": "2026-03-02T06:21:26.275477+00:00",
     "model_used": "gpt-4o-mini",
     "prompt_hash": "f05814ef67466783d63797f9fa139b11",
     "record": {
@@ -647,11 +647,11 @@
     }
   },
   {
-    "trace_id": "5d6ed3d2-f395-4965-90bb-7818228b5ca7",
+    "trace_id": "d1add851-75d3-46ed-8cef-d801e7661e88",
     "category": "hvac_maintenance",
     "difficulty": "advanced",
     "template_version": "v2",
-    "generation_timestamp": "2026-02-10T03:49:23.389712+00:00",
+    "generation_timestamp": "2026-03-02T06:21:26.275680+00:00",
     "model_used": "gpt-4o-mini",
     "prompt_hash": "7b7e2d2211abb4e21dcf66db3150c8ad",
     "record": {
@@ -677,11 +677,11 @@
     }
   },
   {
-    "trace_id": "9c229a10-f034-477f-ba41-f12c0488932f",
+    "trace_id": "7cc06ecd-765f-4324-a9bd-0c3bacb670e0",
     "category": "hvac_maintenance",
     "difficulty": "advanced",
     "template_version": "v2",
-    "generation_timestamp": "2026-02-10T03:49:32.410043+00:00",
+    "generation_timestamp": "2026-03-02T06:21:26.275958+00:00",
     "model_used": "gpt-4o-mini",
     "prompt_hash": "4ae6c6ae878956592b4cb29ae9b79f50",
     "record": {
@@ -710,11 +710,11 @@
     }
   },
   {
-    "trace_id": "26f5b683-638e-4cab-820d-393510dadb78",
+    "trace_id": "f261bd74-3b81-4c63-8ae6-32929037af20",
     "category": "general_home_repair",
     "difficulty": "beginner",
     "template_version": "v2",
-    "generation_timestamp": "2026-02-10T03:49:39.686890+00:00",
+    "generation_timestamp": "2026-03-02T06:21:26.276344+00:00",
     "model_used": "gpt-4o-mini",
     "prompt_hash": "6097e8cc03bc25721604597bd2850090",
     "record": {
@@ -744,11 +744,11 @@
     }
   },
   {
-    "trace_id": "a6df2605-94e6-42ec-9ea5-0a17013ea765",
+    "trace_id": "6a9f5b4c-0c5a-4a49-8ad2-e9590081cad3",
     "category": "general_home_repair",
     "difficulty": "beginner",
     "template_version": "v2",
-    "generation_timestamp": "2026-02-10T03:49:48.904217+00:00",
+    "generation_timestamp": "2026-03-02T06:21:26.276512+00:00",
     "model_used": "gpt-4o-mini",
     "prompt_hash": "6f27773c17a8f7a32badaaa728225e31",
     "record": {
@@ -775,11 +775,11 @@
     }
   },
   {
-    "trace_id": "c9313211-8a1c-4198-bd0b-6b607518cdea",
+    "trace_id": "b129efb2-e35d-4941-bd7d-d7c2b5b4cb7b",
     "category": "general_home_repair",
     "difficulty": "intermediate",
     "template_version": "v2",
-    "generation_timestamp": "2026-02-10T03:49:55.455422+00:00",
+    "generation_timestamp": "2026-03-02T06:21:26.276663+00:00",
     "model_used": "gpt-4o-mini",
     "prompt_hash": "6e5a84e9af2c7f9551c35ef140d4d410",
     "record": {
@@ -805,11 +805,11 @@
     }
   },
   {
-    "trace_id": "1ebe802a-0dd6-4a47-856a-809a4e958ee3",
+    "trace_id": "65f486ea-37da-4ba5-854c-be854bbb60d6",
     "category": "general_home_repair",
     "difficulty": "intermediate",
     "template_version": "v2",
-    "generation_timestamp": "2026-02-10T03:50:02.420916+00:00",
+    "generation_timestamp": "2026-03-02T06:21:26.276808+00:00",
     "model_used": "gpt-4o-mini",
     "prompt_hash": "d80f9695903ada08717fdca5c042cd07",
     "record": {
@@ -834,11 +834,11 @@
     }
   },
   {
-    "trace_id": "e2f5448e-ec21-412d-8a0f-d73e38c125b2",
+    "trace_id": "1a5b2e1b-c7a2-4b60-9fc8-d02d24a91492",
     "category": "general_home_repair",
     "difficulty": "advanced",
     "template_version": "v2",
-    "generation_timestamp": "2026-02-10T03:50:08.975201+00:00",
+    "generation_timestamp": "2026-03-02T06:21:26.276944+00:00",
     "model_used": "gpt-4o-mini",
     "prompt_hash": "6051889244408988a28e5ebe9c5d40bd",
     "record": {
@@ -863,11 +863,11 @@
     }
   },
   {
-    "trace_id": "62093243-afca-4dac-a92d-32178049efe6",
+    "trace_id": "0bb04ed1-867f-4d06-a7ea-e1fce4091f43",
     "category": "general_home_repair",
     "difficulty": "advanced",
     "template_version": "v2",
-    "generation_timestamp": "2026-02-10T03:50:15.127671+00:00",
+    "generation_timestamp": "2026-03-02T06:21:26.277079+00:00",
     "model_used": "gpt-4o-mini",
     "prompt_hash": "c67f9fc2fa4d9692adf147fce2132f20",
     "record": {
