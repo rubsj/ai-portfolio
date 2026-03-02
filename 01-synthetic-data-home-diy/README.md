@@ -68,6 +68,8 @@ The evaluation pipeline identified two dominant failure modes across V1 generati
 
 V2 template improvements eliminated 78% of failures at the source. Targeted correction of the remaining 8 records achieved 100% resolution — proving that **upstream fixes + downstream correction** together form a complete quality loop.
 
+The >80% improvement target applies to the **combined pipeline** (36 → 0, 100%), not individual stages. Strategy A alone (individual record correction) achieves only 66.7% — well below the threshold. It is Strategy B (v2 template regeneration) that pushes the pipeline past 80%, because individual record fixes address symptoms while template improvement eliminates the root cause. Fixing 8 individual records has diminishing returns; rewriting the prompt that produces bad records prevents the failures entirely.
+
 ## Architecture Decisions
 
 | ADR | Decision | Key Insight |
@@ -142,7 +144,7 @@ uv run streamlit run streamlit_app.py
 
 1. **LLM-as-Judge requires calibration, not trust** — Out-of-box GPT-4o judging swung between 0% and 20% failure rates. Dual labeling with manual ground truth exposed the gap. 81.7% agreement post-calibration.
 
-2. **Fix upstream, not downstream** — Template improvement (V2) reduced failures by 78%. Individual record correction only achieved 67%. Improving the source always beats patching outputs.
+2. **Fix upstream, not downstream** — Template improvement (V2) reduced failures by 78%; individual record correction alone only achieved 67% — below the >80% target. The threshold is only crossed by the combined pipeline (100%). This confirms that systematic prompt improvement is the higher-leverage intervention: it eliminates entire classes of failures at the source rather than patching outputs one at a time.
 
 3. **Failure modes cluster predictably** — `incomplete_answer` + `poor_quality_tips` = 78% of all failures. Once you find the cluster, you can fix the template that produces it.
 

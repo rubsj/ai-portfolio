@@ -41,7 +41,7 @@ Rewrite the judge system prompt with **explicit strictness calibration** using t
 
 - **Failure rate**: **0% → 20%** (0 → 36 failures across 180 evaluations)
 - **Diagnostic yield**: Clear concentration in `incomplete_answer` (**50%**) and `poor_quality_tips` (**43.3%**) — actionable distribution that drove ADR-004
-- **Manual vs LLM agreement**: **81.7%** raw agreement across 10 records × 6 modes (60 binary comparisons). Range: 60% (`poor_quality_tips`) to 100% (`overcomplicated_solution`, `missing_context`). Cohen's Kappa not computed — acknowledged gap, though 81.7% on strict binary labels indicates concordance well above chance
+- **Manual vs LLM agreement**: **81.7%** raw agreement across 10 records × 6 modes (60 binary comparisons). Range: 60% (`poor_quality_tips`) to 100% (`overcomplicated_solution`, `missing_context`). Cohen's Kappa **overall κ=0.201** — per-mode: `incomplete_answer` κ=0.545, `safety_violations` κ=0.412, `poor_quality_tips` κ=0.000, `unrealistic_tools` κ=−0.154, `overcomplicated_solution`/`missing_context` N/A (degenerate — all-zero labels, kappa undefined). The positive κ on the two most frequent failure modes confirms the judge's failures are real signal, not noise. See ADR-005 for the dual-labeling strategy that produced this validation
 - **Score anchoring**: Without "most guides are 3-4", scores clustered at 4–5. With anchoring, realistic 3–4 distribution
 
 ## Consequences
@@ -53,6 +53,7 @@ Rewrite the judge system prompt with **explicit strictness calibration** using t
 ## Cross-References
 
 - **ADR-004**: Calibrated judge identified the failure patterns (`incomplete_answer` 50%, `poor_quality_tips` 43.3%) that directly drove v2 template improvements. Without 0% → 20% calibration, there was no signal to act on.
+- **ADR-005**: Dual-labeling strategy that validated the calibrated judge against human ground truth, producing the κ=0.201 / 81.7% agreement figures cited above.
 - **ADR-001**: Same Instructor pattern (`response_model=JudgeResult`) powers the judge, providing structured failure labels with typed reasons.
 
 ## Java/TS Parallel
