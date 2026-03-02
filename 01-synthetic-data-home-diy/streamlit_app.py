@@ -419,53 +419,70 @@ def render_failure_analysis() -> None:
 # ===================================================================
 def render_correction_pipeline() -> None:
     st.title("Correction Pipeline")
-    st.markdown("The story of how we went from **36 failures → 8 → 0**.")
-
-    # --- Three-stage progression ---
-    col1, col2, col3 = st.columns(3)
+    st.markdown("The full 4-stage story: **36 → 12 → 8 → 0**.")
 
     comparison = load_correction_comparison()
     if not comparison:
-        st.warning("Correction comparison data not found.")
+        st.warning(
+            "Correction comparison data not found. "
+            "Run `uv run python -m src.corrector` to generate it."
+        )
         return
 
-    with col1:
-        st.markdown("### Stage 1: V1 Original")
-        v1 = comparison["v1_original"]
-        st.metric("Failures", v1["total_failures"])
-        st.metric("Failure Rate", v1["failure_rate"])
-        st.markdown("**Top failure modes:**")
-        # WHY sorted by count: highlights the most impactful modes first
-        sorted_modes = sorted(
-            v1["per_mode"].items(), key=lambda x: x[1], reverse=True
-        )
-        for mode, count in sorted_modes:
-            if count > 0:
-                st.markdown(f"- {FAILURE_MODE_LABELS.get(mode, mode)}: **{count}**")
+    v1 = comparison["v1_original"]
+    v1c = comparison["corrected"]
+    v2 = comparison["v2_generated"]
+    v2c = comparison["v2_corrected"]
 
-    with col2:
-        st.markdown("### Stage 2: V2 Templates")
-        v2 = comparison["v2_generated"]
-        st.metric("Failures", v2["total_failures"], delta="-77.8%")
-        st.metric("Failure Rate", v2["failure_rate"])
-        st.markdown("**What improved templates fixed:**")
-        st.markdown(
-            "- Added explicit instructions for comprehensive answers\n"
-            "- Required actionable, specific tips\n"
-            "- Eliminated safety_violations and unrealistic_tools entirely"
-        )
+    # --- 4-stage metric cards with deltas showing improvement vs baseline ---
+    col1, col2, col3, col4 = st.columns(4)
+    col1.metric(
+        "V1 Original",
+        v1["total_failures"],
+        help="Baseline: V1 prompt templates",
+    )
+    col2.metric(
+        "V1 Corrected",
+        v1c["total_failures"],
+        # WHY delta_color="inverse": fewer failures = better, so negative delta should be green
+        delta=f"-{v1['total_failures'] - v1c['total_failures']}",
+        delta_color="inverse",
+        help="Strategy A: targeted correction of V1 failures",
+    )
+    col3.metric(
+        "V2 Generated",
+        v2["total_failures"],
+        delta=f"-{v1['total_failures'] - v2['total_failures']}",
+        delta_color="inverse",
+        help="Strategy B: improved V2 prompt templates",
+    )
+    col4.metric(
+        "V2 Corrected",
+        v2c["total_failures"],
+        delta=f"-{v1['total_failures'] - v2c['total_failures']}",
+        delta_color="inverse",
+        help="V2 + targeted correction → 0 failures",
+    )
 
-    with col3:
-        st.markdown("### Stage 3: V2 + Correction")
-        v2c = comparison["v2_corrected"]
-        st.metric("Failures", v2c["total_failures"], delta="-100%")
-        st.metric("Failure Rate", v2c["failure_rate"])
-        st.markdown("**Correction strategy:**")
-        st.markdown(
-            "- Fed judge reasoning back to GPT-4o-mini\n"
-            "- Targeted only the 8 remaining failures\n"
-            "- All failure modes resolved to **0**"
-        )
+    # --- Experiment metadata ---
+    meta_parts: list[str] = []
+    if "generated_at" in comparison:
+        meta_parts.append(f"Generated: {comparison['generated_at'][:10]}")
+    if "generator_model" in comparison:
+        meta_parts.append(f"Generator: {comparison['generator_model']}")
+    if "judge_model" in comparison:
+        meta_parts.append(f"Judge: {comparison['judge_model']}")
+    if "pipeline_version" in comparison:
+        meta_parts.append(f"Pipeline v{comparison['pipeline_version']}")
+    if meta_parts:
+        st.caption(" · ".join(meta_parts))
+
+    # --- Correction improvement chart ---
+    chart_path = CHARTS_DIR / "correction_improvement.png"
+    if chart_path.exists():
+        st.image(str(chart_path), use_container_width=True)
+    else:
+        st.warning("Chart not found: correction_improvement.png — run `uv run python -m src.analysis`")
 
     st.divider()
 

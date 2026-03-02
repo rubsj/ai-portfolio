@@ -145,6 +145,15 @@ dev-dependencies = [
 - [ ] 19. Loom recording — deferred until all 9 projects complete
 - [ ] 20. Streamlit Cloud deployment — deferred until all 9 projects complete
 
+### Day 5 — Reproducible 4-stage pipeline (PR #53, merged):
+- [x] 21. `src/corrector.py` — `run_full_pipeline()` orchestrates all 4 stages end-to-end
+- [x] 22. `src/corrector.py` — `build_comparison_metrics()` + `_count_failures()` produce `correction_comparison.json` with experiment metadata (`generated_at`, `generator_model`, `judge_model`, `pipeline_version`)
+- [x] 23. `src/corrector.py` — `version_tag` param on `correct_batch()` enables reuse for v2 correction
+- [x] 24. `src/analysis.py` — `plot_correction_improvement()` generates 7th chart (4-bar red→green)
+- [x] 25. `tests/` — 203 tests, 95% coverage across all 7 source modules (test_templates, test_generator, test_evaluator, test_validator, test_analysis, test_corrector extended)
+- [x] 26. `streamlit_app.py` — Correction Pipeline section updated to 4 `st.metric()` cards + experiment metadata caption
+- [x] 27. `README.md` — Updated to 36→12→8→0 narrative, fixed pipeline command order
+
 ## Key Decisions Made
 
 - Pydantic v2 over dataclasses: runtime validation catches LLM hallucinations
