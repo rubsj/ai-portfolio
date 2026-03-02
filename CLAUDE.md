@@ -36,25 +36,14 @@
 - **Testing**: pytest
 - **Linting**: ruff
 
-## Claude Model Strategy
-
-- **Planning mode**: Use Opus 4.6 (maximum capability for architecture decisions)
-  - Specify `model: "opus"` when launching Plan agents
-- **Implementation**: Use Sonnet 4.5 (best balance of quality and cost for coding)
-  - Most code tasks run with Sonnet by default
-- **Fast mode**: Use `/fast` to switch to Opus with faster output when needed
-- When entering plan mode via EnterPlanMode, specify `model: "opus"` in the call
-
 ## Monorepo Structure
 
 ```
 ai-portfolio/
 ├── CLAUDE.md                     ← THIS FILE (root-level Claude Code memory)
-├── STATUS.md                     ← Auto-generated project status (YAML frontmatter)
 ├── README.md                     ← Portfolio overview + links to demos
 ├── docs/
 │   ├── adr/                      ← Cross-project ADRs
-│   ├── learnings/                ← Monthly learning notes (YYYY-MM.md)
 │   └── progress/                 ← Per-project progress snapshots
 ├── shared/                       ← Shared utilities across projects
 │   ├── llm_client.py
@@ -108,58 +97,131 @@ ai-portfolio/
 ## Documentation Protocol
 
 ### ADRs (Architecture Decision Records)
-Write an ADR for every significant decision. Store in project's `docs/adr/` folder.
 
-Template:
+Write an ADR for every significant architectural, tool, or algorithmic decision.
+**Destination**: Create as a new page in the Notion ADR Log database (via Claude Chat + MCP), AND save a markdown copy in the project's `docs/adr/` folder.
+
+**Notion properties to set on each ADR entry:**
+- `Decision`: `ADR-NNN: [Title]`
+- `Project`: e.g., `P1: Synthetic Data`
+- `Category`: one of `Data Model | Architecture | Tool Choice | Algorithm | Deployment | Evaluation`
+- `Status`: `Accepted | Superseded | Proposed`
+- `Date`: YYYY-MM-DD
+
+**Page body template** (what goes inside the ADR page):
+
 ```markdown
-# ADR-NNNN: [Decision Title]
-
-**Date**: YYYY-MM-DD
-**Status**: Accepted | Superseded | Deprecated
-**Project**: P[N] — [Project Name]
-
 ## Context
-What is the issue that we're seeing that is motivating this decision?
+What specific problem, constraint, or trade-off is motivating this decision?
+Include the scale (how many records, how many call sites, what failure modes existed).
 
 ## Decision
-What is the change that we're proposing and/or doing?
+State the decision in one clear sentence. Then explain the mechanism:
+how it works internally, what it does for us, and the key parameters/configuration used.
+Include a concrete code snippet showing the exact usage pattern.
 
 ## Alternatives Considered
-| Option | Pros | Cons |
-|--------|------|------|
-| ... | ... | ... |
+
+| Option | Pros | Cons | Why Not |
+|--------|------|------|---------|
+| **Chosen option** ✅ | ... | ... | — (selected) |
+| Alternative A | ... | ... | Specific reason rejected |
+| Alternative B | ... | ... | Specific reason rejected |
+
+## Quantified Validation
+Concrete numbers proving the decision worked:
+- Success rate, error rate, lines of code saved, latency, cost
+- Before/after comparison if a change was made
+- Any statistical validation (chi-squared, z-score, etc.)
 
 ## Consequences
-What becomes easier or harder because of this change?
+**Easier:** What this decision makes simpler going forward.
+**Harder:** What this decision makes more complex or what you accept as a trade-off.
+**Portability:** Which future projects (P2–P9) will reuse this pattern.
+
+## Cross-References
+- Links to other ADRs this decision depends on or affects
+- e.g., "ADR-002: Flat schema works because Instructor handles schema injection..."
 
 ## Java/TS Parallel
-How does this map to a pattern the developer already knows?
+Map the decision to a Java/TypeScript pattern the developer already knows.
+Include a side-by-side code comparison when the mapping is non-obvious.
+
+## Interview Signal
+One paragraph on what this decision demonstrates about engineering judgment.
+Frame it as a capability signal for EM interviews: build-vs-buy reasoning,
+evaluation methodology, production thinking, or systematic decision-making.
 ```
 
-### Learning Notes
-After every session, append to `docs/learnings/YYYY-MM.md`:
+---
+
+### Learning Journal Entries
+
+After every session, create a new page in the Notion Learning Journal database (via Claude Chat + MCP).
+
+**Notion properties to set on each entry:**
+- `Entry`: `P[N] Day [X] — [Short descriptive title of what was built/learned]`
+- `Project`: e.g., `P4: Resume Coach`
+- `Phase`: one of `Foundation | Build | Evaluate | Document | Polish | Implementation | Testing`
+- `Session Type`: one of `Weeknight | Sunday Deep Work | Saturday`
+- `Hours`: numeric
+- `Date`: YYYY-MM-DD (or range)
+- `Python Pattern Learned`: 2–5 bullet summary of Python patterns discovered (inline text field, not the page body)
+- `Blocked By`: brief description of blockers, or blank
+
+**Page body template** (what goes inside the journal entry page):
+
 ```markdown
-### [Date] — [Topic]
-- **What**: What was learned
-- **Why it matters**: How it connects to the project or AI concepts
-- **Python pattern**: Any Python-specific idiom discovered
-- **Java/TS equivalent**: What this replaces from the Java/TS world
+## What I Built
+Describe every component shipped this session, with specific file names and design rationale.
+For each component, include:
+- What the file/class does
+- Key design decisions made and WHY (not just what)
+- Any non-obvious implementation detail (e.g., why Optional fields reduce retry rate)
+
+## Key Metrics
+Quantified outcomes from the session:
+- Generation rates, test counts, coverage %, error rates
+- Before/after comparisons if something was fixed
+- Jaccard scores, recall@k, or other domain metrics
+- Cost incurred (API spend)
+
+## What I Learned
+### [Concept Title]
+Deep explanation of the most important insight(s). Structure as:
+- What the concept is
+- Why it matters for this project and AI/ML broadly
+- How it connects to the Java/TS mental model
+One subsection per major learning. Not bullet points — full paragraphs.
+
+## What Blocked Me
+### [Blocker Title] (RESOLVED / ONGOING)
+For each blocker:
+- **Problem**: What went wrong and how it was discovered
+- **Root Cause**: The actual underlying cause (not just symptoms)
+- **Why it wasn't caught earlier**: What validation gap allowed it
+- **Solution**: Exactly what was done to fix it
+- **Takeaway**: The repeatable principle extracted from this failure
+
+## Python Pattern of the Day
+### [Pattern Name]
+Deep dive on the most important Python/library pattern learned:
+- Full working code snippet with WHY comments
+- What it does internally (not just the API surface)
+- Why this over the obvious alternative
+- Java/TS equivalent with side-by-side code
+- Key parameters explained with the reasoning behind chosen values
+
+## Tomorrow's Plan
+Specific task list for next session, referencing PRD task IDs where applicable.
 ```
 
-### STATUS.md
-Auto-generate this file after significant milestones. Use YAML frontmatter for machine parsing:
-```yaml
 ---
-last_updated: "2026-02-07"
-current_project: P1
-overall_progress: "1/9 complete"
----
-```
 
 ## LLM Cost Management
 
 - Cache ALL LLM responses during development
-- Cache key: `hashlib.md5(prompt.encode()).hexdigest()`
+- Cache key: `hashlib.md5(f"{model}\n{system_prompt}\n---\n{user_prompt}".encode()).hexdigest()`
 - Cache location: `data/cache/` as JSON files
 - Before any LLM call, check cache first
 - Log estimated cost per call to console
@@ -180,32 +242,12 @@ overall_progress: "1/9 complete"
 ## Session Workflow
 
 1. At session start: read this CLAUDE.md + project-specific CLAUDE.md
-2. Check STATUS.md for current state
+2. Check Notion Command Center for current project state
 3. Build / test / evaluate
 4. Before session end:
    - Git commit + push
-   - Update STATUS.md if milestone reached
-   - Append to learning notes if something non-obvious was learned
+   - Create Learning Journal entry in Notion (using the template above)
+   - Create any new ADR entries in Notion for decisions made this session
    - Generate a handoff summary (compact block for next chat session)
 
-## Current Sprint Context
 
-- **Active Project**: P2 — RAG Evaluation Benchmarking Framework
-- **Week**: 2 of 8
-- **Phase**: Day 5 deliverables complete (CLI, Streamlit, README, charts)
-- **Status**: All core tasks done, ready for PR merge. Polish tasks deferred to Week 8.
-
-## Project Schedule Reference
-
-| Project | Week | Dates | Status |
-|---------|------|-------|--------|
-| P1: Synthetic Data | W1 | Feb 8–11 | Complete |
-| P2: RAG Evaluation | W1–2 | Feb 12–16 | Ready for Merge |
-| P3: Fine-Tuning & Guardrails | W2 | Feb 17–19 | Backlog |
-| P4: Resume Coach | W3 | Feb 20–25 | Backlog |
-| P5: Production RAG | W4 | Feb 27–Mar 2 | Backlog |
-| P6: Digital Clone | W4–5 | Mar 3–8 | Backlog |
-| P7: Feedback Intelligence | W5 | Mar 8–12 | Backlog |
-| P8: Jira AI Agent | W6 | Mar 13–18 | Backlog |
-| P9: DevOps Assistant | W7 | Mar 20–26 | Backlog |
-| Portfolio Polish | W8 | Mar 27–Apr 2 | Backlog |
