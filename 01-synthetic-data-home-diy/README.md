@@ -13,7 +13,7 @@
 
 ## Key Results
 
-**The 36 → 8 → 0 story:** V1 templates produced 36 failures across 180 evaluations. Failure pattern analysis revealed `incomplete_answer` (50%) and `poor_quality_tips` (43%) as dominant modes. Improved V2 templates cut failures to 8 (−78%). Targeted correction of remaining 8 brought the total to **0** (−100%).
+**The 36 → 12 → 8 → 0 story:** V1 templates produced 36 failures across 180 evaluations. Failure pattern analysis revealed `incomplete_answer` (50%) and `poor_quality_tips` (43%) as dominant modes. Targeted correction of V1 records reduced failures to 12 (−67%). Improved V2 templates cut failures to 8 (−78%). Final correction of remaining 8 brought the total to **0** (−100%). The full 4-stage pipeline is reproducible end-to-end — `uv run python -m src.corrector` runs all stages and produces `correction_comparison.json`.
 
 | Metric | Value |
 |--------|-------|
@@ -94,10 +94,10 @@ cd ai-portfolio/01-synthetic-data-home-diy
 uv sync
 
 # Run the pipeline
-uv run python -m src.generator      # Generate 30 records
-uv run python -m src.evaluator      # Run LLM judge
-uv run python -m src.analysis       # Generate charts
-uv run python -m src.corrector      # Run correction loop
+uv run python -m src.generator      # Generate 30 V1 records
+uv run python -m src.evaluator      # Evaluate V1 with LLM judge (GPT-4o)
+uv run python -m src.corrector      # Full 4-stage pipeline: V1→correct→V2→correct
+uv run python -m src.analysis       # Generate 7 charts + metrics.json
 
 # Launch demo
 uv run streamlit run streamlit_app.py
