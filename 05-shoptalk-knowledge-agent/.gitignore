@@ -1,0 +1,20 @@
+# Source PDFs — download locally, do not commit
+data/pdfs/*.pdf
+
+# Generated artifacts
+data/indices/
+data/cache/
+results/
+
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+
+# Test coverage
+.coverage
+coverage.json

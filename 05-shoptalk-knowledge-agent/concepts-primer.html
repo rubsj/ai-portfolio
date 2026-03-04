@@ -1,0 +1,1755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>P5 Concepts Primer — ShopTalk Knowledge Management Agent</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0f1117;
+    --bg2: #161922;
+    --bg3: #1c2030;
+    --surface: #222639;
+    --border: #2d3354;
+    --text1: #e8eaf0;
+    --text2: #a0a8c4;
+    --text3: #6b7394;
+    --accent: #7c6aef;
+    --accent2: #a78bfa;
+    --accent-glow: rgba(124,106,239,0.15);
+    --green: #34d399;
+    --green-dim: rgba(52,211,153,0.12);
+    --orange: #fb923c;
+    --orange-dim: rgba(251,146,60,0.12);
+    --red: #f87171;
+    --red-dim: rgba(248,113,113,0.12);
+    --blue: #60a5fa;
+    --blue-dim: rgba(96,165,250,0.12);
+    --yellow: #fbbf24;
+    --yellow-dim: rgba(251,191,36,0.12);
+    --pink: #f472b6;
+    --pink-dim: rgba(244,114,182,0.12);
+    --cyan: #22d3ee;
+    --cyan-dim: rgba(34,211,238,0.12);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text1);
+    line-height: 1.7;
+    font-size: 16px;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 2rem 6rem;
+  }
+
+  /* Header */
+  .header {
+    text-align: center;
+    margin-bottom: 4rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .header .tag {
+    display: inline-block;
+    background: var(--accent-glow);
+    color: var(--accent2);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.35rem 1rem;
+    border-radius: 100px;
+    border: 1px solid rgba(124,106,239,0.25);
+    margin-bottom: 1.2rem;
+  }
+  .header h1 {
+    font-family: 'Source Serif 4', serif;
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0.8rem;
+    background: linear-gradient(135deg, var(--text1) 0%, var(--accent2) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .header .subtitle {
+    color: var(--text2);
+    font-size: 1.1rem;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  /* TOC */
+  .toc {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.8rem 2rem;
+    margin-bottom: 3.5rem;
+  }
+  .toc h3 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--text3);
+    margin-bottom: 1rem;
+  }
+  .toc ol {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.4rem 2rem;
+    list-style-position: inside;
+    color: var(--text2);
+    font-size: 0.92rem;
+  }
+  .toc a { color: var(--accent2); text-decoration: none; }
+  .toc a:hover { text-decoration: underline; }
+
+  /* Sections */
+  .section { margin-bottom: 2.5rem; }
+  .section-number {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5rem;
+  }
+  .section h2 {
+    font-family: 'Source Serif 4', serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    color: var(--text1);
+  }
+  .section h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+    color: var(--text1);
+  }
+  .section p {
+    color: var(--text2);
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+  }
+
+  /* Concept cards */
+  .concept-card {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem 1.8rem;
+    margin: 1.5rem 0;
+  }
+  .concept-card.highlight {
+    border-color: var(--accent);
+    background: linear-gradient(135deg, var(--accent-glow), var(--bg2));
+  }
+  .concept-card h4 {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+    color: var(--text1);
+  }
+  .concept-card p {
+    font-size: 0.92rem;
+    color: var(--text2);
+    margin-bottom: 0.6rem;
+  }
+  .concept-card p:last-child { margin-bottom: 0; }
+
+  /* Java/TS Parallel */
+  .java-parallel {
+    background: var(--blue-dim);
+    border: 1px solid rgba(96,165,250,0.2);
+    border-radius: 8px;
+    padding: 1rem 1.2rem;
+    margin: 1rem 0;
+  }
+  .java-parallel .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--blue);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.4rem;
+  }
+  .java-parallel p { color: var(--text2); margin-bottom: 0; font-size: 0.92rem; }
+
+  /* First Principles box */
+  .first-principles {
+    background: var(--accent-glow);
+    border: 1px solid rgba(124,106,239,0.2);
+    border-radius: 8px;
+    padding: 1rem 1.2rem;
+    margin: 1rem 0;
+    font-size: 0.92rem;
+  }
+  .first-principles .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--accent2);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.4rem;
+  }
+  .first-principles p { color: var(--text2); margin-bottom: 0; }
+
+  /* Key Insight */
+  .insight {
+    background: var(--green-dim);
+    border: 1px solid rgba(52,211,153,0.2);
+    border-radius: 8px;
+    padding: 1rem 1.2rem;
+    margin: 1rem 0;
+  }
+  .insight .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--green);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.4rem;
+  }
+  .insight p { color: var(--text2); margin-bottom: 0; font-size: 0.92rem; }
+
+  /* Warning */
+  .warning {
+    background: var(--orange-dim);
+    border: 1px solid rgba(251,146,60,0.2);
+    border-radius: 8px;
+    padding: 1rem 1.2rem;
+    margin: 1rem 0;
+  }
+  .warning .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--orange);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.4rem;
+  }
+  .warning p { color: var(--text2); margin-bottom: 0; font-size: 0.92rem; }
+
+  /* Code blocks */
+  pre {
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.2rem 1.5rem;
+    overflow-x: auto;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.82rem;
+    line-height: 1.8;
+    margin: 1rem 0;
+    color: var(--text2);
+  }
+  .kw { color: var(--accent2); }
+  .fn { color: var(--blue); }
+  .str { color: var(--green); }
+  .cmt { color: var(--text3); font-style: italic; }
+  .num { color: var(--orange); }
+  .var { color: var(--cyan); }
+  .dec { color: var(--pink); }
+
+  /* Inline code */
+  code {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85em;
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 0.15rem 0.4rem;
+    color: var(--cyan);
+  }
+  pre code {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Comparison table */
+  .comparison {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 0.9rem;
+  }
+  .comparison th {
+    text-align: left;
+    padding: 0.8rem 1rem;
+    background: var(--bg3);
+    color: var(--text2);
+    font-weight: 600;
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid var(--border);
+  }
+  .comparison td {
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid var(--border);
+    color: var(--text2);
+    vertical-align: top;
+  }
+  .comparison tr:last-child td { border-bottom: none; }
+
+  /* Flow */
+  .flow {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+  }
+  .flow-step {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+    color: var(--text2);
+    white-space: nowrap;
+  }
+  .flow-arrow {
+    color: var(--accent);
+    font-size: 1.1rem;
+  }
+
+  /* Analogy box */
+  .analogy {
+    background: var(--pink-dim);
+    border: 1px solid rgba(244,114,182,0.2);
+    border-radius: 12px;
+    padding: 1.5rem 1.8rem;
+    margin: 2rem 0;
+  }
+  .analogy .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--pink);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.6rem;
+  }
+  .analogy p { color: var(--text2); margin-bottom: 0.6rem; font-size: 0.95rem; }
+  .analogy p:last-child { margin-bottom: 0; }
+
+  /* Interview signal */
+  .interview {
+    background: var(--yellow-dim);
+    border: 1px solid rgba(251,191,36,0.2);
+    border-radius: 8px;
+    padding: 1rem 1.2rem;
+    margin: 1rem 0;
+  }
+  .interview .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--yellow);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.4rem;
+  }
+  .interview p { color: var(--text2); margin-bottom: 0; font-size: 0.92rem; }
+
+  .divider {
+    height: 1px;
+    background: var(--border);
+    margin: 3rem 0;
+  }
+
+  /* Responsive */
+  @media (max-width: 700px) {
+    .container { padding: 2rem 1.2rem 4rem; }
+    .header h1 { font-size: 1.8rem; }
+    .toc ol { grid-template-columns: 1fr; }
+    .flow { flex-direction: column; align-items: stretch; }
+    .flow-arrow { text-align: center; transform: rotate(90deg); }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<!-- Header -->
+<div class="header">
+  <div class="tag">P5 — Concepts Primer</div>
+  <h1>ShopTalk Knowledge Management Agent</h1>
+  <p class="subtitle">Everything you need to understand before building a production RAG system with swappable chunking strategies, hybrid retrieval, NDCG evaluation, and systematic configuration experiments over PDF documents</p>
+</div>
+
+<!-- TOC -->
+<nav class="toc">
+  <h3>Contents</h3>
+  <ol>
+    <li><a href="#s1">Project Overview &amp; Why P5 Is Different</a></li>
+    <li><a href="#s2">Document Chunking — The Most Impactful Decision</a></li>
+    <li><a href="#s3">Embedding Models — Quality vs Speed Trade-off</a></li>
+    <li><a href="#s4">FAISS &amp; Vector Indexing — Beyond P2</a></li>
+    <li><a href="#s5">BM25 &amp; Hybrid Retrieval — Score Fusion</a></li>
+    <li><a href="#s6">Reranking — Cross-Encoders vs Bi-Encoders</a></li>
+    <li><a href="#s7">NDCG — The Ranking Metric You Haven't Used Yet</a></li>
+    <li><a href="#s8">Ground Truth Generation — Building Your Evaluation Dataset</a></li>
+    <li><a href="#s9">LLM-as-Judge for Generation Quality — The 4-Axis Rubric</a></li>
+    <li><a href="#s10">Citation Extraction — Grounding LLM Output</a></li>
+    <li><a href="#s11">Abstract Base Classes — The Strategy Pattern in Python</a></li>
+    <li><a href="#s12">Experiment Tracking — Configuration-Space Search</a></li>
+    <li><a href="#s13">PDF Processing — PyMuPDF and Text Extraction</a></li>
+    <li><a href="#s14">The Full Pipeline &amp; P5 vs Previous Projects</a></li>
+    <li><a href="#s15">CLI Tools &amp; Streamlit Interface — Dual Delivery</a></li>
+  </ol>
+</nav>
+
+<!-- Section 1 -->
+<div class="section" id="s1">
+  <div class="section-number">01</div>
+  <h2>Project Overview &amp; Why P5 Is Different</h2>
+
+  <p>P5 is a <strong>production RAG system</strong>. Where P2 benchmarked RAG configurations on a fixed dataset, P5 asks you to build the <em>actual system</em> that ingests arbitrary PDFs, retrieves relevant chunks, generates cited answers, and serves them through both CLI and web interfaces. P2 measured "which config is best?" P5 answers "build a system where you can swap configs and prove which is best on <em>your</em> documents."</p>
+
+  <div class="concept-card highlight">
+    <h4>🎯 The Core Problem</h4>
+    <p>Organizations have thousands of PDF documents — manuals, research papers, contracts, product docs. Employees waste hours searching through them manually. Keyword search misses semantic meaning. Reading entire documents is too slow. Your system ingests these PDFs, breaks them into searchable chunks, retrieves the most relevant chunks for any question, and generates accurate answers with proper citations to source material. The critical engineering challenge: there's no one-size-fits-all RAG configuration. You must make every component swappable so you can <em>experiment</em> and <em>measure</em> what works best.</p>
+  </div>
+
+  <div class="first-principles">
+    <div class="label">First Principle</div>
+    <p>RAG quality is bottlenecked by the <em>weakest link</em> in a multi-stage pipeline. You learned this in P2: even with 0.747 Recall@5, faithfulness was only 0.511. P5 forces you to build every stage as a swappable component so you can isolate <em>where</em> quality drops and optimize that specific link. This is the same principle behind microservice decomposition: you can't fix what you can't measure independently.</p>
+  </div>
+
+  <h3>What You're Building</h3>
+  <div class="flow">
+    <div class="flow-step">PDF → Extract → Clean</div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step">Chunk (3+ strategies)</div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step">Embed (2+ models)</div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step">Index (FAISS)</div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step">Retrieve + Rerank</div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step">Generate + Cite</div>
+  </div>
+
+  <h3>What's Reusable from P1–P4</h3>
+  <table class="comparison">
+    <tr><th>Pattern</th><th>Source</th><th>P5 Application</th></tr>
+    <tr>
+      <td><strong>Pydantic data models</strong></td>
+      <td>P1, P4</td>
+      <td>Document, Chunk, RetrievalResult, QAResponse, Citation — all validated with Pydantic</td>
+    </tr>
+    <tr>
+      <td><strong>FAISS + embeddings</strong></td>
+      <td>P2, P3</td>
+      <td>Vector store now with multiple embedding models, persistence, and hybrid search</td>
+    </tr>
+    <tr>
+      <td><strong>Retrieval metrics</strong></td>
+      <td>P2</td>
+      <td>Precision@K, Recall@K, MRR — plus NDCG@K which is new</td>
+    </tr>
+    <tr>
+      <td><strong>LLM-as-Judge</strong></td>
+      <td>P1, P2</td>
+      <td>Evaluate generation quality: relevance, accuracy, completeness, citation quality</td>
+    </tr>
+    <tr>
+      <td><strong>Grid search / experiment tracking</strong></td>
+      <td>P2</td>
+      <td>12+ configuration experiments with full metadata — now you build the tracker yourself</td>
+    </tr>
+    <tr>
+      <td><strong>Streamlit dashboards</strong></td>
+      <td>P2, P3</td>
+      <td>Interactive QA interface with config sidebar, file upload, citation display</td>
+    </tr>
+  </table>
+
+  <h3>What's New in P5</h3>
+  <table class="comparison">
+    <tr><th>New Concept</th><th>Why It Matters</th></tr>
+    <tr>
+      <td><strong>PDF text extraction (PyMuPDF)</strong></td>
+      <td>Real-world data is messy. PDFs have formatting artifacts, multi-column layouts, headers/footers — you must clean all this before chunking.</td>
+    </tr>
+    <tr>
+      <td><strong>Semantic chunking</strong></td>
+      <td>Instead of fixed-size splitting, detect topic boundaries using embedding similarity. Chunks that contain coherent ideas retrieve better.</td>
+    </tr>
+    <tr>
+      <td><strong>BM25 + Hybrid retrieval</strong></td>
+      <td>Dense retrieval misses exact keyword matches. BM25 catches them. Combining both via score fusion often beats either alone.</td>
+    </tr>
+    <tr>
+      <td><strong>Cross-encoder reranking</strong></td>
+      <td>Bi-encoders (SentenceTransformers) embed query and doc independently. Cross-encoders attend to both simultaneously — more accurate but much slower.</td>
+    </tr>
+    <tr>
+      <td><strong>NDCG (Normalized Discounted Cumulative Gain)</strong></td>
+      <td>Unlike Precision/Recall which treat relevance as binary, NDCG handles graded relevance and rewards higher-ranked relevant results more.</td>
+    </tr>
+    <tr>
+      <td><strong>Citation extraction</strong></td>
+      <td>LLM outputs must be traceable. Without citations, users can't verify answers — this is what separates a toy demo from a production system.</td>
+    </tr>
+    <tr>
+      <td><strong>Abstract Base Classes (Strategy Pattern)</strong></td>
+      <td>Every component implements an interface so you can swap implementations without rewriting the pipeline. This is the OOP pattern you know from Java/TS.</td>
+    </tr>
+  </table>
+
+  <div class="interview">
+    <div class="label">Interview Signal</div>
+    <p>P5 is your <em>production system evidence</em>. P2 was a benchmarking framework — P5 is the actual system that P2 evaluated. When an interviewer asks "have you built a production RAG system?", P5 is the answer: PDF ingestion, multiple retrieval strategies, hybrid search with score fusion, LLM generation with citations, systematic experimentation across 12+ configurations, and both CLI and web interfaces.</p>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- Section 2 -->
+<div class="section" id="s2">
+  <div class="section-number">02</div>
+  <h2>Document Chunking — The Most Impactful Decision</h2>
+
+  <p>Chunking is where you decide what unit of information the retriever can see. Too small, and the chunk lacks context. Too large, and irrelevant content dilutes the signal. The right strategy depends on your document type, and the only way to know is to <em>experiment</em>. P5 requires implementing at least 3 strategies so you can measure which works best on your specific PDFs.</p>
+
+  <div class="first-principles">
+    <div class="label">First Principle</div>
+    <p>A retrieval system can only return what it was given. If a critical answer spans two chunks and neither chunk alone is complete, the LLM will generate an incomplete answer — no matter how good the model is. Chunking defines the atoms of your search space. Get the atoms wrong, and everything downstream suffers. This is the "garbage in, garbage out" principle applied at the granularity level.</p>
+  </div>
+
+  <h3>Strategy 1: Fixed-Size Chunking</h3>
+
+  <div class="concept-card">
+    <h4>How It Works</h4>
+    <p>Split text into chunks of exactly N tokens (or characters), with an overlap of M tokens between consecutive chunks. Simple, predictable, and fast. The overlap ensures that information at chunk boundaries isn't lost.</p>
+    <p><strong>Token vs Character counting:</strong> Use <code>tiktoken</code> for accurate token counts. Characters are unreliable because tokenization is non-uniform — "extraordinary" is 1 word but often 3+ tokens. A 512-character chunk might be 120 tokens or 180 tokens depending on content.</p>
+  </div>
+
+<pre><span class="cmt"># WHY tiktoken: LLMs process tokens, not characters.</span>
+<span class="cmt"># A chunk that's "512 characters" might be 100 tokens (simple English)</span>
+<span class="cmt"># or 200 tokens (technical jargon with many sub-word pieces).</span>
+<span class="cmt"># Token-based chunking gives consistent semantic density.</span>
+
+<span class="kw">import</span> tiktoken
+
+<span class="cmt"># WHY cl100k_base: This is the tokenizer for GPT-4/GPT-3.5.</span>
+<span class="cmt"># If you embed with OpenAI models, use the same tokenizer for consistency.</span>
+<span class="cmt"># For sentence-transformers, the model has its own tokenizer,</span>
+<span class="cmt"># but cl100k_base is a reasonable proxy for "semantic token count."</span>
+enc = tiktoken.<span class="fn">get_encoding</span>(<span class="str">"cl100k_base"</span>)
+
+<span class="kw">def</span> <span class="fn">fixed_size_chunk</span>(text: <span class="var">str</span>, chunk_size: <span class="var">int</span> = <span class="num">512</span>, overlap: <span class="var">int</span> = <span class="num">128</span>) -> <span class="var">list</span>[<span class="var">str</span>]:
+    <span class="str">"""Split text into fixed-size token chunks with overlap."""</span>
+    tokens = enc.<span class="fn">encode</span>(text)
+    chunks = []
+    <span class="cmt"># WHY stride = chunk_size - overlap: This creates the sliding window.</span>
+    <span class="cmt"># With chunk_size=512 and overlap=128, stride=384.</span>
+    <span class="cmt"># Each new chunk starts 384 tokens after the previous one,</span>
+    <span class="cmt"># sharing 128 tokens with its predecessor.</span>
+    stride = chunk_size - overlap
+    <span class="kw">for</span> i <span class="kw">in</span> <span class="fn">range</span>(<span class="num">0</span>, <span class="fn">len</span>(tokens), stride):
+        chunk_tokens = tokens[i : i + chunk_size]
+        chunks.<span class="fn">append</span>(enc.<span class="fn">decode</span>(chunk_tokens))
+    <span class="kw">return</span> chunks</pre>
+
+  <h3>Strategy 2: Recursive Chunking</h3>
+
+  <div class="concept-card">
+    <h4>How It Works</h4>
+    <p>Split on a hierarchy of separators: first try <code>\n\n</code> (paragraph breaks), then <code>\n</code> (line breaks), then <code>. </code> (sentences), then space. This preserves document structure — paragraphs stay together, sections stay together. Only falls to smaller separators when a chunk exceeds the target size.</p>
+    <p><strong>Why it's often the best default:</strong> Most documents have natural paragraph structure. Splitting on paragraph boundaries produces chunks where each chunk is a coherent thought. Fixed-size chunking can split mid-sentence.</p>
+  </div>
+
+<pre><span class="cmt"># WHY a hierarchy of separators: Documents have structure.</span>
+<span class="cmt"># A research paper has sections → paragraphs → sentences.</span>
+<span class="cmt"># Try the biggest separator first (section break), only fall to</span>
+<span class="cmt"># smaller ones (sentence break) if the section exceeds chunk_size.</span>
+
+SEPARATORS = [<span class="str">"\n\n"</span>, <span class="str">"\n"</span>, <span class="str">". "</span>, <span class="str">" "</span>]
+
+<span class="kw">def</span> <span class="fn">recursive_chunk</span>(text: <span class="var">str</span>, chunk_size: <span class="var">int</span> = <span class="num">512</span>, separators: <span class="var">list</span> = <span class="var">None</span>) -> <span class="var">list</span>[<span class="var">str</span>]:
+    <span class="str">"""Recursively split text using a hierarchy of separators."""</span>
+    separators = separators <span class="kw">or</span> SEPARATORS
+    <span class="kw">if not</span> separators:
+        <span class="kw">return</span> [text]  <span class="cmt"># Base case: no separators left, return as-is</span>
+
+    sep = separators[<span class="num">0</span>]
+    splits = text.<span class="fn">split</span>(sep)
+    chunks, current = [], <span class="str">""</span>
+
+    <span class="kw">for</span> piece <span class="kw">in</span> splits:
+        <span class="cmt"># WHY check before appending: If adding this piece exceeds</span>
+        <span class="cmt"># chunk_size, flush current chunk and start a new one.</span>
+        <span class="kw">if</span> <span class="fn">len</span>(enc.<span class="fn">encode</span>(current + sep + piece)) > chunk_size:
+            <span class="kw">if</span> current:
+                chunks.<span class="fn">append</span>(current.<span class="fn">strip</span>())
+            <span class="cmt"># If the piece itself exceeds chunk_size, recurse with</span>
+            <span class="cmt"># the next separator in the hierarchy</span>
+            <span class="kw">if</span> <span class="fn">len</span>(enc.<span class="fn">encode</span>(piece)) > chunk_size:
+                chunks.<span class="fn">extend</span>(<span class="fn">recursive_chunk</span>(piece, chunk_size, separators[<span class="num">1</span>:]))
+                current = <span class="str">""</span>
+            <span class="kw">else</span>:
+                current = piece
+        <span class="kw">else</span>:
+            current = current + sep + piece <span class="kw">if</span> current <span class="kw">else</span> piece
+
+    <span class="kw">if</span> current:
+        chunks.<span class="fn">append</span>(current.<span class="fn">strip</span>())
+    <span class="kw">return</span> chunks</pre>
+
+  <h3>Strategy 3: Semantic Chunking</h3>
+
+  <div class="concept-card highlight">
+    <h4>How It Works</h4>
+    <p>Embed individual sentences, then measure cosine similarity between consecutive sentences. When similarity drops below a threshold (a "breakpoint"), you've found a topic boundary. Chunks are formed by grouping sentences between breakpoints. This is computationally expensive — you must embed every sentence — but produces the most semantically coherent chunks.</p>
+    <p><strong>Key insight:</strong> This is the only strategy that "reads" the content. Fixed-size and recursive are purely structural — they don't know if two sentences are about the same topic. Semantic chunking does.</p>
+  </div>
+
+<pre><span class="cmt"># WHY embed every sentence: We need to detect TOPIC SHIFTS.</span>
+<span class="cmt"># Two consecutive sentences about "neural network training" will have</span>
+<span class="cmt"># high cosine similarity (~0.8+). When the topic shifts to "deployment costs",</span>
+<span class="cmt"># similarity drops (~0.3). That drop is our chunk boundary.</span>
+
+<span class="kw">import</span> numpy <span class="kw">as</span> np
+<span class="kw">from</span> sentence_transformers <span class="kw">import</span> SentenceTransformer
+
+<span class="kw">def</span> <span class="fn">semantic_chunk</span>(text: <span class="var">str</span>, model: <span class="var">SentenceTransformer</span>, threshold: <span class="var">float</span> = <span class="num">0.5</span>) -> <span class="var">list</span>[<span class="var">str</span>]:
+    <span class="str">"""Split text at semantic breakpoints detected via embedding similarity."""</span>
+    sentences = text.<span class="fn">split</span>(<span class="str">". "</span>)  <span class="cmt"># Naive sentence split — use nltk/spacy for production</span>
+    embeddings = model.<span class="fn">encode</span>(sentences, normalize_embeddings=<span class="kw">True</span>)
+
+    <span class="cmt"># WHY consecutive cosine similarity: We're looking for topic TRANSITIONS.</span>
+    <span class="cmt"># We don't care about absolute similarity — we care about DROPS.</span>
+    chunks, current_chunk = [], [sentences[<span class="num">0</span>]]
+    <span class="kw">for</span> i <span class="kw">in</span> <span class="fn">range</span>(<span class="num">1</span>, <span class="fn">len</span>(sentences)):
+        <span class="cmt"># WHY dot product on normalized vectors = cosine similarity</span>
+        <span class="cmt"># (You proved this in P2/P3 with FAISS IndexFlatIP)</span>
+        sim = np.<span class="fn">dot</span>(embeddings[i - <span class="num">1</span>], embeddings[i])
+        <span class="kw">if</span> sim < threshold:
+            chunks.<span class="fn">append</span>(<span class="str">". "</span>.<span class="fn">join</span>(current_chunk))
+            current_chunk = [sentences[i]]
+        <span class="kw">else</span>:
+            current_chunk.<span class="fn">append</span>(sentences[i])
+
+    <span class="kw">if</span> current_chunk:
+        chunks.<span class="fn">append</span>(<span class="str">". "</span>.<span class="fn">join</span>(current_chunk))
+    <span class="kw">return</span> chunks</pre>
+
+  <h3>Strategy 4: Sliding Window</h3>
+
+  <div class="concept-card">
+    <h4>How It Works</h4>
+    <p>Like fixed-size, but with very high overlap (50%+). A 512-token chunk with 256-token overlap means every piece of text appears in at least two chunks. This maximizes recall at the cost of index size and search speed — more chunks means more candidates to search through.</p>
+    <p><strong>When to use:</strong> When missing a relevant passage is more costly than returning extra results. Legal document search, compliance checks, safety-critical Q&A.</p>
+  </div>
+
+  <h3>Choosing the Right Strategy</h3>
+  <table class="comparison">
+    <tr><th>Document Type</th><th>Best Strategy</th><th>Chunk Size</th><th>Overlap</th><th>Why</th></tr>
+    <tr>
+      <td>Research papers</td>
+      <td>Recursive</td>
+      <td>512–1024</td>
+      <td>50–100</td>
+      <td>Preserves section structure (Abstract, Methods, Results)</td>
+    </tr>
+    <tr>
+      <td>Legal contracts</td>
+      <td>Semantic</td>
+      <td>256–512</td>
+      <td>64–128</td>
+      <td>Clauses are self-contained — semantic boundaries align with legal boundaries</td>
+    </tr>
+    <tr>
+      <td>Technical manuals</td>
+      <td>Fixed-size</td>
+      <td>512</td>
+      <td>128</td>
+      <td>Dense factual information, high overlap needed to avoid boundary losses</td>
+    </tr>
+    <tr>
+      <td>Mixed / Unknown</td>
+      <td>Sliding window</td>
+      <td>512</td>
+      <td>256</td>
+      <td>Maximizes recall when you can't predict where answers live</td>
+    </tr>
+  </table>
+
+  <div class="java-parallel">
+    <div class="label">Java/TypeScript Parallel</div>
+    <p>Chunking strategies map to the <strong>Strategy Pattern</strong>. In Java: <code>interface Chunker { List&lt;Chunk&gt; chunk(Document doc); }</code> with <code>FixedSizeChunker</code>, <code>RecursiveChunker</code>, <code>SemanticChunker</code> implementations. In Python, the same pattern uses Abstract Base Classes (<code>abc.ABC</code>) with <code>@abstractmethod</code>. The config file selects which strategy to use at runtime — same as dependency injection, just more explicit.</p>
+  </div>
+
+  <div class="warning">
+    <div class="label">Pitfall</div>
+    <p>Don't split mid-sentence. Even fixed-size chunking should snap to sentence boundaries. A chunk ending with "The primary cause of the failure was" and the next starting with "corrosion in the left engine mount" means <em>neither</em> chunk contains the full answer. Use sentence-boundary-aware splitting — find the last sentence end before the token limit.</p>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- Section 3 -->
+<div class="section" id="s3">
+  <div class="section-number">03</div>
+  <h2>Embedding Models — Quality vs Speed Trade-off</h2>
+
+  <p>You used embedding models in P2 and P3, but always with a single model per experiment. P5 requires testing <em>at least 2</em> and measuring the quality vs speed trade-off. The key insight: higher dimensions capture more semantic nuance but cost more compute and storage.</p>
+
+  <h3>Model Comparison</h3>
+  <table class="comparison">
+    <tr><th>Model</th><th>Dims</th><th>Speed</th><th>Quality</th><th>Best For</th></tr>
+    <tr>
+      <td><strong>all-MiniLM-L6-v2</strong></td>
+      <td>384</td>
+      <td>Fast</td>
+      <td>Good</td>
+      <td>Production with large corpora — where you need speed over precision</td>
+    </tr>
+    <tr>
+      <td><strong>all-mpnet-base-v2</strong></td>
+      <td>768</td>
+      <td>Medium</td>
+      <td>Better</td>
+      <td>Quality-critical applications where you can afford slower indexing</td>
+    </tr>
+    <tr>
+      <td><strong>multi-qa-MiniLM-L6-cos-v1</strong></td>
+      <td>384</td>
+      <td>Fast</td>
+      <td>Good (QA-optimized)</td>
+      <td>Question-answering specifically — trained on QA pairs, may outperform general models on your task</td>
+    </tr>
+  </table>
+
+  <div class="first-principles">
+    <div class="label">First Principle</div>
+    <p>Embedding is <strong>lossy compression</strong>. You're taking a sequence of tokens (variable length) and squeezing it into a fixed-dimension vector. Higher dimensions = more capacity to preserve nuance. But there's diminishing returns — going from 384d to 768d doubles storage and compute but doesn't double quality. This is the <em>bias-variance trade-off</em> applied to representation learning: more dimensions reduce bias (underfitting) but increase computational cost.</p>
+  </div>
+
+<pre><span class="cmt"># WHY normalize_embeddings=True: Without normalization, vectors have</span>
+<span class="cmt"># varying magnitudes. Cosine similarity = dot_product / (|a| * |b|).</span>
+<span class="cmt"># If you pre-normalize (|v| = 1), then cosine_sim = dot_product.</span>
+<span class="cmt"># This is why FAISS IndexFlatIP works for cosine similarity after normalization.</span>
+<span class="cmt"># You proved this equivalence in P2 and P3.</span>
+
+<span class="kw">from</span> sentence_transformers <span class="kw">import</span> SentenceTransformer
+
+<span class="cmt"># WHY two separate model instances: Each model has different tokenization</span>
+<span class="cmt"># and different output dimensions. You can't mix embeddings from different</span>
+<span class="cmt"># models in the same FAISS index — the geometry is incompatible.</span>
+fast_model = SentenceTransformer(<span class="str">"all-MiniLM-L6-v2"</span>)      <span class="cmt"># 384d</span>
+quality_model = SentenceTransformer(<span class="str">"all-mpnet-base-v2"</span>)   <span class="cmt"># 768d</span>
+
+<span class="cmt"># Encode with normalization — mandatory for cosine similarity via FAISS IP</span>
+embeddings = fast_model.<span class="fn">encode</span>(
+    texts,
+    normalize_embeddings=<span class="kw">True</span>,   <span class="cmt"># L2-normalize each vector to unit length</span>
+    show_progress_bar=<span class="kw">True</span>,      <span class="cmt"># Useful for large corpora</span>
+    batch_size=<span class="num">32</span>                 <span class="cmt"># WHY 32: Fits in 8GB M2 RAM comfortably</span>
+)</pre>
+
+  <div class="warning">
+    <div class="label">M2 Memory Warning</div>
+    <p>On your 8GB MacBook Air M2, loading two SentenceTransformer models simultaneously may cause memory pressure. Load one model, embed, save the index, release the model (<code>del model</code>), then load the next. Monitor with <code>psutil.virtual_memory()</code>. The all-mpnet-base-v2 model is ~420MB — two models plus FAISS indices could push past available RAM.</p>
+  </div>
+
+  <div class="insight">
+    <div class="label">Key Insight</div>
+    <p>You can't mix embeddings from different models in the same FAISS index. A 384d MiniLM vector and a 768d mpnet vector live in completely different geometric spaces. Build a separate index for each model. This also means your experiment grid must track which index to load for each configuration.</p>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- Section 4 -->
+<div class="section" id="s4">
+  <div class="section-number">04</div>
+  <h2>FAISS &amp; Vector Indexing — Beyond P2</h2>
+
+  <p>You used FAISS in P2 and P3, but P5 adds <strong>persistence</strong> (save/load indices to disk), <strong>metadata association</strong> (map vector indices back to chunk objects), and <strong>multiple index management</strong> (one index per embedding model). The core search mechanics are the same — IndexFlatIP for exact cosine similarity on normalized vectors.</p>
+
+  <h3>Persistence Pattern</h3>
+
+<pre><span class="kw">import</span> faiss
+<span class="kw">import</span> json
+<span class="kw">from</span> pathlib <span class="kw">import</span> Path
+
+<span class="kw">class</span> <span class="fn">FAISSVectorStore</span>:
+    <span class="str">"""FAISS index with chunk metadata persistence."""</span>
+
+    <span class="kw">def</span> <span class="fn">save</span>(self, path: <span class="var">Path</span>):
+        <span class="str">"""Save index + metadata to disk."""</span>
+        <span class="cmt"># WHY save both: FAISS only stores vectors — it has NO knowledge of</span>
+        <span class="cmt"># what those vectors represent. The metadata mapping (index position → chunk)</span>
+        <span class="cmt"># must be saved separately. If you lose the metadata, the vectors are useless.</span>
+        faiss.<span class="fn">write_index</span>(self.index, <span class="fn">str</span>(path / <span class="str">"index.faiss"</span>))
+        <span class="kw">with</span> <span class="fn">open</span>(path / <span class="str">"chunks.json"</span>, <span class="str">"w"</span>) <span class="kw">as</span> f:
+            json.<span class="fn">dump</span>([c.<span class="fn">model_dump</span>() <span class="kw">for</span> c <span class="kw">in</span> self.chunks], f)
+
+    <span class="kw">def</span> <span class="fn">load</span>(self, path: <span class="var">Path</span>):
+        <span class="str">"""Load index + metadata from disk."""</span>
+        <span class="cmt"># WHY faiss.read_index: Rebuilding a FAISS index from scratch means</span>
+        <span class="cmt"># re-embedding every chunk (~minutes for 1000 chunks). Loading a saved</span>
+        <span class="cmt"># index is ~milliseconds. This is the "don't rebuild every time" principle.</span>
+        self.index = faiss.<span class="fn">read_index</span>(<span class="fn">str</span>(path / <span class="str">"index.faiss"</span>))
+        <span class="kw">with</span> <span class="fn">open</span>(path / <span class="str">"chunks.json"</span>) <span class="kw">as</span> f:
+            self.chunks = [Chunk(**c) <span class="kw">for</span> c <span class="kw">in</span> json.<span class="fn">load</span>(f)]</pre>
+
+  <div class="java-parallel">
+    <div class="label">Java/TypeScript Parallel</div>
+    <p>Think of FAISS persistence like serializing a <code>HashMap&lt;Integer, Chunk&gt;</code> plus a spatial index to disk. In Java, you'd use <code>ObjectOutputStream</code> for the map and a custom serializer for the index. The pattern is the same: the index gives you fast lookup by vector similarity, but the metadata (what each position <em>means</em>) must be stored separately. This is why databases separate indices from data — same principle.</p>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- Section 5 -->
+<div class="section" id="s5">
+  <div class="section-number">05</div>
+  <h2>BM25 &amp; Hybrid Retrieval — Score Fusion</h2>
+
+  <p>Dense retrieval (embedding similarity) is great for semantic matching — "How do I reset my password?" matches "Password recovery instructions." But it can miss exact keyword matches that BM25 catches: searching for "error code E-4012" won't match a semantically similar passage unless the exact string appears. <strong>Hybrid retrieval</strong> combines both to get the best of both worlds.</p>
+
+  <div class="first-principles">
+    <div class="label">First Principle</div>
+    <p>Dense retrieval and BM25 fail in complementary ways. Dense fails on rare/technical terms (low embedding coverage). BM25 fails on synonyms and paraphrases (no semantic understanding). Combining them is a <em>ensemble method</em> — the same principle behind Random Forests and model ensembles. Two weak signals combined through a learned or tuned weighting often outperform either signal alone.</p>
+  </div>
+
+  <h3>BM25 — The Sparse Baseline</h3>
+
+  <div class="concept-card">
+    <h4>What BM25 Actually Computes</h4>
+    <p>BM25 is a TF-IDF variant with two improvements: (1) term frequency saturation (additional occurrences of a word have diminishing impact), and (2) document length normalization (longer documents don't get unfair advantage). For each query term, it scores each document based on how <em>rare</em> the term is (IDF) and how <em>frequently</em> it appears in that document (TF), adjusted for document length.</p>
+    <p><strong>Key intuition:</strong> A rare term that appears frequently in a document is a strong match signal. A common term ("the", "is") that appears everywhere is not.</p>
+  </div>
+
+<pre><span class="cmt"># WHY rank_bm25: The standard Python BM25 library. Lightweight,</span>
+<span class="cmt"># no dependencies, ~5 lines to use. Think of it as the "grep" of</span>
+<span class="cmt"># information retrieval — simple but surprisingly effective.</span>
+
+<span class="kw">from</span> rank_bm25 <span class="kw">import</span> BM25Okapi
+
+<span class="cmt"># WHY tokenize as lists of words: BM25 operates on TERM FREQUENCY.</span>
+<span class="cmt"># It needs the raw word lists, not embeddings. Each document is a</span>
+<span class="cmt"># list of tokens: ["the", "cat", "sat", "on", "the", "mat"]</span>
+tokenized_corpus = [chunk.content.<span class="fn">lower</span>().<span class="fn">split</span>() <span class="kw">for</span> chunk <span class="kw">in</span> chunks]
+bm25 = BM25Okapi(tokenized_corpus)
+
+<span class="cmt"># Score a query against all documents</span>
+query_tokens = <span class="str">"how to reset password"</span>.<span class="fn">lower</span>().<span class="fn">split</span>()
+scores = bm25.<span class="fn">get_scores</span>(query_tokens)  <span class="cmt"># Array of scores, one per chunk</span></pre>
+
+  <h3>The Score Fusion Problem</h3>
+
+  <div class="concept-card highlight">
+    <h4>Why Naive Combination Fails</h4>
+    <p>Dense scores are cosine similarity: range [0, 1]. BM25 scores are TF-IDF based: range [0, ∞). If you simply add them, BM25 dominates because its scores can be 10x, 100x larger. You <em>must normalize</em> before combining.</p>
+  </div>
+
+<pre><span class="cmt"># WHY min-max normalization: Bring BM25 scores to [0, 1] range</span>
+<span class="cmt"># so they're comparable with cosine similarity scores.</span>
+<span class="cmt"># Without this, hybrid retrieval = BM25 with decorative dense scores.</span>
+
+<span class="kw">def</span> <span class="fn">normalize_scores</span>(scores: <span class="var">list</span>[<span class="var">float</span>]) -> <span class="var">list</span>[<span class="var">float</span>]:
+    min_s, max_s = <span class="fn">min</span>(scores), <span class="fn">max</span>(scores)
+    <span class="kw">if</span> max_s == min_s:
+        <span class="kw">return</span> [<span class="num">0.0</span>] * <span class="fn">len</span>(scores)  <span class="cmt"># All scores identical → all zero</span>
+    <span class="kw">return</span> [(s - min_s) / (max_s - min_s) <span class="kw">for</span> s <span class="kw">in</span> scores]
+
+<span class="cmt"># WHY alpha parameter: Controls the dense vs sparse weight.</span>
+<span class="cmt"># alpha = 1.0 → pure dense.  alpha = 0.0 → pure BM25.</span>
+<span class="cmt"># alpha = 0.7 → 70% dense + 30% BM25 (typical starting point).</span>
+<span class="cmt"># The spec says to test α ∈ {0.3, 0.5, 0.7} — this is a hyperparameter.</span>
+
+<span class="kw">def</span> <span class="fn">hybrid_score</span>(dense_scores, bm25_scores, alpha=<span class="num">0.7</span>):
+    norm_bm25 = <span class="fn">normalize_scores</span>(bm25_scores)
+    <span class="kw">return</span> [
+        alpha * d + (<span class="num">1</span> - alpha) * b
+        <span class="kw">for</span> d, b <span class="kw">in</span> <span class="fn">zip</span>(dense_scores, norm_bm25)
+    ]</pre>
+
+  <div class="insight">
+    <div class="label">Key Insight from P2</div>
+    <p>In P2, you found that reranking improved Recall@5 from baseline to 0.747 — but that was dense-only retrieval. P5's hybrid retrieval may achieve similar or better recall <em>without</em> reranking, because BM25 catches the exact-match cases that dense retrieval misses. Your experiment grid should include: dense-only, BM25-only, and hybrid with α ∈ {0.3, 0.5, 0.7} to prove or disprove this hypothesis.</p>
+  </div>
+
+  <div class="analogy">
+    <div class="label">🔍 Analogy — Two Librarians</div>
+    <p>Dense retrieval is a librarian who understands <em>meaning</em>: "I need information about climate policy" and they bring you books about environmental regulation, carbon pricing, and sustainability targets — even though none of those words were in your query.</p>
+    <p>BM25 is a librarian who's obsessive about <em>exact words</em>: they'll find every document containing "climate" and "policy" — including the one with the exact quote you need, but also a bunch of irrelevant documents that happen to contain those words.</p>
+    <p>Hybrid retrieval is hiring both librarians and merging their recommendations. The semantic librarian finds conceptually relevant documents. The keyword librarian catches exact matches. Together, they cover each other's blind spots.</p>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- Section 6 -->
+<div class="section" id="s6">
+  <div class="section-number">06</div>
+  <h2>Reranking — Cross-Encoders vs Bi-Encoders</h2>
+
+  <p>In P2, you used Cohere's reranking API to improve retrieval results. P5 asks you to understand <em>why</em> reranking works — and the fundamental architectural difference between the bi-encoder you use for embedding and the cross-encoder used for reranking.</p>
+
+  <div class="first-principles">
+    <div class="label">First Principle</div>
+    <p>There's a fundamental trade-off between <strong>speed</strong> and <strong>interaction depth</strong>. A bi-encoder embeds query and document independently — fast (O(1) per query) but no token-level interaction between query and document. A cross-encoder processes query+document together through all transformer layers — slow (O(n) per candidate) but captures fine-grained relationships. This is the same retrieve-then-rerank pattern used in web search: Google first retrieves 1000 candidates with a fast model, then reranks the top 100 with a slow, accurate model.</p>
+  </div>
+
+  <table class="comparison">
+    <tr><th>Property</th><th>Bi-Encoder (Retrieval)</th><th>Cross-Encoder (Reranking)</th></tr>
+    <tr>
+      <td><strong>Input</strong></td>
+      <td>Query and document encoded <em>separately</em></td>
+      <td>Query and document encoded <em>together</em> as one sequence</td>
+    </tr>
+    <tr>
+      <td><strong>Output</strong></td>
+      <td>Two vectors → cosine similarity</td>
+      <td>Single relevance score (0-1)</td>
+    </tr>
+    <tr>
+      <td><strong>Speed</strong></td>
+      <td>Fast — precompute doc vectors once, search in ms</td>
+      <td>Slow — must re-encode every (query, doc) pair at query time</td>
+    </tr>
+    <tr>
+      <td><strong>Accuracy</strong></td>
+      <td>Good — captures semantic similarity</td>
+      <td>Better — captures token-level interactions (negation, qualification)</td>
+    </tr>
+    <tr>
+      <td><strong>Scale</strong></td>
+      <td>Millions of documents (FAISS handles this)</td>
+      <td>Top 20-50 candidates only (too slow for full corpus)</td>
+    </tr>
+    <tr>
+      <td><strong>Use in P5</strong></td>
+      <td>First-stage retrieval: embed → FAISS search → top-50</td>
+      <td>Second-stage reranking: score top-50 → return top-5</td>
+    </tr>
+  </table>
+
+<pre><span class="cmt"># WHY retrieve more than you need, then rerank: The bi-encoder</span>
+<span class="cmt"># optimizes for RECALL (find all potentially relevant docs).</span>
+<span class="cmt"># The cross-encoder optimizes for PRECISION (rank the truly</span>
+<span class="cmt"># relevant ones at the top). Two-stage = best of both.</span>
+
+<span class="cmt"># Option 1: Cohere Rerank API (you used this in P2)</span>
+<span class="kw">import</span> cohere
+co = cohere.Client(<span class="str">"your-api-key"</span>)
+reranked = co.<span class="fn">rerank</span>(
+    query=<span class="str">"How to configure SSL?"</span>,
+    documents=[chunk.content <span class="kw">for</span> chunk <span class="kw">in</span> candidates],
+    top_n=<span class="num">5</span>,
+    model=<span class="str">"rerank-english-v3.0"</span>
+)
+
+<span class="cmt"># Option 2: Local cross-encoder (no API cost, runs on your M2)</span>
+<span class="kw">from</span> sentence_transformers <span class="kw">import</span> CrossEncoder
+<span class="cmt"># WHY cross-encoder/ms-marco-MiniLM-L-6-v2: Trained on MS MARCO</span>
+<span class="cmt"># (a large passage retrieval dataset). Small enough for 8GB RAM.</span>
+reranker = CrossEncoder(<span class="str">"cross-encoder/ms-marco-MiniLM-L-6-v2"</span>)
+pairs = [[query, chunk.content] <span class="kw">for</span> chunk <span class="kw">in</span> candidates]
+scores = reranker.<span class="fn">predict</span>(pairs)  <span class="cmt"># Array of relevance scores</span></pre>
+
+  <div class="interview">
+    <div class="label">Interview Signal</div>
+    <p>"I used a two-stage retrieve-then-rerank architecture. The bi-encoder retrieves the top 50 candidates in milliseconds via FAISS, then a cross-encoder reranks them to find the top 5. This is the same pattern Google uses — fast recall followed by precise ranking. I tested both Cohere's API reranker and a local cross-encoder and measured the latency-quality trade-off."</p>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- Section 7 -->
+<div class="section" id="s7">
+  <div class="section-number">07</div>
+  <h2>NDCG — The Ranking Metric You Haven't Used Yet</h2>
+
+  <p>In P2, you measured Precision@K, Recall@K, and MRR. These treat relevance as <strong>binary</strong> — a result is either relevant or not. NDCG (Normalized Discounted Cumulative Gain) handles <strong>graded relevance</strong> and explicitly rewards placing more relevant results higher in the ranking. This is the standard metric for search engine evaluation.</p>
+
+  <div class="first-principles">
+    <div class="label">First Principle</div>
+    <p>Not all "relevant" results are equally relevant. A chunk that directly answers the question is <em>more</em> relevant than a chunk that provides useful background. Precision@K treats both as "1". NDCG gives the direct answer a score of 3 and the background a score of 1, then penalizes you more for putting the "3" result at position 5 instead of position 1. The discount function (log₂(rank+1)) embodies the insight that users are less likely to look at lower-ranked results — a relevant result at position 1 is worth more than the same result at position 10.</p>
+  </div>
+
+  <div class="concept-card highlight">
+    <h4>The Math, Step by Step</h4>
+    <p><strong>DCG@K = Σᵢ₌₁ᵏ (relevance_i / log₂(i + 1))</strong></p>
+    <p>Each position i contributes: relevance of the result at that position, divided by a logarithmic discount that increases with position. Position 1: discount = log₂(2) = 1.0. Position 5: discount = log₂(6) = 2.58. So a relevance-3 result at position 1 contributes 3.0, but at position 5 it contributes only 3/2.58 = 1.16.</p>
+    <p><strong>NDCG@K = DCG@K / Ideal_DCG@K</strong></p>
+    <p>Ideal DCG is the DCG you'd get if you ranked results in <em>perfect</em> order (most relevant first). NDCG normalizes to [0, 1] so you can compare across queries with different numbers of relevant results.</p>
+  </div>
+
+<pre><span class="cmt"># WHY implement NDCG from scratch: Understanding the math matters more</span>
+<span class="cmt"># than calling sklearn.metrics.ndcg_score. In an interview, you need to</span>
+<span class="cmt"># explain WHY position 1 matters more than position 5.</span>
+
+<span class="kw">import</span> numpy <span class="kw">as</span> np
+
+<span class="kw">def</span> <span class="fn">dcg_at_k</span>(relevances: <span class="var">list</span>[<span class="var">float</span>], k: <span class="var">int</span>) -> <span class="var">float</span>:
+    <span class="str">"""Discounted Cumulative Gain at position K."""</span>
+    relevances = np.<span class="fn">array</span>(relevances[:k])
+    <span class="cmt"># WHY log2(i + 2): Positions are 0-indexed, but the DCG formula</span>
+    <span class="cmt"># uses 1-indexed positions with log2(position + 1).</span>
+    <span class="cmt"># Position 0 → log2(0 + 2) = log2(2) = 1.0  (no discount)</span>
+    <span class="cmt"># Position 1 → log2(1 + 2) = log2(3) = 1.58  (mild discount)</span>
+    <span class="cmt"># Position 4 → log2(4 + 2) = log2(6) = 2.58  (significant discount)</span>
+    discounts = np.<span class="fn">log2</span>(np.<span class="fn">arange</span>(<span class="fn">len</span>(relevances)) + <span class="num">2</span>)
+    <span class="kw">return</span> np.<span class="fn">sum</span>(relevances / discounts)
+
+<span class="kw">def</span> <span class="fn">ndcg_at_k</span>(relevances: <span class="var">list</span>[<span class="var">float</span>], k: <span class="var">int</span>) -> <span class="var">float</span>:
+    <span class="str">"""Normalized DCG — compares actual ranking to ideal ranking."""</span>
+    dcg = <span class="fn">dcg_at_k</span>(relevances, k)
+    <span class="cmt"># WHY sort descending: The ideal ranking puts the MOST relevant</span>
+    <span class="cmt"># results first. This is the theoretical best you could achieve.</span>
+    ideal = <span class="fn">dcg_at_k</span>(<span class="fn">sorted</span>(relevances, reverse=<span class="kw">True</span>), k)
+    <span class="kw">if</span> ideal == <span class="num">0</span>:
+        <span class="kw">return</span> <span class="num">0.0</span>  <span class="cmt"># No relevant results exist → NDCG is 0</span>
+    <span class="kw">return</span> dcg / ideal
+
+<span class="cmt"># Example: Your retriever returned 5 results with these relevance scores</span>
+relevances = [<span class="num">3</span>, <span class="num">0</span>, <span class="num">2</span>, <span class="num">0</span>, <span class="num">1</span>]  <span class="cmt"># 3=highly relevant, 0=irrelevant</span>
+<span class="cmt"># DCG@5 = 3/1.0 + 0/1.58 + 2/2.0 + 0/2.32 + 1/2.58 = 3.0 + 0 + 1.0 + 0 + 0.39 = 4.39</span>
+<span class="cmt"># Ideal order: [3, 2, 1, 0, 0] → IDCG@5 = 3/1.0 + 2/1.58 + 1/2.0 + 0 + 0 = 4.77</span>
+<span class="cmt"># NDCG@5 = 4.39 / 4.77 = 0.92 — good ranking!</span></pre>
+
+  <h3>NDCG vs Precision/Recall — When Each Metric Shines</h3>
+  <table class="comparison">
+    <tr><th>Metric</th><th>Relevance Model</th><th>Position-Sensitive?</th><th>Best For</th></tr>
+    <tr>
+      <td><strong>Precision@K</strong></td>
+      <td>Binary (relevant/not)</td>
+      <td>No — treats all K positions equally</td>
+      <td>"How many of my top results are relevant?"</td>
+    </tr>
+    <tr>
+      <td><strong>Recall@K</strong></td>
+      <td>Binary</td>
+      <td>No</td>
+      <td>"Did I find all the relevant results?"</td>
+    </tr>
+    <tr>
+      <td><strong>MRR</strong></td>
+      <td>Binary</td>
+      <td>Yes — only cares about first relevant result</td>
+      <td>"How quickly do I find the first good result?"</td>
+    </tr>
+    <tr>
+      <td><strong>NDCG@K</strong></td>
+      <td>Graded (0, 1, 2, 3…)</td>
+      <td>Yes — log discount penalizes bad ranking</td>
+      <td>"Are my best results ranked highest?" — the gold standard</td>
+    </tr>
+  </table>
+
+  <div class="warning">
+    <div class="label">Pitfall</div>
+    <p>NDCG requires graded relevance judgments. If your ground truth is binary (relevant/not), NDCG still works but degenerates toward Precision@K in behavior. For the richest signal, use your LLM-as-Judge to assign relevance scores (1–5) to each retrieved chunk, not just binary labels. Your synthetic QA generation can create ground truth with graded relevance by generating "direct answer" chunks (relevance=3), "supporting context" chunks (relevance=1), and irrelevant chunks (relevance=0).</p>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- Section 8 (NEW) -->
+<div class="section" id="s8">
+  <div class="section-number">08</div>
+  <h2>Ground Truth Generation — Building Your Evaluation Dataset</h2>
+
+  <p>Precision, Recall, MRR, and NDCG are all <em>meaningless</em> without ground truth — a labeled dataset that says "for this query, these chunks are relevant." The spec offers three approaches. This section explains each and why synthetic generation is your starting point.</p>
+
+  <div class="first-principles">
+    <div class="label">First Principle</div>
+    <p>You can't measure retrieval quality without knowing the right answer. This is the <strong>evaluation bootstrap problem</strong>: you need labeled data to evaluate a system, but labeling data manually is expensive. The solution is the same one you used in P1 and P4 — use an LLM to generate synthetic data with known ground truth, then validate a subset manually. The labels aren't perfect, but they're reproducible, scalable, and sufficient for comparative evaluation ("is Config A better than Config B?").</p>
+  </div>
+
+  <h3>Approach 1: Synthetic QA Generation (Recommended Start)</h3>
+
+  <div class="concept-card highlight">
+    <h4>How It Works</h4>
+    <p>For each chunk in your corpus, ask an LLM to generate a question that the chunk answers. The chunk ID becomes the ground truth. At retrieval time, you check whether the system retrieves the source chunk for the generated question. This is the same pattern behind P1's synthetic data generation — you're creating controlled pairs where the answer is known by construction.</p>
+    <p><strong>Key advantage:</strong> Scales automatically with your corpus. Ingest 100 PDFs → generate 500 QA pairs → run retrieval metrics. No manual labeling needed.</p>
+  </div>
+
+<pre><span class="cmt"># WHY generate from chunks, not documents: The ground truth must be</span>
+<span class="cmt"># at CHUNK granularity because that's what the retriever returns.</span>
+<span class="cmt"># A document-level question like "What is this paper about?" has</span>
+<span class="cmt"># ALL chunks as ground truth — useless for measuring precision.</span>
+
+<span class="kw">from</span> pydantic <span class="kw">import</span> BaseModel
+
+<span class="kw">class</span> <span class="fn">SyntheticQAPair</span>(BaseModel):
+    question: <span class="var">str</span>
+    source_chunk_id: <span class="var">str</span>        <span class="cmt"># Ground truth — the chunk that answers this question</span>
+    source_document: <span class="var">str</span>        <span class="cmt"># For citation verification</span>
+    difficulty: <span class="var">str</span> = <span class="str">"medium"</span>  <span class="cmt"># "easy" (verbatim answer in chunk), "hard" (requires inference)</span>
+
+GENERATE_QA_PROMPT = <span class="str">"""Given this text chunk from a document, generate a specific
+factual question that can ONLY be answered using information in this chunk.
+
+Chunk (from {source}, page {page}):
+{chunk_text}
+
+Requirements:
+- Question must be answerable from this chunk alone
+- Question should be specific (not "What is discussed?")
+- Question should sound like a real user query
+
+Return JSON: {{"question": "...", "difficulty": "easy|medium|hard"}}"""</span>
+
+<span class="kw">async def</span> <span class="fn">generate_qa_pairs</span>(chunks: <span class="var">list</span>[<span class="var">Chunk</span>], llm: <span class="var">BaseLLM</span>, n_per_chunk: <span class="var">int</span> = <span class="num">1</span>) -> <span class="var">list</span>[<span class="var">SyntheticQAPair</span>]:
+    <span class="str">"""Generate synthetic QA pairs with known ground truth chunk IDs."""</span>
+    pairs = []
+    <span class="kw">for</span> chunk <span class="kw">in</span> chunks:
+        prompt = GENERATE_QA_PROMPT.<span class="fn">format</span>(
+            source=chunk.metadata.source,
+            page=chunk.metadata.page_number,
+            chunk_text=chunk.content
+        )
+        <span class="cmt"># WHY Instructor/Pydantic here: Same pattern as P1/P4 —</span>
+        <span class="cmt"># structured output guarantees the LLM returns parseable JSON</span>
+        response = <span class="kw">await</span> llm.<span class="fn">generate</span>(prompt)
+        pairs.<span class="fn">append</span>(SyntheticQAPair(
+            question=response.question,
+            source_chunk_id=chunk.id,
+            source_document=chunk.metadata.source,
+            difficulty=response.difficulty
+        ))
+    <span class="kw">return</span> pairs</pre>
+
+  <h3>Approach 2: Manual Labeling (Gold Standard Subset)</h3>
+
+  <div class="concept-card">
+    <h4>How It Works</h4>
+    <p>Write 10–20 queries by hand. For each query, manually identify every relevant chunk in the corpus. Store as <code>{query, relevant_chunk_ids}</code> pairs. This is labor-intensive but produces the highest-quality ground truth. Use this for your "critical queries" — the ones where you need absolute confidence in the metrics.</p>
+    <p><strong>When to use:</strong> After synthetic generation gives you broad coverage. Pick 10 queries where synthetic and manual labels disagree — those disagreements reveal chunking problems or question ambiguity.</p>
+  </div>
+
+  <h3>Approach 3: LLM-as-Judge Only (No Retrieval Metrics)</h3>
+
+  <div class="concept-card">
+    <h4>How It Works</h4>
+    <p>Skip ground truth entirely. Run queries through the full pipeline (retrieve → generate), then use an LLM judge to score the <em>generated answer</em> on relevance, accuracy, completeness, and citation quality. You can't compute Precision/Recall/MRR/NDCG this way (those require labeled retrieval ground truth), but you can still evaluate end-to-end quality.</p>
+    <p><strong>Trade-off:</strong> Faster, but you lose the ability to diagnose <em>where</em> the pipeline fails. If the answer is bad, was it retrieval or generation? Without retrieval metrics, you can't tell. This is why P2's retrieval-generation gap was such a key finding — you needed both metrics to see it.</p>
+  </div>
+
+  <h3>Graded Relevance for NDCG</h3>
+
+  <div class="insight">
+    <div class="label">Key Insight</div>
+    <p>NDCG needs graded relevance, not binary. Use your LLM to assign relevance grades when generating synthetic QA: the source chunk gets relevance=3 (directly answers the question), chunks from the same page or section get relevance=1 (supporting context), everything else gets relevance=0 (irrelevant). This three-tier scheme gives NDCG meaningful signal — it can distinguish a retriever that puts the exact answer at position 1 from one that puts a "related but not direct" chunk at position 1.</p>
+  </div>
+
+  <div class="warning">
+    <div class="label">Pitfall</div>
+    <p>Don't trust synthetic QA blindly. In P1, you discovered that AI-generated data requires systematic validation — the same applies here. Spot-check 10–15% of your generated QA pairs: Is the question actually answerable from the chunk? Is it specific enough that only 1–3 chunks are truly relevant? If the LLM generates vague questions like "What are the key points?", your ground truth will have inflated recall because many chunks match.</p>
+  </div>
+
+  <div class="java-parallel">
+    <div class="label">Java/TypeScript Parallel</div>
+    <p>This is the same concept as generating test fixtures in JUnit or Jest. In Java, you'd use a <code>@BeforeAll</code> method to populate <code>Map&lt;String, Set&lt;String&gt;&gt; groundTruth</code>. The synthetic approach is like using a <code>TestDataFactory</code> that auto-generates test inputs with known expected outputs. The manual approach is hand-written <code>@ParameterizedTest</code> cases. Production codebases use both — auto-generated for coverage, hand-written for critical paths.</p>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- Section 9 (NEW) -->
+<div class="section" id="s9">
+  <div class="section-number">09</div>
+  <h2>LLM-as-Judge for Generation Quality — The 4-Axis Rubric</h2>
+
+  <p>You've used LLM-as-Judge in P1 (evaluating synthetic data quality) and P2 (via RAGAS). P5 requires a custom judge that evaluates <em>generated answers</em> on four specific axes: Relevance, Accuracy, Completeness, and Citation Quality. The target is an average score >4.0 across all criteria on a 1–5 scale.</p>
+
+  <div class="first-principles">
+    <div class="label">First Principle</div>
+    <p>Retrieval metrics (Precision, Recall, MRR, NDCG) measure the <em>input</em> to the LLM. Generation quality metrics measure the <em>output</em>. Both are necessary because they fail independently — P2 proved this with 0.747 Recall@5 but only 0.511 faithfulness. A system can retrieve perfectly but generate poorly (hallucination, ignoring context) or retrieve poorly but generate well on what little context it has. P5's four-axis rubric gives you diagnostic power: if Relevance is high but Citation Quality is low, the LLM understands the question but isn't grounding its answer.</p>
+  </div>
+
+  <div class="concept-card highlight">
+    <h4>The Four Axes</h4>
+    <p><strong>Relevance (1–5):</strong> Does the answer address the user's actual question? A score of 1 means the answer is about a completely different topic. A score of 5 means it directly and specifically answers what was asked.</p>
+    <p><strong>Accuracy (1–5):</strong> Is the information factually correct based on the source documents? A score of 1 means the answer contains fabricated or contradictory information. A score of 5 means every claim is verifiable in the provided context.</p>
+    <p><strong>Completeness (1–5):</strong> Is the answer thorough enough? A score of 1 means it addresses only a fragment of the question. A score of 5 means it covers all aspects the source documents can support.</p>
+    <p><strong>Citation Quality (1–5):</strong> Are sources properly attributed? A score of 1 means no citations or entirely wrong ones. A score of 5 means every substantive claim has a correct, traceable citation.</p>
+  </div>
+
+<pre><span class="cmt"># WHY a structured rubric prompt: Vague instructions like "rate quality 1-5"</span>
+<span class="cmt"># produce inconsistent scores. Anchored rubrics with level descriptors</span>
+<span class="cmt"># constrain the judge. This is the same principle behind Cohen's Kappa</span>
+<span class="cmt"># in P1 — inter-rater agreement improves when the rating scale is explicit.</span>
+
+JUDGE_PROMPT = <span class="str">"""You are evaluating a RAG system's generated answer.
+
+QUESTION: {question}
+
+RETRIEVED CONTEXT:
+{context_chunks}
+
+GENERATED ANSWER:
+{answer}
+
+Rate each dimension on a 1-5 scale using these anchors:
+
+RELEVANCE (Does the answer address the question?)
+1: Completely off-topic  2: Tangentially related  3: Partially addresses question
+4: Mostly addresses question  5: Directly and specifically answers
+
+ACCURACY (Is information factually correct per the source context?)
+1: Major factual errors  2: Several inaccuracies  3: Minor errors present
+4: Mostly accurate  5: Every claim verifiable in context
+
+COMPLETENESS (Is the answer thorough?)
+1: Addresses fragment only  2: Missing major aspects  3: Covers basics
+4: Covers most aspects  5: Comprehensive within source limits
+
+CITATION QUALITY (Are sources properly attributed?)
+1: No citations or all wrong  2: Few/mostly wrong citations  3: Some correct citations
+4: Most claims cited correctly  5: Every substantive claim properly cited
+
+Return JSON only:
+{{"relevance": N, "accuracy": N, "completeness": N, "citation_quality": N, "reasoning": "..."}}"""</span>
+
+<span class="kw">class</span> <span class="fn">GenerationJudgment</span>(BaseModel):
+    relevance: <span class="var">int</span> = Field(ge=<span class="num">1</span>, le=<span class="num">5</span>)
+    accuracy: <span class="var">int</span> = Field(ge=<span class="num">1</span>, le=<span class="num">5</span>)
+    completeness: <span class="var">int</span> = Field(ge=<span class="num">1</span>, le=<span class="num">5</span>)
+    citation_quality: <span class="var">int</span> = Field(ge=<span class="num">1</span>, le=<span class="num">5</span>)
+    reasoning: <span class="var">str</span>
+
+    <span class="dec">@property</span>
+    <span class="kw">def</span> <span class="fn">average_score</span>(self) -> <span class="var">float</span>:
+        <span class="cmt"># WHY average of all 4: The spec targets >4.0 average.</span>
+        <span class="cmt"># Tracking each axis separately reveals WHERE quality drops.</span>
+        <span class="kw">return</span> (self.relevance + self.accuracy + self.completeness + self.citation_quality) / <span class="num">4.0</span></pre>
+
+  <h3>Aggregation Strategy</h3>
+
+  <div class="concept-card">
+    <h4>Per-Query and Per-Axis Aggregation</h4>
+    <p>Run the judge on every (query, answer) pair in your test set (10+ queries per experiment). Aggregate two ways: (1) <strong>per-query average</strong> — the mean across all 4 axes for a single query, to find queries where the system struggles, and (2) <strong>per-axis average</strong> — the mean across all queries for a single axis, to find systematic weaknesses. If Citation Quality averages 2.8 while Relevance averages 4.3, you know the generation prompt needs better citation instructions, not better retrieval.</p>
+  </div>
+
+  <div class="insight">
+    <div class="label">Key Insight</div>
+    <p>The LLM judge sees the retrieved context, not just the answer. This is critical — it can detect hallucination (answer claims something not in context → Accuracy drops) and missed context (answer ignores relevant chunks → Completeness drops). This is a more granular version of what RAGAS measured in P2, but with four axes instead of two, and you control the rubric directly instead of relying on RAGAS's opaque scoring.</p>
+  </div>
+
+  <div class="warning">
+    <div class="label">Pitfall from P1</div>
+    <p>LLM judges are biased toward leniency — they tend to rate 4–5 even when quality is mediocre. In P1, you addressed this by calibrating against manual spot-checks. Do the same here: manually score 5 answers yourself, then compare to the judge's scores. If the judge consistently rates 1 point higher than you, adjust your threshold (e.g., treat judge-4.0 as "acceptable" instead of the spec's >4.0).</p>
+  </div>
+
+  <div class="analogy">
+    <div class="label">🎯 Analogy — Restaurant Review</div>
+    <p>Imagine reviewing a restaurant on four axes: Taste (Relevance — did the food match what you ordered?), Ingredients (Accuracy — is it actually wagyu beef or just regular beef?), Portion Size (Completeness — enough food to satisfy?), and Menu Description (Citation Quality — did the menu accurately describe what arrived?). A restaurant scoring 5/5 on Taste but 1/5 on Menu Description is a great chef with a lying menu — that's your RAG system generating good answers but with wrong citations. Each axis tells you a different thing to fix.</p>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- Section 10 (was Section 8) -->
+<div class="section" id="s10">
+  <div class="section-number">10</div>
+  <h2>Citation Extraction — Grounding LLM Output</h2>
+
+  <p>An answer without a citation is an assertion without evidence. P5 requires that every generated answer includes traceable references to the source chunks, so users can verify claims against the original document. This is what separates a production QA system from a "vibes-based" chatbot.</p>
+
+  <div class="first-principles">
+    <div class="label">First Principle</div>
+    <p>LLMs are <strong>probabilistic text generators</strong>, not truth engines. Even when given perfect context, they can hallucinate, misattribute, or subtly distort information. Citations create a verification contract: the user can check whether the generated answer actually matches the source material. This is the same principle behind academic citations and audit trails — traceability enables trust.</p>
+  </div>
+
+  <h3>Two Citation Approaches</h3>
+
+  <div class="concept-card">
+    <h4>Approach 1: Structured Format</h4>
+    <p>Prompt the LLM to cite using <code>[Source: filename.pdf, Page: 12]</code> format. Parse with regex after generation. Simple and reliable for well-structured prompts.</p>
+  </div>
+
+  <div class="concept-card highlight">
+    <h4>Approach 2: Index References (Recommended)</h4>
+    <p>Number each context chunk in the prompt: "[1] chunk_text_1 [2] chunk_text_2…". The LLM cites using [1], [2], etc. Parse the numbers, map back to chunk objects. More robust because the LLM only needs to output a number, not reconstruct filenames.</p>
+  </div>
+
+<pre><span class="cmt"># WHY index references over structured format: The LLM is more reliable</span>
+<span class="cmt"># at producing "[1]" than "[Source: technical-manual-v3.2.pdf, Page: 47]".</span>
+<span class="cmt"># Fewer tokens to generate = fewer chances for hallucination.</span>
+
+PROMPT_TEMPLATE = <span class="str">"""Answer the question using ONLY the provided context.
+Cite your sources using [N] notation.
+
+Context:
+{numbered_chunks}
+
+Question: {question}
+
+Answer (cite with [1], [2], etc.):"""</span>
+
+<span class="kw">def</span> <span class="fn">build_prompt</span>(question: <span class="var">str</span>, chunks: <span class="var">list</span>[<span class="var">Chunk</span>]) -> <span class="var">str</span>:
+    numbered = <span class="str">"\n\n"</span>.<span class="fn">join</span>(
+        <span class="str">f"[{i+1}] {c.content}"</span> <span class="kw">for</span> i, c <span class="kw">in</span> <span class="fn">enumerate</span>(chunks)
+    )
+    <span class="kw">return</span> PROMPT_TEMPLATE.<span class="fn">format</span>(numbered_chunks=numbered, question=question)
+
+<span class="kw">import</span> re
+<span class="kw">def</span> <span class="fn">extract_citations</span>(answer: <span class="var">str</span>, chunks: <span class="var">list</span>[<span class="var">Chunk</span>]) -> <span class="var">list</span>[<span class="var">Citation</span>]:
+    <span class="str">"""Parse [N] references from LLM answer, map to chunk metadata."""</span>
+    <span class="cmt"># WHY regex r'\[(\d+)\]': Matches [1], [2], etc. in the answer text.</span>
+    <span class="cmt"># Each match maps to the chunk at that index (1-based).</span>
+    refs = <span class="fn">set</span>(re.<span class="fn">findall</span>(<span class="str">r'\[(\d+)\]'</span>, answer))
+    citations = []
+    <span class="kw">for</span> ref <span class="kw">in</span> refs:
+        idx = <span class="fn">int</span>(ref) - <span class="num">1</span>  <span class="cmt"># Convert 1-based to 0-based</span>
+        <span class="kw">if</span> <span class="num">0</span> <= idx < <span class="fn">len</span>(chunks):
+            chunk = chunks[idx]
+            citations.<span class="fn">append</span>(Citation(
+                chunk_id=chunk.id,
+                source=chunk.metadata.source,
+                page_number=chunk.metadata.page_number,
+                text_snippet=chunk.content[:<span class="num">200</span>]
+            ))
+    <span class="kw">return</span> citations</pre>
+</div>
+
+<div class="divider"></div>
+
+<!-- Section 11 (was Section 9) -->
+<div class="section" id="s11">
+  <div class="section-number">11</div>
+  <h2>Abstract Base Classes — The Strategy Pattern in Python</h2>
+
+  <p>P5 requires that <em>all</em> components implement abstract interfaces: BaseChunker, BaseEmbedder, BaseVectorStore, BaseRetriever, BaseReranker, BaseLLM. This is the <strong>Strategy Pattern</strong> — the same OOP pattern you know from Java/TypeScript interfaces. In Python, this is done with the <code>abc</code> module.</p>
+
+  <div class="java-parallel">
+    <div class="label">Java/TypeScript Parallel</div>
+    <p>In Java: <code>interface Retriever { List&lt;Result&gt; retrieve(String query, int topK); }</code> and <code>class DenseRetriever implements Retriever</code>, <code>class BM25Retriever implements Retriever</code>. In TypeScript: <code>interface Retriever { retrieve(query: string, topK: number): Result[]; }</code>. Python's ABC is the direct equivalent — <code>@abstractmethod</code> is like Java's abstract keyword. The <strong>critical difference</strong>: Python doesn't enforce interface contracts at compile time. The error only surfaces when you try to instantiate a class that hasn't implemented all abstract methods. This is a runtime check, not a compile-time check.</p>
+  </div>
+
+<pre><span class="cmt"># WHY ABC: Python doesn't have interfaces like Java/TypeScript.</span>
+<span class="cmt"># ABC (Abstract Base Class) is the closest equivalent. It enforces</span>
+<span class="cmt"># that subclasses implement required methods — but at RUNTIME, not compile time.</span>
+<span class="cmt"># If you forget to implement an @abstractmethod, you get a TypeError</span>
+<span class="cmt"># when you try to instantiate the class, not when you define it.</span>
+
+<span class="kw">from</span> abc <span class="kw">import</span> ABC, abstractmethod
+<span class="kw">from</span> typing <span class="kw">import</span> Protocol  <span class="cmt"># Alternative: structural subtyping</span>
+
+<span class="kw">class</span> <span class="fn">BaseChunker</span>(ABC):
+    <span class="str">"""Interface for all chunking strategies."""</span>
+
+    <span class="dec">@abstractmethod</span>
+    <span class="kw">def</span> <span class="fn">chunk</span>(self, document: <span class="var">Document</span>) -> <span class="var">list</span>[<span class="var">Chunk</span>]:
+        <span class="str">"""Split a document into chunks. Every chunker must implement this."""</span>
+        ...
+
+<span class="kw">class</span> <span class="fn">RecursiveChunker</span>(BaseChunker):
+    <span class="kw">def</span> <span class="fn">__init__</span>(self, chunk_size: <span class="var">int</span> = <span class="num">512</span>, overlap: <span class="var">int</span> = <span class="num">50</span>):
+        self.chunk_size = chunk_size
+        self.overlap = overlap
+
+    <span class="kw">def</span> <span class="fn">chunk</span>(self, document: <span class="var">Document</span>) -> <span class="var">list</span>[<span class="var">Chunk</span>]:
+        <span class="cmt"># Concrete implementation</span>
+        ...
+
+<span class="cmt"># WHY Protocol as an alternative: Python 3.8+ supports "structural subtyping"</span>
+<span class="cmt"># via Protocol. This is like TypeScript's duck typing — if an object has</span>
+<span class="cmt"># the right methods, it satisfies the Protocol, without explicit inheritance.</span>
+<span class="cmt"># ABC = nominal typing (Java-style).  Protocol = structural typing (TS-style).</span>
+<span class="cmt"># For P5, ABC is clearer because it explicitly declares the contract.</span></pre>
+
+  <h3>The Full Interface Hierarchy</h3>
+  <table class="comparison">
+    <tr><th>ABC Interface</th><th>Method Signature</th><th>Implementations</th></tr>
+    <tr>
+      <td><code>BaseChunker</code></td>
+      <td><code>chunk(document) → list[Chunk]</code></td>
+      <td>FixedSizeChunker, RecursiveChunker, SemanticChunker, SlidingWindowChunker</td>
+    </tr>
+    <tr>
+      <td><code>BaseEmbedder</code></td>
+      <td><code>embed(texts) → np.ndarray</code></td>
+      <td>MiniLMEmbedder, MpnetEmbedder, (optionally OpenAIEmbedder)</td>
+    </tr>
+    <tr>
+      <td><code>BaseVectorStore</code></td>
+      <td><code>add(), search(), save(), load()</code></td>
+      <td>FAISSVectorStore (and optionally LanceDB)</td>
+    </tr>
+    <tr>
+      <td><code>BaseRetriever</code></td>
+      <td><code>retrieve(query, top_k) → list[RetrievalResult]</code></td>
+      <td>DenseRetriever, BM25Retriever, HybridRetriever</td>
+    </tr>
+    <tr>
+      <td><code>BaseReranker</code></td>
+      <td><code>rerank(query, results, top_k) → list[RerankResult]</code></td>
+      <td>CohereReranker, CrossEncoderReranker</td>
+    </tr>
+    <tr>
+      <td><code>BaseLLM</code></td>
+      <td><code>generate(prompt, system_prompt, temperature) → str</code></td>
+      <td>OpenAILLM, (optionally LiteLLM for multi-provider)</td>
+    </tr>
+  </table>
+
+  <div class="insight">
+    <div class="label">Key Insight</div>
+    <p>The real power of this pattern isn't just code organization — it's <strong>configuration-driven experimentation</strong>. Your experiment config file says <code>chunker: "recursive"</code> and <code>embedder: "minilm"</code>, and a factory function maps those strings to class instances. This means you can define 12+ experiment configurations in YAML files and run them without changing any pipeline code. This is the Strategy Pattern combined with the Factory Pattern — and it's exactly how production ML systems are built.</p>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- Section 12 (was Section 10) -->
+<div class="section" id="s12">
+  <div class="section-number">12</div>
+  <h2>Experiment Tracking — Configuration-Space Search</h2>
+
+  <p>P2 used Braintrust for experiment tracking. P5 requires you to build your own tracking: save every experiment with its full configuration metadata and results, then compare across configurations. The minimum grid is 3 chunking × 2 embeddings × 2 retrieval = 12 configurations, each tested on at least 10 queries.</p>
+
+  <div class="first-principles">
+    <div class="label">First Principle</div>
+    <p>An experiment without its configuration is a number without context. If you report "Recall@5 = 0.85" but can't reproduce the exact chunking strategy, chunk size, embedding model, and retrieval method that produced it, the result is useless. Experiment tracking is the <em>reproducibility infrastructure</em> — the same principle behind version control for code, applied to ML experiments. This is what you learned in P1 when the correction pipeline couldn't reproduce its claimed end-to-end narrative.</p>
+  </div>
+
+<pre><span class="cmt"># WHY Pydantic for experiment configs: Same reason as P1/P4 —</span>
+<span class="cmt"># structured validation catches configuration errors before</span>
+<span class="cmt"># you waste 20 minutes running an experiment with a typo.</span>
+
+<span class="kw">from</span> pydantic <span class="kw">import</span> BaseModel
+<span class="kw">from</span> datetime <span class="kw">import</span> datetime
+<span class="kw">import</span> uuid
+
+<span class="kw">class</span> <span class="fn">ExperimentConfig</span>(BaseModel):
+    chunking_strategy: <span class="var">str</span>      <span class="cmt"># "fixed", "recursive", "semantic"</span>
+    chunk_size: <span class="var">int</span>
+    chunk_overlap: <span class="var">int</span>
+    embedding_model: <span class="var">str</span>       <span class="cmt"># "all-MiniLM-L6-v2", "all-mpnet-base-v2"</span>
+    retriever_type: <span class="var">str</span>        <span class="cmt"># "dense", "bm25", "hybrid"</span>
+    hybrid_alpha: <span class="var">float</span> | <span class="var">None</span> = <span class="var">None</span>
+    reranker: <span class="var">str</span> | <span class="var">None</span> = <span class="var">None</span>
+    top_k: <span class="var">int</span> = <span class="num">5</span>
+
+<span class="kw">class</span> <span class="fn">ExperimentResult</span>(BaseModel):
+    experiment_id: <span class="var">str</span> = Field(default_factory=<span class="kw">lambda</span>: <span class="str">f"exp_{datetime.now():%Y%m%d}_{uuid.uuid4().hex[:6]}"</span>)
+    config: <span class="var">ExperimentConfig</span>
+    metrics: <span class="var">dict</span>[<span class="var">str</span>, <span class="var">float</span>]  <span class="cmt"># {"recall@5": 0.85, "precision@5": 0.72, ...}</span>
+    query_results: <span class="var">list</span>[<span class="var">dict</span>]   <span class="cmt"># Per-query breakdown for analysis</span>
+    timestamp: <span class="var">datetime</span> = Field(default_factory=datetime.now)
+    duration_seconds: <span class="var">float</span>
+
+<span class="cmt"># Save with full reproducibility metadata</span>
+result.<span class="fn">model_dump_json</span>(indent=<span class="num">2</span>)  <span class="cmt"># JSON output with every field</span></pre>
+
+  <div class="warning">
+    <div class="label">Pitfall from P2</div>
+    <p>In P2, you used Braintrust for tracking. P5 wants you to build the tracking yourself, but don't over-engineer it. A directory of JSON files (one per experiment) with a comparison script that loads them all and builds a DataFrame is sufficient. The goal is <em>reproducibility</em> and <em>comparison</em>, not building a platform.</p>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- Section 13 (was Section 11) -->
+<div class="section" id="s13">
+  <div class="section-number">13</div>
+  <h2>PDF Processing — PyMuPDF and Text Extraction</h2>
+
+  <p>P2 and P3 worked with pre-cleaned text. P5 starts from raw PDFs, which are messy: multi-column layouts, headers/footers on every page, tables rendered as text, ligatures, and encoding artifacts. <strong>PyMuPDF</strong> (imported as <code>fitz</code>) is the extraction library — fast, pure-Python, and handles most PDF quirks.</p>
+
+<pre><span class="cmt"># WHY PyMuPDF (fitz) over alternatives:</span>
+<span class="cmt"># - pdfplumber: Better for tables, but slower</span>
+<span class="cmt"># - PyPDF2: Simpler API, but worse text extraction quality</span>
+<span class="cmt"># - PyMuPDF: Best balance of speed + quality for general text extraction</span>
+<span class="cmt"># The library name is 'fitz' for historical reasons (MuPDF's founder)</span>
+
+<span class="kw">import</span> fitz  <span class="cmt"># pip install PyMuPDF</span>
+
+<span class="kw">def</span> <span class="fn">extract_text_from_pdf</span>(pdf_path: <span class="var">str</span>) -> <span class="var">Document</span>:
+    <span class="str">"""Extract text and metadata from a PDF file."""</span>
+    doc = fitz.<span class="fn">open</span>(pdf_path)
+    pages = []
+    <span class="kw">for</span> page_num, page <span class="kw">in</span> <span class="fn">enumerate</span>(doc):
+        text = page.<span class="fn">get_text</span>(<span class="str">"text"</span>)  <span class="cmt"># "text" = plain text extraction</span>
+        <span class="cmt"># WHY clean the text: PDFs embed formatting artifacts:</span>
+        <span class="cmt"># - Repeated headers/footers on every page</span>
+        <span class="cmt"># - Hyphenated line breaks ("infor-\nmation" → "information")</span>
+        <span class="cmt"># - Multiple spaces from column alignment</span>
+        <span class="cmt"># - Non-breaking spaces, ligatures (ﬁ, ﬂ)</span>
+        text = <span class="fn">clean_pdf_text</span>(text)
+        pages.<span class="fn">append</span>({<span class="str">"page_number"</span>: page_num + <span class="num">1</span>, <span class="str">"content"</span>: text})
+
+    <span class="cmt"># WHY extract metadata: Title, author, creation date help with</span>
+    <span class="cmt"># citation generation and document-level filtering</span>
+    metadata = doc.metadata  <span class="cmt"># dict with title, author, subject, etc.</span>
+    <span class="kw">return</span> Document(
+        content=<span class="str">"\n\n"</span>.<span class="fn">join</span>(p[<span class="str">"content"</span>] <span class="kw">for</span> p <span class="kw">in</span> pages),
+        metadata={<span class="str">"source"</span>: pdf_path, **metadata, <span class="str">"page_count"</span>: <span class="fn">len</span>(doc)},
+        pages=pages
+    )</pre>
+
+  <div class="warning">
+    <div class="label">Pitfall</div>
+    <p>PDFs are <em>not</em> text documents. They're layout documents that happen to contain text. A two-column academic paper will extract as interleaved text from both columns unless you handle the layout. Headers/footers repeat on every page — if you don't strip them, your chunks will be full of "Page 12 | Technical Manual v3.2" noise. Always inspect your raw extracted text before chunking.</p>
+  </div>
+
+  <div class="java-parallel">
+    <div class="label">Java/TypeScript Parallel</div>
+    <p>In Java, you'd use Apache PDFBox (<code>PDDocument</code> → <code>PDFTextStripper</code>). Same concept, same gotchas. The Python <code>fitz.open()</code> is like <code>PDDocument.load()</code> — it returns a document object you iterate over page by page. The <code>with</code> context manager in Python handles resource cleanup like Java's try-with-resources.</p>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- Section 14 (was Section 12) -->
+<div class="section" id="s14">
+  <div class="section-number">14</div>
+  <h2>The Full Pipeline &amp; P5 vs Previous Projects</h2>
+
+  <h3>The Three Phases</h3>
+
+  <div class="concept-card">
+    <h4>Phase 1: Ingestion (Offline, Once per Document Set)</h4>
+    <div class="flow">
+      <div class="flow-step">PDF Load</div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step">Clean Text</div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step">Chunk</div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step">Embed</div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step">Index (FAISS)</div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step">Save to Disk</div>
+    </div>
+    <p>This runs once per document set. The output is a saved FAISS index + chunk metadata file. All subsequent queries use the saved index — no re-embedding needed.</p>
+  </div>
+
+  <div class="concept-card">
+    <h4>Phase 2: Query (Per Question, Real-Time)</h4>
+    <div class="flow">
+      <div class="flow-step">Question</div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step">Embed Query</div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step">Retrieve Top-K</div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step">Rerank</div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step">Generate + Cite</div>
+    </div>
+    <p>Latency budget: Embedding ~50ms, FAISS search ~5ms, Reranking ~200ms, LLM generation ~2s. Total ~2.5s. Reranking is the most expensive non-LLM step — measure whether it's worth the latency.</p>
+  </div>
+
+  <div class="concept-card">
+    <h4>Phase 3: Evaluation (Offline, Experiment Grid)</h4>
+    <div class="flow">
+      <div class="flow-step">Test Queries</div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step">Run Each Config</div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step">Compute Metrics</div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step">Save Results</div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step">Compare</div>
+    </div>
+    <p>The experiment grid: 3 chunkers × 2 embedders × 2 retrievers = 12 configs. Each tested on 10+ queries. Metrics: Precision@5, Recall@5, MRR, NDCG@5. LLM-as-Judge for generation quality.</p>
+  </div>
+
+  <h3>P5 vs Previous Projects</h3>
+  <table class="comparison">
+    <tr><th>Dimension</th><th>P1–P4</th><th>P5</th></tr>
+    <tr>
+      <td><strong>Data Source</strong></td>
+      <td>Generated/synthetic data (P1, P4), pre-processed text (P2, P3)</td>
+      <td>Raw PDFs — you handle extraction, cleaning, and all the real-world mess</td>
+    </tr>
+    <tr>
+      <td><strong>Retrieval</strong></td>
+      <td>Dense-only (P2), none (P1, P3, P4)</td>
+      <td>Dense + BM25 + Hybrid with score fusion — three retrieval strategies you compare</td>
+    </tr>
+    <tr>
+      <td><strong>Architecture</strong></td>
+      <td>Monolithic scripts or single-purpose modules</td>
+      <td>Abstract interfaces (Strategy Pattern) with swappable implementations — production-grade extensibility</td>
+    </tr>
+    <tr>
+      <td><strong>Evaluation</strong></td>
+      <td>Single metric type (P1: agreement, P2: retrieval, P3: correlation, P4: Jaccard)</td>
+      <td>Full IR metric suite (Precision, Recall, MRR, NDCG) + generation quality (LLM-as-Judge)</td>
+    </tr>
+    <tr>
+      <td><strong>Experimentation</strong></td>
+      <td>Relied on Braintrust (P2) or manual comparison</td>
+      <td>Custom experiment tracker with full configuration metadata and reproducible comparisons</td>
+    </tr>
+    <tr>
+      <td><strong>Interfaces</strong></td>
+      <td>Streamlit only (P2, P3) or FastAPI only (P4)</td>
+      <td>Both CLI tools (ingestion, query, eval) AND Streamlit web UI — dual interface</td>
+    </tr>
+    <tr>
+      <td><strong>New Tech</strong></td>
+      <td>—</td>
+      <td>PyMuPDF, BM25, hybrid retrieval, cross-encoder reranking, NDCG, semantic chunking, ABC pattern</td>
+    </tr>
+  </table>
+
+  <div class="insight">
+    <div class="label">The Portfolio Story</div>
+    <p>P5 is your "I can build a real RAG system" evidence. P2 proved you can <em>evaluate</em> RAG — P5 proves you can <em>build</em> it from scratch. The portfolio narrative: P2 identified that the retrieval-generation gap was the key bottleneck (0.747 recall vs 0.511 faithfulness). P5 tackles that bottleneck head-on with hybrid retrieval, reranking, and citation extraction. Together, P2 and P5 tell the story: "I measured, then I built — and I improved on what I measured."</p>
+  </div>
+
+  <div class="analogy">
+    <div class="label">🏭 Analogy — The Factory Floor</div>
+    <p>P2 was the <em>quality inspector</em> — you tested different production lines and reported which one made the best widgets. P5 is building the <em>entire factory</em>. You're designing the raw material intake (PDF extraction), the processing stations (chunking, embedding), the assembly line (retrieval pipeline), the quality control checkpoint (reranking), the packaging department (citation extraction), and the customer-facing showroom (Streamlit UI). Every station has standardized connectors (Abstract Base Classes) so you can swap in a new machine without redesigning the floor. And you're running the factory through 12+ different configurations to find the optimal production line. This is what an EM does: design systems, not just write code.</p>
+  </div>
+
+  <div class="interview">
+    <div class="label">Interview Signal</div>
+    <p>"P5 is my production RAG system. I built it with swappable components — 4 chunking strategies, 2 embedding models, 3 retrieval methods including hybrid dense+BM25 with score fusion, and optional cross-encoder reranking. I ran 12+ configuration experiments on PDF documents, measuring Precision@5, Recall@5, MRR, and NDCG@5. The system generates answers with traceable citations and serves them through both CLI tools and a Streamlit web interface. This was an evolution from P2 where I evaluated RAG — now I built the system that P2 measured."</p>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- Section 15 (NEW) -->
+<div class="section" id="s15">
+  <div class="section-number">15</div>
+  <h2>CLI Tools &amp; Streamlit Interface — Dual Delivery</h2>
+
+  <p>P5 is the first project that requires <em>both</em> CLI tools (for automation and scripting) and a web UI (for interactive demos). P2/P3 had Streamlit only; P4 had FastAPI only. P5 demands dual interfaces because the use cases are different: engineers use CLI for batch ingestion and evaluation, stakeholders use the web UI for interactive Q&A.</p>
+
+  <div class="first-principles">
+    <div class="label">First Principle</div>
+    <p>The <strong>separation of interface from logic</strong> is what makes dual delivery possible. If your retrieval pipeline is tightly coupled to Streamlit widgets, you can't call it from a CLI script. P5's Abstract Base Classes (Section 11) enforce this: the pipeline operates on Pydantic models and returns Pydantic models. The CLI and Streamlit are both <em>thin wrappers</em> that serialize/deserialize inputs and display outputs. This is the same principle behind MVC architecture — your model layer doesn't know whether it's being called from a REST API, a CLI, or a web form.</p>
+  </div>
+
+  <h3>CLI Tools — Three Entry Points</h3>
+
+  <div class="concept-card">
+    <h4>1. Ingestion: <code>python scripts/ingest.py</code></h4>
+    <p>Reads PDFs from a directory, runs the full ingestion pipeline (extract → clean → chunk → embed → index), and saves the FAISS index + chunk metadata to disk. This runs <em>once per document set</em>. Key arguments: input directory, output index path, chunking strategy, embedding model, chunk size.</p>
+  </div>
+
+  <div class="concept-card">
+    <h4>2. Interactive QA: <code>python scripts/serve.py</code></h4>
+    <p>Loads a saved index from disk and enters a REPL loop: accepts questions, retrieves chunks, generates answers with citations, prints results. This is the "quick test" interface for development — faster to iterate than launching Streamlit.</p>
+  </div>
+
+  <div class="concept-card">
+    <h4>3. Evaluation: <code>python scripts/evaluate.py</code></h4>
+    <p>Takes an experiment config (YAML), a PDF directory, and a query set (JSON). Runs the full pipeline for each query, computes metrics (Precision, Recall, MRR, NDCG), runs LLM-as-Judge, and saves results as JSON with full configuration metadata. This is the workhorse for your 12+ configuration experiments.</p>
+  </div>
+
+<pre><span class="cmt"># WHY argparse over click/typer: argparse is stdlib — zero dependencies.</span>
+<span class="cmt"># For 3 simple CLI scripts, a lightweight library isn't justified.</span>
+<span class="cmt"># If you were building 20+ commands with subcommands, use typer.</span>
+
+<span class="kw">import</span> argparse
+<span class="kw">from</span> pathlib <span class="kw">import</span> Path
+
+<span class="kw">def</span> <span class="fn">main</span>():
+    parser = argparse.<span class="fn">ArgumentParser</span>(description=<span class="str">"Ingest PDFs into a RAG index"</span>)
+    parser.<span class="fn">add_argument</span>(<span class="str">"input_dir"</span>, type=Path, help=<span class="str">"Directory containing PDF files"</span>)
+    parser.<span class="fn">add_argument</span>(<span class="str">"-o"</span>, <span class="str">"--output"</span>, type=Path, required=<span class="kw">True</span>,
+                       help=<span class="str">"Output path for saved index"</span>)
+    parser.<span class="fn">add_argument</span>(<span class="str">"--chunker"</span>, choices=[<span class="str">"fixed"</span>, <span class="str">"recursive"</span>, <span class="str">"semantic"</span>, <span class="str">"sliding"</span>],
+                       default=<span class="str">"recursive"</span>, help=<span class="str">"Chunking strategy"</span>)
+    parser.<span class="fn">add_argument</span>(<span class="str">"--embedding-model"</span>, default=<span class="str">"all-MiniLM-L6-v2"</span>,
+                       help=<span class="str">"SentenceTransformer model name"</span>)
+    parser.<span class="fn">add_argument</span>(<span class="str">"--chunk-size"</span>, type=<span class="var">int</span>, default=<span class="num">512</span>)
+    parser.<span class="fn">add_argument</span>(<span class="str">"--chunk-overlap"</span>, type=<span class="var">int</span>, default=<span class="num">128</span>)
+    args = parser.<span class="fn">parse_args</span>()
+
+    <span class="cmt"># WHY factory pattern here: The CLI argument string maps to a class.</span>
+    <span class="cmt"># Same pattern as Section 11 — config-driven component selection.</span>
+    chunker = CHUNKER_REGISTRY[args.chunker](args.chunk_size, args.chunk_overlap)
+    embedder = EmbedderFactory.<span class="fn">create</span>(args.embedding_model)
+    <span class="cmt"># ... run pipeline</span></pre>
+
+  <h3>Streamlit Web UI — The Five Panels</h3>
+
+  <div class="concept-card highlight">
+    <h4>Required Streamlit Components</h4>
+    <p><strong>1. File Upload Panel:</strong> <code>st.file_uploader("Upload PDFs", type=["pdf"], accept_multiple_files=True)</code> — allows users to upload new PDFs for ingestion. Wire this to your ingestion pipeline.</p>
+    <p><strong>2. Configuration Sidebar:</strong> <code>st.sidebar</code> with dropdowns for chunking strategy, embedding model, retrieval method, top-K, and alpha (for hybrid). This is how stakeholders can experiment without touching code.</p>
+    <p><strong>3. Question Input:</strong> <code>st.text_input("Ask a question about your documents")</code> — the main interaction point.</p>
+    <p><strong>4. Answer Display:</strong> Show the generated answer with inline citation markers. Use <code>st.markdown()</code> with formatted citation links.</p>
+    <p><strong>5. Source Chunk Viewer:</strong> Below the answer, display each cited chunk with its source document, page number, and relevance score. Use <code>st.expander()</code> for collapsible chunk views.</p>
+  </div>
+
+<pre><span class="cmt"># WHY st.session_state for index persistence: Streamlit reruns the</span>
+<span class="cmt"># entire script on every interaction. Without session_state, you'd</span>
+<span class="cmt"># reload the FAISS index on every keystroke. session_state persists</span>
+<span class="cmt"># across reruns — same concept as React useState but server-side.</span>
+
+<span class="kw">import</span> streamlit <span class="kw">as</span> st
+
+<span class="kw">if</span> <span class="str">"index"</span> <span class="kw">not in</span> st.session_state:
+    st.session_state.index = <span class="kw">None</span>
+
+<span class="cmt"># Sidebar — configuration controls</span>
+<span class="kw">with</span> st.<span class="fn">sidebar</span>:
+    st.<span class="fn">header</span>(<span class="str">"⚙️ Configuration"</span>)
+    chunker = st.<span class="fn">selectbox</span>(<span class="str">"Chunking Strategy"</span>,
+        [<span class="str">"recursive"</span>, <span class="str">"fixed"</span>, <span class="str">"semantic"</span>, <span class="str">"sliding_window"</span>])
+    embedding = st.<span class="fn">selectbox</span>(<span class="str">"Embedding Model"</span>,
+        [<span class="str">"all-MiniLM-L6-v2"</span>, <span class="str">"all-mpnet-base-v2"</span>])
+    retrieval = st.<span class="fn">selectbox</span>(<span class="str">"Retrieval Method"</span>,
+        [<span class="str">"dense"</span>, <span class="str">"bm25"</span>, <span class="str">"hybrid"</span>])
+    top_k = st.<span class="fn">slider</span>(<span class="str">"Top-K Results"</span>, <span class="num">1</span>, <span class="num">20</span>, <span class="num">5</span>)
+    <span class="kw">if</span> retrieval == <span class="str">"hybrid"</span>:
+        alpha = st.<span class="fn">slider</span>(<span class="str">"Dense/BM25 Weight (α)"</span>, <span class="num">0.0</span>, <span class="num">1.0</span>, <span class="num">0.7</span>)
+
+<span class="cmt"># Main area — question and answer</span>
+question = st.<span class="fn">text_input</span>(<span class="str">"🔍 Ask a question about your documents"</span>)
+
+<span class="kw">if</span> question <span class="kw">and</span> st.session_state.index:
+    response = pipeline.<span class="fn">query</span>(question, top_k=top_k)
+    st.<span class="fn">markdown</span>(<span class="str">f"### Answer\n{response.answer}"</span>)
+
+    <span class="cmt"># Source chunks with expandable detail</span>
+    st.<span class="fn">markdown</span>(<span class="str">"### 📚 Sources"</span>)
+    <span class="kw">for</span> citation <span class="kw">in</span> response.citations:
+        <span class="kw">with</span> st.<span class="fn">expander</span>(<span class="str">f"📄 {citation.source} — Page {citation.page_number}"</span>):
+            st.<span class="fn">write</span>(citation.text_snippet)
+            st.<span class="fn">caption</span>(<span class="str">f"Relevance: {citation.relevance_score:.2f}"</span>)</pre>
+
+  <div class="java-parallel">
+    <div class="label">Java/TypeScript Parallel</div>
+    <p>Think of Streamlit's rerun model as a server-side React with no virtual DOM diff. Every user interaction triggers a full re-render of the Python script. <code>st.session_state</code> is your equivalent of <code>useState</code> — it survives reruns. The sidebar is like a configuration panel in a Spring Boot admin UI. The key mental shift from React: there's no component lifecycle. The script runs top-to-bottom every time. State lives in <code>session_state</code>, not in component instances.</p>
+  </div>
+
+  <div class="interview">
+    <div class="label">Interview Signal</div>
+    <p>"I built dual interfaces — CLI for batch operations (ingestion, evaluation) and Streamlit for interactive stakeholder demos. The pipeline logic is completely decoupled from both interfaces through abstract interfaces and Pydantic models, so adding a FastAPI layer later would be trivial. This is the same MVC separation I've applied in Java Spring applications — the model layer doesn't know who's calling it."</p>
+  </div>
+</div>
+
+</div>
+</body>
+</html>
