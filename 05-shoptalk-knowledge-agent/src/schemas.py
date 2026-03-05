@@ -1,15 +1,6 @@
 """Pydantic data models for the ShopTalk Knowledge Agent.
 
-All data models used across the pipeline. No raw dicts cross module boundaries.
-
-Models:
-    Document        — extracted PDF with metadata (source, title, author, page_count, pages)
-    Chunk           — atomic retrieval unit with embedding (optional)
-    RetrievalResult — single retrieved chunk + score + retriever type + rank
-    QAResponse      — complete query-answer output with citations and latency
-    Citation        — traceable source reference parsed from [N] markers in the answer
-    ExperimentConfig — one experiment specification (all config dimensions + validators)
-    ExperimentResult — results for one config (config + per-query metrics + judge scores + perf)
+No raw dicts cross module boundaries — everything typed here.
 """
 
 from __future__ import annotations
@@ -21,8 +12,7 @@ import numpy as np
 from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator
 
 # ---------------------------------------------------------------------------
-# Type aliases — use Literal so Pydantic validates allowed values at runtime
-# (equivalent to Java enums, but lighter-weight)
+# Type aliases — Literal so Pydantic validates at runtime (like Java enums, lighter)
 # ---------------------------------------------------------------------------
 
 RetrieverType = Literal["dense", "bm25", "hybrid"]
@@ -46,7 +36,7 @@ RerankerType = Literal["cohere", "cross_encoder"]
 
 
 class PageInfo(BaseModel):
-    """Text and metadata for a single PDF page."""
+    """Single PDF page text + metadata."""
 
     page_number: int = Field(..., ge=0, description="0-indexed page number")
     text: str = Field(..., description="Cleaned text content of the page")
@@ -54,7 +44,7 @@ class PageInfo(BaseModel):
 
 
 class DocumentMetadata(BaseModel):
-    """Bibliographic metadata extracted from a PDF."""
+    """Bibliographic metadata from PDF."""
 
     source: str = Field(..., min_length=1, description="File path or URL of the PDF")
     title: str = Field(default="", description="Document title (from PDF metadata)")
@@ -63,9 +53,9 @@ class DocumentMetadata(BaseModel):
 
 
 class Document(BaseModel):
-    """A fully extracted PDF document ready for chunking."""
+    """Fully extracted PDF, ready for chunking."""
 
-    # WHY: uuid4 default so documents get a unique ID without caller needing to supply one
+    # auto-generate ID so callers don't have to
     id: str = Field(default_factory=lambda: str(uuid.uuid4()), description="Unique document ID")
     content: str = Field(..., min_length=1, description="Full text content (all pages joined with \\n\\n)")
     metadata: DocumentMetadata = Field(..., description="Bibliographic metadata")
@@ -78,7 +68,7 @@ class Document(BaseModel):
 
 
 class ChunkMetadata(BaseModel):
-    """Provenance metadata for a single chunk — links back to source document."""
+    """Provenance — links a chunk back to its source document."""
 
     document_id: str = Field(..., min_length=1, description="ID of the parent Document")
     source: str = Field(..., min_length=1, description="Source file path (copied from DocumentMetadata)")
@@ -89,8 +79,7 @@ class ChunkMetadata(BaseModel):
 
     @model_validator(mode="after")
     def end_must_be_gte_start(self) -> ChunkMetadata:
-        """WHY: a zero-length chunk (start == end) is degenerate but technically allowed;
-        we reject only strict violations where end < start."""
+        """Zero-length (start == end) is degenerate but allowed; only reject end < start."""
         if self.end_char < self.start_char:
             raise ValueError(
                 f"end_char ({self.end_char}) must be >= start_char ({self.start_char})"
@@ -99,9 +88,9 @@ class ChunkMetadata(BaseModel):
 
 
 class Chunk(BaseModel):
-    """Atomic retrieval unit — a slice of document text with provenance and optional embedding."""
+    """Atomic retrieval unit — text slice with provenance and optional embedding."""
 
-    # WHY: arbitrary_types_allowed lets us store np.ndarray directly without serializing it
+    # arbitrary_types_allowed: lets us store np.ndarray without serialization
     model_config = ConfigDict(arbitrary_types_allowed=True)
 
     id: str = Field(default_factory=lambda: str(uuid.uuid4()), description="Unique chunk ID")
@@ -119,7 +108,7 @@ class Chunk(BaseModel):
 
 
 class RetrievalResult(BaseModel):
-    """A single retrieval result: chunk + similarity score + retriever metadata."""
+    """Retrieved chunk + score + retriever metadata."""
 
     model_config = ConfigDict(arbitrary_types_allowed=True)
 
@@ -130,7 +119,7 @@ class RetrievalResult(BaseModel):
 
 
 class Citation(BaseModel):
-    """A traceable source reference, parsed from [N] markers in the generated answer."""
+    """Source reference parsed from [N] markers in generated answers."""
 
     chunk_id: str = Field(..., min_length=1, description="ID of the Chunk this citation refers to")
     source: str = Field(..., min_length=1, description="Source file path")
@@ -140,7 +129,7 @@ class Citation(BaseModel):
 
 
 class QAResponse(BaseModel):
-    """Complete output of a single query: answer, citations, and performance metadata."""
+    """Full query output: answer, citations, perf metadata."""
 
     model_config = ConfigDict(arbitrary_types_allowed=True)
 
@@ -166,11 +155,10 @@ class QAResponse(BaseModel):
 
 
 class ExperimentConfig(BaseModel):
-    """Full specification for one experiment run — all config dimensions in one place.
+    """One experiment run spec — all config dimensions + cross-field validators.
 
-    WHY: Pydantic validates the config at load time so we catch invalid combos
-    (e.g., hybrid without alpha) before running the expensive experiment grid.
-    Java parallel: like a validated @ConfigurationProperties class.
+    Pydantic validates at load time so we catch bad combos (e.g., hybrid
+    without alpha) before burning API credits on the experiment grid.
     """
 
     chunking_strategy: ChunkingStrategy = Field(..., description="Which chunking strategy to use")
@@ -193,7 +181,6 @@ class ExperimentConfig(BaseModel):
         description="Reranker to use. Required iff use_reranking==True.",
     )
     top_k: int = Field(default=5, ge=1, le=100, description="Number of chunks to retrieve")
-    # Sliding window specific
     window_size_tokens: int | None = Field(
         default=None,
         ge=10,
@@ -204,7 +191,6 @@ class ExperimentConfig(BaseModel):
         ge=1,
         description="Token step size (required for sliding_window strategy)",
     )
-    # Embedding semantic specific
     breakpoint_threshold: float = Field(
         default=0.85,
         ge=0.0,
@@ -220,8 +206,7 @@ class ExperimentConfig(BaseModel):
     @field_validator("chunk_overlap")
     @classmethod
     def overlap_must_be_less_than_size(cls, v: int, info: object) -> int:
-        """WHY: overlap >= size means every chunk is 100% duplicate of the previous one."""
-        # info.data contains already-validated fields
+        """overlap >= size means every chunk is 100% duplicate of the previous one."""
         chunk_size = getattr(info, "data", {}).get("chunk_size", 512)  # type: ignore[arg-type]
         if v >= chunk_size:
             raise ValueError(
@@ -231,7 +216,7 @@ class ExperimentConfig(BaseModel):
 
     @model_validator(mode="after")
     def hybrid_requires_alpha(self) -> ExperimentConfig:
-        """WHY: min-max score fusion requires an explicit alpha weight — no silent default."""
+        """Min-max score fusion needs an explicit alpha — no silent default."""
         if self.retriever_type == "hybrid" and self.hybrid_alpha is None:
             raise ValueError("hybrid_alpha is required when retriever_type='hybrid'")
         if self.retriever_type != "hybrid" and self.hybrid_alpha is not None:
@@ -240,7 +225,7 @@ class ExperimentConfig(BaseModel):
 
     @model_validator(mode="after")
     def reranking_requires_type(self) -> ExperimentConfig:
-        """WHY: use_reranking=True with no reranker_type would silently produce wrong results."""
+        """use_reranking=True with no reranker_type would silently skip reranking."""
         if self.use_reranking and self.reranker_type is None:
             raise ValueError("reranker_type is required when use_reranking=True")
         if not self.use_reranking and self.reranker_type is not None:
@@ -249,8 +234,7 @@ class ExperimentConfig(BaseModel):
 
     @model_validator(mode="after")
     def dense_hybrid_requires_embedding_model(self) -> ExperimentConfig:
-        """WHY: BM25 is purely lexical — it doesn't use embeddings.
-        Dense/hybrid need a model. Validate so configs in YAML are unambiguous."""
+        """BM25 is lexical only. Dense/hybrid need an embedding model."""
         if self.retriever_type in ("dense", "hybrid") and self.embedding_model is None:
             raise ValueError(
                 f"embedding_model is required when retriever_type='{self.retriever_type}'"
@@ -261,7 +245,7 @@ class ExperimentConfig(BaseModel):
 
     @model_validator(mode="after")
     def sliding_window_requires_params(self) -> ExperimentConfig:
-        """WHY: sliding window can't run without its two core hyper-parameters."""
+        """Can't run sliding window without window_size and step_size."""
         if self.chunking_strategy == "sliding_window":
             if self.window_size_tokens is None or self.step_size_tokens is None:
                 raise ValueError(
@@ -271,7 +255,7 @@ class ExperimentConfig(BaseModel):
 
 
 class RetrievalMetrics(BaseModel):
-    """Retrieval quality metrics for one experiment, computed against ground truth."""
+    """Retrieval quality metrics computed against ground truth."""
 
     recall_at_5: float = Field(..., ge=0.0, le=1.0, description="Recall@5 over the ground truth set")
     precision_at_5: float = Field(..., ge=0.0, le=1.0, description="Precision@5 over the ground truth set")
@@ -291,7 +275,7 @@ class JudgeScores(BaseModel):
 
 
 class PerformanceMetrics(BaseModel):
-    """System-level performance metrics collected during an experiment run."""
+    """System perf metrics from an experiment run."""
 
     ingestion_time_seconds: float = Field(..., ge=0.0, description="Wall-clock time for PDF→index pipeline")
     avg_query_latency_ms: float = Field(..., ge=0.0, description="Average end-to-end query latency in milliseconds")
@@ -300,7 +284,7 @@ class PerformanceMetrics(BaseModel):
 
 
 class ExperimentResult(BaseModel):
-    """Complete result for one experiment: config + retrieval metrics + judge scores + perf."""
+    """Full result: config + retrieval metrics + judge scores + perf."""
 
     model_config = ConfigDict(arbitrary_types_allowed=True)
 
@@ -312,6 +296,6 @@ class ExperimentResult(BaseModel):
         description="LLM-as-Judge scores (None if judge not run for this config)",
     )
     performance: PerformanceMetrics = Field(..., description="System performance metrics")
-    # WHY: list[dict] stores per-query QA pairs for manual inspection; not validated
-    # because the schema varies per query and we don't want to over-engineer Day 1.
+    # list[dict] for per-query QA pairs — schema varies per query, not worth
+    # over-engineering on Day 1
     query_results: list[dict] = Field(default_factory=list, description="Per-query QA results for inspection")

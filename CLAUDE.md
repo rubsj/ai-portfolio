@@ -18,6 +18,23 @@
 - Be direct. No filler. If something is wrong, say so.
 - When introducing a library or function, explain: what it does, why this one over alternatives, key parameters
 
+## Writing Rules (applies to all docs — ADRs, journal entries, comments)
+
+- Write as a practitioner documenting real decisions, not a consultant producing a deliverable
+- First person is allowed and preferred where natural ("I picked X because", "this burned us")
+- Never narrate the document's own importance — if it mattered, just state what happened
+- No section whose only purpose is to make the author look good (e.g., "Interview Signal")
+- Analogies go inline as parentheticals — never in their own dedicated section
+- Bold emotional category labels ("Easier:", "Harder:") are banned — write plain prose or plain bullets
+- Numbers and benchmarks stay where they're contextually relevant — never aggregate into a "Validation" section
+- Section headers are plain nouns — not action phrases, not corporate labels
+- If a sentence could have been written without knowing anything specific about this project, delete it
+- Code comments explain WHY, never what — if the code is readable, no comment needed
+- No hedging openers in comments: ban "Note that", "This ensures", "It's worth mentioning"
+- Docstrings: one sentence what + one sentence non-obvious how/why — no parameter narration
+- Inline comments for short context, block comments only for genuinely non-obvious decisions
+- Comment like you're explaining to a teammate at 11pm — direct, no filler
+
 ## Tech Stack
 
 - **Python**: 3.12+ with type hints everywhere
@@ -112,45 +129,36 @@ Write an ADR for every significant architectural, tool, or algorithmic decision.
 
 ```markdown
 ## Context
-What specific problem, constraint, or trade-off is motivating this decision?
-Include the scale (how many records, how many call sites, what failure modes existed).
+What situation forced this decision? Be specific about the constraints — scale, failure modes,
+prior project lessons. Reference real incidents (e.g., "this burned us in P4 because...").
+Write in first person where it's natural. Skip background the team already knows.
 
 ## Decision
-State the decision in one clear sentence. Then explain the mechanism:
-how it works internally, what it does for us, and the key parameters/configuration used.
-Include a concrete code snippet showing the exact usage pattern.
+One sentence stating what was chosen. Then explain how it actually works — the mechanism,
+not the marketing. Include the exact code/config used, because that's what future-me needs.
+
+```python
+# concrete usage pattern here — not pseudocode
+```
 
 ## Alternatives Considered
 
-| Option | Pros | Cons | Why Not |
-|--------|------|------|---------|
-| **Chosen option** ✅ | ... | ... | — (selected) |
-| Alternative A | ... | ... | Specific reason rejected |
-| Alternative B | ... | ... | Specific reason rejected |
+| Option | Trade-off | Why rejected |
+|--------|-----------|--------------|
+| **Chosen** ✅ | what you give up | — selected |
+| Alternative A | what it offers vs. costs | specific reason, ideally from experience |
+| Alternative B | what it offers vs. costs | specific reason, ideally from experience |
 
-## Quantified Validation
-Concrete numbers proving the decision worked:
-- Success rate, error rate, lines of code saved, latency, cost
-- Before/after comparison if a change was made
-- Any statistical validation (chi-squared, z-score, etc.)
+## What the numbers said
+Any benchmarks, error rates, latency measurements, or cost figures that informed the call.
+State them inline as facts, not as a proof section. If you didn't measure it, don't invent precision.
 
-## Consequences
-**Easier:** What this decision makes simpler going forward.
-**Harder:** What this decision makes more complex or what you accept as a trade-off.
-**Portability:** Which future projects (P2–P9) will reuse this pattern.
+## What this changes
+Plain bullets on what gets easier, what gets harder, and which future projects (P2–P9) can reuse this.
+No bold category labels — just write it out.
 
 ## Cross-References
-- Links to other ADRs this decision depends on or affects
-- e.g., "ADR-002: Flat schema works because Instructor handles schema injection..."
-
-## Java/TS Parallel
-Map the decision to a Java/TypeScript pattern the developer already knows.
-Include a side-by-side code comparison when the mapping is non-obvious.
-
-## Interview Signal
-One paragraph on what this decision demonstrates about engineering judgment.
-Frame it as a capability signal for EM interviews: build-vs-buy reasoning,
-evaluation methodology, production thinking, or systematic decision-making.
+- Links to other ADRs this depends on or affects
 ```
 
 ---
@@ -172,48 +180,39 @@ After every session, create a new page in the Notion Learning Journal database (
 **Page body template** (what goes inside the journal entry page):
 
 ```markdown
-## What I Built
-Describe every component shipped this session, with specific file names and design rationale.
-For each component, include:
-- What the file/class does
-- Key design decisions made and WHY (not just what)
-- Any non-obvious implementation detail (e.g., why Optional fields reduce retry rate)
+## What I shipped
+For each component built this session: what it does, what file it lives in, and why I designed
+it the way I did. Focus on the non-obvious calls — anyone can read the code for the obvious parts.
+Include specific implementation details that would trip me up if I came back cold in two weeks.
 
-## Key Metrics
-Quantified outcomes from the session:
-- Generation rates, test counts, coverage %, error rates
-- Before/after comparisons if something was fixed
-- Jaccard scores, recall@k, or other domain metrics
-- Cost incurred (API spend)
+## Numbers
+Whatever I actually measured: pass rates, error counts, latency, API cost, test coverage.
+No invented precision — if I didn't measure it, I don't include it.
+Before/after if something changed. One line per metric is fine.
 
-## What I Learned
-### [Concept Title]
-Deep explanation of the most important insight(s). Structure as:
-- What the concept is
-- Why it matters for this project and AI/ML broadly
-- How it connects to the Java/TS mental model
-One subsection per major learning. Not bullet points — full paragraphs.
+## What I actually learned
+### [Name the concept]
+Write this as if explaining to past-me from two months ago. Full paragraphs, not bullets.
+Cover: what it is, why it matters beyond this specific project, and where it maps to
+something I already know from Java/TS. One subsection per real insight — not one per topic touched.
 
-## What Blocked Me
-### [Blocker Title] (RESOLVED / ONGOING)
-For each blocker:
-- **Problem**: What went wrong and how it was discovered
-- **Root Cause**: The actual underlying cause (not just symptoms)
-- **Why it wasn't caught earlier**: What validation gap allowed it
-- **Solution**: Exactly what was done to fix it
-- **Takeaway**: The repeatable principle extracted from this failure
+## What blocked me
+### [Name the blocker] — RESOLVED / ONGOING
+- What broke and how I found it
+- The actual root cause (not just the symptom)
+- What let it get this far without being caught
+- What I did to fix it
+- The principle I'm taking forward
 
-## Python Pattern of the Day
-### [Pattern Name]
-Deep dive on the most important Python/library pattern learned:
-- Full working code snippet with WHY comments
-- What it does internally (not just the API surface)
-- Why this over the obvious alternative
-- Java/TS equivalent with side-by-side code
-- Key parameters explained with the reasoning behind chosen values
+## Python pattern of the day
+### [Name it]
+The one Python or library pattern worth a deep dive. Show the real code with WHY comments.
+Explain what's happening under the hood, why this over the obvious alternative, and the
+Java/TS equivalent side-by-side. Cover the parameters that actually matter and why I set them
+the way I did.
 
-## Tomorrow's Plan
-Specific task list for next session, referencing PRD task IDs where applicable.
+## Next session
+Concrete tasks, not intentions. Reference PRD task IDs where applicable.
 ```
 
 ---

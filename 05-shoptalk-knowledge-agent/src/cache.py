@@ -3,6 +3,6 @@
 Cache key: MD5 hash of (model + system_prompt + user_prompt).
 Cache location: data/cache/ as JSON files.
 
-Why cache everything: 35+ experiment configs × 15 queries = 500+ LLM calls.
-Caching enables re-runs without API cost. Same pattern proven in P1/P2/P4.
+35+ configs x 15 queries = 500+ LLM calls per full run.
+Cache avoids re-spend. Same pattern from P1/P2/P4.
 """
