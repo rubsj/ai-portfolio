@@ -1,21 +1,12 @@
-# AI Portfolio — 9 Projects in 8 Weeks
+# AI Portfolio: 9 Projects in 8 Weeks
 
-> Production-grade AI systems with measurable results, not toy demos.
+4/9 complete · 1,100+ tests · 17 ADRs · 95%+ coverage
 
-![Python](https://img.shields.io/badge/Python-3.12+-3776AB?logo=python&logoColor=white)
-![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4o-412991?logo=openai&logoColor=white)
-![LangChain](https://img.shields.io/badge/LangChain-0.3-1C3C3C)
-![CrewAI](https://img.shields.io/badge/CrewAI-Multi--Agent-DC2626)
-![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-009688?logo=fastapi&logoColor=white)
-![Pydantic](https://img.shields.io/badge/Pydantic-v2-E92063)
+Nine AI engineering projects built end-to-end in 8 weeks (Feb-Apr 2026). Each project has its own README with setup instructions, architecture decisions, and results you can reproduce from committed code.
 
----
+[LinkedIn](https://linkedin.com/in/jharuby) · [Portfolio Site](https://rubyjha.dev)
 
-Engineering leader with 20+ years building enterprise platforms and 7+ years managing globally distributed teams of up to 12 engineers in Financial Services (State Street, HSBC) and Healthcare (Centene). Scaled platforms to 40+ enterprise customers, owned $106K/month contractor budgets, and delivered $250K/month in operational savings across organizations spanning US, India, and Poland. This portfolio is a deliberate 8-week sprint (Feb–Apr 2026): 9 production-grade AI systems built end-to-end to go beyond AI familiarity and into AI leadership — technical depth sufficient to set architecture direction, evaluate trade-offs, and lead AI engineering teams. Every project ships with measurable outcomes, Architecture Decision Records, and 95%+ test coverage — the same standards I hold teams to.
-
-**4/9 Projects Complete** · **1,100+ Tests** · **17 ADRs** · **95%+ Coverage** · **~20 PRs** · **Total LLM Cost: [TODO: $XX]**
-
-## Stack Progression
+## How the Projects Connect
 
 ```mermaid
 graph TD
@@ -34,137 +25,98 @@ graph TD
     P8 --> P9
 ```
 
-Nine projects spanning the full AI engineering stack — from data quality foundations through multi-agent production systems. Each layer deliberately builds on the previous.
-
-## Projects
-
-| # | Project | Status | Key Techniques | Links |
-|---|---------|--------|----------------|-------|
-| 1 | [Synthetic Data — Home DIY Repair](./01-synthetic-data-home-diy/) | ✅ Complete | Structured generation, LLM-as-Judge, correction loop, 5-layer validation | [README](./01-synthetic-data-home-diy/README.md) · Demo & Loom: Week 8 |
-| 2 | [Evaluating RAG for Any PDF](./02-rag-evaluation/) | ✅ Complete | 16-config grid search, hybrid reranking, RAGAS metrics, faithfulness analysis | [README](./02-rag-evaluation/README.md) · Demo & Loom: Week 8 |
-| 3 | [Contrastive Embedding Fine-Tuning](./03-fine-tuning-guardrails/) | ✅ Complete | CosineSimilarityLoss, LoRA/PEFT, 8-metric eval framework, UMAP clustering | [README](./03-fine-tuning-guardrails/README.md) · Demo & Loom: Week 8 |
-| 4 | [AI-Powered Resume Coach](./04-resume-coach/) | ✅ Complete | Synthetic resumes, A/B template testing (χ²=32.74), ChromaDB vector search | [README](./04-resume-coach/README.md) · Demo & Loom: Week 8 |
-| 5 | [Production RAG System](./05-production-rag/) | ⏳ Upcoming | Multi-strategy chunking, hybrid search, Cohere reranking, REST API | — |
-| 6 | [Digital Writing Clone — 5-Agent](./06-digital-writing-clone/) | ⏳ Upcoming | StyleAnalyzer, RAG, Evaluator, Fallback, Planner agents | — |
-| 7 | [Customer Feedback Intelligence](./07-feedback-intelligence/) | ⏳ Upcoming | CrewAI pipeline: Sentiment, Theme, Mapping, Gap agents | — |
-| 8 | [Jira AI Agent](./08-jira-ai-agent/) | ⏳ Upcoming | Semantic search, duplicate detection, sprint planning | — |
-| 9 | [DevOps AI Assistant (Capstone)](./09-devops-assistant/) | ⏳ Upcoming | 5-agent system: CI/CD monitoring, log analysis, root cause, remediation | — |
-
-## Completed Project Highlights
-
-### P1 — Synthetic Data: Home DIY Repair
-
-**Problem:** LLM-generated training data is only useful if it's validated — most pipelines skip this step.
-
-**Approach:** Built a 5-layer validation pipeline (schema → semantic → LLM-as-Judge → correction loop → re-evaluation) to generate 30 structured QA records across 5 repair categories × 2 formats × 3 difficulty levels.
-
-**Key Results:**
-- 100% generation success rate, zero schema validation failures (Pydantic + Instructor)
-- LLM-as-Judge calibrated from 0% → 20% failure detection via prompt engineering
-- 78% failure reduction V1 → V2 — upstream prompt improvement outperformed downstream correction
-
-**Engineering:** 4 ADRs · 7 publication-quality charts · 6-page Streamlit Story Mode
-
-→ [Project README](./01-synthetic-data-home-diy/README.md) · Demo & Loom: Week 8
+P1 through P4 build the foundations: data quality, retrieval benchmarking, embedding tuning, and evaluation pipelines. P5 through P9 use those foundations to build multi-agent production systems.
 
 ---
 
-### P2 — Evaluating RAG for Any PDF
+## P1: Synthetic Data (Home DIY Repair)
 
-**Problem:** RAG systems have dozens of configuration knobs but no systematic way to know which settings actually matter.
+I needed validated training data for home repair QA. Most synthetic data pipelines generate and ship. This one generates, validates with a 5-layer pipeline (schema, semantic, LLM-as-Judge, correction loop, re-evaluation), and measures what broke.
 
-**Approach:** Ran a 16-configuration grid search across chunking strategies, embedding models, and reranking — producing a reusable benchmarking framework applicable to any PDF corpus.
+The main lesson was about where to fix failures. I tried two approaches: correcting individual records after generation, and improving the generation template itself. Template improvement cut failures by 78%. Individual correction only managed 67%. Upstream fixes win.
 
-**Key Results:**
-- Best config: semantic chunking + OpenAI embeddings → Recall@5 = 0.625; +19.5% with Cohere reranking (→ 0.747)
-- OpenAI embeddings outperform local models by 26% for $0.02/1M tokens; BM25 beaten by 10 of 15 vector configs
-- Faithfulness gap of 0.511 and 39% LLM refusal rate misclassified as hallucinations — retrieval ≠ generation quality
+The second lesson was about LLM-as-Judge reliability. Out-of-box GPT-4o judging started at 0% failure detection. After calibrating with dual labels (manual + LLM), it reached 20%. You cannot trust LLM judges without calibration against ground truth.
 
-**Engineering:** 384+ tests · 5 ADRs · 95% coverage · Click CLI with Rich formatting
+Pydantic + Instructor gave 100% schema validation with zero manual JSON parsing. For production, I'd use upstream template improvement with Pydantic as a structural gate and skip individual record correction unless template fixes plateau.
 
-→ [Project README](./02-rag-evaluation/README.md) · Demo & Loom: Week 8
+4 ADRs · 7 charts · Streamlit Story Mode · [Full README](./01-synthetic-data-home-diy/README.md)
 
 ---
 
-### P3 — Contrastive Embedding Fine-Tuning
+## P2: Evaluating RAG for Any PDF
 
-**Problem:** Pre-trained embeddings encode generic similarity — they can't distinguish domain-specific compatibility from surface overlap.
+16-configuration grid search across chunking strategies, embedding models, and reranking. The output is a reusable benchmarking framework, not a one-off result.
 
-**Approach:** Applied contrastive fine-tuning (CosineSimilarityLoss) to flip inverted embeddings, then benchmarked standard vs. LoRA (PEFT) fine-tuning using an 8-metric evaluation framework spanning Spearman, AUC-ROC, Cohen's d, and cluster purity.
+- Best config: semantic chunking + OpenAI embeddings at Recall@5 = 0.625. Adding Cohere reranking pushed it to 0.747 (+19.5%). Reranking was the single biggest lift of any knob I tested.
+- OpenAI embeddings beat local models by 26% at $0.02/1M tokens. At that price, local embeddings for retrieval benchmarking are hard to justify unless you need offline capability.
+- Faithfulness gap of 0.511. I traced it: 39% of what RAGAS flagged as "hallucinations" were actually LLM refusals. Retrieval quality and generation quality are separate problems, but RAGAS metrics conflate them.
+- BM25 lost to 10 of 15 vector configs. Keyword search is not a safe baseline for PDF retrieval.
 
-**Key Results:**
-- Spearman flipped -0.22 → +0.85; margin improved 1,238%: -0.083 → +0.940 (AUC-ROC 0.994, Cohen's d 7.73)
-- LoRA: 96.9% of standard performance with 0.32% trainable parameters and a 300x smaller model file
-- 97.8% false positive reduction: 137 → 3 FPs
+For production: semantic chunking + OpenAI embeddings + Cohere reranking. The cost is negligible and the recall gain is real.
 
-**Engineering:** 112 tests · 3 ADRs · memory-constrained fine-tuning on 8GB M2 (drove LoRA over full training)
-
-→ [Project README](./03-fine-tuning-guardrails/README.md) · Demo & Loom: Week 8
+384+ tests · 5 ADRs · 95% coverage · Click CLI with Rich formatting · [Full README](./02-rag-evaluation/README.md)
 
 ---
 
-### P4 — AI-Powered Resume Coach
+## P3: Contrastive Embedding Fine-Tuning
 
-**Problem:** Resume screening tools score holistically but can't tell you *why* a resume fails or *which template* works best.
+Pre-trained embeddings ranked domain-specific pairs wrong. Spearman correlation was -0.22. The model wasn't just inaccurate, it had the ranking backwards.
 
-**Approach:** Generated 250 synthetic resumes across 5 fit levels and 5 writing templates, applied GPT-4o-as-Judge scoring with Instructor retry loops, and ran a statistically rigorous A/B test — backed by a FastAPI service and ChromaDB vector store.
+I applied contrastive fine-tuning (CosineSimilarityLoss) to fix the inversion, then benchmarked standard fine-tuning vs. LoRA (PEFT) across 8 metrics: Spearman, AUC-ROC, Cohen's d, cluster purity, NDCG, MAP, precision, and separation ratio.
 
-**Key Results:**
-- Jaccard gradient confirmed: excellent=0.669 → mismatch=0.005 — skill overlap is the dominant fit signal
-- A/B test: casual template (34% failure) vs career_changer (100%) — χ²=32.74, p<0.001, 66-point spread
-- 8/8 judge corrections via Instructor retry loop (100% correction rate)
+After fine-tuning, Spearman hit +0.85. Margin went from -0.083 to +0.940 (AUC-ROC 0.994, Cohen's d 7.73). False positives dropped from 137 to 3.
 
-**Engineering:** 532 tests · 5 ADRs · 99% coverage · 9 FastAPI endpoints + ChromaDB vector store
+The LoRA decision came from hardware. I had 8GB RAM on an M2. Full fine-tuning wouldn't fit. LoRA hit 96.9% of standard performance with 0.32% trainable parameters and a 300x smaller model file. The constraint forced what turned out to be the better decision anyway: near-identical quality, a fraction of the resources. I'd pick LoRA for production unless you have evidence the 3.1% gap matters for your specific use case.
 
-→ [Project README](./04-resume-coach/README.md) · Demo & Loom: Week 8
+112 tests · 3 ADRs · [Full README](./03-fine-tuning-guardrails/README.md)
 
 ---
 
-## How I Build
+## P4: AI-Powered Resume Coach
 
-**Validation-First Development.** Every project runs a 5-layer validation methodology: schema validation (Pydantic), semantic checks, LLM-as-Judge scoring, correction loops, and re-evaluation against a fixed baseline. The P4 insight: aggregate metrics can hide fundamental data format issues — a 20% judge failure rate traced back to prompt calibration, not data quality. These patterns came from building, not from reading about them.
+I wanted to answer two questions: what makes a resume score well, and does template choice matter?
 
-**Architecture Decision Records.** 17 ADRs across 4 projects. Every non-obvious choice is documented with context, alternatives considered, and rationale. The standard: if I got hit by a bus, any engineer could understand *why* the system works this way — not just *what* it does. ADRs include a Java/TS parallel for each decision, since these patterns are being built on genuinely new terrain.
+I generated 250 synthetic resumes across 5 fit levels and 5 writing templates, scored them with GPT-4o-as-Judge (Instructor retry loops), and ran A/B tests on template effectiveness. FastAPI serves the scoring API, ChromaDB stores the vectors.
 
-**LLM Cost Discipline.** MD5-keyed disk caching for all LLM calls; cost estimated and logged per call; model selection based on task complexity (GPT-4o-mini for generation, GPT-4o for evaluation). Total portfolio spend: [TODO: $XX]. EMs notice when engineers treat compute as free.
+The fit signal turned out to be simple. Jaccard similarity on skills: excellent=0.669, mismatch=0.005. The gradient is clean. Template formatting is noise compared to actual skill overlap. For production, a Jaccard-based pre-filter before LLM scoring would be cheap, fast, and sufficient as a hard gate.
 
-**Reproducible Results.** Seeds, model versions, and evaluation configs are all pinned and committed. Any result in any project README can be regenerated from committed code — no "it worked last Tuesday" results.
+Template choice matters more than I expected. Casual template failed 34% of the time. Career_changer failed 100%. Chi-squared=32.74, p<0.001, 66-point spread. The worst template isn't slightly worse. It's a complete deal-breaker.
 
-**Hardware-Constrained Engineering.** Everything runs on a MacBook Air M2 with 8GB RAM. Memory management isn't theoretical — it drove real architectural decisions: LoRA over full fine-tuning in P3 (300x smaller model file), streaming evaluation in P2, and batch size tuning throughout. Constraints are forcing functions for better architecture.
+Instructor retry loop corrected 8/8 judge failures. Without it, 8 evaluations would have returned invalid structured output.
 
-## Repository Structure
+532 tests · 5 ADRs · 99% coverage · 9 FastAPI endpoints + ChromaDB · [Full README](./04-resume-coach/README.md)
 
-```
-ai-portfolio/
-├── 01-synthetic-data-home-diy/   # P1: Structured generation + LLM-as-Judge validation
-├── 02-rag-evaluation/            # P2: 16-config retrieval benchmarking
-├── 03-fine-tuning-guardrails/    # P3: Contrastive + LoRA embedding fine-tuning
-├── 04-resume-coach/              # P4: Synthetic data pipeline + FastAPI + ChromaDB
-├── 05-production-rag/            # P5: Production-grade RAG with hybrid search
-├── 06-digital-writing-clone/     # P6: 5-agent writing style system
-├── 07-feedback-intelligence/     # P7: Multi-agent feedback analysis pipeline
-├── 08-jira-ai-agent/             # P8: Semantic search + sprint planning agent
-├── 09-devops-assistant/          # P9: 5-agent DevOps automation (Capstone)
-├── shared/                       # Cross-project utilities
-├── docs/                         # Cross-project ADRs, learning notes
-└── CLAUDE.md                     # Persistent engineering context
-```
+---
+
+## Upcoming
+
+| # | Project | What it builds on |
+|---|---------|-------------------|
+| 5 | Production RAG System | P2's winning config, now with multi-strategy chunking, hybrid search, and a REST API |
+| 6 | Digital Writing Clone (5-Agent) | P3 embeddings + P5 RAG feeding 5 CrewAI agents: StyleAnalyzer, RAG, Evaluator, Fallback, Planner |
+| 7 | Customer Feedback Intelligence | P6's multi-agent pattern applied to a CrewAI pipeline: Sentiment, Theme, Mapping, Gap agents |
+| 8 | Jira AI Agent | P5's vector search + P6's agent orchestration for semantic search, duplicate detection, sprint planning |
+| 9 | DevOps AI Assistant (Capstone) | All prior patterns into a 5-agent system: CI/CD monitoring, log analysis, root cause, remediation |
+
+---
+
+## Decisions
+
+17 ADRs across 4 projects. Every non-obvious choice documented with context, alternatives, and rationale. Each ADR includes a Java/TS parallel because these AI engineering patterns don't have established conventions yet.
+
+Every project uses the same validation pattern: schema enforcement (Pydantic), semantic checks, LLM-as-Judge scoring, correction loops, and re-evaluation against a fixed baseline. All seeds, model versions, and eval configs are pinned. Every result regenerates from committed code.
+
+LLM cost control: MD5-keyed disk caching, per-call cost logging, model selection by task (GPT-4o-mini for generation, GPT-4o for evaluation). Everything runs on a MacBook Air M2 with 8GB RAM, which drove real architecture choices: LoRA over full fine-tuning in P3 (300x smaller file), streaming evaluation in P2, batch size tuning throughout.
 
 ## Tech Stack
 
-| Category | Tools | Why |
-|----------|-------|-----|
-| **LLM & AI** | OpenAI API (GPT-4o-mini / GPT-4o), Instructor, Cohere Rerank | Structured output guarantees (Instructor); cost-tiered model selection |
-| **Embeddings** | Sentence-Transformers, PEFT/LoRA | Local fine-tuning on memory-constrained hardware |
-| **Vector & Search** | FAISS, ChromaDB | FAISS for benchmarking (no server), ChromaDB for production (persistence + metadata) |
-| **Evaluation** | RAGAS, Braintrust | Industry-standard RAG metrics + experiment tracking |
-| **Frameworks** | LangChain, CrewAI, FastAPI | RAG orchestration, multi-agent systems, production APIs |
-| **Validation** | Pydantic v2 | Schema-enforced data contracts for LLM outputs |
-| **Frontend** | Streamlit, Rich, Matplotlib, Seaborn | Rapid demos, CLI formatting, publication-quality charts |
-| **DevOps** | Click CLI, pytest, ruff, uv, GitHub Actions | CLI-first workflows, fast linting, modern package management |
-
----
-
-**Connect:** [LinkedIn](https://linkedin.com/in/jharuby) · [Portfolio Site](https://rubyjha.dev)
-
-Built entirely on MacBook Air M2 (8GB RAM) · Total LLM cost: [TODO: $XX] · Live demos and Loom walkthroughs shipping Week 8
+| Category | Tools | Why this and not something else |
+|----------|-------|------|
+| LLM | OpenAI API (GPT-4o-mini / GPT-4o), Instructor, Cohere Rerank | Instructor guarantees structured output with auto-retry. Cost-tiered: mini for generation, full 4o for evaluation. |
+| Embeddings | Sentence-Transformers, PEFT/LoRA | Local fine-tuning that fits in 8GB. LoRA made this possible. |
+| Vector & Search | FAISS, ChromaDB | FAISS for benchmarking (no server, pure index control). ChromaDB for production (persistence + metadata filtering). P4 singleton bug is why I don't use ChromaDB for experiments. |
+| Evaluation | RAGAS, Braintrust | RAGAS for standardized retrieval metrics (Recall@k, faithfulness). Braintrust because I needed to compare 16 configs side-by-side. |
+| Frameworks | LangChain, CrewAI, FastAPI | LangChain for RAG orchestration. CrewAI for multi-agent (P6-P9). FastAPI for production endpoints. |
+| Validation | Pydantic v2 | Every LLM output hits a Pydantic model before anything downstream sees it. Caught format issues that aggregate metrics missed. |
+| Frontend | Streamlit, Rich, Matplotlib, Seaborn | Streamlit for interactive demos. Rich for CLI output. Matplotlib/Seaborn for charts. |
+| DevOps | Click CLI, pytest, ruff, uv, GitHub Actions | uv for fast dependency resolution. ruff over black+isort. Click for composable CLI commands. |
