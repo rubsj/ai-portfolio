@@ -1,8 +1,0 @@
-{"pair_id":"broken-001","attempt_number":1,"original_errors":["Value error, Invalid email format: john@company"],"corrected_successfully":true,"remaining_errors":[]}
-{"pair_id":"broken-002","attempt_number":1,"original_errors":["Value error, Date must be ISO format (YYYY-MM-DD or YYYY-MM), got: March 2020"],"corrected_successfully":true,"remaining_errors":[]}
-{"pair_id":"broken-003","attempt_number":1,"original_errors":["Value error, GPA must be 0.0-4.0, got 85.0"],"corrected_successfully":true,"remaining_errors":[]}
-{"pair_id":"broken-004","attempt_number":1,"original_errors":["Value error, Phone must have >=10 digits, got 6"],"corrected_successfully":true,"remaining_errors":[]}
-{"pair_id":"broken-005","attempt_number":1,"original_errors":["Value error, end_date (2020-01) must be after start_date (2023-01)"],"corrected_successfully":true,"remaining_errors":[]}
-{"pair_id":"broken-006","attempt_number":1,"original_errors":["Value error, Experience must have at least 1 responsibility"],"corrected_successfully":true,"remaining_errors":[]}
-{"pair_id":"broken-007","attempt_number":1,"original_errors":["Value error, Skill years must be 0-30, got 35"],"corrected_successfully":true,"remaining_errors":[]}
-{"pair_id":"broken-008","attempt_number":1,"original_errors":["Value error, Invalid email format: sarah@nodomain","Value error, Date must be ISO format (YYYY-MM-DD or YYYY-MM), got: June 2018","Value error, GPA must be 0.0-4.0, got 92.0"],"corrected_successfully":true,"remaining_errors":[]}
