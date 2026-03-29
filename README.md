@@ -1,6 +1,6 @@
-# AI/ML Engineering Portfolio
+# AI Engineering Portfolio
 
-Nine production-grade AI systems built end-to-end in 8 weeks (Feb-Apr 2026). Not API wrappers — each project solves a real engineering problem with measurable outcomes, reproducible from committed code.
+Nine AI projects built end-to-end from February to May 2026, spanning data pipelines, retrieval systems, evaluation frameworks, and multi-agent architectures. Not API wrappers. Each project solves a real engineering problem with measurable outcomes, reproducible from committed code.
 
 [LinkedIn](https://linkedin.com/in/jharuby) · [Portfolio Site](https://rubyjha.dev)
 
@@ -8,9 +8,9 @@ Nine production-grade AI systems built end-to-end in 8 weeks (Feb-Apr 2026). Not
 
 ### P1: Closed-Loop Synthetic Data Pipeline
 
-Generates synthetic training data, validates with a 5-layer pipeline (schema, semantic, LLM-as-Judge, correction, re-evaluation), and measures what broke. Upstream template improvement cut failures by 78%, individual correction only managed 67%.
+Generates synthetic Home DIY Repair Q&A data and validates it through a 4-stage correction pipeline (V1 generation, individual correction, V2 template improvement, final correction). Improving prompt templates upstream cut failures by 78%. Individual record correction only managed 67%. Fixing the system beats fixing individual outputs.
 
-**Result:** 36 failures → 0 across 4-stage correction pipeline · 81.7% inter-rater agreement
+**Result:** 36 failures → 0 across 4-stage correction pipeline · 81.7% inter-rater agreement (manual vs LLM-as-Judge)
 
 `Python` `Pydantic` `OpenAI` `Instructor` `Streamlit`
 
@@ -18,9 +18,9 @@ Generates synthetic training data, validates with a 5-layer pipeline (schema, se
 
 ### P2: RAG Evaluation Benchmarking Framework
 
-16-configuration grid search across chunking strategies, embedding models, and reranking. Reranking was the single biggest lift. OpenAI embeddings beat local models by 26% at $0.02/1M tokens.
+16-configuration grid search across chunking strategies, embedding models, and reranking pipelines. Evaluated with a 4-judge pipeline (correctness, hallucination, relevance, Bloom taxonomy). Reranking was the single biggest quality lever. OpenAI embeddings outperformed local models by 26%, and at $0.02/1M tokens the cost argument for local-only fell apart.
 
-**Result:** Recall@5 0.625 → 0.747 (+19.5%) with Cohere reranking · 384+ tests · 5 ADRs
+**Result:** Recall@5 0.625 → 0.747 (+19.5%) with Cohere reranking · 557 tests · 5 ADRs
 
 `Python` `FAISS` `LangChain` `Sentence-Transformers` `RAGAS` `Cohere` `Braintrust` `Streamlit`
 
@@ -28,7 +28,7 @@ Generates synthetic training data, validates with a 5-layer pipeline (schema, se
 
 ### P3: Contrastive Embedding Fine-Tuning
 
-Pre-trained embeddings ranked domain-specific pairs backwards (Spearman = -0.22). Applied contrastive fine-tuning with LoRA, benchmarked across 8 metrics. LoRA hit 96.9% of standard performance with 0.32% trainable parameters.
+Pre-trained embeddings ranked dating compatibility pairs backwards (Spearman = -0.22). Applied contrastive fine-tuning with LoRA and benchmarked across 8 metrics. LoRA hit 96.9% of standard fine-tuning performance with 0.32% trainable parameters.
 
 **Result:** Spearman -0.22 → +0.85 · AUC-ROC 0.994 · False positives 137 → 3
 
@@ -38,9 +38,9 @@ Pre-trained embeddings ranked domain-specific pairs backwards (Spearman = -0.22)
 
 ### P4: AI-Powered Resume Coach
 
-250 synthetic resumes across 5 fit levels and 5 templates, scored with GPT-4o-as-Judge. Casual template failed 34%, career_changer failed 100%. Template choice is statistically significant.
+Production pipeline that generates 250+ resume-job pairs across 5 fit levels and 5 prompt templates, scores them through 5 rule-based failure metrics and GPT-4o-as-Judge, and serves results via 9 FastAPI endpoints with ChromaDB semantic search. Template A/B testing revealed casual templates failed validation 34% of the time. career_changer templates failed 100%. Prompt design matters, and chi-squared proved it.
 
-**Result:** Chi-squared = 32.74 (p<0.001) · 66-point failure spread · 532 tests · 99% coverage
+**Result:** Chi-squared = 32.74 (p<0.001) · 66-point failure spread across templates · 532 tests · 99% coverage
 
 `Python` `OpenAI` `Instructor` `Pydantic` `ChromaDB` `FastAPI` `Streamlit`
 
@@ -48,11 +48,11 @@ Pre-trained embeddings ranked domain-specific pairs backwards (Spearman = -0.22)
 
 ### P5: ShopTalk Knowledge Management Agent
 
-Production RAG system with configurable chunking strategies, hybrid retrieval (vector + BM25), reranking, and LLM-as-Judge evaluation.
+First-principles production RAG system built from abstract base classes, no LangChain. 5 chunking strategies, 4 embedding models (including local Ollama), hybrid retrieval (dense + BM25 with score fusion), cross-encoder reranking, and a 5-axis LLM-as-Judge. Heading-aware semantic chunking dominated all 46 configurations. Local embeddings via Ollama landed within 0.14 NDCG@5 of OpenAI quality at zero API cost. Every configuration decision traces back to a specific experiment result.
 
-**Status:** In progress
+**Result:** NDCG@5 0.896 · Judge average 4.77/5.0 · 46 configurations benchmarked · Reproducibility verified (0% variance) · 627 tests · 97% coverage · 7 ADRs
 
-`Python` `FAISS` `LiteLLM` `Instructor` `Click` `Streamlit`
+`Python` `PyMuPDF` `FAISS` `Sentence-Transformers` `rank-bm25` `LiteLLM` `Cohere` `Ollama` `Instructor` `Pydantic` `Click` `Streamlit` `YAML`
 
 [![Repo](https://img.shields.io/badge/GitHub-ai--shoptalk--knowledge--agent-blue)](https://github.com/rubsj/ai-shoptalk-knowledge-agent)
 
@@ -60,7 +60,7 @@ Production RAG system with configurable chunking strategies, hybrid retrieval (v
 
 ### P6: Digital Writing Clone
 
-Multi-agent writing style clone using CrewAI with style analysis, RAG, and quality evaluation.
+Multi-agent writing style clone with CrewAI. StyleAnalyzer extracts sentence-length distributions, vocabulary richness, and transition patterns from writing samples. RAGAgent grounds generated content in domain knowledge. EvaluatorAgent scores output on style similarity and groundedness. PlannerAgent orchestrates the crew. Weighted scoring formula (Style × 0.4 + Groundedness × 0.4 + Confidence × 0.2) with sensitivity analysis across parameter variations.
 
 `Python` `CrewAI` `OpenAI` `Sentence-Transformers`
 
@@ -68,7 +68,7 @@ Multi-agent writing style clone using CrewAI with style analysis, RAG, and quali
 
 ### P7: Customer Feedback Intelligence
 
-CrewAI-powered customer feedback analysis with sentiment, theme clustering, and roadmap alignment.
+CrewAI-powered feedback analysis pipeline. SentimentAgent classifies pain intensity, not just polarity. ThemeAgent clusters feedback via embeddings instead of LDA (better for short text). MappingAgent aligns themes to product roadmap taxonomy. GapAgent finds feedback themes with zero roadmap coverage. Output is a prioritized list of unaddressed customer pain points.
 
 `Python` `CrewAI` `scikit-learn` `HDBSCAN`
 
@@ -76,7 +76,7 @@ CrewAI-powered customer feedback analysis with sentiment, theme clustering, and 
 
 ### P8: Jira AI Agent
 
-AI-powered Jira assistant with semantic search, duplicate detection, and sprint planning.
+AI-powered Jira assistant with semantic search over issue history (cosine similarity with tuned threshold), duplicate detection before ticket creation, and sprint planning informed by velocity distributions instead of single-point estimates. CLI-first with Click.
 
 `Python` `CrewAI` `ChromaDB` `FastAPI`
 
@@ -84,7 +84,7 @@ AI-powered Jira assistant with semantic search, duplicate detection, and sprint 
 
 ### P9: DevOps AI Assistant (Capstone)
 
-Multi-agent DevOps AI assistant for pipeline monitoring, log analysis, root cause detection, and remediation.
+Five-agent DevOps system. PipelineMonitor consumes CI/CD events. LogAnalyzer separates signal from noise in structured logs. RootCause agent combines LLM reasoning with knowledge base retrieval. Remediation agent generates context-aware fix suggestions with risk-level gating. KnowledgeBase agent builds institutional memory from resolved incidents. The hardest part is the error taxonomy: classifying failure modes before writing any code.
 
 `Python` `CrewAI` `Kubernetes` `Prometheus`
 
@@ -95,26 +95,25 @@ Multi-agent DevOps AI assistant for pipeline monitoring, log analysis, root caus
 ```mermaid
 graph TD
     classDef done fill:#22c55e,stroke:#16a34a,color:#fff
-    classDef active fill:#3b82f6,stroke:#2563eb,color:#fff
     classDef upcoming fill:#f3f4f6,stroke:#9ca3af,color:#374151
 
     P1[P1: Synthetic Data]:::done --> P2[P2: RAG Evaluation]:::done
-    P4[P4: Resume Coach]:::done --> P5[P5: Production RAG]:::active
+    P4[P4: Resume Coach]:::done --> P5[P5: Production RAG]:::done
     P2 --> P3[P3: Embedding Fine-Tuning]:::done
-    P2 --> P5
-    P3 --> P6[P6: Writing Clone]:::upcoming
-    P5 --> P6
-    P6 --> P7[P7: Feedback Intel]:::upcoming
-    P6 --> P8[P8: Jira Agent]:::upcoming
+    P2 -->|evaluation framework| P5
+    P3 -->|fine-tuned embeddings| P6[P6: Writing Clone]:::upcoming
+    P5 -->|RAG patterns| P6
+    P6 -->|multi-agent patterns| P7[P7: Feedback Intel]:::upcoming
+    P6 -->|agent architecture| P8[P8: Jira Agent]:::upcoming
     P7 --> P9[P9: DevOps Capstone]:::upcoming
     P8 --> P9
 ```
 
 ## Portfolio Stats
 
-- 1,100+ tests across P1-P4
-- 17 ADRs documenting every non-obvious decision
-- 95%+ code coverage on all completed projects
+- 2,000+ tests across P1-P5
+- 24 ADRs documenting every non-obvious decision
+- 94%+ code coverage on all completed projects
 - Every result reproducible from committed code with pinned seeds and model versions
 
 ## Quick Setup
@@ -129,4 +128,4 @@ Or clone individually from the repo links above. A VS Code workspace file is inc
 
 ---
 
-Built by [Ruby Jha](https://linkedin.com/in/jharuby) · 20+ years software engineering · 7+ years engineering management
+Built by [Ruby Jha](https://linkedin.com/in/jharuby) · 20+ years software engineering · 7+ years engineering management at State Street, EY, HSBC, and Centene
