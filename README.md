@@ -28,9 +28,9 @@ Generates synthetic Home DIY Repair Q&A data and validates it through a 4-stage 
 
 ### P3: Contrastive Embedding Fine-Tuning
 
-Pre-trained embeddings ranked dating compatibility pairs backwards (Spearman = -0.22). Applied contrastive fine-tuning with LoRA and benchmarked across 8 metrics. LoRA hit 96.9% of standard fine-tuning performance with 0.32% trainable parameters.
+Pre-trained embeddings ranked dating compatibility pairs backwards (Spearman = -0.22). Applied contrastive fine-tuning with LoRA and benchmarked across 8 metrics. LoRA hit 96.2% of standard fine-tuning performance with 0.32% trainable parameters.
 
-**Result:** Spearman -0.22 → +0.85 · AUC-ROC 0.994 · False positives 137 → 3
+**Result:** Spearman -0.22 → +0.85 · AUC-ROC 0.993 · False positives 137 → 3
 
 `Python` `Sentence-Transformers` `PEFT/LoRA` `Matplotlib` `Seaborn`
 
@@ -111,9 +111,9 @@ graph TD
 
 ## Portfolio Stats
 
-- 2,000+ tests across P1-P5
-- 24 ADRs documenting every non-obvious decision
-- 94%+ code coverage on all completed projects
+- 2,038 tests across P1-P5
+- 25 ADRs documenting every non-obvious decision
+- 97% code coverage on P5, 99% on P4
 - Every result reproducible from committed code with pinned seeds and model versions
 
 ## Quick Setup
