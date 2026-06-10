@@ -1,6 +1,6 @@
 # AI Engineering Portfolio
 
-Nine AI projects built end-to-end from February to May 2026, spanning data pipelines, retrieval systems, evaluation frameworks, and multi-agent architectures. Not API wrappers. Each project solves a real engineering problem with measurable outcomes, reproducible from committed code.
+Nine AI projects built end-to-end in active development since February 2026, spanning data pipelines, retrieval systems, evaluation frameworks, and multi-agent architectures. Not API wrappers. Each project solves a real engineering problem with measurable outcomes, reproducible from committed code.
 
 [LinkedIn](https://linkedin.com/in/jharuby) · [Portfolio Site](https://rubyjha.dev)
 
@@ -56,15 +56,17 @@ First-principles production RAG system built from abstract base classes, no Lang
 
 [![Repo](https://img.shields.io/badge/GitHub-ai--shoptalk--knowledge--agent-blue)](https://github.com/rubsj/ai-shoptalk-knowledge-agent)
 
-## Upcoming Projects
+### P6: Torvalds Digital Clone
 
-### P6: Digital Writing Clone
+Multi-agent system that answers computer-science questions in the writing voice of Linus Torvalds or Greg Kroah-Hartman. Three LLM agents (CloneAgent, EvaluatorAgent, FallbackAgent) and four deterministic components (Retriever, StyleProfileBuilder, ScoringEngine, Gatekeeper) sit under one Flow orchestrator, with LLMs placed only where judgment is needed and deterministic code everywhere else. The StyleProfileBuilder extracts a measurable 15-feature style profile from an author's archive, the CloneAgent generates in that voice, and the ScoringEngine scores the output back against the profile, closing a build-profile, generate, verify loop. Answers are grounded in retrieved corpus knowledge, and a deterministic gate with no LLM on the decision path declines rather than answers when retrieval cannot support a response. Shipped on two interfaces, a Click CLI and a Streamlit app.
 
-Multi-agent writing style clone with CrewAI. StyleAnalyzer extracts sentence-length distributions, vocabulary richness, and transition patterns from writing samples. RAGAgent grounds generated content in domain knowledge. EvaluatorAgent scores output on style similarity and groundedness. PlannerAgent orchestrates the crew. Weighted scoring formula (Style × 0.4 + Groundedness × 0.4 + Confidence × 0.2) with sensitivity analysis across parameter variations.
+**Result:** In-domain deliver 78.6% Torvalds / 81.0% Kroah-Hartman (3-pass mean) · 0 hallucinations on out-of-domain queries · 3 LLM agents + 4 deterministic components, style extraction with verification, RAG-grounded, CLI + Streamlit · 534 tests · 21 ADRs
 
-`Python` `CrewAI` `OpenAI` `Sentence-Transformers`
+`Python` `CrewAI` `HHEM-2.1-Open` `FAISS` `Cohere` `Pydantic` `LiteLLM` `Click` `Streamlit`
 
 [![Repo](https://img.shields.io/badge/GitHub-ai--digital--clone-blue)](https://github.com/rubsj/ai-digital-clone)
+
+## Upcoming Projects
 
 ### P7: Customer Feedback Intelligence
 
@@ -98,11 +100,11 @@ graph TD
     classDef upcoming fill:#f3f4f6,stroke:#9ca3af,color:#374151
 
     P1[P1: Synthetic Data]:::done --> P2[P2: RAG Evaluation]:::done
-    P4[P4: Resume Coach]:::done --> P5[P5: Production RAG]:::done
-    P2 --> P3[P3: Embedding Fine-Tuning]:::done
+    P1 -->|synthetic data generation| P4[P4: Resume Coach]:::done
+    P4 --> P5[P5: Production RAG]:::done
     P2 -->|evaluation framework| P5
-    P3 -->|fine-tuned embeddings| P6[P6: Writing Clone]:::upcoming
-    P5 -->|RAG patterns| P6
+    P5 -->|RAG patterns| P6[P6: Torvalds Digital Clone]:::done
+    P3[P3: Embedding Fine-Tuning]:::done
     P6 -->|multi-agent patterns| P7[P7: Feedback Intel]:::upcoming
     P6 -->|agent architecture| P8[P8: Jira Agent]:::upcoming
     P7 --> P9[P9: DevOps Capstone]:::upcoming
@@ -111,8 +113,8 @@ graph TD
 
 ## Portfolio Stats
 
-- 2,038 tests across P1-P5
-- 25 ADRs documenting every non-obvious decision
+- 2,572 tests across P1-P6
+- 46 ADRs documenting every non-obvious decision
 - 97% code coverage on P5, 99% on P4
 - Every result reproducible from committed code with pinned seeds and model versions
 
